@@ -1,0 +1,18 @@
+{
+  "updated_utc": "2026-05-30 21:52 UTC",
+  "updated_iso": "2026-05-30T21:52:54+00:00",
+  "headline": "Strong evening conditions on 31m and 25m across the Americas and Europe.",
+  "highlights": [
+    "9730 kHz - Radio Romania International English to W. Europe, 1800-1900 UTC",
+    "5000 kHz - WWV time signal, continuous, excellent for propagation checks",
+    "9395 kHz - WRMI Okeechobee, varied programming to eastern North America",
+    "6070 kHz - Channel 292 Germany, hobby broadcasts to Europe",
+    "4625 kHz - UVB-76 The Buzzer, continuous, always worth a listen"
+  ],
+  "changes": [
+    "WRMI has adjusted some weekend programming blocks on 9955 kHz",
+    "Voice of Greece remains active on 9420 kHz after recent funding renewal"
+  ],
+  "propagation_note": "Low K-index tonight means quiet geomagnetic conditions and good long-path DX on 31m.",
+  "status": "ok"
+}
