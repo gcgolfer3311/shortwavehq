@@ -1,16 +1,16 @@
 {
-  "headline": "Solar activity moderate; skip zones expected on higher frequencies during daylight hours",
+  "headline": "Shortwave Radio Daily Briefing - Increased Solar Activity Expected",
   "highlights": [
-    "BBC World Service: 6195 kHz, 1200-1400 UTC - English news and analysis",
-    "Voice of America: 9455 kHz, 1500-1700 UTC - Americas service with strong signal",
-    "Radio France Internationale: 11605 kHz, 1400-1600 UTC - European coverage stable",
-    "Deutsche Welle: 6100 kHz, 0600-0800 UTC - German and English programming"
+    "BBC World Service on 6.195 kHz reports strong signals across Europe and Africa",
+    "Voice of America relaying on 9.455 kHz showing excellent propagation to Asia-Pacific",
+    "China Radio International on 11.640 kHz maintains stable reception in Middle East regions",
+    "Deutsche Welle broadcasting on 13.790 kHz with improved clarity over Western Africa"
   ],
   "changes": [
-    "11910 kHz service relocated to 11920 kHz effective immediately due to interference mitigation",
-    "15240 kHz evening window extended 30 minutes to 2130 UTC to accommodate listener demand"
+    "RFI French service temporarily shifted from 11.600 kHz to 11.615 kHz due to interference mitigation",
+    "Radio Romania International reduced power output on 5.990 kHz for maintenance through 2024-01-15"
   ],
-  "propagation_note": "F layer ionization favorable for 7-9 MHz band; recommend 41m band for reliable evening reception. D layer absorption minimal. Best DX window 1800-2200 UTC on higher frequencies.",
-  "updated_utc": "2026-06-14 08:38 UTC",
+  "propagation_note": "K-index at 4, expect F2 layer skip distances 800-1500 km. Morning hours optimal for long-distance propagation. Sunset terminator currently favorable for transatlantic reception.",
+  "updated_utc": "2026-06-14 21:10 UTC",
   "status": "ok"
 }
