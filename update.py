@@ -23,7 +23,7 @@ import urllib.error
 import sys
 
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-MODEL = os.environ.get("SHQ_MODEL", "claude-3-5-sonnet-20241022")
+MODEL = os.environ.get("SHQ_MODEL", "claude-haiku-4-5-20251001")
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 OUT_FILE = os.path.join(OUT_DIR, "live.json")
 
