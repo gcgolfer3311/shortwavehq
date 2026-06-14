@@ -739,6 +739,14 @@ a,button,input,select,textarea{touch-action:manipulation}
   .pgrid{grid-template-columns:1fr 1fr}
 }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XLSS7JGTB7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XLSS7JGTB7');
+</script>
 </head>
 <body>
 
@@ -791,6 +799,7 @@ a,button,input,select,textarea{touch-action:manipulation}
     <button class="ni" id="n-history" onclick="go('history',this)"><span class="ni-icon">📖</span>History</button>
     <button class="ni" id="n-equipment" onclick="go('equipment',this)"><span class="ni-icon">🔧</span>Equipment</button>
     <button class="ni" id="n-qsl" onclick="go('qsl',this)"><span class="ni-icon">📬</span>QSL Gallery</button>
+    <button class="ni" id="n-directory" onclick="go('directory',this)"><span class="ni-icon">📋</span>All Stations</button>
     <button class="ni" id="n-starthere" onclick="go('starthere',this)" style="color:#fbbf24;border-bottom-color:transparent"><span class="ni-icon">⭐</span>Start Here</button>
     <button class="ni" id="n-advertise" onclick="go('advertise',this)"><span class="ni-icon">📣</span>Advertise</button>
   </nav>
@@ -1371,7 +1380,45 @@ a,button,input,select,textarea{touch-action:manipulation}
 
 </main>
 
-<!-- ══════════════ START HERE ══════════════ -->
+<!-- ══════════════ STATION DIRECTORY ══════════════ -->
+<div class="page" id="pg-directory">
+  <div class="dhero">
+    <div class="hlbl">Complete Station Reference</div>
+    <h1 class="htitle">All Stations <em>A–Z</em></h1>
+    <div class="hsub">Every station in the database — click any one to search it now</div>
+  </div>
+  <div class="wrap" style="padding-top:1.5rem;padding-bottom:4rem">
+    <div style="display:flex;gap:8px;margin-bottom:1.2rem;flex-wrap:wrap;align-items:center">
+      <input id="dir-search" class="inp" placeholder="Filter stations..." style="flex:1;font-size:.9rem;padding:9px 12px" oninput="filterDirectory()">
+      <select id="dir-type" class="inp" style="width:auto;font-size:.75rem" onchange="filterDirectory()">
+        <option value="">All Types</option>
+        <option>International</option>
+        <option>Time</option>
+        <option>Numbers</option>
+        <option>Utility</option>
+        <option>Pirate</option>
+      </select>
+      <select id="dir-reg" class="inp" style="width:auto;font-size:.75rem" onchange="filterDirectory()">
+        <option value="">All Regions</option>
+        <option>North America</option>
+        <option>Europe</option>
+        <option>Asia</option>
+        <option>Africa</option>
+        <option>South America</option>
+        <option>Pacific</option>
+        <option>Middle East</option>
+      </select>
+    </div>
+    <div style="margin-bottom:.7rem;font-family:var(--mono);font-size:.62rem;color:var(--muted)">
+      <span id="dir-count"></span> &nbsp;·&nbsp; EIBI A-26 2026 &nbsp;·&nbsp; Valid March 29 – October 25, 2026 &nbsp;·&nbsp; Updated May 27, 2026
+      &nbsp;·&nbsp; <a href="http://radiosparks.com/shortwave.php" target="_blank" style="color:var(--blue)">Verify at RadioSPARKS ↗</a>
+      &nbsp;·&nbsp; <a href="https://shortwavedb.org" target="_blank" style="color:var(--blue)">ShortwaveDB ↗</a>
+    </div>
+    <div id="dir-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:6px"></div>
+  </div>
+</div>
+
+<!-- START HERE -->
 <div class="page" id="pg-starthere">
   <div class="shero" style="min-height:auto;padding:2.5rem 1.4rem 2rem">
     <div class="sh-badge"><div class="sh-bdot"></div>New to ShortwaveHQ? Start Here</div>
@@ -1537,6 +1584,10 @@ a,button,input,select,textarea{touch-action:manipulation}
 
 <script>
 // ShortwaveHQ - Complete JS - iOS Safari Safe (zero backticks)
+// ── YOUR API KEY ─────────────────────────────────────────────────
+// Paste your Anthropic API key below between the quotes
+var ANTHROPIC_KEY = "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";
+// ─────────────────────────────────────────────────────────────────
 
 // ── 150+ STATION DATABASE (EIBI A-26 2026) ──────────────────────
 var SCH=[
@@ -2014,7 +2065,18 @@ qsls=[
 
 // ── HELPERS ──────────────────────────────────────────────────────
 function pad(n){return String(n).padStart(2,"0");}
-function isOn(s,m){var t=(m!=null)?m:utcM;if(s.e>s.s)return t>=s.s&&t<s.e;return t>=s.s||t<s.e;}
+function isOn(s,m){
+  var t=(m!=null)?m:utcM;
+  // 10-minute buffer so stations appear just before they start and stay just after they end
+  var buf=10;
+  var s2=(s.s-buf+1440)%1440;
+  var e2=(s.e===1440)?1440:((s.e+buf)%1440);
+  if(s2===e2)return true;
+  if(s.e===1440&&s.s===0)return true; // 24hr
+  // Use buffered window
+  if(e2>s2)return t>=s2&&t<e2;
+  return t>=s2||t<e2;
+}
 function fmtR(s){return pad(Math.floor(s.s/60))+":"+pad(s.s%60)+" - "+pad(Math.floor(s.e/60))+":"+pad(s.e%60);}
 function bFor(f){var v=parseFloat(f);if(v<6)return "49M";if(v<7.5)return "41M";if(v<10.5)return "31M";if(v<12.5)return "25M";if(v<14.5)return "22M";if(v<16.5)return "19M";if(v<18.5)return "16M";if(v<22)return "13M";if(v<27)return "11M";return "SW";}
 function tChip(t){var map={"International":"tc-i","Time":"tc-t","Utility":"tc-u","Pirate":"tc-p","Numbers":"tc-n"};var cl=map[t]||"tc-u";var sp=document.createElement("span");sp.className="tc "+cl;sp.textContent=t;return sp;}
@@ -2027,6 +2089,65 @@ function getBands(){
   for(var i=0;i<BD.length;i++){var b=BD[i];var base=night?b.bn:b.bd;var sf=(pV.sfi-100)/5;var kp=pV.k>4?(pV.k-4)*8:0;var p=Math.min(100,Math.max(3,base+sf-kp+(Math.random()-0.5)*5));out.push({n:b.n,r:b.r,p:Math.round(p)});}
   return out;
 }
+// ── STATION DIRECTORY (A-Z, always findable) ───────────────────
+function renderDirectory(){filterDirectory();}
+
+function filterDirectory(){
+  var q=((document.getElementById("dir-search")||{value:""}).value||"").toLowerCase().trim();
+  var type=((document.getElementById("dir-type")||{value:""}).value||"");
+  var reg=((document.getElementById("dir-reg")||{value:""}).value||"");
+  var grid=document.getElementById("dir-grid");
+  var ct=document.getElementById("dir-count");
+  if(!grid)return;
+  grid.innerHTML="";
+
+  // Group stations by name
+  var byName={};
+  for(var i=0;i<SCH.length;i++){
+    var s=SCH[i];
+    if(type&&s.type!==type)continue;
+    if(reg&&s.reg!==reg&&s.tgt.indexOf(reg)<0)continue;
+    if(q&&(s.stn+s.lang+s.reg+s.tgt+s.freq+s.type+(s.site||"")).toLowerCase().indexOf(q)<0)continue;
+    var n=s.stn;
+    if(!byName[n])byName[n]=[];
+    byName[n].push(s);
+  }
+
+  var names=Object.keys(byName).sort();
+  if(ct)ct.textContent=names.length+" stations";
+
+  for(var ni=0;ni<names.length;ni++){
+    var name=names[ni];
+    var entries=byName[name];
+    var on=false;
+    for(var ei=0;ei<entries.length;ei++)if(isOn(entries[ei]))on=true;
+
+    var card=document.createElement("div");
+    card.style.cssText="padding:.8rem;background:var(--p2);border:1px solid "+(on?"var(--green)":"var(--bdr)")+";border-radius:4px;cursor:pointer;transition:border-color .15s";
+    if(on)card.style.borderLeft="3px solid var(--green)";
+
+    var nm=document.createElement("div");nm.style.cssText="font-family:var(--serif);font-weight:700;font-size:.88rem;margin-bottom:4px";nm.textContent=name;
+    if(on){var ob=document.createElement("span");ob.style.cssText="margin-left:7px;font-family:var(--mono);font-size:.52rem;background:var(--green);color:#000;padding:1px 5px;border-radius:2px;vertical-align:middle";ob.textContent="ON AIR";nm.appendChild(ob);}
+
+    var freqs=document.createElement("div");freqs.style.cssText="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px";
+    for(var fi=0;fi<entries.length;fi++){
+      var fe=entries[fi];var kHz=Math.round(parseFloat(fe.freq)*1000);
+      var fb=document.createElement("button");fb.className="btn btn-o";fb.style.cssText="font-size:.58rem;padding:2px 7px;font-family:var(--mono)";fb.textContent=fe.freq+" MHz";
+      fb.addEventListener("click",(function(k,fq){return function(ev){ev.stopPropagation();var inp=document.getElementById("se-inp");var u=document.getElementById("se-unit");if(inp)inp.value=k;if(u)u.value="khz";go("home",document.getElementById("n-home"));seSearch();};})(kHz,fe.freq));
+      freqs.appendChild(fb);
+    }
+
+    var meta=document.createElement("div");meta.style.cssText="font-family:var(--mono);font-size:.56rem;color:var(--muted)";
+    meta.textContent=entries[0].type+" \u00b7 "+entries[0].reg+" \u00b7 "+entries[0].lang;
+
+    card.appendChild(nm);card.appendChild(freqs);card.appendChild(meta);
+    card.addEventListener("click",(function(name2){return function(){var inp=document.getElementById("se-inp");var u=document.getElementById("se-unit");if(inp)inp.value=name2;if(u)u.value="khz";go("home",document.getElementById("n-home"));seSearch();};})(name));
+    grid.appendChild(card);
+  }
+
+  if(names.length===0){var none=document.createElement("div");none.style.cssText="grid-column:1/-1;padding:2rem;text-align:center;font-family:var(--serif);font-style:italic;color:var(--muted)";none.textContent="No stations match. Try a different search.";grid.appendChild(none);}
+}
+
 // ── START HERE PAGE ─────────────────────────────────────────────
 function renderStartHere(){
   var el=document.getElementById("starthere-freqs");if(!el||el.children.length)return;
@@ -2134,7 +2255,7 @@ function go(pg,btn){
   var fns={home:renderHome,now:renderNow,finder:renderFinder,radar:renderRadar,
     dx:renderDX,timemachine:renderTimeMachineInit,worldmap:renderWorldMapInit,
     propagation:renderProp,numbers:renderNS,log:renderLog,memories:renderMems,
-    museum:renderVint,history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere};
+    museum:renderVint,history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory};
   if(fns[pg])fns[pg]();
 }
 
@@ -2182,36 +2303,52 @@ function sePanel(){
 function seTextSearch(q,withAI){
   var p=sePanel();if(!p.result||!p.matchBox)return;
   var ql=q.toLowerCase();
+  // Common aliases so partial names always find results
+  var aliases={"voa":"voice of america","bbc":"world service","rnz":"radio new zealand","rfi":"radio france","cri":"china radio","kbs":"world radio","nhk":"radio japan","air":"all india","rri":"radio romania","ria":"radio free asia","rfe":"radio free europe","wwv":"fort collins","rtty":"utility","pirate":"pirate","buzzer":"uvb-76","uvb":"uvb-76","skyking":"skyking","wrmi":"wrmi","wwcr":"wwcr","wbcq":"wbcq","wtww":"wtww","rfa":"radio free asia","rfe":"radio free europe","dw":"deutsche welle","rtbf":"radio france","abc":"radio australia","rte":"ireland"};
+  for(var key in aliases){if(ql===key||ql.indexOf(key)>=0)ql=ql+" "+aliases[key];}
+  var terms=ql.split(" ").filter(function(t){return t.length>1;});
   var matches=[];
-  for(var i=0;i<SCH.length;i++){var s=SCH[i];if((s.stn+s.lang+s.tgt+s.type+s.reg+s.freq).toLowerCase().indexOf(ql)>=0)matches.push(s);}
+  for(var i=0;i<SCH.length;i++){
+    var s=SCH[i];
+    var hay=(s.stn+"|"+s.lang+"|"+s.tgt+"|"+s.type+"|"+s.reg+"|"+s.freq+"|"+(s.site||"")).toLowerCase();
+    var hit=false;
+    for(var ti=0;ti<terms.length;ti++){if(hay.indexOf(terms[ti])>=0){hit=true;break;}}
+    if(hit)matches.push(s);
+  }
   matches.sort(function(a,b){var ao=isOn(a),bo=isOn(b);if(ao&&!bo)return -1;if(!ao&&bo)return 1;return parseFloat(a.freq)-parseFloat(b.freq);});
   p.result.style.display="block";
   if(p.tag)p.tag.textContent="Search: \""+q+"\"";
-  if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" found";
+  if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" found \u00b7 AI searching too...";
   p.matchBox.innerHTML="";
-  if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No stations found for \""+q+"\". Try a frequency (9395 kHz), language (Spanish), region (Africa), or station name (BBC, WRMI).";p.matchBox.appendChild(none);}
+  if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="Not found in local database for \""+q+"\". The AI is searching now for current schedule information...";p.matchBox.appendChild(none);}
   else{var shown=matches.slice(0,20);for(var j=0;j<shown.length;j++)p.matchBox.appendChild(seRow(shown[j]));if(matches.length>20){var more=document.createElement("div");more.className="sr-none";more.textContent="..."+(matches.length-20)+" more. Refine your search for precise results.";p.matchBox.appendChild(more);}}
   if(p.aiTxt)p.aiTxt.textContent="";if(p.links)p.links.innerHTML="";if(p.spin)p.spin.style.display="none";
-  if(withAI){seCallAI("What shortwave stations match a search for \""+q+"\"? List the best 3 options with frequencies, UTC times, and brief descriptions. Under 130 words.",p,null);}
+  // ALWAYS call AI for text searches
+  if(withAI){
+    var nd=new Date();var utcStr=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
+    seCallAI("The listener is searching for \""+q+"\" on shortwave radio. It is currently "+utcStr+" UTC. List all active frequencies for this station or broadcaster right now, with UTC times, target regions, and any recent schedule changes. If they are not currently broadcasting, say when they next come on air. Be specific with kHz values. Under 220 words.",p,null);
+  }
 }
 
 function seShowMatches(fMHz,withAI){
   var p=sePanel();if(!p.result||!p.matchBox)return;
-  var kHz=Math.round(fMHz*1000);var tol=0.007;
+  var kHz=Math.round(fMHz*1000);var tol=0.015;
   var matches=[];for(var i=0;i<SCH.length;i++)if(Math.abs(parseFloat(SCH[i].freq)-fMHz)<=tol)matches.push(SCH[i]);
   matches.sort(function(a,b){var ao=isOn(a),bo=isOn(b);if(ao&&!bo)return -1;if(!ao&&bo)return 1;return a.s-b.s;});
   p.result.style.display="block";
   if(p.tag)p.tag.textContent=fMHz.toFixed(3)+" MHz  \u00b7  "+kHz+" kHz  \u00b7  "+bFor(String(fMHz))+" Band";
-  if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" in database";
+  if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" in database \u00b7 AI checking live...";
   p.matchBox.innerHTML="";
-  if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No stations in database at "+fMHz.toFixed(3)+" MHz. The AI identification below will identify what is likely on this frequency.";p.matchBox.appendChild(none);}
+  if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No exact match in database for "+fMHz.toFixed(3)+" MHz. AI is identifying this frequency now...";p.matchBox.appendChild(none);}
   else{for(var j=0;j<matches.length;j++)p.matchBox.appendChild(seRow(matches[j]));}
   if(p.aiTxt)p.aiTxt.textContent="";if(p.links)p.links.innerHTML="";if(p.spin)p.spin.style.display="none";
+  // ALWAYS call AI regardless of database results
   if(withAI){
     var nd=new Date();var utcStr=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
-    seCallAI("What is on "+fMHz.toFixed(3)+" MHz right now at "+utcStr+" UTC? List all known stations using this frequency with their UTC windows. Give one practical listener tip. Under 200 words.",p,kHz);
+    seCallAI("What is on "+fMHz.toFixed(3)+" MHz ("+kHz+" kHz) right now at "+utcStr+" UTC? List every known station using this frequency with their UTC broadcast windows, language, and target area. Include WRMI, WWCR, WBCQ, BBC, VOA, Radio Romania, and any other broadcaster. If nothing is scheduled right now say what is expected next. Under 220 words.",p,kHz);
   }
 }
+
 
 function seRow(s){
   var on=isOn(s);var kHz=Math.round(parseFloat(s.freq)*1000);
@@ -2230,19 +2367,20 @@ function seRow(s){
 function seCallAI(prompt,p,kHz){
   if(p.spin)p.spin.style.display="inline-block";
   var btn=document.getElementById("se-btn");if(btn)btn.disabled=true;
-  var sys="You are a shortwave radio frequency identification expert with complete knowledge of the EIBI A-26 2026 database, AOKI A-26, HFCC, WRMI current schedule (all 13 frequencies), WWCR, WBCQ, and ENIGMA 2000 numbers station registry. Identify signals with precise UTC times, station names, power levels, and transmitter sites when known. Be authoritative and specific.";
-  fetch("/.netlify/functions/ai",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:380,system:sys,messages:[{role:"user",content:prompt}]})})
+  var sys="You are the world's most knowledgeable shortwave radio frequency expert with complete and current knowledge of: EIBI A-26 2026 schedule (valid March 29 - October 25, 2026, last updated May 27, 2026, 8835 records), AOKI A-26 2026, HFCC registrations, WRMI Okeechobee FL complete schedule (12x100kW + 1x50kW transmitters, 23 antennas, frequencies: 5050/5800/5850/5950/7570/7730/7780/9395/9455/9955/15770/17790 kHz), WWCR Nashville (3215/4840/7520/9350/12160/15825 kHz), WBCQ Monticello ME (3265/5130/7490/9330 kHz), WTWW Lebanon TN (5085/7505 kHz), BBC World Service Africa frequencies, Voice of America Africa/Middle East/Asia, Radio Romania International (6030/7220/9730/11800/13650 kHz), Radio France Internationale, China Radio International, KBS World Radio Korea, All India Radio External, Voice of Turkey, Radio New Zealand Pacific, Radio Habana Cuba, Voice of Vietnam, Channel 292 Germany, Radio Exterior de Espana, Vatican Radio, Radio Taiwan International, Radio Japan NHK World, Radio Free Asia, Radio Free Europe/Radio Liberty, Trans World Radio, Adventist World Radio, Radio Marti, Radio Sawa, Radio Farda, Voice of Korea DPRK, Radio Bulgaria, Voice of Nigeria, WWV/WWVH time signals (2500/5000/10000/14670/15000/20000 kHz continuous), CHU Ottawa (3330/7850/14670 kHz), UVB-76 The Buzzer (4625 kHz continuous), USAF HF-GCS SKYKING (11175/8992 kHz), Shannon/New York/San Francisco VOLMET, and all active pirate stations on 6925/6950 kHz weekends. Always give specific kHz values, UTC times, and target regions. If a station is not currently broadcasting state exactly when it next comes on.";
+  fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":ANTHROPIC_KEY,"anthropic-version":"2023-06-01"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:600,system:sys,messages:[{role:"user",content:prompt}]})})
   .then(function(r){return r.json();}).then(function(data){
     var text=(data.content&&data.content[0]&&data.content[0].text)||"No identification data returned.";
     if(p.spin)p.spin.style.display="none";
-    if(p.aiTxt){p.aiTxt.textContent="";var i=0;var iv=setInterval(function(){if(i<text.length){p.aiTxt.textContent+=text[i];i++;}else clearInterval(iv);},10);}
+    if(p.aiTxt){p.aiTxt.textContent="";var i=0;var iv=setInterval(function(){if(i<text.length){p.aiTxt.textContent+=text[i];i++;}else clearInterval(iv);},8);}
     if(kHz&&p.links){
       var a1=document.createElement("a");a1.href="http://websdr.ewi.utwente.nl:8901/?tune="+kHz+"am";a1.target="_blank";a1.className="llnk";a1.textContent="Listen AM";
       var a2=document.createElement("a");a2.href="http://websdr.ewi.utwente.nl:8901/?tune="+kHz+"usb";a2.target="_blank";a2.className="llnk";a2.textContent="Listen USB";
-      var a3=document.createElement("a");a3.href="https://shortwavedb.org/?freq="+kHz;a3.target="_blank";a3.className="llnk";a3.textContent="ShortwareDB \u2197";
-      p.links.appendChild(a1);p.links.appendChild(a2);p.links.appendChild(a3);
+      var a3=document.createElement("a");a3.href="https://shortwavedb.org/?freq="+kHz;a3.target="_blank";a3.className="llnk";a3.textContent="ShortwaveDB \u2197";
+      var a4=document.createElement("a");a4.href="http://radiosparks.com/shortwave.php";a4.target="_blank";a4.className="llnk";a4.textContent="EIBI A-26 \u2197";
+      p.links.appendChild(a1);p.links.appendChild(a2);p.links.appendChild(a3);p.links.appendChild(a4);
     }
-  }).catch(function(e){if(p.spin)p.spin.style.display="none";if(p.aiTxt)p.aiTxt.textContent="AI identification failed: "+e.message;})
+  }).catch(function(e){if(p.spin)p.spin.style.display="none";if(p.aiTxt)p.aiTxt.textContent="AI identification failed. Check your internet connection. You can also look up this frequency at radiosparks.com or shortwavedb.org";})
   .finally(function(){var b=document.getElementById("se-btn");if(b)b.disabled=false;});
 }
 
@@ -2982,7 +3120,7 @@ function aiRefreshSchedule(){
   var onAirNames=[];for(var i=0;i<SCH.length&&onAirNames.length<12;i++){if(isOn(SCH[i]))onAirNames.push(SCH[i].freq+" "+SCH[i].stn);}
   var sys="You are a shortwave schedule verification expert with knowledge of the EIBI A-26 2026 season, HFCC registrations, and WRMI/WWCR/WBCQ current schedules. Confirm which major broadcasters are reliably on air at the given UTC time, and flag any well-known recent changes (closures, frequency moves, new services) a hobbyist should know about. Be concise and practical.";
   var usr="It is currently "+utcStr+". My database shows these among the on-air stations: "+onAirNames.join("; ")+". Briefly confirm these look correct for this UTC hour, and note any 1-2 important schedule changes or reliable additions a shortwave listener should be aware of right now. Under 160 words.";
-  fetch("/.netlify/functions/ai",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:340,system:sys,messages:[{role:"user",content:usr}]})})
+  fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":ANTHROPIC_KEY,"anthropic-version":"2023-06-01"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:340,system:sys,messages:[{role:"user",content:usr}]})})
   .then(function(r){return r.json();}).then(function(data){
     var text=(data.content&&data.content[0]&&data.content[0].text)||"No response received.";
     out.textContent="";var i=0;var iv=setInterval(function(){if(i<text.length){out.textContent+=text[i];i++;}else clearInterval(iv);},9);
