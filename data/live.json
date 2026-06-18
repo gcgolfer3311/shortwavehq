@@ -1,16 +1,17 @@
 {
-  "headline": "Shortwave Radio Daily Briefing - Increased Solar Activity Expected",
+  "updated_utc": "2026-06-18 18:53 UTC",
+  "headline": "ShortwaveHQ Daily Briefing \u2014 June 18, 2026",
   "highlights": [
-    "BBC World Service on 6.195 kHz reports strong signals across Europe and Africa",
-    "Voice of America relaying on 9.455 kHz showing excellent propagation to Asia-Pacific",
-    "China Radio International on 11.640 kHz maintains stable reception in Middle East regions",
-    "Deutsche Welle broadcasting on 13.790 kHz with improved clarity over Western Africa"
+    "9395 kHz \u2014 WRMI Okeechobee FL \u2014 Evening programming active",
+    "9730 kHz \u2014 Radio Romania International \u2014 Evening English service",
+    "5000 kHz \u2014 WWV \u2014 Time signals 24/7",
+    "6925 kHz \u2014 Pirate radio \u2014 Check weekends for pirate activity"
   ],
   "changes": [
-    "RFI French service temporarily shifted from 11.600 kHz to 11.615 kHz due to interference mitigation",
-    "Radio Romania International reduced power output on 5.990 kHz for maintenance through 2024-01-15"
+    "EIBI A-26 2026 schedule active through October 25, 2026",
+    "Check hqshortwaveradio.com for real-time AI frequency identification"
   ],
-  "propagation_note": "K-index at 4, expect F2 layer skip distances 800-1500 km. Morning hours optimal for long-distance propagation. Sunset terminator currently favorable for transatlantic reception.",
-  "updated_utc": "2026-06-14 21:10 UTC",
-  "status": "ok"
+  "propagation_note": "Evening hours favor 31m and 49m bands. Transatlantic and European signals improving.",
+  "status": "ok",
+  "source": "scheduled"
 }
