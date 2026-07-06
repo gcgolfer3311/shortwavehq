@@ -125,3 +125,48 @@ if not write_ai_briefing():
 
 print("Done")
 sys.exit(0)  # Always exit 0 so workflow succeeds
+# ══ APPEND TO update.py ══ Station/DX Tip of the Day (no API cost, deterministic daily rotation)
+import datetime, json, hashlib, os
+
+STATIONS_POOL = [
+ {"name":"WRMI Radio Miami International","freq":"9455 kHz","tip":"Okeechobee FL powerhouse — 12×100kW transmitters. Best reception evenings across the Americas."},
+ {"name":"Radio Romania International","freq":"9730 kHz","tip":"English to N. America 0900–1000 UTC. Reliable 31m signal, strong into the eastern US."},
+ {"name":"BBC World Service","freq":"12095 kHz","tip":"Ascension relay to Africa. One of the last major English SW services still broadcasting."},
+ {"name":"Radio Habana Cuba","freq":"6000 kHz","tip":"Strong nighttime signal across North America on 49m. English 0100–0500 UTC."},
+ {"name":"WWV Fort Collins","freq":"5000/10000/15000 kHz","tip":"Time standard, 24/7. Perfect for testing receiver calibration and propagation."},
+ {"name":"Voice of Turkey","freq":"9830 kHz","tip":"English to N. America 2200–2300 UTC. Free QSL cards — great for new DXers."},
+ {"name":"China Radio International","freq":"7350 kHz","tip":"Massive global network. English programming around the clock on multiple bands."},
+ {"name":"RNZ Pacific","freq":"9700 kHz","tip":"New Zealand to the Pacific. Excellent audio, DRM + AM. Best for west-coast US listeners."},
+ {"name":"WBCQ The Planet","freq":"7490 kHz","tip":"Maine independent SW. Eclectic programming — a genuine free-radio survivor."},
+ {"name":"UVB-76 'The Buzzer'","freq":"4625 kHz","tip":"Russian mystery station, continuous buzz 24/7. Occasional voice messages — a DX legend."},
+ {"name":"All India Radio","freq":"9445 kHz","tip":"External Service in English. Distinctive interval signal, strong on 31m to Europe/ME."},
+ {"name":"Radio Free Asia","freq":"9455 kHz","tip":"Multiple target languages into Asia. Frequency-hops to counter jamming."},
+ {"name":"WWCR Nashville","freq":"9350 kHz","tip":"US private broadcaster, 24/7. Consistent strong signal — good beginner target."},
+ {"name":"Voice of Korea (DPRK)","freq":"11710 kHz","tip":"North Korea's external service. Unmistakable programming — a bucket-list DX catch."},
+]
+DX_TIPS = [
+ "Gray-line propagation peaks at your local sunrise/sunset — best DX window of the day.",
+ "Lower bands (49m/41m) open at night; higher bands (19m/16m) favor daytime.",
+ "A simple longwire outperforms most whip antennas on shortwave. Length beats complexity.",
+ "Log the SINPO of every catch — patterns reveal your best frequencies and times.",
+ "Winter nights = peak SW season. Lower noise, better low-band propagation.",
+ "High solar flux (SFI) boosts upper bands. Check SFI before chasing 13m/11m DX.",
+ "A low K-index (0–2) means quiet geomagnetic conditions — ideal for weak-signal DX.",
+ "Null out local noise: rotate a loop antenna to minimize interference before the signal.",
+ "Pirate radio clusters on 6925 kHz AM/USB, weekend nights after 0100 UTC.",
+ "Utility and time stations are perfect for calibrating your receiver's frequency readout.",
+]
+
+def _didx(n, salt):
+    t = datetime.date.today().isoformat()
+    return int(hashlib.md5((t+salt).encode()).hexdigest(), 16) % n
+
+os.makedirs("data", exist_ok=True)
+_daily = {
+    "date": datetime.date.today().isoformat(),
+    "station_of_day": STATIONS_POOL[_didx(len(STATIONS_POOL), "station")],
+    "dx_tip": DX_TIPS[_didx(len(DX_TIPS), "dxtip")],
+}
+with open("data/daily.json", "w") as _f:
+    json.dump(_daily, _f, indent=2)
+print("daily.json written:", _daily["date"], _daily["station_of_day"]["name"])
