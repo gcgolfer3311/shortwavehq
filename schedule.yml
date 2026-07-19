@@ -1,4 +1,4 @@
-name: Update Shortwave Schedule
+name:.github/workflows/schedule.yml
 
 # Runs daily to pull the latest EIBI A-26 schedule and refresh data/schedule.json.
 # The site loads that file at startup, so the whole station database self-updates
