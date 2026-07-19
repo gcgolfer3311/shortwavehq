@@ -1,0 +1,40 @@
+name: Update Shortwave Schedule
+
+# Runs daily to pull the latest EIBI A-26 schedule and refresh data/schedule.json.
+# The site loads that file at startup, so the whole station database self-updates
+# with no manual editing. Safe by design: schedule_update.py refuses to overwrite
+# with a bad/short parse, so a failed fetch never breaks the live site.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'   # 05:17 UTC daily (offset so it's not on the hour)
+  workflow_dispatch:         # lets you run it manually from the Actions tab
+
+jobs:
+  update-schedule:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run schedule updater
+        run: python schedule_update.py
+
+      - name: Commit updated schedule
+        run: |
+          git config user.name  "shortwavehq-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/schedule.json
+          if git diff --staged --quiet; then
+            echo "No schedule changes today."
+          else
+            git commit -m "Auto-update shortwave schedule from EIBI ($(date -u +%Y-%m-%d))"
+            git push
+          fi
