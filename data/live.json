@@ -1,17 +1,17 @@
 {
-  "updated_utc": "2026-07-20 07:52 UTC",
+  "updated_utc": "2026-07-20 17:59 UTC",
   "headline": "ShortwaveHQ Daily Briefing \u2014 July 20, 2026",
   "highlights": [
-    "5000 kHz \u2014 WWV Fort Collins CO \u2014 Time signals continuous",
-    "9730 kHz \u2014 Radio Romania International \u2014 English 0900-1000 UTC",
-    "9395 kHz \u2014 WRMI Okeechobee FL \u2014 Morning programming",
-    "6155 kHz \u2014 Various \u2014 49m band active morning hours"
+    "9730 kHz \u2014 Radio Romania International \u2014 Active afternoon window",
+    "9395 kHz \u2014 WRMI \u2014 Afternoon relay schedule",
+    "11800 kHz \u2014 Various international \u2014 25m band open",
+    "15000 kHz \u2014 WWV Fort Collins CO \u2014 Time signals continuous"
   ],
   "changes": [
     "EIBI A-26 2026 schedule active through October 25, 2026",
     "Check hqshortwaveradio.com for real-time AI frequency identification"
   ],
-  "propagation_note": "Morning propagation building. Higher bands opening as solar flux increases.",
+  "propagation_note": "Peak daytime propagation on 25m and 31m bands. Good conditions for transatlantic paths.",
   "status": "ok",
   "source": "scheduled"
 }
