@@ -37,20 +37,21 @@ MIN_MHZ, MAX_MHZ = 2.3, 30.0   # broadcast HF only (coarse pre-filter)
 # in those gaps. Restricting to these segments is what actually keeps
 # the database to "what a listener tunes for."
 BROADCAST_BANDS = [
-    (2.300, 2.495),   # 120m tropical
-    (3.200, 3.400),   # 90m tropical
-    (3.900, 4.000),   # 75m
-    (4.750, 5.060),   # 60m tropical
-    (5.900, 6.200),   # 49m
-    (7.200, 7.450),   # 41m
-    (9.400, 9.900),   # 31m
-    (11.600, 12.100), # 25m
-    (13.570, 13.870), # 22m
-    (15.100, 15.800), # 19m
-    (17.480, 17.900), # 16m
-    (18.900, 19.020), # 15m
-    (21.450, 21.850), # 13m
-    (25.670, 26.100), # 11m
+    (2.300, 2.500),   # 120m tropical
+    (3.150, 3.500),   # 90m tropical (widened — some stations sit just outside)
+    (3.850, 4.050),   # 75m (widened for edge broadcasters)
+    (4.700, 5.100),   # 60m tropical (widened)
+    (5.800, 6.300),   # 49m (widened — catches edge stations)
+    (6.800, 7.000),   # Pirate/unofficial allocation around 6.9 MHz
+    (7.100, 7.500),   # 41m (widened)
+    (9.300, 10.000),  # 31m (widened — WRMI uses 9.395 and 9.955)
+    (11.550, 12.150), # 25m (widened)
+    (13.550, 13.900), # 22m (widened)
+    (15.050, 15.850), # 19m (widened)
+    (17.450, 17.950), # 16m (widened)
+    (18.850, 19.050), # 15m (widened)
+    (21.400, 21.900), # 13m (widened)
+    (25.600, 26.100), # 11m
 ]
 
 def in_broadcast_band(mhz):
