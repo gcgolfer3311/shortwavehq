@@ -1,14 +1,14 @@
 [
   {
-    "name": "Michael S.",
-    "callsign": "KM7FMJ",
-    "location": "Gilbert, AZ",
-    "photo": "",
-    "radio": "Your radio here",
-    "antenna": "Your antenna here",
-    "favorite_freq": "9.395 MHz — WRMI",
-    "why": "Got hooked chasing pirate stations late at night. Once you hear something you're not supposed to, you can't stop.",
-    "best_catch": "Logged UVB-76 during a particularly active burst.",
-    "month": "July 2026"
+    "name": "Raul Alfonso Guerrero",
+    "callsign": "VE2009SWL",
+    "location": "Cartagena, Colombia (now Canada)",
+    "photo": "data/raul.jpg",
+    "radio": "500+ radios over a lifetime — currently 100+ in active collection",
+    "antenna": "Indoor and outdoor, various configurations",
+    "favorite_freq": "Voice of Free China (Radio Taiwan International) — where it all began",
+    "why": "At age four I picked up my father's transistor radio and accidentally switched it to SW. I heard voices in completely unfamiliar languages and grasped that the signal was coming from far away. That moment never left me.",
+    "best_catch": "A letter to Maria Francisca at The Voice of Free China led to my first QSL card — a large envelope stuffed with magazines, stickers, pennants, and a card that arrived two months later. I had no idea stations replied to mail.",
+    "month": "August 2026"
   }
 ]
