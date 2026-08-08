@@ -1,0 +1,9 @@
+[build]
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
