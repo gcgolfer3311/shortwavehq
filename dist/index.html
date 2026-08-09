@@ -2776,7 +2776,7 @@ function clientDaily(){
 function loadDaily(){
   clientDaily(); // always show fresh content first
   var todayStr=new Date().toISOString().slice(0,10);
-  fetch("data/daily.json",{cache:"no-store"})
+  fetch("/data/daily.json",{cache:"no-store"})
   .then(function(r){if(!r.ok)throw new Error("no file");return r.json();})
   .then(function(d){
     // only let the backend override if its file is actually dated today
@@ -4156,7 +4156,7 @@ function renderGuestbook(){
 async function renderEnthusiast(){
   var el=document.getElementById("enthusiast-section");if(!el)return;
   try{
-    var res=await fetch("data/enthusiasts.json",{cache:"no-store"});
+    var res=await fetch("/data/enthusiasts.json",{cache:"no-store"});
     if(!res.ok){el.innerHTML="";return;}
     var data=await res.json();
     if(!data||!data.length){el.innerHTML="";return;}
@@ -4182,7 +4182,7 @@ async function renderEnthusiast(){
 async function renderEnthusiastPage(){
   var el=document.getElementById("enthusiast-page-section");if(!el)return;
   try{
-    var res=await fetch("data/enthusiasts.json",{cache:"no-store"});
+    var res=await fetch("/data/enthusiasts.json",{cache:"no-store"});
     if(!res.ok){el.innerHTML="<p style='padding:1rem;font-family:var(--mono);font-size:.75rem;color:var(--m2)'>No featured enthusiast yet — check back soon.</p>";return;}
     var data=await res.json();
     if(!data||!data.length){el.innerHTML="";return;}
@@ -4291,7 +4291,7 @@ function renderHist(){
 
 function renderScheduleChanges(){
   var box=document.getElementById("sched-changes");if(!box)return;
-  fetch("data/schedule-changes.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+  fetch("/data/schedule-changes.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
     var entries=(d&&d.entries)||[];
     box.innerHTML="";
     if(!entries.length){
@@ -4815,20 +4815,29 @@ function bootShortwaveHQ(){
   loadTextSize();
   // Load full EIBI dataset (4,800+ rows) then render everything
   _loadSchedule(function(){
-    renderHome();
-    loadLiveBriefing();
-    buildFC("now-fc",setNF);
-    renderHist();
-    renderScheduleChanges();
-    renderNS();
-    renderVint();
-    renderEQ();
-    renderQSL();
-    renderReviews();
-    renderReviewBanner();
-    renderEnthusiast();
-    filterDirectory();
-    renderIntervals();
+    // Each render call is isolated: one failing step can no longer take
+    // down every step after it (this previously caused Reviews/Enthusiast
+    // to silently vanish whenever an earlier render threw).
+    var _steps=[
+      ["renderHome",renderHome],
+      ["loadLiveBriefing",loadLiveBriefing],
+      ["buildFC",function(){buildFC("now-fc",setNF);}],
+      ["renderReviews",renderReviews],
+      ["renderReviewBanner",renderReviewBanner],
+      ["renderEnthusiast",renderEnthusiast],
+      ["renderHist",renderHist],
+      ["renderScheduleChanges",renderScheduleChanges],
+      ["renderNS",renderNS],
+      ["renderVint",renderVint],
+      ["renderEQ",renderEQ],
+      ["renderQSL",renderQSL],
+      ["filterDirectory",filterDirectory],
+      ["renderIntervals",renderIntervals]
+    ];
+    for(var _s=0;_s<_steps.length;_s++){
+      try{_steps[_s][1]();}
+      catch(_e){console.error("[boot] "+_steps[_s][0]+" failed:",_e);}
+    }
   });
 function syncMastHeight(){
   var m=document.querySelector(".mast");
@@ -4866,7 +4875,7 @@ setInterval(loadGuestbookLive,25000); // light poll so other visitors' posts sho
   var done=false;
   var go=function(){if(done)return;done=true;bootShortwaveHQ();};
   try{
-    fetch("data/schedule.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    fetch("/data/schedule.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
       if(d&&d.sch&&d.sch.length>=200){
         // MERGE instead of replace: the live EIBI feed only covers broadcast
         // stations. The built-in SCH also has hand-curated Numbers, Pirate,
