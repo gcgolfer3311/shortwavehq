@@ -110,6 +110,14 @@ body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size
 .ni{font-family:var(--mono);font-size:.56rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.85);padding:0 .6rem;height:34px;display:flex;align-items:center;gap:5px;border:none;background:transparent;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;font-weight:600}
 .ni:hover{color:#fff;background:rgba(255,255,255,.06)}.ni.on{color:#fff;border-bottom-color:var(--red)}
 .ni-icon{font-size:.75rem;opacity:.7}
+.ni-drop{position:relative}
+.ni-drop-caret{font-size:.5rem;opacity:.55;margin-left:1px}
+.ni-drop.has-on>.ni-drop-btn{color:#fff;border-bottom-color:var(--red)}
+.ni-drop-menu{position:absolute;top:100%;left:0;margin-top:4px;background:var(--ink);border:1px solid rgba(255,255,255,.14);border-radius:8px;min-width:170px;padding:6px;display:none;z-index:60;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+.ni-drop.open>.ni-drop-menu{display:block}
+.ni-drop-item{display:flex;align-items:center;gap:7px;width:100%;text-align:left;background:transparent;border:none;color:rgba(255,255,255,.8);font-family:var(--mono);font-size:.6rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:8px 10px;border-radius:5px;cursor:pointer;text-decoration:none}
+.ni-drop-item:hover{background:rgba(255,255,255,.08);color:#fff}
+.ni-drop-item.on{color:var(--red)}
 .mright{display:flex;align-items:center;gap:7px;flex-shrink:0;padding-left:.9rem;border-left:1px solid rgba(255,255,255,.08);margin-left:auto}
 .night-btn{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:3px;color:rgba(255,255,255,.5);font-family:var(--mono);font-size:.56rem;padding:4px 9px;cursor:pointer;transition:all .15s;white-space:nowrap}
 .night-btn:hover{background:rgba(255,255,255,.13);color:#fff}
@@ -895,24 +903,42 @@ a,button,input,select,textarea{touch-action:manipulation}
   <nav class="mnav">
     <button class="ni on" id="n-home" onclick="go('home',this)"><span class="ni-icon">🔍</span>Search</button>
     <button class="ni" id="n-now" onclick="go('now',this)"><span class="ni-icon">📡</span>On Air Now</button>
-    <button class="ni" id="n-finder" onclick="go('finder',this)"><span class="ni-icon">📋</span>Finder</button>
-    <button class="ni" id="n-radar" onclick="go('radar',this)"><span class="ni-icon">📊</span>Radar</button>
-    <button class="ni" id="n-dx" onclick="go('dx',this)"><span class="ni-icon">🎯</span>DX Challenge</button>
-    <button class="ni" id="n-timemachine" onclick="go('timemachine',this)"><span class="ni-icon">⏱</span>Time Machine</button>
-    <button class="ni" id="n-worldmap" onclick="go('worldmap',this)"><span class="ni-icon">🌍</span>World Map</button>
-    <button class="ni" id="n-propagation" onclick="go('propagation',this)"><span class="ni-icon">☀</span>Propagation</button>
-    <button class="ni" id="n-log" onclick="go('log',this)"><span class="ni-icon">📓</span>My Log</button>
-    <button class="ni" id="n-memories" onclick="go('memories',this)"><span class="ni-icon">💬</span>Memories</button>
-    <button class="ni" id="n-guestbook" onclick="scrollToGuestbook(this)"><span class="ni-icon">📝</span>Guestbook</button>
-    <button class="ni" id="n-history" onclick="go('history',this)"><span class="ni-icon">📖</span>History</button>
-    <button class="ni" id="n-equipment" onclick="go('equipment',this)"><span class="ni-icon">🔧</span>Equipment</button>
-    <button class="ni" id="n-reviews" onclick="go('reviews',this)"><span class="ni-icon">🎧</span>Reviews</button>
-    <a class="ni" href="/articles/" style="text-decoration:none"><span class="ni-icon">📰</span>Articles</a>
-    <button class="ni" id="n-qsl" onclick="go('qsl',this)"><span class="ni-icon">📬</span>QSL Gallery</button>
     <button class="ni" id="n-directory" onclick="go('directory',this)"><span class="ni-icon">📋</span>All Stations</button>
     <button class="ni" id="n-starthere" onclick="go('starthere',this)" style="color:#fbbf24;border-bottom-color:transparent"><span class="ni-icon">⭐</span>Start Here</button>
-    <button class="ni" id="n-enthusiast" onclick="go('enthusiast',this)"><span class="ni-icon">🏆</span>Enthusiast</button>
-    <button class="ni" id="n-advertise" onclick="go('advertise',this)"><span class="ni-icon">📣</span>Advertise</button>
+
+    <div class="ni-drop" id="drop-tools">
+      <button class="ni ni-drop-btn" id="ndh-tools" onclick="toggleNiDrop('drop-tools',event)"><span class="ni-icon">🛠</span>Tools<span class="ni-drop-caret">▾</span></button>
+      <div class="ni-drop-menu">
+        <button class="ni-drop-item" id="n-finder" onclick="go('finder',this);closeNiDrops()"><span class="ni-icon">📋</span>Finder</button>
+        <button class="ni-drop-item" id="n-radar" onclick="go('radar',this);closeNiDrops()"><span class="ni-icon">📊</span>Radar</button>
+        <button class="ni-drop-item" id="n-worldmap" onclick="go('worldmap',this);closeNiDrops()"><span class="ni-icon">🌍</span>World Map</button>
+        <button class="ni-drop-item" id="n-propagation" onclick="go('propagation',this);closeNiDrops()"><span class="ni-icon">☀</span>Propagation</button>
+        <button class="ni-drop-item" id="n-dx" onclick="go('dx',this);closeNiDrops()"><span class="ni-icon">🎯</span>DX Challenge</button>
+        <button class="ni-drop-item" id="n-timemachine" onclick="go('timemachine',this);closeNiDrops()"><span class="ni-icon">⏱</span>Time Machine</button>
+      </div>
+    </div>
+
+    <div class="ni-drop" id="drop-community">
+      <button class="ni ni-drop-btn" id="ndh-community" onclick="toggleNiDrop('drop-community',event)"><span class="ni-icon">💬</span>Community<span class="ni-drop-caret">▾</span></button>
+      <div class="ni-drop-menu">
+        <button class="ni-drop-item" id="n-log" onclick="go('log',this);closeNiDrops()"><span class="ni-icon">📓</span>My Log</button>
+        <button class="ni-drop-item" id="n-memories" onclick="go('memories',this);closeNiDrops()"><span class="ni-icon">💬</span>Memories</button>
+        <button class="ni-drop-item" id="n-guestbook" onclick="scrollToGuestbook(this);closeNiDrops()"><span class="ni-icon">📝</span>Guestbook</button>
+        <button class="ni-drop-item" id="n-history" onclick="go('history',this);closeNiDrops()"><span class="ni-icon">📖</span>History</button>
+        <button class="ni-drop-item" id="n-qsl" onclick="go('qsl',this);closeNiDrops()"><span class="ni-icon">📬</span>QSL Gallery</button>
+        <button class="ni-drop-item" id="n-enthusiast" onclick="go('enthusiast',this);closeNiDrops()"><span class="ni-icon">🏆</span>Enthusiast</button>
+      </div>
+    </div>
+
+    <div class="ni-drop" id="drop-magazine">
+      <button class="ni ni-drop-btn" id="ndh-magazine" onclick="toggleNiDrop('drop-magazine',event)"><span class="ni-icon">🎧</span>Magazine<span class="ni-drop-caret">▾</span></button>
+      <div class="ni-drop-menu">
+        <button class="ni-drop-item" id="n-reviews" onclick="go('reviews',this);closeNiDrops()"><span class="ni-icon">🎧</span>Reviews</button>
+        <button class="ni-drop-item" id="n-equipment" onclick="go('equipment',this);closeNiDrops()"><span class="ni-icon">🔧</span>Equipment</button>
+        <a class="ni-drop-item" href="/articles/" style="text-decoration:none"><span class="ni-icon">📰</span>Articles</a>
+        <button class="ni-drop-item" id="n-advertise" onclick="go('advertise',this);closeNiDrops()"><span class="ni-icon">📣</span>Advertise</button>
+      </div>
+    </div>
   </nav>
   </div>
 </header>
@@ -1027,43 +1053,6 @@ a,button,input,select,textarea{touch-action:manipulation}
         </div>
       </div>
     </div>
-    <!-- EQUIPMENT CTA BANNER -->
-    <div style="margin-bottom:1.5rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,.1)">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
-        <div>
-          <div style="font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FF9900;margin-bottom:.4rem">🎙 Shortwave Equipment</div>
-          <div style="font-family:var(--disp);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:.4rem">Find the right radio for you</div>
-          <div style="font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5">From $29 USB dongles to $1,800 professional receivers — every level covered with honest recommendations and Amazon links.</div>
-        </div>
-        <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap">
-          <a href="https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;display:block;background:#FF9900;color:#000;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;white-space:nowrap;letter-spacing:.03em" onmouseover="this.style.background='#e68a00'" onmouseout="this.style.background='#FF9900'">🔥 #1 Pick: Tecsun PL-330</a>
-          <button onclick="go('equipment',document.getElementById('n-equipment'))" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;cursor:pointer;white-space:nowrap" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">View All Equipment →</button>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.08)">
-        <a href="https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
-          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$79</div>
-          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Tecsun PL-330</div>
-          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best beginner radio</div>
-        </a>
-        <a href="https://www.amazon.com/dp/B0CD745394?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
-          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$30</div>
-          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">RTL-SDR V4</div>
-          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best budget SDR</div>
-        </a>
-        <a href="https://www.amazon.com/dp/B001F0MNRM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
-          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$49</div>
-          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Kaito KA500</div>
-          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Solar emergency radio</div>
-        </a>
-        <a href="https://www.amazon.com/dp/B07PZ96BZZ?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
-          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$5</div>
-          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Longwire Antenna</div>
-          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best upgrade · ever</div>
-        </a>
-      </div>
-    </div>
-
     <div style="display:grid;grid-template-columns:1fr 1fr 360px;gap:1.5rem" id="hgrid">
 
       <!-- COL 1: ON AIR NOW -->
@@ -1109,6 +1098,43 @@ a,button,input,select,textarea{touch-action:manipulation}
             <button class="btn btn-d" onclick="quickLog()" style="width:100%">Log It</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- EQUIPMENT CTA BANNER (secondary — database content leads the page) -->
+    <div style="margin-top:1.8rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,.1)">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div style="font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FF9900;margin-bottom:.4rem">🎙 Shortwave Equipment</div>
+          <div style="font-family:var(--disp);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:.4rem">Find the right radio for you</div>
+          <div style="font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5">From $29 USB dongles to $1,800 professional receivers — every level covered with honest recommendations and Amazon links.</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap">
+          <a href="https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;display:block;background:#FF9900;color:#000;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;white-space:nowrap;letter-spacing:.03em" onmouseover="this.style.background='#e68a00'" onmouseout="this.style.background='#FF9900'">🔥 #1 Pick: Tecsun PL-330</a>
+          <button onclick="go('equipment',document.getElementById('n-equipment'))" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;cursor:pointer;white-space:nowrap" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(255,255,255,.08)'">View All Equipment →</button>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.08)">
+        <a href="https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
+          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$79</div>
+          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Tecsun PL-330</div>
+          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best beginner radio</div>
+        </a>
+        <a href="https://www.amazon.com/dp/B0CD745394?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
+          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$30</div>
+          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">RTL-SDR V4</div>
+          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best budget SDR</div>
+        </a>
+        <a href="https://www.amazon.com/dp/B001F0MNRM?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
+          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$49</div>
+          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Kaito KA500</div>
+          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Solar emergency radio</div>
+        </a>
+        <a href="https://www.amazon.com/dp/B07PZ96BZZ?tag=shortwave1877-20" target="_blank" style="text-decoration:none;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem .9rem;display:block" onmouseover="this.style.borderColor='#FF9900'" onmouseout="this.style.borderColor='rgba(255,255,255,.1)'">
+          <div style="font-family:var(--mono);font-size:.6rem;color:#FF9900;font-weight:700">$5</div>
+          <div style="font-family:var(--disp);font-size:.8rem;font-weight:700;color:#fff;margin:.2rem 0">Longwire Antenna</div>
+          <div style="font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.45)">Best upgrade · ever</div>
+        </a>
       </div>
     </div>
   </div>
@@ -2819,8 +2845,9 @@ function go(pg,btn){
   curPg=pg;
   var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++)pages[i].classList.remove("on");
   var el=document.getElementById("pg-"+pg);if(el)el.classList.add("on");
-  var navs=document.querySelectorAll(".ni");for(var j=0;j<navs.length;j++)navs[j].classList.remove("on");
+  var navs=document.querySelectorAll(".ni,.ni-drop-item");for(var j=0;j<navs.length;j++)navs[j].classList.remove("on");
   if(btn&&btn.classList)btn.classList.add("on");
+  var drops=document.querySelectorAll(".ni-drop");for(var k=0;k<drops.length;k++)drops[k].classList.toggle("has-on",!!drops[k].querySelector(".on"));
   mobNav(pg);
   window.scrollTo({top:0,behavior:"smooth"});
   var fns={home:renderHome,now:renderNow,finder:renderFinder,radar:renderRadar,
@@ -4731,6 +4758,9 @@ function mobNav(pg){
   closeMobMore();
 }
 var mobMoreOpen=false;
+function toggleNiDrop(id,e){if(e)e.stopPropagation();var d=document.getElementById(id);if(!d)return;var open=d.classList.contains("open");closeNiDrops();if(!open)d.classList.add("open");}
+function closeNiDrops(){var ds=document.querySelectorAll(".ni-drop.open");for(var i=0;i<ds.length;i++)ds[i].classList.remove("open");}
+document.addEventListener("click",function(e){var ds=document.querySelectorAll(".ni-drop.open");if(!ds.length)return;for(var i=0;i<ds.length;i++){if(!ds[i].contains(e.target)){closeNiDrops();break;}}});
 function toggleMobMore(){mobMoreOpen=!mobMoreOpen;var m=document.getElementById("mob-more");if(m)m.style.display=mobMoreOpen?"block":"none";}
 function closeMobMore(){mobMoreOpen=false;var m=document.getElementById("mob-more");if(m)m.style.display="none";}
 document.addEventListener("click",function(e){if(!mobMoreOpen)return;var m=document.getElementById("mob-more");if(m&&!m.contains(e.target)){var btn=document.getElementById("mn-more");if(!btn||!btn.contains(e.target))closeMobMore();}});
