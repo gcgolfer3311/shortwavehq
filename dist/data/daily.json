@@ -1,0 +1,9 @@
+{
+  "date": "2026-07-06",
+  "station_of_day": {
+    "name": "All India Radio",
+    "freq": "9445 kHz",
+    "tip": "External Service in English. Distinctive interval signal, strong on 31m to Europe/ME."
+  },
+  "dx_tip": "Utility and time stations are perfect for calibrating your receiver's frequency readout."
+}
