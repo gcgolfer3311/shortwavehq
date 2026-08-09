@@ -11,7 +11,7 @@
 //   [functions]
 //     directory = "functions"
 
-const { getStore } = require("@netlify/blobs");
+const { getStore } = require("./vendor/netlify-blobs/main.cjs");
 
 const KEY = "entries";
 const MAX_STORED = 500;   // hard cap so the blob can't grow unbounded
