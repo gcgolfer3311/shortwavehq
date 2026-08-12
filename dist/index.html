@@ -905,6 +905,7 @@ a,button,input,select,textarea{touch-action:manipulation}
     <button class="ni" id="n-now" onclick="go('now',this)"><span class="ni-icon">📡</span>On Air Now</button>
     <button class="ni" id="n-directory" onclick="go('directory',this)"><span class="ni-icon">📋</span>All Stations</button>
     <button class="ni" id="n-starthere" onclick="go('starthere',this)" style="color:#fbbf24;border-bottom-color:transparent"><span class="ni-icon">⭐</span>Start Here</button>
+    <a class="ni" id="n-reviews" href="/reviews/" onclick="if(!event.metaKey&&!event.ctrlKey&&!event.shiftKey){event.preventDefault();go('reviews',this);}"><span class="ni-icon">🎧</span>Reviews</a>
 
     <div class="ni-drop" id="drop-tools">
       <button class="ni ni-drop-btn" id="ndh-tools" onclick="toggleNiDrop('drop-tools',event)"><span class="ni-icon">🛠</span>Tools<span class="ni-drop-caret">▾</span></button>
@@ -933,7 +934,6 @@ a,button,input,select,textarea{touch-action:manipulation}
     <div class="ni-drop" id="drop-magazine">
       <button class="ni ni-drop-btn" id="ndh-magazine" onclick="toggleNiDrop('drop-magazine',event)"><span class="ni-icon">🎧</span>Magazine<span class="ni-drop-caret">▾</span></button>
       <div class="ni-drop-menu">
-        <a class="ni-drop-item" id="n-reviews" href="/reviews/" onclick="if(!event.metaKey&&!event.ctrlKey&&!event.shiftKey){event.preventDefault();go('reviews',this);closeNiDrops();}"><span class="ni-icon">🎧</span>Reviews</a>
         <button class="ni-drop-item" id="n-equipment" onclick="go('equipment',this);closeNiDrops()"><span class="ni-icon">🔧</span>Equipment</button>
         <a class="ni-drop-item" href="/articles/" style="text-decoration:none"><span class="ni-icon">📰</span>Articles</a>
         <button class="ni-drop-item" id="n-advertise" onclick="go('advertise',this);closeNiDrops()"><span class="ni-icon">📣</span>Advertise</button>
@@ -2073,7 +2073,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 5c3b2772 · 2026-08-12 07:42 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build b1f1283a · 2026-08-12 18:26 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
