@@ -2073,7 +2073,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build b1f1283a · 2026-08-12 18:26 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build e204c38c · 2026-08-12 18:37 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4522,6 +4522,7 @@ function submitQSL(){
 var REVIEWS=[
   {n:"ChoYong LC100",cat:"Portable Receiver",d:"Full hands-on review coming once the LC100 officially launches — testing sensitivity, band coverage, and build quality.",status:"Coming Soon",url:"#"},
   {n:"ChoYong WT2",cat:"Multi-Mode / Internet Radio",status:"Published",url:"#",
+   date:"August 7, 2026",
    d:"A hybrid receiver: real shortwave/AM/FM DSP reception plus 50,000+ station internet radio and a PTT walkie-talkie mode, all in one compact unit.",
    thumb:"media/choyong-wt2-photo.png",
    amazonUrl:"https://www.amazon.com/dp/B0FWKF3NPJ?tag=shortwave1877-20",
@@ -4551,6 +4552,7 @@ var REVIEWS=[
    src:"Hands-on review by ShortwaveHQ"
   },
   {n:"ZHIWHIS ZWS-802",cat:"Multi-Band Wooden Cabinet Radio",status:"Published",url:"#",
+   date:"August 12, 2026",
    d:"A wooden-cabinet FM/AM/SW/Weather Band radio built around audio quality first, shipping with a wireless W3 repeater accessory to extend reception into AIR and VHF/UHF.",
    thumb:"media/zhiwhis-zws802-photo.jpg",
    amazonUrl:"https://amzn.to/4xd8dVb",
@@ -4583,6 +4585,7 @@ var REVIEWS=[
    src:"Specs verified against ZHIWHIS's official manual and independent hands-on testing (Blog or Die); pros, cons, and verdict based on ShortwaveHQ's own hands-on review of the unit."
   },
   {n:"XHDATA D-219",cat:"Portable Receiver",status:"Published",url:"https://youtube.com/shorts/zSTZVRtGMGI?feature=share",
+   date:"August 3, 2026",
    d:"An ultra-budget analog-dial DSP receiver — full video review, specs, and verdict below.",
    thumb:"media/xhdata-d219-thumb.jpg",
    amazonUrl:"https://www.amazon.com/dp/B0BPRPYSYF?tag=shortwave1877-20",
@@ -4647,7 +4650,7 @@ function ytVideoId(url){
 function buildFullReview(it){
   var wrap=document.createElement("div");wrap.className="rev-full";
 
-  var cat=document.createElement("div");cat.className="ad-cat";cat.textContent=it.cat+" \u00b7 "+it.status;
+  var cat=document.createElement("div");cat.className="ad-cat";cat.textContent=it.cat+" \u00b7 "+it.status+(it.date?" \u00b7 Reviewed "+it.date:"");
   var nm=document.createElement("div");nm.className="ad-nm";nm.style.fontSize="1.1rem";nm.textContent=it.n;
   var desc=document.createElement("div");desc.className="ad-desc";desc.textContent=it.d;
   wrap.appendChild(cat);wrap.appendChild(nm);wrap.appendChild(desc);
