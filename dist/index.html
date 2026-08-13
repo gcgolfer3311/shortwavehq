@@ -1041,6 +1041,21 @@ a,button,input,select,textarea{touch-action:manipulation}
       </div>
     </div>
     <!-- FEATURED REVIEW BANNER -->
+    <div id="lc100-teaser" style="display:none;margin-bottom:1.5rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(251,191,36,.35)">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem">
+        <div style="display:flex;align-items:center;gap:1rem;flex:1;min-width:240px">
+          <img src="media/choyong-lc100-photo.jpg" alt="ChoYong LC100" style="width:120px;border-radius:6px;border:1px solid rgba(255,255,255,.12);flex-shrink:0">
+          <div>
+            <div style="font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fbbf24;margin-bottom:.4rem">⚡ Coming Soon</div>
+            <div style="font-family:var(--disp);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:.4rem">ChoYong LC100</div>
+            <div style="font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5">A striking multi-band smart radio launching soon in two colorways — full-color touchscreen, live weather, SSB, and online radio streaming built in. Full review coming the moment it launches.</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap">
+          <button onclick="go('reviews',document.getElementById('n-reviews'))" style="background:#fbbf24;border:none;color:#000;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;cursor:pointer;white-space:nowrap;letter-spacing:.03em">Get Notified →</button>
+        </div>
+      </div>
+    </div>
     <div id="rev-banner" style="display:none;margin-bottom:1.5rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,.1)">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
         <div>
@@ -2073,7 +2088,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build e204c38c · 2026-08-13 06:49 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 6dee7f7c · 2026-08-13 07:39 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4520,7 +4535,10 @@ function submitQSL(){
 // ── ADVERTISE ───────────────────────────────────────────────────
 // ── REVIEWS ──────────────────────────────────────────────────────
 var REVIEWS=[
-  {n:"ChoYong LC100",cat:"Portable Receiver",d:"Full hands-on review coming once the LC100 officially launches — testing sensitivity, band coverage, and build quality.",status:"Coming Soon",url:"#"},
+  {n:"ChoYong LC100",cat:"Portable Receiver",d:"A striking multi-band smart radio launching soon in two colorways — full-color touchscreen with live weather, SSB, and online radio streaming built in. Full hands-on review coming the moment it launches.",status:"Coming Soon",url:"#",
+   thumb:"media/choyong-lc100-photo.jpg",
+   src:"Official product photos and details from ChoYong — see their full LC100 write-up: https://www.choyongradio.com/blog/detail/id/19.html"
+  },
   {n:"ChoYong WT2",cat:"Multi-Mode / Internet Radio",status:"Published",url:"#",
    date:"August 7, 2026",
    d:"A hybrid receiver: real shortwave/AM/FM DSP reception plus 50,000+ station internet radio and a PTT walkie-talkie mode, all in one compact unit.",
@@ -4616,6 +4634,13 @@ var REVIEWS=[
    verdict:"The D-219 is not built for serious DXing \u2014 it\u2019s a mono, no-frills analog radio at a mono, no-frills analog price. What it does well: the tuning dial has real precision for something this cheap, band-switching is dead simple, and the telescopic antenna is generously long for the size of the unit. Independent reviewers (SWLing Post, Radio-Timetraveller) consistently describe it as punching above its price for casual listening, travel, or as a first radio \u2014 while flagging the same durability concerns we noted above. If you want a serious portable, look higher up our Equipment page. If you want a cheap, easy analog radio to keep in a bag or hand to a beginner, the D-219 does that job.",
    src:"Specs verified against XHDATA\u2019s official site, SWLing Post, and Radiomuseum.org; owner-reliability notes drawn from SWLing Post reader comments."}
 ];
+function renderLC100Teaser(){
+  var b=document.getElementById("lc100-teaser");if(!b)return;
+  var it=null;
+  for(var i=0;i<REVIEWS.length;i++){if(REVIEWS[i].n==="ChoYong LC100"){it=REVIEWS[i];break;}}
+  if(!it||it.status!=="Coming Soon"){b.style.display="none";return;}
+  b.style.display="block";
+}
 function renderReviewBanner(){
   var b=document.getElementById("rev-banner");if(!b)return;
   var pick=null;
@@ -4632,6 +4657,10 @@ function renderReviews(){
     var it=REVIEWS[i];
     if(it.specs){ g.appendChild(buildFullReview(it)); continue; }
     var d=document.createElement("div");d.className="ad-item";
+    if(it.thumb){
+      var athumb=document.createElement("img");athumb.src=it.thumb;athumb.alt=it.n+" product photo";athumb.style.cssText="width:100%;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12);margin-bottom:.7rem";
+      d.appendChild(athumb);
+    }
     var cat=document.createElement("div");cat.className="ad-cat";cat.textContent=it.cat;
     var nm=document.createElement("div");nm.className="ad-nm";nm.textContent=it.n;
     var desc=document.createElement("div");desc.className="ad-desc";desc.textContent=it.d;
@@ -4862,6 +4891,7 @@ function bootShortwaveHQ(){
       ["buildFC",function(){buildFC("now-fc",setNF);}],
       ["renderReviews",renderReviews],
       ["renderReviewBanner",renderReviewBanner],
+      ["renderLC100Teaser",renderLC100Teaser],
       ["renderEnthusiast",renderEnthusiast],
       ["renderHist",renderHist],
       ["renderScheduleChanges",renderScheduleChanges],
