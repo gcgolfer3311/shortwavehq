@@ -702,8 +702,10 @@ a,button,input,select,textarea{touch-action:manipulation}
   .wrap{padding:0 .9rem}
 
   /* STATION ROWS — bigger, more tappable */
-  .grow{grid-template-columns:76px 1fr;min-height:56px}
-  .grow .gt{display:none} /* hide right column; move listen to info column */
+  .grow{grid-template-columns:70px 1fr auto;min-height:56px}
+  .gt{padding:8px 7px;gap:2px}
+  .oabdg{font-size:.48rem;padding:2px 5px}
+  .offt{font-size:.5rem}
   .gf{padding:8px 9px}
   .gfv{font-size:.92rem}
   .gfb{font-size:.54rem}
@@ -713,11 +715,11 @@ a,button,input,select,textarea{touch-action:manipulation}
   .oabdg{font-size:.54rem;padding:2px 5px}
 
   /* SEARCH RESULTS */
-  .sr-row{grid-template-columns:72px auto 1fr;gap:6px;padding:7px 10px}
-  .sr-freq{font-size:.76rem}
+  .sr-row{grid-template-columns:64px auto 1fr auto;gap:5px;padding:7px 8px}
+  .sr-freq{font-size:.72rem}
   .sr-stn{font-size:.8rem;white-space:normal;line-height:1.3}
   .sr-meta{font-size:.54rem}
-  .sr-listen{display:none} /* de-clutter */
+  .sr-listen{font-size:.5rem;padding:2px 5px}
 
   /* TWO-COL LAYOUT */
   .two{grid-template-columns:1fr}
@@ -807,9 +809,6 @@ a,button,input,select,textarea{touch-action:manipulation}
   /* ADVERTISE */
   .ad-grid{grid-template-columns:1fr!important}
 
-  /* VINTAGE MUSEUM */
-  #vint-grid{grid-template-columns:1fr 1fr}
-
   /* HEAR RESULTS */
   .hear-results{gap:4px}
 
@@ -835,7 +834,6 @@ a,button,input,select,textarea{touch-action:manipulation}
   .se-inp{font-size:1rem}
   .four{grid-template-columns:1fr}
   .qgrid{grid-template-columns:1fr}
-  #vint-grid{grid-template-columns:1fr}
   .bname{font-size:.95rem}
 }
 
@@ -1352,7 +1350,11 @@ a,button,input,select,textarea{touch-action:manipulation}
           <div style="font-family:var(--mono);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--m2);margin-bottom:8px">Band Conditions — All 12 SW Bands</div>
           <div id="band-bars" class="bbars"></div>
         </div>
-        <div class="glwrap"><canvas id="gl-big" height="220"></canvas></div>
+        <div class="card">
+          <div class="ch"><div class="clbl"><div class="cdot c-teal"></div>Gray Line</div></div>
+          <div class="glwrap"><canvas id="gl-big" height="220"></canvas></div>
+          <div style="padding:.7rem 1rem;font-family:var(--serif);font-style:italic;font-size:.7rem;color:var(--muted);line-height:1.6;border-top:1px solid var(--bdr2)">The curved band shows the sunrise/sunset terminator circling the globe right now. For 30–60 minutes as it crosses your location, 31M and 41M signals travel thousands of miles further than usual — the single best DX window of the day.</div>
+        </div>
       </div>
       <div class="stk">
         <div style="font-family:var(--disp);font-size:1rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.4rem">Understanding Propagation</div>
@@ -1382,17 +1384,6 @@ a,button,input,select,textarea{touch-action:manipulation}
         <div style="padding:1.1rem;background:var(--p2);border:1px solid var(--bdr);border-radius:4px"><div style="font-family:var(--disp);font-size:.88rem;font-weight:800;margin-bottom:.6rem">Priority Frequencies</div><div id="ns-freqs" style="display:flex;flex-direction:column;gap:5px"></div></div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- ══════════════ INTERVAL SIGNAL LIBRARY ══════════════ -->
-<div class="page" id="pg-intervals">
-  <div class="wrap" style="padding-top:1.6rem;padding-bottom:4rem">
-    <div class="srule"><div class="sn">Archive</div><div class="sh">Interval Signal <em>Library</em></div><div class="sm">The sound that told you where to tune</div></div>
-    <div style="max-width:660px;margin-bottom:1.3rem"><p style="font-family:var(--serif);font-size:.92rem;line-height:1.82">Before digital displays, international broadcasters identified themselves with a signature sound — a folk tune, a birdcall, a few bars of a hymn — played before sign-on and between language services, so listeners tuning an analog dial knew instantly whose signal they'd found. Search the collection below by station or country.</p></div>
-    <div style="margin-bottom:1.1rem;max-width:340px"><input class="inp" id="is-search" placeholder="Search station or country…" oninput="renderIntervals()"></div>
-    <div id="is-grid" class="three"></div>
-    <div style="margin-top:1.6rem;padding:1.1rem;background:var(--p2);border:1px solid var(--bdr);border-radius:4px;max-width:660px"><div style="font-family:var(--disp);font-size:.84rem;font-weight:800;margin-bottom:.4rem">Have a clean recording?</div><div style="font-family:var(--serif);font-size:.78rem;color:var(--muted);line-height:1.7">This library is growing. If you've recorded an interval signal off-air, or know of a public-domain source, let us know and we'll add it.</div></div>
   </div>
 </div>
 
@@ -1524,14 +1515,6 @@ a,button,input,select,textarea{touch-action:manipulation}
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- ══════════════ VINTAGE MUSEUM ══════════════ -->
-<div class="page" id="pg-museum">
-  <div class="wrap" style="padding-top:1.6rem;padding-bottom:4rem">
-    <div class="srule"><div class="sn">Heritage</div><div class="sh">Vintage Radio <em>Museum</em></div><div class="sm">Click any radio for its full story</div></div>
-    <div id="vint-grid" class="three"></div>
   </div>
 </div>
 
@@ -2088,7 +2071,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 102aedf7 · 2026-08-13 09:10 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 8cf38fb4 · 2026-08-13 19:32 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -2284,16 +2267,6 @@ var NS=[
   {freq:"26.100",id:"XB x-band",desc:"CW morse numbers. Unusual high-frequency numbers beacon.",st:"rare"}
 ];
 
-var VINT=[
-  {n:"Zenith Trans-Oceanic",era:"1942-1981",icon:"📻",d:"The aristocrat of portable radios. Used by journalists, military officers, and discerning hobbyists worldwide. A cultural symbol of the shortwave golden age. Finding one at an estate sale still makes a collector's day.",specs:["Portable","6-Band SW","Battery/AC","Iconic"]},
-  {n:"Hallicrafters SX-28",era:"1940-1946",icon:"🎙",d:"Standard equipment for the US Navy and Army during WWII. Represents the era when shortwave was essential military infrastructure. Serious DXers treasured it for sensitivity and selectivity.",specs:["Tabletop","0.5-43 MHz","Military grade","WWII classic"]},
-  {n:"Sony ICF-2010",era:"1985-2002",icon:"📻",d:"Widely regarded as the finest consumer portable receiver ever made. Synchronous AM detection, SSB mode, excellent sensitivity. A standard no portable has surpassed in 40 years.",specs:["Portable","150kHz-30MHz","Sync AM","SSB/CW"]},
-  {n:"National HRO-500",era:"1964-1975",icon:"🎚",d:"National flagship professional receiver. Plug-in coil packs, silky mechanical bandspread dial. Favourite of serious operators worldwide.",specs:["Tabletop","Plug-in coils","Professional","0.5-30MHz"]},
-  {n:"Grundig Satellit 650",era:"1987-1992",icon:"📻",d:"West German flagship portable. Large, capable, beautifully crafted. Received everything from longwave to shortwave to air band. A collector treasure.",specs:["Portable","LW/MW/SW/Air","All bands","Grundig"]},
-  {n:"Icom IC-R75",era:"1999-2012",icon:"🎙",d:"Professional-grade tabletop. 100kHz to 30MHz continuous. Exceptional dynamic range. The benchmark all serious receivers are measured against. Highly sought used.",specs:["Tabletop","0.1-30MHz","All modes","Professional"]},
-  {n:"Racal RA17",era:"1959-1972",icon:"🎚",d:"British professional masterpiece. The Wadley loop design gave exceptional frequency stability. Used by embassies and intelligence services worldwide. A legend.",specs:["Professional","Wadley loop","1-30MHz","British classic"]},
-  {n:"Hammarlund HQ-180",era:"1959-1965",icon:"🎚",d:"Beautiful American tabletop with distinctive two-tone cabinet. Crystal-controlled bandspread. Beloved by shortwave listeners of the early 1960s.",specs:["Tabletop","0.54-30MHz","Crystal calibrator","Tube"]}
-];
 
 var HIST=[
   {n:"BBC World Service",y:"1932-present",st:"r",note:"At its peak the most listened-to international broadcaster on earth. Closed SW to Americas and most of Europe after 2011. Briefly reactivated SW to Ukraine during 2022 Russian invasion. Still broadcasts to Africa, Middle East and parts of Asia."},
@@ -2340,24 +2313,6 @@ var GLOSS=[
   {t:"EIBI",d:"Free shortwave schedule database by Eike Bierwirth. Most comprehensive public SW database."}
 ];
 
-var INTERVALS=[
-  {n:"BBC World Service",c:"United Kingdom",d:"\"Bow Bells\" — ten change-ringing church bells, one of the most recognized station identifiers in shortwave history.",audio:null},
-  {n:"Voice of America",c:"United States",d:"A brass-band arrangement of \"Yankee Doodle,\" used to open English-language transmissions for decades.",audio:null},
-  {n:"Deutsche Welle",c:"Germany",d:"A passage from the Act 2 finale of Beethoven's opera Fidelio — \"Es sucht der Bruder seine Brüder.\"",audio:null},
-  {n:"Radio Romania International",c:"Romania",d:"The first nine notes of \"Pui de lei\" (\"Lion Cubs\"), a patriotic tune that's opened RRI broadcasts for generations.",audio:null},
-  {n:"Voice of Turkey",c:"Turkey",d:"A traditional Turkish makam motif played on solo piano — modal, unmistakable, unlike anything else on the dial.",audio:null},
-  {n:"Radio Prague International",c:"Czech Republic",d:"The opening bars of \"Vyšehrad,\" the first movement of Smetana's symphonic cycle Má vlast (My Homeland).",audio:null},
-  {n:"HCJB — The Voice of the Andes",c:"Ecuador",d:"A motif drawn from the hymn \"Great Is Thy Faithfulness,\" reflecting the station's missionary-broadcast roots.",audio:null},
-  {n:"Radio Habana Cuba",c:"Cuba",d:"The refrain of the \"26th of July March,\" commemorating the date of Fidel Castro's 1953 attack on the Moncada Barracks.",audio:null},
-  {n:"Radio New Zealand International",c:"New Zealand",d:"No music at all — just the ringing call of a native New Zealand bellbird.",audio:null},
-  {n:"Radio Slovenia International",c:"Slovenia",d:"An electronically generated cuckoo chirp, looping between segments.",audio:null},
-  {n:"RAI Italia Radio",c:"Italy",d:"A mechanically generated canary chirping — one of the more unusual station idents ever put to air.",audio:null},
-  {n:"Vatican Radio",c:"Vatican City",d:"\"Christus Vincit,\" a choral piece by Aloys Kunc, marking the Holy See's broadcasts since the station's earliest years.",audio:null},
-  {n:"Voice of Mongolia",c:"Mongolia",d:"\"Motherland,\" a composition by Luvsanjambyn Mördorj, one of Mongolia's most prominent 20th-century composers.",audio:null},
-  {n:"Radio Australia",c:"Australia",d:"A chorus segment of \"Waltzing Matilda\" paired with the call of a kookaburra — instantly identifiable across the Pacific.",audio:null},
-  {n:"All India Radio",c:"India",d:"An orchestral theme composed for the network by Walter Kaufmann, still in use since the 1930s.",audio:null},
-  {n:"KBS World Radio",c:"South Korea",d:"\"Dawn,\" paired with the traditional Korean children's song \"Moon, Moon, Bright Moon.\"",audio:null}
-];
 
 var EQ={
   receivers:[
@@ -2871,10 +2826,9 @@ function go(pg,btn){
   var fns={home:renderHome,now:renderNow,finder:renderFinder,radar:renderRadar,
     dx:renderDX,timemachine:renderTimeMachineInit,worldmap:renderWorldMapInit,
     propagation:renderProp,numbers:renderNS,log:renderLog,memories:function(){renderMems();renderEnthusiast();},
-    museum:renderVint,history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory,
+    history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory,
     reviews:renderReviews,
-    enthusiast:renderEnthusiastPage,
-    intervals:renderIntervals};
+    enthusiast:renderEnthusiastPage};
   if(fns[pg])fns[pg]();
 }
 
@@ -3147,8 +3101,55 @@ function seReportLink(freqLabel){
   var href="mailto:Hqshortwaveradio@gmail.com?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(body);
   var d=document.createElement("div");
   d.style.cssText="margin-top:10px;padding:9px 11px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;font-family:var(--mono);font-size:.66rem;line-height:1.5;color:rgba(255,255,255,.6)";
-  d.innerHTML="Hearing something here that we're not showing? Schedules drift mid-season. <a href=\""+href+"\" style=\"color:#7dd3fc;font-weight:600\">Report it \u2197</a> and I'll get it fixed.";
+  var countSpan=document.createElement("div");countSpan.id="dr-count";countSpan.style.cssText="display:none;margin-bottom:7px;color:#fbbf24;font-weight:600";
+  var mainRow=document.createElement("div");
+  var reportBtn=document.createElement("button");
+  reportBtn.type="button";
+  reportBtn.style.cssText="font-family:var(--mono);font-size:.66rem;font-weight:600;color:#7dd3fc;background:transparent;border:none;padding:0;cursor:pointer;text-decoration:underline";
+  reportBtn.textContent="I'm hearing this too \u2192";
+  reportBtn.onclick=function(){ drSubmit(freqLabel, countSpan, reportBtn); };
+  mainRow.appendChild(document.createTextNode("Hearing something here that we're not showing? Schedules drift mid-season. "));
+  mainRow.appendChild(reportBtn);
+  mainRow.appendChild(document.createTextNode(" or "));
+  var emailLink=document.createElement("a");emailLink.href=href;emailLink.style.cssText="color:#7dd3fc;font-weight:600";emailLink.textContent="email the details \u2197";
+  mainRow.appendChild(emailLink);
+  d.appendChild(countSpan);d.appendChild(mainRow);
+  drCheckExisting(freqLabel, countSpan);
   return d;
+}
+
+function drCheckExisting(freqLabel, countSpan){
+  fetch("/.netlify/functions/discrepancy",{cache:"no-store"})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(d){
+      if(!d||!d.counts)return;
+      var n=d.counts[freqLabel];
+      if(n&&n>0){
+        countSpan.textContent="\u26A0 "+n+" other listener"+(n!==1?"s":"")+" reported this in the last 24h";
+        countSpan.style.display="block";
+      }
+    })
+    .catch(function(){});
+}
+
+function drSubmit(freqLabel, countSpan, btn){
+  btn.disabled=true;btn.textContent="Reporting\u2026";
+  fetch("/.netlify/functions/discrepancy",{
+    method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({freq:freqLabel})
+  })
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(d&&d.ok){
+        countSpan.textContent="\u2713 Thanks \u2014 "+d.count+" listener"+(d.count!==1?"s":"")+" reported this in the last 24h";
+        countSpan.style.color="#4ade80";
+        countSpan.style.display="block";
+        btn.textContent="Reported \u2713";
+      } else {
+        btn.disabled=false;btn.textContent="I'm hearing this too \u2192";
+      }
+    })
+    .catch(function(){ btn.disabled=false;btn.textContent="I'm hearing this too \u2192"; });
 }
 
 function seShowMatches(fMHz,withAI){
@@ -4267,30 +4268,6 @@ function submitMem(){
   toast("Memory shared \u2014 thank you");
 }
 
-// ── VINTAGE MUSEUM ──────────────────────────────────────────────
-function renderVint(){
-  var g=document.getElementById("vint-grid");if(!g||g.children.length)return;
-  for(var i=0;i<VINT.length;i++){
-    var r=VINT[i];var d=document.createElement("div");d.className="vc";
-    (function(r2){d.addEventListener("click",function(){showVModal(r2);});})(r);
-    var img=document.createElement("div");img.className="vimg";var ic=document.createElement("span");ic.style.cssText="position:relative;z-index:1";ic.textContent=r.icon;var era=document.createElement("div");era.className="vera";era.textContent=r.era;img.appendChild(ic);img.appendChild(era);
-    var bod=document.createElement("div");bod.className="vbody";var nm=document.createElement("div");nm.className="vnm";nm.textContent=r.n;var desc=document.createElement("div");desc.className="vdesc";desc.textContent=r.d.substring(0,90)+"...";
-    bod.appendChild(nm);bod.appendChild(desc);d.appendChild(img);d.appendChild(bod);g.appendChild(d);
-  }
-}
-
-function showVModal(r){
-  var mb=document.getElementById("mbody");if(!mb)return;mb.innerHTML="";
-  var ic=document.createElement("div");ic.style.cssText="font-size:3.5rem;text-align:center;margin-bottom:.9rem";ic.textContent=r.icon;
-  var h2=document.createElement("h2");h2.textContent=r.n;
-  var era=document.createElement("div");era.style.cssText="font-family:var(--mono);font-size:.7rem;color:var(--m2);margin-bottom:.8rem";era.textContent=r.era;
-  var desc=document.createElement("p");desc.style.cssText="font-family:var(--serif);font-size:.88rem;color:var(--muted);line-height:1.76;margin-bottom:.9rem";desc.textContent=r.d;
-  var specs=document.createElement("div");specs.style.cssText="display:flex;gap:6px;flex-wrap:wrap";
-  for(var i=0;i<r.specs.length;i++){var sp=document.createElement("span");sp.style.cssText="font-family:var(--mono);font-size:.62rem;padding:2px 8px;border:1px solid var(--bdr);border-radius:2px;color:var(--muted)";sp.textContent=r.specs[i];specs.appendChild(sp);}
-  mb.appendChild(ic);mb.appendChild(h2);mb.appendChild(era);mb.appendChild(desc);mb.appendChild(specs);
-  document.getElementById("mbg").classList.add("on");
-}
-
 // ── STATION HISTORY ─────────────────────────────────────────────
 function renderHist(){
   var list=document.getElementById("hist-list");var gloss=document.getElementById("gloss");
@@ -4347,36 +4324,6 @@ function showHModal(s){
     for(var p=0;p<s.story.length;p++){var para=document.createElement("p");para.style.cssText="font-family:var(--serif);font-size:.88rem;color:var(--muted);line-height:1.8;margin-bottom:.85rem";para.textContent=s.story[p];mb.appendChild(para);}
   } else {
     var note=document.createElement("p");note.style.cssText="font-family:var(--serif);font-size:.88rem;color:var(--muted);line-height:1.8";note.textContent=s.note;mb.appendChild(note);
-  }
-  document.getElementById("mbg").classList.add("on");
-}
-
-// ── INTERVAL SIGNAL LIBRARY ─────────────────────────────────────
-function renderIntervals(){
-  var g=document.getElementById("is-grid");if(!g)return;
-  var q=((document.getElementById("is-search")||{value:""}).value||"").trim().toLowerCase();
-  var rows=INTERVALS.filter(function(r){return !q||r.n.toLowerCase().indexOf(q)>=0||r.c.toLowerCase().indexOf(q)>=0;});
-  g.innerHTML="";
-  if(!rows.length){var empty=document.createElement("div");empty.style.cssText="grid-column:1/-1;padding:2rem;text-align:center;font-family:var(--serif);font-style:italic;color:var(--muted)";empty.textContent="No stations match \""+q+"\".";g.appendChild(empty);return;}
-  for(var i=0;i<rows.length;i++){
-    var r=rows[i];var d=document.createElement("div");d.className="vc";
-    (function(r2){d.addEventListener("click",function(){showIntervalModal(r2);});})(r);
-    var img=document.createElement("div");img.className="vimg";var ic=document.createElement("span");ic.style.cssText="position:relative;z-index:1";ic.textContent=r.audio?"🎵":"📻";var era=document.createElement("div");era.className="vera";era.textContent=r.c;img.appendChild(ic);img.appendChild(era);
-    var bod=document.createElement("div");bod.className="vbody";var nm=document.createElement("div");nm.className="vnm";nm.textContent=r.n;var desc=document.createElement("div");desc.className="vdesc";desc.textContent=r.d.substring(0,90)+"...";
-    bod.appendChild(nm);bod.appendChild(desc);d.appendChild(img);d.appendChild(bod);g.appendChild(d);
-  }
-}
-function showIntervalModal(r){
-  var mb=document.getElementById("mbody");if(!mb)return;mb.innerHTML="";
-  var ic=document.createElement("div");ic.style.cssText="font-size:3.5rem;text-align:center;margin-bottom:.9rem";ic.textContent=r.audio?"🎵":"📻";
-  var h2=document.createElement("h2");h2.textContent=r.n;
-  var country=document.createElement("div");country.style.cssText="font-family:var(--mono);font-size:.7rem;color:var(--m2);margin-bottom:.8rem";country.textContent=r.c;
-  var desc=document.createElement("p");desc.style.cssText="font-family:var(--serif);font-size:.88rem;color:var(--muted);line-height:1.76;margin-bottom:.9rem";desc.textContent=r.d;
-  mb.appendChild(ic);mb.appendChild(h2);mb.appendChild(country);mb.appendChild(desc);
-  if(r.audio){
-    var audio=document.createElement("audio");audio.controls=true;audio.style.cssText="width:100%";audio.src=r.audio;mb.appendChild(audio);
-  } else {
-    var placeholder=document.createElement("div");placeholder.style.cssText="padding:.9rem;background:var(--p2);border:1px solid var(--bdr);border-radius:4px;font-family:var(--serif);font-size:.78rem;color:var(--muted);font-style:italic";placeholder.textContent="No recording on file yet for this station's interval signal.";mb.appendChild(placeholder);
   }
   document.getElementById("mbg").classList.add("on");
 }
@@ -4898,11 +4845,9 @@ function bootShortwaveHQ(){
       ["renderHist",renderHist],
       ["renderScheduleChanges",renderScheduleChanges],
       ["renderNS",renderNS],
-      ["renderVint",renderVint],
       ["renderEQ",renderEQ],
       ["renderQSL",renderQSL],
-      ["filterDirectory",filterDirectory],
-      ["renderIntervals",renderIntervals]
+      ["filterDirectory",filterDirectory]
     ];
     for(var _s=0;_s<_steps.length;_s++){
       try{_steps[_s][1]();}
@@ -4925,7 +4870,7 @@ window.addEventListener("resize",syncMastHeight);
     if(_qp){var _si=document.getElementById("se-inp");if(_si){_si.value=_qp;var _su=document.getElementById("se-unit");if(_su)_su.value="text";seSearch();var _hero=document.getElementById("se-inp");if(_hero&&_hero.scrollIntoView)setTimeout(function(){_hero.scrollIntoView({behavior:"smooth",block:"center"});},300);}}
   }catch(e){}
   try{
-    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","intervals","memories","enthusiast","qsl","museum","directory","equipment","reviews","advertise"];
+    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","memories","enthusiast","qsl","directory","equipment","reviews","advertise"];
     var _pg=new URLSearchParams(window.location.search).get("page");
     if(_pg&&_VALID_PAGES.indexOf(_pg)!==-1)go(_pg);
   }catch(e){}
