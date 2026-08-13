@@ -991,7 +991,7 @@ a,button,input,select,textarea{touch-action:manipulation}
         <div class="sr-hdr"><div class="sr-tag" id="se-tag"></div><div class="sr-cnt" id="se-cnt"></div></div>
         <div id="se-matches" class="sr-matches"></div>
         <div class="sr-ai" style="padding:.6rem 0;font-family:var(--mono);font-size:.65rem;color:rgba(255,255,255,.35);font-style:italic">
-          Schedule data is sourced directly from EIBI A-26 2026 (a community-maintained DX database) and refreshed daily. Time-signal stations (✓ badge) use fixed, standards-body-assigned frequencies; all other listings are as reported by EIBI. Spot an error? Use the report link below any result.
+          Schedule data is sourced directly from EIBI A-26 2026 (a community-maintained DX database) and refreshed daily. Entries marked ✓ are independently verified: either a fixed, standards-body-assigned frequency (time-signal stations), or cross-checked against HFCC's international frequency coordination data — which is also where real transmit power and transmitter coordinates come from, where available. Everything else is as reported by EIBI alone. Spot an error? Use the report link below any result.
         </div>
       </div>
     </div>
@@ -2088,7 +2088,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 6dee7f7c · 2026-08-13 07:39 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 95097288 · 2026-08-13 08:52 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -3183,7 +3183,9 @@ function seRow(s){
   var fq=document.createElement("div");fq.className="sr-freq";fq.textContent=s.freq+" MHz";
   var bdg=document.createElement("div");bdg.className=on?"sr-on":"sr-off";bdg.textContent=on?"ON AIR":fmtR(s);
   var info=document.createElement("div");info.style.cssText="display:flex;flex-direction:column;gap:1px;min-width:0;overflow:hidden";
-  var stn=document.createElement("div");stn.className="sr-stn";stn.textContent=s.stn+(s.type==="Time"?" ✓":"");if(s.type==="Time")stn.title="Verified — fixed, standards-body-assigned frequency";
+  var stn=document.createElement("div");stn.className="sr-stn";stn.textContent=s.stn+((s.type==="Time"||s.hfcc)?" ✓":"");
+  if(s.type==="Time")stn.title="Verified — fixed, standards-body-assigned frequency";
+  else if(s.hfcc)stn.title="Verified — cross-checked against HFCC international frequency coordination data";
   var meta=document.createElement("div");meta.className="sr-meta";meta.textContent=s.lang+" \u00b7 "+s.tgt+(s.kw?" \u00b7 "+s.kw+"kW":"");
   info.appendChild(stn);info.appendChild(meta);
   var lnk=document.createElement("a");lnk.href="https://websdr.ewi.utwente.nl:8901/?tune="+kHz+"am";lnk.target="_blank";lnk.className="sr-listen";lnk.textContent="Listen \u2197";

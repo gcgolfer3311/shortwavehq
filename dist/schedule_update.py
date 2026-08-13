@@ -18,9 +18,23 @@ Design choices:
   - Falls back cleanly: on any network/parse failure it exits 0 WITHOUT
     overwriting a good existing schedule.json, so a bad fetch never breaks
     the live site.
+
+HFCC cross-validation (optional, additive):
+  If data/hfcc_schedule.txt and data/hfcc_sites.txt are present, each row
+  is checked against HFCC's international frequency coordination data by
+  frequency + time-window overlap. A match fills in real transmit power
+  (kw) and real transmitter coordinates (lat/lon) — EIBI carries neither
+  — and sets "hfcc": true, which the site shows as a second verified-badge
+  tier. No match just leaves the row exactly as it's always looked (kw: 0,
+  no coordinates) — this can never make an existing row worse.
+  These two files are NOT auto-fetched (HFCC has no stable public direct-
+  download URL the way EIBI does) — download the current season's files
+  by hand from hfcc.org → Public Data Files, and re-upload them to
+  data/hfcc_schedule.txt / data/hfcc_sites.txt each new A/B season
+  (same twice-yearly cadence as EIBI's own A26/B26 switch).
 """
 
-import os, json, sys, datetime, urllib.request, urllib.error
+import os, json, sys, re, datetime, urllib.request, urllib.error
 
 # Try the A26 file; the season rolls to B26 in late October. Both URLs tried.
 EIBI_URLS = [
@@ -56,6 +70,137 @@ BROADCAST_BANDS = [
 
 def in_broadcast_band(mhz):
     return any(lo <= mhz <= hi for lo, hi in BROADCAST_BANDS)
+
+# ── HFCC cross-validation ───────────────────────────────────────────────
+# HFCC/ASBU publishes the international frequency-coordination schedule
+# used by major broadcasters — a second, independent source from EIBI's
+# community-maintained "as heard/as reported" database. Cross-checking
+# against it lets us show real transmit power and real transmitter
+# coordinates (EIBI carries neither), and mark entries that two
+# independent sources agree on.
+#
+# HFCC does NOT auto-publish a stable public download URL the way EIBI
+# does, and its season files (A/B, same cadence as EIBI's A26/B26) need
+# a manual visit to hfcc.org's Public Data Files page. So these two
+# files are committed to the repo by hand each season, not fetched here:
+#   data/hfcc_schedule.txt  — the raw "A26all00.TXT"-style season file
+#   data/hfcc_sites.txt     — the raw "site.txt" transmitter site table
+# If either file is missing, cross-validation is silently skipped and
+# every row falls back to today's behavior (kw: 0, no coordinates) —
+# this can never break a deploy.
+HFCC_SCHEDULE_FILE = "data/hfcc_schedule.txt"
+HFCC_SITES_FILE = "data/hfcc_sites.txt"
+
+def _hfcc_hhmm_to_min(s):
+    s = s.strip()
+    if len(s) != 4 or not s.isdigit():
+        return None
+    return int(s[:2]) * 60 + int(s[2:])
+
+def _parse_hfcc_sites(path):
+    sites = {}
+    try:
+        with open(path, "r", encoding="latin-1") as f:
+            for line in f:
+                line = line.rstrip("\r\n")
+                if not line.strip() or line.startswith(";"):
+                    continue
+                code = line[0:3].strip()
+                lat_raw = line[38:44].strip()
+                lon_raw = line[44:51].strip()
+                m = re.match(r"(\d+)([NS])(\d+)", lat_raw)
+                m2 = re.match(r"(\d+)([EW])(\d+)", lon_raw)
+                if not (code and m and m2):
+                    continue
+                lat = float(m.group(1)) + float(m.group(3)) / 60
+                if m.group(2) == "S":
+                    lat = -lat
+                lon = float(m2.group(1)) + float(m2.group(3)) / 60
+                if m2.group(2) == "W":
+                    lon = -lon
+                sites[code] = (round(lat, 3), round(lon, 3))
+    except Exception:
+        return {}
+    return sites
+
+def _parse_hfcc_schedule(path, sites):
+    # Column boundaries read from the file's own ruler line at build time
+    # (HFCC has changed column layout before — e.g. adding SLW/ANT/AFRQ
+    # columns between the A06 and A26 seasons — so this locates the ruler
+    # itself rather than hardcoding positions that could silently drift).
+    from collections import defaultdict
+    by_freq = defaultdict(list)
+    try:
+        with open(path, "r", encoding="latin-1") as f:
+            lines = f.readlines()
+    except Exception:
+        return by_freq
+
+    ruler = None
+    for line in lines:
+        if line.startswith(";----"):
+            ruler = line.rstrip("\r\n")
+            break
+    if not ruler:
+        return by_freq
+    bounds = [0] + [i for i, c in enumerate(ruler) if c == "+"]
+
+    def col(line, idx):
+        if idx + 1 >= len(bounds):
+            return ""
+        return line[bounds[idx]:bounds[idx + 1]].strip()
+
+    for line in lines:
+        line = line.rstrip("\r\n")
+        if not line.strip() or line.startswith(";"):
+            continue
+        freq = col(line, 0)
+        if not freq or not freq.replace(".", "").isdigit():
+            continue
+        strt_min = _hfcc_hhmm_to_min(col(line, 1))
+        stop_min = _hfcc_hhmm_to_min(col(line, 2))
+        if strt_min is None or stop_min is None:
+            continue
+        loc = col(line, 4)
+        powr = col(line, 5)
+        lat, lon = sites.get(loc, (None, None))
+        by_freq[round(float(freq))].append({
+            "start": strt_min, "stop": stop_min,
+            "kw": float(powr) if powr.replace(".", "").isdigit() else None,
+            "lat": lat, "lon": lon,
+        })
+    return by_freq
+
+def _time_overlaps(a_start, a_end, b_start, b_end):
+    def segments(s, e):
+        return [(s, e)] if s <= e else [(s, 1440), (0, e)]
+    for s1, e1 in segments(a_start, a_end):
+        for s2, e2 in segments(b_start, b_end):
+            if s1 < e2 and s2 < e1:
+                return True
+    return False
+
+def load_hfcc_index():
+    """Returns a freq(kHz, rounded) -> [candidate records] index, or an
+    empty dict if HFCC data isn't present — callers treat that as
+    'no cross-validation this run', never as an error."""
+    if not (os.path.exists(HFCC_SCHEDULE_FILE) and os.path.exists(HFCC_SITES_FILE)):
+        return {}
+    sites = _parse_hfcc_sites(HFCC_SITES_FILE)
+    if not sites:
+        return {}
+    return _parse_hfcc_schedule(HFCC_SCHEDULE_FILE, sites)
+
+def hfcc_match(hfcc_index, freq_mhz, s_min, e_min):
+    """Looks for an HFCC record at this frequency whose time window
+    overlaps [s_min, e_min). Returns (kw, lat, lon) or (None, None, None)."""
+    if not hfcc_index:
+        return None, None, None
+    candidates = hfcc_index.get(round(freq_mhz * 1000), [])
+    for c in candidates:
+        if _time_overlaps(s_min, e_min, c["start"], c["stop"]):
+            return c["kw"], c["lat"], c["lon"]
+    return None, None, None
 
 # ── Language codes (EIBI) → friendly names the site displays ──────────────
 LANG = {
@@ -219,6 +364,9 @@ def build():
     if not text:
         return None
 
+    hfcc_index = load_hfcc_index()
+    hfcc_matched = 0
+
     rows = []
     seen = set()
     for line in text.splitlines():
@@ -280,7 +428,8 @@ def build():
             continue
         seen.add(key)
 
-        rows.append({
+        hfcc_kw, hfcc_lat, hfcc_lon = hfcc_match(hfcc_index, mhz, s, e)
+        row = {
             "freq": freq_str,
             "stn": station,
             "lang": lang,
@@ -289,12 +438,24 @@ def build():
             "tgt": tgt,
             "type": typ,
             "reg": reg,
-            "kw": 0,          # EIBI CSV has no power column; site treats 0 as unknown
+            "kw": hfcc_kw if hfcc_kw is not None else 0,   # real HFCC power when cross-verified, else unknown
             "site": COUNTRY.get(itu, itu) or "Unknown",
-        })
+        }
+        if hfcc_kw is not None:
+            hfcc_matched += 1
+            row["hfcc"] = True
+            if hfcc_lat is not None and hfcc_lon is not None:
+                row["lat"] = hfcc_lat
+                row["lon"] = hfcc_lon
+        rows.append(row)
 
     # Sort by frequency then start time for stable diffs
     rows.sort(key=lambda r: (float(r["freq"]), r["s"]))
+    if hfcc_index:
+        print(f"HFCC cross-validation: {hfcc_matched}/{len(rows)} rows matched "
+              f"({100*hfcc_matched/len(rows):.1f}%) — real power/coordinates applied")
+    else:
+        print("HFCC cross-validation: no HFCC data files present, skipped (kw stays 0 as before)")
     return rows
 
 # ── Schedule-change tracking ────────────────────────────────────────────
@@ -378,10 +539,12 @@ def main():
         changes = diff_changes(old_rows, rows)
         update_changelog(changes, updated_utc)
 
+    hfcc_count = sum(1 for r in rows if r.get("hfcc"))
     payload = {
         "updated_utc": updated_utc,
         "source": "EIBI A-26",
         "count": len(rows),
+        "hfcc_verified_count": hfcc_count,   # 0 if HFCC files aren't present this run
         "sch": rows,
     }
     os.makedirs("data", exist_ok=True)
