@@ -1483,17 +1483,9 @@ a,button,input,select,textarea{touch-action:manipulation}
     <div class="srule" style="margin-top:2rem"><div class="sn">Featured</div><div class="sh">Enthusiast of the <em>Month</em></div></div>
     <div id="enthusiast-section" style="margin-bottom:2rem"></div>
 
-    <div class="srule" style="margin-top:2rem" id="gb-anchor"><div class="sn">Discuss</div><div class="sh">Guestbook</div><div class="sm" id="gb-ct">-- messages</div></div>
-    <div id="gb-wall" class="card" style="margin-bottom:1rem;max-height:520px;overflow-y:auto"></div>
-    <div class="card" style="padding:1.2rem">
-      <div id="gb-thanks" style="display:none;text-align:center;padding:1.5rem;font-family:var(--mono);font-size:.75rem;color:var(--m2)">✓ Posted — your message is live above.</div>
-      <div id="gb-formwrap" style="display:flex;flex-direction:column;gap:9px">
-        <div class="g2"><div class="fld"><label>Name</label><input class="inp" id="gb-name" placeholder="Your name"></div><div class="fld"><label>Favorite Station (optional)</label><input class="inp" id="gb-station" placeholder="e.g. WRMI"></div></div>
-        <div class="fld"><label>Message</label><textarea class="inp" id="gb-message" rows="4" placeholder="Say hello, share a catch, ask a question..."></textarea></div>
-        <input type="text" id="gb-bot" name="bot-field" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
-        <button class="btn btn-d" onclick="submitGuestbook()" style="width:100%">Sign the Guestbook</button>
-        <div style="font-family:var(--mono);font-size:.56rem;color:var(--m2)">No account needed. Open guestbook — your message appears immediately.</div>
-      </div>
+    <div class="srule" style="margin-top:2rem" id="gb-anchor"><div class="sn">Discuss</div><div class="sh">Guestbook</div></div>
+    <div class="card" style="padding:1.4rem;text-align:center;font-family:var(--serif);font-size:.85rem;color:var(--muted);line-height:1.7">
+      The guestbook is temporarily paused. Check back soon \u2014 it'll be back.
     </div>
   </div>
   </div>
@@ -2071,7 +2063,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 8cf38fb4 · 2026-08-14 06:45 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 6bf09b92 · 2026-08-14 07:28 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4883,8 +4875,13 @@ function loadGuestbookLive(){
     }).catch(function(){renderGuestbook();});
   }catch(e){renderGuestbook();}
 }
-loadGuestbookLive();
-setInterval(loadGuestbookLive,25000); // light poll so other visitors' posts show up live
+// Guestbook temporarily paused — see UI note on the Memories page.
+// (loadGuestbookLive/submitGuestbook left defined but unreachable — no UI
+// element calls them, so /.netlify/functions/guestbook is never hit. Safe
+// to re-enable later by restoring the form/wall markup and the two lines
+// below, without touching the functions themselves.)
+// loadGuestbookLive();
+// setInterval(loadGuestbookLive,25000);
 
 (function loadLiveSchedule(){
   var done=false;
