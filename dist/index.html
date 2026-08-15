@@ -560,7 +560,7 @@ input[type="range"]{width:100%;accent-color:var(--red)}
 .rev-pc ul{margin:0;padding-left:1.1rem;font-family:var(--serif);font-size:.72rem;line-height:1.6;color:var(--muted)}
 .rev-pros h4{color:#1e8449}
 .rev-cons h4{color:var(--red)}
-.rev-verdict{font-family:var(--serif);font-size:.78rem;line-height:1.7;margin-top:.6rem;padding-top:.6rem;border-top:1px solid var(--bdr2)}
+.rev-verdict{font-family:var(--serif);font-size:.78rem;line-height:1.7;margin-top:.6rem;padding-top:.6rem;border-top:1px solid var(--bdr2);white-space:pre-wrap}
 .rev-src{font-family:var(--mono);font-size:.54rem;color:var(--m2);margin-top:.6rem}
 @media(max-width:520px){.rev-pc{grid-template-columns:1fr}}
 .ad-link:hover{color:var(--ink)}
@@ -2063,7 +2063,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 5e76636e · 2026-08-14 22:50 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 68b6cc5a · 2026-08-15 05:44 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4482,23 +4482,32 @@ var REVIEWS=[
   },
   {n:"Elecevolve MLite-880",cat:"Portable DSP Receiver",status:"Published",url:"#",
    date:"August 14, 2026",
-   d:"A compact, button-driven DSP receiver built on the open, community-upgradeable Malahit-DSP firmware platform — wide-band coverage with a bright waterfall display and a physical numeric keypad for direct frequency entry.",
+   d:"A compact, button-driven DSP receiver built on the open, community-upgradeable Malahit-DSP firmware platform \u2014 wide-band coverage with a waterfall display and a physical numeric keypad for direct frequency entry.",
    thumb:"media/mlite880-photo.jpg",
    pros:[
-     "Genuinely sensitive — pulls in weak signals noticeably better than expected for the size",
-     "Direct numeric keypad makes jumping straight to a frequency fast and intuitive, no menu-diving",
-     "Bright, clear display makes the waterfall/spectrum view easy to read and easy to find your way around any band",
-     "Feels solid and well put together in hand — doesn't feel like a cheap or flimsy build",
-     "Built on the open Malahit-DSP firmware platform, so the receiver keeps improving after purchase — the company pushes real upgrades rather than shipping it and walking away",
-     "Included desktop stand is a nice touch for a radio you'll want sitting out, not stuffed in a drawer"
+     "Air band reception is genuinely impressive straight off the stock whip \u2014 no external antenna needed, and it pulled in traffic clearly with just the telescoping whip extended",
+     "FM and AM reception are both excellent across the board, strong enough that I didn't think twice about either band during testing",
+     "Bandwidth can be narrowed way down, and it's not just a spec on paper \u2014 stepping it down actually pulled individual signals out of crowded stretches of the band where a wider filter would have blurred two stations together",
+     "Noise reduction is fantastic \u2014 a genuine, noticeable difference on weak signals, the kind of thing you only appreciate once you A/B it on and off",
+     "Genuinely sensitive overall \u2014 pulls in weak signals noticeably better than I expected for a radio this size",
+     "Direct numeric keypad makes jumping straight to a frequency fast and intuitive, no menu-diving required",
+     "Display is clear enough to read the waterfall/spectrum view at a glance and get oriented on a band quickly \u2014 monochrome, but it does the job",
+     "Feels solid and well put together in hand \u2014 doesn't feel like a cheap or flimsy build",
+     "Built on the open Malahit-DSP firmware platform, so the receiver keeps improving after purchase \u2014 Elecevolve pushes real firmware upgrades rather than shipping it once and walking away",
+     "Included desktop stand is a nice touch for a radio you'll actually want sitting out on a desk, not stuffed in a drawer",
+     "A genuinely strong pick for anyone who wants one radio that covers the full spectrum well, rather than a specialist tool built around one narrow slice of it"
    ],
    cons:[
-     "The number keypad isn't backlit — a real annoyance tuning in a dark room",
+     "2 meter (VHF ham band) reception was noticeably weaker than everything else this radio does \u2014 not a strong point here",
+     "80 meters was clearly the weakest shortwave band on this unit \u2014 signals that came in fine elsewhere on the dial were faint and harder to pull out here",
+     "No built-in CW or FT8 decoder \u2014 with sensitivity and filtering this good already on board, that feels like a real missed opportunity rather than a nice-to-have",
+     "Screen is monochrome only \u2014 didn't bother me day to day, but the next generation of this platform really ought to move to color",
+     "The number keypad isn't backlit \u2014 a real annoyance tuning in a dark room",
      "Firmware updates on this platform typically go through an SD card rather than a simple app, which is more technical than some competitors",
      "Menu navigation has a learning curve at first if you're coming from a traditional analog-dial radio"
    ],
-   verdict:"Thanks to Elecevolve for sending the MLite-880 to review. In daily use, the things that stand out most are the sensitivity and how directly you can get to a frequency — punch in the numbers and you're there, no hunting through menus. The build feels genuinely solid, not like a budget shell, and the bright waterfall display makes band-scanning actually pleasant. The lack of keypad backlighting is a real, if minor, ding for nighttime use, and the SD-card firmware update process asks a bit more of you than a plug-and-play app would. But the fact that the firmware keeps getting real updates from an active development platform — rather than a radio that's frozen the day you buy it — is a genuine long-term advantage most radios at this size don't offer. Rating: 4/5.",
-   src:"Pros, cons, and verdict based on ShortwaveHQ's own hands-on review of the unit; general platform context (Malahit-DSP firmware ecosystem) from established community knowledge, not a live-sourced review this session."
+   verdict:"Thanks to Elecevolve for sending the MLite-880 to review \u2014 I spent real time with this one across several sessions, on the stock whip, working through band after band rather than just skimming the spec sheet.\n\nThe strongest impression it left was consistency. Air band came in clearly on nothing but the stock antenna. FM and AM were both excellent. And the pairing of genuinely narrow bandwidth filtering with fantastic noise reduction meant weak or crowded signals were actually usable, not just technically present \u2014 stepping the filter down on a crowded stretch of band pulled individual stations apart in a way a lot of radios this size simply can't do. That's the real story here: it's not the single best radio at any one specialty, it's consistently strong across almost everything I pointed it at.\n\nI also run an SDRplay and an ATS25-XF, so I had real points of comparison on hand rather than just a first impression. Against the ATS25-XF specifically, the MLite-880's noise reduction and narrow-filter performance held up very well \u2014 it's not chasing the same DIY/open-firmware niche in exactly the same way, but it's clearly built by people who understand what that crowd actually wants out of a receiver. Next to the SDRplay it's obviously a different category of tool \u2014 the SDRplay is a computer-driven SDR front end, this is a standalone handheld \u2014 but for grab-it-and-go listening without a laptop involved, the MLite-880 is the one I reached for.\n\nThe two real weak spots were 2 meters and 80 meters, both noticeably softer than the rest of the radio's performance. If either of those is your main focus, that's worth knowing going in \u2014 but for most listeners exploring broadly across the spectrum rather than living on one narrow band, it won't be a dealbreaker.\n\nThe monochrome screen didn't bother me in daily use, but it's the one place this platform feels a step behind where the next generation should go. And given how good the underlying sensitivity and filtering already are, a built-in CW or FT8 decoder feels like the obvious next feature \u2014 the hardware is clearly capable of supporting it, the platform just hasn't gotten there yet.\n\nAs it stands, this is a genuinely great pick for anyone who wants one radio to explore the full spectrum rather than specialize in a single band. Rating: 4/5.",
+   src:"Pros, cons, and verdict based on ShortwaveHQ's own extensive hands-on testing across air band, FM, AM, 2m, and 80m, including direct comparison against the reviewer's own SDRplay and ATS25-XF; general platform context (Malahit-DSP firmware ecosystem) from established community knowledge, not a live-sourced review this session."
   },
   {n:"ChoYong WT2",cat:"Multi-Mode / Internet Radio",status:"Published",url:"#",
    date:"August 7, 2026",
@@ -4616,7 +4625,7 @@ function renderReviews(){
   var g=document.getElementById("rev-grid");if(!g||g.children.length)return;
   for(var i=0;i<REVIEWS.length;i++){
     var it=REVIEWS[i];
-    if(it.specs){ g.appendChild(buildFullReview(it)); continue; }
+    if(it.specs||it.pros||it.verdict){ g.appendChild(buildFullReview(it)); continue; }
     var d=document.createElement("div");d.className="ad-item";
     if(it.thumb){
       var athumb=document.createElement("img");athumb.src=it.thumb;athumb.alt=it.n+" product photo";athumb.style.cssText="width:100%;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12);margin-bottom:.7rem";
