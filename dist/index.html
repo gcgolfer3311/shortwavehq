@@ -1359,6 +1359,59 @@ a,button,input,select,textarea{touch-action:manipulation}
       <div class="stk">
         <div style="font-family:var(--disp);font-size:1rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.4rem">Understanding Propagation</div>
         <div id="prop-guide" style="display:flex;flex-direction:column;gap:7px"></div>
+
+        <!-- ── RECENTLY HEARD FEED ── -->
+        <div style="margin-top:1.4rem">
+          <div style="font-family:var(--mono);font-size:.54rem;letter-spacing:.14em;text-transform:uppercase;color:var(--m2);margin-bottom:.6rem">📻 Recently Heard — Community Reception Log</div>
+          <div id="heard-feed" style="display:flex;flex-direction:column;gap:6px;margin-bottom:1rem">
+            <div style="font-family:var(--serif);font-size:.78rem;color:var(--muted);font-style:italic">Loading recent catches...</div>
+          </div>
+        </div>
+
+        <!-- ── LOG A CATCH FORM ── -->
+        <div style="padding:1.1rem;background:var(--p2);border:1px solid var(--bdr);border-radius:4px">
+          <div style="font-family:var(--disp);font-size:.88rem;font-weight:800;margin-bottom:.5rem">📡 Log a Catch</div>
+          <div style="font-family:var(--serif);font-size:.76rem;color:var(--muted);line-height:1.6;margin-bottom:.8rem">Heard something? Log it — your catch helps other listeners know what's actually making it through right now.</div>
+          <form name="reception-log" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="catch-form" style="display:flex;flex-direction:column;gap:8px">
+            <input type="hidden" name="form-name" value="reception-log">
+            <input type="hidden" name="submitted_utc" value="">
+            <input name="bot-field" style="display:none" tabindex="-1" autocomplete="off">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div>
+                <label style="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);display:block;margin-bottom:3px">Frequency (kHz)*</label>
+                <input name="frequency_khz" type="text" placeholder="e.g. 9395" style="width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--bdr);border-radius:3px;color:var(--ink);font-family:var(--mono);font-size:.78rem;padding:6px 8px">
+                <div id="catch-freq-err" style="display:none;font-family:var(--mono);font-size:.6rem;color:var(--red);margin-top:3px">Enter a valid SW frequency (1600–30000 kHz)</div>
+              </div>
+              <div>
+                <label style="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);display:block;margin-bottom:3px">Station (optional)</label>
+                <input name="station" type="text" placeholder="e.g. WRMI" style="width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--bdr);border-radius:3px;color:var(--ink);font-family:var(--mono);font-size:.78rem;padding:6px 8px">
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div>
+                <label style="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);display:block;margin-bottom:3px">SINPO (optional)</label>
+                <select name="sinpo" style="width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--bdr);border-radius:3px;color:var(--ink);font-family:var(--mono);font-size:.78rem;padding:6px 8px">
+                  <option value="">-- select --</option>
+                  <option value="55555">55555 — Perfect</option>
+                  <option value="44444">44444 — Good</option>
+                  <option value="33333">33333 — Fair</option>
+                  <option value="22222">22222 — Poor</option>
+                  <option value="11111">11111 — Barely audible</option>
+                </select>
+              </div>
+              <div>
+                <label style="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);display:block;margin-bottom:3px">Your location (optional)</label>
+                <input name="location" type="text" placeholder="e.g. Ontario, Canada" style="width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--bdr);border-radius:3px;color:var(--ink);font-family:var(--mono);font-size:.78rem;padding:6px 8px">
+              </div>
+            </div>
+            <div>
+              <label style="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);display:block;margin-bottom:3px">Note (optional)</label>
+              <input name="note" type="text" maxlength="140" placeholder="What you heard — program, language, signal quality..." style="width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--bdr);border-radius:3px;color:var(--ink);font-family:var(--mono);font-size:.78rem;padding:6px 8px">
+            </div>
+            <button type="submit" style="background:var(--red);color:#fff;border:none;border-radius:3px;font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 14px;cursor:pointer;align-self:flex-start">Submit Catch →</button>
+          </form>
+          <div id="catch-thanks" style="display:none;font-family:var(--serif);font-size:.82rem;color:var(--green);margin-top:.6rem;font-style:italic">Got it — thanks for logging your catch! It may appear here once reviewed.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -2063,7 +2116,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 68b6cc5a · 2026-08-15 05:44 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 523160ba · 2026-08-15 20:56 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -2484,7 +2537,7 @@ var REGION_MAP={
 
 // ── STATE ────────────────────────────────────────────────────────
 var utcM=0,nowF="",curPg="home",nightMode=false;
-var sparkD=[],pV={sfi:128,k:2,a:7,ssn:87};
+var sparkD=[],pV={sfi:128,k:2,a:7,ssn:87,precomputedBands:null};
 var mems=[],qsls=[],radarBands=null,tmOffset=0,GB=[];
 for(var _mi=0;_mi<MEMS.length;_mi++)mems.push(MEMS[_mi]);
 qsls=[
@@ -2517,8 +2570,10 @@ function condCl(p){return p>=52?"gok":p>=32?"gfa":"gpo";}
 function condFill(p){return p>=72?"var(--green)":p>=52?"#2ecc71":p>=32?"var(--amber)":"var(--red)";}
 function bbCl(p){return p>=72?"bb-ex":p>=52?"bb-go":p>=32?"bb-fa":"bb-po";}
 function getBands(){
+  // Prefer server-precomputed values (NOAA data at fetch time) over client recalculation
+  if(pV.precomputedBands&&pV.precomputedBands.length)return pV.precomputedBands;
   var h=new Date().getUTCHours();var night=(h<6||h>20);var out=[];
-  for(var i=0;i<BD.length;i++){var b=BD[i];var base=night?b.bn:b.bd;var sf=(pV.sfi-100)/5;var kp=pV.k>4?(pV.k-4)*8:0;var p=Math.min(100,Math.max(3,base+sf-kp+(Math.random()-0.5)*5));out.push({n:b.n,r:b.r,p:Math.round(p)});}
+  for(var i=0;i<BD.length;i++){var b=BD[i];var base=night?b.bn:b.bd;var sf=(pV.sfi-100)/5;var kp=pV.k>4?(pV.k-4)*8:0;var p=Math.min(100,Math.max(3,base+sf-kp));out.push({n:b.n,r:b.r,p:Math.round(p)});}
   return out;
 }
 // ── STATION DIRECTORY (A-Z, always findable) ───────────────────
@@ -2817,7 +2872,7 @@ function go(pg,btn){
   window.scrollTo({top:0,behavior:"smooth"});
   var fns={home:renderHome,now:renderNow,finder:renderFinder,radar:renderRadar,
     dx:renderDX,timemachine:renderTimeMachineInit,worldmap:renderWorldMapInit,
-    propagation:renderProp,numbers:renderNS,log:renderLog,memories:function(){renderMems();renderEnthusiast();},
+    propagation:function(){_catchFormBound=false;var cf=document.getElementById("catch-form");var ct=document.getElementById("catch-thanks");if(cf)cf.style.display="";if(ct)ct.style.display="none";renderProp();loadReceptionFeed();},numbers:renderNS,log:renderLog,memories:function(){renderMems();renderEnthusiast();},
     history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory,
     reviews:renderReviews,
     enthusiast:renderEnthusiastPage};
@@ -3043,7 +3098,7 @@ function seTextSearch(q,withAI){
     // surface above obscure stations at the same frequency
     var PRIORITY={"BBC":50,"Voice of America":60,"Radio France International":50,
       "Radio Romania International":50,"NHK Radio Japan":50,
-      "WWV Colorado (m.ann.)":120,"WWVH Hawaii (f.ann.)":110,"CHU Ottawa":80,
+      "WWV Colorado (m.ann.)":120,"WWVH Hawaii (f.ann.)":110,
       "WRMI Radio Miami International":40,"Deutsche Welle":40,
       "Radio Free Asia":40,"Radio Free Europe / RL":40,
       "Vatican Radio":30,"Radio Kuwait":30,
@@ -3069,6 +3124,16 @@ function seTextSearch(q,withAI){
   if(p.tag)p.tag.textContent="Search: \""+q+"\"";
   if(p.cnt)p.cnt.textContent=matches.length+" result"+(matches.length!==1?"s":"")+" found";
   p.matchBox.innerHTML="";
+  // CHU Canada shutdown notice
+  var qLow=q.toLowerCase().trim();
+  var isCHU=qLow==="chu"||qLow==="chu ottawa"||qLow==="3330"||qLow==="7335"||qLow==="14670"||qLow==="3.330"||qLow==="7.335"||qLow==="14.670";
+  if(isCHU){
+    var chuNote=document.createElement("div");chuNote.className="sr-none";
+    chuNote.style.cssText="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);border-radius:5px;padding:11px 13px;font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.85);line-height:1.65;margin-bottom:8px";
+    chuNote.innerHTML="<strong style='font-family:var(--mono);color:#fbbf24'>CHU Ottawa has shut down.</strong> Canada's NRC time signal on 3.330, 7.335, and 14.670 MHz ceased operations in mid-2026. WWV (USA) on 2.5, 5, 10, 15, and 20 MHz remains active 24/7.";
+    p.matchBox.appendChild(chuNote);
+    return;
+  }
   if(!matches.length){
     var none=document.createElement("div");none.className="sr-none";
     none.textContent="Nothing in the database for \""+q+"\". Schedules change mid-season — if you're hearing something, report it below.";
@@ -3690,15 +3755,44 @@ function renderFreqTimeline(){
 }
 
 // ── PROPAGATION ─────────────────────────────────────────────────
+var _propLastFetch=0,_propData=null;
 function fetchProp(){
-  pV.sfi=Math.max(95,Math.min(170,pV.sfi+Math.round((Math.random()-.5)*7)));
-  pV.k=Math.max(0,Math.min(9,pV.k+Math.round((Math.random()-.5)*.6)));
-  pV.a=Math.max(0,Math.round(pV.k*3+Math.random()*4));
-  pV.ssn=Math.max(65,Math.min(175,85+Math.round(Math.sin(Date.now()/86400000)*25)));
-  sparkD.push(pV.sfi);if(sparkD.length>24)sparkD.shift();
+  var now=Date.now();
+  // Only re-fetch from disk every 30 min — file updates once daily, no need to hammer it
+  if(_propData&&(now-_propLastFetch)<1800000){
+    _applyPropData(_propData);return;
+  }
+  fetch("/data/propagation.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    if(d&&typeof d.sfi==="number"){_propData=d;_propLastFetch=now;}
+    _applyPropData(d);
+  }).catch(function(){_applyPropData(null);});
+}
+function _applyPropData(d){
+  if(d&&typeof d.sfi==="number"){
+    pV.sfi=d.sfi;
+    pV.k=typeof d.k==="number"?d.k:pV.k;
+    pV.a=typeof d.a==="number"?d.a:pV.a;
+    pV.ssn=typeof d.ssn==="number"?d.ssn:pV.ssn;
+    // Use server-pre-computed bands if available (more accurate — computed at time of NOAA fetch)
+    if(d.bands&&d.bands.length)pV.precomputedBands=d.bands;
+    else pV.precomputedBands=null;
+    if(d.sfi_history&&d.sfi_history.length){sparkD=d.sfi_history.slice(-24);}
+    else{sparkD.push(pV.sfi);if(sparkD.length>24)sparkD.shift();}
+  }else{
+    pV.precomputedBands=null;
+    sparkD.push(pV.sfi);if(sparkD.length>24)sparkD.shift();
+  }
   renderBBar();updateStatBar();updateTicker();
   if(curPg==="propagation")renderProp();
-  var ts=document.getElementById("prop-ts");if(ts)ts.textContent="Updated "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"})+" UTC";
+  var ts=document.getElementById("prop-ts");
+  if(!ts)return;
+  if(d&&d.updated_utc){
+    ts.textContent="\u2022 NOAA SWPC \u00b7 "+d.updated_utc+" UTC";
+    ts.style.color="var(--green)";
+  }else{
+    ts.textContent="\u2022 Fallback data \u00b7 NOAA unavailable";
+    ts.style.color="var(--amber,#fbbf24)";
+  }
 }
 
 function pCl(t,v){if(t==="sfi")return v>=130?"gok":v>=100?"gfa":"gpo";if(t==="k")return v<=2?"gok":v<=4?"gfa":"gpo";if(t==="a")return v<=7?"gok":v<=20?"gfa":"gpo";return "gok";}
@@ -3763,6 +3857,109 @@ function renderPropGuide(){
 }
 
 // ── BAND BAR ────────────────────────────────────────────────────
+// ── RECEPTION LOG ────────────────────────────────────────────────
+var _receptionData=null,_receptionFetchTime=0,_catchFormBound=false;
+
+function loadReceptionFeed(){
+  var feed=document.getElementById("heard-feed");if(!feed)return;
+  feed.innerHTML='<div style="font-family:var(--serif);font-size:.78rem;color:var(--muted);font-style:italic">Loading recent catches...</div>';
+  var now=Date.now();
+  // Cache for 10 min — catches only update when you manually add to reception.json
+  if(_receptionData&&(now-_receptionFetchTime)<600000){
+    _renderReceptionFeed(_receptionData);
+    _bindCatchForm();
+    return;
+  }
+  fetch("/data/reception.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    _receptionData=d;_receptionFetchTime=Date.now();
+    _renderReceptionFeed(d);
+    _bindCatchForm();
+  }).catch(function(){
+    var feed=document.getElementById("heard-feed");
+    if(feed)feed.innerHTML='<div style="font-family:var(--serif);font-size:.78rem;color:var(--muted);font-style:italic">Reception log unavailable.</div>';
+    _bindCatchForm();
+  });
+}
+
+function _renderReceptionFeed(d){
+  var feed=document.getElementById("heard-feed");if(!feed)return;
+  if(!d||!d.catches||!d.catches.length){
+    feed.innerHTML='<div style="font-family:var(--serif);font-size:.82rem;color:var(--muted);font-style:italic;padding:8px 0">No catches logged yet — be the first to submit one below!</div>';
+    return;
+  }
+  feed.innerHTML="";
+  var items=d.catches.slice(0,15);
+  for(var i=0;i<items.length;i++){
+    var it=items[i];
+    var row=document.createElement("div");
+    row.style.cssText="padding:8px 10px;background:var(--p2);border:1px solid var(--bdr);border-radius:4px;line-height:1.5";
+    // Top line: freq + station + SINPO
+    var top='<div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap">';
+    top+='<span style="font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--red)">'+it.freq_khz+' kHz</span>';
+    if(it.station)top+='<span style="font-family:var(--mono);font-size:.72rem;color:var(--ink);font-weight:600">'+it.station+'</span>';
+    if(it.sinpo){
+      var sc=it.sinpo.charAt(0);
+      var scolor=sc==="5"?"#4ade80":sc==="4"?"#86efac":sc==="3"?"#fbbf24":sc==="2"?"#fb923c":"#f87171";
+      top+='<span style="font-family:var(--mono);font-size:.6rem;padding:1px 5px;border-radius:2px;background:'+scolor+'22;border:1px solid '+scolor+'44;color:'+scolor+'">'+it.sinpo+'</span>';
+    }
+    top+="</div>";
+    // Bottom line: location + date + note
+    var bot='<div style="font-family:var(--serif);font-size:.72rem;color:var(--muted);margin-top:3px">';
+    var meta=[];
+    if(it.location)meta.push(it.location);
+    if(it.date_utc)meta.push(it.date_utc);
+    if(meta.length)bot+=meta.join(" \u00b7 ");
+    if(it.note)bot+=' \u2014 <em>'+it.note+'</em>';
+    bot+="</div>";
+    row.innerHTML=top+bot;
+    feed.appendChild(row);
+  }
+  if(d.catches.length>15){
+    var more=document.createElement("div");
+    more.style.cssText="font-family:var(--mono);font-size:.62rem;color:var(--m2);text-align:center;padding:6px 0";
+    more.textContent="Showing 15 of "+d.catches.length+" catches";
+    feed.appendChild(more);
+  }
+}
+
+function _bindCatchForm(){
+  if(_catchFormBound)return;
+  var form=document.getElementById("catch-form");
+  if(!form)return;
+  _catchFormBound=true;
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    // Validate frequency
+    var freqEl=form.querySelector("[name=frequency_khz]");
+    var freqVal=freqEl?freqEl.value.trim():"";
+    var freqNum=parseFloat(freqVal);
+    if(!freqVal||isNaN(freqNum)||freqNum<1600||freqNum>30000){
+      if(freqEl){freqEl.style.borderColor="var(--red)";}
+      var err=document.getElementById("catch-freq-err");
+      if(err)err.style.display="block";
+      return;
+    }
+    if(freqEl)freqEl.style.borderColor="";
+    var err=document.getElementById("catch-freq-err");if(err)err.style.display="none";
+    // Add UTC timestamp as hidden field
+    var tsEl=form.querySelector("[name=submitted_utc]");
+    if(tsEl)tsEl.value=new Date().toISOString().replace("T"," ").slice(0,16)+" UTC";
+    var submitBtn=form.querySelector("button[type=submit]");
+    if(submitBtn){submitBtn.disabled=true;submitBtn.textContent="Sending...";}
+    var data=new FormData(form);
+    fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body:new URLSearchParams(data).toString()
+    }).then(function(){
+      form.style.display="none";
+      var t=document.getElementById("catch-thanks");if(t)t.style.display="block";
+    }).catch(function(){
+      if(submitBtn){submitBtn.disabled=false;submitBtn.textContent="Submit Catch \u2192";}
+      var t=document.getElementById("catch-thanks");
+      if(t){t.style.display="block";t.textContent="Submitted \u2014 thanks! (network error but Netlify may have received it)";}
+    });
+  });
+}
+
 function renderBBar(){
   var c=document.getElementById("bb-items");var p=document.getElementById("bb-prop");
   if(!c)return;c.innerHTML="";
@@ -4484,6 +4681,8 @@ var REVIEWS=[
    date:"August 14, 2026",
    d:"A compact, button-driven DSP receiver built on the open, community-upgradeable Malahit-DSP firmware platform \u2014 wide-band coverage with a waterfall display and a physical numeric keypad for direct frequency entry.",
    thumb:"media/mlite880-photo.jpg",
+   buyUrl:"https://elecevolve.com/products/mlite-880?DIST=QUJP",
+   buyLabel:"Buy on Elecevolve",
    pros:[
      "Air band reception is genuinely impressive straight off the stock whip \u2014 no external antenna needed, and it pulled in traffic clearly with just the telescoping whip extended",
      "FM and AM reception are both excellent across the board, strong enough that I didn't think twice about either band during testing",
@@ -4493,6 +4692,8 @@ var REVIEWS=[
      "Direct numeric keypad makes jumping straight to a frequency fast and intuitive, no menu-diving required",
      "Display is clear enough to read the waterfall/spectrum view at a glance and get oriented on a band quickly \u2014 monochrome, but it does the job",
      "Feels solid and well put together in hand \u2014 doesn't feel like a cheap or flimsy build",
+     "Built-in Bluetooth is a great touch \u2014 pairing a headset for private listening is simple and just works",
+     "Programming channels/memories is quick and intuitive \u2014 no fumbling through menus to save a frequency for later",
      "Built on the open Malahit-DSP firmware platform, so the receiver keeps improving after purchase \u2014 Elecevolve pushes real firmware upgrades rather than shipping it once and walking away",
      "Included desktop stand is a nice touch for a radio you'll actually want sitting out on a desk, not stuffed in a drawer",
      "A genuinely strong pick for anyone who wants one radio that covers the full spectrum well, rather than a specialist tool built around one narrow slice of it"
@@ -4503,7 +4704,7 @@ var REVIEWS=[
      "No built-in CW or FT8 decoder \u2014 with sensitivity and filtering this good already on board, that feels like a real missed opportunity rather than a nice-to-have",
      "Screen is monochrome only \u2014 didn't bother me day to day, but the next generation of this platform really ought to move to color",
      "The number keypad isn't backlit \u2014 a real annoyance tuning in a dark room",
-     "Firmware updates on this platform typically go through an SD card rather than a simple app, which is more technical than some competitors",
+     "Firmware updates are handled through a dedicated updater program or a newer web-based one-click tool \u2014 not the SD-card process common on similar open-firmware radios, but still less seamless than a phone app",
      "Menu navigation has a learning curve at first if you're coming from a traditional analog-dial radio"
    ],
    verdict:"Thanks to Elecevolve for sending the MLite-880 to review \u2014 I spent real time with this one across several sessions, on the stock whip, working through band after band rather than just skimming the spec sheet.\n\nThe strongest impression it left was consistency. Air band came in clearly on nothing but the stock antenna. FM and AM were both excellent. And the pairing of genuinely narrow bandwidth filtering with fantastic noise reduction meant weak or crowded signals were actually usable, not just technically present \u2014 stepping the filter down on a crowded stretch of band pulled individual stations apart in a way a lot of radios this size simply can't do. That's the real story here: it's not the single best radio at any one specialty, it's consistently strong across almost everything I pointed it at.\n\nI also run an SDRplay and an ATS25-XF, so I had real points of comparison on hand rather than just a first impression. Against the ATS25-XF specifically, the MLite-880's noise reduction and narrow-filter performance held up very well \u2014 it's not chasing the same DIY/open-firmware niche in exactly the same way, but it's clearly built by people who understand what that crowd actually wants out of a receiver. Next to the SDRplay it's obviously a different category of tool \u2014 the SDRplay is a computer-driven SDR front end, this is a standalone handheld \u2014 but for grab-it-and-go listening without a laptop involved, the MLite-880 is the one I reached for.\n\nThe two real weak spots were 2 meters and 80 meters, both noticeably softer than the rest of the radio's performance. If either of those is your main focus, that's worth knowing going in \u2014 but for most listeners exploring broadly across the spectrum rather than living on one narrow band, it won't be a dealbreaker.\n\nThe monochrome screen didn't bother me in daily use, but it's the one place this platform feels a step behind where the next generation should go. And given how good the underlying sensitivity and filtering already are, a built-in CW or FT8 decoder feels like the obvious next feature \u2014 the hardware is clearly capable of supporting it, the platform just hasn't gotten there yet.\n\nAs it stands, this is a genuinely great pick for anyone who wants one radio to explore the full spectrum rather than specialize in a single band. Rating: 4/5.",
@@ -4689,7 +4890,7 @@ function buildFullReview(it){
     wrap.appendChild(pbox);
   }
 
-  if(it.amazonUrl){
+  if(it.amazonUrl||it.buyUrl){
     wrap.appendChild(buildBuyCTA(it,"top"));
   }
 
@@ -4726,7 +4927,7 @@ function buildFullReview(it){
     var v=document.createElement("div");v.className="rev-verdict";v.textContent=it.verdict;
     wrap.appendChild(v);
   }
-  if(it.amazonUrl){
+  if(it.amazonUrl||it.buyUrl){
     wrap.appendChild(buildBuyCTA(it,"bottom"));
   }
   if(it.src){
@@ -4744,9 +4945,12 @@ function buildBuyCTA(it,pos){
   var sub=document.createElement("div");sub.style.cssText="font-family:var(--serif);font-size:.68rem;color:rgba(255,255,255,.5);margin-top:2px";
   sub.textContent=pos==="top"?"This is the exact unit we tested":"See current price & reviews on Amazon";
   left.appendChild(priceEl);left.appendChild(sub);
-  var lnk=document.createElement("a");lnk.href=it.amazonUrl;lnk.target="_blank";lnk.rel="noopener";
+  var buyHref=it.buyUrl||it.amazonUrl;
+  var buyText=it.buyUrl?("🛒 "+(it.buyLabel||"Buy Now")):"🛒 Buy on Amazon";
+  if(it.buyUrl){sub.textContent=pos==="top"?"This is the exact unit we tested":"See current price & availability";}
+  var lnk=document.createElement("a");lnk.href=buyHref;lnk.target="_blank";lnk.rel="noopener";
   lnk.style.cssText="text-decoration:none;background:#FF9900;color:#000;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;white-space:nowrap;letter-spacing:.03em";
-  lnk.textContent="🛒 Buy on Amazon";
+  lnk.textContent=buyText;
   lnk.onmouseover=function(){this.style.background="#e68a00";};
   lnk.onmouseout=function(){this.style.background="#FF9900";};
   box.appendChild(left);box.appendChild(lnk);
@@ -4957,7 +5161,7 @@ setInterval(function(){
 },30000);
 
 // Propagation refresh every 2 minutes
-setInterval(fetchProp,120000);
+setInterval(fetchProp,1800000); // 30 min — matches propagation.json cache window
 
 
 
