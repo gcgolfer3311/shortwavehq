@@ -408,7 +408,7 @@ textarea.inp{resize:vertical;line-height:1.6}
 .se-btn{background:var(--red);color:#fff;border:none;border-radius:4px;font-family:var(--disp);font-weight:700;font-size:.92rem;padding:8px 20px;cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px;white-space:nowrap;align-self:center;height:44px;flex-shrink:0}
 .se-btn:hover{background:var(--red2)}.se-btn:active{transform:scale(.97)}.se-btn:disabled{opacity:.38;cursor:not-allowed}
 .se-btn svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;flex-shrink:0}
-.se-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;margin-bottom:.7rem}
+.se-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;margin-bottom:.7rem;transition:opacity .18s}
 .se-chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-family:var(--mono);font-size:.6rem;padding:3px 9px;border-radius:3px;cursor:pointer;transition:all .15s}
 .se-chip:hover{background:rgba(255,255,255,.13);color:#fff;border-color:rgba(255,255,255,.24)}
 .se-hint{font-family:var(--mono);font-size:.54rem;color:rgba(255,255,255,.18);text-align:center;letter-spacing:.04em}
@@ -969,8 +969,9 @@ a,button,input,select,textarea{touch-action:manipulation}
         <button class="se-btn" id="se-btn" onclick="seSearch()">
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Search
         </button>
+        <button id="se-clear" onclick="seClear()" style="display:none;background:none;border:none;color:rgba(255,255,255,.4);font-family:var(--mono);font-size:.75rem;cursor:pointer;padding:0 6px;line-height:1" title="Clear search">&times;</button>
       </div>
-      <div class="se-chips">
+      <div class="se-chips" id="se-chips">
         <button class="se-chip" onclick="seSet('9395','khz')">9395 — WRMI</button>
         <button class="se-chip" onclick="seSet('4625','khz')">4625 — UVB-76</button>
         <button class="se-chip" onclick="seSet('5000','khz')">5000 — WWV</button>
@@ -984,7 +985,7 @@ a,button,input,select,textarea{touch-action:manipulation}
         <button class="se-chip" onclick="seSet('pirate','text')">Pirates</button>
         <button class="se-chip" onclick="seSet('WRMI','text')">WRMI</button>
       </div>
-      <div class="se-hint">Frequency in kHz or MHz · Station name · Language · Region · Press Enter or click Search</div>
+      <div class="se-hint" id="se-hint">Frequency in kHz or MHz · Station name · Language · Region · Press Enter or click Search</div>
       <div id="se-result" class="sr-panel">
         <div class="sr-hdr"><div class="sr-tag" id="se-tag"></div><div class="sr-cnt" id="se-cnt"></div></div>
         <div id="se-matches" class="sr-matches"></div>
@@ -2116,7 +2117,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 523160ba · 2026-08-22 05:42 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 2444f18a · 2026-08-23 05:44 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -2908,13 +2909,33 @@ function seParseFreq(raw,unit){
   var f2=unit==="khz"?fRaw/1000:fRaw;
   return (f2>=0.1&&f2<=30)?f2:null;
 }
+function seClear(){
+  var inp=document.getElementById("se-inp");
+  if(inp){inp.value="";}
+  var r=document.getElementById("se-result");if(r)r.style.display="none";
+  var chips=document.getElementById("se-chips");var hint=document.getElementById("se-hint");
+  var clr=document.getElementById("se-clear");
+  if(chips)chips.style.display="";if(hint)hint.style.display="";
+  if(clr)clr.style.display="none";
+  if(inp)inp.focus();
+}
 function seSet(val,unit){
   var inp=document.getElementById("se-inp");var sel=document.getElementById("se-unit");
   if(inp)inp.value=val;if(unit!=="text"&&sel)sel.value=unit;seSearch();
 }
 function seLive(){
   var raw=((document.getElementById("se-inp")||{value:""}).value||"").trim();
-  if(!raw){var r=document.getElementById("se-result");if(r)r.style.display="none";return;}
+  var chips=document.getElementById("se-chips");
+  var hint=document.getElementById("se-hint");
+  var clr=document.getElementById("se-clear");
+  if(!raw){
+    var r=document.getElementById("se-result");if(r)r.style.display="none";
+    if(chips)chips.style.display="";if(hint)hint.style.display="";
+    if(clr)clr.style.display="none";
+    return;
+  }
+  if(chips)chips.style.display="none";if(hint)hint.style.display="none";
+  if(clr)clr.style.display="inline";
   var unit=(document.getElementById("se-unit")||{value:"khz"}).value||"khz";
   var fMHz=seParseFreq(raw,unit);
   if(fMHz!==null){seShowMatches(fMHz,false);return;}
@@ -2922,6 +2943,10 @@ function seLive(){
 }
 function seSearch(){
   var raw=((document.getElementById("se-inp")||{value:""}).value||"").trim();if(!raw)return;
+  var chips=document.getElementById("se-chips");
+  var hint=document.getElementById("se-hint");
+  if(chips)chips.style.display="none";if(hint)hint.style.display="none";
+  var clr2=document.getElementById("se-clear");if(clr2)clr2.style.display="inline";
   var unit=(document.getElementById("se-unit")||{value:"khz"}).value||"khz";
   var fMHz=seParseFreq(raw,unit);
   if(fMHz!==null){seShowMatches(fMHz,true);return;}
@@ -3246,8 +3271,31 @@ function seRow(s){
   else if(s.hfcc)stn.title="Verified — cross-checked against HFCC international frequency coordination data";
   var meta=document.createElement("div");meta.className="sr-meta";meta.textContent=s.lang+" \u00b7 "+s.tgt+(s.kw?" \u00b7 "+s.kw+"kW":"");
   info.appendChild(stn);info.appendChild(meta);
-  var lnk=document.createElement("a");lnk.href="https://websdr.ewi.utwente.nl:8901/?tune="+kHz+"am";lnk.target="_blank";lnk.className="sr-listen";lnk.textContent="Listen \u2197";
-  row.appendChild(fq);row.appendChild(bdg);row.appendChild(info);row.appendChild(lnk);
+  var listenWrap=document.createElement("div");listenWrap.style.cssText="position:relative;flex-shrink:0";
+  var lnk=document.createElement("button");
+  lnk.className="sr-listen";lnk.textContent="Listen \u2197";lnk.style.cssText+="cursor:pointer;background:none";
+  var mhz=(kHz/1000).toFixed(3);
+  var opts=[
+    {label:"WebSDR — Twente (NL)",url:"http://websdr.ewi.utwente.nl:8901/?tune="+mhz+"am"},
+    {label:"KiwiSDR Network",url:"http://kiwisdr.com/public/?f="+mhz+"AM"},
+    {label:"OpenWebRX Global",url:"https://www.receiverbook.de/?f="+mhz},
+  ];
+  var menu=document.createElement("div");
+  menu.style.cssText="display:none;position:absolute;right:0;top:110%;background:#1a1a2e;border:1px solid var(--bdr);border-radius:4px;z-index:999;min-width:190px;box-shadow:0 4px 16px rgba(0,0,0,.5)";
+  for(var oi=0;oi<opts.length;oi++){
+    (function(o){
+      var it=document.createElement("a");it.href=o.url;it.target="_blank";it.rel="noopener";
+      it.style.cssText="display:block;padding:7px 11px;font-family:var(--mono);font-size:.58rem;color:rgba(255,255,255,.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);white-space:nowrap";
+      it.textContent=o.label;
+      it.onmouseover=function(){this.style.background="rgba(255,255,255,.08)";};
+      it.onmouseout=function(){this.style.background="";};
+      menu.appendChild(it);
+    })(opts[oi]);
+  }
+  lnk.onclick=function(e){e.stopPropagation();menu.style.display=menu.style.display==="none"?"block":"none";};
+  document.addEventListener("click",function(){menu.style.display="none";},{once:false,capture:true});
+  listenWrap.appendChild(lnk);listenWrap.appendChild(menu);
+  row.appendChild(fq);row.appendChild(bdg);row.appendChild(info);row.appendChild(listenWrap);
   return row;
 }
 
@@ -3268,6 +3316,11 @@ function updateTicker(){
 
 // ── HOME ────────────────────────────────────────────────────────
 function renderHome(){
+  // Restore search chips/hint when returning to home page
+  var chips=document.getElementById("se-chips");var hint=document.getElementById("se-hint");
+  var clr=document.getElementById("se-clear");var inp=document.getElementById("se-inp");
+  if(chips)chips.style.display="";if(hint)hint.style.display="";
+  if(clr)clr.style.display="none";
   renderHomeGuide();renderPicks();updateStatBar();drawGL("gl-sm",280,124);renderReviewBanner();
 }
 
