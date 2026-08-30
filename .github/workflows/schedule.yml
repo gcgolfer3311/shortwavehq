@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "shortwavehq-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A data/schedule.json data/schedule-changes.json data/propagation.json dist
+          git add -A data/schedule.json data/schedule-changes.json data/propagation.json data/reception.json dist sw.js
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
