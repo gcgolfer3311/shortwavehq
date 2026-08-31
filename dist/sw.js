@@ -1,51 +1,67 @@
-// ShortwaveHQ service worker
-// Network-first for the app shell and live schedule data so users never get
-// stuck on a stale cached page; falls back to cache only when offline.
-var CACHE = "shortwavehq-v1";
-var NETWORK_FIRST_PATHS = ["/", "/index.html", "/data/schedule.json"];
+// ShortwaveHQ Service Worker v1.0
+const CACHE = 'shortwavehq-v1';
+const STATIC = [
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+];
 
-self.addEventListener("install", function (event) {
+// Install — cache static shell
+self.addEventListener('install', function(e){
+  e.waitUntil(
+    caches.open(CACHE).then(function(c){ return c.addAll(STATIC); })
+  );
   self.skipWaiting();
 });
 
-self.addEventListener("activate", function (event) {
-  event.waitUntil(
-    caches.keys().then(function (keys) {
+// Activate — clean old caches
+self.addEventListener('activate', function(e){
+  e.waitUntil(
+    caches.keys().then(function(keys){
       return Promise.all(
-        keys.filter(function (k) { return k !== CACHE; }).map(function (k) { return caches.delete(k); })
+        keys.filter(function(k){ return k !== CACHE; })
+            .map(function(k){ return caches.delete(k); })
       );
-    }).then(function () { return self.clients.claim(); })
+    })
   );
+  self.clients.claim();
 });
 
-self.addEventListener("fetch", function (event) {
-  var req = event.request;
-  if (req.method !== "GET") return;
+// Fetch strategy:
+// - data/*.json (schedule, propagation, reception) → network first, cache fallback
+// - everything else → cache first, network fallback
+self.addEventListener('fetch', function(e){
+  var url = e.request.url;
+  var isData = url.includes('/data/') && url.endsWith('.json');
+  var isExternal = !url.startsWith(self.location.origin);
 
-  var url = new URL(req.url);
-  var isNetworkFirst = NETWORK_FIRST_PATHS.indexOf(url.pathname) !== -1;
+  // Don't intercept external requests (NOAA, analytics, etc.)
+  if(isExternal){ return; }
 
-  if (isNetworkFirst) {
-    event.respondWith(
-      fetch(req).then(function (res) {
-        var copy = res.clone();
-        caches.open(CACHE).then(function (cache) { cache.put(req, copy); });
-        return res;
-      }).catch(function () {
-        return caches.match(req);
+  if(isData){
+    // Network first for live data — fall back to cache if offline
+    e.respondWith(
+      fetch(e.request).then(function(r){
+        var clone = r.clone();
+        caches.open(CACHE).then(function(c){ c.put(e.request, clone); });
+        return r;
+      }).catch(function(){
+        return caches.match(e.request);
       })
     );
-    return;
+  } else {
+    // Cache first for static assets
+    e.respondWith(
+      caches.match(e.request).then(function(cached){
+        if(cached) return cached;
+        return fetch(e.request).then(function(r){
+          var clone = r.clone();
+          caches.open(CACHE).then(function(c){ c.put(e.request, clone); });
+          return r;
+        });
+      })
+    );
   }
-
-  // Cache-first for static assets (icons, etc.)
-  event.respondWith(
-    caches.match(req).then(function (cached) {
-      return cached || fetch(req).then(function (res) {
-        var copy = res.clone();
-        caches.open(CACHE).then(function (cache) { cache.put(req, copy); });
-        return res;
-      });
-    }).catch(function () { return caches.match(req); })
-  );
 });

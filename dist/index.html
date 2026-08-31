@@ -890,6 +890,7 @@ a,button,input,select,textarea{touch-action:manipulation}
       <div><div class="bname">Shortwave<em>HQ</em></div><div class="btag">The World's Shortwave Search Engine</div></div>
     </a>
     <div class="mright">
+      <button id="pwa-install-btn" onclick="installPWA()" style="display:none;align-items:center;gap:5px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:4px;color:rgba(255,255,255,.75);font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;cursor:pointer;transition:all .15s" onmouseover="this.style.background='rgba(255,255,255,.14)'" onmouseout="this.style.background='rgba(255,255,255,.08)'"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Install App</button>
       <button class="night-btn" id="text-btn" onclick="cycleTextSize()" title="Change text size for easier reading">A+</button>
       <button class="night-btn" id="night-btn" onclick="toggleNight()">Night</button>
       <div id="google_translate_element"></div>
@@ -2117,7 +2118,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 2444f18a · 2026-08-30 10:28 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build a4bccb92 · 2026-08-31 07:40 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4726,6 +4727,48 @@ function submitQSL(){
 // ── ADVERTISE ───────────────────────────────────────────────────
 // ── REVIEWS ──────────────────────────────────────────────────────
 var REVIEWS=[
+  {n:"Radioddity GS-10B Pro",cat:"Ham HT / Full-Band Receiver",status:"Published",url:"#",
+   date:"August 31, 2026",
+   d:"A dual-band ham HT that hides a seriously capable shortwave and full-band receiver under its keypad. The GS-10B Pro covers AM/FM/SW/AIR/WB/VHF/UHF/CB and more — and what pulled me in was exactly that shortwave coverage baked into what is otherwise a proper ham transceiver.",
+   thumb:"media/radioddity-gs10b-pro-photo.jpg",
+   amazonUrl:"https://www.amazon.com/dp/B0H1Q1SFLF?tag=shortwave1877-20",
+   price:"Check current price",
+   specs:[
+     ["Bands","TX: 136–174 MHz / 400–520 MHz (ham VHF/UHF). RX: AM/FM/SW/AIR/WB/CB/VHF/UHF — wide-band receive coverage"],
+     ["TX Power","8W high / 5W medium / 1W low (VHF/UHF)"],
+     ["Display","Full-color TFT LCD — clear and readable in direct sunlight"],
+     ["Battery","3200mAh Li-ion (included); charges via USB-C"],
+     ["Memory","1000 channels"],
+     ["Special Features","Bluetooth (app programming), NOAA weather receive, dual-band simultaneous receive, APRS capable"],
+     ["Antenna connector","SMA-female"],
+     ["Size / Weight","Compact HT form factor; solidly built, feels premium in hand"]
+   ],
+   pros:[
+     "Shortwave reception was the whole reason I requested this radio — and it genuinely delivered. Connected to my ML-30 loop antenna I was pulling in international broadcasts clearly, including stations I'd expect to struggle on a radio this size",
+     "The included donut antenna gave me something to work with out of the box — usable on shortwave for strong signals, though you'll want an external antenna for serious DXing",
+     "Full-color display is bright, sharp, and genuinely readable outdoors in Arizona sun — a meaningful upgrade over mono displays on cheaper radios in this class",
+     "8W output is a solid power level for a handheld — hit repeaters from locations where lower-power radios gave up",
+     "Bluetooth app programming (via Radioddity's app) is smooth and actually works — a huge step up from the cable-and-software nightmare most HTs put you through",
+     "Dual-band simultaneous receive is solid — monitored a local repeater on one band while scanning VHF aircraft on the other without any drama",
+     "USB-C charging is exactly what this class of radio should have in 2026 — no proprietary connectors, no hunting for the right cable",
+     "1000 channel memory with named channel groups keeps things organized once you've programmed your local favorites",
+     "NOAA weather receive worked reliably — pulled in the closest transmitter clearly without any fuss",
+     "Build quality feels premium for the price — solid buttons, satisfying PTT throw, nothing rattles",
+     "APRS capability adds real value for ham operators who want to get into positioning and digital messaging without buying a separate radio",
+     "AIR band receive is clear and usable — monitored local approach control without issues"
+   ],
+   cons:[
+     "Shortwave sensitivity on the stock donut antenna is limited — you'll hear strong broadcasters but weak DX signals need an external antenna. The ML-30 loop changed everything here, but that's an extra purchase most buyers won't expect",
+     "Menu system has a learning curve that will frustrate new hams — the sheer number of options is comprehensive but not intuitive on first contact",
+     "The Bluetooth app is good but programming deep into the channel list still takes patience — not quite as seamless as it looks in the product photos",
+     "At 8W the battery life on TX takes a real hit during heavy use — drop to 5W if you're doing a long session away from a charge point",
+     "No built-in speaker for shortwave that matches the quality of a dedicated receiver — audio is functional but not high-fidelity for casual listening sessions",
+     "Stock antenna is a compromise by design — the donut works for ham TX/RX but you'll want a purpose-built antenna for shortwave and a longer whip for better HT performance",
+     "SSB receive on shortwave requires patience to tune correctly — the tuning step resolution is acceptable but not as fine-grained as a dedicated SSB receiver"
+   ],
+   verdict:"A big thank you to Radioddity and Helen for sending the GS-10B Pro out for review — I genuinely appreciated the opportunity and it's clear from the moment you pick this radio up that real thought went into it.\n\nI came to this radio from a specific angle: I wanted to know how the shortwave receiver held up, because that's the audience ShortwaveHQ serves. The honest answer is that it depends heavily on your antenna setup. With the included donut antenna I had reasonable luck — strong international broadcasters came through clearly enough to identify the station and follow the programming, which is more than I expected from a stock HT antenna. But the radio genuinely came alive once I connected my ML-30 magnetic loop antenna. Suddenly I was pulling in signals I'd normally associate with a dedicated portable, not a dual-band HT. If you're serious about shortwave listening and already have a decent antenna, the GS-10B Pro is a legitimate receiver for that purpose.\n\nAs a ham HT, it's a strong package. 8W is solid power for a handheld, the color display is one of the best I've seen at this price point, and Bluetooth programming via the Radioddity app actually works — which is something I can't say about every HT that claims app support. APRS, NOAA, AIR band receive, dual-watch — it covers the bases a serious operator wants covered without making you feel like you're managing a piece of commercial equipment.\n\nThe learning curve on the menus is real, and new hams should plan to spend an afternoon with the manual before they feel at home. But for an experienced operator or an SWL who also holds a license and wants one radio that does both jobs seriously, the GS-10B Pro earns its place on the desk. Rating: 4/5.",
+   src:"Hands-on review based on personal testing by Michael Smith / KM7FMJ at ShortwaveHQ, including shortwave reception testing with the included donut antenna and the reviewer's own ML-30 magnetic loop antenna. General GS-10B Pro specifications from Radioddity product documentation."
+  },
   {n:"ChoYong LC100",cat:"Portable Receiver",d:"A striking multi-band smart radio launching soon in two colorways — full-color touchscreen with live weather, SSB, and online radio streaming built in. Full hands-on review coming the moment it launches.",status:"Coming Soon",url:"#",
    thumb:"media/choyong-lc100-photo.jpg",
    src:"Official product photos and details from ChoYong — see their full LC100 write-up: https://www.choyongradio.com/blog/detail/id/19.html"
@@ -4797,7 +4840,7 @@ var REVIEWS=[
    date:"August 12, 2026",
    d:"A wooden-cabinet FM/AM/SW/Weather Band radio built around audio quality first, shipping with a wireless W3 repeater accessory to extend reception into AIR and VHF/UHF.",
    thumb:"media/zhiwhis-zws802-photo.jpg",
-   amazonUrl:"https://amzn.to/4xd8dVb",
+   amazonUrl:"https://www.amazon.com/dp/B0FJX3C7LT?tag=shortwave1877-20",
    price:"~$120–$130",
    specs:[
      ["Bands","FM / AM / Shortwave / Weather Band standalone. Adds AIR and V.UHF (25–999 MHz) when paired with the included W3 repeater"],
@@ -5215,6 +5258,35 @@ setInterval(function(){
 
 // Propagation refresh every 2 minutes
 setInterval(fetchProp,1800000); // 30 min — matches propagation.json cache window
+
+// ── PWA SERVICE WORKER + INSTALL PROMPT ─────────────────────────
+var _deferredInstall=null;
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').catch(function(e){console.warn('SW reg failed:',e);});
+}
+window.addEventListener('beforeinstallprompt',function(e){
+  e.preventDefault();
+  _deferredInstall=e;
+  var btn=document.getElementById('pwa-install-btn');
+  if(btn)btn.style.display='flex';
+});
+window.addEventListener('appinstalled',function(){
+  _deferredInstall=null;
+  var btn=document.getElementById('pwa-install-btn');
+  if(btn)btn.style.display='none';
+  toast('ShortwaveHQ installed to your desktop!');
+});
+function installPWA(){
+  if(!_deferredInstall)return;
+  _deferredInstall.prompt();
+  _deferredInstall.userChoice.then(function(r){
+    if(r.outcome==='accepted'){
+      var btn=document.getElementById('pwa-install-btn');
+      if(btn)btn.style.display='none';
+    }
+    _deferredInstall=null;
+  });
+}
 
 
 
