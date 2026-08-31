@@ -1800,8 +1800,8 @@ Yours sincerely,
           </div>
         </div>
 
-        <div style="font-family:var(--disp);font-size:1rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.8rem;margin-top:1.4rem">Latest &amp; Upcoming Reviews</div>
-        <div id="rev-grid" class="ad-grid"></div>
+        <div style="font-family:var(--disp);font-size:1rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.8rem;margin-top:1.4rem">All Reviews</div>
+        <div id="rev-grid"></div>
       </div>
 
       <div class="stk">
@@ -2118,7 +2118,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build c30e85c2 · 2026-08-31 07:51 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 02c6ac2e · 2026-08-31 07:59 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4919,23 +4919,99 @@ function renderReviewBanner(){
 }
 
 function renderReviews(){
-  var g=document.getElementById("rev-grid");if(!g||g.children.length)return;
-  for(var i=0;i<REVIEWS.length;i++){
-    var it=REVIEWS[i];
-    if(it.specs||it.pros||it.verdict){ g.appendChild(buildFullReview(it)); continue; }
-    var d=document.createElement("div");d.className="ad-item";
+  var g=document.getElementById("rev-grid");if(!g)return;
+  g.innerHTML="";
+  // Tab filter state
+  var activeTab=g.getAttribute("data-tab")||"published";
+
+  // Build tab bar
+  var tabs=document.createElement("div");
+  tabs.style.cssText="display:flex;gap:6px;margin-bottom:1.2rem;flex-wrap:wrap";
+  var tabDefs=[["published","Published"],["coming","Coming Soon"],["all","All"]];
+  for(var ti=0;ti<tabDefs.length;ti++){
+    (function(key,label){
+      var tb=document.createElement("button");
+      tb.textContent=label;
+      var count=REVIEWS.filter(function(r){
+        if(key==="all")return true;
+        if(key==="published")return r.status==="Published";
+        return r.status!=="Published";
+      }).length;
+      tb.textContent=label+" ("+count+")";
+      tb.style.cssText="font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:3px;cursor:pointer;border:1px solid var(--bdr);transition:all .15s;"+(activeTab===key?"background:var(--red);color:#fff;border-color:var(--red)":"background:var(--p2);color:var(--m2)");
+      tb.onclick=function(){g.setAttribute("data-tab",key);renderReviews();};
+      tabs.appendChild(tb);
+    })(tabDefs[ti][0],tabDefs[ti][1]);
+  }
+  g.appendChild(tabs);
+
+  // Filter reviews
+  var filtered=REVIEWS.filter(function(r){
+    if(activeTab==="all")return true;
+    if(activeTab==="published")return r.status==="Published";
+    return r.status!=="Published";
+  });
+
+  if(!filtered.length){
+    var none=document.createElement("div");none.style.cssText="font-family:var(--serif);font-size:.82rem;color:var(--muted);font-style:italic;padding:1rem 0";none.textContent="No reviews in this category yet.";g.appendChild(none);return;
+  }
+
+  // Render each review as a compact card with expandable full review
+  for(var i=0;i<filtered.length;i++){
+    var it=filtered[i];
+    var card=document.createElement("div");
+    card.style.cssText="background:var(--p2);border:1px solid var(--bdr);border-radius:5px;margin-bottom:.9rem;overflow:hidden";
+
+    // Card header — always visible
+    var hdr=document.createElement("div");
+    hdr.style.cssText="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;cursor:"+(it.specs||it.pros||it.verdict?"pointer":"default");
+
+    // Thumbnail
     if(it.thumb){
-      var athumb=document.createElement("img");athumb.src=it.thumb;athumb.alt=it.n+" product photo";athumb.style.cssText="width:100%;display:block;border-radius:6px;border:1px solid rgba(255,255,255,.12);margin-bottom:.7rem";
-      d.appendChild(athumb);
+      var thumb=document.createElement("img");
+      thumb.src=it.thumb;thumb.alt=it.n;
+      thumb.style.cssText="width:64px;height:64px;object-fit:cover;border-radius:4px;border:1px solid var(--bdr);flex-shrink:0";
+      hdr.appendChild(thumb);
     }
-    var cat=document.createElement("div");cat.className="ad-cat";cat.textContent=it.cat;
-    var nm=document.createElement("div");nm.className="ad-nm";nm.textContent=it.n;
-    var desc=document.createElement("div");desc.className="ad-desc";desc.textContent=it.d;
-    var bot=document.createElement("div");bot.style.cssText="display:flex;justify-content:space-between;align-items:center";
-    var pr=document.createElement("div");pr.className="ad-price";pr.textContent=it.status;
-    var lnk=document.createElement("a");lnk.href=it.url;lnk.className="ad-link";lnk.textContent=it.url==="#"?"Pending":"Read Review \u2197";if(it.url!=="#")lnk.target="_blank";
-    bot.appendChild(pr);bot.appendChild(lnk);
-    d.appendChild(cat);d.appendChild(nm);d.appendChild(desc);d.appendChild(bot);g.appendChild(d);
+
+    // Title block
+    var info=document.createElement("div");info.style.cssText="flex:1;min-width:0";
+    var catEl=document.createElement("div");catEl.style.cssText="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:3px";catEl.textContent=it.cat;
+    var nameEl=document.createElement("div");nameEl.style.cssText="font-family:var(--disp);font-size:.95rem;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:3px";nameEl.textContent=it.n;
+    var statusEl=document.createElement("div");statusEl.style.cssText="display:inline-block;font-family:var(--mono);font-size:.52rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:2px;"+(it.status==="Published"?"background:rgba(74,222,128,.15);color:#4ade80;border:1px solid rgba(74,222,128,.3)":"background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.25)");statusEl.textContent=it.status;
+    if(it.date){var dateEl=document.createElement("span");dateEl.style.cssText="font-family:var(--mono);font-size:.52rem;color:var(--m2);margin-left:8px";dateEl.textContent=it.date;statusEl.appendChild(dateEl);}
+    var descEl=document.createElement("div");descEl.style.cssText="font-family:var(--serif);font-size:.76rem;color:var(--muted);line-height:1.55;margin-top:5px";descEl.textContent=it.d;
+    info.appendChild(catEl);info.appendChild(nameEl);info.appendChild(statusEl);info.appendChild(descEl);
+
+    // Right side: buy button + expand arrow
+    var right=document.createElement("div");right.style.cssText="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0";
+    if(it.amazonUrl||it.buyUrl){
+      var buyBtn=document.createElement("a");
+      buyBtn.href=it.buyUrl||it.amazonUrl;buyBtn.target="_blank";buyBtn.rel="noopener";
+      buyBtn.style.cssText="font-family:var(--mono);font-size:.55rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#FF9900;color:#000;padding:5px 10px;border-radius:3px;text-decoration:none;white-space:nowrap";
+      buyBtn.textContent=it.buyUrl?(it.buyLabel||"Buy Now"):"Buy on Amazon";
+      right.appendChild(buyBtn);
+    }
+    if(it.specs||it.pros||it.verdict){
+      var arrow=document.createElement("div");arrow.style.cssText="font-family:var(--mono);font-size:.58rem;color:var(--m2);margin-top:2px";arrow.textContent="Read full review \u25be";arrow.className="rev-arrow";
+      right.appendChild(arrow);
+    }
+    hdr.appendChild(info);hdr.appendChild(right);
+    card.appendChild(hdr);
+
+    // Full review — collapsible
+    if(it.specs||it.pros||it.verdict){
+      var full=document.createElement("div");full.style.cssText="display:none;border-top:1px solid var(--bdr)";
+      full.appendChild(buildFullReview(it));
+      card.appendChild(full);
+      hdr.onclick=function(fl,ar){return function(){
+        var open=fl.style.display==="block";
+        fl.style.display=open?"none":"block";
+        if(ar)ar.textContent=open?"Read full review \u25be":"Close review \u25b4";
+      };}(full,right.querySelector(".rev-arrow"));
+    }
+
+    g.appendChild(card);
   }
 }
 function ytVideoId(url){
