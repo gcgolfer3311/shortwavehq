@@ -2118,7 +2118,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 02c6ac2e · 2026-08-31 07:59 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 95c0f20b · 2026-08-31 08:14 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -4919,101 +4919,159 @@ function renderReviewBanner(){
 }
 
 function renderReviews(){
-  var g=document.getElementById("rev-grid");if(!g)return;
-  g.innerHTML="";
-  // Tab filter state
-  var activeTab=g.getAttribute("data-tab")||"published";
+  try{
+    var g=document.getElementById("rev-grid");
+    if(!g)return;
+    g.innerHTML="";
+    var activeTab=g.getAttribute("data-tab")||"published";
 
-  // Build tab bar
-  var tabs=document.createElement("div");
-  tabs.style.cssText="display:flex;gap:6px;margin-bottom:1.2rem;flex-wrap:wrap";
-  var tabDefs=[["published","Published"],["coming","Coming Soon"],["all","All"]];
-  for(var ti=0;ti<tabDefs.length;ti++){
-    (function(key,label){
-      var tb=document.createElement("button");
-      tb.textContent=label;
-      var count=REVIEWS.filter(function(r){
-        if(key==="all")return true;
-        if(key==="published")return r.status==="Published";
-        return r.status!=="Published";
-      }).length;
-      tb.textContent=label+" ("+count+")";
-      tb.style.cssText="font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:3px;cursor:pointer;border:1px solid var(--bdr);transition:all .15s;"+(activeTab===key?"background:var(--red);color:#fff;border-color:var(--red)":"background:var(--p2);color:var(--m2)");
-      tb.onclick=function(){g.setAttribute("data-tab",key);renderReviews();};
-      tabs.appendChild(tb);
-    })(tabDefs[ti][0],tabDefs[ti][1]);
-  }
-  g.appendChild(tabs);
+    // ── TABS ──
+    var tabBar=document.createElement("div");
+    tabBar.style.cssText="display:flex;gap:6px;margin-bottom:1.2rem;flex-wrap:wrap";
+    var tabDefs=[["published","Published"],["coming","Coming Soon"],["all","All"]];
+    for(var ti=0;ti<tabDefs.length;ti++){
+      (function(key,label){
+        var tb=document.createElement("button");
+        var cnt=0;for(var ri=0;ri<REVIEWS.length;ri++){var r=REVIEWS[ri];if(key==="all"||( key==="published"&&r.status==="Published")||(key==="coming"&&r.status!=="Published"))cnt++;}
+        tb.textContent=label+" ("+cnt+")";
+        var isActive=(activeTab===key);
+        tb.style.cssText="font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:3px;cursor:pointer;border:1px solid "+(isActive?"var(--red);background:var(--red);color:#fff":"var(--bdr);background:var(--p2);color:var(--m2)");
+        tb.setAttribute("data-tabkey",key);
+        tb.onclick=function(){
+          var k=this.getAttribute("data-tabkey");
+          document.getElementById("rev-grid").setAttribute("data-tab",k);
+          renderReviews();
+        };
+        tabBar.appendChild(tb);
+      })(tabDefs[ti][0],tabDefs[ti][1]);
+    }
+    g.appendChild(tabBar);
 
-  // Filter reviews
-  var filtered=REVIEWS.filter(function(r){
-    if(activeTab==="all")return true;
-    if(activeTab==="published")return r.status==="Published";
-    return r.status!=="Published";
-  });
-
-  if(!filtered.length){
-    var none=document.createElement("div");none.style.cssText="font-family:var(--serif);font-size:.82rem;color:var(--muted);font-style:italic;padding:1rem 0";none.textContent="No reviews in this category yet.";g.appendChild(none);return;
-  }
-
-  // Render each review as a compact card with expandable full review
-  for(var i=0;i<filtered.length;i++){
-    var it=filtered[i];
-    var card=document.createElement("div");
-    card.style.cssText="background:var(--p2);border:1px solid var(--bdr);border-radius:5px;margin-bottom:.9rem;overflow:hidden";
-
-    // Card header — always visible
-    var hdr=document.createElement("div");
-    hdr.style.cssText="display:flex;gap:12px;align-items:flex-start;padding:12px 14px;cursor:"+(it.specs||it.pros||it.verdict?"pointer":"default");
-
-    // Thumbnail
-    if(it.thumb){
-      var thumb=document.createElement("img");
-      thumb.src=it.thumb;thumb.alt=it.n;
-      thumb.style.cssText="width:64px;height:64px;object-fit:cover;border-radius:4px;border:1px solid var(--bdr);flex-shrink:0";
-      hdr.appendChild(thumb);
+    // ── FILTER ──
+    var filtered=[];
+    for(var fi=0;fi<REVIEWS.length;fi++){
+      var rv=REVIEWS[fi];
+      if(activeTab==="all"||( activeTab==="published"&&rv.status==="Published")||(activeTab==="coming"&&rv.status!=="Published"))filtered.push(rv);
     }
 
-    // Title block
-    var info=document.createElement("div");info.style.cssText="flex:1;min-width:0";
-    var catEl=document.createElement("div");catEl.style.cssText="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:3px";catEl.textContent=it.cat;
-    var nameEl=document.createElement("div");nameEl.style.cssText="font-family:var(--disp);font-size:.95rem;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:3px";nameEl.textContent=it.n;
-    var statusEl=document.createElement("div");statusEl.style.cssText="display:inline-block;font-family:var(--mono);font-size:.52rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:2px;"+(it.status==="Published"?"background:rgba(74,222,128,.15);color:#4ade80;border:1px solid rgba(74,222,128,.3)":"background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.25)");statusEl.textContent=it.status;
-    if(it.date){var dateEl=document.createElement("span");dateEl.style.cssText="font-family:var(--mono);font-size:.52rem;color:var(--m2);margin-left:8px";dateEl.textContent=it.date;statusEl.appendChild(dateEl);}
-    var descEl=document.createElement("div");descEl.style.cssText="font-family:var(--serif);font-size:.76rem;color:var(--muted);line-height:1.55;margin-top:5px";descEl.textContent=it.d;
-    info.appendChild(catEl);info.appendChild(nameEl);info.appendChild(statusEl);info.appendChild(descEl);
-
-    // Right side: buy button + expand arrow
-    var right=document.createElement("div");right.style.cssText="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0";
-    if(it.amazonUrl||it.buyUrl){
-      var buyBtn=document.createElement("a");
-      buyBtn.href=it.buyUrl||it.amazonUrl;buyBtn.target="_blank";buyBtn.rel="noopener";
-      buyBtn.style.cssText="font-family:var(--mono);font-size:.55rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#FF9900;color:#000;padding:5px 10px;border-radius:3px;text-decoration:none;white-space:nowrap";
-      buyBtn.textContent=it.buyUrl?(it.buyLabel||"Buy Now"):"Buy on Amazon";
-      right.appendChild(buyBtn);
-    }
-    if(it.specs||it.pros||it.verdict){
-      var arrow=document.createElement("div");arrow.style.cssText="font-family:var(--mono);font-size:.58rem;color:var(--m2);margin-top:2px";arrow.textContent="Read full review \u25be";arrow.className="rev-arrow";
-      right.appendChild(arrow);
-    }
-    hdr.appendChild(info);hdr.appendChild(right);
-    card.appendChild(hdr);
-
-    // Full review — collapsible
-    if(it.specs||it.pros||it.verdict){
-      var full=document.createElement("div");full.style.cssText="display:none;border-top:1px solid var(--bdr)";
-      full.appendChild(buildFullReview(it));
-      card.appendChild(full);
-      hdr.onclick=function(fl,ar){return function(){
-        var open=fl.style.display==="block";
-        fl.style.display=open?"none":"block";
-        if(ar)ar.textContent=open?"Read full review \u25be":"Close review \u25b4";
-      };}(full,right.querySelector(".rev-arrow"));
+    if(!filtered.length){
+      var none=document.createElement("div");
+      none.style.cssText="font-family:var(--serif);font-size:.82rem;color:var(--muted);font-style:italic;padding:1rem 0";
+      none.textContent="No reviews in this category yet.";
+      g.appendChild(none);
+      return;
     }
 
-    g.appendChild(card);
+    // ── CARDS ──
+    for(var ci=0;ci<filtered.length;ci++){
+      var it=filtered[ci];
+      var hasDetail=!!(it.specs||it.pros||it.verdict);
+
+      var card=document.createElement("div");
+      card.style.cssText="background:var(--p2);border:1px solid var(--bdr);border-radius:5px;margin-bottom:.9rem;overflow:hidden";
+
+      // Header row
+      var hdr=document.createElement("div");
+      hdr.style.cssText="display:flex;gap:12px;align-items:flex-start;padding:12px 14px"+(hasDetail?";cursor:pointer":"");
+
+      // Thumbnail
+      if(it.thumb){
+        var img=document.createElement("img");
+        img.src=it.thumb;img.alt=it.n;
+        img.style.cssText="width:64px;height:64px;object-fit:cover;border-radius:4px;border:1px solid var(--bdr);flex-shrink:0;background:var(--paper)";
+        img.onerror=function(){this.style.display="none";};
+        hdr.appendChild(img);
+      }
+
+      // Info
+      var info=document.createElement("div");
+      info.style.cssText="flex:1;min-width:0";
+
+      var catEl=document.createElement("div");
+      catEl.style.cssText="font-family:var(--mono);font-size:.54rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:3px";
+      catEl.textContent=it.cat;
+
+      var nameEl=document.createElement("div");
+      nameEl.style.cssText="font-family:var(--disp);font-size:.95rem;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:4px";
+      nameEl.textContent=it.n;
+
+      var badges=document.createElement("div");
+      badges.style.cssText="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px";
+
+      var statusBadge=document.createElement("span");
+      var isPub=(it.status==="Published");
+      statusBadge.style.cssText="font-family:var(--mono);font-size:.52rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:2px;"+(isPub?"background:rgba(74,222,128,.15);color:#4ade80;border:1px solid rgba(74,222,128,.3)":"background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.25)");
+      statusBadge.textContent=it.status;
+      badges.appendChild(statusBadge);
+
+      if(it.date){
+        var dateEl=document.createElement("span");
+        dateEl.style.cssText="font-family:var(--mono);font-size:.52rem;color:var(--m2)";
+        dateEl.textContent=it.date;
+        badges.appendChild(dateEl);
+      }
+
+      var descEl=document.createElement("div");
+      descEl.style.cssText="font-family:var(--serif);font-size:.76rem;color:var(--muted);line-height:1.55";
+      descEl.textContent=it.d;
+
+      info.appendChild(catEl);
+      info.appendChild(nameEl);
+      info.appendChild(badges);
+      info.appendChild(descEl);
+      hdr.appendChild(info);
+
+      // Right: buy button + expand hint
+      var right=document.createElement("div");
+      right.style.cssText="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0;padding-left:8px";
+
+      var buyHref=it.buyUrl||it.amazonUrl;
+      var buyLabel=it.buyUrl?(it.buyLabel||"Buy Now"):"Buy on Amazon";
+      if(buyHref){
+        var buyBtn=document.createElement("a");
+        buyBtn.href=buyHref;buyBtn.target="_blank";buyBtn.rel="noopener";
+        buyBtn.style.cssText="font-family:var(--mono);font-size:.55rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#FF9900;color:#000;padding:5px 10px;border-radius:3px;text-decoration:none;white-space:nowrap";
+        buyBtn.textContent=buyLabel;
+        right.appendChild(buyBtn);
+      }
+
+      var arrowEl=null;
+      if(hasDetail){
+        arrowEl=document.createElement("div");
+        arrowEl.style.cssText="font-family:var(--mono);font-size:.58rem;color:var(--m2);white-space:nowrap;margin-top:2px";
+        arrowEl.textContent="Read review ▾";
+        right.appendChild(arrowEl);
+      }
+
+      hdr.appendChild(right);
+      card.appendChild(hdr);
+
+      // Expandable full review
+      if(hasDetail){
+        var fullWrap=document.createElement("div");
+        fullWrap.style.cssText="display:none;border-top:1px solid var(--bdr)";
+        try{ fullWrap.appendChild(buildFullReview(it)); }catch(e){}
+        card.appendChild(fullWrap);
+
+        // Closure to avoid variable capture bugs
+        (function(hw, fw, ar){
+          hw.addEventListener("click", function(){
+            var isOpen=(fw.style.display==="block");
+            fw.style.display=isOpen?"none":"block";
+            if(ar) ar.textContent=isOpen?"Read review ▾":"Close review ▴";
+          });
+        })(hdr, fullWrap, arrowEl);
+      }
+
+      g.appendChild(card);
+    }
+  }catch(e){
+    console.error("[renderReviews]",e);
+    var g2=document.getElementById("rev-grid");
+    if(g2){g2.innerHTML="<div style=\"font-family:var(--mono);font-size:.7rem;color:var(--red);padding:1rem\">Reviews failed to load. Please refresh.</div>";}
   }
 }
+
 function ytVideoId(url){
   if(!url)return null;
   var m=url.match(/(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
