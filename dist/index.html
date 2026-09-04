@@ -1434,7 +1434,11 @@ a,button,input,select,textarea{touch-action:manipulation}
           <div style="font-family:var(--disp);font-size:.92rem;font-weight:800;margin-bottom:.5rem">UVB-76 — The Buzzer</div>
           <div style="font-family:var(--mono);font-size:.6rem;color:rgba(255,255,255,.3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.7rem">4.625 MHz · Active since 1973 · Russian origin</div>
           <div style="font-family:var(--serif);font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.8;margin-bottom:.8rem">The most famous numbers station in the world. A buzzing tone transmits continuously around the clock. Occasionally it stops and a voice reads groups of numbers or letters. Monitored for over 50 years. Never officially explained. Active right now.</div>
-          <a href="https://websdr.ewi.utwente.nl:8901/?tune=4625usb" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.15);padding:5px 11px;border-radius:2px;text-decoration:none">Listen Live on WebSDR ↗</a>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <a href="https://websdr.ewi.utwente.nl:8901/?tune=4625usb" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.15);padding:5px 10px;border-radius:2px;text-decoration:none">Twente ↗</a>
+          <a href="https://kiwisdr.com/public/?f=4.625USB" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.15);padding:5px 10px;border-radius:2px;text-decoration:none">KiwiSDR ↗</a>
+          <a href="https://www.receiverbook.de/?f=4.625" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.15);padding:5px 10px;border-radius:2px;text-decoration:none">OpenWebRX ↗</a>
+          </div>
         </div>
         <div style="padding:1.1rem;background:var(--p2);border:1px solid var(--bdr);border-radius:4px"><div style="font-family:var(--disp);font-size:.88rem;font-weight:800;margin-bottom:.6rem">Priority Frequencies</div><div id="ns-freqs" style="display:flex;flex-direction:column;gap:5px"></div></div>
       </div>
@@ -2095,7 +2099,7 @@ Yours sincerely,
       <a class="fl" href="/reviews/" style="text-decoration:none" onclick="if(!event.metaKey&&!event.ctrlKey&&!event.shiftKey){event.preventDefault();go('reviews',document.getElementById('n-reviews'));}">Radio Reviews</a>
       <span class="fl" onclick="go('history',document.getElementById('n-history'))">Station History</span>
       <a class="fl" href="/best-shortwave-radios-for-beginners/">Beginner's Guide</a>
-      <a class="fl" href="https://websdr.ewi.utwente.nl:8901/" target="_blank">Listen Online (WebSDR)</a>
+      <a class="fl" href="/listen-online/">Listen Online (WebSDR)</a>
       <a class="fl" href="https://www.eibispace.de" target="_blank">EIBI Schedule Database</a>
     </div></div>
     <div><div class="fct">Community</div><div class="flinks">
@@ -2126,7 +2130,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build 27b4aa00 · 2026-09-04 06:01 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build f1060f77 · 2026-09-04 06:33 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -2666,7 +2670,7 @@ function renderStartHere(){
     var stn=document.createElement("div");stn.style.cssText="font-family:var(--serif);font-size:.9rem;font-weight:700;margin-bottom:3px";stn.textContent=p.stn;
     var why=document.createElement("div");why.style.cssText="font-family:var(--serif);font-size:.8rem;color:var(--muted);line-height:1.6";why.textContent=p.why;
     info.appendChild(stn);info.appendChild(why);
-    var btn=document.createElement("a");btn.href="https://websdr.ewi.utwente.nl:8901/?tune="+p.freq+"am";btn.target="_blank";btn.className="btn btn-o btn-sm";btn.style.cssText="flex-shrink:0;text-decoration:none;font-size:.64rem;white-space:nowrap";btn.textContent="Listen Online";
+    var btn=mkListenBtn(parseInt(p.freq,10),"am",{className:"btn btn-o btn-sm",style:"font-size:.64rem;white-space:nowrap",wrapStyle:"flex-shrink:0",label:"Listen Online"});
     d.appendChild(fq);d.appendChild(info);d.appendChild(btn);
     d.addEventListener("click",(function(freq,unit){return function(ev){if(ev.target.tagName==="A")return;var inp=document.getElementById("se-inp");var u=document.getElementById("se-unit");if(inp)inp.value=freq;if(u)u.value=unit;go("home",document.getElementById("n-home"));seSearch();};})(p.freq,"khz"));
     el.appendChild(d);
@@ -2855,7 +2859,7 @@ function makeRow(s,tOv){
   if(on){var bdg=document.createElement("span");bdg.className="oabdg";bdg.innerHTML="<span style='width:4px;height:4px;border-radius:50%;background:#fff;display:inline-block'></span> On Air";tm2.appendChild(bdg);}
   else{var ot=document.createElement("span");ot.className="offt";ot.textContent=fmtR(s);tm2.appendChild(ot);}
   var kHz=Math.round(parseFloat(s.freq)*1000);
-  var lnk=document.createElement("a");lnk.href="https://websdr.ewi.utwente.nl:8901/?tune="+kHz+"am";lnk.target="_blank";lnk.style.cssText="text-decoration:none;font-family:var(--mono);font-size:.52rem;color:var(--blue);border:1px solid rgba(26,82,168,.25);padding:2px 6px;border-radius:2px;white-space:nowrap;margin-top:3px;display:inline-block";lnk.textContent="Listen";
+  var lnk=mkListenBtn(kHz,"am",{className:"",style:"font-family:var(--mono);font-size:.52rem;color:var(--blue);border:1px solid rgba(26,82,168,.25);padding:2px 6px;border-radius:2px;white-space:nowrap;margin-top:3px",label:"Listen"});
   tm2.appendChild(lnk);
   row.appendChild(fc);row.appendChild(bod);row.appendChild(tm2);
   return row;
@@ -3269,6 +3273,42 @@ function seShowMatches(fMHz,withAI){
 }
 
 
+// ── LISTEN NOW (single source of truth) ──────────────────────────
+// Every "Listen" button on the site routes through this function so a
+// dead/renamed WebSDR mirror only ever needs fixing in one place, and
+// every button always offers 3 fallback receivers instead of one.
+function listenLinks(khz,mode){
+  mode=mode||"am";var mhz=(khz/1000).toFixed(3);
+  return [
+    {label:"WebSDR \u2014 Twente (NL)",url:"https://websdr.ewi.utwente.nl:8901/?tune="+mhz+mode},
+    {label:"KiwiSDR Network",url:"https://kiwisdr.com/public/?f="+mhz+mode.toUpperCase()},
+    {label:"OpenWebRX Global",url:"https://www.receiverbook.de/?f="+mhz}
+  ];
+}
+function mkListenBtn(khz,mode,opts){
+  opts=opts||{};
+  var wrap=document.createElement("div");wrap.style.cssText="position:relative;display:inline-block"+(opts.wrapStyle?(";"+opts.wrapStyle):"");
+  var btn=document.createElement("button");
+  btn.type="button";btn.className=opts.className||"btn btn-o btn-sm";
+  btn.style.cssText="cursor:pointer;background:none"+(opts.style?(";"+opts.style):"");
+  btn.textContent=opts.label||"Listen Online";
+  var links=listenLinks(khz,mode);
+  var menu=document.createElement("div");
+  menu.style.cssText="display:none;position:absolute;right:0;top:110%;background:#1a1a2e;border:1px solid var(--bdr);border-radius:4px;z-index:999;min-width:190px;box-shadow:0 4px 16px rgba(0,0,0,.5)";
+  for(var i=0;i<links.length;i++){(function(o){
+    var it=document.createElement("a");it.href=o.url;it.target="_blank";it.rel="noopener";
+    it.style.cssText="display:block;padding:7px 11px;font-family:var(--mono);font-size:.58rem;color:rgba(255,255,255,.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);white-space:nowrap";
+    it.textContent=o.label;
+    it.onmouseover=function(){this.style.background="rgba(255,255,255,.08)";};
+    it.onmouseout=function(){this.style.background="";};
+    menu.appendChild(it);
+  })(links[i]);}
+  btn.addEventListener("click",function(e){e.stopPropagation();e.preventDefault();menu.style.display=menu.style.display==="none"?"block":"none";});
+  document.addEventListener("click",function(){menu.style.display="none";},{capture:true});
+  wrap.appendChild(btn);wrap.appendChild(menu);
+  return wrap;
+}
+
 function seRow(s){
   var on=isOn(s);var kHz=Math.round(parseFloat(s.freq)*1000);
   var row=document.createElement("div");row.className="sr-row";
@@ -3280,30 +3320,7 @@ function seRow(s){
   else if(s.hfcc)stn.title="Verified — cross-checked against HFCC international frequency coordination data";
   var meta=document.createElement("div");meta.className="sr-meta";meta.textContent=s.lang+" \u00b7 "+s.tgt+(s.kw?" \u00b7 "+s.kw+"kW":"");
   info.appendChild(stn);info.appendChild(meta);
-  var listenWrap=document.createElement("div");listenWrap.style.cssText="position:relative;flex-shrink:0";
-  var lnk=document.createElement("button");
-  lnk.className="sr-listen";lnk.textContent="Listen \u2197";lnk.style.cssText+="cursor:pointer;background:none";
-  var mhz=(kHz/1000).toFixed(3);
-  var opts=[
-    {label:"WebSDR — Twente (NL)",url:"http://websdr.ewi.utwente.nl:8901/?tune="+mhz+"am"},
-    {label:"KiwiSDR Network",url:"http://kiwisdr.com/public/?f="+mhz+"AM"},
-    {label:"OpenWebRX Global",url:"https://www.receiverbook.de/?f="+mhz},
-  ];
-  var menu=document.createElement("div");
-  menu.style.cssText="display:none;position:absolute;right:0;top:110%;background:#1a1a2e;border:1px solid var(--bdr);border-radius:4px;z-index:999;min-width:190px;box-shadow:0 4px 16px rgba(0,0,0,.5)";
-  for(var oi=0;oi<opts.length;oi++){
-    (function(o){
-      var it=document.createElement("a");it.href=o.url;it.target="_blank";it.rel="noopener";
-      it.style.cssText="display:block;padding:7px 11px;font-family:var(--mono);font-size:.58rem;color:rgba(255,255,255,.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);white-space:nowrap";
-      it.textContent=o.label;
-      it.onmouseover=function(){this.style.background="rgba(255,255,255,.08)";};
-      it.onmouseout=function(){this.style.background="";};
-      menu.appendChild(it);
-    })(opts[oi]);
-  }
-  lnk.onclick=function(e){e.stopPropagation();menu.style.display=menu.style.display==="none"?"block":"none";};
-  document.addEventListener("click",function(){menu.style.display="none";},{once:false,capture:true});
-  listenWrap.appendChild(lnk);listenWrap.appendChild(menu);
+  var listenWrap=mkListenBtn(kHz,"am",{className:"sr-listen",label:"Listen \u2197",wrapStyle:"flex-shrink:0"});
   row.appendChild(fq);row.appendChild(bdg);row.appendChild(info);row.appendChild(listenWrap);
   return row;
 }
@@ -3566,7 +3583,7 @@ function renderDX(){
     var chance=document.createElement("span");chance.className="dx-chance";var cc=t.chance>=70?"var(--green)":t.chance>=40?"var(--amber)":"var(--red)";chance.style.color=cc;chance.textContent=t.chance+"% likely today";
     meta.appendChild(win);meta.appendChild(chance);
     var btns=document.createElement("div");btns.style.cssText="display:flex;gap:5px;margin-top:8px;flex-wrap:wrap";
-    var lnk=document.createElement("a");lnk.href="https://websdr.ewi.utwente.nl:8901/?tune="+t.khz+"am";lnk.target="_blank";lnk.className="btn btn-o btn-sm";lnk.style.cssText="display:inline-flex;text-decoration:none;font-size:.62rem";lnk.textContent="Listen on WebSDR \u2197";
+    var lnk=mkListenBtn(t.khz,"am",{className:"btn btn-o btn-sm",style:"font-size:.62rem",label:"Listen on WebSDR \u2197"});
     var logBtn=document.createElement("button");logBtn.className="btn btn-d btn-sm";logBtn.style.fontSize=".62rem";logBtn.textContent="Log Catch";
     logBtn.addEventListener("click",(function(freq2,stn2){return function(){var fl=document.getElementById("ql-f");var fs=document.getElementById("ql-stn");if(fl)fl.value=(parseFloat(freq2)/1000).toFixed(3);if(fs)fs.value=stn2;go("home",document.getElementById("n-home"));toast("Fill in signal strength and notes, then click Log It");};})(t.khz,t.target));
     btns.appendChild(lnk);btns.appendChild(logBtn);
@@ -4040,7 +4057,7 @@ function renderBBar(){
 // ── NUMBERS STATIONS ────────────────────────────────────────────
 function renderNS(){
   var tbl=document.getElementById("ns-tbl");
-  if(tbl&&!tbl.children.length){for(var i=0;i<NS.length;i++){var s=NS[i];var row=document.createElement("div");row.className="nrow";var kHz=Math.round(parseFloat(s.freq)*1000);var f=document.createElement("div");f.className="nrf";var a=document.createElement("a");a.href="https://websdr.ewi.utwente.nl:8901/?tune="+kHz+"usb";a.target="_blank";a.style.cssText="color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.15)";a.textContent=s.freq+" MHz";f.appendChild(a);var id2=document.createElement("div");id2.className="nri";id2.textContent=s.id;var desc=document.createElement("div");desc.className="nrd";desc.textContent=s.desc;var st2=document.createElement("div");st2.className="nrs "+(s.st==="active"?"nrs-a":s.st==="sporadic"?"nrs-s":"nrs-r");st2.textContent=s.st;row.appendChild(f);row.appendChild(id2);row.appendChild(desc);row.appendChild(st2);tbl.appendChild(row);}}
+  if(tbl&&!tbl.children.length){for(var i=0;i<NS.length;i++){var s=NS[i];var row=document.createElement("div");row.className="nrow";var kHz=Math.round(parseFloat(s.freq)*1000);var f=document.createElement("div");f.className="nrf";var a=mkListenBtn(kHz,"usb",{className:"",style:"color:inherit;border-bottom:1px solid rgba(255,255,255,.15);padding:0",label:s.freq+" MHz"});f.appendChild(a);var id2=document.createElement("div");id2.className="nri";id2.textContent=s.id;var desc=document.createElement("div");desc.className="nrd";desc.textContent=s.desc;var st2=document.createElement("div");st2.className="nrs "+(s.st==="active"?"nrs-a":s.st==="sporadic"?"nrs-s":"nrs-r");st2.textContent=s.st;row.appendChild(f);row.appendChild(id2);row.appendChild(desc);row.appendChild(st2);tbl.appendChild(row);}}
   var freqs=document.getElementById("ns-freqs");
   if(freqs&&!freqs.children.length){for(var j=0;j<NS.length;j++){var s2=NS[j];if(s2.st==="rare")continue;var d=document.createElement("div");d.style.cssText="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--bdr2);align-items:center";var left=document.createElement("div");var fn=document.createElement("div");fn.style.cssText="font-family:var(--mono);font-size:.74rem;font-weight:600";fn.textContent=s2.freq+" MHz";var si=document.createElement("div");si.style.cssText="font-family:var(--serif);font-size:.7rem;color:var(--muted);font-style:italic";si.textContent=s2.id;left.appendChild(fn);left.appendChild(si);var pill=document.createElement("span");pill.className="spl "+(s2.st==="active"?"spa":"spr");pill.textContent=s2.st;d.appendChild(left);d.appendChild(pill);freqs.appendChild(d);}}
 }
@@ -4781,7 +4798,7 @@ var REVIEWS=[
    thumb:"media/choyong-lc100-photo.jpg",
    src:"Official product photos and details from ChoYong — see their full LC100 write-up: https://www.choyongradio.com/blog/detail/id/19.html"
   },
-  {n:"Elecevolve MLite-880",cat:"Portable DSP Receiver",status:"Published",url:"/reviews/elecevolve-mlite-880/",
+  {n:"Elecevolve MLite-880",cat:"Portable DSP Receiver",status:"Published",url:"/reviews/elecevolve-mlite-880/",youtube:"https://youtube.com/shorts/8KlReIqmh2c",
    date:"August 14, 2026",
    d:"A compact, button-driven DSP receiver built on the open, community-upgradeable Malahit-DSP firmware platform \u2014 wide-band coverage with a waterfall display and a physical numeric keypad for direct frequency entry.",
    thumb:"media/mlite880-photo.jpg",
@@ -4844,7 +4861,7 @@ var REVIEWS=[
    verdict:"The WT2 isn't trying to be a dedicated DXing receiver \u2014 and it shouldn't be judged as one. What it is: a genuinely capable SW/AM/FM set that also happens to stream 50,000+ internet stations and double as a basic PTT radio. For a listener who wants shortwave plus the convenience of internet radio in one device, it earns its place. Battery life is solid (8/10), and ChoYong's support has been a pleasure to deal with. Rating: 4.5/5.",
    src:"Hands-on review by ShortwaveHQ"
   },
-  {n:"ZHIWHIS ZWS-802",cat:"Multi-Band Wooden Cabinet Radio",status:"Published",url:"/reviews/zhiwhis-zws-802/",
+  {n:"ZHIWHIS ZWS-802",cat:"Multi-Band Wooden Cabinet Radio",status:"Published",url:"/reviews/zhiwhis-zws-802/",youtube:"https://youtu.be/rlOCGCMP-uo",
    date:"August 12, 2026",
    d:"A wooden-cabinet FM/AM/SW/Weather Band radio built around audio quality first, shipping with a wireless W3 repeater accessory to extend reception into AIR and VHF/UHF.",
    thumb:"media/zhiwhis-zws802-photo.jpg",
@@ -5090,8 +5107,26 @@ function buildFullReview(it){
 
   var cat=document.createElement("div");cat.className="ad-cat";cat.textContent=it.cat+" \u00b7 "+it.status+(it.date?" \u00b7 Reviewed "+it.date:"");
   var nm=document.createElement("div");nm.className="ad-nm";nm.style.fontSize="1.1rem";nm.textContent=it.n;
+  wrap.appendChild(cat);wrap.appendChild(nm);
+
+  var ratingMatch=it.verdict?/(\d(\.\d)?)\s*\/\s*5/.exec(it.verdict):null;
+  if(ratingMatch||it.amazonUrl||it.buyUrl){
+    var trustRow=document.createElement("div");trustRow.style.cssText="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:.35rem 0 .6rem";
+    if(ratingMatch){
+      var rv=parseFloat(ratingMatch[1]);
+      var stars=document.createElement("span");stars.style.cssText="color:#FF9900;font-size:.95rem;letter-spacing:1px";
+      stars.textContent="\u2605".repeat(Math.round(rv))+"\u2606".repeat(5-Math.round(rv));
+      var rvNum=document.createElement("span");rvNum.style.cssText="font-family:var(--mono);font-size:.65rem;color:rgba(255,255,255,.55)";rvNum.textContent=rv.toFixed(1)+"/5";
+      trustRow.appendChild(stars);trustRow.appendChild(rvNum);
+    }
+    var owned=document.createElement("span");owned.style.cssText="font-family:var(--mono);font-size:.58rem;letter-spacing:.04em;color:#4ade80;border:1px solid rgba(74,222,128,.3);background:rgba(74,222,128,.08);padding:3px 9px;border-radius:20px;white-space:nowrap";
+    owned.textContent="\u2713 Hands-On Tested \u2014 Not a Spec-Sheet Review";
+    trustRow.appendChild(owned);
+    wrap.appendChild(trustRow);
+  }
+
   var desc=document.createElement("div");desc.className="ad-desc";desc.textContent=it.d;
-  wrap.appendChild(cat);wrap.appendChild(nm);wrap.appendChild(desc);
+  wrap.appendChild(desc);
 
   if(it.thumb&&it.youtube){
     var ytid=ytVideoId(it.youtube);
@@ -5167,6 +5202,7 @@ function buildFullReview(it){
   }
   if(it.amazonUrl||it.buyUrl){
     wrap.appendChild(buildBuyCTA(it,"bottom"));
+    wrap.appendChild(buildCrossSell(it));
   }
   if(it.src){
     var sr=document.createElement("div");sr.className="rev-src";sr.textContent=it.src;
@@ -5183,21 +5219,34 @@ function buildFullReview(it){
 }
 function buildBuyCTA(it,pos){
   var box=document.createElement("div");
-  box.style.cssText="margin:"+(pos==="top"?".9rem 0":"1.1rem 0 .4rem")+";padding:.9rem 1rem;background:rgba(255,153,0,.08);border:2px solid #FF9900;border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap";
+  box.style.cssText="margin:"+(pos==="top"?".9rem 0":"1.1rem 0 .4rem")+";padding:1rem 1.1rem;background:linear-gradient(135deg,rgba(255,153,0,.1),rgba(255,153,0,.04));border:2px solid #FF9900;border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap";
   var left=document.createElement("div");
-  var priceEl=document.createElement("div");priceEl.style.cssText="font-family:var(--mono);font-size:.72rem;color:rgba(255,255,255,.85);font-weight:700";
-  priceEl.textContent=it.price?("Typical price: "+it.price):"Check current price";
-  var sub=document.createElement("div");sub.style.cssText="font-family:var(--serif);font-size:.68rem;color:rgba(255,255,255,.5);margin-top:2px";
-  sub.textContent=pos==="top"?"This is the exact unit we tested":"See current price & reviews on Amazon";
+  var priceEl=document.createElement("div");priceEl.style.cssText="font-family:var(--mono);font-size:.8rem;color:#fff;font-weight:800";
+  priceEl.textContent=it.price?(it.price):"Check current price";
+  var sub=document.createElement("div");sub.style.cssText="font-family:var(--serif);font-size:.7rem;color:rgba(255,255,255,.6);margin-top:2px;max-width:280px";
+  sub.textContent="This is the exact unit we tested \u2014 no guessing which listing or variant to buy.";
   left.appendChild(priceEl);left.appendChild(sub);
   var buyHref=it.buyUrl||it.amazonUrl;
-  var buyText=it.buyUrl?("🛒 "+(it.buyLabel||"Buy Now")):"🛒 Buy on Amazon";
-  if(it.buyUrl){sub.textContent=pos==="top"?"This is the exact unit we tested":"See current price & availability";}
+  var buyText=it.buyUrl?("\uD83D\uDED2 "+(it.buyLabel||"Buy Now")+" \u2192"):"\uD83D\uDED2 Buy on Amazon \u2192";
   var lnk=document.createElement("a");lnk.href=buyHref;lnk.target="_blank";lnk.rel="noopener";
-  lnk.style.cssText="text-decoration:none;background:#FF9900;color:#000;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;white-space:nowrap;letter-spacing:.03em";
+  lnk.style.cssText="text-decoration:none;background:#FF9900;color:#000;font-family:var(--mono);font-size:.72rem;font-weight:800;padding:13px 20px;border-radius:6px;white-space:nowrap;letter-spacing:.03em;box-shadow:0 2px 10px rgba(255,153,0,.35)";
   lnk.textContent=buyText;
   lnk.onmouseover=function(){this.style.background="#e68a00";};
   lnk.onmouseout=function(){this.style.background="#FF9900";};
+  box.appendChild(left);box.appendChild(lnk);
+  return box;
+}
+function buildCrossSell(it){
+  var box=document.createElement("div");
+  box.style.cssText="margin:.6rem 0 1rem;padding:.8rem 1rem;background:var(--p2);border:1px dashed var(--bdr);border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap";
+  var left=document.createElement("div");
+  var lbl=document.createElement("div");lbl.style.cssText="font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--m2);margin-bottom:2px";lbl.textContent="Complete Your Setup";
+  var name=document.createElement("div");name.style.cssText="font-family:var(--serif);font-size:.82rem;font-weight:700";name.textContent="30ft Longwire Antenna Kit \u2014 $12";
+  var sub=document.createElement("div");sub.style.cssText="font-family:var(--serif);font-size:.7rem;color:var(--muted);margin-top:1px";sub.textContent="Pulls in dramatically weaker signals than any stock whip. Works with this radio or any other.";
+  left.appendChild(lbl);left.appendChild(name);left.appendChild(sub);
+  var lnk=document.createElement("a");lnk.href="https://www.amazon.com/s?tag=shortwave1877-20&k=shortwave+longwire+antenna+kit";lnk.target="_blank";lnk.rel="noopener";
+  lnk.style.cssText="text-decoration:none;background:none;border:1px solid var(--bdr);color:inherit;font-family:var(--mono);font-size:.62rem;font-weight:700;padding:8px 14px;border-radius:5px;white-space:nowrap";
+  lnk.textContent="View on Amazon \u2192";
   box.appendChild(left);box.appendChild(lnk);
   return box;
 }
