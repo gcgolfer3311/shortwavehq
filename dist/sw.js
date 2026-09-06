@@ -1,14 +1,12 @@
-// ShortwaveHQ Service Worker v1.0
-const CACHE = 'shortwavehq-v1';
+// ShortwaveHQ Service Worker v1.1
+const CACHE = 'shortwavehq-v2';
 const STATIC = [
-  '/',
-  '/index.html',
   '/manifest.json',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
 ];
 
-// Install — cache static shell
+// Install — cache static shell (NOT index.html/navigation — see fetch handler)
 self.addEventListener('install', function(e){
   e.waitUntil(
     caches.open(CACHE).then(function(c){ return c.addAll(STATIC); })
@@ -30,18 +28,23 @@ self.addEventListener('activate', function(e){
 });
 
 // Fetch strategy:
-// - data/*.json (schedule, propagation, reception) → network first, cache fallback
-// - everything else → cache first, network fallback
+// - navigation requests (page loads, including '/' and '/index.html') AND
+//   data/*.json (schedule, propagation, reception) → network first, cache
+//   fallback ONLY for offline use. This guarantees every new deploy shows
+//   up on a normal reload — no hard refresh required.
+// - true static assets (icons, manifest) → cache first, network fallback
 self.addEventListener('fetch', function(e){
   var url = e.request.url;
+  var isNavigation = e.request.mode === 'navigate';
   var isData = url.includes('/data/') && url.endsWith('.json');
   var isExternal = !url.startsWith(self.location.origin);
 
   // Don't intercept external requests (NOAA, analytics, etc.)
   if(isExternal){ return; }
 
-  if(isData){
-    // Network first for live data — fall back to cache if offline
+  if(isNavigation || isData){
+    // Network first — always try to get the freshest deploy/data,
+    // fall back to cache only if the network request fails (offline).
     e.respondWith(
       fetch(e.request).then(function(r){
         var clone = r.clone();
@@ -52,7 +55,8 @@ self.addEventListener('fetch', function(e){
       })
     );
   } else {
-    // Cache first for static assets
+    // Cache first for true static assets (icons, manifest — these only
+    // change when their filename changes, so caching them is safe).
     e.respondWith(
       caches.match(e.request).then(function(cached){
         if(cached) return cached;
