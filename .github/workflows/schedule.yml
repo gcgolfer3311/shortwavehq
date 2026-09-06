@@ -33,6 +33,10 @@ jobs:
       - name: Build site
         run: node build.js
 
+      - name: Submit sitemap to IndexNow (Bing/Yandex)
+        run: python submit_indexnow.py
+        continue-on-error: true
+
       - name: Commit updated files + built site
         run: |
           git config user.name "shortwavehq-bot"
