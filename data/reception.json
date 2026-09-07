@@ -2,3 +2,45 @@
   "note": "Community reception log for ShortwaveHQ. Add approved catches here. Fields: freq_khz, station (optional), sinpo (optional), location (optional), note (optional), date_utc.",
   "catches": []
 }
+"catches": [
+  {
+    "freq_khz": 7780,
+    "station": "",
+    "sinpo": "",
+    "location": "",
+    "note": "First catch of the night on the SDR portable — waterfall showed a solid signal on 40 meters.",
+    "date_utc": "2026-09-07"
+  },
+  {
+    "freq_khz": 13690,
+    "station": "",
+    "sinpo": "",
+    "location": "",
+    "note": "Moved up to 22 meters on the same SDR portable, clear signal in the waterfall.",
+    "date_utc": "2026-09-07"
+  },
+  {
+    "freq_khz": 15180,
+    "station": "",
+    "sinpo": "",
+    "location": "",
+    "note": "Switched to the second portable for 19 meters — good activity on this band tonight.",
+    "date_utc": "2026-09-07"
+  },
+  {
+    "freq_khz": 15180,
+    "station": "",
+    "sinpo": "",
+    "location": "",
+    "note": "Continued monitoring 15.180 MHz — signal held steady.",
+    "date_utc": "2026-09-07"
+  },
+  {
+    "freq_khz": 13690,
+    "station": "",
+    "sinpo": "",
+    "location": "",
+    "note": "Came back to 13.690 MHz later in the session — good bookend catch to close out the night.",
+    "date_utc": "2026-09-07"
+  }
+]
