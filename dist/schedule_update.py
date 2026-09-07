@@ -34,13 +34,58 @@ HFCC cross-validation (optional, additive):
   (same twice-yearly cadence as EIBI's own A26/B26 switch).
 """
 
-import os, json, sys, re, datetime, urllib.request, urllib.error
+import os, json, sys, re, datetime, calendar, urllib.request, urllib.error
 
-# Try the A26 file; the season rolls to B26 in late October. Both URLs tried.
-EIBI_URLS = [
-    "http://eibispace.de/dx/sked-a26.csv",
-    "http://www.eibispace.de/dx/sked-a26.csv",
-]
+# ── EIBI season auto-detection ──────────────────────────────────────────
+# EIBI publishes a new schedule file twice a year: "A" season (roughly
+# last Sunday of March through last Sunday of October) and "B" season
+# (last Sunday of October through last Sunday of March). The filename
+# encodes this as sked-a26.csv / sked-b26.csv, etc. Rather than hardcode
+# one season and require a manual edit every ~6 months (easy to forget —
+# this is exactly what broke silently in the past), this computes the
+# correct season code from today's date automatically. It also tries the
+# PREVIOUS season's file as a fallback, in case EIBI hasn't published the
+# new file yet exactly on the calendar switch day — the site never goes
+# fully stale even right at the transition.
+def _last_sunday(year, month):
+    last_day = calendar.monthrange(year, month)[1]
+    d = datetime.date(year, month, last_day)
+    offset = (d.weekday() - 6) % 7  # Monday=0 ... Sunday=6
+    return d - datetime.timedelta(days=offset)
+
+def _eibi_season_code(today=None):
+    today = today or datetime.date.today()
+    year = today.year
+    a_start = _last_sunday(year, 3)
+    b_start = _last_sunday(year, 10)
+    if a_start <= today < b_start:
+        return "a", year % 100
+    elif today >= b_start:
+        return "b", year % 100
+    else:
+        return "b", (year - 1) % 100  # still in previous year's B season
+
+def _prev_season_code(letter, yy):
+    # One step back: A(yy) <- B(yy-1); B(yy) <- A(yy)
+    if letter == "a":
+        return "b", (yy - 1) % 100
+    return "a", yy
+
+_cur_letter, _cur_yy = _eibi_season_code()
+_prev_letter, _prev_yy = _prev_season_code(_cur_letter, _cur_yy)
+CURRENT_SEASON_LABEL = f"{_cur_letter.upper()}-{_cur_yy:02d}"
+
+def _urls_for(letter, yy):
+    code = f"{letter}{yy:02d}"
+    return [
+        f"http://eibispace.de/dx/sked-{code}.csv",
+        f"http://www.eibispace.de/dx/sked-{code}.csv",
+    ]
+
+# Try the current season first, then fall back to the previous season's
+# file if EIBI hasn't published the new one yet (rare, but possible right
+# at the seasonal cutover) — never fully breaks the daily pull.
+EIBI_URLS = _urls_for(_cur_letter, _cur_yy) + _urls_for(_prev_letter, _prev_yy)
 OUT = "data/schedule.json"
 MIN_MHZ, MAX_MHZ = 2.3, 30.0   # broadcast HF only (coarse pre-filter)
 
@@ -542,7 +587,7 @@ def main():
     hfcc_count = sum(1 for r in rows if r.get("hfcc"))
     payload = {
         "updated_utc": updated_utc,
-        "source": "EIBI A-26",
+        "source": f"EIBI {CURRENT_SEASON_LABEL}",
         "count": len(rows),
         "hfcc_verified_count": hfcc_count,   # 0 if HFCC files aren't present this run
         "sch": rows,
@@ -550,7 +595,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"Wrote {OUT}: {len(rows)} stations from EIBI A-26")
+    print(f"Wrote {OUT}: {len(rows)} stations from EIBI {CURRENT_SEASON_LABEL}")
 
 if __name__ == "__main__":
     try:
