@@ -272,7 +272,7 @@ if (revStart >= 0) {
     reviewSlugMap[rev.n] = rslug;
 
     var rTitle = rev.n + " Review \u2014 Hands-On Testing & Verdict | ShortwaveHQ";
-    var rDesc = (rev.d || "").slice(0, 155);
+    var rDesc = rev.metaDescription ? rev.metaDescription : (rev.d || "").slice(0, 155);
 
     var specsHtml = "";
     if (rev.specs && rev.specs.length) {
@@ -465,8 +465,8 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + "<h2>Best Times to Listen</h2><p>Shortwave propagation changes with the time of day and the ionosphere. Lower bands (49m, 41m, 31m) tend to carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better midday. Our live tracker adjusts automatically \u2014 it only shows stations that are actually scheduled to be on air right now.</p>"
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a></div>";
 write("listen-online/index.html", shell({
-  title: "Listen to Shortwave Radio Online \u2014 Live On-Air Stations Now | ShortwaveHQ",
-  desc: "Listen to shortwave radio online free via WebSDR, or see exactly which shortwave stations are on-air right now with ShortwaveHQ's live 2026 broadcast tracker. Includes a guide to listening to international broadcasts.",
+  title: "Listen to Shortwave Radio Online Free \u2014 Live On-Air Now | ShortwaveHQ",
+  desc: "Listen to shortwave radio online free via WebSDR \u2014 no radio required. See which stations are on-air right now with our live 2026 broadcast tracker.",
   canonical: "/listen-online/", kicker: "Listen Live \u00b7 On-Air Now \u00b7 International Broadcasts",
   h1: "Listen to Shortwave <span style=\"color:#c0392b\">Radio Online</span>", bodyHtml: loBody,
   breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"]]
