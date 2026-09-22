@@ -100,6 +100,38 @@ if (fs.existsSync(schedPath)) {
   console.log("Parsed " + SCH.length + " schedule rows from index.html (fallback)");
 }
 
+// ── 1b. Season label (A/B + year, e.g. B-26) from the schedule's own metadata ──
+// Everything season-specific (page text, the /season-change/ tracker, the
+// saved season snapshots) keys off this, so nothing needs hand-editing
+// when EIBI rolls from one season to the next.
+function lastSundayUTC(y, m) { var d = new Date(Date.UTC(y, m + 1, 0)); d.setUTCDate(d.getUTCDate() - d.getUTCDay()); return d; }
+function seasonStart(letter, yy) { var y = 2000 + yy; return letter === "a" ? lastSundayUTC(y, 2) : lastSundayUTC(y, 9); }
+function nextSeason(letter, yy) { return letter === "a" ? { letter: "b", yy: yy } : { letter: "a", yy: (yy + 1) % 100 }; }
+function prevSeason(letter, yy) { return letter === "a" ? { letter: "b", yy: (yy + 99) % 100 } : { letter: "a", yy: yy }; }
+function seasonLabel(o) { return o.letter.toUpperCase() + "-" + (o.yy < 10 ? "0" : "") + o.yy; }
+function seasonCode(o) { return o.letter + (o.yy < 10 ? "0" : "") + o.yy; }
+function fmtDay(d) { return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }); }
+var SEASON = (function () {
+  var src = (typeof schedData !== "undefined" && schedData && schedData.source) ? String(schedData.source) : "";
+  var m = src.match(/([AB])-(\d{2})/i);
+  var o;
+  if (m) o = { letter: m[1].toLowerCase(), yy: parseInt(m[2], 10) };
+  else {
+    var now = new Date(), y = now.getUTCFullYear() % 100;
+    if (now >= seasonStart("b", y)) o = { letter: "b", yy: y };
+    else if (now >= seasonStart("a", y)) o = { letter: "a", yy: y };
+    else o = { letter: "b", yy: (y + 99) % 100 };
+  }
+  var nx = nextSeason(o.letter, o.yy), pv = prevSeason(o.letter, o.yy);
+  o.label = seasonLabel(o); o.code = seasonCode(o);
+  o.start = seasonStart(o.letter, o.yy); o.end = seasonStart(nx.letter, nx.yy);
+  o.next = { letter: nx.letter, yy: nx.yy, label: seasonLabel(nx), code: seasonCode(nx), start: o.end };
+  o.prev = { letter: pv.letter, yy: pv.yy, label: seasonLabel(pv), code: seasonCode(pv) };
+  o.valid = "Valid " + fmtDay(o.start).replace(/, \d{4}$/, "") + " \u2013 " + fmtDay(o.end);
+  return o;
+})();
+console.log("Schedule season: " + SEASON.label + " (" + SEASON.valid + "), next: " + SEASON.next.label);
+
 // Re-read index.html for the template (separate from SCH load above)
 var html = fs.readFileSync(path.join(__dirname, "index.html"), "utf8");
 
@@ -182,7 +214,7 @@ function shell(opts) {
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"en\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\n</style>\n</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI A-26 data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"en\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\n</style>\n</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; <a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 function write(rel, content) {
@@ -218,6 +250,10 @@ if (fs.existsSync(indexPath)) {
   var stampedAt = new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC";
   var stamp = contentHash + " · " + stampedAt;
   var stamped = indexSrc.split("BUILD_STAMP_PLACEHOLDER").join(stamp);
+  // Keep the SPA's season wording in sync with the data automatically.
+  stamped = stamped.split("Valid March 29 \u2013 October 25, 2026").join(SEASON.valid);
+  stamped = stamped.split("A-26 2026").join(SEASON.label + " " + (2000 + SEASON.yy));
+  stamped = stamped.split("A-26").join(SEASON.label);
   fs.writeFileSync(indexPath, stamped);
   console.log("Stamped dist/index.html with build fingerprint " + stamp);
 }
@@ -367,14 +403,14 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   }
   tbl += "</tbody></table>";
   var liveStatus = liveStatusSentence(name, rows, function(r){ return kHz(r.freq) + " kHz"; });
-  var body = "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI A-26 schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
+  var body = "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI " + SEASON.label + " schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
     + "<p class=\"lede\">" + liveStatus + " <a href=\"/?q=" + encodeURIComponent(name) + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + (kHz(rows[0].freq)/1000).toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Listen via Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + (kHz(rows[0].freq)/1000).toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
     + "<h2>" + esc(name) + " \u2014 Full 2026 Schedule</h2>" + tbl
     + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/\">Live Search &amp; Band Conditions</a></div>"
     + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 New to " + esc(name) + "? See the exact radios we tested that pull it in clearly \u2192</a></p>";
   write("stations/" + sl + "/index.html", shell({
-    title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: "Station Profile \u00b7 EIBI A-26 \u00b7 2026",
+    title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: "Station Profile \u00b7 EIBI " + SEASON.label + " \u00b7 2026",
     h1: "Listen to <span style=\"color:#c0392b\">" + esc(name) + "</span> on Shortwave", bodyHtml: body,
     breadcrumbs: [["Home", "/"], ["Stations", "/stations/"], [name, "/stations/" + sl + "/"]],
     noindex: thinStation
@@ -404,7 +440,7 @@ for (var fk = 0; fk < freqKeys.length; fk++) {
   var prev = fk > 0 ? freqKeys[fk - 1] : null;
   var next = fk < freqKeys.length - 1 ? freqKeys[fk + 1] : null;
   var nav = "<div class=\"tags\">" + (prev ? "<a href=\"/frequency/" + prev + "-khz/\">\u2190 " + prev + " kHz</a>" : "") + (bd2 ? "<a href=\"/bands/" + bandSlug[bd2.name] + "/\">" + esc(bd2.name) + "</a>" : "") + (next ? "<a href=\"/frequency/" + next + "-khz/\">" + next + " kHz \u2192</a>" : "") + "</div>";
-  var body2 = "<p class=\"lede\"><strong>" + khz + " kHz</strong> (" + mhz.toFixed(3) + " MHz)" + (bd2 ? " sits in the <a href=\"/bands/" + bandSlug[bd2.name] + "/\">" + esc(bd2.name.toLowerCase()) + "</a>" : "") + ". In the 2026 EIBI A-26 season this channel carries " + rows2.length + " scheduled transmission" + (rows2.length > 1 ? "s" : "") + " from " + stns.length + " station" + (stns.length > 1 ? "s" : "") + ". All times UTC.</p>"
+  var body2 = "<p class=\"lede\"><strong>" + khz + " kHz</strong> (" + mhz.toFixed(3) + " MHz)" + (bd2 ? " sits in the <a href=\"/bands/" + bandSlug[bd2.name] + "/\">" + esc(bd2.name.toLowerCase()) + "</a>" : "") + ". In the 2026 EIBI " + SEASON.label + " season this channel carries " + rows2.length + " scheduled transmission" + (rows2.length > 1 ? "s" : "") + " from " + stns.length + " station" + (stns.length > 1 ? "s" : "") + ". All times UTC.</p>"
     + "<p class=\"lede\">" + liveFrequencyStatusSentence(khz, rows2) + " <a href=\"/?q=" + khz + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + mhz.toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Tune it on Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + mhz.toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
     + "<h2>2026 Schedule for " + khz + " kHz</h2>" + tbl2
@@ -530,6 +566,159 @@ try {
   console.log("Generated /tonight/ listening guide (" + tnTotal + " picks across " + TN.TN_REGIONS.length + " regions)");
 } catch (tnErr) {
   console.warn("WARNING: /tonight/ page skipped (build continues): " + tnErr.message);
+}
+
+// ── 7c. Season snapshots + /season-change/ tracker ─────────────────
+// Every build saves the current season's schedule to data/seasons/<code>.json
+// (e.g. a26.json). It keeps being refreshed while that season is current,
+// so the file left behind at the switch is the season's final state. Once
+// the next season's data arrives, /season-change/ diffs the two and lists
+// exactly what went off the air, what's new, and what moved. Before that
+// it's a countdown + baseline page. Never allowed to fail the build.
+try {
+  var seasonsDir = path.join(__dirname, "data", "seasons");
+  if (SCH && SCH.length >= 200 && typeof schedData !== "undefined" && schedData && /[AB]-\d{2}/i.test(String(schedData.source || ""))) {
+    fs.mkdirSync(seasonsDir, { recursive: true });
+    fs.writeFileSync(path.join(seasonsDir, SEASON.code + ".json"), JSON.stringify({ season: SEASON.label, updated_utc: schedData.updated_utc || "", sch: SCH }));
+    console.log("Saved season snapshot data/seasons/" + SEASON.code + ".json (" + SCH.length + " rows)");
+  }
+  var prevSnap = null, prevPath = path.join(seasonsDir, SEASON.prev.code + ".json");
+  if (fs.existsSync(prevPath)) {
+    try { var pj2 = JSON.parse(fs.readFileSync(prevPath, "utf8")); if (pj2 && pj2.sch && pj2.sch.length >= 200) prevSnap = pj2; } catch (e) { prevSnap = null; }
+  }
+
+  var dur = function (r) { var d = ((+r.e) - (+r.s) + 1440) % 1440; return d === 0 ? 1440 : d; };
+  var REG6 = ["North America", "Europe", "Asia", "Africa", "South America", "Pacific", "Middle East"];
+  var englishHours = function (rows) {
+    var out = {};
+    for (var i = 0; i < REG6.length; i++) out[REG6[i]] = 0;
+    for (var j = 0; j < rows.length; j++) {
+      var r = rows[j];
+      if (r.lang === "English" && r.type === "International" && out[r.reg] != null) out[r.reg] += dur(r) / 60;
+    }
+    for (var k in out) out[k] = Math.round(out[k]);
+    return out;
+  };
+  var summarize = function (rows) {
+    var st = {}, fq = {};
+    for (var i = 0; i < rows.length; i++) { var r = rows[i]; if (!r || !r.stn) continue; st[r.stn.trim()] = (st[r.stn.trim()] || 0) + 1; fq[kHz(r.freq)] = 1; }
+    return { rows: rows.length, stations: Object.keys(st).length, freqs: Object.keys(fq).length, byStation: st };
+  };
+  var stnCell = function (name) { return stationSlug[name] ? "<a href=\"/stations/" + stationSlug[name] + "/\">" + esc(name) + "</a>" : esc(name); };
+  var fqCell = function (k) { return byFreq[String(k)] ? "<a href=\"/frequency/" + k + "-khz/\">" + k + "</a>" : String(k); };
+  var nowSum = summarize(SCH), nowEng = englishHours(SCH);
+  var scBody = "", scTitle, scDesc, scH1, scKicker, faq;
+  var daysLeft = Math.ceil((SEASON.end - BUILD_NOW) / 86400000);
+
+  if (prevSnap) {
+    // ── Diff mode: previous season → current season ──
+    var P = prevSnap.sch, pSum = summarize(P), pEng = englishHours(P);
+    var pFreqs = {}, cFreqs = {}, pLang = {}, cLang = {};
+    var addF = function (map, lmap, r) { var n = r.stn.trim(); if (!map[n]) map[n] = {}; map[n][kHz(r.freq)] = 1; if (!lmap[n]) lmap[n] = {}; if (r.lang) lmap[n][r.lang] = 1; };
+    for (var a = 0; a < P.length; a++) if (P[a] && P[a].stn) addF(pFreqs, pLang, P[a]);
+    for (var b2 = 0; b2 < SCH.length; b2++) if (SCH[b2] && SCH[b2].stn) addF(cFreqs, cLang, SCH[b2]);
+    var gone = [], added = [], moved = [];
+    for (var n1 in pFreqs) if (!cFreqs[n1]) gone.push(n1);
+    for (var n2 in cFreqs) if (!pFreqs[n2]) added.push(n2);
+    for (var n3 in cFreqs) {
+      if (!pFreqs[n3]) continue;
+      var drop = [], add = [];
+      for (var f1 in pFreqs[n3]) if (!cFreqs[n3][f1]) drop.push(+f1);
+      for (var f2 in cFreqs[n3]) if (!pFreqs[n3][f2]) add.push(+f2);
+      if (drop.length || add.length) moved.push({ stn: n3, drop: drop.sort(function (x, y) { return x - y; }), add: add.sort(function (x, y) { return x - y; }), eng: !!(cLang[n3] && cLang[n3].English), size: nowSum.byStation[n3] || 0 });
+    }
+    gone.sort(function (x, y) { return (pSum.byStation[y] || 0) - (pSum.byStation[x] || 0) || x.localeCompare(y); });
+    added.sort(function (x, y) { return (nowSum.byStation[y] || 0) - (nowSum.byStation[x] || 0) || x.localeCompare(y); });
+    moved.sort(function (x, y) { return (y.eng - x.eng) || (y.size - x.size) || x.stn.localeCompare(y.stn); });
+    var delta = function (a, b) { var d = b - a; return (d > 0 ? "+" : d < 0 ? "\u2212" : "\u00b1") + Math.abs(d); };
+    scTitle = "Shortwave Schedule Changes " + SEASON.prev.label + " \u2192 " + SEASON.label + ": What's Gone, New & Moved";
+    scDesc = "Every shortwave schedule change from " + SEASON.prev.label + " to " + SEASON.label + ": " + gone.length + " stations off the schedule, " + added.length + " new, " + moved.length + " with frequency changes. Updated daily from EIBI.";
+    scH1 = "Shortwave schedule changes: " + SEASON.prev.label + " \u2192 " + SEASON.label;
+    scKicker = "Season Change Tracker \u00b7 Updated " + TODAY;
+    scBody += "<p class=\"lede\">The " + SEASON.label + " shortwave season began on " + fmtDay(SEASON.start) + ". Here is exactly what changed compared with the final " + SEASON.prev.label + " schedule, generated automatically from the EIBI database and refreshed every day as broadcasters settle their winter/summer frequencies.</p>"
+      + "<table><tr><th></th><th>" + SEASON.prev.label + "</th><th>" + SEASON.label + "</th><th>Change</th></tr>"
+      + "<tr><td>Stations on the schedule</td><td>" + pSum.stations + "</td><td>" + nowSum.stations + "</td><td>" + delta(pSum.stations, nowSum.stations) + "</td></tr>"
+      + "<tr><td>Individual broadcasts</td><td>" + pSum.rows + "</td><td>" + nowSum.rows + "</td><td>" + delta(pSum.rows, nowSum.rows) + "</td></tr>"
+      + "<tr><td>Frequencies in use</td><td>" + pSum.freqs + "</td><td>" + nowSum.freqs + "</td><td>" + delta(pSum.freqs, nowSum.freqs) + "</td></tr></table>"
+      + "<h2>English-language transmitter-hours per day, by target region</h2><table><tr><th>Target region</th><th>" + SEASON.prev.label + "</th><th>" + SEASON.label + "</th><th>Change</th></tr>";
+    for (var ri = 0; ri < REG6.length; ri++) { var rg = REG6[ri]; scBody += "<tr><td>" + esc(rg) + "</td><td>" + pEng[rg] + " h</td><td>" + nowEng[rg] + " h</td><td>" + delta(pEng[rg], nowEng[rg]) + " h</td></tr>"; }
+    scBody += "</table>";
+    scBody += "<h2>Off the schedule (" + gone.length + ")</h2>";
+    if (gone.length) {
+      scBody += "<p>Listed in " + SEASON.prev.label + " but missing from " + SEASON.label + ". Some are genuine closures; some are late filings that may reappear, and a few are name changes in the database.</p><table><tr><th>Station</th><th>" + SEASON.prev.label + " frequencies (kHz)</th></tr>";
+      for (var gi = 0; gi < Math.min(gone.length, 80); gi++) scBody += "<tr><td>" + esc(gone[gi]) + "</td><td>" + Object.keys(pFreqs[gone[gi]]).map(Number).sort(function (x, y) { return x - y; }).slice(0, 8).join(", ") + "</td></tr>";
+      scBody += "</table>" + (gone.length > 80 ? "<p>\u2026and " + (gone.length - 80) + " smaller entries.</p>" : "");
+    } else scBody += "<p>No stations dropped off between seasons.</p>";
+    scBody += "<h2>New this season (" + added.length + ")</h2>";
+    if (added.length) {
+      scBody += "<table><tr><th>Station</th><th>" + SEASON.label + " frequencies (kHz)</th><th>Languages</th></tr>";
+      for (var ai = 0; ai < Math.min(added.length, 80); ai++) { var an = added[ai]; scBody += "<tr><td>" + stnCell(an) + "</td><td>" + Object.keys(cFreqs[an]).map(Number).sort(function (x, y) { return x - y; }).slice(0, 8).map(fqCell).join(", ") + "</td><td>" + esc(Object.keys(cLang[an] || {}).slice(0, 4).join(", ")) + "</td></tr>"; }
+      scBody += "</table>" + (added.length > 80 ? "<p>\u2026and " + (added.length - 80) + " more.</p>" : "");
+    } else scBody += "<p>No new stations yet \u2014 new filings often appear in the first weeks of a season.</p>";
+    scBody += "<h2>Frequency changes (" + moved.length + " stations)</h2>";
+    if (moved.length) {
+      scBody += "<p>Stations still on the air but using different frequencies. English services are listed first.</p><table><tr><th>Station</th><th>Dropped (kHz)</th><th>Added (kHz)</th></tr>";
+      for (var mi = 0; mi < Math.min(moved.length, 120); mi++) { var mv = moved[mi]; scBody += "<tr><td>" + stnCell(mv.stn) + (mv.eng ? " <span style=\"font-size:.7rem;color:#9c8e81\">(English)</span>" : "") + "</td><td>" + (mv.drop.slice(0, 8).join(", ") || "\u2014") + "</td><td>" + (mv.add.slice(0, 8).map(fqCell).join(", ") || "\u2014") + "</td></tr>"; }
+      scBody += "</table>" + (moved.length > 120 ? "<p>\u2026and " + (moved.length - 120) + " more stations with changes.</p>" : "");
+    }
+    faq = [
+      ["When did the " + SEASON.label + " shortwave season start?", "The " + SEASON.label + " season started on " + fmtDay(SEASON.start) + " and runs until " + fmtDay(SEASON.end) + ", when " + SEASON.next.label + " begins."],
+      ["How many stations changed between " + SEASON.prev.label + " and " + SEASON.label + "?", gone.length + " stations are off the schedule, " + added.length + " are new, and " + moved.length + " changed frequencies, based on the EIBI database as of " + TODAY + "."],
+      ["What are A and B shortwave seasons?", "International broadcasters change schedules twice a year. The A season runs from the last Sunday of March (northern summer) and the B season from the last Sunday of October (northern winter), so frequencies suit the propagation of each half of the year."]
+    ];
+  } else {
+    // ── Countdown mode: next season not in yet ──
+    scTitle = "Shortwave Season Change: " + SEASON.next.label + " Starts " + fmtDay(SEASON.next.start) + " \u2014 What Changes";
+    scDesc = "The " + SEASON.next.label + " shortwave schedule starts " + fmtDay(SEASON.next.start) + ". What changes at the switch, the " + SEASON.label + " baseline, and a live list of every frequency change once the new schedule is out.";
+    scH1 = SEASON.next.label + " shortwave season: " + (daysLeft > 0 ? daysLeft + " day" + (daysLeft === 1 ? "" : "s") + " to go" : "starting now");
+    scKicker = "Season Change Tracker \u00b7 " + SEASON.label + " \u2192 " + SEASON.next.label;
+    var engList = {};
+    for (var ei = 0; ei < SCH.length; ei++) {
+      var er = SCH[ei];
+      if (!er || er.lang !== "English" || er.type !== "International") continue;
+      if (er.reg !== "North America" && er.reg !== "Europe" && er.reg !== "Worldwide") continue;
+      var en = er.stn.trim();
+      if (!engList[en]) engList[en] = { n: 0, f: {}, reg: {} };
+      engList[en].n++; engList[en].f[kHz(er.freq)] = 1; engList[en].reg[er.reg] = 1;
+    }
+    var engNames = Object.keys(engList).sort(function (x, y) { return engList[y].n - engList[x].n || x.localeCompare(y); }).slice(0, 40);
+    scBody += "<p class=\"lede\">The " + SEASON.label + " shortwave season ends on <strong>" + fmtDay(SEASON.next.start) + "</strong>, when broadcasters switch to their " + SEASON.next.label + " schedules. As soon as the new EIBI schedule is published, this page turns into a full list of every station that went off the air, every new service and every frequency change \u2014 updated automatically. Bookmark it.</p>"
+      + "<p><a class=\"cta\" href=\"/tonight/\">Tonight's listening guide</a> <a class=\"cta o\" href=\"/?page=history\">Daily schedule change log</a></p>"
+      + "<h2>What changes at the season switch</h2>"
+      + "<p>International broadcasters coordinate new frequencies twice a year, at the end of March and the end of October. "
+      + (SEASON.next.letter === "b"
+        ? "Going into the northern winter, nights get longer, so the lower bands (49, 41 and 31 metres) stay open longer after dark while the higher bands (19, 16 and 13 metres) close earlier in the evening. Expect many evening services to move down in frequency."
+        : "Going into the northern summer, days get longer, so the higher bands (25, 19 and 16 metres) stay open later and the lower bands pick up more daytime noise. Expect many services to move up in frequency.")
+      + "</p><p>Clock changes matter too. Europe and North America change their clocks around the same weekend, so some broadcasts move by an hour in UTC to keep the same local listening time, while others keep their UTC time and arrive an hour earlier or later on your clock. Check your favourite stations the week after the switch.</p>"
+      + "<h2>The " + SEASON.label + " baseline</h2><p>This is what the schedule looks like now, so the changes can be measured once " + SEASON.next.label + " arrives.</p>"
+      + "<table><tr><th>Measure</th><th>" + SEASON.label + " (as of " + TODAY + ")</th></tr>"
+      + "<tr><td>Stations on the schedule</td><td>" + nowSum.stations + "</td></tr><tr><td>Individual broadcasts</td><td>" + nowSum.rows + "</td></tr><tr><td>Frequencies in use</td><td>" + nowSum.freqs + "</td></tr>";
+    for (var rj = 0; rj < REG6.length; rj++) scBody += "<tr><td>English transmitter-hours per day to " + esc(REG6[rj]) + "</td><td>" + nowEng[REG6[rj]] + " h</td></tr>";
+    scBody += "</table>";
+    if (engNames.length) {
+      scBody += "<h2>English services to re-check after the switch</h2><p>Current " + SEASON.label + " frequencies for English broadcasts aimed at North America and Europe. Note these now; after " + fmtDay(SEASON.next.start) + " this page will show which ones moved.</p><table><tr><th>Station</th><th>" + SEASON.label + " frequencies (kHz)</th><th>Aimed at</th></tr>";
+      for (var ni = 0; ni < engNames.length; ni++) { var nm = engNames[ni], ob = engList[nm]; scBody += "<tr><td>" + stnCell(nm) + "</td><td>" + Object.keys(ob.f).map(Number).sort(function (x, y) { return x - y; }).slice(0, 8).map(fqCell).join(", ") + "</td><td>" + esc(Object.keys(ob.reg).join(", ")) + "</td></tr>"; }
+      scBody += "</table>";
+    }
+    faq = [
+      ["When does the " + SEASON.next.label + " shortwave season start?", "The " + SEASON.next.label + " season starts on " + fmtDay(SEASON.next.start) + ", replacing the " + SEASON.label + " schedule that began on " + fmtDay(SEASON.start) + "."],
+      ["Why do shortwave frequencies change twice a year?", "Propagation changes with the seasons. Broadcasters coordinate new frequencies at the end of March and the end of October so their signals use the bands that work best for each half of the year."],
+      ["Where can I see which frequencies changed?", "This page lists every station that went off the schedule, every new service and every frequency change as soon as the new EIBI schedule is published, and it updates daily."]
+    ];
+  }
+  scBody += "<h2>How this page works</h2><p>ShortwaveHQ pulls the EIBI shortwave schedule every day and keeps a copy of each season. Changes are computed by comparing the two, so they reflect what broadcasters have filed; always confirm with the station itself. Day-to-day edits are also logged on the <a href=\"/?page=history\">schedule change log</a>.</p>"
+    + "<div class=\"tags\"><a href=\"/tonight/\">Tonight's Guide</a><a href=\"/stations/\">All Stations</a><a href=\"/bands/\">Bands</a><a href=\"/listen-online/\">Listen Online</a></div>";
+  var faqLd = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq.map(function (q) { return { "@type": "Question", "name": q[0], "acceptedAnswer": { "@type": "Answer", "text": q[1] } }; }) };
+  scBody += "<h2>FAQ</h2>" + faq.map(function (q) { return "<p><strong>" + esc(q[0]) + "</strong><br>" + esc(q[1]) + "</p>"; }).join("")
+    + "<script type=\"application/ld+json\">" + JSON.stringify(faqLd).replace(/</g, "\\u003c") + "</script>";
+  write("season-change/index.html", shell({
+    title: scTitle, desc: scDesc, canonical: "/season-change/", kicker: scKicker, h1: esc(scH1), bodyHtml: scBody,
+    breadcrumbs: [["Home", "/"], ["Season Change", "/season-change/"]]
+  }));
+  urls.push("/season-change/");
+  console.log("Generated /season-change/ (" + (prevSnap ? "diff " + SEASON.prev.label + " \u2192 " + SEASON.label : "countdown to " + SEASON.next.label + ", " + daysLeft + " days") + ")");
+} catch (scErr) {
+  console.warn("WARNING: /season-change/ page skipped (build continues): " + scErr.message);
 }
 
 // ── Site Tour (video walkthrough page, crawlable + VideoObject schema) ──
@@ -724,7 +913,7 @@ write("articles/index.html", shell({
 urls.push("/articles/");
 
 // ── 9. Index pages ───────────────────────────────────────────────
-var stIdx = "<p class=\"lede\">Individual schedule pages for every station in the ShortwaveHQ database \u2014 " + stationNames.length + " broadcasters, time stations, utility and numbers stations, updated for the 2026 EIBI A-26 season.</p><div class=\"grid\">";
+var stIdx = "<p class=\"lede\">Individual schedule pages for every station in the ShortwaveHQ database \u2014 " + stationNames.length + " broadcasters, time stations, utility and numbers stations, updated for the 2026 EIBI " + SEASON.label + " season.</p><div class=\"grid\">";
 for (var si = 0; si < stationNames.length; si++) {
   var nm2 = stationNames[si];
   stIdx += "<a href=\"/stations/" + stationSlug[nm2] + "/\"><strong>" + esc(nm2) + "</strong><span>" + uniq(byStation[nm2].map(function (r) { return String(kHz(r.freq)); })).length + " frequencies</span></a>";
