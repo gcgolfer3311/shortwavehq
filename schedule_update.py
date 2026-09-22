@@ -86,6 +86,17 @@ def _urls_for(letter, yy):
 # file if EIBI hasn't published the new one yet (rare, but possible right
 # at the seasonal cutover) — never fully breaks the daily pull.
 EIBI_URLS = _urls_for(_cur_letter, _cur_yy) + _urls_for(_prev_letter, _prev_yy)
+
+# The season label written to schedule.json must describe the file that was
+# ACTUALLY downloaded. Right after the switch EIBI may not have published the
+# new season yet, and the fallback pulls the previous season's file — labeling
+# that data with the new season would make the site (and the /season-change/
+# tracker) claim the new schedule is live when it isn't.
+FETCHED_SEASON_LABEL = CURRENT_SEASON_LABEL
+
+def _label_from_url(u):
+    m = re.search(r"sked-([ab])(\d{2})\.csv", u)
+    return f"{m.group(1).upper()}-{m.group(2)}" if m else CURRENT_SEASON_LABEL
 OUT = "data/schedule.json"
 MIN_MHZ, MAX_MHZ = 2.3, 30.0   # broadcast HF only (coarse pre-filter)
 
@@ -397,12 +408,14 @@ def fetch(url):
     return raw.decode("latin-1")
 
 def build():
+    global FETCHED_SEASON_LABEL
     text = None
     for u in EIBI_URLS:
         try:
             text = fetch(u)
             if text and ";" in text:
-                print(f"Fetched {u} ({len(text)} bytes)")
+                FETCHED_SEASON_LABEL = _label_from_url(u)
+                print(f"Fetched {u} ({len(text)} bytes) — season {FETCHED_SEASON_LABEL}")
                 break
         except Exception as e:
             print(f"Fetch failed {u}: {e}")
@@ -587,7 +600,7 @@ def main():
     hfcc_count = sum(1 for r in rows if r.get("hfcc"))
     payload = {
         "updated_utc": updated_utc,
-        "source": f"EIBI {CURRENT_SEASON_LABEL}",
+        "source": f"EIBI {FETCHED_SEASON_LABEL}",
         "count": len(rows),
         "hfcc_verified_count": hfcc_count,   # 0 if HFCC files aren't present this run
         "sch": rows,
@@ -595,7 +608,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"Wrote {OUT}: {len(rows)} stations from EIBI {CURRENT_SEASON_LABEL}")
+    print(f"Wrote {OUT}: {len(rows)} stations from EIBI {FETCHED_SEASON_LABEL}")
 
 if __name__ == "__main__":
     try:
