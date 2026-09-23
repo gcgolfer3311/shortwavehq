@@ -1,0 +1,214 @@
+{
+ "_readme": [
+  "Station hubs: the stations listed here get upgraded pages (best frequency tonight by region, reception logs, videos, FAQ).",
+  "Station names must match the schedule exactly. Order doesn't matter. Add or remove stations freely.",
+  "intro: 1-3 sentences in YOUR words about hearing this station (shown at the top of the page). Leave empty if you haven't heard it.",
+  "logs: your own catches, newest anywhere. Fields: date (YYYY-MM-DD), khz, sinpo, radio, antenna, location, note. Only date and khz are required.",
+  "videos: YouTube clips of this station. Fields: id (the part after youtu.be/ or shorts/), title, date (YYYY-MM-DD upload date).",
+  "Community catches from data/reception.json are added automatically when their 'station' field matches.",
+  "Example log: {\"date\":\"2026-09-20\",\"khz\":6000,\"sinpo\":\"34333\",\"radio\":\"Tecsun PL-330\",\"antenna\":\"whip\",\"location\":\"San Tan Valley, AZ\",\"note\":\"English news, fading in and out\"}",
+  "Example video: {\"id\":\"9WNWMAypFpk\",\"title\":\"Radio Habana Cuba on 6000 kHz\",\"date\":\"2026-09-20\"}"
+ ],
+ "stations": {
+  "China Radio International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "BBC": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of America": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Romania International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Korea": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Habana Cuba": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "NHK Radio Japan": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "KBS World Radio": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Taiwan International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Vaticana": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Vietnam": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio France International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Exterior España": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "AIR Akashvani Ext.Service": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "IRIB Voice of I.Radio Iran": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Turkey": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "RNZ Pacific": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WRMI Radio Miami International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WWCR 2 Nashville, TN": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WBCQ The Planet": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WTWW Lebanon, TN": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WWV Colorado (m.ann.)": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "WWVH Hawaii (f.ann.)": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Marti": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Free Asia": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Trans World Radio": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Adventist World Radio": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "KNLS New Life Station": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Indonesia": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Slovakia International": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Prague": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "HCJB Voice of Andes": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Reach Beyond Australia": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Sound of Hope": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Farda": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Radio Cairo": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Mongolia": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Voice of Tibet": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "Rádio Nacional Amazônia": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  },
+  "CNR1 Jammer/Firedrake": {
+   "intro": "",
+   "logs": [],
+   "videos": []
+  }
+ }
+}
