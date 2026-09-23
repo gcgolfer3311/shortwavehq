@@ -379,6 +379,68 @@ if (revStart >= 0) {
   console.log("WARNING: REVIEWS array not found in index.html, skipping individual review pages");
 }
 
+// ── 5e. Station hub data: Tonight engine, solar data, hub notes, logs ──
+// Top stations ("hubs") get upgraded pages. Nothing here may fail the build:
+// any missing/invalid file just means the hub extras are skipped.
+var TNE = null, PROP = { sfi: 110, k: 2 }, HUBS = {}, HUB_ORDER = [], RECEPTION = [];
+try {
+  var vmE = require("vm");
+  var eA = html.indexOf("// TONIGHT_ENGINE_START"), eB = html.indexOf("// TONIGHT_ENGINE_END");
+  if (eA >= 0 && eB > eA) { TNE = {}; vmE.createContext(TNE); vmE.runInContext(html.slice(eA, eB), TNE); }
+} catch (e) { TNE = null; console.warn("WARNING: Tonight engine not loaded for hubs: " + e.message); }
+try {
+  var ppj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "propagation.json"), "utf8"));
+  if (ppj && ppj.sfi) PROP.sfi = ppj.sfi;
+  if (ppj && ppj.k != null) PROP.k = ppj.k;
+} catch (e) { /* neutral defaults */ }
+try {
+  var hj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "hubs.json"), "utf8"));
+  var hs = (hj && hj.stations) || {};
+  for (var hn in hs) { if (byStation[hn]) { HUBS[hn] = hs[hn] || {}; HUB_ORDER.push(hn); } }
+  var missingHubs = Object.keys(hs).filter(function (n) { return !byStation[n]; });
+  if (missingHubs.length) console.log("Hub stations not in this season's schedule (skipped): " + missingHubs.join("; "));
+} catch (e) { console.warn("WARNING: data/hubs.json not loaded (hubs skipped): " + e.message); }
+try {
+  var rj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "reception.json"), "utf8"));
+  RECEPTION = (rj && rj.catches) || [];
+} catch (e) { RECEPTION = []; }
+// Northern-winter (B season) = standard time in North America.
+function hubOff(R) { return (SEASON.letter === "b" && (R.id === "na-east" || R.id === "na-west")) ? R.off - 1 : R.off; }
+function hubTz(R, off) { if (R.id === "na-east") return "Eastern"; if (R.id === "na-west") return "Pacific"; return "UTC" + (off >= 0 ? "+" : "") + off; }
+function isEnglishRow(r) { return r.lang === "English"; }
+// Best frequency for one station, for one listener region, in that region's
+// evening (7 pm - 1 am local). Falls back to the best time of day if the
+// station has nothing on during the evening there.
+function hubBestFor(rows, R) {
+  var off = hubOff(R), ws = TNE.tnMod(1140 - off * 60), we = TNE.tnMod(60 - off * 60);
+  var best = null, anyBest = null;
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i], b = TNE.tnBand(r.freq); if (!b) continue;
+    var aimed = (r.tgt === "Worldwide" || r.reg === "Worldwide") ? 1 : ((R.tgt.indexOf(r.tgt) >= 0 || R.reg.indexOf(r.reg) >= 0) ? 2 : 0);
+    var ov = TNE.tnOverlap(+r.s, +r.e, ws, we), len = TNE.tnMod(+r.e - +r.s) || 1440;
+    var bpEve = TNE.tnBandScore(b, 1320, PROP.sfi, PROP.k);
+    var midLocal = TNE.tnMod(+r.s + len / 2 + off * 60);
+    var bpAny = TNE.tnBandScore(b, midLocal, PROP.sfi, PROP.k);
+    var base = (aimed === 2 ? 40 : aimed === 1 ? 25 : 0) + (isEnglishRow(r) ? 6 : 0) + ((+r.kw || 0) >= 250 ? 8 : (+r.kw || 0) >= 100 ? 5 : 0);
+    if (ov >= 30 || (ov >= len && len >= 10)) {
+      var sc = base + bpEve * 0.5;
+      if (!best || sc > best.score) best = { r: r, b: b, bp: bpEve, aimed: aimed, score: sc, off: off, evening: true };
+    }
+    var sc2 = base + bpAny * 0.5;
+    if (!anyBest || sc2 > anyBest.score) anyBest = { r: r, b: b, bp: bpAny, aimed: aimed, score: sc2, off: off, evening: false };
+  }
+  return best || anyBest;
+}
+function hubLocalRange(r, off) {
+  var len = TNE.tnMod(+r.e - +r.s);
+  if (len === 0) return "24 hours a day";
+  return TNE.tnClock(+r.s + off * 60) + " \u2013 " + TNE.tnClock(+r.e + off * 60);
+}
+function hubEsc(t) { return esc(String(t == null ? "" : t)); }
+function hubValidDate(d) { return /^\d{4}-\d{2}-\d{2}$/.test(String(d || "")); }
+function hubValidYt(id) { return /^[A-Za-z0-9_-]{6,20}$/.test(String(id || "")); }
+console.log("Station hubs: " + HUB_ORDER.length + " stations" + (TNE ? "" : " (engine missing: best-frequency tables skipped)"));
+
 // ── 6. Station pages ─────────────────────────────────────────────
 for (var sn = 0; sn < stationNames.length; sn++) {
   var name = stationNames[sn];
@@ -403,15 +465,114 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   }
   tbl += "</tbody></table>";
   var liveStatus = liveStatusSentence(name, rows, function(r){ return kHz(r.freq) + " kHz"; });
-  var body = "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI " + SEASON.label + " schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
+  var hub = HUBS[name] || null, hubHtml = "", hubFaqHtml = "", hubLd = "", hubIntro = "";
+  if (hub) {
+    try {
+      var engRows = rows.filter(isEnglishRow);
+      // Best frequency tonight, per region
+      var bestRows = [], bestByRegion = {};
+      if (TNE) {
+        for (var hr = 0; hr < TNE.TN_REGIONS.length; hr++) {
+          var RG = TNE.TN_REGIONS[hr], bb = hubBestFor(rows, RG);
+          if (!bb) continue;
+          bestByRegion[RG.id] = bb;
+          bestRows.push({ R: RG, x: bb });
+        }
+        bestRows.sort(function (a, b) { return (b.x.evening - a.x.evening) || (b.x.aimed - a.x.aimed) || (b.x.score - a.x.score); });
+      }
+      if (bestRows.length) {
+        hubHtml += "<h2>Best frequency to hear " + esc(name) + " tonight</h2>"
+          + "<p>For each part of the world: the strongest option during your evening (7 pm \u2013 1 am), based on where each broadcast is aimed and today\u2019s band outlook (solar flux " + PROP.sfi + ", K-index " + PROP.k + "). Rebuilt every day.</p>"
+          + "<table><thead><tr><th>Listening from</th><th>Best frequency</th><th>Your local time</th><th>Band outlook</th><th>Beamed at you?</th></tr></thead><tbody>";
+        for (var bi2 = 0; bi2 < bestRows.length; bi2++) {
+          var br = bestRows[bi2], xr = br.x.r, k2 = kHz(xr.freq);
+          hubHtml += "<tr><td>" + esc(br.R.name) + "</td><td><a href=\"/frequency/" + k2 + "-khz/\">" + k2 + " kHz</a>" + (isEnglishRow(xr) ? " <span style=\"font-size:.7rem;color:#9c8e81\">(English)</span>" : "") + "</td><td>"
+            + esc(hubLocalRange(xr, br.x.off)) + (TNE.tnMod(+xr.e - +xr.s) === 0 ? "" : " " + esc(hubTz(br.R, br.x.off))) + (br.x.evening ? "" : " <span style=\"font-size:.7rem;color:#9c8e81\">(not on in your evening)</span>") + "</td><td>"
+            + esc((parseFloat(xr.freq) >= br.x.b.lo && parseFloat(xr.freq) <= br.x.b.hi) ? br.x.b.n : (Math.round(parseFloat(xr.freq) * 10) / 10) + " MHz") + " \u00b7 " + TNE.tnCond(br.x.bp) + "</td><td>" + (br.x.aimed === 2 ? "Yes" : br.x.aimed === 1 ? "Worldwide beam" : "No \u2014 DX catch") + "</td></tr>";
+        }
+        hubHtml += "</tbody></table><p><a class=\"cta\" href=\"/?page=tonight\">Your full personal list for tonight \u2192</a></p>";
+      }
+      // Intro in the owner's own words
+      if (hub.intro && String(hub.intro).trim()) hubIntro = "<p class=\"lede\">" + hubEsc(String(hub.intro).trim()) + "</p>";
+      // Reception logs: owner logs + matching community catches
+      var logs = [];
+      (hub.logs || []).forEach(function (l) { if (l && hubValidDate(l.date) && +l.khz > 0) logs.push({ date: l.date, khz: +l.khz, sinpo: l.sinpo || "", radio: l.radio || "", antenna: l.antenna || "", loc: l.location || "", note: l.note || "", who: "ShortwaveHQ" }); });
+      var nmLow = name.toLowerCase();
+      RECEPTION.forEach(function (c) {
+        if (!c || !c.station || !hubValidDate(c.date_utc) || !(+c.freq_khz > 0)) return;
+        var cs = String(c.station).toLowerCase().trim();
+        if (cs && (cs === nmLow || nmLow.indexOf(cs) === 0 || cs.indexOf(nmLow) === 0)) logs.push({ date: c.date_utc, khz: +c.freq_khz, sinpo: c.sinpo || "", radio: "", antenna: "", loc: c.location || "", note: c.note || "", who: "Listener report" });
+      });
+      logs.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+      hubHtml += "<h2>Reception log: " + esc(name) + "</h2>";
+      if (logs.length) {
+        hubHtml += "<p>Real catches of " + esc(name) + ", newest first. Last heard: <strong>" + esc(logs[0].date) + "</strong> on " + logs[0].khz + " kHz.</p><table><thead><tr><th>Date</th><th>Frequency</th><th>SINPO</th><th>Receiver</th><th>Location</th><th>Notes</th></tr></thead><tbody>";
+        logs.slice(0, 12).forEach(function (l) {
+          hubHtml += "<tr><td>" + esc(l.date) + "</td><td>" + l.khz + " kHz</td><td>" + hubEsc(l.sinpo || "\u2014") + "</td><td>" + hubEsc([l.radio, l.antenna].filter(Boolean).join(" + ") || "\u2014") + "</td><td>" + hubEsc(l.loc || "\u2014") + "</td><td>" + hubEsc(l.note) + " <span style=\"font-size:.68rem;color:#9c8e81\">(" + esc(l.who) + ")</span></td></tr>";
+        });
+        hubHtml += "</tbody></table>";
+      }
+      hubHtml += "<p>" + (logs.length ? "Heard it too?" : "No catches logged for " + esc(name) + " yet this season \u2014 be the first.") + " <a href=\"/?page=propagation\">Add your reception report</a> and it can appear here.</p>";
+      // Videos (click-to-load, keeps pages fast)
+      var vids = (hub.videos || []).filter(function (v) { return v && hubValidYt(v.id); });
+      if (vids.length) {
+        hubHtml += "<h2>" + esc(name) + " on video</h2>";
+        var vLd = [];
+        vids.slice(0, 4).forEach(function (v) {
+          var vt = v.title ? String(v.title) : name + " on shortwave";
+          hubHtml += "<div style=\"margin:.6rem 0 1.2rem\"><a href=\"https://www.youtube.com/watch?v=" + v.id + "\" target=\"_blank\" rel=\"noopener\" onclick=\"var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/" + v.id + "?autoplay=1';f.title=this.dataset.t;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.style.cssText='width:100%;aspect-ratio:16/9;border:0;border-radius:6px';this.replaceWith(f);return false;\" data-t=\"" + hubEsc(vt) + "\" style=\"display:block;position:relative;border-radius:6px;overflow:hidden;background:#000;aspect-ratio:16/9;max-width:640px\"><img src=\"https://i.ytimg.com/vi/" + v.id + "/hqdefault.jpg\" alt=\"" + hubEsc(vt) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;opacity:.85\"><span style=\"position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:44px;background:#c0392b;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px\">\u25b6</span></a><p style=\"font-size:.8rem;color:#6b5f52;margin-top:.4rem\">" + hubEsc(vt) + "</p></div>";
+          var vo = { "@context": "https://schema.org", "@type": "VideoObject", "name": vt, "description": vt + " \u2014 recorded by ShortwaveHQ.", "thumbnailUrl": "https://i.ytimg.com/vi/" + v.id + "/hqdefault.jpg", "embedUrl": "https://www.youtube-nocookie.com/embed/" + v.id, "contentUrl": "https://www.youtube.com/watch?v=" + v.id };
+          if (hubValidDate(v.date)) vo.uploadDate = v.date;
+          vLd.push(vo);
+        });
+        vLd.forEach(function (o) { if (o.uploadDate) hubLd += "<script type=\"application/ld+json\">" + JSON.stringify(o).replace(/</g, "\\u003c") + "</script>"; });
+      }
+      // FAQ (visible + schema)
+      var faqQ = [];
+      var fList = freqs.map(Number).sort(function (a, b) { return a - b; });
+      var naE = bestByRegion["na-east"], eu = bestByRegion["europe"];
+      var bestTxt = function (bx, R) { return bx ? kHz(bx.r.freq) + " kHz (" + hubLocalRange(bx.r, bx.off) + (TNE.tnMod(+bx.r.e - +bx.r.s) === 0 ? "" : " " + hubTz(R, bx.off)) + ")" : ""; };
+      faqQ.push(["What frequency is " + name + " on?",
+        "In the " + SEASON.label + " season " + name + " is scheduled on " + fList.length + " shortwave frequenc" + (fList.length === 1 ? "y" : "ies") + ", including " + fList.slice(0, 6).join(", ") + " kHz."
+        + (TNE && naE ? " Best evening option for eastern North America: " + bestTxt(naE, TNE.tnRegion("na-east")) + "." : "")
+        + (TNE && eu ? " For Europe: " + bestTxt(eu, TNE.tnRegion("europe")) + "." : "")]);
+      var naAimed = rows.filter(function (r) { return r.reg === "North America" || /North America|USA|Canada|^Am$/.test(r.tgt || ""); });
+      faqQ.push(["Can I hear " + name + " in the USA?",
+        naAimed.length ? "Yes. " + name + " is beamed at North America this season on " + uniq(naAimed.map(function (r) { return String(kHz(r.freq)); })).slice(0, 5).join(", ") + " kHz" + (naE ? "; the best evening option for eastern North America is " + bestTxt(naE, TNE.tnRegion("na-east")) : "") + "."
+          : (naE ? "It isn't beamed at North America this season, so hearing it in the USA is a DX catch. Your best chance is " + bestTxt(naE, TNE.tnRegion("na-east")) + " when that band is open, or listen through an online receiver (KiwiSDR/WebSDR) closer to its target area."
+                 : "It isn't beamed at North America this season. Try an online receiver (KiwiSDR/WebSDR) near its target area.")]);
+      faqQ.push(["Does " + name + " broadcast in English on shortwave?",
+        engRows.length ? "Yes. English broadcasts this season: " + engRows.slice(0, 5).map(function (r) { return kHz(r.freq) + " kHz at " + fmtTime(r.s) + "\u2013" + fmtTime(r.e) + " UTC" + (r.tgt ? " to " + r.tgt : ""); }).join("; ") + (engRows.length > 5 ? "; plus " + (engRows.length - 5) + " more." : ".")
+          : "Not this season. " + name + " is scheduled in " + (langs || "other languages") + "."]);
+      faqQ.push(["Is " + name + " on the air right now?", liveStatus.replace(/<[^>]+>/g, "") + " This is based on the published schedule at the time this page was built; check the live search for up-to-the-minute status."]);
+      hubFaqHtml = "<h2>" + esc(name) + " FAQ</h2>" + faqQ.map(function (q) { return "<p><strong>" + esc(q[0]) + "</strong><br>" + esc(q[1]) + "</p>"; }).join("");
+      hubLd += "<script type=\"application/ld+json\">" + JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqQ.map(function (q) { return { "@type": "Question", "name": q[0], "acceptedAnswer": { "@type": "Answer", "text": q[1] } }; }) }).replace(/</g, "\\u003c") + "</script>";
+      // Related hubs (internal link cluster)
+      var rel = HUB_ORDER.filter(function (n) { return n !== name; });
+      var start = (HUB_ORDER.indexOf(name) * 7) % Math.max(1, rel.length);
+      var pick = []; for (var pk = 0; pk < Math.min(8, rel.length); pk++) pick.push(rel[(start + pk) % rel.length]);
+      hubFaqHtml += "<h2>More popular shortwave stations</h2><div class=\"tags\">" + pick.map(function (n) { return "<a href=\"/stations/" + stationSlug[n] + "/\">" + esc(n) + "</a>"; }).join("") + "</div>";
+      hubFaqHtml += "<p style=\"font-size:.78rem;color:#9c8e81\">Schedule: EIBI " + SEASON.label + ", updated " + esc((typeof schedData !== "undefined" && schedData && schedData.updated_utc) || TODAY) + ". Band outlook: NOAA SWPC. Page rebuilt " + TODAY + ".</p>";
+    } catch (hubErr) {
+      console.warn("WARNING: hub extras skipped for " + name + ": " + hubErr.message);
+      hubHtml = ""; hubFaqHtml = ""; hubLd = ""; hubIntro = "";
+    }
+  }
+  var body = hubIntro + "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI " + SEASON.label + " schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
     + "<p class=\"lede\">" + liveStatus + " <a href=\"/?q=" + encodeURIComponent(name) + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + (kHz(rows[0].freq)/1000).toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Listen via Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + (kHz(rows[0].freq)/1000).toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
+    + hubHtml
     + "<h2>" + esc(name) + " \u2014 Full 2026 Schedule</h2>" + tbl
+    + hubFaqHtml + hubLd
     + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/\">Live Search &amp; Band Conditions</a></div>"
     + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 New to " + esc(name) + "? See the exact radios we tested that pull it in clearly \u2192</a></p>";
+  if (hub && hubHtml) {
+    title = name + " Shortwave Frequencies & Schedule (" + SEASON.label + ") \u2014 How to Hear It Tonight | ShortwaveHQ";
+    desc = "Current " + name + " shortwave frequencies (" + SEASON.label + "): the best frequency tonight for North America, Europe and more, English broadcast times, reception logs and live on-air status. Updated daily.";
+  }
   write("stations/" + sl + "/index.html", shell({
-    title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: "Station Profile \u00b7 EIBI " + SEASON.label + " \u00b7 2026",
-    h1: "Listen to <span style=\"color:#c0392b\">" + esc(name) + "</span> on Shortwave", bodyHtml: body,
+    title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: (hub && hubHtml ? "Station Guide" : "Station Profile") + " \u00b7 EIBI " + SEASON.label + " \u00b7 2026",
+    h1: (hub && hubHtml) ? "<span style=\"color:#c0392b\">" + esc(name) + "</span> \u2014 Shortwave Frequencies &amp; How to Hear It" : "Listen to <span style=\"color:#c0392b\">" + esc(name) + "</span> on Shortwave", bodyHtml: body,
     breadcrumbs: [["Home", "/"], ["Stations", "/stations/"], [name, "/stations/" + sl + "/"]],
     noindex: thinStation
   }));
@@ -544,7 +705,7 @@ try {
   var tnTotal = 0;
   for (var tr = 0; tr < TN.TN_REGIONS.length; tr++) {
     var R = TN.TN_REGIONS[tr];
-    var plan = TN.tnPlan(SCH, { region: R.id, slot: "evening", sfi: prop.sfi, k: prop.k, english: false });
+    var plan = TN.tnPlan(SCH, { region: R.id, off: hubOff(R), slot: "evening", sfi: prop.sfi, k: prop.k, english: false });
     var picks = plan.easy.slice(0, 6).concat(plan.dx.slice(0, 3));
     if (!picks.length) continue;
     tnTotal += picks.length;
@@ -914,6 +1075,11 @@ urls.push("/articles/");
 
 // ── 9. Index pages ───────────────────────────────────────────────
 var stIdx = "<p class=\"lede\">Individual schedule pages for every station in the ShortwaveHQ database \u2014 " + stationNames.length + " broadcasters, time stations, utility and numbers stations, updated for the 2026 EIBI " + SEASON.label + " season.</p><div class=\"grid\">";
+if (HUB_ORDER.length) {
+  stIdx = stIdx.replace("<div class=\"grid\">", "<h2>Most popular stations</h2><p>Full guides with the best frequency tonight for your region, English times and reception logs.</p><div class=\"grid\">"
+    + HUB_ORDER.map(function (n) { return "<a href=\"/stations/" + stationSlug[n] + "/\"><strong>" + esc(n) + "</strong><span>Station guide</span></a>"; }).join("")
+    + "</div><h2>All stations A\u2013Z</h2><div class=\"grid\">");
+}
 for (var si = 0; si < stationNames.length; si++) {
   var nm2 = stationNames[si];
   stIdx += "<a href=\"/stations/" + stationSlug[nm2] + "/\"><strong>" + esc(nm2) + "</strong><span>" + uniq(byStation[nm2].map(function (r) { return String(kHz(r.freq)); })).length + " frequencies</span></a>";
