@@ -2823,8 +2823,9 @@ function tnPlan(SCH,o){
     if(!alts[r.stn])alts[r.stn]={};
     alts[r.stn][parseFloat(r.freq).toFixed(3)]=1;
     if(!cur||sc>cur.score){
-      best[r.stn]={stn:r.stn,freq:parseFloat(r.freq).toFixed(3),khz:Math.round(parseFloat(r.freq)*1000),
-        band:b.n,bp:bp,cond:tnCond(bp),lang:r.lang||"",tgt:r.tgt||"",kw:kw,type:r.type||"",s:s,e:e,
+      var fM=parseFloat(r.freq);
+      best[r.stn]={stn:r.stn,freq:fM.toFixed(3),khz:Math.round(fM*1000),
+        band:(fM>=b.lo&&fM<=b.hi)?b.n:(Math.round(fM*10)/10)+" MHz",bp:bp,cond:tnCond(bp),lang:r.lang||"",tgt:r.tgt||"",kw:kw,type:r.type||"",s:s,e:e,
         aimed:aimed,score:sc,rare:(count[r.stn]||0)<=3};
     }
   }
