@@ -34,6 +34,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="ShortwaveHQ">
 <link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" href="/icons/icon-192.png">
 <meta name="theme-color" content="#0a0b0e">
 <title>ShortwaveHQ — Live Shortwave Radio Schedules &amp; Frequencies</title>
@@ -412,6 +413,118 @@ textarea.inp{resize:vertical;line-height:1.6}
 .se-chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-family:var(--mono);font-size:.6rem;padding:3px 9px;border-radius:3px;cursor:pointer;transition:all .15s}
 .se-chip:hover{background:rgba(255,255,255,.13);color:#fff;border-color:rgba(255,255,255,.24)}
 .se-hint{font-family:var(--mono);font-size:.54rem;color:rgba(255,255,255,.18);text-align:center;letter-spacing:.04em}
+
+/* ── RECENT STRIP (HERO) ── */
+.recent-wrap{width:100%;max-width:900px;margin:2.1rem auto 0;position:relative;z-index:1;text-align:left}
+.recent-lbl{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.55rem}
+.recent-track{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:3px}
+.recent-track::-webkit-scrollbar{display:none}
+.recent-card{flex:0 0 auto;width:172px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.65rem .75rem;cursor:pointer;transition:all .15s;text-align:left}
+.recent-card:hover{background:rgba(255,255,255,.09);border-color:rgba(192,57,43,.45);transform:translateY(-2px)}
+.recent-date{font-family:var(--mono);font-size:.54rem;color:#e87060;margin-bottom:.35rem;letter-spacing:.04em}
+.recent-txt{font-family:var(--disp);font-size:.72rem;font-weight:700;color:#fff;line-height:1.35}
+.recent-tag{font-family:var(--mono);font-size:.5rem;color:rgba(255,255,255,.32);margin-top:.35rem;text-transform:uppercase;letter-spacing:.06em}
+
+/* ── TONIGHT'S LISTENING GUIDE ── */
+.tn-hero{background:var(--ink);position:relative;padding:2.6rem 0 2rem;overflow:hidden}
+.tn-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 80% at 85% 0%,rgba(52,73,140,.35) 0%,transparent 60%),radial-gradient(ellipse 60% 60% at 10% 100%,rgba(192,57,43,.14) 0%,transparent 70%)}
+.tn-hero .wrap{position:relative;z-index:1}
+.tn-kick{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#e87060;margin-bottom:.6rem;display:flex;align-items:center;gap:7px}
+.tn-h1{font-family:var(--disp);font-weight:900;font-size:clamp(1.8rem,5vw,2.9rem);letter-spacing:-.035em;line-height:1.02;color:#fff;margin-bottom:.7rem}
+.tn-h1 em{font-style:normal;color:#8fa8ff}
+.tn-lede{font-family:var(--serif);font-size:.95rem;color:rgba(255,255,255,.62);line-height:1.6;max-width:640px;margin-bottom:1.3rem}
+.tn-lede b{color:#fff}
+.tn-ctrl{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:1.1rem}
+.tn-sel{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;font-family:var(--mono);font-size:.68rem;padding:9px 12px;border-radius:5px;cursor:pointer;max-width:100%}
+.tn-sel option{color:#000}
+.tn-slots{display:flex;gap:4px;flex-wrap:wrap}
+.tn-slot{background:transparent;border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.65);font-family:var(--mono);font-size:.62rem;padding:8px 11px;border-radius:20px;cursor:pointer;transition:all .15s;line-height:1.2;text-align:left}
+.tn-slot small{display:block;font-size:.5rem;opacity:.6;letter-spacing:.04em}
+.tn-slot:hover{border-color:rgba(255,255,255,.4);color:#fff}
+.tn-slot.on{background:#fff;color:var(--ink);border-color:#fff}
+.tn-en{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.62rem;color:rgba(255,255,255,.7);cursor:pointer;user-select:none}
+.tn-en input{accent-color:var(--red);width:15px;height:15px;cursor:pointer}
+.tn-bands{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;align-items:end;height:74px;margin-top:.4rem}
+.tn-bcol{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}
+.tn-bbar{width:100%;max-width:34px;border-radius:3px 3px 0 0;transition:height .5s ease}
+.tn-blbl{font-family:var(--mono);font-size:.5rem;color:rgba(255,255,255,.5)}
+.tn-bnote{font-family:var(--mono);font-size:.54rem;color:rgba(255,255,255,.38);margin-top:.5rem;letter-spacing:.03em}
+.tn-prog{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:space-between;background:var(--paper);border:1px solid var(--bdr);border-radius:8px;padding:1rem 1.2rem;margin:1.4rem 0 .4rem;box-shadow:var(--shadow)}
+.tn-pnum{font-family:var(--disp);font-weight:900;font-size:1.6rem;line-height:1;letter-spacing:-.03em}
+.tn-pnum span{color:var(--m2);font-size:1rem}
+.tn-plbl{font-family:var(--mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-top:4px}
+.tn-pbar{flex:1;min-width:140px;height:8px;background:var(--p3);border-radius:8px;overflow:hidden}
+.tn-pfill{height:100%;background:linear-gradient(90deg,var(--red),#e87060);width:0;transition:width .4s ease}
+.tn-share{background:var(--ink);color:#fff;border:none;font-family:var(--mono);font-size:.62rem;font-weight:700;padding:10px 16px;border-radius:5px;cursor:pointer;letter-spacing:.03em;white-space:nowrap}
+.tn-sec{margin-top:2rem}
+.tn-sh{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;border-bottom:2px solid var(--bdr);padding-bottom:.5rem;margin-bottom:.9rem}
+.tn-sh h2{font-family:var(--disp);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+.tn-sh p{font-family:var(--serif);font-size:.8rem;color:var(--muted)}
+.tn-tier{font-family:var(--mono);font-size:.5rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:3px;color:#fff}
+.tn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.tn-card{background:var(--paper);border:1px solid var(--bdr);border-radius:7px;padding:.95rem 1rem .85rem;display:flex;flex-direction:column;gap:.45rem;position:relative;transition:border-color .15s,transform .15s}
+.tn-card:hover{border-color:var(--m2);transform:translateY(-1px)}
+.tn-card.heard{border-color:var(--green);background:linear-gradient(0deg,rgba(30,132,73,.06),rgba(30,132,73,.06)),var(--paper)}
+.tn-ftop{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.tn-freq{font-family:var(--mono);font-weight:600;font-size:1.35rem;letter-spacing:-.02em;color:var(--ink);cursor:pointer}
+.tn-freq small{font-size:.6rem;color:var(--m2);margin-left:3px;font-weight:400}
+.tn-bandtag{font-family:var(--mono);font-size:.52rem;padding:2px 7px;border-radius:10px;border:1px solid var(--bdr);color:var(--muted);white-space:nowrap}
+.tn-stn{font-family:var(--serif);font-weight:700;font-size:.92rem;line-height:1.3}
+.tn-why{font-family:var(--mono);font-size:.56rem;color:var(--muted);line-height:1.6}
+.tn-meta{font-family:var(--mono);font-size:.56rem;color:var(--m2);display:flex;flex-wrap:wrap;gap:4px 10px}
+.tn-meta b{color:var(--ink);font-weight:600}
+.tn-alts{font-family:var(--mono);font-size:.52rem;color:var(--m2)}
+.tn-act{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:.2rem}
+.tn-heard{background:transparent;border:1px solid var(--green);color:var(--green);font-family:var(--mono);font-size:.58rem;font-weight:700;padding:6px 11px;border-radius:4px;cursor:pointer}
+.tn-heard.done{background:var(--green);color:#fff;cursor:default}
+.tn-sig{display:none;gap:4px;align-items:center;font-family:var(--mono);font-size:.54rem;color:var(--muted)}
+.tn-sig.on{display:flex}
+.tn-sig button{background:var(--p2);border:1px solid var(--bdr);font-family:var(--mono);font-size:.56rem;padding:5px 8px;border-radius:4px;cursor:pointer;color:var(--ink)}
+.tn-sig button:hover{border-color:var(--green)}
+.tn-empty{font-family:var(--serif);font-size:.85rem;color:var(--muted);padding:1rem;border:1px dashed var(--bdr);border-radius:6px}
+.tn-foot{margin-top:2.2rem;padding:1.1rem 1.2rem;background:var(--p2);border-radius:8px;font-family:var(--serif);font-size:.8rem;color:var(--muted);line-height:1.7}
+.tn-foot a{color:var(--red);font-weight:700;cursor:pointer}
+.tn-teaser{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;justify-content:space-between;margin-bottom:1.2rem;padding:1.15rem 1.3rem;border-radius:9px;cursor:pointer;background:linear-gradient(120deg,#10142a 0%,#1b2350 55%,#2a1330 100%);border:1px solid rgba(143,168,255,.25);transition:transform .15s,box-shadow .15s}
+.tn-teaser:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(16,20,42,.35)}
+.tn-tk{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#8fa8ff;margin-bottom:.35rem;display:flex;align-items:center;gap:6px}
+.tn-tt{font-family:var(--disp);font-weight:800;font-size:1.1rem;color:#fff;line-height:1.25;letter-spacing:-.02em}
+.tn-tt b{color:#8fa8ff}
+.tn-tbtn{background:#fff;color:#10142a;border:none;font-family:var(--mono);font-size:.64rem;font-weight:700;padding:10px 16px;border-radius:5px;cursor:pointer;white-space:nowrap}
+@media(max-width:600px){.tn-bands{height:60px}.tn-grid{grid-template-columns:1fr}.tn-prog{padding:.9rem}}
+
+/* ── STATION IDENTIFIER ── */
+.id-form{display:grid;grid-template-columns:minmax(150px,1.1fr) repeat(3,minmax(120px,1fr)) auto;gap:8px;align-items:end;margin-bottom:.8rem}
+.id-f label{display:block;font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:4px}
+.id-inp{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;font-family:var(--mono);font-size:1.25rem;font-weight:600;padding:9px 12px;border-radius:6px;outline:none}
+.id-inp:focus{border-color:#8fa8ff;box-shadow:0 0 0 3px rgba(143,168,255,.2)}
+.id-inp::placeholder{color:rgba(255,255,255,.28);font-weight:400}
+.id-f .tn-sel{width:100%;padding:12px 10px}
+.id-go{background:#e74c3c;color:#fff;border:none;font-family:var(--mono);font-size:.72rem;font-weight:700;padding:14px 20px;border-radius:6px;cursor:pointer;white-space:nowrap;letter-spacing:.04em}
+.id-go:hover{background:#c0392b}
+.id-langs{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.id-langs span.lb{font-family:var(--mono);font-size:.54rem;color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase;margin-right:4px}
+.id-chip{background:transparent;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.7);font-family:var(--mono);font-size:.58rem;padding:5px 10px;border-radius:14px;cursor:pointer}
+.id-chip.on{background:#8fa8ff;border-color:#8fa8ff;color:#10142a;font-weight:700}
+.id-err{font-family:var(--mono);font-size:.65rem;color:#ffb4a8;margin-top:.5rem;min-height:1em}
+.id-sum{font-family:var(--serif);font-size:.95rem;line-height:1.6;margin:1.4rem 0 .4rem}
+.id-sum b{font-family:var(--disp)}
+.id-list{display:flex;flex-direction:column;gap:10px;margin-top:.8rem}
+.id-card{background:var(--paper);border:1px solid var(--bdr);border-radius:8px;padding:1rem 1.1rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;box-shadow:var(--shadow)}
+.id-card.top{border:2px solid var(--green)}
+.id-rank{font-family:var(--disp);font-weight:900;font-size:1.6rem;color:var(--m2);line-height:1;grid-row:span 5}
+.id-card.top .id-rank{color:var(--green)}
+.id-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.id-stn{font-family:var(--serif);font-weight:700;font-size:1.05rem}
+.id-lbl{font-family:var(--mono);font-size:.5rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;color:#fff}
+.id-bar{height:7px;background:var(--p3);border-radius:6px;overflow:hidden;margin:.35rem 0 .2rem;max-width:420px}
+.id-bar i{display:block;height:100%;border-radius:6px}
+.id-listen{font-family:var(--mono);font-size:.62rem;color:var(--ink)}
+.id-listen b{background:var(--amblt);padding:1px 6px;border-radius:3px}
+.id-why{font-family:var(--mono);font-size:.56rem;color:var(--muted);line-height:1.6}
+.id-note{font-family:var(--serif);font-size:.82rem;color:var(--muted);background:var(--p2);border-left:3px solid var(--amber);padding:.7rem .9rem;border-radius:0 6px 6px 0;margin:.8rem 0}
+.id-later{font-family:var(--mono);font-size:.62rem;line-height:1.9;color:var(--muted)}
+.id-later b{color:var(--ink)}
+@media(max-width:760px){.id-form{grid-template-columns:1fr 1fr}.id-form .id-f:first-child{grid-column:1/-1}.id-go{grid-column:1/-1}}
 
 /* ── SEARCH RESULTS ── */
 .sr-panel{background:rgba(8,10,14,.97);border:1px solid rgba(255,255,255,.1);border-radius:6px;margin-top:.7rem;overflow:hidden;display:none}
@@ -904,6 +1017,8 @@ a,button,input,select,textarea{touch-action:manipulation}
   <nav class="mnav">
     <button class="ni on" id="n-home" onclick="go('home',this)"><span class="ni-icon">🔍</span>Search</button>
     <button class="ni" id="n-now" onclick="go('now',this)"><span class="ni-icon">📡</span>On Air Now</button>
+    <button class="ni" id="n-identify" onclick="go('identify',this)"><span class="ni-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg></span>Identify</button>
+    <button class="ni" id="n-tonight" onclick="go('tonight',this)" style="color:#8fa8ff"><span class="ni-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span>Tonight</button>
     <button class="ni" id="n-directory" onclick="go('directory',this)"><span class="ni-icon">📋</span>All Stations</button>
     <button class="ni" id="n-starthere" onclick="go('starthere',this)" style="color:#fbbf24;border-bottom-color:transparent"><span class="ni-icon">⭐</span>Start Here</button>
     <a class="ni" id="n-reviews" href="/reviews/" onclick="if(!event.metaKey&&!event.ctrlKey&&!event.shiftKey){event.preventDefault();go('reviews',this);}"><span class="ni-icon">🎧</span>Reviews</a>
@@ -937,6 +1052,7 @@ a,button,input,select,textarea{touch-action:manipulation}
       <div class="ni-drop-menu">
         <button class="ni-drop-item" id="n-equipment" onclick="go('equipment',this);closeNiDrops()"><span class="ni-icon">🔧</span>Equipment</button>
         <a class="ni-drop-item" href="/articles/" style="text-decoration:none"><span class="ni-icon">📰</span>Articles</a>
+        <a class="ni-drop-item" href="/season-change/" style="text-decoration:none"><span class="ni-icon">🗓</span>Season Change</a>
         <button class="ni-drop-item" id="n-advertise" onclick="go('advertise',this);closeNiDrops()"><span class="ni-icon">📣</span>Advertise</button>
       </div>
     </div>
@@ -958,7 +1074,7 @@ a,button,input,select,textarea{touch-action:manipulation}
 <!-- ══════════════ HOME / SEARCH ══════════════ -->
 <div class="page on" id="pg-home">
   <div class="shero">
-    <div class="sh-badge"><div class="sh-bdot"></div>Live · A-26 2026 Schedule · Updated Every 30s</div>
+    <div class="sh-badge" id="sh-badge-live"><div class="sh-bdot"></div><span id="sh-badge-txt">Live · Updated Every 30s</span></div>
     <h1 class="sh-title">The World's Shortwave<em>Radio Search Engine</em></h1>
     <p class="sh-sub">Search any frequency. Search any station. Search any language. Find what's on the air right now — anywhere in the world.</p>
     <div class="sebox">
@@ -996,6 +1112,10 @@ a,button,input,select,textarea{touch-action:manipulation}
           Schedule data is sourced directly from EIBI A-26 2026 (a community-maintained DX database) and refreshed daily. Entries marked ✓ are independently verified: either a fixed, standards-body-assigned frequency (time-signal stations), or cross-checked against HFCC's international frequency coordination data — which is also where real transmit power and transmitter coordinates come from, where available. Everything else is as reported by EIBI alone. Spot an error? Use the report link below any result.
         </div>
       </div>
+    </div>
+    <div class="recent-wrap" id="recent-wrap" style="display:none">
+      <div class="recent-lbl">Recently added</div>
+      <div class="recent-track" id="recent-track"></div>
     </div>
   </div>
 
@@ -1058,12 +1178,22 @@ a,button,input,select,textarea{touch-action:manipulation}
         </div>
       </div>
     </div>
-    <div id="rev-banner" style="display:none;margin-bottom:1.5rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,.1)">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
-        <div>
-          <div style="font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.4rem">🎧 Featured Review</div>
-          <div id="rev-banner-title" style="font-family:var(--disp);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:.4rem"></div>
-          <div id="rev-banner-desc" style="font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5"></div>
+    <div class="tn-teaser" id="tn-teaser" role="link" tabindex="0" onclick="go('tonight',document.getElementById('n-tonight'))" onkeydown="if(event.key==='Enter')go('tonight',document.getElementById('n-tonight'))">
+      <div>
+        <div class="tn-tk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>New · Tonight's Listening Guide</div>
+        <div class="tn-tt" id="tn-teaser-txt">What can you actually hear on shortwave tonight? Get a personal list for where you live.</div>
+      </div>
+      <button class="tn-tbtn" type="button">See tonight's list &rarr;</button>
+    </div>
+    <div id="rev-banner" style="display:none;margin-bottom:1.5rem;background:var(--ink);border-radius:8px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,.1);border-left:3px solid var(--red)">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem">
+        <div style="display:flex;align-items:center;gap:1.1rem;flex:1;min-width:240px">
+          <img id="rev-banner-thumb" src="" alt="" style="display:none;width:88px;height:88px;object-fit:cover;border-radius:6px;border:1px solid rgba(255,255,255,.12);flex-shrink:0">
+          <div>
+            <div style="font-family:var(--mono);font-size:.56rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.4rem">🎧 Featured Review</div>
+            <div id="rev-banner-title" style="font-family:var(--disp);font-size:1.15rem;font-weight:800;color:#fff;line-height:1.2;margin-bottom:.4rem"></div>
+            <div id="rev-banner-desc" style="font-family:var(--serif);font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5"></div>
+          </div>
         </div>
         <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap">
           <button onclick="go('reviews',document.getElementById('n-reviews'))" style="background:var(--red);border:none;color:#fff;font-family:var(--mono);font-size:.65rem;font-weight:700;padding:10px 18px;border-radius:5px;cursor:pointer;white-space:nowrap;letter-spacing:.03em">Read the Review →</button>
@@ -1555,6 +1685,54 @@ a,button,input,select,textarea{touch-action:manipulation}
 
 
 <!-- ══════════════ ENTHUSIAST OF THE MONTH PAGE ══════════════ -->
+<div class="page" id="pg-identify">
+  <div class="tn-hero">
+    <div class="wrap">
+      <div class="tn-kick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg><span>Station Identifier</span></div>
+      <h1 class="tn-h1">What am I <em>hearing?</em></h1>
+      <p class="tn-lede">Enter the frequency you're tuned to. We rank the stations you're most likely hearing from where you are, using who's on the air, where each broadcast is aimed, transmitter power and distance, and how the band is behaving.</p>
+      <div class="id-form">
+        <div class="id-f"><label for="id-freq">Frequency</label><input class="id-inp" id="id-freq" inputmode="decimal" autocomplete="off" placeholder="e.g. 9580 or 9.58" onkeydown="if(event.key==='Enter')idRun()"></div>
+        <div class="id-f"><label for="id-region">Listening from</label><select class="tn-sel" id="id-region" onchange="idSetRegion(this.value)"></select></div>
+        <div class="id-f"><label for="id-when">When</label><select class="tn-sel" id="id-when" onchange="idWhenChanged()"><option value="now">Right now</option><option value="custom">Earlier / later&hellip;</option></select><input type="time" id="id-time" class="tn-sel" style="display:none;margin-top:6px" onchange="idRun()"></div>
+        <div class="id-f"><label for="id-tol">Your dial</label><select class="tn-sel" id="id-tol" onchange="idRun()"><option value="0">Exact (digital)</option><option value="2">&plusmn;2 kHz</option><option value="5">&plusmn;5 kHz (analog)</option></select></div>
+        <button class="id-go" type="button" onclick="idRun()">Identify &rarr;</button>
+      </div>
+      <div class="id-langs" id="id-langs"><span class="lb">Language you hear (optional):</span></div>
+      <div class="id-err" id="id-err"></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:4rem">
+    <div id="id-out"><div class="id-note">Tip: tune in, note the frequency on your radio's display, and enter it above. If you can make out the language, pick it too &mdash; it sharpens the ranking a lot.</div></div>
+    <div class="tn-foot">Rankings are probabilities from the published EIBI schedule plus a propagation model, not a guarantee &mdash; unscheduled stations, pirates and utility signals won't appear. The surest ID is the station announcement, usually at the top or bottom of the hour. Found it? <b>It's this one</b> saves the catch to <a onclick="go('log',document.getElementById('n-log'))">My Log</a>.</div>
+  </div>
+</div>
+<div class="page" id="pg-tonight">
+  <div class="tn-hero">
+    <div class="wrap">
+      <div class="tn-kick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Tonight's Listening Guide &middot; <span id="tn-date">--</span></span></div>
+      <h1 class="tn-h1">What you can hear <em>tonight</em></h1>
+      <p class="tn-lede" id="tn-lede">A personal list of stations you can realistically catch from where you are, built from today's EIBI schedule and live NOAA solar data.</p>
+      <div class="tn-ctrl">
+        <select class="tn-sel" id="tn-region" aria-label="Your region" onchange="tnSetRegion(this.value)"></select>
+        <div class="tn-slots" id="tn-slots"></div>
+        <label class="tn-en"><input type="checkbox" id="tn-en" onchange="tnSetEnglish(this.checked)">English only</label>
+      </div>
+      <div class="tn-bands" id="tn-bands"></div>
+      <div class="tn-bnote" id="tn-bnote"></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:4rem">
+    <div class="tn-prog">
+      <div><div class="tn-pnum" id="tn-pnum">0<span> / 0</span></div><div class="tn-plbl">Heard from tonight's list</div></div>
+      <div class="tn-pbar"><div class="tn-pfill" id="tn-pfill"></div></div>
+      <div><div class="tn-pnum" id="tn-streak">0</div><div class="tn-plbl">Day log streak</div></div>
+      <button class="tn-share" type="button" onclick="tnShare()">Share tonight's list</button>
+    </div>
+    <div id="tn-body"><div class="tn-empty">Loading tonight's schedule&hellip;</div></div>
+    <div class="tn-foot">These are predictions, not guarantees. Picks come from the published EIBI schedule, where each broadcast is aimed, and a band model driven by NOAA's solar flux and K-index &mdash; your antenna, noise, and local conditions decide the rest. Tapping <b>Heard it</b> saves the catch to <a onclick="go('log',document.getElementById('n-log'))">My Log</a> on this device. Heard something great? <a onclick="go('propagation',document.getElementById('n-propagation'))">Share it on the Reception Log</a> so other listeners know the band is open.</div>
+  </div>
+</div>
 <div class="page" id="pg-enthusiast">
   <div class="wrap" style="padding-top:1.6rem;padding-bottom:4rem">
     <div class="srule"><div class="sn">Community</div><div class="sh">Enthusiast of the <em>Month</em></div><div class="sm">Celebrating the shortwave community, one story at a time</div></div>
@@ -2136,7 +2314,7 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.58rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build bacccca1 · 2026-09-22 09:57 UTC</span></div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build ee56000b · 2026-09-23 09:58 UTC</span></div>
     <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 309 active stations in 2026</div>
   </div>
 </footer>
@@ -2164,6 +2342,8 @@ Yours sincerely,
 <div id="mob-more" style="display:none;position:fixed;bottom:64px;left:0;right:0;background:var(--ink);border-top:1px solid rgba(255,255,255,.12);z-index:499;padding:.8rem;display:none">
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
     <button onclick="go('finder',document.getElementById('n-finder'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">📋<span>Finder</span></button>
+    <button onclick="go('identify',document.getElementById('n-identify'));closeMobMore()" style="background:rgba(231,76,60,.14);border:1px solid rgba(231,76,60,.4);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg><span>Identify</span></button>
+    <button onclick="go('tonight',document.getElementById('n-tonight'));closeMobMore()" style="background:rgba(143,168,255,.14);border:1px solid rgba(143,168,255,.35);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Tonight</span></button>
     <button onclick="go('dx',document.getElementById('n-dx'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">🎯<span>DX Hunt</span></button>
     <button onclick="go('propagation',document.getElementById('n-propagation'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">☀<span>Propagation</span></button>
     <button onclick="go('timemachine',document.getElementById('n-timemachine'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">⏱<span>Time Machine</span></button>
@@ -2596,6 +2776,572 @@ function getBands(){
   for(var i=0;i<BD.length;i++){var b=BD[i];var base=night?b.bn:b.bd;var sf=(pV.sfi-100)/5;var kp=pV.k>4?(pV.k-4)*8:0;var p=Math.min(100,Math.max(3,base+sf-kp));out.push({n:b.n,r:b.r,p:Math.round(p)});}
   return out;
 }
+// TONIGHT_ENGINE_START
+// Tonight's Listening Guide engine. Pure functions, no DOM, no browser APIs.
+// Shared by the SPA (index.html) and build.js (static /tonight/ page) so both
+// always agree. build.js extracts everything between the START/END markers.
+var TN_REGIONS=[
+  {id:"na-east",name:"Eastern North America",short:"North America",off:-4,
+   tgt:["North America","E. North America","USA","Canada","Am","Caribbean","Cuba","Worldwide"],reg:["North America"]},
+  {id:"na-west",name:"Western North America",short:"North America",off:-7,
+   tgt:["North America","W. North America","USA","Canada","Am","Worldwide"],reg:["North America"]},
+  {id:"latam",name:"Latin America",short:"Latin America",off:-4,
+   tgt:["South America","LAm","Brazil","Central America","Caribbean","Cuba","Am","Worldwide"],reg:["South America"]},
+  {id:"europe",name:"Europe",short:"Europe",off:1,
+   tgt:["Europe","W. Europe","E. Europe","C. Europe","S. Europe","SE Europe","N. Europe","UK","Worldwide"],reg:["Europe"]},
+  {id:"africa",name:"Africa",short:"Africa",off:1,
+   tgt:["Africa","E. Africa","W. Africa","S. Africa","N. Africa","CAf","Worldwide"],reg:["Africa"]},
+  {id:"asia",name:"Asia",short:"Asia",off:8,
+   tgt:["Far East","China","SE Asia","South Asia","Korea","Japan","Indonesia","Philippines","Taiwan","Worldwide"],reg:["Asia"]},
+  {id:"oceania",name:"Australia & Pacific",short:"the Pacific",off:10,
+   tgt:["Pacific","Australia","New Zealand","Worldwide"],reg:["Pacific"]}
+];
+var TN_SLOTS=[
+  {id:"evening",name:"Evening",sub:"7 \u2013 10 pm",ls:1140,le:1320},
+  {id:"late",name:"Late night",sub:"10 pm \u2013 1 am",ls:1320,le:60},
+  {id:"dawn",name:"Dawn grey-line",sub:"5 \u2013 7 am",ls:300,le:420},
+  {id:"now",name:"Right now",sub:"next 60 min",ls:-1,le:-1}
+];
+var TN_BD=[
+  {n:"120m",lo:2.3,hi:2.5,bd:15,bn:40},{n:"90m",lo:3.2,hi:3.4,bd:25,bn:55},
+  {n:"75m",lo:3.9,hi:4.0,bd:30,bn:60},{n:"60m",lo:4.75,hi:5.1,bd:28,bn:62},
+  {n:"49m",lo:5.9,hi:6.2,bd:50,bn:76},{n:"41m",lo:7.2,hi:7.6,bd:56,bn:73},
+  {n:"31m",lo:9.4,hi:9.99,bd:71,bn:80},{n:"25m",lo:11.6,hi:12.1,bd:68,bn:54},
+  {n:"22m",lo:13.57,hi:13.87,bd:62,bn:44},{n:"19m",lo:15.1,hi:15.83,bd:72,bn:34},
+  {n:"16m",lo:17.48,hi:17.9,bd:62,bn:27},{n:"15m",lo:18.9,hi:19.02,bd:58,bn:23},
+  {n:"13m",lo:21.45,hi:21.85,bd:52,bn:19},{n:"11m",lo:25.67,hi:26.1,bd:37,bn:11}
+];
+function tnMod(m){return ((m%1440)+1440)%1440;}
+function tnRegion(id){for(var i=0;i<TN_REGIONS.length;i++)if(TN_REGIONS[i].id===id)return TN_REGIONS[i];return TN_REGIONS[0];}
+function tnSlot(id){for(var i=0;i<TN_SLOTS.length;i++)if(TN_SLOTS[i].id===id)return TN_SLOTS[i];return TN_SLOTS[0];}
+function tnBand(f){
+  f=parseFloat(f);if(!(f>0))return null;
+  var best=null,bd=1e9;
+  for(var i=0;i<TN_BD.length;i++){
+    var b=TN_BD[i];if(f>=b.lo&&f<=b.hi)return b;
+    var d=Math.min(Math.abs(f-b.lo),Math.abs(f-b.hi));if(d<bd){bd=d;best=b;}
+  }
+  return bd<=0.6?best:null;
+}
+function tnBandScore(b,localMin,sfi,k){
+  var h=localMin/60,nf;
+  if(h>=21||h<4)nf=1;else if(h>=10&&h<16)nf=0;else if(h>=16)nf=(h-16)/5;else nf=1-(h-4)/6;
+  var base=b.bd*(1-nf)+b.bn*nf;
+  var sf=((sfi||110)-100)/5*(b.lo>=13?1.4:0.6);
+  var kp=(k||0)>4?((k-4)*8):0;
+  return Math.round(Math.min(100,Math.max(3,base+sf-kp)));
+}
+function tnCond(p){return p>=72?"excellent":p>=52?"good":p>=32?"fair":"marginal";}
+function tnSegs(a,b){
+  if(a===b||(a===0&&b===1440))return [[0,1440]];
+  if(b===1440)return [[a,1440]];
+  return a<b?[[a,b]]:[[a,1440],[0,b]];
+}
+function tnOverlap(s,e,ws,we){
+  var A=tnSegs(s,e),B=tnSegs(ws,we),t=0;
+  for(var i=0;i<A.length;i++)for(var j=0;j<B.length;j++){
+    t+=Math.max(0,Math.min(A[i][1],B[j][1])-Math.max(A[i][0],B[j][0]));
+  }
+  return t;
+}
+function tnClock(m){
+  m=tnMod(Math.round(m));var h=Math.floor(m/60),mi=m%60;
+  var ap=h<12?"am":"pm";var h12=h%12;if(h12===0)h12=12;
+  return h12+(mi?":"+(mi<10?"0":"")+mi:"")+" "+ap;
+}
+function tnUtc(m){m=tnMod(m);var h=Math.floor(m/60),mi=m%60;return (h<10?"0":"")+h+(mi<10?"0":"")+mi;}
+function tnPlan(SCH,o){
+  var R=tnRegion(o.region),slot=tnSlot(o.slot),off=(o.off!=null?o.off:R.off);
+  var ws,we,midLocal;
+  if(slot.id==="now"){ws=tnMod(o.nowUtcMin||0);we=tnMod(ws+60);midLocal=tnMod(ws+off*60+30);}
+  else{
+    ws=tnMod(slot.ls-off*60);we=tnMod(slot.le-off*60);
+    var len=tnMod(slot.le-slot.ls);midLocal=tnMod(slot.ls+len/2);
+  }
+  var winLen=tnMod(we-ws)||1440;
+  var need=Math.min(30,winLen);
+  var cache={},best={},alts={},count={},i;
+  for(i=0;i<SCH.length;i++){var c=SCH[i];if(c&&c.stn)count[c.stn]=(count[c.stn]||0)+1;}
+  for(i=0;i<SCH.length;i++){
+    var r=SCH[i];if(!r||!r.freq||!r.stn)continue;
+    if(/\bCHU\b|Trading|\bDRM\b|\bData\b|Beacon/.test(r.stn))continue;
+    var s=+r.s,e=+r.e;if(isNaN(s)||isNaN(e))continue;
+    var ov=tnOverlap(s,e,ws,we);
+    if(ov<need){var rl=tnMod(e-s)||1440;if(!(rl>=10&&ov>=rl))continue;}
+    if(o.english&&r.type==="International"&&r.lang!=="English")continue;
+    if(r.lang==="Various"&&r.type==="International")continue;
+    var b=tnBand(r.freq);if(!b)continue;
+    var bp=cache[b.n];if(bp==null){bp=tnBandScore(b,midLocal,o.sfi,o.k);cache[b.n]=bp;}
+    var aimed=0;
+    if(r.tgt==="Worldwide"||r.reg==="Worldwide")aimed=1;
+    else if(R.tgt.indexOf(r.tgt)>=0||R.reg.indexOf(r.reg)>=0)aimed=2;
+    var kw=+r.kw||0;
+    var pw=kw>=500?25:kw>=250?20:kw>=100?14:kw>=50?9:kw>0?5:7;
+    var sc=bp*0.45+pw+(aimed===2?40:aimed===1?25:0)+(r.lang==="English"?10:0);
+    var cur=best[r.stn];
+    if(!alts[r.stn])alts[r.stn]={};
+    alts[r.stn][parseFloat(r.freq).toFixed(3)]=1;
+    if(!cur||sc>cur.score){
+      var fM=parseFloat(r.freq);
+      best[r.stn]={stn:r.stn,freq:fM.toFixed(3),khz:Math.round(fM*1000),
+        band:(fM>=b.lo&&fM<=b.hi)?b.n:(Math.round(fM*10)/10)+" MHz",bp:bp,cond:tnCond(bp),lang:r.lang||"",tgt:r.tgt||"",kw:kw,type:r.type||"",s:s,e:e,
+        aimed:aimed,score:sc,rare:(count[r.stn]||0)<=3};
+    }
+  }
+  var buckets={easy:[],worth:[],dx:[],odd:[],check:[]};
+  for(var n in best){
+    var x=best[n];
+    var fl=[];for(var fq in alts[n])if(fq!==x.freq)fl.push(fq);
+    x.alts=fl.sort().slice(0,3);
+    x.localStart=tnClock(x.s+off*60);x.localEnd=tnClock(x.e===1440?1440+off*60:x.e+off*60);
+    x.allDay=(x.s===x.e)||(x.s===0&&x.e===1440);
+    x.utc=x.allDay?"24 hr":(tnUtc(x.s)+"\u2013"+tnUtc(x.e)+" UTC");
+    x.local=x.allDay?"Listed 24 hours":(x.localStart+" \u2013 "+x.localEnd);
+    var why=[];
+    if(x.aimed===2)why.push("Beamed at "+R.short);
+    else if(x.aimed===1)why.push("Worldwide beam");
+    else why.push("Not aimed at you \u2014 real DX");
+    if(x.kw&&!x.allDay)why.push(x.kw+" kW");
+    why.push(x.band+" "+x.cond);
+    if(x.rare&&x.aimed!==2)why.push("rarely scheduled");
+    x.why=why.join(" \u00b7 ");
+    if(x.type==="Time"){if(/WWV/.test(x.stn))buckets.check.push(x);continue;}
+    if(x.type==="Numbers"||x.type==="Pirate"||/Jammer|Marker|Firedrake/.test(x.stn)){buckets.odd.push(x);continue;}
+    if(x.aimed>0&&(x.kw>=100||x.kw===0)&&x.bp>=45)buckets.easy.push(x);
+    else if(x.aimed>0&&x.bp>=32)buckets.worth.push(x);
+    else if(x.aimed===0&&x.kw>=250&&x.bp>=50)buckets.worth.push(x);
+    else if(x.aimed===0&&x.bp>=40){x.score+=(x.rare?12:0)-(x.allDay?8:0);buckets.dx.push(x);}
+  }
+  function pick(arr,max,langCap){
+    if(o.english)langCap=max;
+    arr.sort(function(a,b){return b.score-a.score||a.stn.localeCompare(b.stn);});
+    var out=[],lc={};
+    for(var j=0;j<arr.length&&out.length<max;j++){
+      var l=arr[j].lang||"?";if((lc[l]||0)>=langCap)continue;lc[l]=(lc[l]||0)+1;out.push(arr[j]);
+    }
+    return out;
+  }
+  var bands=[];
+  for(var bi=0;bi<TN_BD.length;bi++){
+    var bb=TN_BD[bi];if(bb.n==="120m"||bb.n==="90m"||bb.n==="15m"||bb.n==="11m")continue;
+    bands.push({n:bb.n,p:tnBandScore(bb,midLocal,o.sfi,o.k)});
+  }
+  var res={region:R,slot:slot,off:off,ws:ws,we:we,midLocal:midLocal,bands:bands,
+    easy:pick(buckets.easy,8,3),worth:pick(buckets.worth,8,3),dx:pick(buckets.dx,8,2),
+    odd:pick(buckets.odd,4,4),check:pick(buckets.check,2,2)};
+  res.total=res.easy.length+res.worth.length+res.dx.length+res.odd.length;
+  return res;
+}
+
+// ── Station identifier ("What am I hearing?") ──
+var TN_RC={"na-east":[39,-80],"na-west":[37,-115],"latam":[-15,-55],"europe":[50,10],"africa":[5,20],"asia":[30,110],"oceania":[-30,145]};
+var TN_LANGS=[
+  {id:"English",re:/English/},{id:"Spanish",re:/Spanish/},{id:"Chinese",re:/Mandarin|Chinese|Cantonese|Hakka|Amoy/},
+  {id:"Arabic",re:/Arabic/},{id:"Russian",re:/Russian/},{id:"French",re:/French/},{id:"Portuguese",re:/Portug/},
+  {id:"Korean",re:/Korean/},{id:"Japanese",re:/Japanese/},{id:"Tibetan",re:/Tibetan/},{id:"German",re:/German/}
+];
+function tnLangMatch(lang,g){
+  lang=String(lang||"");
+  if(g==="Other"){for(var i=0;i<TN_LANGS.length;i++)if(TN_LANGS[i].re.test(lang))return false;return true;}
+  for(var j=0;j<TN_LANGS.length;j++)if(TN_LANGS[j].id===g)return TN_LANGS[j].re.test(lang);
+  return true;
+}
+function tnDistKm(la1,lo1,la2,lo2){
+  var r=Math.PI/180,a=Math.sin((la2-la1)*r/2),b=Math.sin((lo2-lo1)*r/2);
+  var h=a*a+Math.cos(la1*r)*Math.cos(la2*r)*b*b;return 12742*Math.asin(Math.min(1,Math.sqrt(h)));
+}
+function tnOnAt(s,e,m){if(s===e||(s===0&&e===1440))return true;if(e===1440)return m>=s;return s<e?(m>=s&&m<e):(m>=s||m<e);}
+function tnParseFreq(v){
+  var t=String(v==null?"":v).toLowerCase().replace(/,/g,".").replace(/\s+/g,"");
+  var m=t.match(/^(\d+(?:\.\d+)?)(khz|mhz|k|m)?$/);if(!m)return null;
+  var n=parseFloat(m[1]),u=m[2]||"";
+  var k=(u.charAt(0)==="m"||(!u&&n<=30))?Math.round(n*1000):Math.round(n);
+  return (k>=1600&&k<=30000)?k:null;
+}
+function tnIdentify(rows,o){
+  var R=tnRegion(o.region),off=(o.off!=null?o.off:R.off),tol=+o.tol||0,khz=+o.khz,utc=tnMod(+o.utcMin||0);
+  var localMin=tnMod(utc+off*60),rc=TN_RC[R.id],cand={},later={},i;
+  for(i=0;i<rows.length;i++){
+    var r=rows[i];if(!r||!r.freq||!r.stn)continue;
+    var rk=Math.round(parseFloat(r.freq)*1000),d=Math.abs(rk-khz);if(d>tol)continue;
+    var s=+r.s,e=+r.e;if(isNaN(s)||isNaN(e))continue;
+    var on=tnOnAt(s,e,utc),startsIn=tnMod(s-utc),endedAgo=tnMod(utc-e);
+    var edge=!on&&(startsIn<=10||(e!==1440&&endedAgo<=5));
+    if(!on&&!edge){
+      if(d===0){var lw=later[r.stn];if(!lw||startsIn<lw.wait)later[r.stn]={stn:r.stn,khz:rk,s:s,e:e,wait:startsIn,lang:r.lang||"",tgt:r.tgt||""};}
+      continue;
+    }
+    var b=tnBand(r.freq),bp=b?tnBandScore(b,localMin,o.sfi,o.k):35;
+    var aimed=(r.tgt==="Worldwide"||r.reg==="Worldwide")?1:((R.tgt.indexOf(r.tgt)>=0||R.reg.indexOf(r.reg)>=0)?2:0);
+    // Transmitter coordinates in the data are not reliable enough to score
+    // distance (the site field is usually the station's country and relays are
+    // common), so the model deliberately uses beam direction, power and band only.
+    var kw=+r.kw||0,dist=null,fDist=1;
+    var sc=(d===0?1:d<=2?0.7:0.4)*(aimed===2?3:aimed===1?2:1)*(kw>0?(0.55+0.45*Math.min(1,kw/250)):0.75)
+      *(0.3+0.7*bp/100)*fDist*(edge?0.35:1)*(r.type==="Time"?1.2:1);
+    if(o.lang)sc*=tnLangMatch(r.lang,o.lang)?1.6:0.15;
+    var key=r.stn+"|"+rk;
+    if(!cand[key]||sc>cand[key].score){
+      cand[key]={stn:r.stn,khz:rk,d:d,freq:parseFloat(r.freq).toFixed(3),lang:r.lang||"",tgt:r.tgt||"",site:r.site||"",kw:kw,type:r.type||"",
+        band:b?((parseFloat(r.freq)>=b.lo&&parseFloat(r.freq)<=b.hi)?b.n:(Math.round(parseFloat(r.freq)*10)/10)+" MHz"):"",
+        bp:bp,cond:tnCond(bp),aimed:aimed,dist:dist,on:on,edge:edge,startsIn:startsIn,s:s,e:e,score:sc};
+    }
+  }
+  var list=[],sum=0;for(var k in cand){list.push(cand[k]);sum+=cand[k].score;}
+  list.sort(function(a,b){return b.score-a.score||a.stn.localeCompare(b.stn);});
+  for(i=0;i<list.length;i++){
+    var x=list[i];x.pct=sum>0?Math.max(1,Math.round(x.score/sum*100)):0;
+    x.label=x.pct>=50?"Most likely":x.pct>=20?"Possible":"Long shot";
+    var allDay=(x.s===x.e)||(x.s===0&&x.e===1440);
+    x.local=allDay?"24 hours":(tnClock(x.s+off*60)+" \u2013 "+tnClock(x.e+off*60));
+    var w=[];
+    if(x.on)w.push(allDay?"On air 24 hours":"On air now until "+tnClock(x.e+off*60));
+    else if(x.startsIn<=10)w.push("Starts in "+x.startsIn+" min");
+    else w.push("Just went off the air");
+    if(x.d>0)w.push(x.d+" kHz off your dial");
+    w.push(x.aimed===2?"beamed at "+R.short:x.aimed===1?"worldwide beam":"not aimed at you");
+    if(x.kw)w.push(x.kw+" kW");
+    if(x.band)w.push(x.band+" "+x.cond);
+    x.why=w.join(" \u00b7 ");
+  }
+  var lat=[];for(var n in later){var dup=false;for(var q=0;q<list.length;q++)if(list[q].stn===n){dup=true;break;}if(!dup)lat.push(later[n]);}
+  lat.sort(function(a,b){return a.wait-b.wait;});
+  for(i=0;i<lat.length;i++){lat[i].local=tnClock(lat[i].s+off*60);lat[i].inText=lat[i].wait<60?lat[i].wait+" min":Math.floor(lat[i].wait/60)+" h "+(lat[i].wait%60)+" min";}
+  var cochannel=list.length>1&&list[1].score>=list[0].score/1.6;
+  return {khz:khz,region:R,off:off,localMin:localMin,utcMin:utc,tol:tol,candidates:list,later:lat.slice(0,6),cochannel:cochannel};
+}
+// TONIGHT_ENGINE_END
+
+// ── STATION IDENTIFIER — UI ─────────────────────────────────────
+var ID_STATE={lang:"",ranOnce:false,last:null,slugs:null,slugsLoading:false};
+function idSetRegion(v){TN_STATE.region=tnRegion(v).id;tnLS("swTnRegion",TN_STATE.region);tnApplyOff();idRun(true);}
+function idWhenChanged(){
+  var w=document.getElementById("id-when"),t=document.getElementById("id-time");
+  if(!w||!t)return;
+  if(w.value==="custom"){t.style.display="block";if(!t.value){var d=new Date();t.value=pad(d.getHours())+":"+pad(d.getMinutes());}}
+  else t.style.display="none";
+  idRun(true);
+}
+function idLoadSlugs(cb){
+  if(ID_STATE.slugs){cb();return;}
+  if(ID_STATE.slugsLoading){setTimeout(function(){idLoadSlugs(cb);},150);return;}
+  ID_STATE.slugsLoading=true;
+  try{
+    fetch("/data/slugs.json",{cache:"force-cache"}).then(function(r){return r.ok?r.json():{};}).then(function(j){ID_STATE.slugs=j||{};ID_STATE.slugsLoading=false;cb();}).catch(function(){ID_STATE.slugs={};ID_STATE.slugsLoading=false;cb();});
+  }catch(e){ID_STATE.slugs={};ID_STATE.slugsLoading=false;cb();}
+}
+function renderIdentify(){
+  tnInitState();
+  var sel=document.getElementById("id-region");
+  if(sel&&!sel.options.length){for(var i=0;i<TN_REGIONS.length;i++){var op=document.createElement("option");op.value=TN_REGIONS[i].id;op.textContent=TN_REGIONS[i].name;sel.appendChild(op);}}
+  if(sel)sel.value=TN_STATE.region;
+  var lw=document.getElementById("id-langs");
+  if(lw&&lw.children.length<2){
+    var ls=["English","Spanish","Chinese","Arabic","Russian","French","Portuguese","Korean","Japanese","Other"];
+    for(var j=0;j<ls.length;j++){(function(l){var b=document.createElement("button");b.type="button";b.className="id-chip";b.textContent=l;b.setAttribute("data-l",l);
+      b.onclick=function(){ID_STATE.lang=(ID_STATE.lang===l)?"":l;idPaintLangs();idRun(true);};lw.appendChild(b);})(ls[j]);}
+  }
+  idPaintLangs();
+  var q=null;try{q=new URLSearchParams(window.location.search).get("f");}catch(e){}
+  var inp=document.getElementById("id-freq");
+  if(q&&inp&&!ID_STATE.ranOnce){inp.value=q;idRun();}
+  else if(inp&&!inp.value){setTimeout(function(){try{inp.focus();}catch(e){}},60);}
+}
+function idPaintLangs(){var bs=document.querySelectorAll("#id-langs .id-chip");for(var i=0;i<bs.length;i++)bs[i].classList.toggle("on",bs[i].getAttribute("data-l")===ID_STATE.lang);}
+function idOpen(khz){go("identify",document.getElementById("n-identify"));var inp=document.getElementById("id-freq");if(inp){inp.value=String(khz);}idRun();}
+function idRun(soft){
+  var inp=document.getElementById("id-freq"),err=document.getElementById("id-err"),out=document.getElementById("id-out");
+  if(!inp||!out)return;
+  var raw=inp.value;
+  if(!String(raw).trim()){if(!soft&&err)err.textContent="Enter the frequency shown on your radio.";return;}
+  var khz=tnParseFreq(raw);
+  if(!khz){if(err)err.textContent="That doesn't look like a shortwave frequency. Try something like 9580 (kHz) or 9.58 (MHz).";return;}
+  if(err)err.textContent="";
+  ID_STATE.ranOnce=true;
+  out.innerHTML="<div class=\"tn-empty\">Checking the schedule&hellip;</div>";
+  _loadSchedule(function(){
+    if(!SCH||!SCH.length){out.innerHTML="<div class=\"tn-empty\">The schedule didn't load. Check your connection and try again.</div>";return;}
+    var now=new Date(),utc=now.getUTCHours()*60+now.getUTCMinutes(),isCustom=false;
+    var w=document.getElementById("id-when"),t=document.getElementById("id-time");
+    if(w&&w.value==="custom"&&t&&/^\d{1,2}:\d{2}$/.test(t.value)){
+      var p=t.value.split(":");utc=tnMod(parseInt(p[0],10)*60+parseInt(p[1],10)-TN_STATE.off*60);isCustom=true;
+    }
+    var tolEl=document.getElementById("id-tol");var tol=tolEl?parseInt(tolEl.value,10)||0:0;
+    var opts={khz:khz,region:TN_STATE.region,off:TN_STATE.off,utcMin:utc,tol:tol,sfi:(pV&&pV.sfi)||110,k:(pV&&pV.k!=null)?pV.k:2,lang:ID_STATE.lang};
+    var res=tnIdentify(SCH,opts);
+    var near=null;
+    if(!res.candidates.length&&tol<5){var o2={};for(var kk in opts)o2[kk]=opts[kk];o2.tol=5;near=tnIdentify(SCH,o2);}
+    ID_STATE.last=res;
+    try{var u=new URL(window.location.href);u.searchParams.set("page","identify");u.searchParams.set("f",String(khz));history.replaceState(null,"",u.pathname+u.search);}catch(e){}
+    idLoadSlugs(function(){idRender(res,near,isCustom);});
+  });
+}
+function idStationLink(stn){
+  var sl=ID_STATE.slugs&&ID_STATE.slugs[stn];
+  return sl?"/stations/"+sl+"/":"/?q="+encodeURIComponent(stn);
+}
+function idRender(res,near,isCustom){
+  var out=document.getElementById("id-out");if(!out)return;
+  out.innerHTML="";
+  var when=isCustom?"at "+tnClock(res.localMin):"right now";
+  var sum=document.createElement("div");sum.className="id-sum";
+  var list=res.candidates;
+  if(list.length){
+    sum.innerHTML="<b>"+res.khz+" kHz</b> "+tnEsc(when)+" from <b>"+tnEsc(res.region.name)+"</b>: "+(list.length===1?"one station is scheduled.":list.length+" stations are scheduled"+(res.tol?" within \u00b1"+res.tol+" kHz":"")+".");
+  } else {
+    sum.innerHTML="Nothing is scheduled on <b>"+res.khz+" kHz</b> "+tnEsc(when)+".";
+  }
+  out.appendChild(sum);
+  if(res.cochannel){var cn=document.createElement("div");cn.className="id-note";cn.textContent="More than one station is on this frequency now. Listen for the language and wait for a station ID at the top or bottom of the hour \u2014 the stronger signal usually wins, and it can swap as the band changes.";out.appendChild(cn);}
+  if(list.length){
+    var wrap=document.createElement("div");wrap.className="id-list";
+    for(var i=0;i<Math.min(list.length,8);i++)wrap.appendChild(idCard(list[i],i));
+    out.appendChild(wrap);
+  } else {
+    var nt=document.createElement("div");nt.className="id-note";
+    nt.innerHTML="If you're hearing something clearly, it may be an <b>unscheduled or irregular broadcast, a pirate, or a utility signal</b>. Log what you hear (language, music, time) &mdash; that's how rare catches get identified.";
+    out.appendChild(nt);
+    if(near&&near.candidates.length){
+      var h=document.createElement("div");h.className="id-sum";h.innerHTML="<b>On the air within \u00b15 kHz:</b> your dial may be slightly off.";out.appendChild(h);
+      var w2=document.createElement("div");w2.className="id-list";
+      for(var j=0;j<Math.min(near.candidates.length,4);j++)w2.appendChild(idCard(near.candidates[j],j,true));
+      out.appendChild(w2);
+    }
+  }
+  if(res.later.length){
+    var lt=document.createElement("div");lt.className="tn-sec";
+    var hh="<div class=\"tn-sh\"><h2>Also scheduled on "+res.khz+" kHz today</h2><p>Not on at this time.</p></div><div class=\"id-later\">";
+    for(var k=0;k<res.later.length;k++){var L=res.later[k];hh+="<b>"+tnEsc(L.stn)+"</b> \u00b7 "+tnEsc(L.lang)+" \u00b7 starts "+tnEsc(L.local)+" (in "+tnEsc(L.inText)+")<br>";}
+    lt.innerHTML=hh+"</div>";out.appendChild(lt);
+  }
+  var sh=document.createElement("p");sh.style.cssText="margin-top:1.4rem;font-family:var(--mono);font-size:.6rem";
+  var sb=document.createElement("button");sb.type="button";sb.className="tn-share";sb.textContent="Copy link to this result";
+  sb.onclick=function(){var url="https://hqshortwaveradio.com/?page=identify&f="+res.khz;
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(url).then(function(){toast("Link copied");},function(){window.prompt("Copy this link:",url);});else window.prompt("Copy this link:",url);};
+  sh.appendChild(sb);out.appendChild(sh);
+}
+function idCard(x,i,nearMode){
+  var c=document.createElement("div");c.className="id-card"+(i===0&&!nearMode&&x.pct>=50?" top":"");
+  var col=x.label==="Most likely"?"#1e8449":x.label==="Possible"?"#d68910":"#7f8c8d";
+  var rk=document.createElement("div");rk.className="id-rank";rk.textContent=(i+1);c.appendChild(rk);
+  var hd=document.createElement("div");hd.className="id-head";
+  hd.innerHTML="<span class=\"id-stn\">"+tnEsc(x.stn)+"</span><span class=\"id-lbl\" style=\"background:"+col+"\">"+tnEsc(x.label)+" \u00b7 "+x.pct+"%</span>"+(x.d?"<span class=\"tn-bandtag\">"+x.khz+" kHz</span>":"");
+  c.appendChild(hd);
+  var bar=document.createElement("div");bar.className="id-bar";bar.innerHTML="<i style=\"width:"+x.pct+"%;background:"+col+"\"></i>";c.appendChild(bar);
+  var ls=document.createElement("div");ls.className="id-listen";ls.innerHTML="Listen for: <b>"+tnEsc(x.lang||"unknown language")+"</b>"+(x.site&&x.site.length>3&&x.site!=="Clandestine"?" \u00b7 station in "+tnEsc(x.site):"")+(x.tgt?" \u00b7 aimed at "+tnEsc(x.tgt):"")+" \u00b7 "+tnEsc(x.local);c.appendChild(ls);
+  var wy=document.createElement("div");wy.className="id-why";wy.textContent=x.why;c.appendChild(wy);
+  var act=document.createElement("div");act.className="tn-act";
+  var hb=document.createElement("button");hb.type="button";hb.className="tn-heard";hb.textContent="It's this one";
+  var sig=document.createElement("div");sig.className="tn-sig";sig.innerHTML="<span>Signal:</span>";
+  var lv=[["Weak",3],["Fair",5],["Strong",8]];
+  for(var j=0;j<lv.length;j++){(function(l){var b=document.createElement("button");b.type="button";b.textContent=l[0];
+    b.onclick=function(){idLog(x,l[1],hb,sig);};sig.appendChild(b);})(lv[j]);}
+  hb.onclick=function(){if(!hb.classList.contains("done"))sig.classList.toggle("on");};
+  act.appendChild(hb);
+  var a=document.createElement("a");a.className="tn-heard";a.style.cssText="text-decoration:none;border-color:var(--bdr);color:var(--ink)";a.href=idStationLink(x.stn);a.textContent="Station guide";act.appendChild(a);
+  try{act.appendChild(mkListenBtn(x.khz,"am",{label:"Listen online"}));}catch(e){}
+  var box=document.createElement("div");box.appendChild(act);box.appendChild(sig);c.appendChild(box);
+  return c;
+}
+function idLog(x,sigVal,btn,sigBox){
+  var nd=new Date();var utc=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
+  var entries=loadLog();entries.unshift({f:x.freq,stn:x.stn,sig:sigVal,notes:"Identified with ShortwaveHQ \u2014 "+x.lang,utc:utc,date:nd.toISOString()});
+  saveLog(entries);
+  btn.classList.add("done");btn.textContent="\u2713 Logged";sigBox.classList.remove("on");
+  toast("Logged: "+x.stn+" on "+x.khz+" kHz");
+}
+
+// ── TONIGHT'S LISTENING GUIDE — UI ─────────────────────────────
+var TN_STATE={region:null,slot:"evening",english:false,off:null,plan:null};
+function tnEsc(t){return String(t==null?"":t).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];});}
+function tnDetect(){
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";}catch(e){}
+  var off=-new Date().getTimezoneOffset()/60,id=null;
+  if(/^America\//.test(tz)){
+    if(/Sao_Paulo|Argentina|Buenos_Aires|Bogota|Lima|Santiago|Caracas|La_Paz|Montevideo|Asuncion|Guayaquil|Mexico_City|Monterrey|Merida|Guatemala|Costa_Rica|Panama|El_Salvador|Tegucigalpa|Managua|Havana|Santo_Domingo|Puerto_Rico|Belem|Fortaleza|Recife|Manaus|Bahia|Cuiaba|Campo_Grande/.test(tz))id="latam";
+    else if(/Los_Angeles|Vancouver|Denver|Phoenix|Edmonton|Boise|Anchorage|Juneau|Tijuana|Whitehorse|Yellowknife|Hermosillo|Mazatlan|Dawson|Sitka|Nome/.test(tz)||off<=-7)id="na-west";
+    else id="na-east";
+  }
+  else if(/^Pacific\/Honolulu/.test(tz))id="na-west";
+  else if(/^(Europe|Atlantic)\//.test(tz))id="europe";
+  else if(/^Africa\//.test(tz))id="africa";
+  else if(/^Asia\//.test(tz))id="asia";
+  else if(/^(Australia|Pacific|Antarctica)\//.test(tz))id="oceania";
+  else if(off<=-6)id="na-west";else if(off<-2)id="na-east";else if(off<=3)id="europe";else if(off<=9)id="asia";else id="oceania";
+  return {id:id,off:off};
+}
+function tnLS(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+function tnInitState(){
+  if(TN_STATE.region)return;
+  var d=tnDetect();TN_STATE.detected=d;
+  var r=tnLS("swTnRegion");TN_STATE.region=(r&&tnRegion(r).id===r)?r:d.id;
+  var s=tnLS("swTnSlot");if(s&&tnSlot(s).id===s)TN_STATE.slot=s;
+  TN_STATE.english=tnLS("swTnEn")==="1";
+  tnApplyOff();
+}
+function tnApplyOff(){
+  var d=TN_STATE.detected||tnDetect();
+  TN_STATE.off=(d.id===TN_STATE.region)?d.off:tnRegion(TN_STATE.region).off;
+}
+function tnNightKey(){var d=new Date(Date.now()-6*3600000);return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();}
+function tnHeardMap(){
+  var all={};try{all=JSON.parse(tnLS("swTnHeard")||"{}")||{};}catch(e){all={};}
+  var k=tnNightKey();if(!all[k])all={};if(!all[k])all[k]={};
+  return {all:all,key:k,map:all[k]};
+}
+function tnSaveHeard(h){try{var o={};o[h.key]=h.map;localStorage.setItem("swTnHeard",JSON.stringify(o));}catch(e){}}
+function tnItemKey(x){return x.stn+"|"+x.freq;}
+function tnSetRegion(v){TN_STATE.region=tnRegion(v).id;tnLS("swTnRegion",TN_STATE.region);tnApplyOff();renderTonight();}
+function tnSetSlot(v){TN_STATE.slot=tnSlot(v).id;tnLS("swTnSlot",TN_STATE.slot);renderTonight();}
+function tnSetEnglish(v){TN_STATE.english=!!v;tnLS("swTnEn",v?"1":"0");renderTonight();}
+function tnCompute(){
+  var now=new Date();
+  return tnPlan(SCH,{region:TN_STATE.region,slot:TN_STATE.slot,off:TN_STATE.off,
+    nowUtcMin:now.getUTCHours()*60+now.getUTCMinutes(),sfi:(pV&&pV.sfi)||110,k:(pV&&pV.k!=null)?pV.k:2,english:TN_STATE.english});
+}
+function renderTonight(){
+  tnInitState();
+  var body=document.getElementById("tn-body");if(!body)return;
+  _loadSchedule(function(){
+    if(!SCH||!SCH.length){body.innerHTML="<div class=\"tn-empty\">The schedule didn't load. Check your connection and refresh the page.</div>";return;}
+    var p=tnCompute();TN_STATE.plan=p;
+    tnRenderControls(p);tnRenderBands(p);tnRenderLists(p);tnRenderProgress();
+  });
+}
+function tnRenderControls(p){
+  var sel=document.getElementById("tn-region");
+  if(sel&&!sel.options.length){
+    for(var i=0;i<TN_REGIONS.length;i++){var op=document.createElement("option");op.value=TN_REGIONS[i].id;op.textContent="Listening from: "+TN_REGIONS[i].name;sel.appendChild(op);}
+  }
+  if(sel)sel.value=TN_STATE.region;
+  var sl=document.getElementById("tn-slots");
+  if(sl){
+    sl.innerHTML="";
+    for(var j=0;j<TN_SLOTS.length;j++){(function(t){
+      var b=document.createElement("button");b.type="button";b.className="tn-slot"+(t.id===TN_STATE.slot?" on":"");
+      b.innerHTML=tnEsc(t.name)+"<small>"+tnEsc(t.sub)+"</small>";
+      b.onclick=function(){tnSetSlot(t.id);};sl.appendChild(b);
+    })(TN_SLOTS[j]);}
+  }
+  var en=document.getElementById("tn-en");if(en)en.checked=TN_STATE.english;
+  var dt=document.getElementById("tn-date");
+  if(dt){var d=new Date();dt.textContent=d.toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});}
+  var le=document.getElementById("tn-lede");
+  if(le){
+    var sName=p.slot.id==="now"?"in the next hour":(p.slot.id==="evening"?"this evening":p.slot.id==="late"?"late tonight":"at dawn tomorrow");
+    le.innerHTML="<b>"+p.total+" stations</b> you can realistically catch from <b>"+tnEsc(p.region.name)+"</b> "+sName+". Times are shown in your local time (UTC"+(p.off>=0?"+":"")+p.off+").";
+  }
+}
+function tnRenderBands(p){
+  var host=document.getElementById("tn-bands");if(!host)return;
+  host.innerHTML="";
+  var bs=p.bands.slice(0,10),best=null;
+  for(var i=0;i<bs.length;i++){
+    var b=bs[i];if(!best||b.p>best.p)best=b;
+    var col=document.createElement("div");col.className="tn-bcol";col.title=b.n+" band: "+tnCond(b.p)+" ("+b.p+"/100)";
+    var bar=document.createElement("div");bar.className="tn-bbar";bar.style.height=Math.max(6,Math.round(b.p*0.6))+"px";
+    bar.style.background=b.p>=72?"#2ecc71":b.p>=52?"#8fa8ff":b.p>=32?"#d68910":"#7f3b33";
+    var l=document.createElement("div");l.className="tn-blbl";l.textContent=b.n;
+    col.appendChild(bar);col.appendChild(l);host.appendChild(col);
+  }
+  var nt=document.getElementById("tn-bnote");
+  if(nt)nt.textContent="Band outlook for this window \u00b7 best: "+(best?best.n+" ("+tnCond(best.p)+")":"\u2014")+" \u00b7 Solar flux "+((pV&&pV.sfi)||"--")+" \u00b7 K-index "+((pV&&pV.k!=null)?pV.k:"--")+" (NOAA SWPC)";
+}
+var TN_SECTIONS=[
+  {k:"easy",t:"Easy catches",c:"#1e8449",d:"Aimed at your region, strong transmitters, open bands. Start here."},
+  {k:"worth",t:"Worth the effort",c:"#d68910",d:"Weaker or not beamed your way, but the band should carry them."},
+  {k:"dx",t:"DX challenge",c:"#c0392b",d:"Not aimed at you. Hearing one of these is a real catch."},
+  {k:"odd",t:"Mysteries & oddities",c:"#6c3483",d:"Numbers stations, jammers, markers and pirates on the schedule."},
+  {k:"check",t:"Propagation check",c:"#2c3e50",d:"Time-signal stations. Tune these first to see which bands are open."}
+];
+function tnRenderLists(p){
+  var body=document.getElementById("tn-body");if(!body)return;
+  body.innerHTML="";
+  var h=tnHeardMap();
+  for(var i=0;i<TN_SECTIONS.length;i++){
+    var sec=TN_SECTIONS[i],items=p[sec.k]||[];
+    if(!items.length&&sec.k!=="easy")continue;
+    var wrap=document.createElement("div");wrap.className="tn-sec";
+    wrap.innerHTML="<div class=\"tn-sh\"><span class=\"tn-tier\" style=\"background:"+sec.c+"\">"+tnEsc(sec.t)+"</span><h2>"+items.length+" station"+(items.length===1?"":"s")+"</h2><p>"+tnEsc(sec.d)+"</p></div>";
+    if(!items.length){var em=document.createElement("div");em.className="tn-empty";em.textContent="Nothing strong scheduled for your region in this window. Try another time slot or turn off English only.";wrap.appendChild(em);body.appendChild(wrap);continue;}
+    var grid=document.createElement("div");grid.className="tn-grid";
+    for(var j=0;j<items.length;j++)grid.appendChild(tnCard(items[j],!!h.map[tnItemKey(items[j])]));
+    wrap.appendChild(grid);body.appendChild(wrap);
+  }
+}
+function tnCard(x,heard){
+  var c=document.createElement("div");c.className="tn-card"+(heard?" heard":"");
+  var top=document.createElement("div");top.className="tn-ftop";
+  var f=document.createElement("div");f.className="tn-freq";f.title="Search this frequency";
+  f.innerHTML=x.khz+"<small>kHz</small>";
+  f.onclick=function(){go("home",document.getElementById("n-home"));seSet(String(x.khz),"khz");};
+  var bt=document.createElement("span");bt.className="tn-bandtag";bt.textContent=x.band+" \u00b7 "+x.cond;
+  top.appendChild(f);top.appendChild(bt);c.appendChild(top);
+  var st=document.createElement("div");st.className="tn-stn";st.textContent=x.stn;c.appendChild(st);
+  var wy=document.createElement("div");wy.className="tn-why";wy.textContent=x.why;c.appendChild(wy);
+  var mt=document.createElement("div");mt.className="tn-meta";
+  mt.innerHTML="<span><b>"+tnEsc(x.local)+"</b></span><span>"+tnEsc(x.utc)+"</span>"+(x.lang?"<span>"+tnEsc(x.lang)+"</span>":"")+(x.tgt?"<span>to "+tnEsc(x.tgt)+"</span>":"");
+  c.appendChild(mt);
+  if(x.alts&&x.alts.length){var al=document.createElement("div");al.className="tn-alts";al.textContent="Also on: "+x.alts.map(function(a){return Math.round(parseFloat(a)*1000);}).join(", ")+" kHz";c.appendChild(al);}
+  var act=document.createElement("div");act.className="tn-act";
+  var hb=document.createElement("button");hb.type="button";hb.className="tn-heard"+(heard?" done":"");
+  hb.textContent=heard?"\u2713 Heard \u00b7 in your log":"Heard it";
+  var sig=document.createElement("div");sig.className="tn-sig";sig.innerHTML="<span>Signal:</span>";
+  var lv=[["Weak",3],["Fair",5],["Strong",8]];
+  for(var i=0;i<lv.length;i++){(function(l){
+    var b=document.createElement("button");b.type="button";b.textContent=l[0];
+    b.onclick=function(){tnMarkHeard(x,l[1],c,hb,sig);};sig.appendChild(b);
+  })(lv[i]);}
+  if(!heard)hb.onclick=function(){sig.classList.toggle("on");};
+  act.appendChild(hb);
+  try{act.appendChild(mkListenBtn(x.khz,"am",{label:"Listen online"}));}catch(e){}
+  c.appendChild(act);c.appendChild(sig);
+  return c;
+}
+function tnMarkHeard(x,sigVal,card,btn,sigBox){
+  var h=tnHeardMap();var k=tnItemKey(x);if(h.map[k])return;
+  h.map[k]=1;tnSaveHeard(h);
+  var nd=new Date();var utc=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
+  var entries=loadLog();entries.unshift({f:x.freq,stn:x.stn,sig:sigVal,notes:"Tonight's Guide \u2014 "+TN_STATE.plan.region.name,utc:utc,date:nd.toISOString()});
+  saveLog(entries);
+  card.classList.add("heard");btn.classList.add("done");btn.textContent="\u2713 Heard \u00b7 in your log";btn.onclick=null;
+  sigBox.classList.remove("on");
+  tnRenderProgress();
+  toast("Logged: "+x.stn+" on "+x.khz+" kHz");
+}
+function tnRenderProgress(){
+  var p=TN_STATE.plan;if(!p)return;
+  var all=[].concat(p.easy,p.worth,p.dx,p.odd);var h=tnHeardMap(),n=0;
+  for(var i=0;i<all.length;i++)if(h.map[tnItemKey(all[i])])n++;
+  var pn=document.getElementById("tn-pnum");if(pn)pn.innerHTML=n+"<span> / "+all.length+"</span>";
+  var pf=document.getElementById("tn-pfill");if(pf)pf.style.width=(all.length?Math.round(n/all.length*100):0)+"%";
+  var sk=document.getElementById("tn-streak");
+  if(sk){var st={cur:0};try{st=calcStreak(loadLog());}catch(e){}sk.textContent=st.cur||0;}
+}
+function tnShare(){
+  var p=TN_STATE.plan;if(!p)return;
+  var lines=["What I can hear on shortwave tonight from "+p.region.name+":"];
+  var top=[].concat(p.easy.slice(0,4),p.dx.slice(0,2));
+  for(var i=0;i<top.length;i++)lines.push(top[i].khz+" kHz \u2014 "+top[i].stn+" ("+(top[i].allDay?"all evening":top[i].local)+")");
+  var url="https://hqshortwaveradio.com/tonight/";
+  var text=lines.join("\n");
+  if(navigator.share){navigator.share({title:"Tonight on shortwave",text:text,url:url}).catch(function(){});return;}
+  var full=text+"\n"+url;
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(full).then(function(){toast("Copied \u2014 paste it anywhere");},function(){window.prompt("Copy this:",full);});}
+  else window.prompt("Copy this:",full);
+}
+function renderTonightTeaser(){
+  var el=document.getElementById("tn-teaser-txt");if(!el)return;
+  tnInitState();
+  _loadSchedule(function(){
+    if(!SCH||!SCH.length)return;
+    try{
+      var saved=TN_STATE.slot;TN_STATE.slot="evening";var p=tnCompute();TN_STATE.slot=saved;
+      el.innerHTML="<b>"+p.total+" stations</b> you can realistically hear from "+tnEsc(p.region.name)+" this evening. Get your personal list &rarr;";
+    }catch(e){}
+  });
+}
+
 // ── STATION DIRECTORY (A-Z, always findable) ───────────────────
 function renderDirectory(){filterDirectory();}
 
@@ -2895,7 +3641,9 @@ function go(pg,btn){
     propagation:function(){_catchFormBound=false;var cf=document.getElementById("catch-form");var ct=document.getElementById("catch-thanks");if(cf)cf.style.display="";if(ct)ct.style.display="none";renderProp();loadReceptionFeed();},numbers:renderNS,log:renderLog,memories:function(){renderMems();renderEnthusiast();},
     history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory,
     reviews:renderReviews,
-    enthusiast:renderEnthusiastPage};
+    enthusiast:renderEnthusiastPage,
+    tonight:renderTonight,
+    identify:renderIdentify};
   if(fns[pg])fns[pg]();
 }
 
@@ -3271,6 +4019,12 @@ function seShowMatches(fMHz,withAI){
   if(p.tag)p.tag.textContent=fMHz.toFixed(3)+" MHz  \u00b7  "+kHz+" kHz  \u00b7  "+bFor(String(fMHz))+" Band";
   if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" in database";
   p.matchBox.innerHTML="";
+  if(kHz>=1600&&kHz<=30000){
+    var idb=document.createElement("button");idb.type="button";
+    idb.style.cssText="display:block;margin:0 0 12px;background:#8fa8ff;color:#10142a;border:none;font-family:var(--mono);font-size:.68rem;font-weight:700;padding:9px 14px;border-radius:5px;cursor:pointer";
+    idb.textContent="Hearing something on "+kHz+" kHz? Identify it for your location \u2192";
+    idb.onclick=function(){idOpen(kHz);};p.matchBox.appendChild(idb);
+  }
   if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No exact match in database for "+fMHz.toFixed(3)+" MHz.";p.matchBox.appendChild(none);p.matchBox.appendChild(seReportLink(fMHz.toFixed(3)+" MHz"));}
   else{p.matchBox.appendChild(seStatusCard(matches));for(var j=0;j<matches.length;j++)p.matchBox.appendChild(seRow(matches[j]));
     var anyOn=false;for(var k=0;k<matches.length;k++){if(isOn(matches[k])){anyOn=true;break;}}
@@ -3353,7 +4107,7 @@ function renderHome(){
   var clr=document.getElementById("se-clear");var inp=document.getElementById("se-inp");
   if(chips)chips.style.display="";if(hint)hint.style.display="";
   if(clr)clr.style.display="none";
-  renderHomeGuide();renderPicks();updateStatBar();drawGL("gl-sm",280,124);renderReviewBanner();
+  renderHomeGuide();renderPicks();updateStatBar();drawGL("gl-sm",280,124);renderReviewBanner();renderRecentStrip();renderTonightTeaser();
 }
 
 function renderHomeGuide(){
@@ -3388,6 +4142,7 @@ function updateStatBar(){
   var ab=0;var bds=getBands();for(var j=0;j<bds.length;j++)if(bds[j].p>=52)ab++;
   var sb=document.getElementById("st-bands");if(sb)sb.textContent=ab;
   var tt=document.getElementById("st-total");if(tt)tt.textContent=SCH.length;
+  var bt=document.getElementById("sh-badge-txt");if(bt)bt.textContent="Live · "+onAir+" stations on air now";
 }
 
 // ── WHAT CAN I HEAR ─────────────────────────────────────────────
@@ -4947,7 +5702,69 @@ function renderReviewBanner(){
   if(!pick){b.style.display="none";return;}
   document.getElementById("rev-banner-title").textContent=pick.n+" — "+pick.status;
   document.getElementById("rev-banner-desc").textContent=pick.d;
+  var th=document.getElementById("rev-banner-thumb");
+  if(th){
+    if(pick.thumb){th.src=pick.thumb;th.alt=pick.n;th.style.display="block";}
+    else{th.style.display="none";}
+  }
   b.style.display="block";
+}
+
+function parseChangeDate(s){
+  var m=(s||"").match(/(\d{4})-(\d{2})-(\d{2})/);
+  if(m)return new Date(+m[1],+m[2]-1,+m[3]);
+  var d=new Date(s);return isNaN(d.getTime())?null:d;
+}
+async function renderRecentStrip(){
+  var wrap=document.getElementById("recent-wrap");var track=document.getElementById("recent-track");
+  if(!wrap||!track)return;
+  var items=[];
+  for(var i=0;i<REVIEWS.length;i++){
+    var r=REVIEWS[i];
+    if(r.status==="Published"&&r.date){
+      var d=parseChangeDate(r.date);
+      if(d)items.push({date:d,label:r.date,txt:r.n+" — new review",tag:"Review",pg:"reviews",nav:"n-reviews"});
+    }
+  }
+  try{
+    var res=await fetch("/data/schedule-changes.json",{cache:"no-store"});
+    if(res.ok){
+      var data=await res.json();
+      var entries=(data&&data.entries)||[];
+      for(var j=0;j<Math.min(entries.length,5);j++){
+        var day=entries[j];var d2=parseChangeDate(day.date);
+        if(!d2||!day.changes||!day.changes.length)continue;
+        var n=day.changes.length;
+        items.push({date:d2,label:day.date.split(" ")[0],txt:n+" schedule change"+(n>1?"s":"")+" logged",tag:"Schedule",pg:"history",nav:"n-history"});
+      }
+    }
+  }catch(e){}
+  try{
+    var res2=await fetch("/data/enthusiasts.json",{cache:"no-store"});
+    if(res2.ok){
+      var arr=await res2.json();
+      if(arr&&arr.length){
+        var e=arr[0];var d3=parseChangeDate("1 "+e.month);
+        if(d3)items.push({date:d3,label:e.month,txt:"Enthusiast of the month: "+e.name,tag:"Community",pg:"enthusiast",nav:"n-enthusiast"});
+      }
+    }
+  }catch(e){}
+  items.sort(function(a,b){return b.date-a.date;});
+  items=items.slice(0,8);
+  track.innerHTML="";
+  if(!items.length){wrap.style.display="none";return;}
+  for(var k=0;k<items.length;k++){
+    (function(it){
+      var c=document.createElement("div");c.className="recent-card";
+      c.onclick=function(){go(it.pg,document.getElementById(it.nav));};
+      var dt=document.createElement("div");dt.className="recent-date";dt.textContent=it.label;
+      var tx=document.createElement("div");tx.className="recent-txt";tx.textContent=it.txt;
+      var tg=document.createElement("div");tg.className="recent-tag";tg.textContent=it.tag;
+      c.appendChild(dt);c.appendChild(tx);c.appendChild(tg);
+      track.appendChild(c);
+    })(items[k]);
+  }
+  wrap.style.display="block";
 }
 
 function renderReviews(){
@@ -5403,7 +6220,7 @@ window.addEventListener("resize",syncMastHeight);
     if(_qp){var _si=document.getElementById("se-inp");if(_si){_si.value=_qp;var _su=document.getElementById("se-unit");if(_su)_su.value="text";seSearch();var _hero=document.getElementById("se-inp");if(_hero&&_hero.scrollIntoView)setTimeout(function(){_hero.scrollIntoView({behavior:"smooth",block:"center"});},300);}}
   }catch(e){}
   try{
-    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","memories","enthusiast","qsl","directory","equipment","reviews","advertise"];
+    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","memories","enthusiast","qsl","directory","equipment","reviews","advertise","tonight","identify"];
     var _pg=new URLSearchParams(window.location.search).get("page");
     if(_pg&&_VALID_PAGES.indexOf(_pg)!==-1)go(_pg);
   }catch(e){}
