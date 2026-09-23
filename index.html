@@ -34,6 +34,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="ShortwaveHQ">
 <link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" href="/icons/icon-192.png">
 <meta name="theme-color" content="#0a0b0e">
 <title>ShortwaveHQ — Live Shortwave Radio Schedules &amp; Frequencies</title>
@@ -490,6 +491,40 @@ textarea.inp{resize:vertical;line-height:1.6}
 .tn-tt b{color:#8fa8ff}
 .tn-tbtn{background:#fff;color:#10142a;border:none;font-family:var(--mono);font-size:.64rem;font-weight:700;padding:10px 16px;border-radius:5px;cursor:pointer;white-space:nowrap}
 @media(max-width:600px){.tn-bands{height:60px}.tn-grid{grid-template-columns:1fr}.tn-prog{padding:.9rem}}
+
+/* ── STATION IDENTIFIER ── */
+.id-form{display:grid;grid-template-columns:minmax(150px,1.1fr) repeat(3,minmax(120px,1fr)) auto;gap:8px;align-items:end;margin-bottom:.8rem}
+.id-f label{display:block;font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:4px}
+.id-inp{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;font-family:var(--mono);font-size:1.25rem;font-weight:600;padding:9px 12px;border-radius:6px;outline:none}
+.id-inp:focus{border-color:#8fa8ff;box-shadow:0 0 0 3px rgba(143,168,255,.2)}
+.id-inp::placeholder{color:rgba(255,255,255,.28);font-weight:400}
+.id-f .tn-sel{width:100%;padding:12px 10px}
+.id-go{background:#e74c3c;color:#fff;border:none;font-family:var(--mono);font-size:.72rem;font-weight:700;padding:14px 20px;border-radius:6px;cursor:pointer;white-space:nowrap;letter-spacing:.04em}
+.id-go:hover{background:#c0392b}
+.id-langs{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.id-langs span.lb{font-family:var(--mono);font-size:.54rem;color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase;margin-right:4px}
+.id-chip{background:transparent;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.7);font-family:var(--mono);font-size:.58rem;padding:5px 10px;border-radius:14px;cursor:pointer}
+.id-chip.on{background:#8fa8ff;border-color:#8fa8ff;color:#10142a;font-weight:700}
+.id-err{font-family:var(--mono);font-size:.65rem;color:#ffb4a8;margin-top:.5rem;min-height:1em}
+.id-sum{font-family:var(--serif);font-size:.95rem;line-height:1.6;margin:1.4rem 0 .4rem}
+.id-sum b{font-family:var(--disp)}
+.id-list{display:flex;flex-direction:column;gap:10px;margin-top:.8rem}
+.id-card{background:var(--paper);border:1px solid var(--bdr);border-radius:8px;padding:1rem 1.1rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;box-shadow:var(--shadow)}
+.id-card.top{border:2px solid var(--green)}
+.id-rank{font-family:var(--disp);font-weight:900;font-size:1.6rem;color:var(--m2);line-height:1;grid-row:span 5}
+.id-card.top .id-rank{color:var(--green)}
+.id-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.id-stn{font-family:var(--serif);font-weight:700;font-size:1.05rem}
+.id-lbl{font-family:var(--mono);font-size:.5rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;color:#fff}
+.id-bar{height:7px;background:var(--p3);border-radius:6px;overflow:hidden;margin:.35rem 0 .2rem;max-width:420px}
+.id-bar i{display:block;height:100%;border-radius:6px}
+.id-listen{font-family:var(--mono);font-size:.62rem;color:var(--ink)}
+.id-listen b{background:var(--amblt);padding:1px 6px;border-radius:3px}
+.id-why{font-family:var(--mono);font-size:.56rem;color:var(--muted);line-height:1.6}
+.id-note{font-family:var(--serif);font-size:.82rem;color:var(--muted);background:var(--p2);border-left:3px solid var(--amber);padding:.7rem .9rem;border-radius:0 6px 6px 0;margin:.8rem 0}
+.id-later{font-family:var(--mono);font-size:.62rem;line-height:1.9;color:var(--muted)}
+.id-later b{color:var(--ink)}
+@media(max-width:760px){.id-form{grid-template-columns:1fr 1fr}.id-form .id-f:first-child{grid-column:1/-1}.id-go{grid-column:1/-1}}
 
 /* ── SEARCH RESULTS ── */
 .sr-panel{background:rgba(8,10,14,.97);border:1px solid rgba(255,255,255,.1);border-radius:6px;margin-top:.7rem;overflow:hidden;display:none}
@@ -982,6 +1017,7 @@ a,button,input,select,textarea{touch-action:manipulation}
   <nav class="mnav">
     <button class="ni on" id="n-home" onclick="go('home',this)"><span class="ni-icon">🔍</span>Search</button>
     <button class="ni" id="n-now" onclick="go('now',this)"><span class="ni-icon">📡</span>On Air Now</button>
+    <button class="ni" id="n-identify" onclick="go('identify',this)"><span class="ni-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg></span>Identify</button>
     <button class="ni" id="n-tonight" onclick="go('tonight',this)" style="color:#8fa8ff"><span class="ni-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span>Tonight</button>
     <button class="ni" id="n-directory" onclick="go('directory',this)"><span class="ni-icon">📋</span>All Stations</button>
     <button class="ni" id="n-starthere" onclick="go('starthere',this)" style="color:#fbbf24;border-bottom-color:transparent"><span class="ni-icon">⭐</span>Start Here</button>
@@ -1649,6 +1685,28 @@ a,button,input,select,textarea{touch-action:manipulation}
 
 
 <!-- ══════════════ ENTHUSIAST OF THE MONTH PAGE ══════════════ -->
+<div class="page" id="pg-identify">
+  <div class="tn-hero">
+    <div class="wrap">
+      <div class="tn-kick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg><span>Station Identifier</span></div>
+      <h1 class="tn-h1">What am I <em>hearing?</em></h1>
+      <p class="tn-lede">Enter the frequency you're tuned to. We rank the stations you're most likely hearing from where you are, using who's on the air, where each broadcast is aimed, transmitter power and distance, and how the band is behaving.</p>
+      <div class="id-form">
+        <div class="id-f"><label for="id-freq">Frequency</label><input class="id-inp" id="id-freq" inputmode="decimal" autocomplete="off" placeholder="e.g. 9580 or 9.58" onkeydown="if(event.key==='Enter')idRun()"></div>
+        <div class="id-f"><label for="id-region">Listening from</label><select class="tn-sel" id="id-region" onchange="idSetRegion(this.value)"></select></div>
+        <div class="id-f"><label for="id-when">When</label><select class="tn-sel" id="id-when" onchange="idWhenChanged()"><option value="now">Right now</option><option value="custom">Earlier / later&hellip;</option></select><input type="time" id="id-time" class="tn-sel" style="display:none;margin-top:6px" onchange="idRun()"></div>
+        <div class="id-f"><label for="id-tol">Your dial</label><select class="tn-sel" id="id-tol" onchange="idRun()"><option value="0">Exact (digital)</option><option value="2">&plusmn;2 kHz</option><option value="5">&plusmn;5 kHz (analog)</option></select></div>
+        <button class="id-go" type="button" onclick="idRun()">Identify &rarr;</button>
+      </div>
+      <div class="id-langs" id="id-langs"><span class="lb">Language you hear (optional):</span></div>
+      <div class="id-err" id="id-err"></div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:4rem">
+    <div id="id-out"><div class="id-note">Tip: tune in, note the frequency on your radio's display, and enter it above. If you can make out the language, pick it too &mdash; it sharpens the ranking a lot.</div></div>
+    <div class="tn-foot">Rankings are probabilities from the published EIBI schedule plus a propagation model, not a guarantee &mdash; unscheduled stations, pirates and utility signals won't appear. The surest ID is the station announcement, usually at the top or bottom of the hour. Found it? <b>It's this one</b> saves the catch to <a onclick="go('log',document.getElementById('n-log'))">My Log</a>.</div>
+  </div>
+</div>
 <div class="page" id="pg-tonight">
   <div class="tn-hero">
     <div class="wrap">
@@ -2284,6 +2342,7 @@ Yours sincerely,
 <div id="mob-more" style="display:none;position:fixed;bottom:64px;left:0;right:0;background:var(--ink);border-top:1px solid rgba(255,255,255,.12);z-index:499;padding:.8rem;display:none">
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
     <button onclick="go('finder',document.getElementById('n-finder'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">📋<span>Finder</span></button>
+    <button onclick="go('identify',document.getElementById('n-identify'));closeMobMore()" style="background:rgba(231,76,60,.14);border:1px solid rgba(231,76,60,.4);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v3l2 1.5"/></svg><span>Identify</span></button>
     <button onclick="go('tonight',document.getElementById('n-tonight'));closeMobMore()" style="background:rgba(143,168,255,.14);border:1px solid rgba(143,168,255,.35);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Tonight</span></button>
     <button onclick="go('dx',document.getElementById('n-dx'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">🎯<span>DX Hunt</span></button>
     <button onclick="go('propagation',document.getElementById('n-propagation'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.58rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">☀<span>Propagation</span></button>
@@ -2873,7 +2932,224 @@ function tnPlan(SCH,o){
   res.total=res.easy.length+res.worth.length+res.dx.length+res.odd.length;
   return res;
 }
+
+// ── Station identifier ("What am I hearing?") ──
+var TN_RC={"na-east":[39,-80],"na-west":[37,-115],"latam":[-15,-55],"europe":[50,10],"africa":[5,20],"asia":[30,110],"oceania":[-30,145]};
+var TN_LANGS=[
+  {id:"English",re:/English/},{id:"Spanish",re:/Spanish/},{id:"Chinese",re:/Mandarin|Chinese|Cantonese|Hakka|Amoy/},
+  {id:"Arabic",re:/Arabic/},{id:"Russian",re:/Russian/},{id:"French",re:/French/},{id:"Portuguese",re:/Portug/},
+  {id:"Korean",re:/Korean/},{id:"Japanese",re:/Japanese/},{id:"Tibetan",re:/Tibetan/},{id:"German",re:/German/}
+];
+function tnLangMatch(lang,g){
+  lang=String(lang||"");
+  if(g==="Other"){for(var i=0;i<TN_LANGS.length;i++)if(TN_LANGS[i].re.test(lang))return false;return true;}
+  for(var j=0;j<TN_LANGS.length;j++)if(TN_LANGS[j].id===g)return TN_LANGS[j].re.test(lang);
+  return true;
+}
+function tnDistKm(la1,lo1,la2,lo2){
+  var r=Math.PI/180,a=Math.sin((la2-la1)*r/2),b=Math.sin((lo2-lo1)*r/2);
+  var h=a*a+Math.cos(la1*r)*Math.cos(la2*r)*b*b;return 12742*Math.asin(Math.min(1,Math.sqrt(h)));
+}
+function tnOnAt(s,e,m){if(s===e||(s===0&&e===1440))return true;if(e===1440)return m>=s;return s<e?(m>=s&&m<e):(m>=s||m<e);}
+function tnParseFreq(v){
+  var t=String(v==null?"":v).toLowerCase().replace(/,/g,".").replace(/\s+/g,"");
+  var m=t.match(/^(\d+(?:\.\d+)?)(khz|mhz|k|m)?$/);if(!m)return null;
+  var n=parseFloat(m[1]),u=m[2]||"";
+  var k=(u.charAt(0)==="m"||(!u&&n<=30))?Math.round(n*1000):Math.round(n);
+  return (k>=1600&&k<=30000)?k:null;
+}
+function tnIdentify(rows,o){
+  var R=tnRegion(o.region),off=(o.off!=null?o.off:R.off),tol=+o.tol||0,khz=+o.khz,utc=tnMod(+o.utcMin||0);
+  var localMin=tnMod(utc+off*60),rc=TN_RC[R.id],cand={},later={},i;
+  for(i=0;i<rows.length;i++){
+    var r=rows[i];if(!r||!r.freq||!r.stn)continue;
+    var rk=Math.round(parseFloat(r.freq)*1000),d=Math.abs(rk-khz);if(d>tol)continue;
+    var s=+r.s,e=+r.e;if(isNaN(s)||isNaN(e))continue;
+    var on=tnOnAt(s,e,utc),startsIn=tnMod(s-utc),endedAgo=tnMod(utc-e);
+    var edge=!on&&(startsIn<=10||(e!==1440&&endedAgo<=5));
+    if(!on&&!edge){
+      if(d===0){var lw=later[r.stn];if(!lw||startsIn<lw.wait)later[r.stn]={stn:r.stn,khz:rk,s:s,e:e,wait:startsIn,lang:r.lang||"",tgt:r.tgt||""};}
+      continue;
+    }
+    var b=tnBand(r.freq),bp=b?tnBandScore(b,localMin,o.sfi,o.k):35;
+    var aimed=(r.tgt==="Worldwide"||r.reg==="Worldwide")?1:((R.tgt.indexOf(r.tgt)>=0||R.reg.indexOf(r.reg)>=0)?2:0);
+    // Transmitter coordinates in the data are not reliable enough to score
+    // distance (the site field is usually the station's country and relays are
+    // common), so the model deliberately uses beam direction, power and band only.
+    var kw=+r.kw||0,dist=null,fDist=1;
+    var sc=(d===0?1:d<=2?0.7:0.4)*(aimed===2?3:aimed===1?2:1)*(kw>0?(0.55+0.45*Math.min(1,kw/250)):0.75)
+      *(0.3+0.7*bp/100)*fDist*(edge?0.35:1)*(r.type==="Time"?1.2:1);
+    if(o.lang)sc*=tnLangMatch(r.lang,o.lang)?1.6:0.15;
+    var key=r.stn+"|"+rk;
+    if(!cand[key]||sc>cand[key].score){
+      cand[key]={stn:r.stn,khz:rk,d:d,freq:parseFloat(r.freq).toFixed(3),lang:r.lang||"",tgt:r.tgt||"",site:r.site||"",kw:kw,type:r.type||"",
+        band:b?((parseFloat(r.freq)>=b.lo&&parseFloat(r.freq)<=b.hi)?b.n:(Math.round(parseFloat(r.freq)*10)/10)+" MHz"):"",
+        bp:bp,cond:tnCond(bp),aimed:aimed,dist:dist,on:on,edge:edge,startsIn:startsIn,s:s,e:e,score:sc};
+    }
+  }
+  var list=[],sum=0;for(var k in cand){list.push(cand[k]);sum+=cand[k].score;}
+  list.sort(function(a,b){return b.score-a.score||a.stn.localeCompare(b.stn);});
+  for(i=0;i<list.length;i++){
+    var x=list[i];x.pct=sum>0?Math.max(1,Math.round(x.score/sum*100)):0;
+    x.label=x.pct>=50?"Most likely":x.pct>=20?"Possible":"Long shot";
+    var allDay=(x.s===x.e)||(x.s===0&&x.e===1440);
+    x.local=allDay?"24 hours":(tnClock(x.s+off*60)+" \u2013 "+tnClock(x.e+off*60));
+    var w=[];
+    if(x.on)w.push(allDay?"On air 24 hours":"On air now until "+tnClock(x.e+off*60));
+    else if(x.startsIn<=10)w.push("Starts in "+x.startsIn+" min");
+    else w.push("Just went off the air");
+    if(x.d>0)w.push(x.d+" kHz off your dial");
+    w.push(x.aimed===2?"beamed at "+R.short:x.aimed===1?"worldwide beam":"not aimed at you");
+    if(x.kw)w.push(x.kw+" kW");
+    if(x.band)w.push(x.band+" "+x.cond);
+    x.why=w.join(" \u00b7 ");
+  }
+  var lat=[];for(var n in later){var dup=false;for(var q=0;q<list.length;q++)if(list[q].stn===n){dup=true;break;}if(!dup)lat.push(later[n]);}
+  lat.sort(function(a,b){return a.wait-b.wait;});
+  for(i=0;i<lat.length;i++){lat[i].local=tnClock(lat[i].s+off*60);lat[i].inText=lat[i].wait<60?lat[i].wait+" min":Math.floor(lat[i].wait/60)+" h "+(lat[i].wait%60)+" min";}
+  var cochannel=list.length>1&&list[1].score>=list[0].score/1.6;
+  return {khz:khz,region:R,off:off,localMin:localMin,utcMin:utc,tol:tol,candidates:list,later:lat.slice(0,6),cochannel:cochannel};
+}
 // TONIGHT_ENGINE_END
+
+// ── STATION IDENTIFIER — UI ─────────────────────────────────────
+var ID_STATE={lang:"",ranOnce:false,last:null,slugs:null,slugsLoading:false};
+function idSetRegion(v){TN_STATE.region=tnRegion(v).id;tnLS("swTnRegion",TN_STATE.region);tnApplyOff();idRun(true);}
+function idWhenChanged(){
+  var w=document.getElementById("id-when"),t=document.getElementById("id-time");
+  if(!w||!t)return;
+  if(w.value==="custom"){t.style.display="block";if(!t.value){var d=new Date();t.value=pad(d.getHours())+":"+pad(d.getMinutes());}}
+  else t.style.display="none";
+  idRun(true);
+}
+function idLoadSlugs(cb){
+  if(ID_STATE.slugs){cb();return;}
+  if(ID_STATE.slugsLoading){setTimeout(function(){idLoadSlugs(cb);},150);return;}
+  ID_STATE.slugsLoading=true;
+  try{
+    fetch("/data/slugs.json",{cache:"force-cache"}).then(function(r){return r.ok?r.json():{};}).then(function(j){ID_STATE.slugs=j||{};ID_STATE.slugsLoading=false;cb();}).catch(function(){ID_STATE.slugs={};ID_STATE.slugsLoading=false;cb();});
+  }catch(e){ID_STATE.slugs={};ID_STATE.slugsLoading=false;cb();}
+}
+function renderIdentify(){
+  tnInitState();
+  var sel=document.getElementById("id-region");
+  if(sel&&!sel.options.length){for(var i=0;i<TN_REGIONS.length;i++){var op=document.createElement("option");op.value=TN_REGIONS[i].id;op.textContent=TN_REGIONS[i].name;sel.appendChild(op);}}
+  if(sel)sel.value=TN_STATE.region;
+  var lw=document.getElementById("id-langs");
+  if(lw&&lw.children.length<2){
+    var ls=["English","Spanish","Chinese","Arabic","Russian","French","Portuguese","Korean","Japanese","Other"];
+    for(var j=0;j<ls.length;j++){(function(l){var b=document.createElement("button");b.type="button";b.className="id-chip";b.textContent=l;b.setAttribute("data-l",l);
+      b.onclick=function(){ID_STATE.lang=(ID_STATE.lang===l)?"":l;idPaintLangs();idRun(true);};lw.appendChild(b);})(ls[j]);}
+  }
+  idPaintLangs();
+  var q=null;try{q=new URLSearchParams(window.location.search).get("f");}catch(e){}
+  var inp=document.getElementById("id-freq");
+  if(q&&inp&&!ID_STATE.ranOnce){inp.value=q;idRun();}
+  else if(inp&&!inp.value){setTimeout(function(){try{inp.focus();}catch(e){}},60);}
+}
+function idPaintLangs(){var bs=document.querySelectorAll("#id-langs .id-chip");for(var i=0;i<bs.length;i++)bs[i].classList.toggle("on",bs[i].getAttribute("data-l")===ID_STATE.lang);}
+function idOpen(khz){go("identify",document.getElementById("n-identify"));var inp=document.getElementById("id-freq");if(inp){inp.value=String(khz);}idRun();}
+function idRun(soft){
+  var inp=document.getElementById("id-freq"),err=document.getElementById("id-err"),out=document.getElementById("id-out");
+  if(!inp||!out)return;
+  var raw=inp.value;
+  if(!String(raw).trim()){if(!soft&&err)err.textContent="Enter the frequency shown on your radio.";return;}
+  var khz=tnParseFreq(raw);
+  if(!khz){if(err)err.textContent="That doesn't look like a shortwave frequency. Try something like 9580 (kHz) or 9.58 (MHz).";return;}
+  if(err)err.textContent="";
+  ID_STATE.ranOnce=true;
+  out.innerHTML="<div class=\"tn-empty\">Checking the schedule&hellip;</div>";
+  _loadSchedule(function(){
+    if(!SCH||!SCH.length){out.innerHTML="<div class=\"tn-empty\">The schedule didn't load. Check your connection and try again.</div>";return;}
+    var now=new Date(),utc=now.getUTCHours()*60+now.getUTCMinutes(),isCustom=false;
+    var w=document.getElementById("id-when"),t=document.getElementById("id-time");
+    if(w&&w.value==="custom"&&t&&/^\d{1,2}:\d{2}$/.test(t.value)){
+      var p=t.value.split(":");utc=tnMod(parseInt(p[0],10)*60+parseInt(p[1],10)-TN_STATE.off*60);isCustom=true;
+    }
+    var tolEl=document.getElementById("id-tol");var tol=tolEl?parseInt(tolEl.value,10)||0:0;
+    var opts={khz:khz,region:TN_STATE.region,off:TN_STATE.off,utcMin:utc,tol:tol,sfi:(pV&&pV.sfi)||110,k:(pV&&pV.k!=null)?pV.k:2,lang:ID_STATE.lang};
+    var res=tnIdentify(SCH,opts);
+    var near=null;
+    if(!res.candidates.length&&tol<5){var o2={};for(var kk in opts)o2[kk]=opts[kk];o2.tol=5;near=tnIdentify(SCH,o2);}
+    ID_STATE.last=res;
+    try{var u=new URL(window.location.href);u.searchParams.set("page","identify");u.searchParams.set("f",String(khz));history.replaceState(null,"",u.pathname+u.search);}catch(e){}
+    idLoadSlugs(function(){idRender(res,near,isCustom);});
+  });
+}
+function idStationLink(stn){
+  var sl=ID_STATE.slugs&&ID_STATE.slugs[stn];
+  return sl?"/stations/"+sl+"/":"/?q="+encodeURIComponent(stn);
+}
+function idRender(res,near,isCustom){
+  var out=document.getElementById("id-out");if(!out)return;
+  out.innerHTML="";
+  var when=isCustom?"at "+tnClock(res.localMin):"right now";
+  var sum=document.createElement("div");sum.className="id-sum";
+  var list=res.candidates;
+  if(list.length){
+    sum.innerHTML="<b>"+res.khz+" kHz</b> "+tnEsc(when)+" from <b>"+tnEsc(res.region.name)+"</b>: "+(list.length===1?"one station is scheduled.":list.length+" stations are scheduled"+(res.tol?" within \u00b1"+res.tol+" kHz":"")+".");
+  } else {
+    sum.innerHTML="Nothing is scheduled on <b>"+res.khz+" kHz</b> "+tnEsc(when)+".";
+  }
+  out.appendChild(sum);
+  if(res.cochannel){var cn=document.createElement("div");cn.className="id-note";cn.textContent="More than one station is on this frequency now. Listen for the language and wait for a station ID at the top or bottom of the hour \u2014 the stronger signal usually wins, and it can swap as the band changes.";out.appendChild(cn);}
+  if(list.length){
+    var wrap=document.createElement("div");wrap.className="id-list";
+    for(var i=0;i<Math.min(list.length,8);i++)wrap.appendChild(idCard(list[i],i));
+    out.appendChild(wrap);
+  } else {
+    var nt=document.createElement("div");nt.className="id-note";
+    nt.innerHTML="If you're hearing something clearly, it may be an <b>unscheduled or irregular broadcast, a pirate, or a utility signal</b>. Log what you hear (language, music, time) &mdash; that's how rare catches get identified.";
+    out.appendChild(nt);
+    if(near&&near.candidates.length){
+      var h=document.createElement("div");h.className="id-sum";h.innerHTML="<b>On the air within \u00b15 kHz:</b> your dial may be slightly off.";out.appendChild(h);
+      var w2=document.createElement("div");w2.className="id-list";
+      for(var j=0;j<Math.min(near.candidates.length,4);j++)w2.appendChild(idCard(near.candidates[j],j,true));
+      out.appendChild(w2);
+    }
+  }
+  if(res.later.length){
+    var lt=document.createElement("div");lt.className="tn-sec";
+    var hh="<div class=\"tn-sh\"><h2>Also scheduled on "+res.khz+" kHz today</h2><p>Not on at this time.</p></div><div class=\"id-later\">";
+    for(var k=0;k<res.later.length;k++){var L=res.later[k];hh+="<b>"+tnEsc(L.stn)+"</b> \u00b7 "+tnEsc(L.lang)+" \u00b7 starts "+tnEsc(L.local)+" (in "+tnEsc(L.inText)+")<br>";}
+    lt.innerHTML=hh+"</div>";out.appendChild(lt);
+  }
+  var sh=document.createElement("p");sh.style.cssText="margin-top:1.4rem;font-family:var(--mono);font-size:.6rem";
+  var sb=document.createElement("button");sb.type="button";sb.className="tn-share";sb.textContent="Copy link to this result";
+  sb.onclick=function(){var url="https://hqshortwaveradio.com/?page=identify&f="+res.khz;
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(url).then(function(){toast("Link copied");},function(){window.prompt("Copy this link:",url);});else window.prompt("Copy this link:",url);};
+  sh.appendChild(sb);out.appendChild(sh);
+}
+function idCard(x,i,nearMode){
+  var c=document.createElement("div");c.className="id-card"+(i===0&&!nearMode&&x.pct>=50?" top":"");
+  var col=x.label==="Most likely"?"#1e8449":x.label==="Possible"?"#d68910":"#7f8c8d";
+  var rk=document.createElement("div");rk.className="id-rank";rk.textContent=(i+1);c.appendChild(rk);
+  var hd=document.createElement("div");hd.className="id-head";
+  hd.innerHTML="<span class=\"id-stn\">"+tnEsc(x.stn)+"</span><span class=\"id-lbl\" style=\"background:"+col+"\">"+tnEsc(x.label)+" \u00b7 "+x.pct+"%</span>"+(x.d?"<span class=\"tn-bandtag\">"+x.khz+" kHz</span>":"");
+  c.appendChild(hd);
+  var bar=document.createElement("div");bar.className="id-bar";bar.innerHTML="<i style=\"width:"+x.pct+"%;background:"+col+"\"></i>";c.appendChild(bar);
+  var ls=document.createElement("div");ls.className="id-listen";ls.innerHTML="Listen for: <b>"+tnEsc(x.lang||"unknown language")+"</b>"+(x.site&&x.site.length>3&&x.site!=="Clandestine"?" \u00b7 station in "+tnEsc(x.site):"")+(x.tgt?" \u00b7 aimed at "+tnEsc(x.tgt):"")+" \u00b7 "+tnEsc(x.local);c.appendChild(ls);
+  var wy=document.createElement("div");wy.className="id-why";wy.textContent=x.why;c.appendChild(wy);
+  var act=document.createElement("div");act.className="tn-act";
+  var hb=document.createElement("button");hb.type="button";hb.className="tn-heard";hb.textContent="It's this one";
+  var sig=document.createElement("div");sig.className="tn-sig";sig.innerHTML="<span>Signal:</span>";
+  var lv=[["Weak",3],["Fair",5],["Strong",8]];
+  for(var j=0;j<lv.length;j++){(function(l){var b=document.createElement("button");b.type="button";b.textContent=l[0];
+    b.onclick=function(){idLog(x,l[1],hb,sig);};sig.appendChild(b);})(lv[j]);}
+  hb.onclick=function(){if(!hb.classList.contains("done"))sig.classList.toggle("on");};
+  act.appendChild(hb);
+  var a=document.createElement("a");a.className="tn-heard";a.style.cssText="text-decoration:none;border-color:var(--bdr);color:var(--ink)";a.href=idStationLink(x.stn);a.textContent="Station guide";act.appendChild(a);
+  try{act.appendChild(mkListenBtn(x.khz,"am",{label:"Listen online"}));}catch(e){}
+  var box=document.createElement("div");box.appendChild(act);box.appendChild(sig);c.appendChild(box);
+  return c;
+}
+function idLog(x,sigVal,btn,sigBox){
+  var nd=new Date();var utc=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
+  var entries=loadLog();entries.unshift({f:x.freq,stn:x.stn,sig:sigVal,notes:"Identified with ShortwaveHQ \u2014 "+x.lang,utc:utc,date:nd.toISOString()});
+  saveLog(entries);
+  btn.classList.add("done");btn.textContent="\u2713 Logged";sigBox.classList.remove("on");
+  toast("Logged: "+x.stn+" on "+x.khz+" kHz");
+}
 
 // ── TONIGHT'S LISTENING GUIDE — UI ─────────────────────────────
 var TN_STATE={region:null,slot:"evening",english:false,off:null,plan:null};
@@ -3366,7 +3642,8 @@ function go(pg,btn){
     history:renderHist,equipment:renderEQ,qsl:renderQSL,advertise:renderAdvertise,starthere:renderStartHere,directory:renderDirectory,
     reviews:renderReviews,
     enthusiast:renderEnthusiastPage,
-    tonight:renderTonight};
+    tonight:renderTonight,
+    identify:renderIdentify};
   if(fns[pg])fns[pg]();
 }
 
@@ -3742,6 +4019,12 @@ function seShowMatches(fMHz,withAI){
   if(p.tag)p.tag.textContent=fMHz.toFixed(3)+" MHz  \u00b7  "+kHz+" kHz  \u00b7  "+bFor(String(fMHz))+" Band";
   if(p.cnt)p.cnt.textContent=matches.length+" station"+(matches.length!==1?"s":"")+" in database";
   p.matchBox.innerHTML="";
+  if(kHz>=1600&&kHz<=30000){
+    var idb=document.createElement("button");idb.type="button";
+    idb.style.cssText="display:block;margin:0 0 12px;background:#8fa8ff;color:#10142a;border:none;font-family:var(--mono);font-size:.68rem;font-weight:700;padding:9px 14px;border-radius:5px;cursor:pointer";
+    idb.textContent="Hearing something on "+kHz+" kHz? Identify it for your location \u2192";
+    idb.onclick=function(){idOpen(kHz);};p.matchBox.appendChild(idb);
+  }
   if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No exact match in database for "+fMHz.toFixed(3)+" MHz.";p.matchBox.appendChild(none);p.matchBox.appendChild(seReportLink(fMHz.toFixed(3)+" MHz"));}
   else{p.matchBox.appendChild(seStatusCard(matches));for(var j=0;j<matches.length;j++)p.matchBox.appendChild(seRow(matches[j]));
     var anyOn=false;for(var k=0;k<matches.length;k++){if(isOn(matches[k])){anyOn=true;break;}}
@@ -5937,7 +6220,7 @@ window.addEventListener("resize",syncMastHeight);
     if(_qp){var _si=document.getElementById("se-inp");if(_si){_si.value=_qp;var _su=document.getElementById("se-unit");if(_su)_su.value="text";seSearch();var _hero=document.getElementById("se-inp");if(_hero&&_hero.scrollIntoView)setTimeout(function(){_hero.scrollIntoView({behavior:"smooth",block:"center"});},300);}}
   }catch(e){}
   try{
-    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","memories","enthusiast","qsl","directory","equipment","reviews","advertise","tonight"];
+    var _VALID_PAGES=["home","starthere","finder","now","dx","propagation","radar","worldmap","log","history","numbers","timemachine","memories","enthusiast","qsl","directory","equipment","reviews","advertise","tonight","identify"];
     var _pg=new URLSearchParams(window.location.search).get("page");
     if(_pg&&_VALID_PAGES.indexOf(_pg)!==-1)go(_pg);
   }catch(e){}
