@@ -1,0 +1,36 @@
+{
+ "_readme": [
+  "One entry per band scan video, newest anywhere. Each scan gets its own page at /band-scans/<slug>/, and every station in its tracklist also appears on that station's page and frequency page.",
+  "Required: date (YYYY-MM-DD) and at least one track with khz. Everything else is optional but makes the page better.",
+  "video: paste the YouTube link as-is (youtube.com/watch?v=..., youtu.be/..., or youtube.com/shorts/...).",
+  "time_utc: when you recorded it, e.g. 03:10. upload_date: the day you posted it to YouTube (defaults to date).",
+  "tracks: t = where the station starts in the video (m:ss), station = name as you know it (matched to the schedule automatically), khz, sinpo, note.",
+  "If a station name isn't recognised it still shows, just without a link. The build log prints a warning for anything it skips."
+ ],
+ "_example": {
+  "title": "Lower band scan: Radio Rebelde, WRMI, WWCR, Radio Poland",
+  "date": "2026-09-18",
+  "time_utc": "03:10",
+  "location": "San Tan Valley, AZ",
+  "radio": "Tecsun PL-330",
+  "antenna": "telescopic whip",
+  "video": "https://youtu.be/XXXXXXXXXXX",
+  "notes": "Quiet night on 60m and 49m.",
+  "tracks": [
+   {
+    "t": "0:00",
+    "station": "Radio Rebelde",
+    "khz": 5025,
+    "sinpo": "34333",
+    "note": "Spanish, music"
+   },
+   {
+    "t": "1:12",
+    "station": "WRMI",
+    "khz": 5850,
+    "sinpo": "45444"
+   }
+  ]
+ },
+ "scans": []
+}
