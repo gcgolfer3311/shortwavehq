@@ -207,6 +207,90 @@ for (var s = 0; s < stationNames.length; s++) {
 var bandSlug = {};
 for (var b = 0; b < BANDS.length; b++) bandSlug[BANDS[b].name] = slug(BANDS[b].name);
 
+// ── 3b. Band scans (data/scans.json) ───────────────────────────────
+// Your own recordings. Each scan becomes a page (/band-scans/<slug>/),
+// and every station in its tracklist is matched to the schedule so the
+// catch shows up on that station's page and frequency page too.
+// Bad entries are skipped with a warning; the build never fails on them.
+var SCANS = [], SCANS_BY_STATION = {}, SCANS_BY_FREQ = {};
+function ytId(v) {
+  v = String(v || "").trim();
+  var m = v.match(/(?:v=|youtu\.be\/|shorts\/|embed\/|live\/)([A-Za-z0-9_-]{11})/);
+  if (m) return m[1];
+  return /^[A-Za-z0-9_-]{11}$/.test(v) ? v : "";
+}
+function tSec(t) {
+  var p = String(t == null ? "" : t).trim().split(":");
+  if (!p[0] || p.length > 3) return null;
+  var n = 0;
+  for (var i = 0; i < p.length; i++) { if (!/^\d{1,2}$/.test(p[i]) && !(i === 0 && /^\d{1,3}$/.test(p[i]))) return null; n = n * 60 + parseInt(p[i], 10); }
+  return n;
+}
+function tLabel(sec) { var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), x = sec % 60; return (h ? h + ":" + pad(m) : m) + ":" + pad(x); }
+var STATION_ALIASES = { "radio poland": "polish radio", "polskie radio": "polish radio", "radio havana cuba": "radio habana cuba", "rhc": "radio habana cuba",
+  "rri": "radio romania international", "cri": "china radio international", "voa": "voice of america", "rfa": "radio free asia", "nhk": "nhk radio japan",
+  "radio japan": "nhk radio japan", "kbs": "kbs world radio", "rti": "radio taiwan international", "vatican radio": "radio vaticana", "rnz": "rnz pacific",
+  "radio new zealand": "rnz pacific", "rfi": "radio france international", "ree": "radio exterior espa\u00f1a", "twr": "trans world radio", "awr": "adventist world radio",
+  "voice of turkey": "voice of turkey", "trt": "voice of turkey", "radio marti": "radio marti", "the buzzer": "uvb-76" };
+function matchStation(name, khzv) {
+  var q = String(name || "").trim().toLowerCase();
+  if (STATION_ALIASES[q]) q = STATION_ALIASES[q];
+  var onFreq = (byFreq[String(khzv)] || []).map(function (r) { return r.stn; });
+  var pools = [onFreq, stationNames], i, j;
+  if (q) {
+    for (i = 0; i < pools.length; i++) for (j = 0; j < pools[i].length; j++) if (pools[i][j].toLowerCase() === q) return pools[i][j];
+    for (i = 0; i < pools.length; i++) for (j = 0; j < pools[i].length; j++) {
+      var n2 = pools[i][j].toLowerCase();
+      if (q.length >= 4 && (n2.indexOf(q) === 0 || q.indexOf(n2) === 0)) return pools[i][j];
+    }
+    for (j = 0; j < onFreq.length; j++) if (q.length >= 4 && onFreq[j].toLowerCase().indexOf(q) >= 0) return onFreq[j];
+  }
+  return null;
+}
+try {
+  var scPath = path.join(__dirname, "data", "scans.json");
+  if (fs.existsSync(scPath)) {
+    var scRaw = JSON.parse(fs.readFileSync(scPath, "utf8"));
+    var scList = (scRaw && scRaw.scans) || [], usedScanSlugs = {};
+    for (var si0 = 0; si0 < scList.length; si0++) {
+      var sc = scList[si0] || {};
+      var where = "scan #" + (si0 + 1) + (sc.title ? " (" + sc.title + ")" : "");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(String(sc.date || ""))) { console.warn("WARNING: " + where + " skipped: date must be YYYY-MM-DD"); continue; }
+      var vid = ytId(sc.video);
+      var tracks = [];
+      (sc.tracks || []).forEach(function (t, ti) {
+        if (!t) return;
+        var kk = Math.round(+t.khz);
+        if (!(kk >= 150 && kk <= 30000)) { console.warn("WARNING: " + where + " track " + (ti + 1) + " skipped: khz missing or invalid"); return; }
+        var sec = (t.t != null && String(t.t).trim() !== "") ? tSec(t.t) : null;
+        if (t.t != null && String(t.t).trim() !== "" && sec === null) console.warn("WARNING: " + where + " track " + (ti + 1) + ": time '" + t.t + "' not understood (use m:ss), shown without a timestamp");
+        var st = matchStation(t.station, kk);
+        tracks.push({ sec: sec, khz: kk, name: String(t.station || "").trim(), stn: st, sinpo: String(t.sinpo || "").trim(), note: String(t.note || "").trim() });
+      });
+      if (!tracks.length) { console.warn("WARNING: " + where + " skipped: no valid tracks"); continue; }
+      var title = String(sc.title || "").trim() || ("Band scan " + sc.date);
+      var sb0 = slug(sc.slug || (sc.date + " " + title)) || ("scan-" + sc.date), sbs = sb0, nn = 2;
+      while (usedScanSlugs[sbs]) { sbs = sb0 + "-" + nn; nn++; }
+      usedScanSlugs[sbs] = 1;
+      var scanObj = { slug: sbs, title: title, date: sc.date, time: String(sc.time_utc || "").trim(), location: String(sc.location || "").trim(),
+        radio: String(sc.radio || "").trim(), antenna: String(sc.antenna || "").trim(), notes: String(sc.notes || "").trim(),
+        video: vid, upload: /^\d{4}-\d{2}-\d{2}$/.test(String(sc.upload_date || "")) ? sc.upload_date : sc.date, tracks: tracks };
+      SCANS.push(scanObj);
+      tracks.forEach(function (t) {
+        if (t.stn) { (SCANS_BY_STATION[t.stn] = SCANS_BY_STATION[t.stn] || []).push({ scan: scanObj, t: t }); }
+        (SCANS_BY_FREQ[String(t.khz)] = SCANS_BY_FREQ[String(t.khz)] || []).push({ scan: scanObj, t: t });
+      });
+    }
+    SCANS.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+  }
+} catch (e) { SCANS = []; SCANS_BY_STATION = {}; SCANS_BY_FREQ = {}; console.warn("WARNING: data/scans.json not loaded (band scans skipped): " + e.message); }
+var SCANS_OK = SCANS.length > 0;
+console.log("Band scans: " + SCANS.length);
+function scanPlayer(v, title, startSec) {
+  var st = startSec ? "&start=" + startSec : "";
+  return "<a href=\"https://www.youtube.com/watch?v=" + v + (startSec ? "&t=" + startSec : "") + "\" target=\"_blank\" rel=\"noopener\" data-v=\"" + v + "\" data-t=\"" + esc(title) + "\" onclick=\"var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+this.dataset.v+'?autoplay=1" + st + "';f.title=this.dataset.t;f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.style.cssText='width:100%;aspect-ratio:16/9;border:0;border-radius:6px';f.id='scan-player';this.replaceWith(f);return false;\" style=\"display:block;position:relative;border-radius:6px;overflow:hidden;background:#000;aspect-ratio:16/9;max-width:720px\" id=\"scan-player\"><img src=\"https://i.ytimg.com/vi/" + v + "/hqdefault.jpg\" alt=\"" + esc(title) + "\" loading=\"lazy\" style=\"width:100%;height:100%;object-fit:cover;opacity:.85\"><span style=\"position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:#c0392b;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px\">\u25b6</span></a>";
+}
+
 // ── 4. Page shell ────────────────────────────────────────────────
 function shell(opts) {
   // opts: title, desc, canonical, h1, kicker, bodyHtml, breadcrumbs [[name,url],...]
@@ -214,7 +298,7 @@ function shell(opts) {
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"en\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\n</style>\n</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; <a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"en\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\n</style>\n</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 function write(rel, content) {
@@ -254,6 +338,7 @@ if (fs.existsSync(indexPath)) {
   stamped = stamped.split("Valid March 29 \u2013 October 25, 2026").join(SEASON.valid);
   stamped = stamped.split("A-26 2026").join(SEASON.label + " " + (2000 + SEASON.yy));
   stamped = stamped.split("A-26").join(SEASON.label);
+  if (!SCANS_OK) stamped = stamped.replace(/<!--BANDSCANS-->[\s\S]*?<!--\/BANDSCANS-->/g, "");
   fs.writeFileSync(indexPath, stamped);
   console.log("Stamped dist/index.html with build fingerprint " + stamp);
 }
@@ -503,6 +588,9 @@ for (var sn = 0; sn < stationNames.length; sn++) {
         var cs = String(c.station).toLowerCase().trim();
         if (cs && (cs === nmLow || nmLow.indexOf(cs) === 0 || cs.indexOf(nmLow) === 0)) logs.push({ date: c.date_utc, khz: +c.freq_khz, sinpo: c.sinpo || "", radio: "", antenna: "", loc: c.location || "", note: c.note || "", who: "Listener report" });
       });
+      (SCANS_BY_STATION[name] || []).forEach(function (x) {
+        logs.push({ date: x.scan.date, khz: x.t.khz, sinpo: x.t.sinpo, radio: x.scan.radio, antenna: x.scan.antenna, loc: x.scan.location, note: (x.t.note ? x.t.note + " \u2014 " : "") + "from band scan", who: "ShortwaveHQ" });
+      });
       logs.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
       hubHtml += "<h2>Reception log: " + esc(name) + "</h2>";
       if (logs.length) {
@@ -562,6 +650,7 @@ for (var sn = 0; sn < stationNames.length; sn++) {
     + "<p class=\"lede\">" + liveStatus + " <a href=\"/?q=" + encodeURIComponent(name) + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + (kHz(rows[0].freq)/1000).toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Listen via Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + (kHz(rows[0].freq)/1000).toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
     + hubHtml
+    + scanMentions(SCANS_BY_STATION[name], esc(name))
     + "<h2>" + esc(name) + " \u2014 Full 2026 Schedule</h2>" + tbl
     + hubFaqHtml + hubLd
     + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/\">Live Search &amp; Band Conditions</a></div>"
@@ -608,6 +697,16 @@ function freqIdHtml(khz, rows) {
   } catch (e) { return ""; }
 }
 
+function scanMentions(list, label) {
+  if (!list || !list.length) return "";
+  var seen = {}, rows = "";
+  list.slice().sort(function (a, b) { return a.scan.date < b.scan.date ? 1 : -1; }).forEach(function (x) {
+    var key = x.scan.slug + "|" + x.t.khz; if (seen[key]) return; seen[key] = 1;
+    rows += "<li><a href=\"/band-scans/" + x.scan.slug + "/" + (x.t.sec != null ? "#t" + x.t.sec : "") + "\">" + esc(x.scan.title) + "</a> \u2014 " + esc(x.scan.date) + (x.scan.time ? " " + esc(x.scan.time) + " UTC" : "") + ", " + x.t.khz + " kHz" + (x.t.sinpo ? ", SINPO " + esc(x.t.sinpo) : "") + (x.scan.location ? ", " + esc(x.scan.location) : "") + "</li>";
+  });
+  return "<h2>Heard in our band scans</h2><p>Real recordings of " + label + " made by ShortwaveHQ:</p><ul>" + rows + "</ul>";
+}
+
 // ── 7. Frequency pages ───────────────────────────────────────────
 for (var fk = 0; fk < freqKeys.length; fk++) {
   var khz = freqKeys[fk];
@@ -633,6 +732,7 @@ for (var fk = 0; fk < freqKeys.length; fk++) {
     + "<p class=\"lede\">" + liveFrequencyStatusSentence(khz, rows2) + " <a href=\"/?q=" + khz + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + mhz.toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Tune it on Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + mhz.toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
     + freqIdHtml(khz, rows2)
+    + scanMentions(SCANS_BY_FREQ[String(khz)], khz + " kHz")
     + "<h2>2026 Schedule for " + khz + " kHz</h2>" + tbl2
     + "<h2>Nearby Frequencies</h2>" + nav
     + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 Hearing " + khz + " kHz needs the right radio \u2014 see the ones we've actually tested \u2192</a></p>";
@@ -756,6 +856,61 @@ try {
   console.log("Generated /tonight/ listening guide (" + tnTotal + " picks across " + TN.TN_REGIONS.length + " regions)");
 } catch (tnErr) {
   console.warn("WARNING: /tonight/ page skipped (build continues): " + tnErr.message);
+}
+
+// ── 7d. Band scan pages ────────────────────────────────────────────
+if (SCANS_OK) {
+  try {
+    var bsItems = "";
+    SCANS.forEach(function (sc) {
+      var stationsTxt = sc.tracks.map(function (t) { return (t.stn || t.name || (t.khz + " kHz")); });
+      var trows = "", clips = [];
+      sc.tracks.forEach(function (t) {
+        var stCell = t.stn && !isPlaceholder(t.stn) ? "<a href=\"/stations/" + stationSlug[t.stn] + "/\">" + esc(t.stn) + "</a>" : esc(t.name || "Unidentified");
+        var fCell = byFreq[String(t.khz)] ? "<a href=\"/frequency/" + t.khz + "-khz/\">" + t.khz + " kHz</a>" : t.khz + " kHz";
+        var tCell = t.sec != null ? (sc.video ? "<a id=\"t" + t.sec + "\" href=\"https://www.youtube.com/watch?v=" + sc.video + "&t=" + t.sec + "\" target=\"_blank\" rel=\"noopener\" onclick=\"var p=document.getElementById('scan-player');if(!p)return true;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/" + sc.video + "?autoplay=1&start=" + t.sec + "';f.title='Band scan';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.style.cssText='width:100%;aspect-ratio:16/9;border:0;border-radius:6px;max-width:720px';f.id='scan-player';p.replaceWith(f);f.scrollIntoView({behavior:'smooth',block:'center'});return false;\">" + tLabel(t.sec) + "</a>" : "<span id=\"t" + t.sec + "\">" + tLabel(t.sec) + "</span>") : "\u2014";
+        trows += "<tr><td>" + tCell + "</td><td>" + fCell + "</td><td>" + stCell + "</td><td>" + esc(t.sinpo || "\u2014") + "</td><td>" + esc(t.note) + "</td></tr>";
+        if (sc.video && t.sec != null) clips.push({ "@type": "Clip", "name": (t.stn || t.name || "Unidentified") + " \u2014 " + t.khz + " kHz", "startOffset": t.sec, "url": "https://www.youtube.com/watch?v=" + sc.video + "&t=" + t.sec });
+      });
+      for (var ci = 0; ci < clips.length; ci++) clips[ci].endOffset = (ci + 1 < clips.length) ? clips[ci + 1].startOffset : undefined;
+      clips.forEach(function (c) { if (c.endOffset === undefined || c.endOffset <= c.startOffset) delete c.endOffset; });
+      var meta = [esc(sc.date) + (sc.time ? " \u00b7 " + esc(sc.time) + " UTC" : ""), sc.location ? esc(sc.location) : "", sc.radio ? "Radio: " + esc(sc.radio) : "", sc.antenna ? "Antenna: " + esc(sc.antenna) : ""].filter(Boolean).join(" &nbsp;\u00b7&nbsp; ");
+      var pb = "<p class=\"lede\">" + meta + "</p>"
+        + (sc.notes ? "<p>" + esc(sc.notes) + "</p>" : "")
+        + (sc.video ? scanPlayer(sc.video, sc.title, 0) : "")
+        + "<h2>Tracklist</h2><p>" + (sc.video ? "Tap a time to jump to that station in the video. " : "") + "Tap a station or frequency for its schedule and the best time to hear it.</p>"
+        + "<table><thead><tr><th>Time</th><th>Frequency</th><th>Station</th><th>SINPO</th><th>Notes</th></tr></thead><tbody>" + trows + "</tbody></table>"
+        + "<p><a class=\"cta\" href=\"/?page=tonight\">What can you hear tonight? \u2192</a> <a class=\"cta o\" href=\"/?page=identify\">Identify a station you're hearing</a></p>"
+        + "<div class=\"tags\"><a href=\"/band-scans/\">All band scans</a><a href=\"/stations/\">All Stations</a><a href=\"/listen-online/\">Listen Online</a></div>";
+      if (sc.video) {
+        var vo = { "@context": "https://schema.org", "@type": "VideoObject", "name": sc.title, "description": "Shortwave band scan recorded " + sc.date + (sc.location ? " in " + sc.location : "") + ": " + stationsTxt.join(", ") + ".",
+          "thumbnailUrl": "https://i.ytimg.com/vi/" + sc.video + "/hqdefault.jpg", "uploadDate": sc.upload, "embedUrl": "https://www.youtube-nocookie.com/embed/" + sc.video, "contentUrl": "https://www.youtube.com/watch?v=" + sc.video };
+        if (clips.length) vo.hasPart = clips;
+        pb += "<script type=\"application/ld+json\">" + JSON.stringify(vo).replace(/</g, "\\u003c") + "</script>";
+      }
+      write("band-scans/" + sc.slug + "/index.html", shell({
+        title: sc.title + " \u2014 Shortwave Band Scan " + sc.date + " | ShortwaveHQ",
+        desc: "Shortwave band scan recorded " + sc.date + (sc.location ? " from " + sc.location : "") + ": " + stationsTxt.slice(0, 6).join(", ") + (stationsTxt.length > 6 ? " and more" : "") + ". Full tracklist with frequencies and signal reports.",
+        canonical: "/band-scans/" + sc.slug + "/", kicker: "Band Scan \u00b7 " + sc.date, h1: esc(sc.title), bodyHtml: pb,
+        breadcrumbs: [["Home", "/"], ["Band Scans", "/band-scans/"], [sc.title, "/band-scans/" + sc.slug + "/"]]
+      }));
+      urls.push("/band-scans/" + sc.slug + "/");
+      bsItems += "<a href=\"/band-scans/" + sc.slug + "/\" style=\"display:flex;gap:14px;align-items:center;padding:12px;border:1px solid #c8c0b0;border-radius:8px;margin-bottom:10px;text-decoration:none;color:inherit\">"
+        + (sc.video ? "<img src=\"https://i.ytimg.com/vi/" + sc.video + "/mqdefault.jpg\" alt=\"\" loading=\"lazy\" style=\"width:160px;max-width:38%;aspect-ratio:16/9;object-fit:cover;border-radius:5px;flex-shrink:0\">" : "")
+        + "<span><strong style=\"display:block;font-size:1rem;margin-bottom:3px\">" + esc(sc.title) + "</strong><span style=\"font-size:.8rem;color:#6b5f52\">" + esc(sc.date) + (sc.location ? " \u00b7 " + esc(sc.location) : "") + " \u00b7 " + sc.tracks.length + " station" + (sc.tracks.length === 1 ? "" : "s") + "</span><br><span style=\"font-size:.78rem;color:#9c8e81\">" + esc(stationsTxt.slice(0, 5).join(", ")) + (stationsTxt.length > 5 ? "\u2026" : "") + "</span></span></a>";
+    });
+    write("band-scans/index.html", shell({
+      title: "Shortwave Band Scans \u2014 Real Reception Recordings | ShortwaveHQ",
+      desc: "Real shortwave band scans recorded by ShortwaveHQ, each with a full tracklist of stations, frequencies, times and signal reports.",
+      canonical: "/band-scans/", kicker: "Recordings \u00b7 " + SCANS.length + " scan" + (SCANS.length === 1 ? "" : "s"),
+      h1: "Shortwave band scans",
+      bodyHtml: "<p class=\"lede\">Real recordings from our own radios: what the bands actually sounded like on a given night, with every station identified, timestamped and linked to its schedule.</p>" + bsItems
+        + "<p><a class=\"cta\" href=\"/?page=tonight\">What can you hear tonight? \u2192</a></p>",
+      breadcrumbs: [["Home", "/"], ["Band Scans", "/band-scans/"]]
+    }));
+    urls.push("/band-scans/");
+    console.log("Generated /band-scans/ + " + SCANS.length + " scan page(s)");
+  } catch (bsErr) { console.warn("WARNING: band scan pages skipped (build continues): " + bsErr.message); }
 }
 
 // ── 7c. Season snapshots + /season-change/ tracker ─────────────────
