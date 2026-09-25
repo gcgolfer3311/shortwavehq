@@ -98,12 +98,22 @@
   "WRMI Radio Miami International": {
    "intro": "",
    "logs": [],
-   "videos": []
+   "videos": [
+    {
+     "id": "eVy7slg8ciY",
+     "title": "Lower band scan: Radio Rebelde, WRMI, WWCR, Radio Poland (ShortwaveHQ)"
+    }
+   ]
   },
   "WWCR 2 Nashville, TN": {
    "intro": "",
    "logs": [],
-   "videos": []
+   "videos": [
+    {
+     "id": "eVy7slg8ciY",
+     "title": "Lower band scan: Radio Rebelde, WRMI, WWCR, Radio Poland (ShortwaveHQ)"
+    }
+   ]
   },
   "WBCQ The Planet": {
    "intro": "",
@@ -209,6 +219,26 @@
    "intro": "",
    "logs": [],
    "videos": []
+  },
+  "Radio Rebelde": {
+   "intro": "",
+   "logs": [],
+   "videos": [
+    {
+     "id": "eVy7slg8ciY",
+     "title": "Lower band scan: Radio Rebelde, WRMI, WWCR, Radio Poland (ShortwaveHQ)"
+    }
+   ]
+  },
+  "Polish Radio": {
+   "intro": "",
+   "logs": [],
+   "videos": [
+    {
+     "id": "eVy7slg8ciY",
+     "title": "Lower band scan: Radio Rebelde, WRMI, WWCR, Radio Poland (ShortwaveHQ)"
+    }
+   ]
   }
  }
 }
