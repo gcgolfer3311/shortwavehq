@@ -32,5 +32,39 @@
    }
   ]
  },
- "scans": []
+ "scans": [
+  {
+   "title": "Shortwave Band Scan on the ZHIWHIS ZWS-A330: WRMI, WWCR, Radio Marti, China Radio Intl",
+   "date": "2026-09-27",
+   "time_utc": "02:00",
+   "location": "San Tan Valley, AZ",
+   "radio": "ZHIWHIS ZWS-A330",
+   "video": "https://youtube.com/shorts/9tf6LiDf00k",
+   "notes": "Quick scan across the 49m, 41m, and 19m bands.",
+   "tracks": [
+    {
+     "t": "0:00",
+     "station": "WRMI",
+     "khz": 5850,
+     "note": "Radio Miami International"
+    },
+    {
+     "t": "0:10",
+     "station": "WWCR",
+     "khz": 5935,
+     "note": "World Wide Christian Radio"
+    },
+    {
+     "t": "0:20",
+     "station": "Radio Marti",
+     "khz": 6030
+    },
+    {
+     "t": "0:28",
+     "station": "China Radio International",
+     "khz": 15160
+    }
+   ]
+  }
+ ]
 }
