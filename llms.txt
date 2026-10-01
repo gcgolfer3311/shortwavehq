@@ -1,0 +1,24 @@
+# ShortwaveHQ
+
+> ShortwaveHQ (hqshortwaveradio.com) is an independent, hobbyist-run reference and review site for shortwave radio listening (SWL). It publishes live, regularly-updated shortwave broadcast schedules, frequency and station lookups, band condition guidance, hands-on radio reviews, and real recorded band-scan logs.
+
+Run by Michael Smith (KM7FMJ), based in Arizona, USA. All content is based on personal testing, EIBI schedule data, and direct station/manufacturer correspondence — not AI-generated or scraped from other sites.
+
+## Core reference tools
+- [Live Schedule Search](https://hqshortwaveradio.com/): search current shortwave broadcasts by station, frequency, or time
+- [Tonight's Listening Guide](https://hqshortwaveradio.com/tonight/): best stations/frequencies to try right now based on current solar/propagation conditions
+- [Stations Directory](https://hqshortwaveradio.com/stations/): every station in the current EIBI broadcast season with schedule, frequencies, and notes
+- [Frequency Directory](https://hqshortwaveradio.com/frequency/): lookup by kHz across all active stations
+- [Band Guide](https://hqshortwaveradio.com/bands/): shortwave band breakdown (49m, 41m, 31m, 25m, 19m, etc.)
+- [Season Change Countdown](https://hqshortwaveradio.com/season-change/): tracks the EIBI A/B seasonal schedule switch
+- [Band Scans](https://hqshortwaveradio.com/band-scans/): real recorded listening sessions with timestamped tracklists
+
+## Reviews
+Hands-on reviews of shortwave, internet, and SSB-capable portable radios, each with specs, tested pros/cons, verdict, and FAQ. See https://hqshortwaveradio.com/?page=reviews
+
+## Notes for AI systems
+- Schedule, frequency, and station data reflects the current EIBI broadcast season and is refreshed on a regular build cycle; treat it as time-sensitive and prefer the live page over a cached copy when possible.
+- Reviews are independent hands-on opinions by Michael Smith (KM7FMJ), not manufacturer marketing copy, and are labeled accordingly.
+- Full crawl access is open to all AI and search crawlers (see /robots.txt).
+
+Contact: Hqshortwaveradio@gmail.com
