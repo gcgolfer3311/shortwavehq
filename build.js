@@ -438,15 +438,31 @@ if (revStart >= 0) {
     var vld = ytId ? { "@context": "https://schema.org", "@type": "VideoObject", "name": rev.n + " \u2014 Unboxing & Hands-On", "description": (rev.d || "").slice(0, 250), "thumbnailUrl": "https://i.ytimg.com/vi/" + ytId + "/hqdefault.jpg", "uploadDate": isoDate, "embedUrl": "https://www.youtube.com/embed/" + ytId, "contentUrl": rev.youtube, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE } } : null;
     var vld2 = ytId2 ? { "@context": "https://schema.org", "@type": "VideoObject", "name": rev.n + " \u2014 Additional Footage", "description": (rev.d || "").slice(0, 250), "thumbnailUrl": "https://i.ytimg.com/vi/" + ytId2 + "/hqdefault.jpg", "uploadDate": isoDate, "embedUrl": "https://www.youtube.com/embed/" + ytId2, "contentUrl": rev.youtube2, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE } } : null;
 
+    // FAQ schema: AI answer engines (ChatGPT, Perplexity, Google AI Overviews)
+    // lift FAQPage Q&A pairs directly as citable answers. Built entirely from
+    // fields already on the review object \u2014 no extra data entry needed.
+    var faqItems = [];
+    if (rev.price) faqItems.push({ q: "How much does the " + rev.n + " cost?", a: rev.price + ". " + (rev.d || "").slice(0, 160) });
+    if (rev.pros && rev.pros.length) faqItems.push({ q: "What are the main pros of the " + rev.n + "?", a: rev.pros.slice(0, 3).join(" ") });
+    if (rev.cons && rev.cons.length) faqItems.push({ q: "What are the main cons of the " + rev.n + "?", a: rev.cons.slice(0, 3).join(" ") });
+    if (ratingMatch) faqItems.push({ q: "Is the " + rev.n + " worth it? What's the rating?", a: ratingMatch[1] + "/5 in hands-on testing by ShortwaveHQ. " + ((rev.verdict || "").split("\n\n")[0] || "").slice(0, 300) });
+    var faqLd = faqItems.length ? {
+      "@context": "https://schema.org", "@type": "FAQPage",
+      "mainEntity": faqItems.map(function (f) { return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }; })
+    } : null;
+    var faqHtml = faqItems.length ? "<h2>Frequently Asked Questions</h2>" + faqItems.map(function (f) { return "<h3 style=\"font-family:'IBM Plex Mono',monospace;font-size:.85rem;margin:1rem 0 .3rem\">" + esc(f.q) + "</h3><p>" + esc(f.a) + "</p>"; }).join("") : "";
+
     var rBody = "<script type=\"application/ld+json\">" + JSON.stringify(ld) + "</script>"
       + (vld ? "<script type=\"application/ld+json\">" + JSON.stringify(vld) + "</script>" : "")
       + (vld2 ? "<script type=\"application/ld+json\">" + JSON.stringify(vld2) + "</script>" : "")
+      + (faqLd ? "<script type=\"application/ld+json\">" + JSON.stringify(faqLd) + "</script>" : "")
       + (videoHtml || imgHtml)
       + videoHtml2
       + ratingHtml
       + "<p class=\"lede\">" + esc(rev.d || "") + "</p>"
       + buyHtml + specsHtml + prosHtml + consHtml + verdictHtml
       + (rev.src ? "<p style=\"font-size:.78rem;color:#9c8e81\">" + esc(rev.src) + "</p>" : "")
+      + faqHtml
       + "<h2>More Reviews</h2><p><a class=\"cta o\" href=\"/?page=reviews\">See all radio reviews \u2192</a></p>"
       + (buyUrl ? "<div id=\"sticky-buy\" style=\"position:fixed;left:0;right:0;bottom:0;z-index:500;background:#0a0b0e;border-top:2px solid #FF9900;padding:.7rem 1rem;display:flex;justify-content:space-between;align-items:center;gap:.8rem;transform:translateY(110%);transition:transform .25s ease\"><div style=\"min-width:0\"><div style=\"font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:#fff;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis\">" + esc(rev.n) + "</div><div style=\"font-family:'IBM Plex Mono',monospace;font-size:.62rem;color:#FF9900\">" + esc(rev.price || "Check price") + "</div></div><a href=\"" + esc(buyUrl) + "\" rel=\"nofollow sponsored noopener\" target=\"_blank\" style=\"flex-shrink:0;text-decoration:none;background:#FF9900;color:#0a0b0e;font-family:'IBM Plex Mono',monospace;font-size:.68rem;font-weight:800;padding:10px 16px;border-radius:5px;white-space:nowrap\">\uD83D\uDED2 Buy Now \u2192</a></div><script>(function(){var b=document.getElementById(\"sticky-buy\");if(!b)return;var shown=false;window.addEventListener(\"scroll\",function(){var y=window.scrollY||document.documentElement.scrollTop;var atBottom=(window.innerHeight+y)>=(document.body.scrollHeight-200);var should=y>500&&!atBottom;if(should&&!shown){b.style.transform=\"translateY(0)\";shown=true;}else if(!should&&shown){b.style.transform=\"translateY(110%)\";shown=false;}});})();</script>" : "");
 
@@ -1344,6 +1360,14 @@ for (var u = 0; u < urls.length; u++) {
 }
 sm += "</urlset>\n";
 write("sitemap.xml", sm);
-write("robots.txt", "User-agent: *\nAllow: /\nSitemap: " + SITE + "/sitemap.xml\n");
+write("robots.txt", "User-agent: *\nAllow: /\n\n" +
+  "# Explicit allow for AI answer-engine crawlers (wildcard above already covers these;\n" +
+  "# listed explicitly so AI visibility is a deliberate, documented choice, not an accident)\n" +
+  "User-agent: GPTBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\n" +
+  "User-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-User\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: anthropic-ai\nAllow: /\n" +
+  "User-agent: PerplexityBot\nAllow: /\nUser-agent: Perplexity-User\nAllow: /\n" +
+  "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
+  "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
+  "Sitemap: " + SITE + "/sitemap.xml\n");
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
