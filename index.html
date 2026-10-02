@@ -37,13 +37,13 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" href="/icons/icon-192.png">
 <meta name="theme-color" content="#0a0b0e">
-<title>ShortwaveHQ — Live Shortwave Radio Schedules &amp; Frequencies</title>
-<meta name="description" content="Real-time shortwave radio schedules and live band conditions for 2026. Search 309 stations — BBC, VOA, WRMI — and listen online free via WebSDR.">
-<meta property="og:title" content="ShortwaveHQ — Live Shortwave Radio Schedules &amp; Frequencies 2026">
+<title>Shortwave Radio Online — Live Schedules &amp; Frequencies | ShortwaveHQ</title>
+<meta name="description" content="Listen to shortwave radio online free and see which stations are on air now. Live 2026 schedules, 309 stations, frequencies and band conditions — BBC, VOA, WRMI.">
+<meta property="og:title" content="Shortwave Radio Online — Live Schedules &amp; Frequencies | ShortwaveHQ">
 <meta property="og:description" content="The world's most powerful shortwave radio intelligence platform. 309 stations. Live now.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ShortwaveHQ — Live Shortwave Radio Schedules &amp; Frequencies 2026">
+<meta name="twitter:title" content="Shortwave Radio Online — Live Schedules &amp; Frequencies | ShortwaveHQ">
 <meta name="twitter:description" content="Search 309 shortwave stations. Find what's on air right now, track propagation, and listen online via WebSDR.">
 <meta name="twitter:image" content="https://hqshortwaveradio.com/og-image.png">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -948,6 +948,33 @@ a,button,input,select,textarea{touch-action:manipulation}
   .four{grid-template-columns:1fr}
   .qgrid{grid-template-columns:1fr}
   .bname{font-size:.95rem}
+}
+
+/* MOBILE HEADER FIT — keeps the masthead inside the phone viewport (no sideways page shift) */
+@media(max-width:640px){
+  .mast-top{gap:.3rem;padding:0 .6rem}
+  .brand{padding-right:.4rem;border-right:0;min-width:0;gap:6px}
+  .mright{gap:4px;padding-left:.2rem;border-left:0;min-width:0;flex-shrink:1}
+  .mright .night-btn{min-height:36px}
+  .mright a.night-btn{display:none!important}
+  .ldot{display:none}
+  html,body{max-width:100%}
+}
+@media(max-width:1100px){
+  .two,.g2{grid-template-columns:minmax(0,1fr)}
+  .two>*,.g2>*,.three>*,.four>*,.stk>*{min-width:0;max-width:100%}
+}
+@media(max-width:640px){
+  [style*="repeat(5,1fr)"]{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))!important}
+  .wrap[style*="border-top"][style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:1.4rem!important}
+  div[style*="flex-shrink:0;flex-wrap:wrap"]{flex-shrink:1!important;max-width:100%;min-width:0}
+  div[style*="flex-shrink:0;flex-wrap:wrap"]>*{white-space:normal!important;text-align:center;max-width:100%}
+}
+@media(max-width:380px){
+  .sbars{display:none}
+  .bname{font-size:.9rem}
+  .night-btn,#text-btn{padding:4px 5px;font-size:.62rem}
+  .clkv{font-size:.74rem}
 }
 
 /* Tablet — comfortable middle ground */
@@ -2446,7 +2473,12 @@ Yours sincerely,
           <a href="/bands/" style="color:rgba(255,255,255,.78)">Shortwave bands guide</a><br>
           <a href="/bands/49-meter-band/" style="color:rgba(255,255,255,.78)">49 meter band</a><br>
           <a href="/bands/31-meter-band/" style="color:rgba(255,255,255,.78)">31 meter band</a><br>
-          <a href="/numbers-stations-explained/" style="color:rgba(255,255,255,.78)">Numbers stations — UVB-76, E06, M03</a>
+          <a href="/numbers-stations-explained/" style="color:rgba(255,255,255,.78)">Numbers stations — UVB-76, E06, M03</a><br>
+          <a href="/frequency/12040-khz/" style="color:rgba(255,255,255,.78)">12040 kHz schedule</a><br>
+          <a href="/frequency/7400-khz/" style="color:rgba(255,255,255,.78)">7400 kHz schedule</a><br>
+          <a href="/frequency/15615-khz/" style="color:rgba(255,255,255,.78)">15615 kHz schedule</a><br>
+          <a href="/frequency/5850-khz/" style="color:rgba(255,255,255,.78)">5850 kHz schedule</a><br>
+          <a href="/stations/china-radio-international/" style="color:rgba(255,255,255,.78)">China Radio International schedule</a>
         </div>
       </div>
       <div>
