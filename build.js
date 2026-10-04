@@ -848,6 +848,39 @@ function topFreqTags(n) {
   return ks.slice(0, n).sort(function (a, b) { return a - b; }).map(function (k) { return "<a href=\"/frequency/" + k + "-khz/\">" + k + " kHz</a>"; }).join("");
 }
 
+// ── Language / region segments (data-driven landing pages) ──
+var SEG_SKIP_LANG = { "": 1, "Various": 1, "Music": 1, "Time Signal": 1, "Morse/CW": 1, "RTTY": 1, "HFDL": 1 };
+var SEG = (function () {
+  var langs = {}, regs = {};
+  for (var i = 0; i < SCH.length; i++) {
+    var r = SCH[i];
+    if (!r || !r.stn || isPlaceholder(r.stn)) continue;
+    var L = r.lang || "";
+    if (!SEG_SKIP_LANG[L]) (langs[L] = langs[L] || []).push(r);
+    var R = r.reg;
+    if (R && R !== "Worldwide") (regs[R] = regs[R] || []).push(r);
+  }
+  function nStn(rows) { return uniq(rows.map(function (x) { return x.stn; })).length; }
+  var langList = Object.keys(langs).filter(function (L) { return nStn(langs[L]) >= 3 && langs[L].length >= 6 && slug(L); })
+    .sort(function (a, b) { return langs[b].length - langs[a].length || (a < b ? -1 : 1); });
+  var regList = Object.keys(regs).filter(function (R) { return nStn(regs[R]) >= 3 && regs[R].length >= 6 && slug(R); })
+    .sort(function (a, b) { return regs[b].length - regs[a].length || (a < b ? -1 : 1); });
+  return { langs: langs, regs: regs, langList: langList, regList: regList, nStn: nStn };
+})();
+function segBrowseHtml(nLang) {
+  if (!SEG.langList.length && !SEG.regList.length) return "";
+  var h = "";
+  if (SEG.langList.length) h += "<h2>Browse Shortwave by Language</h2><div class=\"tags\">" + SEG.langList.slice(0, nLang || 12).map(function (L) { return "<a href=\"/languages/" + slug(L) + "/\">" + esc(L) + "</a>"; }).join("") + "<a href=\"/languages/\">All languages</a></div>";
+  if (SEG.regList.length) h += "<h2>Browse Shortwave by Target Region</h2><div class=\"tags\">" + SEG.regList.map(function (R) { return "<a href=\"/regions/" + slug(R) + "/\">To " + esc(R) + "</a>"; }).join("") + "<a href=\"/regions/\">All regions</a></div>";
+  return h;
+}
+function stnLinkHtml(name) {
+  return (stationSlug[name] && byStation[name] && byStation[name].length >= MIN_STATION_ENTRIES) ? "<a href=\"/stations/" + stationSlug[name] + "/\">" + esc(name) + "</a>" : esc(name);
+}
+function freqLinkHtml(kk) {
+  return (byFreq[kk] && byFreq[kk].length >= MIN_FREQ_ENTRIES) ? "<a href=\"/frequency/" + kk + "-khz/\">" + kk + " kHz</a>" : kk + " kHz";
+}
+
 // ── Listen Online / On-Air Now landing page ─────────────────────
 var LO_ONAIR = onAirSection(12, "Shortwave Radio Stations On Air Right Now");
 var LO_FAQ = [
@@ -865,6 +898,7 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + "<p>If you don't own a radio yet, WebSDR (above) lets you listen to real international broadcasts immediately, and our <a href=\"/schedules-by-country/\">schedules by country</a> page organizes stations by where they're broadcasting from, so you can find, say, every station transmitting from Japan or Germany at a glance.</p>"
   + "<h2>Best Times to Listen</h2><p>Shortwave propagation changes with the time of day and the ionosphere. Lower bands (49m, 41m, 31m) tend to carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better midday. Our live tracker adjusts automatically \u2014 it only shows stations that are actually scheduled to be on air right now.</p>"
   + (function () { var f = topFreqTags(12); return f ? "<h2>Popular Shortwave Frequencies to Tune Right Now</h2><div class=\"tags\">" + f + "</div>" : ""; })()
+  + segBrowseHtml(10)
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a></div>";
 write("listen-online/index.html", shell({
@@ -1313,6 +1347,139 @@ write("schedules-by-country/index.html", shell({
 }));
 urls.push("/schedules-by-country/");
 
+// ── Language & region landing pages ──────────────────────────────
+function segSchedTable(rows, max) {
+  var sorted = rows.slice().sort(function (a, b) { return a.s - b.s || kHz(a.freq) - kHz(b.freq); });
+  var seen = {}, uniqRows = [];
+  for (var i = 0; i < sorted.length; i++) { var k0 = sorted[i].stn + "|" + sorted[i].freq + "|" + sorted[i].s; if (!seen[k0]) { seen[k0] = 1; uniqRows.push(sorted[i]); } }
+  var shown = uniqRows.slice(0, max);
+  var t = "<table><tr><th>Time (UTC)</th><th>Frequency</th><th>Station</th><th>Language</th><th>Target</th></tr>";
+  for (var j = 0; j < shown.length; j++) {
+    var r = shown[j], kk = String(kHz(r.freq));
+    t += "<tr><td>" + fmtSched(r) + "</td><td>" + freqLinkHtml(kk) + "</td><td>" + stnLinkHtml(r.stn) + "</td><td>" + esc(r.lang || "—") + "</td><td>" + esc(r.tgt || "—") + "</td></tr>";
+  }
+  return { html: t + "</table>", shown: shown.length, total: uniqRows.length };
+}
+function segPage(kind, name, rows) {
+  var isLang = kind === "language";
+  var sl = slug(name), base = isLang ? "/languages/" : "/regions/";
+  var stnCounts = {}, freqCounts = {}, i;
+  for (i = 0; i < rows.length; i++) { stnCounts[rows[i].stn] = (stnCounts[rows[i].stn] || 0) + 1; var fk = String(kHz(rows[i].freq)); freqCounts[fk] = (freqCounts[fk] || 0) + 1; }
+  var stnsSorted = Object.keys(stnCounts).sort(function (a, b) { return stnCounts[b] - stnCounts[a] || (a < b ? -1 : 1); });
+  var freqsSorted = Object.keys(freqCounts).sort(function (a, b) { return freqCounts[b] - freqCounts[a] || a - b; });
+  var nS = stnsSorted.length, nF = freqsSorted.length;
+  var what = isLang ? "in " + name : "aimed at " + name;
+  var lede = "<p class=\"lede\">In the " + SEASON.label + " schedule, <strong>" + nS + " shortwave stations</strong> broadcast " + esc(what) + " on <strong>" + nF + " different frequencies</strong>. Times are UTC. This page shows who is on the air now, the most-used frequencies, and the full schedule.</p>";
+  // on air now
+  var seenA = {}, act = [];
+  for (i = 0; i < rows.length; i++) { var r = rows[i]; if (!isActiveWindow(r.s, r.e, BUILD_NOW_MIN)) continue; var ak = r.stn + "|" + kHz(r.freq); if (seenA[ak]) continue; seenA[ak] = 1; act.push(r); }
+  act.sort(function (a, b) { return a.stn < b.stn ? -1 : a.stn > b.stn ? 1 : 0; });
+  var onair = "<h2>On Air Now " + (isLang ? "in " + esc(name) : "to " + esc(name)) + "</h2>";
+  if (act.length) {
+    onair += "<p>As of <strong>" + BUILD_NOW_LABEL + "</strong>, " + act.length + " broadcast" + (act.length === 1 ? " is" : "s are") + " scheduled " + esc(what) + ". Rebuilt daily; use the <a href=\"/\">live tracker</a> for up-to-the-minute status.</p><table><tr><th>Station</th><th>Frequency</th><th>" + (isLang ? "Target" : "Language") + "</th><th>On air until</th></tr>";
+    act.slice(0, 15).forEach(function (r2) { onair += "<tr><td>" + stnLinkHtml(r2.stn) + "</td><td>" + freqLinkHtml(String(kHz(r2.freq))) + "</td><td>" + esc((isLang ? r2.tgt : r2.lang) || "—") + "</td><td>" + onAirUntil(r2) + "</td></tr>"; });
+    onair += "</table>";
+  } else {
+    onair += "<p>As of <strong>" + BUILD_NOW_LABEL + "</strong>, no broadcasts " + esc(what) + " are scheduled in the current time slot. See the full schedule below for the next transmissions.</p>";
+  }
+  // top frequencies + stations
+  var topF = freqsSorted.slice(0, 10).map(function (k) { return freqLinkHtml(k).replace(/^<a /, "<a ").replace(/^(\d)/, "$1"); });
+  var topFTags = "<div class=\"tags\">" + freqsSorted.slice(0, 10).map(function (k) { return (byFreq[k] && byFreq[k].length >= MIN_FREQ_ENTRIES) ? "<a href=\"/frequency/" + k + "-khz/\">" + k + " kHz</a>" : "<a href=\"/?q=" + k + "\">" + k + " kHz</a>"; }).join("") + "</div>";
+  var grid = "<div class=\"grid\">" + stnsSorted.slice(0, 24).map(function (n) { return (stationSlug[n] && byStation[n].length >= MIN_STATION_ENTRIES ? "<a href=\"/stations/" + stationSlug[n] + "/\">" : "<a href=\"/?q=" + encodeURIComponent(n) + "\">") + esc(n) + "<span>" + stnCounts[n] + " scheduled transmission" + (stnCounts[n] === 1 ? "" : "s") + "</span></a>"; }).join("") + "</div>";
+  var sched = segSchedTable(rows, 100);
+  var schedNote = sched.total > sched.shown ? "<p>Showing the first " + sched.shown + " of " + sched.total + " transmissions, sorted by start time. Open a station or frequency page for its complete schedule.</p>" : "";
+  var faq = [
+    ["Which shortwave stations broadcast " + what + "?", "In the " + SEASON.label + " schedule, " + nS + " stations broadcast " + what + ". The most heavily scheduled include " + stnsSorted.slice(0, 4).join(", ") + "."],
+    ["What frequencies are used for shortwave broadcasts " + what + "?", "The most-used frequencies are " + freqsSorted.slice(0, 5).join(", ") + " kHz. Which one is best depends on the time of day, the season and your location."],
+    ["How can I listen without a shortwave radio?", "Use a free WebSDR or KiwiSDR receiver in your browser. Our Listen Online page links to receivers and explains how to tune. Schedules are in UTC, so convert to your local time first."]
+  ];
+  var body = lede + onair
+    + "<h2>Most-Used Frequencies</h2>" + topFTags
+    + "<h2>" + (isLang ? name + " Stations" : "Stations Aimed at " + name) + "</h2>" + grid
+    + "<h2>Full Schedule (UTC)</h2>" + sched.html + schedNote
+    + seoFaqHtml(faq) + seoFaqLd(faq)
+    + "<p><a class=\"cta\" href=\"/listen-online/\">Listen online free — no radio needed</a></p>"
+    + segBrowseHtml(12)
+    + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
+  var title = isLang ? "Shortwave Radio in " + name + " — Stations & Frequencies (2026) | ShortwaveHQ" : "Shortwave Radio to " + name + " — Frequencies & Times (2026) | ShortwaveHQ";
+  var desc = isLang ? "Shortwave radio stations broadcasting in " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily."
+    : "Shortwave radio stations aimed at " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily.";
+  write((isLang ? "languages/" : "regions/") + sl + "/index.html", shell({
+    title: title, desc: desc, canonical: base + sl + "/", kicker: (isLang ? "Shortwave by Language" : "Shortwave by Target Region") + " · EIBI " + SEASON.label,
+    h1: isLang ? "Shortwave Radio in <span style=\"color:#c0392b\">" + esc(name) + "</span>" : "Shortwave Radio to <span style=\"color:#c0392b\">" + esc(name) + "</span>",
+    bodyHtml: body,
+    breadcrumbs: [["Home", "/"], [isLang ? "Languages" : "Regions", base], [name, base + sl + "/"]]
+  }));
+  urls.push(base + sl + "/");
+  return { nS: nS, nF: nF };
+}
+var segLangBuilt = 0, segRegBuilt = 0, langIdx = "", regIdx = "";
+SEG.langList.forEach(function (L) { var o = segPage("language", L, SEG.langs[L]); segLangBuilt++; langIdx += "<a href=\"/languages/" + slug(L) + "/\">" + esc(L) + "<span>" + o.nS + " stations · " + o.nF + " frequencies</span></a>"; });
+SEG.regList.forEach(function (R) { var o = segPage("region", R, SEG.regs[R]); segRegBuilt++; regIdx += "<a href=\"/regions/" + slug(R) + "/\">To " + esc(R) + "<span>" + o.nS + " stations · " + o.nF + " frequencies</span></a>"; });
+if (segLangBuilt) {
+  write("languages/index.html", shell({
+    title: "Shortwave Radio by Language — English, Spanish, Chinese & More (2026) | ShortwaveHQ",
+    desc: "Browse shortwave radio stations by broadcast language. Pick a language to see which stations are on the air, their frequencies and UTC schedules for 2026.",
+    canonical: "/languages/", kicker: "Directory · " + segLangBuilt + " Languages",
+    h1: "Shortwave Radio by <span style=\"color:#c0392b\">Language</span>",
+    bodyHtml: "<p class=\"lede\">Every language with regular shortwave broadcasts in the " + SEASON.label + " schedule, each with its stations, frequencies and who is on the air now.</p><div class=\"grid\">" + langIdx + "</div>",
+    breadcrumbs: [["Home", "/"], ["Languages", "/languages/"]]
+  }));
+  urls.push("/languages/");
+}
+if (segRegBuilt) {
+  write("regions/index.html", shell({
+    title: "Shortwave Radio by Target Region — North America, Europe, Asia & More | ShortwaveHQ",
+    desc: "Find shortwave broadcasts aimed at your part of the world. Pick a region to see stations, frequencies and UTC times targeting North America, Europe, Africa, Asia and more.",
+    canonical: "/regions/", kicker: "Directory · " + segRegBuilt + " Regions",
+    h1: "Shortwave Radio by <span style=\"color:#c0392b\">Target Region</span>",
+    bodyHtml: "<p class=\"lede\">Stations aim their transmitters at specific parts of the world. Pick the region you are listening from to see the broadcasts aimed your way.</p><div class=\"grid\">" + regIdx + "</div>",
+    breadcrumbs: [["Home", "/"], ["Regions", "/regions/"]]
+  }));
+  urls.push("/regions/");
+}
+console.log("Generated " + segLangBuilt + " language pages and " + segRegBuilt + " region pages");
+if (SEG.langList.indexOf("English") < 0) console.warn("WARNING: no English language page generated (homepage footer links /languages/english/)");
+
+// ── Embeddable "On Air Now" widget ────────────────────────────────
+// /embed/on-air/ is a standalone, noindex iframe page. It computes who is on
+// air in the visitor's browser from /data/schedule.json (same file the main
+// app uses), so it is live, not a build-time snapshot.
+var EMBED_STN = {};
+Object.keys(stationSlug).forEach(function (n) { if (byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) EMBED_STN[n] = stationSlug[n]; });
+var EMBED_PAGE = "<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Shortwave On Air Now — ShortwaveHQ widget</title>\n<meta name=\"robots\" content=\"noindex,follow\">\n<link rel=\"canonical\" href=\"" + SITE + "/embed/\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nhtml,body{max-width:100%;overflow-x:hidden}\nbody{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.4;background:#fff;color:#0a0b0e}\nbody.dark{background:#0d1422;color:#e8ecf4}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 12px;background:#0a0b0e;border-bottom:3px solid #c0392b;color:#fff}\n.hd b{font-size:13px;letter-spacing:.02em}\n.hd span{font:11px ui-monospace,Menlo,Consolas,monospace;color:rgba(255,255,255,.7);white-space:nowrap}\nul{list-style:none}\nli{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;border-bottom:1px solid #e2dbd0}\nbody.dark li{border-color:rgba(255,255,255,.12)}\nli a{color:inherit;text-decoration:none;font-weight:600;min-width:0;overflow-wrap:anywhere}\nli a:hover{text-decoration:underline}\nli small{display:block;font-weight:400;font-size:11px;color:#6b5f52}\nbody.dark li small{color:#9fb0c8}\nli em{font:600 12px ui-monospace,Menlo,Consolas,monospace;font-style:normal;color:#c0392b;white-space:nowrap}\nbody.dark li em{color:#ff7a68}\n.ft{padding:8px 12px;font-size:11px;color:#6b5f52;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}\nbody.dark .ft{color:#9fb0c8}\n.ft a{color:#c0392b;font-weight:600;text-decoration:none}\nbody.dark .ft a{color:#ff7a68}\n.msg{padding:14px 12px;color:#6b5f52}\n</style></head>\n<body>\n<div class=\"hd\"><b>📡 Shortwave On Air Now</b><span id=\"clk\">--:-- UTC</span></div>\n<ul id=\"list\"><li><span class=\"msg\">Loading…</span></li></ul>\n<div class=\"ft\"><span id=\"cnt\"></span><a href=\"" + SITE + "/listen-online/\" target=\"_blank\" rel=\"noopener\">Powered by ShortwaveHQ</a></div>\n<script>\n(function(){\nvar q=new URLSearchParams(location.search);\nvar N=Math.max(1,Math.min(25,parseInt(q.get('n'),10)||8));\nvar LANG=(q.get('lang')||'').trim().toLowerCase();\nvar REG=(q.get('region')||'').trim().toLowerCase();\nif(q.get('theme')==='dark')document.body.className='dark';\nvar STN=" + JSON.stringify(EMBED_STN) + ";\nfunction pad(n){return n<10?'0'+n:''+n;}\nfunction act(s,e,m){if(e>=1440)return m>=s||m<e-1440;if(e<s)return m>=s||m<e;return s<=m&&m<e;}\nfunction until(r){if(r.s===0&&r.e>=1440)return 'all day';var e=r.e>=1440?r.e-1440:r.e;return 'until '+pad(Math.floor(e/60))+pad(e%60)+'z';}\nfunction render(rows){\n var d=new Date(),m=d.getUTCHours()*60+d.getUTCMinutes();\n document.getElementById('clk').textContent=pad(d.getUTCHours())+':'+pad(d.getUTCMinutes())+' UTC';\n var seen={},out=[];\n for(var i=0;i<rows.length;i++){var r=rows[i];if(!r||!r.stn||!r.freq)continue;\n  if(LANG&&String(r.lang||'').toLowerCase()!==LANG)continue;\n  if(REG&&String(r.reg||'').toLowerCase()!==REG)continue;\n  if(!act(r.s,r.e,m))continue;\n  var fq=parseFloat(r.freq);if(!isNaN(fq)&&fq<100)fq=Math.round(fq*1000);var k=r.stn+'|'+fq;if(seen[k])continue;seen[k]=1;out.push(r);}\n out.sort(function(a,b){var ae=a.lang==='English'?0:1,be=b.lang==='English'?0:1;return ae-be||(a.stn<b.stn?-1:a.stn>b.stn?1:0);});\n var ul=document.getElementById('list');ul.innerHTML='';\n if(!out.length){var li=document.createElement('li');li.innerHTML='<span class=\"msg\">Nothing matching is scheduled right now.</span>';ul.appendChild(li);}\n out.slice(0,N).forEach(function(r){\n  var li=document.createElement('li'),a=document.createElement('a'),sm=document.createElement('small'),em=document.createElement('em'),w=document.createElement('div');\n  a.href=STN[r.stn]?'/stations/'+STN[r.stn]+'/':'/?q='+encodeURIComponent(r.stn);a.target='_blank';a.rel='noopener';a.textContent=r.stn;\n  sm.textContent=(r.lang||'')+(r.tgt?' → '+r.tgt:'')+' · '+until(r);\n  w.appendChild(a);w.appendChild(sm);\n  var f=parseFloat(r.freq);if(!isNaN(f)&&f<100)f=Math.round(f*1000);em.textContent=(isNaN(f)?r.freq:f)+' kHz';\n  li.appendChild(w);li.appendChild(em);ul.appendChild(li);});\n document.getElementById('cnt').textContent=out.length+' broadcast'+(out.length===1?'':'s')+' on air';\n}\nfetch('/data/schedule.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(j){\n var rows=Array.isArray(j)?j:(j.sch||[]);window.__rows=rows;render(rows);setInterval(function(){render(rows);},60000);\n}).catch(function(){document.getElementById('list').innerHTML='<li><span class=\"msg\">Schedule unavailable. Open <a href=\"'+SITE+'/listen-online/\" target=\"_blank\" rel=\"noopener\">ShortwaveHQ</a>.</span></li>';});\n})();\n</script>\n</body></html>";
+write("embed/on-air/index.html", EMBED_PAGE);
+
+(function () {
+  var code = "<iframe src=\"" + SITE + "/embed/on-air/\" width=\"100%\" height=\"420\" style=\"border:1px solid #c8c0b0;max-width:480px\" loading=\"lazy\" title=\"Shortwave radio stations on air now\"></iframe>";
+  var codeDark = "<iframe src=\"" + SITE + "/embed/on-air/?theme=dark&n=10\" width=\"100%\" height=\"480\" style=\"border:0;max-width:480px\" loading=\"lazy\" title=\"Shortwave radio stations on air now\"></iframe>";
+  var codeLang = "<iframe src=\"" + SITE + "/embed/on-air/?lang=English&n=6\" width=\"100%\" height=\"340\" style=\"border:0;max-width:480px\" loading=\"lazy\" title=\"English shortwave broadcasts on air now\"></iframe>";
+  var linkCode = "<a href=\"" + SITE + "/listen-online/\">Shortwave radio on air now — ShortwaveHQ</a>";
+  function pre(c) { return "<pre style=\"background:#fff;border:1px solid #c8c0b0;padding:10px;overflow-x:auto;font-size:.72rem;white-space:pre-wrap;word-break:break-all\">" + esc(c) + "</pre>"; }
+  var body = "<p class=\"lede\">Add a free, live <strong>shortwave “on air now” widget</strong> to your radio blog, club page or forum signature. It shows which international broadcasters are on the air this minute (UTC), with frequencies, and updates by itself. No account, no cost, no script to install.</p>"
+    + "<h2>Live preview</h2><iframe src=\"/embed/on-air/\" width=\"100%\" height=\"420\" style=\"border:1px solid #c8c0b0;max-width:480px;display:block\" title=\"Shortwave on air now preview\"></iframe>"
+    + "<h2>Copy this code</h2>" + pre(code)
+    + "<h2>Options</h2><p>Add these to the end of the <code>src</code> address.</p><table><tr><th>Option</th><th>What it does</th><th>Example</th></tr>"
+    + "<tr><td>n</td><td>Number of rows (1–25, default 8)</td><td>?n=10</td></tr>"
+    + "<tr><td>lang</td><td>Only one broadcast language</td><td>?lang=Spanish</td></tr>"
+    + "<tr><td>region</td><td>Only broadcasts aimed at one region</td><td>?region=Europe</td></tr>"
+    + "<tr><td>theme</td><td>Dark background</td><td>?theme=dark</td></tr></table>"
+    + "<h2>Dark theme, 10 rows</h2>" + pre(codeDark)
+    + "<h2>English only, 6 rows</h2>" + pre(codeLang)
+    + "<h2>Prefer a plain link?</h2><p>If you cannot embed iframes, link straight to the live page:</p>" + pre(linkCode)
+    + "<h2>How it works</h2><p>Schedules come from the EIBI broadcast database for the " + esc(SEASON.label) + " season and refresh daily. The widget compares each broadcast’s UTC start and end with the current UTC time in your visitor’s browser. Station names link to their full schedules on ShortwaveHQ. Please keep the “Powered by ShortwaveHQ” link visible.</p>"
+    + "<p><a class=\"cta\" href=\"/listen-online/\">See everything on air now</a><a class=\"cta o\" href=\"/stations/\">Browse all stations</a></p>";
+  write("embed/index.html", shell({
+    title: "Free Shortwave Radio Widget — Live “On Air Now” Embed | ShortwaveHQ",
+    desc: "Embed a free live shortwave radio “on air now” widget on your website. Copy-paste iframe, no account needed, updates automatically in UTC.",
+    canonical: "/embed/", kicker: "Free Tool · Embed",
+    h1: "Free Shortwave <span style=\"color:#c0392b\">On Air Now</span> Widget",
+    bodyHtml: body,
+    breadcrumbs: [["Home", "/"], ["Embed Widget", "/embed/"]]
+  }));
+  urls.push("/embed/");
+})();
+
 // ── Shortwave Radio Articles ──────────────────────────────────────
 var ARTICLES = [
   {
@@ -1371,6 +1538,7 @@ var ST_FAQ = [
   ["Can I listen to these stations without a radio?", "Yes. Use a free WebSDR or KiwiSDR receiver in your browser \u2014 see our Listen Online page for links and tuning steps."]
 ];
 stIdx = stIdx.replace("</p>", "</p>" + ST_ONAIR.html + "<p><a class=\"cta\" href=\"/listen-online/\">Listen to shortwave radio online free</a></p>");
+stIdx += segBrowseHtml(12);
 stIdx += seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ);
 write("stations/index.html", shell({
   title: "Shortwave Radio Stations On Air Now \u2014 Live List (2026) | ShortwaveHQ",
@@ -1422,6 +1590,40 @@ write("bands/index.html", shell({
 }));
 urls.push("/bands/");
 
+// ── Homepage static content block (crawler / AI-bot readable) ─────
+// The SPA shell is mostly JS-rendered. This injects real, build-time facts
+// as plain HTML into the static SEO footer of dist/index.html.
+(function () {
+  var ip = path.join(OUT, "index.html");
+  if (!fs.existsSync(ip)) return;
+  var h = fs.readFileSync(ip, "utf8");
+  var m0 = "<!--SEOFACTS-->", m1 = "<!--/SEOFACTS-->";
+  var a = h.indexOf(m0), b = h.indexOf(m1);
+  if (a < 0 || b < a) { console.warn("WARNING: SEOFACTS markers not found in index.html; homepage facts block skipped"); return; }
+  var allStn = uniq(SCH.filter(function (r) { return r && r.stn && !isPlaceholder(r.stn); }).map(function (r) { return r.stn; }));
+  var allFreq = uniq(SCH.filter(function (r) { return r && r.freq; }).map(function (r) { return String(kHz(r.freq)); }));
+  var oa = onAirNowRows(10);
+  var fs1 = "font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9";
+  var lk = "color:rgba(255,255,255,.9)";
+  var x = "<section style=\"max-width:820px;margin:0 0 1.8rem\">"
+    + "<h2 style=\"font-family:'Syne',sans-serif;color:#fff;font-size:1rem;font-weight:800;margin-bottom:.6rem\">What is ShortwaveHQ?</h2>"
+    + "<p style=\"" + fs1 + ";margin-bottom:.8rem\">ShortwaveHQ is a free, independent shortwave radio schedule search and directory. It lists <strong>" + allStn.length + " stations</strong> broadcasting on <strong>" + allFreq.length + " frequencies</strong> in the <strong>" + esc(SEASON.label) + "</strong> season (" + esc(String(SEASON.valid).replace(/^Valid /, "valid ")) + "), built from the public EIBI broadcast schedule and refreshed daily. Every schedule time is in UTC. Search by frequency, station, language or target region, check who is on the air right now, and open any broadcast on a free online receiver (WebSDR or KiwiSDR) without owning a radio.</p>"
+    + "<p style=\"" + fs1 + ";margin-bottom:.8rem\">Schedules show what stations plan to transmit. Actual reception depends on your location, the time of day and current propagation, and stations can change plans without notice, so treat the data as a guide and verify against each station’s own announcements.</p>";
+  if (oa.rows.length) {
+    x += "<h3 style=\"font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.4rem 0 .4rem\">On the air at the last daily update (" + BUILD_NOW_LABEL + ")</h3><p style=\"" + fs1 + "\">"
+      + oa.rows.map(function (r) { return stnLinkHtml(r.stn).replace("<a ", "<a style=\"" + lk + "\" ") + " " + kHz(r.freq) + " kHz (" + esc(r.lang || "mixed") + ")"; }).join(" · ")
+      + " — <a style=\"" + lk + "\" href=\"/listen-online/\">full live list</a></p>";
+  }
+  if (SEG.langList.length) {
+    x += "<h3 style=\"font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.8rem 0 .4rem\">Shortwave by language</h3><p style=\"" + fs1 + "\">"
+      + SEG.langList.slice(0, 12).map(function (L) { return "<a style=\"" + lk + "\" href=\"/languages/" + slug(L) + "/\">" + esc(L) + "</a>"; }).join(" · ") + " · <a style=\"" + lk + "\" href=\"/languages/\">all languages</a></p>";
+  }
+  x += "<p style=\"" + fs1 + ";margin-top:.8rem\"><a style=\"" + lk + "\" href=\"/embed/\">Free “on air now” widget for your own site</a></p></section>";
+  h = h.slice(0, a + m0.length) + x + h.slice(b);
+  fs.writeFileSync(ip, h);
+  console.log("Injected homepage facts block (" + allStn.length + " stations, " + allFreq.length + " frequencies)");
+})();
+
 // ── 10. Sitemap + robots ─────────────────────────────────────────
 var sm = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 for (var u = 0; u < urls.length; u++) {
@@ -1438,5 +1640,28 @@ write("robots.txt", "User-agent: *\nAllow: /\n\n" +
   "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
   "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
   "Sitemap: " + SITE + "/sitemap.xml\n");
+
+// ── 11. IndexNow (Bing, Yandex, Seznam, Naver) ───────────────────
+// Key file lives at /<key>.txt. The ping runs only inside the GitHub Action
+// (or when INDEXNOW=1), never on local builds, and can never fail the build.
+var INDEXNOW_KEY = "7c1e9a4b52d84f3a9e06b8d1c3f5a2e7";
+write(INDEXNOW_KEY + ".txt", INDEXNOW_KEY);
+(function () {
+  var on = process.env.INDEXNOW === "1" || (process.env.GITHUB_ACTIONS === "true" && process.env.INDEXNOW !== "0");
+  if (!on) { console.log("IndexNow: skipped (set INDEXNOW=1 to force; runs automatically in GitHub Actions)"); return; }
+  try {
+    var https = require("https");
+    var list = urls.map(function (u) { return SITE + u; }).slice(0, 10000);
+    var payload = JSON.stringify({ host: SITE.replace(/^https?:\/\//, ""), key: INDEXNOW_KEY, keyLocation: SITE + "/" + INDEXNOW_KEY + ".txt", urlList: list });
+    var req = https.request({ hostname: "api.indexnow.org", path: "/indexnow", method: "POST", timeout: 15000,
+      headers: { "Content-Type": "application/json; charset=utf-8", "Content-Length": Buffer.byteLength(payload) } }, function (res) {
+      console.log("IndexNow: submitted " + list.length + " URLs, HTTP " + res.statusCode);
+      res.resume();
+    });
+    req.on("timeout", function () { console.log("IndexNow: timed out (ignored)"); req.destroy(); });
+    req.on("error", function (e) { console.log("IndexNow: failed (ignored): " + e.message); });
+    req.write(payload); req.end();
+  } catch (e) { console.log("IndexNow: error (ignored): " + e.message); }
+})();
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
