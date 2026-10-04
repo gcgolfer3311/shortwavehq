@@ -502,7 +502,7 @@ try {
   if (ppj && ppj.sfi) PROP.sfi = ppj.sfi;
   if (ppj && ppj.k != null) PROP.k = ppj.k;
   var ppAge = ppj && ppj.updated_utc ? (Date.now() - Date.parse(String(ppj.updated_utc).replace(" ", "T") + (/Z$/.test(String(ppj.updated_utc)) ? "" : "Z"))) / 3600000 : NaN;
-  if (ppj && ppj.live === true && ppj.sfi && ppj.k != null && ppAge < 36) PROP.live = true;
+  if (ppj && ppj.sfi && ppj.k != null && ppAge < 36) PROP.live = true;
 } catch (e) { /* neutral defaults */ }
 (function () {
   var f = curlJson("https://services.swpc.noaa.gov/products/summary/10cm-flux.json");
@@ -873,9 +873,7 @@ var SEG = (function () {
     var r = SCH[i];
     if (!r || !r.stn || isPlaceholder(r.stn)) continue;
     var L = r.lang || "";
-    // Skip raw EIBI codes that the updater has not mapped to a language name (SO, TIG, ML, SHA, BSL ...)
-    var isCode = /^[A-Z0-9\-\/]+$/.test(L) || L === "Ros";
-    if (!SEG_SKIP_LANG[L] && !isCode) (langs[L] = langs[L] || []).push(r);
+    if (!SEG_SKIP_LANG[L]) (langs[L] = langs[L] || []).push(r);
     var R = r.reg;
     if (R && R !== "Worldwide") (regs[R] = regs[R] || []).push(r);
   }
@@ -1654,5 +1652,28 @@ write("robots.txt", "User-agent: *\nAllow: /\n\n" +
   "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
   "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
   "Sitemap: " + SITE + "/sitemap.xml\n");
+
+// ── 11. IndexNow (Bing, Yandex, Seznam, Naver) ───────────────────
+// Key file lives at /<key>.txt. The ping runs only inside the GitHub Action
+// (or when INDEXNOW=1), never on local builds, and can never fail the build.
+var INDEXNOW_KEY = "7c1e9a4b52d84f3a9e06b8d1c3f5a2e7";
+write(INDEXNOW_KEY + ".txt", INDEXNOW_KEY);
+(function () {
+  var on = process.env.INDEXNOW === "1" || (process.env.GITHUB_ACTIONS === "true" && process.env.INDEXNOW !== "0");
+  if (!on) { console.log("IndexNow: skipped (set INDEXNOW=1 to force; runs automatically in GitHub Actions)"); return; }
+  try {
+    var https = require("https");
+    var list = urls.map(function (u) { return SITE + u; }).slice(0, 10000);
+    var payload = JSON.stringify({ host: SITE.replace(/^https?:\/\//, ""), key: INDEXNOW_KEY, keyLocation: SITE + "/" + INDEXNOW_KEY + ".txt", urlList: list });
+    var req = https.request({ hostname: "api.indexnow.org", path: "/indexnow", method: "POST", timeout: 15000,
+      headers: { "Content-Type": "application/json; charset=utf-8", "Content-Length": Buffer.byteLength(payload) } }, function (res) {
+      console.log("IndexNow: submitted " + list.length + " URLs, HTTP " + res.statusCode);
+      res.resume();
+    });
+    req.on("timeout", function () { console.log("IndexNow: timed out (ignored)"); req.destroy(); });
+    req.on("error", function (e) { console.log("IndexNow: failed (ignored): " + e.message); });
+    req.write(payload); req.end();
+  } catch (e) { console.log("IndexNow: error (ignored): " + e.message); }
+})();
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
