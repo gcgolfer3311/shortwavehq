@@ -299,7 +299,7 @@ function shell(opts) {
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"en\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"" + (opts.lang || "en") + "\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n" + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 function write(rel, content) {
@@ -1262,8 +1262,8 @@ var nsBody = "<p class=\"lede\">Tune across the shortwave bands at the right hou
   + "<h2>Who's Actually Behind Them?</h2><p>Intelligence agencies are the widely accepted explanation, and it's one of the rare conspiracy-adjacent theories with real, documented backing. Numbers stations are believed to transmit one-time-pad encoded messages to field agents \u2014 a system that's actually unbreakable if used correctly, because the encryption key is used only once and never reused. Several governments, including the US, UK, Cuba, and Russia, have been linked to specific stations over the decades, though none officially confirm it.</p>"
   + "<h2>Famous Numbers Stations</h2><p>Hobbyists identify numbers stations with the ENIGMA 2000 system: <strong>E</strong> for English voice, <strong>S</strong> for Slavic languages, <strong>V</strong> for other languages and <strong>M</strong> for Morse. A few are legendary. The <strong>Lincolnshire Poacher</strong> (E03), a British station named after the folk tune it played between messages, went silent in 2008. <strong>UVB-76 \u201cThe Buzzer\u201d</strong> on 4625 kHz, a Russian military channel, has sent a near-continuous buzzing tone since the Cold War, occasionally interrupted by cryptic voice messages.</p>"
   + nsLiveHtml
-  + "<h2>How to Find and Listen to Them</h2><p>Numbers stations don't publish official schedules \u2014 everything known about their timing comes from decades of hobbyist logging. Check our <a href=\"/\">live tracker</a> for currently scheduled transmissions, or browse frequencies directly on our <a href=\"/frequency/\">frequency list</a>. Any basic shortwave radio can pick these up; no special equipment is needed, just patience and the right time of day.</p>"
-  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/listen-online/\">Listen Online Now</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a></div>";
+  + "<h2>How to Find and Listen to Them</h2><p>Numbers stations don't publish official schedules \u2014 everything known about their timing comes from decades of hobbyist logging. See the full <a href=\"/numbers-stations-list/\">numbers stations frequency list</a>, check our <a href=\"/\">live tracker</a> for currently scheduled transmissions, or browse frequencies directly on our <a href=\"/frequency/\">frequency list</a>. Any basic shortwave radio can pick these up; no special equipment is needed, just patience and the right time of day.</p>"
+  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/numbers-stations-list/\">Numbers Station Frequency List</a><a href=\"/stations/\">All Stations</a><a href=\"/listen-online/\">Listen Online Now</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a></div>";
 write("numbers-stations-explained/index.html", shell({
   title: "Numbers Stations Explained \u2014 What They Are & How to Find Them | ShortwaveHQ",
   desc: "What are numbers stations, who really broadcasts them, and how to find them: the Lincolnshire Poacher, UVB-76 \u201cThe Buzzer\u201d, and the numbers stations on the shortwave schedule right now.",
@@ -1414,7 +1414,7 @@ function segPage(kind, name, rows) {
     + seoFaqHtml(faq) + seoFaqLd(faq)
     + "<p><a class=\"cta\" href=\"/listen-online/\">Listen online free — no radio needed</a></p>"
     + segBrowseHtml(12)
-    + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
+    + "<h2>Browse More</h2><div class=\"tags\">" + (isLang && name === "Japanese" ? "<a href=\"/ja/\">日本語ページ：短波放送 周波数一覧</a>" : "") + "<a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
   var title = isLang ? "Shortwave Radio in " + name + " — Stations & Frequencies (2026) | ShortwaveHQ" : "Shortwave Radio to " + name + " — Frequencies & Times (2026) | ShortwaveHQ";
   var desc = isLang ? "Shortwave radio stations broadcasting in " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily."
     : "Shortwave radio stations aimed at " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily.";
@@ -1454,6 +1454,218 @@ if (segRegBuilt) {
 }
 console.log("Generated " + segLangBuilt + " language pages and " + segRegBuilt + " region pages");
 if (SEG.langList.indexOf("English") < 0) console.warn("WARNING: no English language page generated (homepage footer links /languages/english/)");
+
+// ── Japanese-language landing page (/ja/) ─────────────────────────
+// Bing AI citations show steady demand from Japanese-language shortwave
+// searches. All rows come from the same schedule data as the English
+// language pages (SEG.langs.Japanese); only the wrapper text is Japanese.
+var JA_BUILT = false;
+(function () {
+  var JR = (SEG.langs && SEG.langs["Japanese"]) || [];
+  if (SEG.langList.indexOf("Japanese") < 0 || JR.length < 6) return;
+  var JA_NAME = {
+    "NHK Radio Japan": "NHKワールド・ラジオ日本", "Radio Nikkei 1": "ラジオNIKKEI第1", "Radio Nikkei 2": "ラジオNIKKEI第2",
+    "China Radio International": "中国国際放送(CRI)", "KBS World Radio": "KBSワールドラジオ", "Voice of Korea": "朝鮮の声放送",
+    "Radio Taiwan International": "台湾国際放送(RTI)", "Voice of Vietnam": "ベトナムの声放送(VOV)",
+    "Voice of Indonesia": "インドネシア共和国放送(VOI)", "Shiokaze": "しおかぜ", "Furusato no Kaze": "ふるさとの風"
+  };
+  var JA_TGT = { "Japan": "日本", "Far East": "極東", "Korea": "朝鮮半島", "Middle East": "中東", "Indonesia": "インドネシア", "SE Asia": "東南アジア", "Pacific": "太平洋", "South Asia": "南アジア", "S. Africa": "南アフリカ", "As": "アジア", "Siberia": "シベリア", "South America": "南米", "W. Africa": "西アフリカ", "Central America": "中央アメリカ", "CAf": "中央アフリカ" };
+  function jaN(n) { return JA_NAME[n] ? JA_NAME[n] + "（" + n + "）" : n; }
+  function jaNPlain(n) { return JA_NAME[n] || n; }
+  function jaLink(n) {
+    var label = esc(jaN(n));
+    return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[n] + "/'>" + label + "</a>" : label;
+  }
+  function tm(m) { m = ((m % 1440) + 1440) % 1440; return pad(Math.floor(m / 60)) + ":" + pad(m % 60); }
+  function utcWin(r) { return (r.s === 0 && r.e >= 1440) ? "24時間" : tm(r.s) + "–" + tm(r.e); }
+  function jstWin(r) {
+    if (r.s === 0 && r.e >= 1440) return "24時間";
+    return tm(r.s + 540) + "–" + tm(r.e + 540) + ((r.s + 540) >= 1440 ? "（翌日）" : "");
+  }
+  function jaTgt(t) { return JA_TGT[t] || t || "—"; }
+  var cnt = {}, fcnt = {};
+  JR.forEach(function (r) { cnt[r.stn] = (cnt[r.stn] || 0) + 1; var k = String(kHz(r.freq)); fcnt[k] = (fcnt[k] || 0) + 1; });
+  var stns = Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a] || (a < b ? -1 : 1); });
+  var freqs = Object.keys(fcnt).sort(function (a, b) { return fcnt[b] - fcnt[a] || a - b; });
+  var nS = stns.length, nF = freqs.length;
+  var yr = BUILD_NOW.getUTCFullYear();
+  var hh = BUILD_NOW.getUTCHours(), mm = BUILD_NOW.getUTCMinutes();
+  var jpNow = BUILD_NOW.getUTCFullYear() + "年" + (BUILD_NOW.getUTCMonth() + 1) + "月" + BUILD_NOW.getUTCDate() + "日 " + pad(hh) + ":" + pad(mm) + " UTC（日本時間 " + pad((hh + 9) % 24) + ":" + pad(mm) + (hh + 9 >= 24 ? "、翌日" : "") + "）";
+
+  var body = "<p class='lede'>" + SEASON.label + " の放送予定表では、<strong>" + nS + "局</strong>が<strong>" + nF + "の周波数</strong>で日本語の短波放送を行っています。このページでは、日本語で聞ける短波放送の周波数一覧、放送時間（UTC と日本時間）、現在放送中の局をまとめています。データは公開されている EIBI の放送予定表をもとに毎日更新しています。</p>";
+
+  // on air now
+  var seenA = {}, act = [];
+  JR.forEach(function (r) {
+    if (!isActiveWindow(r.s, r.e, BUILD_NOW_MIN)) return;
+    var k = r.stn + "|" + kHz(r.freq); if (seenA[k]) return; seenA[k] = 1; act.push(r);
+  });
+  act.sort(function (a, b) { return a.stn < b.stn ? -1 : a.stn > b.stn ? 1 : kHz(a.freq) - kHz(b.freq); });
+  body += "<h2>現在放送中の日本語短波放送</h2>";
+  if (act.length) {
+    body += "<p>" + jpNow + " 時点で、日本語放送の " + act.length + " 件が放送予定の時間帯です（毎日再生成。リアルタイムの状況は<a href='/'>ライブ検索</a>で確認できます）。</p><table><tr><th>放送局</th><th>周波数</th><th>放送終了（UTC）</th></tr>";
+    act.slice(0, 15).forEach(function (r) {
+      body += "<tr><td>" + jaLink(r.stn) + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + (r.s === 0 && r.e >= 1440 ? "24時間" : tm(r.e)) + "</td></tr>";
+    });
+    body += "</table>";
+  } else {
+    body += "<p>" + jpNow + " 時点では、日本語の短波放送は放送予定の時間帯にありません。下の一覧で次の放送時間を確認してください。</p>";
+  }
+
+  // main frequency list (all Japanese rows)
+  var order = {}; stns.forEach(function (n, i) { order[n] = i; });
+  var seenR = {}, uniqRows = [];
+  JR.slice().sort(function (a, b) { return order[a.stn] - order[b.stn] || a.s - b.s || kHz(a.freq) - kHz(b.freq); }).forEach(function (r) {
+    var k = r.stn + "|" + r.freq + "|" + r.s + "|" + r.e; if (seenR[k]) return; seenR[k] = 1; uniqRows.push(r);
+  });
+  body += "<h2>日本語短波放送 周波数一覧</h2><p>放送局ごとの周波数と放送時間です。UTC（協定世界時）に 9 時間を足すと日本時間（JST）になります。</p><table><tr><th>放送局</th><th>周波数</th><th>時間（UTC）</th><th>日本時間（JST）</th><th>対象地域</th></tr>";
+  uniqRows.forEach(function (r) {
+    body += "<tr><td>" + jaLink(r.stn) + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + utcWin(r) + "</td><td>" + jstWin(r) + "</td><td>" + esc(jaTgt(r.tgt)) + "</td></tr>";
+  });
+  body += "</table>";
+
+  // Radio Nikkei (domestic, transmitted from Japan)
+  var NR = SCH.filter(function (r) { return r && /^Radio Nikkei/.test(r.stn || ""); });
+  var nikkeiFreqs = [];
+  if (NR.length) {
+    var seenN = {}, nrows = [];
+    NR.slice().sort(function (a, b) { return (a.stn < b.stn ? -1 : a.stn > b.stn ? 1 : 0) || a.s - b.s || kHz(a.freq) - kHz(b.freq); }).forEach(function (r) {
+      var k = r.stn + "|" + r.freq + "|" + r.s + "|" + r.e; if (seenN[k]) return; seenN[k] = 1; nrows.push(r);
+    });
+    nikkeiFreqs = uniq(nrows.map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+    body += "<h2>日本国内の短波放送（ラジオNIKKEI）</h2><p>ラジオNIKKEI第1・第2は日本から送信される日本語の短波放送です。放送予定表に載っている周波数と時間は次のとおりです。</p><table><tr><th>放送局</th><th>周波数</th><th>時間（UTC）</th><th>日本時間（JST）</th></tr>";
+    nrows.forEach(function (r) {
+      body += "<tr><td>" + jaLink(r.stn) + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + utcWin(r) + "</td><td>" + jstWin(r) + "</td></tr>";
+    });
+    body += "</table>";
+  }
+
+  // most used frequencies
+  body += "<h2>よく使われる周波数</h2><div class='tags'>" + freqs.slice(0, 12).sort(function (x, y) { return x - y; }).map(function (k) { return (byFreq[k] && byFreq[k].length >= MIN_FREQ_ENTRIES) ? "<a href='/frequency/" + k + "-khz/'>" + k + " kHz</a>" : "<a href='/?q=" + k + "'>" + k + " kHz</a>"; }).join("") + "</div>";
+
+  // station grid
+  body += "<h2>日本語放送を行っている放送局</h2><div class='grid'>" + stns.map(function (n) {
+    var href = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "/?q=" + encodeURIComponent(n);
+    return "<a href='" + href + "'>" + esc(jaNPlain(n)) + "<span>" + esc(n) + " · " + cnt[n] + "件</span></a>";
+  }).join("") + "</div>";
+
+  // how to listen (general guidance)
+  body += "<h2>日本で短波放送を聞くコツ</h2>"
+    + "<p>短波放送は時間帯と季節によって聞こえやすい周波数が変わります。一般に、昼間は 15〜21MHz 帯（19・16・13メートルバンド）、夕方から夜は 9〜11MHz 帯、夜から早朝は 3〜7MHz 帯（49・60・75メートルバンド）が使われます。実際の受信状況は太陽活動や受信場所によって変わるため、放送予定はあくまで目安です。</p>"
+    + "<p>放送時間は UTC で表記されています。日本時間（JST）は UTC + 9 時間です。たとえば UTC 12:00 は日本時間 21:00 です。</p>";
+
+  var faq = [
+    ["日本語で聞ける短波放送の周波数は？", SEASON.label + " の放送予定表では " + nS + " 局が日本語で放送しており、特に多く使われている周波数は " + freqs.slice(0, 5).join("、") + " kHz です。時間帯と季節によって聞こえやすい周波数は変わります。"],
+    ["日本語の短波放送を行っている放送局は？", "放送予定表で日本語放送の件数が多い局は、" + stns.slice(0, 6).map(jaNPlain).join("、") + " などです。"],
+    ["UTC を日本時間に変換するには？", "日本時間（JST）は UTC に 9 時間を足した時刻です。たとえば UTC 12:00 は日本時間 21:00、UTC 20:00 は日本時間の翌日 5:00 です。"],
+    ["ラジオがなくても短波放送を聞けますか？", "インターネット経由で操作できる WebSDR や KiwiSDR の受信機を使えば、短波ラジオを持っていなくてもブラウザで短波放送を聞けます。当サイトの「Listen Online」ページから受信機に移動できます。"]
+  ];
+  if (nikkeiFreqs.length) faq.splice(2, 0, ["ラジオNIKKEIの短波周波数は？", "放送予定表に載っているラジオNIKKEIの周波数は " + nikkeiFreqs.join("、") + " kHz です。"]);
+  body += seoFaqHtml(faq) + seoFaqLd(faq);
+  body += "<p><a class='cta' href='/listen-online/'>ラジオなしで聞く（Listen Online）</a></p>";
+  body += "<h2>関連ページ</h2><div class='tags'><a href='/languages/japanese/'>English: Shortwave in Japanese</a>"
+    + (stationSlug["NHK Radio Japan"] && byStation["NHK Radio Japan"] && byStation["NHK Radio Japan"].length >= MIN_STATION_ENTRIES ? "<a href='/stations/" + stationSlug["NHK Radio Japan"] + "/'>NHK Radio Japan</a>" : "")
+    + "<a href='/languages/'>Languages</a><a href='/stations/'>All Stations</a><a href='/frequency/'>All Frequencies</a><a href='/bands/'>Shortwave Bands</a></div>";
+
+  write("ja/index.html", shell({
+    lang: "ja",
+    title: "短波放送 周波数一覧（" + yr + "年）日本語放送・NHK・ラジオNIKKEI | ShortwaveHQ",
+    desc: "短波放送の周波数一覧。日本語で聞ける短波放送 " + nS + " 局・" + nF + " 周波数を、UTC と日本時間の時刻表つきで掲載。NHKワールド・ラジオ日本、ラジオNIKKEI、中国国際放送など。毎日更新。",
+    canonical: "/ja/", kicker: "日本語 · EIBI " + SEASON.label,
+    h1: "短波放送 <span style=\"color:#c0392b\">周波数一覧</span>",
+    bodyHtml: body,
+    breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"]]
+  }));
+  urls.push("/ja/");
+  JA_BUILT = true;
+  console.log("Japanese page: " + nS + " stations, " + nF + " frequencies, " + uniqRows.length + " rows");
+})();
+
+// ── Numbers stations frequency list (/numbers-stations-list/) ──────
+// Same data as the "numbers and mystery stations" table on the explainer,
+// laid out as a frequency list (what searchers ask for) with UTC times.
+var NSL_BUILT = false;
+(function () {
+  var rows = SCH.filter(function (r) { return r && r.type === "Numbers" && r.stn && r.freq && !isPlaceholder(r.stn); });
+  var nm = uniq(rows.map(function (r) { return r.stn; }));
+  if (rows.length < 5 || nm.length < 2) return;
+  var byF = {}, byS = {};
+  rows.forEach(function (r) {
+    var k = String(kHz(r.freq));
+    (byF[k] = byF[k] || []).push(r);
+    (byS[r.stn] = byS[r.stn] || []).push(r);
+  });
+  var fk = Object.keys(byF).sort(function (a, b) { return a - b; });
+  var nF = fk.length, nS = nm.length;
+  function wins(rs) { return uniq(rs.map(fmtSched)).slice(0, 3).join("; "); }
+  function stnLk(n) { return stnLinkHtml(n); }
+
+  var body = "<p class='lede'>The " + esc(SEASON.label) + " EIBI schedule lists <strong>" + nS + " numbers and mystery stations</strong> on <strong>" + nF + " frequencies</strong>. Numbers stations don't publish schedules, so these entries come from hobbyist logs. Times are UTC and can change without notice. For what they are and who runs them, read <a href='/numbers-stations-explained/'>Numbers Stations Explained</a>.</p>";
+
+  // on air now
+  var seenA = {}, act = [];
+  rows.forEach(function (r) {
+    if (!isActiveWindow(r.s, r.e, BUILD_NOW_MIN)) return;
+    var k = r.stn + "|" + kHz(r.freq); if (seenA[k]) return; seenA[k] = 1; act.push(r);
+  });
+  act.sort(function (a, b) { return kHz(a.freq) - kHz(b.freq); });
+  body += "<h2>Numbers Stations Scheduled On Air Now</h2>";
+  if (act.length) {
+    body += "<p>As of <strong>" + BUILD_NOW_LABEL + "</strong>, " + act.length + " numbers-station slot" + (act.length === 1 ? " is" : "s are") + " scheduled in the current time window. Rebuilt daily.</p><table><tr><th>Frequency</th><th>Station</th><th>On air until</th></tr>";
+    act.slice(0, 15).forEach(function (r) { body += "<tr><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + stnLk(r.stn) + "</td><td>" + onAirUntil(r) + "</td></tr>"; });
+    body += "</table>";
+  } else {
+    body += "<p>As of <strong>" + BUILD_NOW_LABEL + "</strong>, no numbers-station entries fall in the current time window. See the full list below.</p>";
+  }
+
+  // by frequency
+  body += "<h2>Numbers Stations by Frequency (kHz)</h2><table><tr><th>Frequency</th><th>Station</th><th>Times (UTC)</th><th>Language</th><th>Site</th></tr>";
+  var shownRows = 0;
+  fk.forEach(function (k) {
+    var grp = {};
+    byF[k].forEach(function (r) { (grp[r.stn] = grp[r.stn] || []).push(r); });
+    Object.keys(grp).sort().forEach(function (n) {
+      var rs = grp[n];
+      body += "<tr><td>" + freqLinkHtml(k) + "</td><td>" + stnLk(n) + "</td><td>" + esc(wins(rs)) + "</td><td>" + esc(uniq(rs.map(function (r) { return r.lang; })).slice(0, 2).join(", ") || "—") + "</td><td>" + esc(uniq(rs.map(function (r) { return r.site; })).slice(0, 2).join(", ") || "—") + "</td></tr>";
+      shownRows++;
+    });
+  });
+  body += "</table>";
+
+  // by station
+  var names = Object.keys(byS).sort();
+  body += "<h2>Numbers Stations by Name</h2><div class='grid'>" + names.map(function (n) {
+    var href = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "/?q=" + encodeURIComponent(n);
+    var ks = uniq(byS[n].map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+    return "<a href='" + href + "'>" + esc(n) + "<span>" + ks.slice(0, 4).join(", ") + (ks.length > 4 ? " +" + (ks.length - 4) : "") + " kHz</span></a>";
+  }).join("") + "</div>";
+
+  // reading the list
+  body += "<h2>Reading Numbers Station Names</h2><p>Hobbyists identify numbers stations with the ENIGMA 2000 system: <strong>E</strong> for English voice, <strong>S</strong> for Slavic languages, <strong>V</strong> for other languages and <strong>M</strong> for Morse. Entries labelled as channel markers, buzzers or pips are mystery and utility transmitters rather than voice number readers.</p>";
+
+  var topF = fk.slice().sort(function (a, b) { return byF[b].length - byF[a].length || a - b; }).slice(0, 5);
+  var faq = [
+    ["Are numbers stations still on the air?", "The " + SEASON.label + " EIBI schedule still lists " + nS + " numbers and mystery stations on " + nF + " frequencies, compiled from hobbyist logs. Individual stations can go silent, move or change times without notice, so treat the list as a guide."],
+    ["What frequencies do numbers stations use?", "They are spread across the shortwave bands. The frequencies with the most logged entries in the schedule are " + topF.join(", ") + " kHz."],
+    ["How can I listen to numbers stations online?", "Open a free WebSDR or KiwiSDR receiver in your browser and tune to a listed frequency at the listed UTC time. Our Listen Online page links to receivers and explains how to tune."],
+    ["Do numbers stations publish a schedule?", "No. Their operators do not publish schedules, so every time in this list comes from listener observations compiled in the EIBI database."]
+  ];
+  body += seoFaqHtml(faq) + seoFaqLd(faq);
+  body += "<p><a class='cta' href='/listen-online/'>Listen online free — no radio needed</a></p>"
+    + "<h2>Browse More</h2><div class='tags'><a href='/numbers-stations-explained/'>Numbers Stations Explained</a><a href='/stations/'>All Stations</a><a href='/frequency/'>All Frequencies</a><a href='/bands/'>Shortwave Bands</a><a href='/listen-online/'>Listen Online</a></div>";
+
+  write("numbers-stations-list/index.html", shell({
+    title: "Numbers Stations Frequency List — Active Stations & Times (" + BUILD_NOW.getUTCFullYear() + ") | ShortwaveHQ",
+    desc: "Numbers stations frequency list: " + nS + " numbers and mystery stations on " + nF + " shortwave frequencies with UTC times and who is scheduled on air now. Updated daily.",
+    canonical: "/numbers-stations-list/", kicker: "Numbers Stations · EIBI " + SEASON.label,
+    h1: "Numbers Stations <span style=\"color:#c0392b\">Frequency List</span>",
+    bodyHtml: body,
+    breadcrumbs: [["Home", "/"], ["Numbers Stations Explained", "/numbers-stations-explained/"], ["Frequency List", "/numbers-stations-list/"]]
+  }));
+  urls.push("/numbers-stations-list/");
+  NSL_BUILT = true;
+  console.log("Numbers stations list: " + nS + " stations, " + nF + " frequencies, " + shownRows + " rows");
+})();
 
 // ── Embeddable "On Air Now" widget ────────────────────────────────
 // /embed/on-air/ is a standalone, noindex iframe page. It computes who is on
@@ -1671,6 +1883,10 @@ urls.push("/bands/");
     x += "<h3 style=\"font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.8rem 0 .4rem\">Shortwave by language</h3><p style=\"" + fs1 + "\">"
       + SEG.langList.slice(0, 12).map(function (L) { return "<a style=\"" + lk + "\" href=\"/languages/" + slug(L) + "/\">" + esc(L) + "</a>"; }).join(" · ") + " · <a style=\"" + lk + "\" href=\"/languages/\">all languages</a></p>";
   }
+  var extraLk = [];
+  if (JA_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/ja/\" lang=\"ja\">日本語：短波放送 周波数一覧</a>");
+  if (NSL_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/numbers-stations-list/\">Numbers stations frequency list</a>");
+  if (extraLk.length) x += "<p style=\"" + fs1 + ";margin-top:.8rem\">" + extraLk.join(" · ") + "</p>";
   x += "<p style=\"" + fs1 + ";margin-top:.8rem\"><a style=\"" + lk + "\" href=\"/embed/\">Free “on air now” widget for your own site</a></p></section>";
   h = h.slice(0, a + m0.length) + x + h.slice(b);
   fs.writeFileSync(ip, h);
