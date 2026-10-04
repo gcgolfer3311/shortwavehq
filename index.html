@@ -966,8 +966,6 @@ a,button,input,select,textarea{touch-action:manipulation}
 }
 @media(max-width:640px){
   [style*="repeat(5,1fr)"]{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))!important}
-  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
-  [style*="grid-template-columns:1fr 1fr"]>*{min-width:0;max-width:100%;overflow-wrap:break-word}
   .wrap[style*="border-top"][style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:1.4rem!important}
   div[style*="flex-shrink:0;flex-wrap:wrap"]{flex-shrink:1!important;max-width:100%;min-width:0}
   div[style*="flex-shrink:0;flex-wrap:wrap"]>*{white-space:normal!important;text-align:center;max-width:100%}
@@ -2781,7 +2779,7 @@ var REGION_MAP={
 // ── STATE ────────────────────────────────────────────────────────
 var utcM=0,nowF="",curPg="home",nightMode=false;
 var sparkD=[],pV={sfi:128,k:2,a:7,ssn:87,precomputedBands:null,have:false,src:"none"};
-function pvd(v){return(pV.have&&v!=null)?v:"n/a";}
+function pvd(v){return pV.have?v:"n/a";}
 var mems=[],qsls=[],radarBands=null,tmOffset=0,GB=[];
 for(var _mi=0;_mi<MEMS.length;_mi++)mems.push(MEMS[_mi]);
 qsls=[
@@ -3515,7 +3513,7 @@ function clientBriefing(){
   var pp=document.getElementById("lb-prop");
   if(pp){
     var k=pV.k, cond = k<=1?"very quiet \u2014 excellent conditions" : k<=2?"quiet \u2014 good conditions" : k<=3?"unsettled" : k<=4?"active \u2014 some fading likely" : "disturbed \u2014 weak signals and blackouts possible";
-    pp.textContent=(pV.have&&pV.k!=null)?"Solar flux "+pV.sfi+", K-index "+k+" ("+cond+"). Higher bands favor daytime paths; the lower bands open after dark.":"Live space-weather data is unavailable right now. Higher bands favor daytime paths; the lower bands open after dark.";
+    pp.textContent=pV.have?"Solar flux "+pV.sfi+", K-index "+k+" ("+cond+"). Higher bands favor daytime paths; the lower bands open after dark.":"Live space-weather data is unavailable right now. Higher bands favor daytime paths; the lower bands open after dark.";
   }
   var cg=document.getElementById("lb-changes"); if(cg)cg.style.display="none";
   box.style.display="block";
@@ -4375,7 +4373,7 @@ function renderBroadcastCalendar(){
 function renderDX(){
   var g=document.getElementById("dx-grid");if(!g||g.children.length)return;
   var bands=getBands();var goodBands=0;for(var b=0;b<bands.length;b++)if(bands[b].p>=52)goodBands++;
-  var cond=document.getElementById("dx-cond");if(cond)cond.textContent=((pV.have&&pV.k!=null)?"SFI "+pV.sfi+", K-Index "+pV.k+" \u2014 ":"")+goodBands+" bands currently open";
+  var cond=document.getElementById("dx-cond");if(cond)cond.textContent=(pV.have?"SFI "+pV.sfi+", K-Index "+pV.k+" \u2014 ":"")+goodBands+" bands currently open";
   var diffColors={"Easy":"dx-easy","Medium":"dx-med","Hard":"dx-hard","Extreme":"dx-extreme"};
   for(var i=0;i<DX_TARGETS.length;i++){
     var t=DX_TARGETS[i];var d=document.createElement("div");d.className="dx-card";
@@ -4675,7 +4673,7 @@ function fetchProp(force){
   var now=Date.now();
   if(!force&&_propData&&(now-_propLastFetch)<600000){_applyPropData(_propData);return;}
   Promise.all([fetchNoaaLive().catch(function(){return null;}),_fetchPropFile()]).then(function(r){
-    var live=r[0],file=(r[1]&&typeof r[1].sfi==="number"&&r[1].live===true)?r[1]:null,d=null;
+    var live=r[0],file=(r[1]&&typeof r[1].sfi==="number")?r[1]:null,d=null;
     if(live){
       // Fill any field NOAA did not return this round from the last known live/file values, never from hardcoded defaults.
       var prev=_propData||file||_propCacheGet()||{};
@@ -4692,9 +4690,9 @@ function _applyPropData(d){
   if(d&&typeof d.sfi==="number"){
     pV.have=true;pV.src=d._src||"file";
     pV.sfi=d.sfi;
-    pV.k=typeof d.k==="number"?d.k:null;
-    pV.a=typeof d.a==="number"?d.a:null;
-    pV.ssn=typeof d.ssn==="number"?d.ssn:null;
+    pV.k=typeof d.k==="number"?d.k:pV.k;
+    pV.a=typeof d.a==="number"?d.a:pV.a;
+    pV.ssn=typeof d.ssn==="number"?d.ssn:pV.ssn;
     if(d.bands&&d.bands.length)pV.precomputedBands=d.bands;
     else pV.precomputedBands=null;
     if(d.sfi_history&&d.sfi_history.length){sparkD=d.sfi_history.slice(-24);}
