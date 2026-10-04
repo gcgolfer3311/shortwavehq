@@ -966,6 +966,8 @@ a,button,input,select,textarea{touch-action:manipulation}
 }
 @media(max-width:640px){
   [style*="repeat(5,1fr)"]{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))!important}
+  [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
+  [style*="grid-template-columns:1fr 1fr"]>*{min-width:0;max-width:100%;overflow-wrap:break-word}
   .wrap[style*="border-top"][style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:1.4rem!important}
   div[style*="flex-shrink:0;flex-wrap:wrap"]{flex-shrink:1!important;max-width:100%;min-width:0}
   div[style*="flex-shrink:0;flex-wrap:wrap"]>*{white-space:normal!important;text-align:center;max-width:100%}
@@ -2778,7 +2780,8 @@ var REGION_MAP={
 
 // ── STATE ────────────────────────────────────────────────────────
 var utcM=0,nowF="",curPg="home",nightMode=false;
-var sparkD=[],pV={sfi:128,k:2,a:7,ssn:87,precomputedBands:null};
+var sparkD=[],pV={sfi:128,k:2,a:7,ssn:87,precomputedBands:null,have:false,src:"none"};
+function pvd(v){return(pV.have&&v!=null)?v:"n/a";}
 var mems=[],qsls=[],radarBands=null,tmOffset=0,GB=[];
 for(var _mi=0;_mi<MEMS.length;_mi++)mems.push(MEMS[_mi]);
 qsls=[
@@ -3286,7 +3289,7 @@ function tnRenderBands(p){
     col.appendChild(bar);col.appendChild(l);host.appendChild(col);
   }
   var nt=document.getElementById("tn-bnote");
-  if(nt)nt.textContent="Band outlook for this window \u00b7 best: "+(best?best.n+" ("+tnCond(best.p)+")":"\u2014")+" \u00b7 Solar flux "+((pV&&pV.sfi)||"--")+" \u00b7 K-index "+((pV&&pV.k!=null)?pV.k:"--")+" (NOAA SWPC)";
+  if(nt)nt.textContent="Band outlook for this window \u00b7 best: "+(best?best.n+" ("+tnCond(best.p)+")":"\u2014")+" \u00b7 Solar flux "+((pV&&pV.have&&pV.sfi)||"--")+" \u00b7 K-index "+((pV&&pV.k!=null)?pV.k:"--")+" (NOAA SWPC)";
 }
 var TN_SECTIONS=[
   {k:"easy",t:"Easy catches",c:"#1e8449",d:"Aimed at your region, strong transmitters, open bands. Start here."},
@@ -3512,7 +3515,7 @@ function clientBriefing(){
   var pp=document.getElementById("lb-prop");
   if(pp){
     var k=pV.k, cond = k<=1?"very quiet \u2014 excellent conditions" : k<=2?"quiet \u2014 good conditions" : k<=3?"unsettled" : k<=4?"active \u2014 some fading likely" : "disturbed \u2014 weak signals and blackouts possible";
-    pp.textContent="Solar flux "+pV.sfi+", K-index "+k+" ("+cond+"). Higher bands favor daytime paths; the lower bands open after dark.";
+    pp.textContent=(pV.have&&pV.k!=null)?"Solar flux "+pV.sfi+", K-index "+k+" ("+cond+"). Higher bands favor daytime paths; the lower bands open after dark.":"Live space-weather data is unavailable right now. Higher bands favor daytime paths; the lower bands open after dark.";
   }
   var cg=document.getElementById("lb-changes"); if(cg)cg.style.display="none";
   box.style.display="block";
@@ -4178,8 +4181,8 @@ function renderPicks(){
 function updateStatBar(){
   var onAir=0;for(var i=0;i<SCH.length;i++)if(isOn(SCH[i]))onAir++;
   var sf=document.getElementById("st-onair");if(sf)sf.textContent=onAir;
-  var s2=document.getElementById("st-sfi");if(s2)s2.textContent=pV.sfi;
-  var k2=document.getElementById("st-k");if(k2)k2.textContent=pV.k;
+  var s2=document.getElementById("st-sfi");if(s2)s2.textContent=pvd(pV.sfi);
+  var k2=document.getElementById("st-k");if(k2)k2.textContent=pvd(pV.k);
   var ab=0;var bds=getBands();for(var j=0;j<bds.length;j++)if(bds[j].p>=52)ab++;
   var sb=document.getElementById("st-bands");if(sb)sb.textContent=ab;
   var tt=document.getElementById("st-total");if(tt)tt.textContent=SCH.length;
@@ -4251,7 +4254,7 @@ function renderNow(){
   for(var k=0;k<rows.length;k++)guide.appendChild(makeRow(rows[k]));
   drawGL("gl-now",295,142);
   var hp=document.getElementById("now-prop");var hb=document.getElementById("now-bands");
-  if(hp){hp.innerHTML="";var items=[{l:"SFI",v:pV.sfi,col:pV.sfi>=130?"#4ade80":pV.sfi>=100?"#fbbf24":"#f87171",lbl:pV.sfi>=130?"High":pV.sfi>=100?"Mod":"Low"},{l:"K-Index",v:pV.k,col:pV.k<=2?"#4ade80":pV.k<=4?"#fbbf24":"#f87171",lbl:pV.k<=2?"Quiet":pV.k<=4?"Unsettled":"Disturbed"},{l:"Sunspots",v:pV.ssn,col:"#86efac",lbl:"Cycle 25"}];for(var ii=0;ii<items.length;ii++){var it=items[ii];var d=document.createElement("div");d.style.cssText="background:var(--p2);border:1px solid var(--bdr);border-radius:3px;padding:8px;text-align:center";d.innerHTML="<div style='font-family:var(--mono);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:2px'>"+it.l+"</div><div style='font-family:var(--mono);font-size:1.15rem;font-weight:600;color:"+it.col+"'>"+it.v+"</div><div style='font-family:var(--serif);font-size:.74rem;color:var(--muted);font-style:italic'>"+it.lbl+"</div>";hp.appendChild(d);}}
+  if(hp){hp.innerHTML="";var items=[{l:"SFI",v:pvd(pV.sfi),col:pV.sfi>=130?"#4ade80":pV.sfi>=100?"#fbbf24":"#f87171",lbl:pV.sfi>=130?"High":pV.sfi>=100?"Mod":"Low"},{l:"K-Index",v:pvd(pV.k),col:pV.k<=2?"#4ade80":pV.k<=4?"#fbbf24":"#f87171",lbl:pV.k<=2?"Quiet":pV.k<=4?"Unsettled":"Disturbed"},{l:"Sunspots",v:pvd(pV.ssn),col:"#86efac",lbl:"Cycle 25"}];for(var ii=0;ii<items.length;ii++){var it=items[ii];var d=document.createElement("div");d.style.cssText="background:var(--p2);border:1px solid var(--bdr);border-radius:3px;padding:8px;text-align:center";d.innerHTML="<div style='font-family:var(--mono);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--m2);margin-bottom:2px'>"+it.l+"</div><div style='font-family:var(--mono);font-size:1.15rem;font-weight:600;color:"+it.col+"'>"+it.v+"</div><div style='font-family:var(--serif);font-size:.74rem;color:var(--muted);font-style:italic'>"+it.lbl+"</div>";hp.appendChild(d);}}
   if(hb){hb.innerHTML="";var bands=getBands();for(var jj=0;jj<bands.length;jj++){var b2=bands[jj];var row=document.createElement("div");row.className="brow";var nm=document.createElement("span");nm.className="bnm";nm.textContent=b2.n;var tr=document.createElement("div");tr.className="btrk";var fi=document.createElement("div");fi.className="bfil";fi.style.cssText="width:"+b2.p+"%;background:"+condFill(b2.p);tr.appendChild(fi);var lb=document.createElement("span");lb.className="blbl "+condCl(b2.p);lb.style.color=condFill(b2.p);lb.textContent=condL(b2.p);row.appendChild(nm);row.appendChild(tr);row.appendChild(lb);hb.appendChild(row);}}
 }
 
@@ -4372,7 +4375,7 @@ function renderBroadcastCalendar(){
 function renderDX(){
   var g=document.getElementById("dx-grid");if(!g||g.children.length)return;
   var bands=getBands();var goodBands=0;for(var b=0;b<bands.length;b++)if(bands[b].p>=52)goodBands++;
-  var cond=document.getElementById("dx-cond");if(cond)cond.textContent="SFI "+pV.sfi+", K-Index "+pV.k+" \u2014 "+goodBands+" bands currently open";
+  var cond=document.getElementById("dx-cond");if(cond)cond.textContent=((pV.have&&pV.k!=null)?"SFI "+pV.sfi+", K-Index "+pV.k+" \u2014 ":"")+goodBands+" bands currently open";
   var diffColors={"Easy":"dx-easy","Medium":"dx-med","Hard":"dx-hard","Extreme":"dx-extreme"};
   for(var i=0;i<DX_TARGETS.length;i++){
     var t=DX_TARGETS[i];var d=document.createElement("div");d.className="dx-card";
@@ -4636,43 +4639,83 @@ function renderFreqTimeline(){
 }
 
 // ── PROPAGATION ─────────────────────────────────────────────────
-var _propLastFetch=0,_propData=null;
-function fetchProp(){
+var _propLastFetch=0,_propData=null,_NOAA="https://services.swpc.noaa.gov/";
+function _noaaGet(u,txt){return fetch(_NOAA+u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return txt?r.text():r.json();});}
+// Live NOAA SWPC read, straight from the browser (CORS-enabled). Flux is required; K and sunspots are best-effort.
+function fetchNoaaLive(){
+  return Promise.all([
+    _noaaGet("products/summary/10cm-flux.json"),
+    _noaaGet("products/noaa-planetary-k-index.json").catch(function(){return null;}),
+    _noaaGet("text/daily-solar-indices.txt",true).catch(function(){return null;})
+  ]).then(function(a){
+    var o={},f=a[0],fl=Array.isArray(f)?f[0]:f;
+    var sfi=fl?parseFloat(fl.flux!=null?fl.flux:fl.Flux):NaN;
+    if(!(sfi>0))throw new Error("no flux");
+    o.sfi=Math.round(sfi);
+    var kk=a[1];
+    if(Array.isArray(kk)&&kk.length){
+      var lr=kk[kk.length-1],kp=Array.isArray(lr)?parseFloat(lr[1]):parseFloat(lr.Kp),ar=Array.isArray(lr)?parseFloat(lr[2]):parseFloat(lr.a_running);
+      if(!isNaN(kp))o.k=Math.round(kp);
+      if(!isNaN(ar))o.a=Math.round(ar);
+    }
+    var t=a[2];
+    if(t){
+      var ln=t.split("\n").filter(function(l){return /^\d{4} \d{2} \d{2}\s/.test(l);});
+      if(ln.length){var pp=ln[ln.length-1].trim().split(/\s+/),ss=parseInt(pp[4],10);if(!isNaN(ss)&&ss>=0&&ss<1000)o.ssn=ss;}
+    }
+    o.updated_utc=new Date().toISOString().slice(0,16).replace("T"," ");
+    o._src="live";
+    return o;
+  });
+}
+function _propCacheGet(){try{var c=JSON.parse(localStorage.getItem("swhq_prop")||"null");if(c&&typeof c.sfi==="number"&&Date.now()-c.t<172800000)return c;}catch(e){}return null;}
+function _propCacheSet(o){try{localStorage.setItem("swhq_prop",JSON.stringify({sfi:o.sfi,k:o.k,a:o.a,ssn:o.ssn,t:Date.now()}));}catch(e){}}
+function _fetchPropFile(){return fetch("/data/propagation.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
+function fetchProp(force){
   var now=Date.now();
-  // Only re-fetch from disk every 30 min — file updates once daily, no need to hammer it
-  if(_propData&&(now-_propLastFetch)<1800000){
-    _applyPropData(_propData);return;
-  }
-  fetch("/data/propagation.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
-    if(d&&typeof d.sfi==="number"){_propData=d;_propLastFetch=now;}
+  if(!force&&_propData&&(now-_propLastFetch)<600000){_applyPropData(_propData);return;}
+  Promise.all([fetchNoaaLive().catch(function(){return null;}),_fetchPropFile()]).then(function(r){
+    var live=r[0],file=(r[1]&&typeof r[1].sfi==="number"&&r[1].live===true)?r[1]:null,d=null;
+    if(live){
+      // Fill any field NOAA did not return this round from the last known live/file values, never from hardcoded defaults.
+      var prev=_propData||file||_propCacheGet()||{};
+      ["k","a","ssn"].forEach(function(x){if(typeof live[x]!=="number"&&typeof prev[x]==="number")live[x]=prev[x];});
+      if(file&&file.sfi_history&&file.sfi_history.length){var h=file.sfi_history.slice(-24);h[h.length-1]=live.sfi;live.sfi_history=h;}
+      live.bands=null;d=live;_propCacheSet(live);
+    }else if(file){d=file;d._src="file";}
+    else{var c=_propCacheGet();if(c){d={sfi:c.sfi,k:c.k,a:c.a,ssn:c.ssn,_src:"cache",updated_utc:new Date(c.t).toISOString().slice(0,16).replace("T"," ")};}}
+    if(d){_propData=d;_propLastFetch=now;}
     _applyPropData(d);
   }).catch(function(){_applyPropData(null);});
 }
 function _applyPropData(d){
   if(d&&typeof d.sfi==="number"){
+    pV.have=true;pV.src=d._src||"file";
     pV.sfi=d.sfi;
-    pV.k=typeof d.k==="number"?d.k:pV.k;
-    pV.a=typeof d.a==="number"?d.a:pV.a;
-    pV.ssn=typeof d.ssn==="number"?d.ssn:pV.ssn;
-    // Use server-pre-computed bands if available (more accurate — computed at time of NOAA fetch)
+    pV.k=typeof d.k==="number"?d.k:null;
+    pV.a=typeof d.a==="number"?d.a:null;
+    pV.ssn=typeof d.ssn==="number"?d.ssn:null;
     if(d.bands&&d.bands.length)pV.precomputedBands=d.bands;
     else pV.precomputedBands=null;
     if(d.sfi_history&&d.sfi_history.length){sparkD=d.sfi_history.slice(-24);}
     else{sparkD.push(pV.sfi);if(sparkD.length>24)sparkD.shift();}
   }else{
-    pV.precomputedBands=null;
-    sparkD.push(pV.sfi);if(sparkD.length>24)sparkD.shift();
+    pV.have=false;pV.src="none";pV.precomputedBands=null;
   }
   renderBBar();updateStatBar();updateTicker();
   if(curPg==="propagation")renderProp();
   var ts=document.getElementById("prop-ts");
   if(!ts)return;
-  if(d&&d.updated_utc){
-    ts.textContent="\u2022 NOAA SWPC \u00b7 "+d.updated_utc+" UTC";
-    ts.style.color="var(--green)";
+  if(pV.have&&pV.src==="live"){
+    ts.textContent="• NOAA SWPC live · checked "+d.updated_utc+" UTC";ts.style.color="var(--green)";
+  }else if(pV.have&&pV.src==="file"){
+    var age=d.updated_utc?(Date.now()-Date.parse(String(d.updated_utc).replace(" ","T")+(/Z$/.test(String(d.updated_utc))?"":"Z")))/3600000:NaN;
+    ts.textContent="• NOAA SWPC · "+(d.updated_utc||"daily snapshot")+" UTC"+(age>30?" (stale)":"");
+    ts.style.color=age>30?"var(--amber,#fbbf24)":"var(--green)";
+  }else if(pV.have){
+    ts.textContent="• Last known NOAA reading · "+d.updated_utc+" UTC (live feed unreachable)";ts.style.color="var(--amber,#fbbf24)";
   }else{
-    ts.textContent="\u2022 Fallback data \u00b7 NOAA unavailable";
-    ts.style.color="var(--amber,#fbbf24)";
+    ts.textContent="• Live NOAA data unavailable — values hidden";ts.style.color="var(--amber,#fbbf24)";
   }
 }
 
@@ -4687,7 +4730,7 @@ function renderBandBars(id){
 
 function renderProp(){
   var el=document.getElementById("prop-gauges");
-  if(el){el.innerHTML="";var items=[{l:"Solar Flux",v:pV.sfi,s:pLbl("sfi",pV.sfi),c:pCl("sfi",pV.sfi),pct:Math.min(100,(pV.sfi-70)/1.3)},{l:"K-Index",v:pV.k,s:pLbl("k",pV.k),c:pCl("k",pV.k),pct:(pV.k/9)*100},{l:"A-Index",v:pV.a,s:pLbl("a",pV.a),c:pCl("a",pV.a),pct:Math.min(100,(pV.a/50)*100)},{l:"Sunspot No.",v:pV.ssn,s:"Solar Cycle 25",c:"gok",pct:Math.min(100,pV.ssn/2)}];for(var i=0;i<items.length;i++){var it=items[i];var d=document.createElement("div");d.className="pgauge";var lbl=document.createElement("div");lbl.className="pgl";lbl.textContent=it.l;var val=document.createElement("div");val.className="pgv "+it.c;val.textContent=it.v;var st2=document.createElement("div");st2.className="pgs "+it.c;st2.textContent=it.s;var bar=document.createElement("div");bar.className="pgbar";var fi=document.createElement("div");fi.className="pgf "+(it.c==="gok"?"fok":it.c==="gfa"?"ffa":"fpo");fi.style.width=it.pct.toFixed(1)+"%";bar.appendChild(fi);d.appendChild(lbl);d.appendChild(val);d.appendChild(st2);d.appendChild(bar);el.appendChild(d);}}
+  if(el){el.innerHTML="";var items=[{l:"Solar Flux",v:pvd(pV.sfi),s:pLbl("sfi",pV.sfi),c:pCl("sfi",pV.sfi),pct:Math.min(100,(pV.sfi-70)/1.3)},{l:"K-Index",v:pvd(pV.k),s:pLbl("k",pV.k),c:pCl("k",pV.k),pct:(pV.k/9)*100},{l:"A-Index",v:pvd(pV.a),s:pLbl("a",pV.a),c:pCl("a",pV.a),pct:Math.min(100,(pV.a/50)*100)},{l:"Sunspot No.",v:pvd(pV.ssn),s:"Solar Cycle 25",c:"gok",pct:Math.min(100,pV.ssn/2)}];for(var i=0;i<items.length;i++){var it=items[i];var d=document.createElement("div");d.className="pgauge";var lbl=document.createElement("div");lbl.className="pgl";lbl.textContent=it.l;var val=document.createElement("div");val.className="pgv "+it.c;val.textContent=it.v;var st2=document.createElement("div");st2.className="pgs "+it.c;st2.textContent=it.s;var bar=document.createElement("div");bar.className="pgbar";var fi=document.createElement("div");fi.className="pgf "+(it.c==="gok"?"fok":it.c==="gfa"?"ffa":"fpo");fi.style.width=it.pct.toFixed(1)+"%";bar.appendChild(fi);d.appendChild(lbl);d.appendChild(val);d.appendChild(st2);d.appendChild(bar);el.appendChild(d);}}
   renderBandBars("band-bars");drawSparkline("spark");drawGL("gl-big",560,220);renderPropGuide();
 }
 
@@ -4853,7 +4896,7 @@ function renderBBar(){
     item.appendChild(nm);item.appendChild(tr);item.appendChild(cl);c.appendChild(item);
     item.addEventListener("click",(function(band){return function(){var inp=document.getElementById("se-inp");var u=document.getElementById("se-unit");if(inp)inp.value=band.r.split("-")[0].trim();if(u)u.value="mhz";go("home",document.getElementById("n-home"));seSearch();};})(b));
   }
-  if(p){p.innerHTML="";var sc=pV.sfi>=130?"#4ade80":pV.sfi>=100?"#fbbf24":"#f87171";var kc=pV.k<=2?"#4ade80":pV.k<=4?"#fbbf24":"#f87171";var props=[{l:"SFI",v:pV.sfi,col:sc,bdg:pV.sfi>=130?"High":pV.sfi>=100?"Mid":"Low"},{l:"K",v:pV.k,col:kc,bdg:pV.k<=2?"Quiet":pV.k<=4?"Active":"Storm"},{l:"SSN",v:pV.ssn,col:"rgba(255,255,255,.7)",bdg:null}];for(var j=0;j<props.length;j++){var it=props[j];var wrap=document.createElement("div");wrap.className="bbpi";var lbl=document.createElement("span");lbl.className="bbpl";lbl.textContent=it.l;var val=document.createElement("span");val.className="bbpv";val.style.color=it.col;val.textContent=it.v;wrap.appendChild(lbl);wrap.appendChild(val);if(it.bdg){var bdg2=document.createElement("span");bdg2.className="bbpb";bdg2.style.cssText="background:"+it.col+"22;color:"+it.col+";border:1px solid "+it.col+"44";bdg2.textContent=it.bdg;wrap.appendChild(bdg2);}p.appendChild(wrap);}}
+  if(p){p.innerHTML="";var sc=pV.sfi>=130?"#4ade80":pV.sfi>=100?"#fbbf24":"#f87171";var kc=pV.k<=2?"#4ade80":pV.k<=4?"#fbbf24":"#f87171";var props=[{l:"SFI",v:pvd(pV.sfi),col:sc,bdg:pV.sfi>=130?"High":pV.sfi>=100?"Mid":"Low"},{l:"K",v:pvd(pV.k),col:kc,bdg:pV.k<=2?"Quiet":pV.k<=4?"Active":"Storm"},{l:"SSN",v:pvd(pV.ssn),col:"rgba(255,255,255,.7)",bdg:null}];for(var j=0;j<props.length;j++){var it=props[j];var wrap=document.createElement("div");wrap.className="bbpi";var lbl=document.createElement("span");lbl.className="bbpl";lbl.textContent=it.l;var val=document.createElement("span");val.className="bbpv";val.style.color=it.col;val.textContent=it.v;wrap.appendChild(lbl);wrap.appendChild(val);if(it.bdg){var bdg2=document.createElement("span");bdg2.className="bbpb";bdg2.style.cssText="background:"+it.col+"22;color:"+it.col+";border:1px solid "+it.col+"44";bdg2.textContent=it.bdg;wrap.appendChild(bdg2);}p.appendChild(wrap);}}
 }
 
 // ── NUMBERS STATIONS ────────────────────────────────────────────
@@ -6368,7 +6411,7 @@ setInterval(function(){
 },30000);
 
 // Propagation refresh every 2 minutes
-setInterval(fetchProp,1800000); // 30 min — matches propagation.json cache window
+setInterval(function(){fetchProp(true);},600000); // 10 min live NOAA refresh
 
 // ── PWA SERVICE WORKER + INSTALL PROMPT ─────────────────────────
 var _deferredInstall=null;

@@ -484,7 +484,14 @@ if (revStart >= 0) {
 // ── 5e. Station hub data: Tonight engine, solar data, hub notes, logs ──
 // Top stations ("hubs") get upgraded pages. Nothing here may fail the build:
 // any missing/invalid file just means the hub extras are skipped.
-var TNE = null, PROP = { sfi: 110, k: 2 }, HUBS = {}, HUB_ORDER = [], RECEPTION = [];
+// Space-weather for static pages. PROP.live is true ONLY when the numbers are real
+// and fresh (direct NOAA read at build time, or a propagation.json under 36 h old);
+// otherwise pages say "current NOAA data" and print no figures. Scoring uses neutral defaults.
+function curlJson(url) {
+  try { return JSON.parse(require("child_process").execFileSync("curl", ["-sS", "-L", "--max-time", "12", url], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], timeout: 15000 })); } catch (e) { return null; }
+}
+function propTxt(p) { return p.live ? "solar flux " + p.sfi + ", K-index " + p.k : "current NOAA space-weather data"; }
+var TNE = null, PROP = { sfi: 110, k: 2, live: false }, HUBS = {}, HUB_ORDER = [], RECEPTION = [];
 try {
   var vmE = require("vm");
   var eA = html.indexOf("// TONIGHT_ENGINE_START"), eB = html.indexOf("// TONIGHT_ENGINE_END");
@@ -494,7 +501,17 @@ try {
   var ppj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "propagation.json"), "utf8"));
   if (ppj && ppj.sfi) PROP.sfi = ppj.sfi;
   if (ppj && ppj.k != null) PROP.k = ppj.k;
+  var ppAge = ppj && ppj.updated_utc ? (Date.now() - Date.parse(String(ppj.updated_utc).replace(" ", "T") + (/Z$/.test(String(ppj.updated_utc)) ? "" : "Z"))) / 3600000 : NaN;
+  if (ppj && ppj.live === true && ppj.sfi && ppj.k != null && ppAge < 36) PROP.live = true;
 } catch (e) { /* neutral defaults */ }
+(function () {
+  var f = curlJson("https://services.swpc.noaa.gov/products/summary/10cm-flux.json");
+  var kk = curlJson("https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json");
+  var fl = Array.isArray(f) ? f[0] : f, fv = fl ? parseFloat(fl.flux != null ? fl.flux : fl.Flux) : NaN;
+  var lr = Array.isArray(kk) && kk.length ? kk[kk.length - 1] : null, kv = lr ? (Array.isArray(lr) ? parseFloat(lr[1]) : parseFloat(lr.Kp)) : NaN;
+  if (fv > 0 && !isNaN(kv)) { PROP.sfi = Math.round(fv); PROP.k = Math.round(kv); PROP.live = true; console.log("Space weather (NOAA live): SFI " + PROP.sfi + ", K " + PROP.k); }
+  else console.log("Space weather: NOAA unreachable at build; " + (PROP.live ? "using fresh data/propagation.json" : "static pages will omit solar figures"));
+})();
 try {
   var hj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "hubs.json"), "utf8"));
   var hs = (hj && hj.stations) || {};
@@ -584,7 +601,7 @@ for (var sn = 0; sn < stationNames.length; sn++) {
       }
       if (bestRows.length) {
         hubHtml += "<h2>Best frequency to hear " + esc(name) + " tonight</h2>"
-          + "<p>For each part of the world: the strongest option during your evening (7 pm \u2013 1 am), based on where each broadcast is aimed and today\u2019s band outlook (solar flux " + PROP.sfi + ", K-index " + PROP.k + "). Rebuilt every day.</p>"
+          + "<p>For each part of the world: the strongest option during your evening (7 pm \u2013 1 am), based on where each broadcast is aimed and today\u2019s band outlook (" + propTxt(PROP) + "). Rebuilt every day.</p>"
           + "<table><thead><tr><th>Listening from</th><th>Best frequency</th><th>Your local time</th><th>Band outlook</th><th>Beamed at you?</th></tr></thead><tbody>";
         for (var bi2 = 0; bi2 < bestRows.length; bi2++) {
           var br = bestRows[bi2], xr = br.x.r, k2 = kHz(xr.freq);
@@ -856,7 +873,9 @@ var SEG = (function () {
     var r = SCH[i];
     if (!r || !r.stn || isPlaceholder(r.stn)) continue;
     var L = r.lang || "";
-    if (!SEG_SKIP_LANG[L]) (langs[L] = langs[L] || []).push(r);
+    // Skip raw EIBI codes that the updater has not mapped to a language name (SO, TIG, ML, SHA, BSL ...)
+    var isCode = /^[A-Z0-9\-\/]+$/.test(L) || L === "Ros";
+    if (!SEG_SKIP_LANG[L] && !isCode) (langs[L] = langs[L] || []).push(r);
     var R = r.reg;
     if (R && R !== "Worldwide") (regs[R] = regs[R] || []).push(r);
   }
@@ -922,12 +941,7 @@ try {
   var tnA = html.indexOf("// TONIGHT_ENGINE_START"), tnB = html.indexOf("// TONIGHT_ENGINE_END");
   if (tnA < 0 || tnB < tnA) throw new Error("engine markers not found in index.html");
   var TN = {}; vm.createContext(TN); vm.runInContext(html.slice(tnA, tnB), TN);
-  var prop = { sfi: 110, k: 2 };
-  try {
-    var pj = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "propagation.json"), "utf8"));
-    if (pj && pj.sfi) prop.sfi = pj.sfi;
-    if (pj && pj.k != null) prop.k = pj.k;
-  } catch (e) { /* no propagation file: model uses neutral defaults */ }
+  var prop = { sfi: PROP.sfi, k: PROP.k, live: PROP.live };
   var tnDate = new Date().toISOString().slice(0, 10);
   var stnLink = function (x) {
     return stationSlug[x.stn] ? "<a href=\"/stations/" + stationSlug[x.stn] + "/\">" + esc(x.stn) + "</a>" : esc(x.stn);
@@ -939,7 +953,7 @@ try {
     return "<tr><td>" + frqLink(x) + "</td><td>" + stnLink(x) + "</td><td>" + esc(x.utc) + "</td><td>" + esc(x.lang) + "</td><td>" + esc(x.why) + "</td></tr>";
   };
   var tnHead = "<table><tr><th>Frequency</th><th>Station</th><th>Time</th><th>Language</th><th>Why it's on the list</th></tr>";
-  var tnBody = "<p class=\"lede\">Every day we work out which shortwave broadcasts listeners in each part of the world can realistically hear in the evening, using the EIBI schedule (where each broadcast is aimed and when) and NOAA space-weather data (solar flux " + prop.sfi + ", K-index " + prop.k + " at build time). Updated " + tnDate + ".</p>"
+  var tnBody = "<p class=\"lede\">Every day we work out which shortwave broadcasts listeners in each part of the world can realistically hear in the evening, using the EIBI schedule (where each broadcast is aimed and when) and " + (prop.live ? "NOAA space-weather data (" + propTxt(prop) + " at build time)" : "current NOAA space-weather data") + ". Updated " + tnDate + ".</p>"
     + "<p><a class=\"cta\" href=\"/?page=tonight\">Open your personal guide &rarr;</a> <a class=\"cta o\" href=\"/listen-online/\">No radio? Listen online</a></p>"
     + "<p>The interactive guide detects your region, shows times in your local time, lets you switch between evening, late night, dawn grey-line and right now, and keeps a checklist of what you've heard.</p>";
   var tnTotal = 0;
@@ -1640,28 +1654,5 @@ write("robots.txt", "User-agent: *\nAllow: /\n\n" +
   "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
   "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
   "Sitemap: " + SITE + "/sitemap.xml\n");
-
-// ── 11. IndexNow (Bing, Yandex, Seznam, Naver) ───────────────────
-// Key file lives at /<key>.txt. The ping runs only inside the GitHub Action
-// (or when INDEXNOW=1), never on local builds, and can never fail the build.
-var INDEXNOW_KEY = "7c1e9a4b52d84f3a9e06b8d1c3f5a2e7";
-write(INDEXNOW_KEY + ".txt", INDEXNOW_KEY);
-(function () {
-  var on = process.env.INDEXNOW === "1" || (process.env.GITHUB_ACTIONS === "true" && process.env.INDEXNOW !== "0");
-  if (!on) { console.log("IndexNow: skipped (set INDEXNOW=1 to force; runs automatically in GitHub Actions)"); return; }
-  try {
-    var https = require("https");
-    var list = urls.map(function (u) { return SITE + u; }).slice(0, 10000);
-    var payload = JSON.stringify({ host: SITE.replace(/^https?:\/\//, ""), key: INDEXNOW_KEY, keyLocation: SITE + "/" + INDEXNOW_KEY + ".txt", urlList: list });
-    var req = https.request({ hostname: "api.indexnow.org", path: "/indexnow", method: "POST", timeout: 15000,
-      headers: { "Content-Type": "application/json; charset=utf-8", "Content-Length": Buffer.byteLength(payload) } }, function (res) {
-      console.log("IndexNow: submitted " + list.length + " URLs, HTTP " + res.statusCode);
-      res.resume();
-    });
-    req.on("timeout", function () { console.log("IndexNow: timed out (ignored)"); req.destroy(); });
-    req.on("error", function (e) { console.log("IndexNow: failed (ignored): " + e.message); });
-    req.write(payload); req.end();
-  } catch (e) { console.log("IndexNow: error (ignored): " + e.message); }
-})();
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
