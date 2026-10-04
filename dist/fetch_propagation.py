@@ -1,112 +1,151 @@
-import json, urllib.request, datetime, os
+"""
+Fetches live space-weather numbers from NOAA SWPC and writes data/propagation.json.
 
-def fetch(url):
+Rules (so the site never shows made-up numbers):
+  * Every value comes from NOAA. There are NO hardcoded fallback values.
+  * If the solar flux cannot be read, nothing is written (the last good file is kept
+    and the site flags it as stale once it is old). The script never fails the build.
+  * "live": true marks a file written by this script from real NOAA data. The site
+    ignores any propagation.json without it (older versions wrote fake defaults).
+"""
+import json, re, os, sys, datetime, urllib.request
+
+NOAA = "https://services.swpc.noaa.gov/"
+UA = {"User-Agent": "ShortwaveHQ/1.0 (+https://hqshortwaveradio.com)"}
+
+
+def _get(url):
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return r.read().decode("utf-8")
+
+
+def fetch_json(path):
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'ShortwaveHQ/1.0 (+https://hqshortwaveradio.com)'})
-        with urllib.request.urlopen(req, timeout=15) as r:
-            return json.loads(r.read().decode('utf-8'))
+        return json.loads(_get(NOAA + path))
     except Exception as e:
-        print(f"  WARN fetch {url}: {e}")
+        print(f"  WARN fetch {path}: {e}")
         return None
 
-# Solar Flux Index
-sfi = 128
-sfi_summary = fetch("https://services.swpc.noaa.gov/products/summary/10cm-flux.json")
-if sfi_summary and "Flux" in sfi_summary:
-    try: sfi = int(float(sfi_summary["Flux"]))
-    except: pass
 
-# Kp + A-index (same endpoint)
-kp = 2
-a_index = 7
-kp_data = fetch("https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json")
-if kp_data and len(kp_data) > 2:
-    for row in reversed(kp_data[1:]):
-        try:
-            kp_val = float(row[1])
-            if kp_val >= 0:
-                kp = int(kp_val)
-                break
-        except:
-            continue
+def fetch_text(path):
     try:
-        a_val = float(kp_data[-1][3])
-        if a_val >= 0:
-            a_index = int(round(a_val))
-    except:
-        a_index = kp * 3
+        return _get(NOAA + path)
+    except Exception as e:
+        print(f"  WARN fetch {path}: {e}")
+        return None
 
-# Sunspot Number
-ssn = 87
-ssn_data = fetch("https://services.swpc.noaa.gov/products/summary/solar-geophysical-activity.json")
-if ssn_data:
-    for key in ("SunspotNumber", "Sunspot_Number", "ssn", "ISN"):
-        if key in ssn_data:
-            try: ssn = int(float(ssn_data[key])); break
-            except: pass
-    else:
-        import re
-        for key in ("Report", "Text", "Summary"):
-            if key in ssn_data:
-                m = re.search(r'sunspot.*?(\d+)', str(ssn_data[key]), re.I)
-                if m:
-                    try: ssn = int(m.group(1)); break
-                    except: pass
 
-# SFI 24-hour history for sparkline
-sfi_history = []
-hist_data = fetch("https://services.swpc.noaa.gov/products/10cm-flux.json")
-if hist_data and len(hist_data) > 2:
-    for row in hist_data[1:]:
+def parse_flux(summary):
+    """products/summary/10cm-flux.json -> [{"flux":93,...}] (older/other shape: {"Flux":"93"})."""
+    row = summary[0] if isinstance(summary, list) and summary else summary
+    if not isinstance(row, dict):
+        return None
+    for key in ("flux", "Flux"):
+        if key in row:
+            try:
+                v = float(row[key])
+                if 40 <= v <= 400:
+                    return int(round(v))
+            except (TypeError, ValueError):
+                pass
+    return None
+
+
+def parse_kp(rows):
+    """noaa-planetary-k-index.json -> rows are objects (Kp, a_running) or arrays [time, Kp, a_running, ...]."""
+    if not isinstance(rows, list):
+        return None, None
+    for row in reversed(rows):
         try:
-            val = int(float(row[1]))
-            if 50 <= val <= 300:
-                sfi_history.append(val)
-        except:
+            if isinstance(row, dict):
+                kp, a = float(row["Kp"]), row.get("a_running")
+            elif isinstance(row, list):
+                kp, a = float(row[1]), (row[2] if len(row) > 2 else None)
+            else:
+                continue
+        except (KeyError, TypeError, ValueError, IndexError):
             continue
-    sfi_history = sfi_history[-24:]
-if not sfi_history:
-    sfi_history = [sfi]
+        if 0 <= kp <= 9:
+            try:
+                a = int(round(float(a))) if a is not None and float(a) >= 0 else None
+            except (TypeError, ValueError):
+                a = None
+            return int(round(kp)), a
+    return None, None
 
-# Band condition precompute
-hour_utc = datetime.datetime.now(datetime.timezone.utc).hour
-night = (hour_utc < 6 or hour_utc > 20)
+
+def parse_dsd(text):
+    """text/daily-solar-indices.txt -> list of (flux, sunspot_number), oldest first."""
+    out = []
+    for line in (text or "").splitlines():
+        if re.match(r"^\d{4} \d{2} \d{2}\s", line):
+            p = line.split()
+            try:
+                flux, ssn = int(float(p[3])), int(p[4])
+            except (IndexError, ValueError):
+                continue
+            out.append((flux if flux > 0 else None, ssn if ssn >= 0 else None))
+    return out
+
+
 BD = [
-    {"n":"120M","r":"2.3-2.5","bd":8,"bn":22},
-    {"n":"90M","r":"3.2-3.4","bd":12,"bn":30},
-    {"n":"75M","r":"3.9-4.0","bd":18,"bn":42},
-    {"n":"60M","r":"4.7-5.0","bd":25,"bn":55},
-    {"n":"49M","r":"5.9-6.2","bd":35,"bn":68},
-    {"n":"41M","r":"7.3-7.4","bd":45,"bn":72},
-    {"n":"31M","r":"9.4-9.9","bd":62,"bn":58},
-    {"n":"25M","r":"11.6-12.1","bd":70,"bn":42},
-    {"n":"22M","r":"13.5-13.8","bd":72,"bn":28},
-    {"n":"19M","r":"15.1-15.8","bd":75,"bn":22},
-    {"n":"16M","r":"17.5-17.9","bd":65,"bn":15},
-    {"n":"13M","r":"21.4-21.8","bd":55,"bn":10},
+    {"n": "120M", "r": "2.3-2.5", "bd": 8, "bn": 22}, {"n": "90M", "r": "3.2-3.4", "bd": 12, "bn": 30},
+    {"n": "75M", "r": "3.9-4.0", "bd": 18, "bn": 42}, {"n": "60M", "r": "4.7-5.0", "bd": 25, "bn": 55},
+    {"n": "49M", "r": "5.9-6.2", "bd": 35, "bn": 68}, {"n": "41M", "r": "7.3-7.4", "bd": 45, "bn": 72},
+    {"n": "31M", "r": "9.4-9.9", "bd": 62, "bn": 58}, {"n": "25M", "r": "11.6-12.1", "bd": 70, "bn": 42},
+    {"n": "22M", "r": "13.5-13.8", "bd": 72, "bn": 28}, {"n": "19M", "r": "15.1-15.8", "bd": 75, "bn": 22},
+    {"n": "16M", "r": "17.5-17.9", "bd": 65, "bn": 15}, {"n": "13M", "r": "21.4-21.8", "bd": 55, "bn": 10},
 ]
-bands_now = []
-for b in BD:
-    base = b["bn"] if night else b["bd"]
-    sf = (sfi - 100) / 5.0
-    kpen = (kp - 4) * 8 if kp > 4 else 0
-    p = min(100, max(3, round(base + sf - kpen)))
-    cond = "Excellent" if p >= 72 else "Good" if p >= 52 else "Fair" if p >= 32 else "Poor"
-    bands_now.append({"n": b["n"], "r": b["r"], "p": p, "cond": cond})
 
-out = {
-    "sfi": sfi,
-    "k": kp,
-    "a": a_index,
-    "ssn": ssn,
-    "sfi_history": sfi_history,
-    "bands": bands_now,
-    "night": night,
-    "updated_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M"),
-    "source": "NOAA SWPC"
-}
 
-os.makedirs("data", exist_ok=True)
-with open("data/propagation.json", "w") as f:
-    json.dump(out, f)
-print(f"propagation.json: SFI={sfi} K={kp} A={a_index} SSN={ssn} history={len(sfi_history)}pts night={night}")
+def bands_for(sfi, kp, night):
+    out = []
+    for b in BD:
+        base = b["bn"] if night else b["bd"]
+        sf = (sfi - 100) / 5.0
+        kpen = (kp - 4) * 8 if kp is not None and kp > 4 else 0
+        p = min(100, max(3, round(base + sf - kpen)))
+        cond = "Excellent" if p >= 72 else "Good" if p >= 52 else "Fair" if p >= 32 else "Poor"
+        out.append({"n": b["n"], "r": b["r"], "p": p, "cond": cond})
+    return out
+
+
+def main():
+    dsd = parse_dsd(fetch_text("text/daily-solar-indices.txt"))
+    sfi = parse_flux(fetch_json("products/summary/10cm-flux.json"))
+    if sfi is None and dsd and dsd[-1][0]:
+        sfi = dsd[-1][0]  # same number, from the daily indices file
+    kp, a_index = parse_kp(fetch_json("products/noaa-planetary-k-index.json"))
+    ssn = dsd[-1][1] if dsd else None
+    hist = [f for f, _ in dsd if f][-24:]
+    if sfi is None or kp is None:
+        print("ERROR: NOAA flux/K unavailable (sfi=%s kp=%s); keeping existing data/propagation.json untouched" % (sfi, kp))
+        return
+    if not hist:
+        hist = [sfi]
+    hist[-1] = sfi
+    now = datetime.datetime.now(datetime.timezone.utc)
+    night = now.hour < 6 or now.hour > 20
+    out = {
+        "live": True,
+        "sfi": sfi,
+        "k": kp,
+        "sfi_history": hist,
+        "bands": bands_for(sfi, kp, night),
+        "night": night,
+        "updated_utc": now.strftime("%Y-%m-%d %H:%M"),
+        "source": "NOAA SWPC",
+    }
+    if a_index is not None:
+        out["a"] = a_index
+    if ssn is not None:
+        out["ssn"] = ssn
+    os.makedirs("data", exist_ok=True)
+    with open("data/propagation.json", "w") as f:
+        json.dump(out, f)
+    print(f"propagation.json: SFI={sfi} K={kp} A={a_index} SSN={ssn} history={len(hist)}pts night={night}")
+
+
+if __name__ == "__main__":
+    main()
