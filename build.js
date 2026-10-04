@@ -502,7 +502,7 @@ try {
   if (ppj && ppj.sfi) PROP.sfi = ppj.sfi;
   if (ppj && ppj.k != null) PROP.k = ppj.k;
   var ppAge = ppj && ppj.updated_utc ? (Date.now() - Date.parse(String(ppj.updated_utc).replace(" ", "T") + (/Z$/.test(String(ppj.updated_utc)) ? "" : "Z"))) / 3600000 : NaN;
-  if (ppj && ppj.sfi && ppj.k != null && ppAge < 36) PROP.live = true;
+  if (ppj && ppj.live === true && ppj.sfi && ppj.k != null && ppAge < 36) PROP.live = true;
 } catch (e) { /* neutral defaults */ }
 (function () {
   var f = curlJson("https://services.swpc.noaa.gov/products/summary/10cm-flux.json");
@@ -873,7 +873,9 @@ var SEG = (function () {
     var r = SCH[i];
     if (!r || !r.stn || isPlaceholder(r.stn)) continue;
     var L = r.lang || "";
-    if (!SEG_SKIP_LANG[L]) (langs[L] = langs[L] || []).push(r);
+    // Skip raw EIBI codes that the updater has not mapped to a language name (SO, TIG, ML, SHA, BSL ...)
+    var isCode = /^[A-Z0-9\-\/]+$/.test(L) || L === "Ros";
+    if (!SEG_SKIP_LANG[L] && !isCode) (langs[L] = langs[L] || []).push(r);
     var R = r.reg;
     if (R && R !== "Worldwide") (regs[R] = regs[R] || []).push(r);
   }
@@ -1492,6 +1494,45 @@ write("embed/on-air/index.html", EMBED_PAGE);
   urls.push("/embed/");
 })();
 
+// ── Enthusiast of the Month (static, shareable page) ─────────────
+(function () {
+  var ej;
+  try { ej = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "enthusiasts.json"), "utf8")); } catch (e) { return; }
+  if (!Array.isArray(ej) || !ej.length || !ej[0].name) return;
+  var e = ej[0], b = "";
+  var photo = e.photo && !/^data:/.test(e.photo) ? "<img src=\"" + esc(e.photo) + "\" alt=\"" + esc(e.name) + ", shortwave listener\" width=\"200\" height=\"200\" style=\"display:block;margin:0 auto 1rem;width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid #c0392b\">" : "";
+  b += photo;
+  if (e.tagline) b += "<p class=\"lede\"><em>" + esc(e.tagline) + "</em></p>";
+  if (e.stats && e.stats.length) b += "<p>" + e.stats.map(function (t) { return "<strong>" + esc(t.v) + "</strong> " + esc(t.l); }).join(" · ") + "</p>";
+  if (e.quote) b += "<blockquote style=\"border-left:4px solid #c0392b;background:#fdecea;padding:.8rem 1rem;margin:1rem 0;font-style:italic\">“" + esc(e.quote) + "”<br><small>— " + esc(e.name) + "</small></blockquote>";
+  if (e.radio) b += "<p><strong>Radios:</strong> " + esc(e.radio) + ".</p>";
+  if (e.antenna) b += "<p><strong>Antenna:</strong> " + esc(e.antenna) + ".</p>";
+  (e.story || []).forEach(function (sec) {
+    b += "<h2>" + esc(sec.h) + "</h2>";
+    if (sec.p) b += "<p>" + esc(sec.p) + "</p>";
+    if (sec.list) b += "<ul style=\"margin:0 0 1rem 1.2rem\">" + sec.list.map(function (li) { return "<li>" + esc(li) + "</li>"; }).join("") + "</ul>";
+  });
+  if (!e.story) {
+    if (e.why) b += "<h2>Why shortwave?</h2><p>" + esc(e.why) + "</p>";
+    if (e.best_catch) b += "<h2>Legacy</h2><p>" + esc(e.best_catch) + "</p>";
+  }
+  if (e.ask) b += "<p>" + esc(e.ask) + "</p>";
+  b += "<p><a class=\"cta\" href=\"/?page=memories\">Share a radio memory</a><a class=\"cta o\" href=\"/?page=enthusiast\">Open in the live app</a></p>";
+  if (ej.length > 1) b += "<h2>Past Enthusiasts of the Month</h2><p>" + ej.slice(1).map(function (x) { return esc(x.name) + " (" + esc(x.month) + ")"; }).join(" · ") + "</p>";
+  b += "<p>Want to be featured? Email <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>.</p>";
+  b += "<h2>Browse ShortwaveHQ</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/listen-online/\">Listen Online</a><a href=\"/languages/\">By Language</a><a href=\"/regions/\">By Region</a></div>";
+  write("enthusiast-of-the-month/index.html", shell({
+    title: e.name + " — Shortwave Enthusiast of the Month (" + e.month + ") | ShortwaveHQ",
+    desc: e.name + " is ShortwaveHQ’s Enthusiast of the Month for " + e.month + ". " + (e.tagline || "A lifelong shortwave listener’s story.").slice(0, 140),
+    canonical: "/enthusiast-of-the-month/", kicker: "Community · " + e.month,
+    h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>",
+    bodyHtml: b,
+    breadcrumbs: [["Home", "/"], ["Enthusiast of the Month", "/enthusiast-of-the-month/"]]
+  }));
+  urls.push("/enthusiast-of-the-month/");
+  console.log("Generated /enthusiast-of-the-month/ (" + e.name + ", " + e.month + ")");
+})();
+
 // ── Shortwave Radio Articles ──────────────────────────────────────
 var ARTICLES = [
   {
@@ -1652,28 +1693,5 @@ write("robots.txt", "User-agent: *\nAllow: /\n\n" +
   "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
   "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
   "Sitemap: " + SITE + "/sitemap.xml\n");
-
-// ── 11. IndexNow (Bing, Yandex, Seznam, Naver) ───────────────────
-// Key file lives at /<key>.txt. The ping runs only inside the GitHub Action
-// (or when INDEXNOW=1), never on local builds, and can never fail the build.
-var INDEXNOW_KEY = "7c1e9a4b52d84f3a9e06b8d1c3f5a2e7";
-write(INDEXNOW_KEY + ".txt", INDEXNOW_KEY);
-(function () {
-  var on = process.env.INDEXNOW === "1" || (process.env.GITHUB_ACTIONS === "true" && process.env.INDEXNOW !== "0");
-  if (!on) { console.log("IndexNow: skipped (set INDEXNOW=1 to force; runs automatically in GitHub Actions)"); return; }
-  try {
-    var https = require("https");
-    var list = urls.map(function (u) { return SITE + u; }).slice(0, 10000);
-    var payload = JSON.stringify({ host: SITE.replace(/^https?:\/\//, ""), key: INDEXNOW_KEY, keyLocation: SITE + "/" + INDEXNOW_KEY + ".txt", urlList: list });
-    var req = https.request({ hostname: "api.indexnow.org", path: "/indexnow", method: "POST", timeout: 15000,
-      headers: { "Content-Type": "application/json; charset=utf-8", "Content-Length": Buffer.byteLength(payload) } }, function (res) {
-      console.log("IndexNow: submitted " + list.length + " URLs, HTTP " + res.statusCode);
-      res.resume();
-    });
-    req.on("timeout", function () { console.log("IndexNow: timed out (ignored)"); req.destroy(); });
-    req.on("error", function (e) { console.log("IndexNow: failed (ignored): " + e.message); });
-    req.write(payload); req.end();
-  } catch (e) { console.log("IndexNow: error (ignored): " + e.message); }
-})();
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
