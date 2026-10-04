@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shortwave On Air Now — ShortwaveHQ widget</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://hqshortwaveradio.com/embed/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.4;background:#fff;color:#0a0b0e}
+body.dark{background:#0d1422;color:#e8ecf4}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 12px;background:#0a0b0e;border-bottom:3px solid #c0392b;color:#fff}
+.hd b{font-size:13px;letter-spacing:.02em}
+.hd span{font:11px ui-monospace,Menlo,Consolas,monospace;color:rgba(255,255,255,.7);white-space:nowrap}
+ul{list-style:none}
+li{display:flex;justify-content:space-between;gap:10px;padding:8px 12px;border-bottom:1px solid #e2dbd0}
+body.dark li{border-color:rgba(255,255,255,.12)}
+li a{color:inherit;text-decoration:none;font-weight:600;min-width:0;overflow-wrap:anywhere}
+li a:hover{text-decoration:underline}
+li small{display:block;font-weight:400;font-size:11px;color:#6b5f52}
+body.dark li small{color:#9fb0c8}
+li em{font:600 12px ui-monospace,Menlo,Consolas,monospace;font-style:normal;color:#c0392b;white-space:nowrap}
+body.dark li em{color:#ff7a68}
+.ft{padding:8px 12px;font-size:11px;color:#6b5f52;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+body.dark .ft{color:#9fb0c8}
+.ft a{color:#c0392b;font-weight:600;text-decoration:none}
+body.dark .ft a{color:#ff7a68}
+.msg{padding:14px 12px;color:#6b5f52}
+</style></head>
+<body>
+<div class="hd"><b>📡 Shortwave On Air Now</b><span id="clk">--:-- UTC</span></div>
+<ul id="list"><li><span class="msg">Loading…</span></li></ul>
+<div class="ft"><span id="cnt"></span><a href="https://hqshortwaveradio.com/listen-online/" target="_blank" rel="noopener">Powered by ShortwaveHQ</a></div>
+<script>
+(function(){
+var q=new URLSearchParams(location.search);
+var N=Math.max(1,Math.min(25,parseInt(q.get('n'),10)||8));
+var LANG=(q.get('lang')||'').trim().toLowerCase();
+var REG=(q.get('region')||'').trim().toLowerCase();
+if(q.get('theme')==='dark')document.body.className='dark';
+var STN={"4DX Radio":"4dx-radio","ABC Wantok":"abc-wantok","AIR Akashvani Ext.Service":"air-akashvani-ext-service","Adventist World Radio":"adventist-world-radio","America250 DueDiligence":"america250-duediligence","Auckland Radio":"auckland-radio","BBC":"bbc","BBC DIGITAL":"bbc-digital","BPM Xian":"bpm-xian","Baron Channel Marker":"baron-channel-marker","Beibu Bay Radio":"beibu-bay-radio","Bible Voice":"bible-voice","Brother Stair":"brother-stair","CHU Ottawa":"chu-ottawa","CNR 2 China Business Radio":"cnr-2-china-business-radio","CNR 7 Greater Bay Area":"cnr-7-greater-bay-area","CNR1 DIGITAL":"cnr1-digital","CNR1 Jammer/Firedrake":"cnr1-jammer-firedrake","CNR5 Cross-Strait Radio":"cnr5-cross-strait-radio","CRI DIGITAL":"cri-digital","Channel 292":"channel-292","China National Radio":"china-national-radio","China National Radio 1":"china-national-radio-1","China National Radio 11":"china-national-radio-11","China National Radio 13":"china-national-radio-13","China National Radio 17":"china-national-radio-17","China National Radio 6":"china-national-radio-6","China National Radio 8":"china-national-radio-8","China Radio International":"china-radio-international","DWD Pinneberg":"dwd-pinneberg","E06 Russian Spy Numbers":"e06-russian-spy-numbers","E07 Russian Spy Numbers":"e07-russian-spy-numbers","E11 Polish Spy Numbers":"e11-polish-spy-numbers","Europa24":"europa24","FEBA Radio Sama":"feba-radio-sama","FEBC Manila":"febc-manila","FEBC Radio Liangyou":"febc-radio-liangyou","Follow the Bible Min.":"follow-the-bible-min","Free Radio Service Holland":"free-radio-service-holland","Fu Hsing Bc.Sta.":"fu-hsing-bc-sta","Furusato no Kaze":"furusato-no-kaze","Goose Channel Marker":"goose-channel-marker","HCJB Voice of Andes":"hcjb-voice-of-andes","Hope Radio 3":"hope-radio-3","Hope Radio 4":"hope-radio-4","Hope Radio 5":"hope-radio-5","IBRA Radio":"ibra-radio","IBRA Radio Ibrahim":"ibra-radio-ibrahim","IBRA Radio Sama":"ibra-radio-sama","IRIB Voice of I.Radio Iran":"irib-voice-of-i-radio-iran","IRRS Milano":"irrs-milano","Ifrikya FM":"ifrikya-fm","Iran International TV":"iran-international-tv","KBS World Radio":"kbs-world-radio","KCBS Pyongyang":"kcbs-pyongyang","KNLS New Life Station":"knls-new-life-station","MWV African Pathways Radio":"mwv-african-pathways-radio","MWV New Life Station":"mwv-new-life-station","MWV Radio Feda":"mwv-radio-feda","Music 4 Joy DIGITAL":"music-4-joy-digital","Myanma Radio":"myanma-radio","Mystery for Joy":"mystery-for-joy","NHK Radio Japan":"nhk-radio-japan","New Korea Hope Bcing":"new-korea-hope-bcing","New York Radio":"new-york-radio","Nippon no Kaze":"nippon-no-kaze","Noise Jammer":"noise-jammer","PBS Gannan":"pbs-gannan","PBS Hulun Buir":"pbs-hulun-buir","PBS Hunan":"pbs-hunan","PBS Nei Menggu":"pbs-nei-menggu","PBS Qinghai":"pbs-qinghai","PBS Xinjiang":"pbs-xinjiang","PBS Yunnan Minority Service":"pbs-yunnan-minority-service","Pop Shop Radio":"pop-shop-radio","RNZ Pacific":"rnz-pacific","RNZ Pacific DIGITAL":"rnz-pacific-digital","RRI Nabire":"rri-nabire","RTM Sabah V FM":"rtm-sabah-v-fm","RWM Moscow":"rwm-moscow","Radio Cairo":"radio-cairo","Radio DARC":"radio-darc","Radio Dabanga":"radio-dabanga","Radio Europa":"radio-europa","Radio Exterior España":"radio-exterior-espa-a","Radio Farda":"radio-farda","Radio France International":"radio-france-international","Radio Free Asia":"radio-free-asia","Radio Habana Cuba":"radio-habana-cuba","Radio Mali":"radio-mali","Radio Marti":"radio-marti","Radio Mojahedin":"radio-mojahedin","Radio Ndarason International":"radio-ndarason-international","Radio Nikkei 1":"radio-nikkei-1","Radio Nikkei 2":"radio-nikkei-2","Radio Payam":"radio-payam","Radio Piepzender":"radio-piepzender","Radio Prague":"radio-prague","Radio Romania DIGITAL":"radio-romania-digital","Radio Romania International":"radio-romania-international","Radio SE-TA2":"radio-se-ta2","Radio Slovakia International":"radio-slovakia-international","Radio Taiwan International":"radio-taiwan-international","Radio Tamazuj":"radio-tamazuj","Radio Tarma":"radio-tarma","Radio Vanuatu":"radio-vanuatu","Radio Vaticana":"radio-vaticana","Radio for Peace International":"radio-for-peace-international","Radyo Pilipinas":"radyo-pilipinas","Reach Beyond Australia":"reach-beyond-australia","Rádio Casa AM":"r-dio-casa-am","Rádio Nacional Amazônia":"r-dio-nacional-amaz-nia","Rádio Voz Missionária":"r-dio-voz-mission-ria","S06 Russian Spy Numbers":"s06-russian-spy-numbers","S11a Polish Spy Numbers":"s11a-polish-spy-numbers","SM Radio Dessau":"sm-radio-dessau","Scandinavian Weekend Radio":"scandinavian-weekend-radio","Shiokaze":"shiokaze","Shortwave Radio Gold":"shortwave-radio-gold","Sichuan Ethnic Radio":"sichuan-ethnic-radio","Solomon Islands Broadcasting":"solomon-islands-broadcasting","Sound of Hope":"sound-of-hope","SunDance Radio":"sundance-radio","TDF DIGITAL":"tdf-digital","Thazin Radio":"thazin-radio","The Pip (Kaplya) Rostov":"the-pip-kaplya-rostov","The Squeaky Wheel":"the-squeaky-wheel","Trans World Radio":"trans-world-radio","Trans World Radio DIGITAL":"trans-world-radio-digital","Unification Media Group":"unification-media-group","Unknown Station":"unknown-station","V07 Russian Spy Numbers":"v07-russian-spy-numbers","VFF Iqaluit Radio":"vff-iqaluit-radio","Various pirates":"various-pirates","VoA Radio Ashna":"voa-radio-ashna","VoRW":"vorw","Voice of America":"voice-of-america","Voice of Indonesia":"voice-of-indonesia","Voice of Korea":"voice-of-korea","Voice of Korea KCBS":"voice-of-korea-kcbs","Voice of Martyrs":"voice-of-martyrs","Voice of Mongolia":"voice-of-mongolia","Voice of Tibet":"voice-of-tibet","Voice of Turkey":"voice-of-turkey","Voice of Vietnam":"voice-of-vietnam","Voice of Vietnam 1":"voice-of-vietnam-1","WBCQ The Planet":"wbcq-the-planet","WRMI Radio Miami International":"wrmi-radio-miami-international","WTWW Lebanon, TN":"wtww-lebanon-tn","WWCR 2 Nashville, TN":"wwcr-2-nashville-tn","WWCR 3 Nashville, TN":"wwcr-3-nashville-tn","WWV Colorado (m.ann.)":"wwv-colorado-m-ann","WWVH Hawaii (f.ann.)":"wwvh-hawaii-f-ann","World Music Radio":"world-music-radio","Xizang RTV":"xizang-rtv","Yunnan Radio International":"yunnan-radio-international"};
+function pad(n){return n<10?'0'+n:''+n;}
+function act(s,e,m){if(e>=1440)return m>=s||m<e-1440;if(e<s)return m>=s||m<e;return s<=m&&m<e;}
+function until(r){if(r.s===0&&r.e>=1440)return 'all day';var e=r.e>=1440?r.e-1440:r.e;return 'until '+pad(Math.floor(e/60))+pad(e%60)+'z';}
+function render(rows){
+ var d=new Date(),m=d.getUTCHours()*60+d.getUTCMinutes();
+ document.getElementById('clk').textContent=pad(d.getUTCHours())+':'+pad(d.getUTCMinutes())+' UTC';
+ var seen={},out=[];
+ for(var i=0;i<rows.length;i++){var r=rows[i];if(!r||!r.stn||!r.freq)continue;
+  if(LANG&&String(r.lang||'').toLowerCase()!==LANG)continue;
+  if(REG&&String(r.reg||'').toLowerCase()!==REG)continue;
+  if(!act(r.s,r.e,m))continue;
+  var fq=parseFloat(r.freq);if(!isNaN(fq)&&fq<100)fq=Math.round(fq*1000);var k=r.stn+'|'+fq;if(seen[k])continue;seen[k]=1;out.push(r);}
+ out.sort(function(a,b){var ae=a.lang==='English'?0:1,be=b.lang==='English'?0:1;return ae-be||(a.stn<b.stn?-1:a.stn>b.stn?1:0);});
+ var ul=document.getElementById('list');ul.innerHTML='';
+ if(!out.length){var li=document.createElement('li');li.innerHTML='<span class="msg">Nothing matching is scheduled right now.</span>';ul.appendChild(li);}
+ out.slice(0,N).forEach(function(r){
+  var li=document.createElement('li'),a=document.createElement('a'),sm=document.createElement('small'),em=document.createElement('em'),w=document.createElement('div');
+  a.href=STN[r.stn]?'/stations/'+STN[r.stn]+'/':'/?q='+encodeURIComponent(r.stn);a.target='_blank';a.rel='noopener';a.textContent=r.stn;
+  sm.textContent=(r.lang||'')+(r.tgt?' → '+r.tgt:'')+' · '+until(r);
+  w.appendChild(a);w.appendChild(sm);
+  var f=parseFloat(r.freq);if(!isNaN(f)&&f<100)f=Math.round(f*1000);em.textContent=(isNaN(f)?r.freq:f)+' kHz';
+  li.appendChild(w);li.appendChild(em);ul.appendChild(li);});
+ document.getElementById('cnt').textContent=out.length+' broadcast'+(out.length===1?'':'s')+' on air';
+}
+fetch('/data/schedule.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(j){
+ var rows=Array.isArray(j)?j:(j.sch||[]);window.__rows=rows;render(rows);setInterval(function(){render(rows);},60000);
+}).catch(function(){document.getElementById('list').innerHTML='<li><span class="msg">Schedule unavailable. Open <a href="'+SITE+'/listen-online/" target="_blank" rel="noopener">ShortwaveHQ</a>.</span></li>';});
+})();
+</script>
+</body></html>
