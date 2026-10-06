@@ -242,6 +242,22 @@ def load_hfcc_index():
     'no cross-validation this run', never as an error."""
     if not (os.path.exists(HFCC_SCHEDULE_FILE) and os.path.exists(HFCC_SITES_FILE)):
         return {}
+    # Season guard: the file's first line looks like "; A26 ALL 12-aug-2026".
+    # If that season is not the season being built, the transmitter data would
+    # be matched against the wrong schedule, so skip cross-validation (rows
+    # fall back to kw 0 / no coordinates) until the file is replaced.
+    try:
+        with open(HFCC_SCHEDULE_FILE, "r", encoding="latin-1") as f:
+            head = f.readline()
+        hm = re.match(r";\s*([ABab])(\d\d)\b", head)
+        if hm:
+            hfcc_label = f"{hm.group(1).upper()}-{hm.group(2)}"
+            if hfcc_label != FETCHED_SEASON_LABEL:
+                print(f"HFCC file is for season {hfcc_label} but the schedule is {FETCHED_SEASON_LABEL} "
+                      f"— skipping HFCC cross-validation until data/hfcc_schedule.txt is replaced")
+                return {}
+    except Exception:
+        pass
     sites = _parse_hfcc_sites(HFCC_SITES_FILE)
     if not sites:
         return {}
