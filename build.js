@@ -299,7 +299,7 @@ function shell(opts) {
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"" + (opts.lang || "en") + "\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n" + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"" + (opts.lang || "en") + "\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n" + (opts.lang === "zh" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a></nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 function write(rel, content) {
@@ -574,7 +574,17 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   var freqs = uniq(rows.map(function (r) { return String(kHz(r.freq)); }));
   var tgtList = uniq(rows.map(function(r){ return r.tgt; }).filter(Boolean));
   var regionStr = tgtList.length ? ", beamed to " + tgtList.slice(0,4).join(", ") : "";
-  var title = "Listen to " + name + " on Shortwave \u2014 Live Frequencies & 2026 Schedule | ShortwaveHQ";
+  var title = (function () {
+    var fc = {}; rows.forEach(function (r) { var k = String(kHz(r.freq)); fc[k] = (fc[k] || 0) + 1; });
+    var top = Object.keys(fc).sort(function (a, b) { return fc[b] - fc[a] || a - b; }).slice(0, 3);
+    var t = name + (/shortwave/i.test(name) ? " Frequencies" : " Shortwave Frequencies");
+    if (t.length <= 44) t += " & Schedule";
+    for (var n = top.length; n >= 1; n--) {
+      var c = t + " \u2014 " + top.slice(0, n).sort(function (a, b) { return a - b; }).join(", ") + " kHz";
+      if (c.length <= 58) { t = c; break; }
+    }
+    return t + " | ShortwaveHQ";
+  })();
   var desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + (langs ? " in " + langs : "") + regionStr + ". Check if it\u2019s on the air right now and listen online free.";
   var tbl = "<table><thead><tr><th>Frequency</th><th>Time (UTC)</th><th>Language</th><th>Target</th><th>Transmitter Site</th><th>Power</th></tr></thead><tbody>";
   for (var ri = 0; ri < rows.length; ri++) {
@@ -751,7 +761,22 @@ for (var fk = 0; fk < freqKeys.length; fk++) {
   var stns = uniq(rows2.map(function (r) { return r.stn; }));
   var tgts2 = uniq(rows2.map(function(r){ return r.tgt; }).filter(Boolean));
   var regionStr2 = tgts2.length ? " Transmissions target " + tgts2.slice(0,4).join(", ") + "." : "";
-  var title2 = "What\u2019s on " + khz + " kHz Shortwave? Live Schedule & Stations (2026) | ShortwaveHQ";
+  var title2 = (function () {
+    var sc = {}; rows2.forEach(function (r) { sc[r.stn] = (sc[r.stn] || 0) + 1; });
+    var order = Object.keys(sc).sort(function (a, b) { return sc[b] - sc[a] || (a < b ? -1 : 1); }).filter(function (n) { return !isPlaceholder(n); });
+    var base = khz + " kHz Shortwave";
+    var t = base + " \u2014 UTC Schedule";
+    if (order.length) {
+      var cands = [];
+      if (order.length >= 2) cands.push(base + " \u2014 " + order.slice(0, 2).join(", ") + (order.length > 2 ? " +" + (order.length - 2) + " more" : "") + " \u00b7 UTC Schedule");
+      cands.push(base + " \u2014 " + order[0] + (order.length > 1 ? " +" + (order.length - 1) + " more" : "") + " \u00b7 UTC Schedule");
+      cands.push(base + " \u2014 " + order[0] + " \u00b7 UTC Schedule");
+      cands.push(base + " \u2014 " + order[0]);
+      t = cands[cands.length - 1];
+      for (var ci = 0; ci < cands.length; ci++) { if (cands[ci].length <= 64) { t = cands[ci]; break; } }
+    }
+    return t + " | ShortwaveHQ";
+  })();
   var desc2 = khz + " kHz shortwave: " + stns.slice(0, 3).join(", ") + (stns.length > 3 ? " and " + (stns.length - 3) + " more" : "") + " are scheduled on this frequency in 2026." + regionStr2 + " Full UTC schedule" + (bd2 ? " \u2014 " + bd2.name : "") + ". See what\u2019s on right now.";
   var tbl2 = "<table><thead><tr><th>Station</th><th>Time (UTC)</th><th>Language</th><th>Target</th><th>Site</th><th>Power</th></tr></thead><tbody>";
   for (var ri2 = 0; ri2 < rows2.length; ri2++) {
@@ -769,7 +794,7 @@ for (var fk = 0; fk < freqKeys.length; fk++) {
     + scanMentions(SCANS_BY_FREQ[String(khz)], khz + " kHz")
     + "<h2>2026 Schedule for " + khz + " kHz</h2>" + tbl2
     + "<h2>Nearby Frequencies</h2>" + nav
-    + "<div class=\"tags\"><a href=\"/listen-online/\">Listen to shortwave radio online free</a><a href=\"/stations/\">Shortwave stations on air now</a></div>"
+    + "<div class=\"tags\"><a href=\"/listen-online/\">Listen to shortwave radio online free</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to listen online</a><a href=\"/stations/\">Shortwave stations on air now</a></div>"
     + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 Hearing " + khz + " kHz needs the right radio \u2014 see the ones we've actually tested \u2192</a></p>";
   write("frequency/" + khz + "-khz/index.html", shell({
     title: title2, desc: desc2, canonical: "/frequency/" + khz + "-khz/", kicker: "Live Shortwave Schedule \u00b7 " + (bd2 ? bd2.name + " \u00b7 " : "") + mhz.toFixed(3) + " MHz",
@@ -909,7 +934,7 @@ var LO_FAQ = [
   ["What is the best time to listen to shortwave radio?", "Lower bands (49m, 41m, 31m) usually carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better during the day. Which band is strongest depends on the time of day, the season and solar conditions."]
 ];
 var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right now, without owning a receiver? You have two options: a live web-based SDR you tune yourself, or our live database showing exactly which stations are broadcasting on-air at this moment.</p>"
-  + "<h2>Option 1: Listen Live via WebSDR</h2><p>A WebSDR is a real shortwave receiver connected to the internet that anyone can tune remotely, free, in your browser. No account, no software install. We link to three independent receiver networks below \u2014 if one is slow or temporarily offline, try another.</p><p><a class=\"cta\" href=\"https://websdr.ewi.utwente.nl:8901/\" target=\"_blank\" rel=\"noopener\">Twente WebSDR (NL)</a> <a class=\"cta o\" href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"noopener\">KiwiSDR Network</a> <a class=\"cta o\" href=\"https://www.receiverbook.de/\" target=\"_blank\" rel=\"noopener\">Receiverbook (all SDR types)</a></p>"
+  + "<h2>Option 1: Listen Live via WebSDR</h2><p>A WebSDR is a real shortwave receiver connected to the internet that anyone can tune remotely, free, in your browser. No account, no software install. We link to three independent receiver networks below \u2014 if one is slow or temporarily offline, try another.</p><p><a class=\"cta\" href=\"https://websdr.ewi.utwente.nl:8901/\" target=\"_blank\" rel=\"noopener\">Twente WebSDR (NL)</a> <a class=\"cta o\" href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"noopener\">KiwiSDR Network</a> <a class=\"cta o\" href=\"https://www.receiverbook.de/\" target=\"_blank\" rel=\"noopener\">Receiverbook (all SDR types)</a></p><p>New to this? Read <a href=\"/how-to-listen-to-shortwave-radio-online/\">how to listen to shortwave radio online, step by step</a>.</p>"
   + "<h2>Option 2: See What's On Air Right Now</h2><p>ShortwaveHQ tracks the full 2026 EIBI broadcast schedule and shows you, in real time, which stations are transmitting on which frequency at this exact moment \u2014 so you know what to tune to before you start listening.</p><p><a class=\"cta\" href=\"/\">Open Live Band Conditions &amp; On-Air Tracker</a></p>"
   + LO_ONAIR.html
   + "<h2>How to Listen to International Broadcasts</h2><p>International shortwave stations \u2014 BBC World Service, Radio Romania International, NHK World Japan, and dozens of others \u2014 broadcast on published schedules in UTC (Coordinated Universal Time), not your local time zone. That's the single biggest thing to get right before you start: find a station's scheduled hours, convert UTC to your local time, and tune a few minutes early since signals can take a moment to settle in.</p>"
@@ -919,7 +944,7 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + (function () { var f = topFreqTags(12); return f ? "<h2>Popular Shortwave Frequencies to Tune Right Now</h2><div class=\"tags\">" + f + "</div>" : ""; })()
   + segBrowseHtml(10)
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
-  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a></div>";
+  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to Listen Online</a></div>";
 write("listen-online/index.html", shell({
   title: "Listen to Shortwave Radio Online Free \u2014 Live, No Radio Needed | ShortwaveHQ",
   desc: "Listen to shortwave radio online free with live WebSDR receivers you tune in your browser, plus a list of shortwave stations on air right now. No radio required.",
@@ -928,6 +953,55 @@ write("listen-online/index.html", shell({
   breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"]]
 }));
 urls.push("/listen-online/");
+
+// ── How to listen to shortwave radio online (/how-to-listen-to-shortwave-radio-online/) ──
+// Targets the "how to listen to shortwave radio online / on the internet /
+// streaming" query cluster. Complements /listen-online/ (the tool page).
+(function () {
+  var HT_ONAIR = onAirSection(8, "Shortwave Stations On Air Right Now (to Tune First)");
+  var HT_FAQ = [
+    ["How do I listen to shortwave radio online?", "Open a free web-based receiver (a WebSDR or KiwiSDR), type in a frequency from the schedule, set the mode to AM and press play. The receiver is a real shortwave radio connected to the internet, so you hear what is actually on the air. Remember that schedules use UTC."],
+    ["Can I listen to shortwave radio on the internet for free?", "Yes. WebSDR and KiwiSDR receivers are free to use in a normal browser with no account and no software to install. Some receivers limit the number of simultaneous listeners, so if one is full, pick another."],
+    ["What is shortwave radio streaming?", "There are two different things. A station's own internet stream carries its audio over the web and does not need shortwave at all. A WebSDR or KiwiSDR streams the real shortwave signal received at a distant antenna, which is how you can check what a transmitter is really putting on the air."],
+    ["Can I listen to shortwave on my phone?", "Yes. WebSDR and KiwiSDR pages open in a phone browser, though the tuning controls are smaller than on a computer. Use headphones and tap the page once so the browser allows audio to start."],
+    ["What do I need to listen to shortwave radio online?", "Only a browser, an internet connection and the frequency and UTC time of a broadcast. A schedule such as the one on this site tells you which frequency to tune and when."]
+  ];
+  var body = "<p class=\"lede\"><strong>Short answer:</strong> open a free WebSDR or KiwiSDR receiver in your browser, type a frequency from our schedule, choose <strong>AM</strong> and press play. You are listening to a real shortwave receiver somewhere in the world, with no radio of your own.</p>"
+    + "<h2>Step by step</h2><ol style=\"margin:0 0 1rem 1.3rem\">"
+    + "<li style=\"margin-bottom:.5rem\"><strong>Pick a broadcast.</strong> Check the table below, the <a href=\"/stations/\">stations list</a> or the <a href=\"/tonight/\">Tonight guide</a> for a station that is on the air now and note its frequency in kHz.</li>"
+    + "<li style=\"margin-bottom:.5rem\"><strong>Open a receiver.</strong> <a href=\"https://websdr.ewi.utwente.nl:8901/\" target=\"_blank\" rel=\"noopener\">Twente WebSDR</a>, the <a href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"noopener\">KiwiSDR network</a> and <a href=\"https://www.receiverbook.de/\" target=\"_blank\" rel=\"noopener\">Receiverbook</a> are free and need no account.</li>"
+    + "<li style=\"margin-bottom:.5rem\"><strong>Enter the frequency and set the mode to AM.</strong> Most international broadcasts are AM. Use USB or LSB only for amateur radio and some utility signals.</li>"
+    + "<li style=\"margin-bottom:.5rem\"><strong>Start the audio.</strong> Browsers block sound until you click, so tap the page or the speaker or start button once. If the receiver is full, try another.</li>"
+    + "<li style=\"margin-bottom:.5rem\"><strong>Pick a receiver that suits the signal.</strong> Receivers near the transmitter or in the station's target area usually hear it best. A weak or noisy signal often sounds much better on a different receiver.</li>"
+    + "<li><strong>Convert UTC.</strong> Shortwave schedules use UTC. See the conversion table below, and tune a few minutes before the start time.</li></ol>"
+    + HT_ONAIR.html
+    + "<h2>Which option should you use?</h2><table><tr><th>Option</th><th>What it is</th><th>Account needed</th><th>Best for</th></tr>"
+    + "<tr><td><a href=\"https://websdr.ewi.utwente.nl:8901/\" target=\"_blank\" rel=\"noopener\">Twente WebSDR</a></td><td>A wideband receiver run by the University of Twente in the Netherlands, tuned in the browser</td><td>No</td><td>A quick start with no setup</td></tr>"
+    + "<tr><td><a href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"noopener\">KiwiSDR network</a></td><td>Many receivers hosted by volunteers around the world</td><td>No</td><td>Choosing a receiver near a transmitter or target area</td></tr>"
+    + "<tr><td><a href=\"https://www.receiverbook.de/\" target=\"_blank\" rel=\"noopener\">Receiverbook</a></td><td>A directory of public SDR receivers of several types</td><td>No</td><td>Finding any receiver by location</td></tr>"
+    + "<tr><td>Station live streams</td><td>A broadcaster's own audio stream over the internet (not a shortwave signal)</td><td>Usually no</td><td>Hearing a station's programs without shortwave reception at all</td></tr></table>"
+    + "<h2>Convert UTC to your local time</h2><p>Add or subtract your offset from the UTC time in the schedule. Example: a broadcast at 01:00 UTC is 9:00 p.m. in US Eastern daylight time (UTC−4) and 6:00 p.m. in Arizona (UTC−7, no daylight saving).</p>"
+    + "<table><tr><th>Region</th><th>Standard time</th><th>Daylight time</th></tr>"
+    + "<tr><td>US Eastern</td><td>UTC−5</td><td>UTC−4</td></tr><tr><td>US Central</td><td>UTC−6</td><td>UTC−5</td></tr>"
+    + "<tr><td>US Mountain (Arizona stays on standard time)</td><td>UTC−7</td><td>UTC−6</td></tr><tr><td>US Pacific</td><td>UTC−8</td><td>UTC−7</td></tr>"
+    + "<tr><td>United Kingdom</td><td>UTC+0</td><td>UTC+1</td></tr><tr><td>Central Europe</td><td>UTC+1</td><td>UTC+2</td></tr>"
+    + "<tr><td>Japan</td><td>UTC+9</td><td>no daylight saving</td></tr><tr><td>Australia (east coast)</td><td>UTC+10</td><td>UTC+11</td></tr></table>"
+    + "<p>US clocks go back on the first Sunday in November, and the UK and Europe on the last Sunday in October. Shortwave seasons change at the same time, which is why schedules shift in late October.</p>"
+    + "<h2>Troubleshooting</h2><ul style=\"margin:0 0 1rem 1.3rem\"><li>No sound: click the page once, check the mode is AM and the volume is up.</li><li>Only noise: the station may not be on the air yet, or the signal may be weak at that receiver. Check the UTC time and try another receiver.</li><li>Wrong station: confirm the frequency is typed in kHz, not MHz (9,400 kHz is 9.4 MHz).</li><li>Receiver full: busy receivers limit listeners, so pick another from the same list.</li></ul>"
+    + (function () { var f = topFreqTags(12); return f ? "<h2>Popular frequencies to try</h2><div class=\"tags\">" + f + "</div>" : ""; })()
+    + seoFaqHtml(HT_FAQ) + seoFaqLd(HT_FAQ)
+    + "<p><a class=\"cta\" href=\"/listen-online/\">Open the live listening page</a> <a class=\"cta o\" href=\"/best-shortwave-radios-for-beginners/\">Want your own radio? Best beginner radios</a></p>"
+    + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/listen-online/\">Listen Online</a><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/band-scans/\">Band Scans</a><a href=\"/numbers-stations-explained/\">Numbers Stations</a></div>";
+  write("how-to-listen-to-shortwave-radio-online/index.html", shell({
+    title: "How to Listen to Shortwave Radio Online (Free, No Radio) | ShortwaveHQ",
+    desc: "How to listen to shortwave radio online for free: use a WebSDR or KiwiSDR in your browser, pick a station, convert UTC and tune AM. No radio needed.",
+    canonical: "/how-to-listen-to-shortwave-radio-online/", kicker: "Guide · Listen Online · No Radio Needed",
+    h1: "How to Listen to Shortwave Radio <span style=\"color:#c0392b\">Online</span>", bodyHtml: body,
+    breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"], ["How to Listen Online", "/how-to-listen-to-shortwave-radio-online/"]]
+  }));
+  urls.push("/how-to-listen-to-shortwave-radio-online/");
+  console.log("Generated /how-to-listen-to-shortwave-radio-online/");
+})();
 
 // ── 7b. Tonight's Listening Guide (static, rebuilt daily) ───────────
 // Uses the exact same engine as the interactive SPA page: the code
@@ -1414,7 +1488,7 @@ function segPage(kind, name, rows) {
     + seoFaqHtml(faq) + seoFaqLd(faq)
     + "<p><a class=\"cta\" href=\"/listen-online/\">Listen online free — no radio needed</a></p>"
     + segBrowseHtml(12)
-    + "<h2>Browse More</h2><div class=\"tags\">" + (isLang && name === "Japanese" ? "<a href=\"/ja/\">日本語ページ：短波放送 周波数一覧</a>" : "") + "<a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
+    + "<h2>Browse More</h2><div class=\"tags\">" + (isLang && name === "Japanese" ? "<a href=\"/ja/\">日本語ページ：短波放送 周波数一覧</a>" : "") + (isLang && name === "Mandarin" ? "<a href=\"/zh/\" lang=\"zh\">中文页面：短波广播频率表</a>" : "") + (isLang && name === "Spanish" ? "<a href=\"/es/\" lang=\"es\">Página en español: onda corta</a>" : "") + "<a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
   var title = isLang ? "Shortwave Radio in " + name + " — Stations & Frequencies (2026) | ShortwaveHQ" : "Shortwave Radio to " + name + " — Frequencies & Times (2026) | ShortwaveHQ";
   var desc = isLang ? "Shortwave radio stations broadcasting in " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily."
     : "Shortwave radio stations aimed at " + name + ": " + nS + " stations on " + nF + " frequencies with UTC times and who is on the air now. Updated daily.";
@@ -1667,6 +1741,238 @@ var NSL_BUILT = false;
   console.log("Numbers stations list: " + nS + " stations, " + nF + " frequencies, " + shownRows + " rows");
 })();
 
+// ── Chinese (/zh/) and Spanish (/es/) landing pages ───────────────
+// Same data-driven approach as /ja/: the tables come from the schedule
+// (SEG.langs); only the wrapper text is translated. Chinese = Mandarin rows
+// (jamming entries and numbers stations excluded); Spanish = Spanish rows.
+var ZH_BUILT = false, ES_BUILT = false;
+(function () {
+  function localePage(C) {
+    var rows = [];
+    C.keys.forEach(function (k) { rows = rows.concat((SEG.langs && SEG.langs[k]) || []); });
+    rows = rows.filter(function (r) { return r && r.stn && r.type !== "Numbers" && !(C.exclude && C.exclude.test(r.stn)); });
+    if (rows.length < 6) return false;
+    function tm(m) { m = ((m % 1440) + 1440) % 1440; return pad(Math.floor(m / 60)) + ":" + pad(m % 60); }
+    function is24(r) { return r.s === 0 && r.e >= 1440; }
+    function utcWin(r) { return is24(r) ? C.t24 : tm(r.s) + "–" + tm(r.e); }
+    function locWin(r) {
+      if (is24(r)) return C.t24;
+      return tm(r.s + C.off) + "–" + tm(r.e + C.off) + ((r.s + C.off) >= 1440 ? C.nextDay : "");
+    }
+    function nm(n) { return C.names[n] ? C.names[n] + (C.nameKeepEn ? "（" + n + "）" : "") : n; }
+    function nmPlain(n) { return C.names[n] || n; }
+    function link(n) {
+      var label = esc(nm(n));
+      return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[n] + "/'>" + label + "</a>" : label;
+    }
+    function tg(t) { return C.tgt[t] || t || "—"; }
+    var cnt = {}, fcnt = {}, groups = {};
+    rows.forEach(function (r) {
+      cnt[r.stn] = (cnt[r.stn] || 0) + 1;
+      var k = String(kHz(r.freq)); fcnt[k] = (fcnt[k] || 0) + 1;
+      var g = groups[r.stn] || (groups[r.stn] = { f: {}, w: {}, wr: {}, t: {} });
+      g.f[k] = (g.f[k] || 0) + 1;
+      var wk = r.s + "-" + r.e; g.w[wk] = (g.w[wk] || 0) + 1; g.wr[wk] = r;
+      if (r.tgt) g.t[r.tgt] = (g.t[r.tgt] || 0) + 1;
+    });
+    var pref = {}; (C.pref || []).forEach(function (n, i) { pref[n] = i + 1; });
+    var stns = Object.keys(cnt).sort(function (a, b) {
+      var pa = pref[a] || 999, pb = pref[b] || 999;
+      return pa - pb || cnt[b] - cnt[a] || (a < b ? -1 : 1);
+    });
+    var freqs = Object.keys(fcnt).sort(function (a, b) { return fcnt[b] - fcnt[a] || a - b; });
+    var nS = stns.length, nF = freqs.length;
+    var hh = BUILD_NOW.getUTCHours(), mm = BUILD_NOW.getUTCMinutes();
+    var nowStr = C.nowFmt(BUILD_NOW, hh, mm);
+
+    var body = "<p class='lede'>" + C.lede(nS, nF) + "</p>";
+
+    // on air now
+    var seenA = {}, act = [];
+    rows.forEach(function (r) {
+      if (!isActiveWindow(r.s, r.e, BUILD_NOW_MIN)) return;
+      var k = r.stn + "|" + kHz(r.freq); if (seenA[k]) return; seenA[k] = 1; act.push(r);
+    });
+    act.sort(function (a, b) { return a.stn < b.stn ? -1 : a.stn > b.stn ? 1 : kHz(a.freq) - kHz(b.freq); });
+    body += "<h2>" + C.hOnAir + "</h2>";
+    if (act.length) {
+      var ag = {}, aord = [];
+      act.forEach(function (r) { if (!ag[r.stn]) { ag[r.stn] = []; aord.push(r.stn); } ag[r.stn].push(r); });
+      aord.sort(function (a, b) { return (pref[a] || 999) - (pref[b] || 999) || ag[b].length - ag[a].length || (a < b ? -1 : 1); });
+      body += "<p>" + C.onAirIntro(nowStr, act.length, aord.length) + "</p><table><tr><th>" + C.thOnAir[0] + "</th><th>" + C.thOnAir[1] + "</th><th>" + C.thOnAir[2] + "</th></tr>";
+      aord.slice(0, 15).forEach(function (n) {
+        var fr = uniq(ag[n].map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+        var en = uniq(ag[n].map(function (r) { return is24(r) ? C.t24 : tm(r.e); })).sort();
+        body += "<tr><td>" + link(n) + "</td><td>" + fr.slice(0, 6).map(function (k) { return freqLinkHtml(k); }).join(", ") + (fr.length > 6 ? " " + C.moreN(fr.length - 6) : "") + "</td><td>" + en.slice(0, 3).join(", ") + (en.length > 3 ? " " + C.moreN(en.length - 3) : "") + "</td></tr>";
+      });
+      body += "</table>";
+    } else {
+      body += "<p>" + C.onAirNone(nowStr) + "</p>";
+    }
+
+    // main table: one row per station
+    body += "<h2>" + C.hMain + "</h2><p>" + C.mainIntro + "</p><table><tr>" + C.thMain.map(function (h) { return "<th>" + h + "</th>"; }).join("") + "</tr>";
+    stns.slice(0, 40).forEach(function (n) {
+      var g = groups[n];
+      var fl = Object.keys(g.f).sort(function (a, b) { return g.f[b] - g.f[a] || a - b; });
+      var shown = fl.slice(0, 8).sort(function (a, b) { return a - b; }).map(function (k) { return freqLinkHtml(k); });
+      var fcell = shown.join(", ") + (fl.length > 8 ? " " + C.moreN(fl.length - 8) : "");
+      var wl = Object.keys(g.w).sort(function (a, b) { return g.w[b] - g.w[a] || (a < b ? -1 : 1); });
+      var wShow = wl.slice(0, 3).map(function (k) { return g.wr[k]; }).sort(function (a, b) { return a.s - b.s; });
+      var wMore = wl.length > 3 ? " " + C.moreN(wl.length - 3) : "";
+      var tl = Object.keys(g.t).sort(function (a, b) { return g.t[b] - g.t[a] || (a < b ? -1 : 1); }).slice(0, 2).map(tg).join(", ");
+      var cells = "<td>" + link(n) + "</td><td>" + fcell + "</td><td>" + wShow.map(utcWin).join("<br>") + wMore + "</td>";
+      if (C.off != null) cells += "<td>" + wShow.map(locWin).join("<br>") + wMore + "</td>";
+      cells += "<td>" + esc(tl || "—") + "</td>";
+      body += "<tr>" + cells + "</tr>";
+    });
+    body += "</table>";
+    if (stns.length > 40) body += "<p>" + C.moreStations(stns.length - 40) + "</p>";
+
+    // extra section (e.g. NHK Chinese service)
+    var extra = C.extra ? C.extra(rows, { tm: tm, utcWin: utcWin, locWin: locWin, link: link }) : { html: "", faq: null };
+    body += extra.html;
+
+    // most used frequencies
+    body += "<h2>" + C.hTags + "</h2><div class='tags'>" + freqs.slice(0, 12).sort(function (x, y) { return x - y; }).map(function (k) {
+      return (byFreq[k] && byFreq[k].length >= MIN_FREQ_ENTRIES) ? "<a href='/frequency/" + k + "-khz/'>" + k + " kHz</a>" : "<a href='/?q=" + k + "'>" + k + " kHz</a>";
+    }).join("") + "</div>";
+
+    // station grid
+    body += "<h2>" + C.hGrid + "</h2><div class='grid'>" + stns.map(function (n) {
+      var href = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "/?q=" + encodeURIComponent(n);
+      return "<a href='" + href + "'>" + esc(nmPlain(n)) + "<span>" + esc(n) + " · " + C.countLabel(cnt[n]) + "</span></a>";
+    }).join("") + "</div>";
+
+    body += "<h2>" + C.hHow + "</h2>" + C.howHtml;
+
+    var faq = C.faq({ nS: nS, nF: nF, stns: stns, freqs: freqs, nmPlain: nmPlain });
+    if (extra.faq) faq.splice(Math.min(2, faq.length), 0, extra.faq);
+    body += seoFaqHtml(faq) + seoFaqLd(faq);
+    body += "<p><a class='cta' href='/listen-online/'>" + C.cta + "</a></p>";
+    body += "<h2>" + C.hRel + "</h2><div class='tags'>" + C.related + "</div>";
+
+    write(C.dir + "/index.html", shell({
+      lang: C.lang, title: C.title(nS, nF, stns), desc: C.desc(nS, nF, stns), canonical: C.path, kicker: C.kicker,
+      h1: C.h1, bodyHtml: body, breadcrumbs: C.crumbs
+    }));
+    urls.push(C.path);
+    console.log("Localized page " + C.path + ": " + nS + " stations, " + nF + " frequencies");
+    return true;
+  }
+
+  // ── Chinese ──
+  var yr = BUILD_NOW.getUTCFullYear();
+  var ZH_NAMES = {
+    "China Radio International": "中国国际广播电台", "China National Radio 1": "中央人民广播电台中国之声", "CNR 2 China Business Radio": "中央人民广播电台经济之声", "Sound of Hope": "希望之声",
+    "NHK Radio Japan": "NHK 世界广播（日本）",
+    "Voice of America": "美国之音", "Voice of Korea": "朝鲜之声", "Voice of Vietnam": "越南之声",
+    "Radio Vaticana": "梵蒂冈广播电台", "KBS World Radio": "KBS 世界广播", "Radio Romania International": "罗马尼亚国际广播电台",
+    "Voice of Indonesia": "印度尼西亚之声"
+  };
+  var ZH_TGT = {
+    "Far East": "远东", "China": "中国", "Pacific": "太平洋", "SE Asia": "东南亚", "Taiwan": "台湾", "South Asia": "南亚",
+    "Europe": "欧洲", "Indonesia": "印度尼西亚", "Middle East": "中东", "Central Asia": "中亚", "Siberia": "西伯利亚",
+    "South America": "南美洲", "S. Africa": "南非", "E. Africa": "东非", "North America": "北美洲", "E. North America": "北美洲东部",
+    "W. North America": "北美洲西部", "Africa": "非洲", "Philippines": "菲律宾", "Japan": "日本", "Korea": "朝鲜半岛"
+  };
+  var ZH_PREF = ["China Radio International", "China National Radio 1", "Radio Taiwan International", "NHK Radio Japan", "Voice of America", "Voice of Korea"];
+  var zhCfg = {
+    lang: "zh", dir: "zh", path: "/zh/", keys: ["Mandarin"], exclude: /jammer/i, names: ZH_NAMES, nameKeepEn: true, tgt: ZH_TGT, pref: ZH_PREF,
+    off: 480, t24: "24小时", nextDay: "（次日）",
+    nowFmt: function (d, h, m) { return d.getUTCFullYear() + "年" + (d.getUTCMonth() + 1) + "月" + d.getUTCDate() + "日 " + pad(h) + ":" + pad(m) + " UTC（北京时间 " + pad((h + 8) % 24) + ":" + pad(m) + (h + 8 >= 24 ? "，次日" : "") + "）"; },
+    lede: function (nS, nF) { return SEASON.label + " 播出季的广播时刻表中，共有 <strong>" + nS + " 个电台</strong>在 <strong>" + nF + " 个频率</strong>上用普通话进行短波广播。本页汇总中文短波广播的频率、播出时间（UTC 和北京时间）以及当前正在播出的电台。数据来自公开的 EIBI 广播时刻表，每日更新；时刻表中标注为干扰信号（jammer）的条目不计入。"; },
+    hOnAir: "现在正在播出的中文短波广播",
+    onAirIntro: function (now, n, nst) { return "截至 " + now + "，时刻表中有 " + nst + " 个电台（共 " + n + " 个频率）的中文广播处于播出时段（每日重新生成；实时状态请使用<a href='/'>实时搜索</a>）。"; },
+    onAirNone: function (now) { return "截至 " + now + "，时刻表中暂无处于播出时段的中文广播。请查看下方的频率表了解下次播出时间。"; },
+    thOnAir: ["电台", "频率", "播出结束（UTC）"],
+    hMain: "中文短波广播频率表",
+    mainIntro: "按电台列出常用频率和播出时间。北京时间（CST）= UTC + 8 小时，例如 UTC 12:00 即北京时间 20:00。",
+    thMain: ["电台", "频率", "播出时间（UTC）", "北京时间", "对象地区"],
+    moreN: function (n) { return "等 " + n + " 项"; },
+    moreStations: function (n) { return "另有 " + n + " 个电台见下方的电台列表。"; },
+    hTags: "常用频率", hGrid: "提供中文短波广播的电台", countLabel: function (n) { return n + " 条"; },
+    hHow: "如何收听中文短波广播",
+    howHtml: "<p>短波广播的可听频段因时间和季节而异：白天多用 15–21 MHz（19、16、13 米波段），傍晚用 9–11 MHz，夜间到清晨用 3–7 MHz（49、60、75 米波段）。实际接收情况取决于太阳活动、所在地点和天线，时刻表仅供参考。</p>"
+      + "<p>时刻表使用 UTC（协调世界时），北京时间为 UTC + 8。例如 UTC 12:00 = 北京时间 20:00，UTC 20:00 = 北京时间次日 04:00。</p>"
+      + "<p>没有收音机也可以：通过网络上的 WebSDR 或 KiwiSDR 接收机，在浏览器中即可收听真实的短波信号。</p>",
+    extra: function (allRows, h) {
+      var nr = allRows.filter(function (r) { return r.stn === "NHK Radio Japan"; });
+      if (nr.length < 2) return { html: "", faq: null };
+      var seen = {}, list = [];
+      nr.slice().sort(function (a, b) { return a.s - b.s || kHz(a.freq) - kHz(b.freq); }).forEach(function (r) {
+        var k = r.freq + "|" + r.s + "|" + r.e; if (seen[k]) return; seen[k] = 1; list.push(r);
+      });
+      var fl = uniq(list.map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+      var t = "<h2>NHK 世界广播（日本）中文短波频率</h2><p>时刻表中 NHK 世界广播（NHK Radio Japan）安排了 " + list.length + " 个中文短波时段，频率和时间如下。</p><table><tr><th>频率</th><th>播出时间（UTC）</th><th>北京时间</th><th>对象地区</th></tr>";
+      list.forEach(function (r) { t += "<tr><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + h.utcWin(r) + "</td><td>" + h.locWin(r) + "</td><td>" + esc(ZH_TGT[r.tgt] || r.tgt || "—") + "</td></tr>"; });
+      t += "</table>";
+      return { html: t, faq: ["NHK 中文短波频率是多少？", "时刻表中 NHK 世界广播的中文短波频率有 " + fl.join("、") + " kHz。不同频率对应不同的播出时段和对象地区，请参考上表。"] };
+    },
+    faq: function (c) {
+      return [
+        ["中文短波广播有哪些频率？", SEASON.label + " 时刻表中有 " + c.nS + " 个电台用中文广播，较常用的频率包括 " + c.freqs.slice(0, 5).join("、") + " kHz。不同时间和季节适合收听的频率不同。"],
+        ["哪些电台提供中文短波广播？", "时刻表中中文播出较多的电台包括 " + c.stns.slice(0, 6).map(c.nmPlain).join("、") + " 等。"],
+        ["UTC 如何换算成北京时间？", "北京时间 = UTC + 8 小时。例如 UTC 12:00 即北京时间 20:00，UTC 20:00 即北京时间次日 04:00。"],
+        ["没有收音机能收听短波广播吗？", "可以。用网络上的 WebSDR 或 KiwiSDR 接收机，在浏览器中即可收听短波广播。本站的 “Listen Online” 页面提供接收机链接。"]
+      ];
+    },
+    cta: "没有收音机？在线收听（Listen Online）", hRel: "相关页面",
+    related: "<a href='/languages/mandarin/'>English: Shortwave in Mandarin</a><a href='/ja/' lang='ja'>日本語</a><a href='/stations/'>所有电台</a><a href='/frequency/'>所有频率</a><a href='/bands/'>短波波段</a>",
+    title: function () { return "短波广播频率表（" + yr + "年）中文短波电台 · 中国国际广播电台 · NHK | ShortwaveHQ"; },
+    desc: function (nS, nF) { return "中文短波广播频率表：" + nS + " 个电台、" + nF + " 个频率，附 UTC 与北京时间换算。含中国国际广播电台、中央人民广播电台、NHK 世界广播、美国之音等。每日更新。"; },
+    kicker: "中文 · EIBI " + SEASON.label,
+    h1: "短波广播 <span style=\"color:#c0392b\">频率表</span>",
+    crumbs: [["首页", "/"], ["短波广播频率表", "/zh/"]]
+  };
+  ZH_BUILT = localePage(zhCfg);
+
+  // ── Spanish ──
+  var ES_TGT = {
+    "South America": "Sudamérica", "North America": "Norteamérica", "Caribbean": "Caribe", "Cuba": "Cuba", "Europe": "Europa", "LAm": "América Latina",
+    "Middle East": "Oriente Medio", "Africa": "África", "Peru": "Perú", "Brazil": "Brasil", "S. Europe": "Europa meridional", "Am": "América",
+    "E. North America": "Este de Norteamérica", "Central America": "Centroamérica", "Bolivia": "Bolivia", "Indonesia": "Indonesia",
+    "C. North America": "Centro de Norteamérica", "Spain": "España", "Far East": "Extremo Oriente", "CHL": "Chile", "Colombia": "Colombia",
+    "W. North America": "Oeste de Norteamérica", "VEN": "Venezuela", "C. Europe": "Europa central"
+  };
+  var esCfg = {
+    lang: "es", dir: "es", path: "/es/", keys: ["Spanish"], exclude: null, names: {}, nameKeepEn: false, tgt: ES_TGT, pref: [],
+    off: null, t24: "24 horas", nextDay: "",
+    nowFmt: function (d, h, m) { var M = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]; return d.getUTCDate() + " de " + M[d.getUTCMonth()] + " de " + d.getUTCFullYear() + ", " + pad(h) + ":" + pad(m) + " UTC"; },
+    lede: function (nS, nF) { return "En el horario " + SEASON.label + " hay <strong>" + nS + " emisoras</strong> con programas en español en onda corta, en <strong>" + nF + " frecuencias</strong>. Esta página reúne las frecuencias, los horarios (UTC) y las emisoras que están en el aire ahora. Los datos proceden del horario público EIBI y se actualizan cada día."; },
+    hOnAir: "Emisoras en español en el aire ahora",
+    onAirIntro: function (now, n, nst) { return "A fecha de " + now + ", " + nst + " emisoras (" + n + " frecuencias) tienen programas en español dentro de su horario previsto (se regenera a diario; para el estado en tiempo real use la <a href='/'>búsqueda en vivo</a>)."; },
+    onAirNone: function (now) { return "A fecha de " + now + ", ninguna emisión en español está dentro de su horario previsto. Consulte la tabla siguiente para ver la próxima emisión."; },
+    thOnAir: ["Emisora", "Frecuencia", "Hasta (UTC)"],
+    hMain: "Frecuencias de onda corta en español",
+    mainIntro: "Frecuencias y horarios por emisora. Los horarios están en UTC (Tiempo Universal Coordinado). Para pasar a la hora local, aplique la diferencia de su país: España peninsular UTC+1 en invierno y UTC+2 en verano, México (centro) UTC−6, Colombia y Perú UTC−5, Argentina UTC−3, Chile UTC−4 o UTC−3 según la época del año.",
+    thMain: ["Emisora", "Frecuencias", "Horario (UTC)", "Destino"],
+    moreN: function (n) { return "y " + n + " más"; },
+    moreStations: function (n) { return "Otras " + n + " emisoras aparecen en la lista de emisoras más abajo."; },
+    hTags: "Frecuencias más usadas", hGrid: "Emisoras con programas en español", countLabel: function (n) { return n + (n === 1 ? " horario" : " horarios"); },
+    hHow: "Cómo escuchar onda corta en español",
+    howHtml: "<p>Las bandas que mejor se oyen cambian con la hora y la estación del año: de día suelen funcionar mejor las de 15–21 MHz (19, 16 y 13 metros); al anochecer, 9–11 MHz; de noche y de madrugada, 3–7 MHz (49, 60 y 75 metros). La recepción real depende de la actividad solar, de su ubicación y de la antena, así que el horario es solo una guía.</p>"
+      + "<p>Si no tiene receptor, puede escuchar en el navegador con un WebSDR o un KiwiSDR, que son receptores reales conectados a internet. Desde la página «Listen Online» llega a los receptores.</p>",
+    extra: null,
+    faq: function (c) {
+      return [
+        ["¿Qué frecuencias de onda corta emiten en español?", "En el horario " + SEASON.label + " hay " + c.nS + " emisoras con programas en español. Las frecuencias más usadas son " + c.freqs.slice(0, 5).join(", ") + " kHz. La frecuencia que mejor se oye cambia según la hora y la estación."],
+        ["¿Qué emisoras transmiten en español por onda corta?", "Las que más horarios en español tienen en el horario son " + c.stns.slice(0, 6).join(", ") + ", entre otras."],
+        ["¿Cómo paso de UTC a mi hora local?", "Sume o reste la diferencia de su zona horaria a la hora UTC. Por ejemplo, 12:00 UTC son las 14:00 en la España peninsular en verano (UTC+2), las 6:00 en el centro de México (UTC−6) y las 9:00 en Argentina (UTC−3)."],
+        ["¿Se puede escuchar onda corta sin radio?", "Sí. Con un WebSDR o un KiwiSDR se escucha en el navegador una señal de onda corta real. En la página «Listen Online» de este sitio están los enlaces a los receptores."]
+      ];
+    },
+    cta: "Escuchar sin radio (Listen Online)", hRel: "Páginas relacionadas",
+    related: "<a href='/languages/spanish/'>English: Shortwave in Spanish</a><a href='/stations/'>Todas las emisoras</a><a href='/frequency/'>Todas las frecuencias</a><a href='/bands/'>Bandas de onda corta</a>",
+    title: function () { return "Radio de onda corta en español: frecuencias y horarios (" + yr + ") | ShortwaveHQ"; },
+    desc: function (nS, nF, stns) { return "Frecuencias de onda corta en español: " + nS + " emisoras y " + nF + " frecuencias con horarios en UTC, como " + stns.slice(0, 3).join(", ") + ". Actualizado a diario."; },
+    kicker: "Español · EIBI " + SEASON.label,
+    h1: "Radio de onda corta <span style=\"color:#c0392b\">en español</span>",
+    crumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"]]
+  };
+  ES_BUILT = localePage(esCfg);
+})();
+
 // ── Embeddable "On Air Now" widget ────────────────────────────────
 // /embed/on-air/ is a standalone, noindex iframe page. It computes who is on
 // air in the visitor's browser from /data/schedule.json (same file the main
@@ -1885,10 +2191,15 @@ urls.push("/bands/");
   }
   var extraLk = [];
   if (JA_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/ja/\" lang=\"ja\">日本語：短波放送 周波数一覧</a>");
+  if (ZH_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/zh/\" lang=\"zh\">中文：短波广播频率表</a>");
+  if (ES_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/es/\" lang=\"es\">Español: radio de onda corta</a>");
+  extraLk.push("<a style=\"" + lk + "\" href=\"/how-to-listen-to-shortwave-radio-online/\">How to listen to shortwave radio online</a>");
   if (NSL_BUILT) extraLk.push("<a style=\"" + lk + "\" href=\"/numbers-stations-list/\">Numbers stations frequency list</a>");
   if (extraLk.length) x += "<p style=\"" + fs1 + ";margin-top:.8rem\">" + extraLk.join(" · ") + "</p>";
   x += "<p style=\"" + fs1 + ";margin-top:.8rem\"><a style=\"" + lk + "\" href=\"/embed/\">Free “on air now” widget for your own site</a></p></section>";
   h = h.slice(0, a + m0.length) + x + h.slice(b);
+  // keep the hardcoded station count in the SPA shell in step with the data
+  h = h.replace(/\b309(?=[ -](?:active |shortwave )?station)/gi, String(allStn.length)).replace(/(<em id="st-total">)309(<\/em>)/, "$1" + allStn.length + "$2").replace(/(<div class="stv">)309(<\/div><div class="stl">Active 2026)/, "$1" + allStn.length + "$2");
   fs.writeFileSync(ip, h);
   console.log("Injected homepage facts block (" + allStn.length + " stations, " + allFreq.length + " frequencies)");
 })();
