@@ -1307,7 +1307,7 @@ a,button,input,select,textarea{touch-action:manipulation}
           <div class="ch"><div class="clbl"><div class="cdot c-amber"></div>Quick Shack Log</div></div>
           <div style="padding:.9rem;display:flex;flex-direction:column;gap:7px">
             <div class="g2">
-              <div class="fld"><label>Freq (MHz)</label><input class="inp" id="ql-f" placeholder="9.395"></div>
+              <div class="fld"><label>Freq</label><div style="display:flex;gap:4px"><input class="inp" id="ql-f" inputmode="decimal" placeholder="9.395" style="min-width:0"><select class="inp" id="ql-unit" aria-label="Frequency unit" onchange="logUnitSave(this.value)" style="width:auto;flex:0 0 auto;padding-left:4px;padding-right:2px"><option value="mhz" selected>MHz</option><option value="khz">kHz</option></select></div></div>
               <div class="fld"><label>Signal</label><input class="inp" id="ql-s" type="number" min="1" max="9" placeholder="7"></div>
             </div>
             <div class="fld"><label>Station</label><input class="inp" id="ql-stn" placeholder="WRMI Radio Miami"></div>
@@ -1705,7 +1705,7 @@ a,button,input,select,textarea{touch-action:manipulation}
         <div class="card"><div class="ch"><div class="clbl">Add Entry</div></div>
           <div style="padding:1rem;display:flex;flex-direction:column;gap:7px">
             <div class="g2">
-              <div class="fld"><label>Frequency MHz</label><input class="inp" id="log-freq" placeholder="9.395"></div>
+              <div class="fld"><label>Frequency</label><div style="display:flex;gap:6px"><input class="inp" id="log-freq" inputmode="decimal" placeholder="9.395" style="min-width:0"><select class="inp" id="log-unit" aria-label="Frequency unit" onchange="logUnitSave(this.value)" style="width:auto;flex:0 0 auto;padding-right:4px"><option value="mhz" selected>MHz</option><option value="khz">kHz</option></select></div></div>
               <div class="fld"><label>Signal 1–9</label><input class="inp" id="log-sig" type="number" min="1" max="9" placeholder="7"></div>
             </div>
             <div class="fld"><label>Station</label><input class="inp" id="log-stn" placeholder="WRMI Radio Miami International"></div>
@@ -5143,6 +5143,21 @@ function renderLog(){
 
 function delLog(i){var e=loadLog();e.splice(i,1);saveLog(e);renderLog();}
 
+// Frequency unit for the log forms. Entries are always stored in MHz.
+function logFreqToMHz(raw,unit){
+  var n=parseFloat(String(raw||"").trim().replace(/,/g,""));
+  if(!isFinite(n)||n<=0)return null;
+  var note="";
+  if(unit==="khz"){ if(n<100){note=" (read as MHz)";}else{n=n/1000;} }
+  else if(n>=1000){ n=n/1000; note=" (read as kHz)"; }
+  return {mhz:String(parseFloat(n.toFixed(6))),note:note};
+}
+function logUnitSave(v){
+  try{localStorage.setItem("swlogunit",v);}catch(e){}
+  ["log-unit","ql-unit"].forEach(function(id){var el=document.getElementById(id);if(el&&el.value!==v)el.value=v;});
+}
+(function(){try{var u=localStorage.getItem("swlogunit");if(u==="khz"||u==="mhz"){["log-unit","ql-unit"].forEach(function(id){var el=document.getElementById(id);if(el)el.value=u;});}}catch(e){}})();
+
 // ── STREAKS & BADGES ─────────────────────────────────────────────
 function logDates(entries){
   var days={};
@@ -5246,6 +5261,9 @@ function submitLog(){
   var f=(document.getElementById("log-freq")||{value:""}).value.trim();
   var stn=(document.getElementById("log-stn")||{value:""}).value.trim();
   if(!f||!stn){toast("Please enter frequency and station name");return;}
+  var fr=logFreqToMHz(f,(document.getElementById("log-unit")||{value:"mhz"}).value);
+  if(!fr){toast("Enter the frequency as a number, e.g. 9.395 MHz or 9395 kHz");return;}
+  f=fr.mhz;
   var sig=parseInt((document.getElementById("log-sig")||{value:"5"}).value)||5;
   var notes=(document.getElementById("log-notes")||{value:""}).value.trim();
   var loc=(document.getElementById("log-loc")||{value:""}).value.trim();
@@ -5255,19 +5273,22 @@ function submitLog(){
   var entries=loadLog();entries.unshift({f:f,stn:stn,sig:sig,notes:notesStr,utc:utc,date:nd.toISOString()});
   saveLog(entries);renderLog();
   ["log-freq","log-stn","log-sig","log-notes","log-loc","log-rx"].forEach(function(id){var el=document.getElementById(id);if(el)el.value="";});
-  toast("Entry saved to log");
+  toast("Entry saved: "+f+" MHz"+fr.note);
 }
 
 function quickLog(){
   var f=(document.getElementById("ql-f")||{value:""}).value.trim();
   var stn=(document.getElementById("ql-stn")||{value:""}).value.trim();
   if(!f||!stn){toast("Please enter frequency and station");return;}
+  var fr=logFreqToMHz(f,(document.getElementById("ql-unit")||{value:"mhz"}).value);
+  if(!fr){toast("Enter the frequency as a number, e.g. 9.395 MHz or 9395 kHz");return;}
+  f=fr.mhz;
   var sig=parseInt((document.getElementById("ql-s")||{value:"5"}).value)||5;
   var note=(document.getElementById("ql-note")||{value:""}).value.trim();
   var nd=new Date();var utc=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
   var entries=loadLog();entries.unshift({f:f,stn:stn,sig:sig,notes:note,utc:utc,date:nd.toISOString()});
   saveLog(entries);["ql-f","ql-stn","ql-s","ql-note"].forEach(function(id){var el=document.getElementById(id);if(el)el.value="";});
-  toast("Logged: "+stn+" on "+f+" MHz");
+  toast("Logged: "+stn+" on "+f+" MHz"+fr.note);
 }
 
 function exportLog(){
