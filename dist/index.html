@@ -1044,8 +1044,7 @@ a,button,input,select,textarea{touch-action:manipulation}
     <span class="tk-it">17.760 MHz — BBC World Service Africa</span><span class="tk-sep"> · </span>
     <span class="tk-it">9.700 MHz — Radio New Zealand Pacific</span><span class="tk-sep"> · </span>
     <span class="tk-it">21.620 MHz — Radio France Internationale</span><span class="tk-sep"> · </span>
-    <span class="tk-it">600M+ Shortwave Receivers Worldwide</span><span class="tk-sep"> · </span>
-    <span class="tk-it">150M+ Weekly Listeners Globally</span><span class="tk-sep"> · </span>
+    <span class="tk-it">EIBI A-26 + HFCC Schedule Data</span><span class="tk-sep"> · </span>
     <span class="tk-it">316 Active Stations on Air in 2026</span><span class="tk-sep"> · </span>
     <span class="tk-it">9.395 MHz — WRMI Eastern N. America</span><span class="tk-sep"> · </span>
     <span class="tk-it">5.000 MHz — WWV Time Signal — 24/7</span><span class="tk-sep"> · </span>
@@ -1054,8 +1053,7 @@ a,button,input,select,textarea{touch-action:manipulation}
     <span class="tk-it">17.760 MHz — BBC World Service Africa</span><span class="tk-sep"> · </span>
     <span class="tk-it">9.700 MHz — Radio New Zealand Pacific</span><span class="tk-sep"> · </span>
     <span class="tk-it">21.620 MHz — Radio France Internationale</span><span class="tk-sep"> · </span>
-    <span class="tk-it">600M+ Shortwave Receivers Worldwide</span><span class="tk-sep"> · </span>
-    <span class="tk-it">150M+ Weekly Listeners Globally</span><span class="tk-sep"> · </span>
+    <span class="tk-it">EIBI A-26 + HFCC Schedule Data</span><span class="tk-sep"> · </span>
     <span class="tk-it">316 Active Stations on Air in 2026</span><span class="tk-sep"> · </span>
   </div></div>
 </div>
@@ -1194,8 +1192,8 @@ a,button,input,select,textarea{touch-action:manipulation}
     <div class="sbar-in">
       <div class="st"><div class="stv"><em id="st-onair">--</em></div><div class="stl">On Air Now</div></div>
       <div class="st"><div class="stv"><em id="st-total">316</em></div><div class="stl">Stations in DB</div></div>
-      <div class="st"><div class="stv">600<em>M+</em></div><div class="stl">SW Receivers</div></div>
-      <div class="st"><div class="stv">150<em>M+</em></div><div class="stl">Weekly Listeners</div></div>
+      <div class="st"><div class="stv"><em id="st-bcast">--</em></div><div class="stl">Scheduled Broadcasts</div></div>
+      <div class="st"><div class="stv"><em id="st-freqs">--</em></div><div class="stl">Frequencies</div></div>
       <div class="st"><div class="stv">316</div><div class="stl">Active 2026</div></div>
       <div class="st"><div class="stv"><em id="st-sfi">--</em></div><div class="stl">Solar Flux</div></div>
       <div class="st"><div class="stv"><em id="st-k">--</em></div><div class="stl">K-Index</div></div>
@@ -1307,7 +1305,7 @@ a,button,input,select,textarea{touch-action:manipulation}
           <div class="ch"><div class="clbl"><div class="cdot c-amber"></div>Quick Shack Log</div></div>
           <div style="padding:.9rem;display:flex;flex-direction:column;gap:7px">
             <div class="g2">
-              <div class="fld"><label>Freq (MHz)</label><input class="inp" id="ql-f" placeholder="9.395"></div>
+              <div class="fld"><label>Freq</label><div style="display:flex;gap:4px"><input class="inp" id="ql-f" inputmode="decimal" placeholder="9.395" style="min-width:0"><select class="inp" id="ql-unit" aria-label="Frequency unit" onchange="logUnitSave(this.value)" style="width:auto;flex:0 0 auto;padding-left:4px;padding-right:2px"><option value="mhz" selected>MHz</option><option value="khz">kHz</option></select></div></div>
               <div class="fld"><label>Signal</label><input class="inp" id="ql-s" type="number" min="1" max="9" placeholder="7"></div>
             </div>
             <div class="fld"><label>Station</label><input class="inp" id="ql-stn" placeholder="WRMI Radio Miami"></div>
@@ -1705,7 +1703,7 @@ a,button,input,select,textarea{touch-action:manipulation}
         <div class="card"><div class="ch"><div class="clbl">Add Entry</div></div>
           <div style="padding:1rem;display:flex;flex-direction:column;gap:7px">
             <div class="g2">
-              <div class="fld"><label>Frequency MHz</label><input class="inp" id="log-freq" placeholder="9.395"></div>
+              <div class="fld"><label>Frequency</label><div style="display:flex;gap:6px"><input class="inp" id="log-freq" inputmode="decimal" placeholder="9.395" style="min-width:0"><select class="inp" id="log-unit" aria-label="Frequency unit" onchange="logUnitSave(this.value)" style="width:auto;flex:0 0 auto;padding-right:4px"><option value="mhz" selected>MHz</option><option value="khz">kHz</option></select></div></div>
               <div class="fld"><label>Signal 1–9</label><input class="inp" id="log-sig" type="number" min="1" max="9" placeholder="7"></div>
             </div>
             <div class="fld"><label>Station</label><input class="inp" id="log-stn" placeholder="WRMI Radio Miami International"></div>
@@ -2047,8 +2045,8 @@ Yours sincerely,
           <div style="font-family:var(--disp);font-size:1.4rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.8rem;line-height:1.2">Every review reaches a buying audience — everywhere they already are</div>
           <div style="font-family:var(--serif);font-size:.85rem;color:rgba(255,255,255,.88);line-height:1.8;margin-bottom:1.2rem">Reviews on ShortwaveHQ aren't a one-off post. Each one is built for the full shortwave audience: an in-depth written review with SEO-optimized station/frequency context, cross-posted to our video and podcast content, and shared directly into active DXer and prepper communities on Facebook and YouTube. This isn't a hobbyist blog post — it's a coordinated content package.</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem">
-            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">150M+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Weekly SW Listeners Worldwide</div></div>
-            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">1,157</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Indexed SEO Pages Driving Search Traffic</div></div>
+            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">300+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Stations With Live Schedules</div></div>
+            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">800+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Pages Built From Live Schedule Data</div></div>
             <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">Multi-Channel</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Site + Video + Podcast + Social</div></div>
             <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">Buyers</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Audience Spends $100–$2,000+ on Gear</div></div>
           </div>
@@ -2081,7 +2079,7 @@ Yours sincerely,
 
 <div class="page" id="pg-advertise">
   <div class="wrap" style="padding-top:1.6rem;padding-bottom:4rem">
-    <div class="srule"><div class="sn">Business</div><div class="sh">Advertise on <em>ShortwaveHQ</em></div><div class="sm">Reach 150M+ listeners worldwide</div></div>
+    <div class="srule"><div class="sn">Business</div><div class="sh">Advertise on <em>ShortwaveHQ</em></div><div class="sm">Reach shortwave listeners and radio buyers</div></div>
     <div class="two">
       <div class="stk">
         <div style="padding:1.4rem;background:var(--ink);color:#fff;border-radius:5px;margin-bottom:0">
@@ -2089,8 +2087,8 @@ Yours sincerely,
           <div style="font-family:var(--disp);font-size:1.4rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.8rem;line-height:1.2">The most engaged radio audience on the internet</div>
           <div style="font-family:var(--serif);font-size:.85rem;color:rgba(255,255,255,.88);line-height:1.8;margin-bottom:1.2rem">ShortwaveHQ reaches the global shortwave listening community — a highly engaged, high-income audience of radio enthusiasts, survivalists, preppers, veterans, and international news followers. These are buyers who spend $100–$2,000+ on radio equipment.</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem">
-            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">600M+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">SW Receivers Worldwide</div></div>
-            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">150M+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Weekly Listeners</div></div>
+            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">300+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Stations With Live Schedules</div></div>
+            <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">800+</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Pages Built From Live Schedule Data</div></div>
             <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">$423M</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">SW Radio Market 2025</div></div>
             <div style="padding:.8rem;background:rgba(255,255,255,.07);border-radius:3px;border:1px solid rgba(255,255,255,.1)"><div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;color:#e87060">5.9%</div><div style="font-family:var(--mono);font-size:.68rem;color:rgba(255,255,255,.78);margin-top:2px;letter-spacing:.08em;text-transform:uppercase">Annual Market Growth</div></div>
           </div>
@@ -2384,8 +2382,8 @@ Yours sincerely,
     <p style="font-family:var(--mono);font-size:.72rem;line-height:1.7;color:rgba(255,255,255,.4)"><strong style="color:rgba(255,255,255,.55)">Disclaimer:</strong> ShortwaveHQ is an independent hobbyist project provided for informational and educational purposes only. Schedules, frequencies, and propagation data are compiled from public sources and may contain errors or become outdated — always verify against official station information. This site is not affiliated with any broadcaster, government agency, or the operators of any receiver linked here. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases. Use of this site is at your own discretion.</p>
   </div>
   <div class="fbot wrap">
-    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build b8b6964c · 2026-10-07 11:47 UTC</span></div>
-    <div class="fcopy">600M+ receivers · 150M+ weekly listeners · 316 active stations in 2026</div>
+    <div class="fcopy">© 2026 ShortwaveHQ · The World's Shortwave Radio Search Engine · Free for everyone, forever <span style="opacity:.45" title="If this doesn't match what you expect, the deploy hasn't picked up your latest change yet.">· build dddbeeba · 2026-10-07 21:07 UTC</span></div>
+    <div class="fcopy">Schedule data: EIBI A-26 + HFCC · 316 active stations in 2026</div>
   </div>
 </footer>
 
@@ -2456,7 +2454,7 @@ Yours sincerely,
   <div style="max-width:1580px;margin:0 auto">
     <h2 style="font-family:'Syne',sans-serif;color:#fff;font-size:1rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.8rem">ShortwaveHQ — Global Shortwave Radio Intelligence</h2>
     <p style="font-family:'IBM Plex Mono',monospace;font-size:.65rem;color:rgba(255,255,255,.72);line-height:1.9;max-width:820px;margin-bottom:1.8rem">Real-time shortwave radio schedules, live band conditions, and frequency identification for 2026. Search 316 shortwave stations including BBC World Service, Voice of America, Radio Romania International, Radio France Internationale, WRMI, WWCR, WBCQ, Radio Habana Cuba, All India Radio, NHK World Radio Japan, and more. Find what's on the air right now on the 31m, 41m, 49m, and 25m shortwave bands. Track shortwave propagation with live solar flux and K-index data. Listen online free via WebSDR and KiwiSDR — no hardware required.</p>
-    <!--SEOFACTS--><section style="max-width:820px;margin:0 0 1.8rem"><h2 style="font-family:'Syne',sans-serif;color:#fff;font-size:1rem;font-weight:800;margin-bottom:.6rem">What is ShortwaveHQ?</h2><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-bottom:.8rem">ShortwaveHQ is a free, independent shortwave radio schedule search and directory. It lists <strong>316 stations</strong> broadcasting on <strong>822 frequencies</strong> in the <strong>A-26</strong> season (valid March 29 – October 25, 2026), built from the public EIBI broadcast schedule and refreshed daily. Every schedule time is in UTC. Search by frequency, station, language or target region, check who is on the air right now, and open any broadcast on a free online receiver (WebSDR or KiwiSDR) without owning a radio.</p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-bottom:.8rem">Schedules show what stations plan to transmit. Actual reception depends on your location, the time of day and current propagation, and stations can change plans without notice, so treat the data as a guide and verify against each station’s own announcements.</p><h3 style="font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.4rem 0 .4rem">On the air at the last daily update (Wednesday, October 7, 2026, 11:47 UTC)</h3><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9"><a style="color:rgba(255,255,255,.9)" href="/stations/4dx-radio/">4DX Radio</a> 5055 kHz (English) · Alcaravan Radio 5910 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 3467 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 17904 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 17916 kHz (English) · Bay Islands Radio 5045 kHz (English) · Brisbane Radio 3467 kHz (English) · Brisbane Radio 17904 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/brother-stair/">Brother Stair</a> 13800 kHz (English) · CFRX Toronto, CFRB 1010 6070 kHz (English) — <a style="color:rgba(255,255,255,.9)" href="/listen-online/">full live list</a></p><h3 style="font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.8rem 0 .4rem">Shortwave by language</h3><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9"><a style="color:rgba(255,255,255,.9)" href="/languages/mandarin/">Mandarin</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/english/">English</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/spanish/">Spanish</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/french/">French</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/korean/">Korean</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/russian/">Russian</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/japanese/">Japanese</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/tibetan/">Tibetan</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/german/">German</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/arabic/">Arabic</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/farsi/">Farsi</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/portuguese/">Portuguese</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/">all languages</a></p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-top:.8rem"><a style="color:rgba(255,255,255,.9)" href="/ja/" lang="ja">日本語：短波放送 周波数一覧</a> · <a style="color:rgba(255,255,255,.9)" href="/zh/" lang="zh">中文：短波广播频率表</a> · <a style="color:rgba(255,255,255,.9)" href="/es/" lang="es">Español: radio de onda corta</a> · <a style="color:rgba(255,255,255,.9)" href="/how-to-listen-to-shortwave-radio-online/">How to listen to shortwave radio online</a> · <a style="color:rgba(255,255,255,.9)" href="/numbers-stations-list/">Numbers stations frequency list</a></p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-top:.8rem"><a style="color:rgba(255,255,255,.9)" href="/embed/">Free “on air now” widget for your own site</a></p></section><!--/SEOFACTS-->
+    <!--SEOFACTS--><section style="max-width:820px;margin:0 0 1.8rem"><h2 style="font-family:'Syne',sans-serif;color:#fff;font-size:1rem;font-weight:800;margin-bottom:.6rem">What is ShortwaveHQ?</h2><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-bottom:.8rem">ShortwaveHQ is a free, independent shortwave radio schedule search and directory. It lists <strong>316 stations</strong> broadcasting on <strong>822 frequencies</strong> in the <strong>A-26</strong> season (valid March 29 – October 25, 2026), built from the public EIBI broadcast schedule and refreshed daily. Every schedule time is in UTC. Search by frequency, station, language or target region, check who is on the air right now, and open any broadcast on a free online receiver (WebSDR or KiwiSDR) without owning a radio.</p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-bottom:.8rem">Schedules show what stations plan to transmit. Actual reception depends on your location, the time of day and current propagation, and stations can change plans without notice, so treat the data as a guide and verify against each station’s own announcements.</p><h3 style="font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.4rem 0 .4rem">On the air at the last daily update (Wednesday, October 7, 2026, 21:07 UTC)</h3><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9"><a style="color:rgba(255,255,255,.9)" href="/stations/4dx-radio/">4DX Radio</a> 5055 kHz (English) · Alcaravan Radio 5910 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 3467 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 17904 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/auckland-radio/">Auckland Radio</a> 17916 kHz (English) · Bay Islands Radio 5045 kHz (English) · Brisbane Radio 3467 kHz (English) · Brisbane Radio 17904 kHz (English) · <a style="color:rgba(255,255,255,.9)" href="/stations/brother-stair/">Brother Stair</a> 5900 kHz (English) · CFRX Toronto, CFRB 1010 6070 kHz (English) — <a style="color:rgba(255,255,255,.9)" href="/listen-online/">full live list</a></p><h3 style="font-family:'Syne',sans-serif;color:#fff;font-size:.85rem;margin:.8rem 0 .4rem">Shortwave by language</h3><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9"><a style="color:rgba(255,255,255,.9)" href="/languages/mandarin/">Mandarin</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/english/">English</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/spanish/">Spanish</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/french/">French</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/korean/">Korean</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/russian/">Russian</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/japanese/">Japanese</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/tibetan/">Tibetan</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/german/">German</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/arabic/">Arabic</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/farsi/">Farsi</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/portuguese/">Portuguese</a> · <a style="color:rgba(255,255,255,.9)" href="/languages/">all languages</a></p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-top:.8rem"><a style="color:rgba(255,255,255,.9)" href="/ja/" lang="ja">日本語：短波放送 周波数一覧</a> · <a style="color:rgba(255,255,255,.9)" href="/zh/" lang="zh">中文：短波广播频率表</a> · <a style="color:rgba(255,255,255,.9)" href="/es/" lang="es">Español: radio de onda corta</a> · <a style="color:rgba(255,255,255,.9)" href="/how-to-listen-to-shortwave-radio-online/">How to listen to shortwave radio online</a> · <a style="color:rgba(255,255,255,.9)" href="/numbers-stations-list/">Numbers stations frequency list</a></p><p style="font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.78);font-size:.67rem;line-height:1.9;margin-top:.8rem"><a style="color:rgba(255,255,255,.9)" href="/embed/">Free “on air now” widget for your own site</a></p></section><!--/SEOFACTS-->
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1.4rem;margin-bottom:1.8rem">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#e05c4a;margin-bottom:.6rem;font-weight:700">Shortwave Bands</div>
@@ -4175,7 +4173,6 @@ function updateTicker(){
   var items="";
   for(var j=0;j<Math.min(onAir.length,14);j++)
     items+="<span class='tk-it'>"+onAir[j].freq+" MHz \u2014 "+onAir[j].stn+"</span><span class='tk-sep'> \u00b7 </span>";
-  items+="<span class='tk-it'>600M+ Shortwave Receivers Worldwide</span><span class='tk-sep'> \u00b7 </span>";
   items+="<span class='tk-it'>316 Active Stations in 2026</span><span class='tk-sep'> \u00b7 </span>";
   items+="<span class='tk-it'>EIBI A-26 Schedule Data</span><span class='tk-sep'> \u00b7 </span>";
   track.innerHTML=items+items;
@@ -4222,7 +4219,9 @@ function updateStatBar(){
   var k2=document.getElementById("st-k");if(k2)k2.textContent=pvd(pV.k);
   var ab=0;var bds=getBands();for(var j=0;j<bds.length;j++)if(bds[j].p>=52)ab++;
   var sb=document.getElementById("st-bands");if(sb)sb.textContent=ab;
-  var tt=document.getElementById("st-total");if(tt)tt.textContent=SCH.length;
+  var fq={};for(var q=0;q<SCH.length;q++){if(SCH[q].freq)fq[SCH[q].freq]=1;}
+  var sl=document.getElementById("st-bcast");if(sl)sl.textContent=SCH.length?SCH.length.toLocaleString("en-US"):"--";
+  var sq=document.getElementById("st-freqs");if(sq)sq.textContent=Object.keys(fq).length||"--";
   var bt=document.getElementById("sh-badge-txt");if(bt)bt.textContent="Live · "+onAir+" stations on air now";
 }
 
@@ -5136,12 +5135,89 @@ function renderLog(){
   for(var j=0;j<entries.length;j++){
     var e=entries[j];var tr=document.createElement("tr");if(j===0)tr.style.background="rgba(30,132,73,0.04)";
     var bars="";for(var k=0;k<9;k++)bars+="<div class='spip"+(k<(e.sig||0)?" lit":"")+"' style='height:"+(3+k*1.2)+"px'></div>";
-    tr.innerHTML="<td><div style='font-family:var(--mono);font-size:.8rem;font-weight:600'>"+e.f+" MHz</div></td><td style='font-family:var(--serif);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'>"+e.stn+"</td><td style='font-family:var(--mono);font-size:.64rem;color:var(--m2)'>"+e.utc+"</td><td><div class='sbars'>"+bars+"</div></td><td style='font-family:var(--serif);font-size:.72rem;color:var(--muted);font-style:italic;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'>"+(e.notes||"")+"</td><td style='white-space:nowrap'><button onclick='catchCard("+j+")' title='Make a shareable catch card' style='font-family:var(--mono);font-size:.68rem;padding:2px 6px;border:1px solid var(--teal);background:transparent;cursor:pointer;border-radius:2px;color:var(--teal);margin-right:3px'>SHARE</button><button onclick='delLog("+j+")' style='font-family:var(--mono);font-size:.68rem;padding:2px 6px;border:1px solid var(--bdr);background:transparent;cursor:pointer;border-radius:2px;color:var(--m2)'>x</button></td>";
+    tr.innerHTML="<td><div style='font-family:var(--mono);font-size:.8rem;font-weight:600'>"+e.f+" MHz</div></td><td style='font-family:var(--serif);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'>"+e.stn+"</td><td style='font-family:var(--mono);font-size:.64rem;color:var(--m2)'>"+e.utc+"</td><td><div class='sbars'>"+bars+"</div></td><td style='font-family:var(--serif);font-size:.72rem;color:var(--muted);font-style:italic;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'>"+(e.notes||"")+"</td><td style='white-space:nowrap'><button onclick='catchCard("+j+")' title='Make a shareable catch card' style='font-family:var(--mono);font-size:.68rem;padding:2px 6px;border:1px solid var(--teal);background:transparent;cursor:pointer;border-radius:2px;color:var(--teal);margin-right:3px'>SHARE</button><button onclick='editLog("+j+")' title='Edit this entry' style='font-family:var(--mono);font-size:.68rem;padding:2px 6px;border:1px solid var(--bdr);background:transparent;cursor:pointer;border-radius:2px;color:var(--ink);margin-right:3px'>EDIT</button><button onclick='delLog("+j+")' title='Delete this entry' style='font-family:var(--mono);font-size:.68rem;padding:2px 6px;border:1px solid var(--bdr);background:transparent;cursor:pointer;border-radius:2px;color:var(--m2)'>x</button></td>";
     tb.appendChild(tr);
   }
 }
 
 function delLog(i){var e=loadLog();e.splice(i,1);saveLog(e);renderLog();}
+
+// ── EDIT A LOG ENTRY ─────────────────────────────────────────────
+// Opens a dialog for entry #i. Frequency can be typed in MHz or kHz (stored in
+// MHz). Date and time are UTC; if they are left untouched the original
+// timestamp is kept, so streaks and badges are not disturbed.
+function closeLogEdit(){var o=document.getElementById("log-edit-ov");if(o&&o.parentNode)o.parentNode.removeChild(o);document.removeEventListener("keydown",logEditKey);}
+function logEditKey(ev){if(ev.key==="Escape")closeLogEdit();}
+function editLog(i){
+  var entries=loadLog();var e=entries[i];if(!e)return;
+  closeLogEdit();
+  var d0="",t0="";
+  if(e.date&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(e.date)){d0=e.date.substr(0,10);t0=e.date.substr(11,5);}
+  else{var mt=/(\d{1,2}):(\d{2})/.exec(e.utc||"");if(mt)t0=pad(mt[1])+":"+mt[2];}
+  var ov=document.createElement("div");ov.id="log-edit-ov";
+  ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");ov.setAttribute("aria-label","Edit log entry");
+  ov.style.cssText="position:fixed;left:0;top:0;right:0;bottom:0;z-index:900;background:rgba(10,11,14,.6);display:flex;align-items:center;justify-content:center;padding:12px;overflow-y:auto";
+  ov.innerHTML=
+   '<div class="card" style="width:100%;max-width:440px;max-height:100%;overflow-y:auto">'
+  +'<div class="ch"><div class="clbl">Edit Entry</div></div>'
+  +'<div style="padding:1rem;display:flex;flex-direction:column;gap:8px">'
+  +'<div class="g2">'
+  +'<div class="fld"><label for="le-f">Frequency</label><div style="display:flex;gap:6px"><input class="inp" id="le-f" inputmode="decimal" style="min-width:0"><select class="inp" id="le-unit" aria-label="Frequency unit" style="width:auto;flex:0 0 auto;padding-right:4px"><option value="mhz">MHz</option><option value="khz">kHz</option></select></div></div>'
+  +'<div class="fld"><label for="le-sig">Signal 1–9</label><input class="inp" id="le-sig" type="number" min="1" max="9"></div>'
+  +'</div>'
+  +'<div class="fld"><label for="le-stn">Station</label><input class="inp" id="le-stn"></div>'
+  +'<div class="g2">'
+  +'<div class="fld"><label for="le-date">Date (UTC)</label><input class="inp" id="le-date" type="date"></div>'
+  +'<div class="fld"><label for="le-time">Time (UTC)</label><input class="inp" id="le-time" type="time"></div>'
+  +'</div>'
+  +'<div class="fld"><label for="le-notes">Notes</label><textarea class="inp" id="le-notes" rows="3"></textarea></div>'
+  +'<div style="display:flex;gap:8px"><button class="btn btn-d" id="le-save" style="flex:1;justify-content:center">Save Changes</button><button class="btn btn-o" id="le-cancel" style="flex:0 0 auto">Cancel</button></div>'
+  +'</div></div>';
+  document.body.appendChild(ov);
+  document.getElementById("le-f").value=e.f||"";
+  document.getElementById("le-sig").value=e.sig||"";
+  document.getElementById("le-stn").value=e.stn||"";
+  document.getElementById("le-date").value=d0;
+  document.getElementById("le-time").value=t0;
+  document.getElementById("le-notes").value=e.notes||"";
+  ov.addEventListener("click",function(ev){if(ev.target===ov)closeLogEdit();});
+  document.addEventListener("keydown",logEditKey);
+  document.getElementById("le-cancel").onclick=closeLogEdit;
+  document.getElementById("le-save").onclick=function(){
+    var raw=document.getElementById("le-f").value.trim();
+    var stn=document.getElementById("le-stn").value.trim();
+    if(!raw||!stn){toast("Please enter frequency and station name");return;}
+    var fr=logFreqToMHz(raw,document.getElementById("le-unit").value);
+    if(!fr){toast("Enter the frequency as a number, e.g. 9.395 MHz or 9395 kHz");return;}
+    var sigRaw=document.getElementById("le-sig").value.trim();
+    var sig=sigRaw===""?(e.sig||5):Math.max(1,Math.min(9,parseInt(sigRaw,10)||5));
+    var dv=document.getElementById("le-date").value,tv=document.getElementById("le-time").value;
+    var cur=loadLog();var t=cur[i];if(!t){closeLogEdit();return;}
+    t.f=fr.mhz;t.stn=stn;t.sig=sig;t.notes=document.getElementById("le-notes").value.trim();
+    if((dv!==d0||tv!==t0)&&dv&&tv){
+      var iso=dv+"T"+tv+":00.000Z";
+      if(!isNaN(new Date(iso).getTime())){t.date=iso;t.utc=tv+" UTC";}
+    }
+    saveLog(cur);closeLogEdit();renderLog();
+    toast("Entry updated: "+fr.mhz+" MHz"+fr.note);
+  };
+  document.getElementById("le-f").focus();
+}
+
+// Frequency unit for the log forms. Entries are always stored in MHz.
+function logFreqToMHz(raw,unit){
+  var n=parseFloat(String(raw||"").trim().replace(/,/g,""));
+  if(!isFinite(n)||n<=0)return null;
+  var note="";
+  if(unit==="khz"){ if(n<100){note=" (read as MHz)";}else{n=n/1000;} }
+  else if(n>=1000){ n=n/1000; note=" (read as kHz)"; }
+  return {mhz:String(parseFloat(n.toFixed(6))),note:note};
+}
+function logUnitSave(v){
+  try{localStorage.setItem("swlogunit",v);}catch(e){}
+  ["log-unit","ql-unit"].forEach(function(id){var el=document.getElementById(id);if(el&&el.value!==v)el.value=v;});
+}
+(function(){try{var u=localStorage.getItem("swlogunit");if(u==="khz"||u==="mhz"){["log-unit","ql-unit"].forEach(function(id){var el=document.getElementById(id);if(el)el.value=u;});}}catch(e){}})();
 
 // ── STREAKS & BADGES ─────────────────────────────────────────────
 function logDates(entries){
@@ -5246,6 +5322,9 @@ function submitLog(){
   var f=(document.getElementById("log-freq")||{value:""}).value.trim();
   var stn=(document.getElementById("log-stn")||{value:""}).value.trim();
   if(!f||!stn){toast("Please enter frequency and station name");return;}
+  var fr=logFreqToMHz(f,(document.getElementById("log-unit")||{value:"mhz"}).value);
+  if(!fr){toast("Enter the frequency as a number, e.g. 9.395 MHz or 9395 kHz");return;}
+  f=fr.mhz;
   var sig=parseInt((document.getElementById("log-sig")||{value:"5"}).value)||5;
   var notes=(document.getElementById("log-notes")||{value:""}).value.trim();
   var loc=(document.getElementById("log-loc")||{value:""}).value.trim();
@@ -5255,19 +5334,22 @@ function submitLog(){
   var entries=loadLog();entries.unshift({f:f,stn:stn,sig:sig,notes:notesStr,utc:utc,date:nd.toISOString()});
   saveLog(entries);renderLog();
   ["log-freq","log-stn","log-sig","log-notes","log-loc","log-rx"].forEach(function(id){var el=document.getElementById(id);if(el)el.value="";});
-  toast("Entry saved to log");
+  toast("Entry saved: "+f+" MHz"+fr.note);
 }
 
 function quickLog(){
   var f=(document.getElementById("ql-f")||{value:""}).value.trim();
   var stn=(document.getElementById("ql-stn")||{value:""}).value.trim();
   if(!f||!stn){toast("Please enter frequency and station");return;}
+  var fr=logFreqToMHz(f,(document.getElementById("ql-unit")||{value:"mhz"}).value);
+  if(!fr){toast("Enter the frequency as a number, e.g. 9.395 MHz or 9395 kHz");return;}
+  f=fr.mhz;
   var sig=parseInt((document.getElementById("ql-s")||{value:"5"}).value)||5;
   var note=(document.getElementById("ql-note")||{value:""}).value.trim();
   var nd=new Date();var utc=pad(nd.getUTCHours())+":"+pad(nd.getUTCMinutes())+" UTC";
   var entries=loadLog();entries.unshift({f:f,stn:stn,sig:sig,notes:note,utc:utc,date:nd.toISOString()});
   saveLog(entries);["ql-f","ql-stn","ql-s","ql-note"].forEach(function(id){var el=document.getElementById(id);if(el)el.value="";});
-  toast("Logged: "+stn+" on "+f+" MHz");
+  toast("Logged: "+stn+" on "+f+" MHz"+fr.note);
 }
 
 function exportLog(){
