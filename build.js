@@ -2090,32 +2090,56 @@ write("articles/index.html", shell({
 urls.push("/articles/");
 
 // ── 9. Index pages ───────────────────────────────────────────────
-var stIdx = "<p class=\"lede\">Individual schedule pages for every station in the ShortwaveHQ database \u2014 " + stationNames.length + " broadcasters, time stations, utility and numbers stations, updated for the 2026 EIBI " + SEASON.label + " season.</p><div class=\"grid\">";
-if (HUB_ORDER.length) {
-  stIdx = stIdx.replace("<div class=\"grid\">", "<h2>Most popular stations</h2><p>Full guides with the best frequency tonight for your region, English times and reception logs.</p><div class=\"grid\">"
-    + HUB_ORDER.map(function (n) { return "<a href=\"/stations/" + stationSlug[n] + "/\"><strong>" + esc(n) + "</strong><span>Station guide</span></a>"; }).join("")
-    + "</div><h2>All stations A\u2013Z</h2><div class=\"grid\">");
+// ── /stations/ directory (target: "shortwave radio stations" / "... list" / "... on air now") ──
+var ST_REAL = stationNames.filter(function (n) { return !isPlaceholder(n); });
+var ST_TYPES = { International: 0, Numbers: 0, Time: 0, Pirate: 0 };
+ST_REAL.forEach(function (n) { var t = (byStation[n][0] || {}).type; if (ST_TYPES.hasOwnProperty(t)) ST_TYPES[t]++; });
+function stTopLang(n) {
+  var c = {}, best = "", bn = 0;
+  byStation[n].forEach(function (r) { var L = r.lang || ""; if (!L || SEG_SKIP_LANG[L] || /^[A-Z0-9\-\/]+$/.test(L)) return; c[L] = (c[L] || 0) + 1; if (c[L] > bn) { bn = c[L]; best = L; } });
+  return best;
 }
-for (var si = 0; si < stationNames.length; si++) {
-  var nm2 = stationNames[si];
-  if (isPlaceholder(nm2)) continue;
-  stIdx += "<a href=\"/stations/" + stationSlug[nm2] + "/\"><strong>" + esc(nm2) + "</strong><span>" + uniq(byStation[nm2].map(function (r) { return String(kHz(r.freq)); })).length + " frequencies</span></a>";
-}
-stIdx += "</div>";
+var ST_BUSY = ST_REAL.filter(function (n) { return !/jammer/i.test(n) && (byStation[n][0] || {}).type === "International"; })
+  .sort(function (a, b) { return byStation[b].length - byStation[a].length || (a < b ? -1 : 1); }).slice(0, 8);
 var ST_ONAIR = onAirSection(30, "Shortwave Radio Stations On Air Now");
+var stTop = "<p class=\"lede\">This is the complete list of shortwave radio stations in the ShortwaveHQ database: <strong>" + ST_REAL.length + " stations</strong> with their frequencies, UTC broadcast times, languages and target areas for the " + SEASON.label + " season (EIBI schedule, rebuilt daily). Start with the table of stations that are on the air right now, or jump to a language, region or station type.</p>"
+  + "<p class=\"tags\"><a href=\"#on-air\">On air now</a><a href=\"#by-type\">By type</a><a href=\"#popular\">Most popular</a><a href=\"#by-language\">By language</a><a href=\"#by-region\">By region</a><a href=\"#a-z\">A–Z list</a></p>"
+  + "<div id=\"on-air\">" + ST_ONAIR.html + "</div><p><a class=\"cta\" href=\"/listen-online/\">Listen to shortwave radio online free</a> <a class=\"cta o\" href=\"/how-to-listen-to-shortwave-radio-online/\">How it works</a></p>";
+var stType = "<h2 id=\"by-type\">Shortwave stations by type</h2><p>The list covers " + ST_TYPES.International + " international and domestic broadcasters, " + ST_TYPES.Time + " time-signal stations, " + ST_TYPES.Numbers + " numbers stations and " + ST_TYPES.Pirate + " pirate or free-radio stations. Each one has its own page with every scheduled frequency and time.</p>"
+  + "<div class=\"tags\"><a href=\"/numbers-stations-list/\">Numbers stations list</a><a href=\"/numbers-stations-explained/\">Numbers stations explained</a><a href=\"/listen-online/\">On air now</a><a href=\"/tonight/\">Tonight’s guide</a><a href=\"/frequency/\">All frequencies</a><a href=\"/bands/\">Shortwave bands</a></div>";
+var stPop = "";
+if (HUB_ORDER.length) {
+  stPop = "<h2 id=\"popular\">Most popular shortwave stations</h2><p>Full guides with the best frequency tonight for your region, English times and reception logs.</p><div class=\"grid\">"
+    + HUB_ORDER.map(function (n) { return "<a href=\"/stations/" + stationSlug[n] + "/\"><strong>" + esc(n) + "</strong><span>Station guide</span></a>"; }).join("") + "</div>";
+}
+var stSeg = segBrowseHtml(12).replace("<h2>Browse Shortwave by Language</h2>", "<h2 id=\"by-language\">Shortwave stations by language</h2>").replace("<h2>Browse Shortwave by Target Region</h2>", "<h2 id=\"by-region\">Shortwave stations by target region</h2>");
+var stLetters = {};
+ST_REAL.forEach(function (n) { var L = /^[A-Za-z]/.test(n) ? n.charAt(0).toUpperCase() : "#"; (stLetters[L] = stLetters[L] || []).push(n); });
+var stLetterKeys = Object.keys(stLetters).sort(function (a, b) { return a === "#" ? 1 : b === "#" ? -1 : a < b ? -1 : 1; });
+var stAZ = "<h2 id=\"a-z\">All shortwave radio stations A–Z</h2><p class=\"tags\">" + stLetterKeys.map(function (L) { return "<a href=\"#az-" + (L === "#" ? "num" : L) + "\">" + L + "</a>"; }).join("") + "</p>";
+stLetterKeys.forEach(function (L) {
+  stAZ += "<p id=\"az-" + (L === "#" ? "num" : L) + "\" style=\"font-family:Syne,sans-serif;font-weight:800;font-size:1.05rem;margin:1.2rem 0 .2rem\">" + L + "</p><div class=\"grid\">";
+  stLetters[L].forEach(function (n) {
+    var nf = uniq(byStation[n].map(function (r) { return String(kHz(r.freq)); })).length, tl = stTopLang(n);
+    stAZ += "<a href=\"/stations/" + stationSlug[n] + "/\"><strong>" + esc(n) + "</strong><span>" + (tl ? esc(tl) + " · " : "") + nf + " frequenc" + (nf === 1 ? "y" : "ies") + "</span></a>";
+  });
+  stAZ += "</div>";
+});
 var ST_FAQ = [
   ["Which shortwave radio stations are on air now?", ST_ONAIR.oa.rows.length ? ("As of " + BUILD_NOW_LABEL + ", " + ST_ONAIR.oa.stations + " shortwave stations are scheduled to be on the air, including " + uniq(ST_ONAIR.oa.rows.map(function (r) { return r.stn; })).slice(0, 4).join(", ") + ". The table at the top of this page lists them with frequency, language and target area.") : "The live tracker on the ShortwaveHQ homepage shows every station scheduled to be on the air at the current time."],
-  ["How do I find a shortwave station's schedule and frequency?", "Open any station page from the A\u2013Z list below. Each page shows that station's frequencies, broadcast times in UTC, languages and target areas from the " + SEASON.label + " schedule."],
-  ["Can I listen to these stations without a radio?", "Yes. Use a free WebSDR or KiwiSDR receiver in your browser \u2014 see our Listen Online page for links and tuning steps."]
+  ["How many shortwave radio stations are there?", "The " + SEASON.label + " schedule used by ShortwaveHQ lists " + ST_REAL.length + " stations: " + ST_TYPES.International + " international and domestic broadcasters, " + ST_TYPES.Time + " time-signal stations, " + ST_TYPES.Numbers + " numbers stations and " + ST_TYPES.Pirate + " pirate or free-radio stations. Counts change each season as broadcasters start and stop services."],
+  ["Which shortwave stations have the most broadcasts?", "By number of scheduled broadcasts in the " + SEASON.label + " schedule, the busiest international stations are " + ST_BUSY.slice(0, 5).join(", ") + ". Open any station page for its full list of frequencies and UTC times."],
+  ["How do I find a shortwave station's schedule and frequency?", "Open any station page from the A–Z list. Each page shows that station's frequencies, broadcast times in UTC, languages and target areas from the " + SEASON.label + " schedule."],
+  ["Can I listen to these stations without a radio?", "Yes. Use a free WebSDR or KiwiSDR receiver in your browser. See the Listen Online page for links and tuning steps."]
 ];
-stIdx = stIdx.replace("</p>", "</p>" + ST_ONAIR.html + "<p><a class=\"cta\" href=\"/listen-online/\">Listen to shortwave radio online free</a></p>");
-stIdx += segBrowseHtml(12);
-stIdx += seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ);
+var stList = { "@context": "https://schema.org", "@type": "ItemList", "name": "Most popular shortwave radio stations", "itemListElement": HUB_ORDER.slice(0, 30).map(function (n, i) { return { "@type": "ListItem", "position": i + 1, "name": n, "url": SITE + "/stations/" + stationSlug[n] + "/" }; }) };
+var stIdx = stTop + stType + stPop + stSeg + stAZ + seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ)
+  + (HUB_ORDER.length ? "<script type=\"application/ld+json\">" + JSON.stringify(stList).replace(/</g, "\\u003c") + "</script>" : "");
 write("stations/index.html", shell({
-  title: "Shortwave Radio Stations On Air Now \u2014 Live List (2026) | ShortwaveHQ",
-  desc: "See which shortwave radio stations are on air now, plus the full list of " + stationNames.length + " broadcasters with frequencies and UTC schedules for 2026. Rebuilt daily.",
-  canonical: "/stations/", kicker: "Directory \u00b7 " + stationNames.length + " Stations \u00b7 On Air Now",
-  h1: "Shortwave Radio Stations <span style=\"color:#c0392b\">On Air Now</span>", bodyHtml: stIdx,
+  title: "Shortwave Radio Stations List (2026) — On Air Now | ShortwaveHQ",
+  desc: "Shortwave radio stations list for 2026: " + ST_REAL.length + " stations with frequencies and UTC schedules, plus who is on air now. Browse by language, region and type. Rebuilt daily.",
+  canonical: "/stations/", kicker: "Directory · " + ST_REAL.length + " Stations · On Air Now",
+  h1: "Shortwave Radio Stations List <span style=\"color:#c0392b\">On Air Now</span>", bodyHtml: stIdx,
   breadcrumbs: [["Home", "/"], ["Stations", "/stations/"]]
 }));
 urls.push("/stations/");
