@@ -2249,13 +2249,11 @@ for (var u = 0; u < urls.length; u++) {
 sm += "</urlset>\n";
 write("sitemap.xml", sm);
 write("robots.txt", "User-agent: *\nAllow: /\n\n" +
-  "# Explicit allow for AI answer-engine crawlers (wildcard above already covers these;\n" +
-  "# listed explicitly so AI visibility is a deliberate, documented choice, not an accident)\n" +
-  "User-agent: GPTBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\n" +
-  "User-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-User\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: anthropic-ai\nAllow: /\n" +
-  "User-agent: PerplexityBot\nAllow: /\nUser-agent: Perplexity-User\nAllow: /\n" +
-  "User-agent: Google-Extended\nAllow: /\nUser-agent: GoogleOther\nAllow: /\n" +
-  "User-agent: Bingbot\nAllow: /\nUser-agent: CCBot\nAllow: /\nUser-agent: Bytespider\nAllow: /\nUser-agent: Applebot\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Meta-ExternalAgent\nAllow: /\n\n" +
+  "# AI TRAINING crawlers: blocked (content is not used to train commercial models).\n" +
+  "# Search/answer bots and Googlebot/Bingbot stay allowed so the site is still indexed and cited.\n" +
+  "User-agent: GPTBot\nUser-agent: ClaudeBot\nUser-agent: anthropic-ai\nUser-agent: CCBot\nUser-agent: Bytespider\nUser-agent: Meta-ExternalAgent\nUser-agent: Applebot-Extended\nDisallow: /\n\n" +
+  "# Explicitly allowed: AI search / answer-engine and user-triggered fetchers, plus Google (incl. Google-Extended for Gemini) and Bing\n" +
+  "User-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Google-Extended\nUser-agent: GoogleOther\nUser-agent: Bingbot\nUser-agent: Applebot\nAllow: /\n\n" +
   "Sitemap: " + SITE + "/sitemap.xml\n");
 
 console.log("BUILD COMPLETE: " + urls.length + " URLs (" + stationNames.length + " stations, " + freqKeys.length + " frequencies, " + bandsBuilt + " bands, " + countryNames.length + " countries, 4 guides, 1 listen-online, 1 home) + sitemap.xml + robots.txt");
