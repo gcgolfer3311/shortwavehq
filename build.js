@@ -526,7 +526,19 @@ try {
   RECEPTION = (rj && rj.catches) || [];
 } catch (e) { RECEPTION = []; }
 // Northern-winter (B season) = standard time in North America.
-function hubOff(R) { return (SEASON.letter === "b" && (R.id === "na-east" || R.id === "na-west")) ? R.off - 1 : R.off; }
+// Local-time offsets for static hub pages follow the real clock change on the
+// build date, not the shortwave season letter: US DST ends the first Sunday of
+// November (a week after B-season starts) and begins the second Sunday of March
+// (two weeks before A-season); EU summer time matches the season dates.
+// Region offsets in the Tonight engine are US-summer (-4/-7) and EU-winter (+1).
+function nthSundayUTC(y, m, n) { var d = new Date(Date.UTC(y, m, 1)); d.setUTCDate(1 + ((7 - d.getUTCDay()) % 7) + 7 * (n - 1)); return d; }
+function usDST(d) { var y = d.getUTCFullYear(); return d >= new Date(nthSundayUTC(y, 2, 2).getTime() + 7 * 3600000) && d < new Date(nthSundayUTC(y, 10, 1).getTime() + 6 * 3600000); }
+function euDST(d) { var y = d.getUTCFullYear(); return d >= new Date(lastSundayUTC(y, 2).getTime() + 3600000) && d < new Date(lastSundayUTC(y, 9).getTime() + 3600000); }
+function hubOff(R) {
+  if (R.id === "na-east" || R.id === "na-west") return usDST(BUILD_NOW) ? R.off : R.off - 1;
+  if (R.id === "europe") return euDST(BUILD_NOW) ? R.off + 1 : R.off;
+  return R.off;
+}
 function hubTz(R, off) { if (R.id === "na-east") return "Eastern"; if (R.id === "na-west") return "Pacific"; return "UTC" + (off >= 0 ? "+" : "") + off; }
 function isEnglishRow(r) { return r.lang === "English"; }
 // Best frequency for one station, for one listener region, in that region's
@@ -1209,7 +1221,7 @@ try {
     }
     faq = [
       ["When did the " + SEASON.label + " shortwave season start?", "The " + SEASON.label + " season started on " + fmtDay(SEASON.start) + " and runs until " + fmtDay(SEASON.end) + ", when " + SEASON.next.label + " begins."],
-      ["How many stations changed between " + SEASON.prev.label + " and " + SEASON.label + "?", gone.length + " stations are off the schedule, " + added.length + " are new, and " + moved.length + " changed frequencies, based on the EIBI database as of " + TODAY + "."],
+      ["How many stations changed between " + SEASON.prev.label + " and " + SEASON.label + "?", gone.length + " stations are off the schedule, " + added.length + (added.length === 1 ? " is new" : " are new") + ", and " + moved.length + " changed frequencies, based on the EIBI database as of " + TODAY + "."],
       ["What are A and B shortwave seasons?", "International broadcasters change schedules twice a year. The A season runs from the last Sunday of March (northern summer) and the B season from the last Sunday of October (northern winter), so frequencies suit the propagation of each half of the year."]
     ];
   } else {
@@ -1228,7 +1240,7 @@ try {
       engList[en].n++; engList[en].f[kHz(er.freq)] = 1; engList[en].reg[er.reg] = 1;
     }
     var engNames = Object.keys(engList).sort(function (x, y) { return engList[y].n - engList[x].n || x.localeCompare(y); }).slice(0, 40);
-    scBody += "<p class=\"lede\">The " + SEASON.label + " shortwave season ends on <strong>" + fmtDay(SEASON.next.start) + "</strong>, when broadcasters switch to their " + SEASON.next.label + " schedules. As soon as the new EIBI schedule is published, this page turns into a full list of every station that went off the air, every new service and every frequency change \u2014 updated automatically. Bookmark it.</p>"
+    scBody += "<p class=\"lede\">" + (daysLeft > 0 ? "The " + SEASON.label + " shortwave season ends on <strong>" + fmtDay(SEASON.next.start) + "</strong>, when broadcasters switch to their " + SEASON.next.label + " schedules." : "Broadcasters switched to their " + SEASON.next.label + " schedules on <strong>" + fmtDay(SEASON.next.start) + "</strong>. EIBI has not published its " + SEASON.next.label + " file yet, so listings below still reflect the final " + SEASON.label + " schedule.") + " As soon as the new EIBI schedule is published, this page turns into a full list of every station that went off the air, every new service and every frequency change \u2014 updated automatically. Bookmark it.</p>"
       + "<p><a class=\"cta\" href=\"/tonight/\">Tonight's listening guide</a> <a class=\"cta o\" href=\"/?page=history\">Daily schedule change log</a></p>"
       + "<h2>What changes at the season switch</h2>"
       + "<p>International broadcasters coordinate new frequencies twice a year, at the end of March and the end of October. "
