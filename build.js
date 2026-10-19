@@ -131,6 +131,11 @@ var SEASON = (function () {
   o.valid = "Valid " + fmtDay(o.start).replace(/, \d{4}$/, "") + " \u2013 " + fmtDay(o.end);
   return o;
 })();
+// Search-friendly titles for stations people search by a different name than
+// the EIBI listing (e.g. "ashna radio" for "VoA Radio Ashna"). {F} = frequencies.
+var STATION_SEO = {
+  "VoA Radio Ashna": { title: "Radio Ashna (VOA Pashto & Dari) Shortwave Frequencies & Times", desc: "Radio Ashna, VOA's Pashto and Dari service to Afghanistan, on shortwave: {F} kHz. Full 2026 schedule with UTC times and live on-air status." }
+};
 console.log("Schedule season: " + SEASON.label + " (" + SEASON.valid + "), next: " + SEASON.next.label);
 
 // Re-read index.html for the template (separate from SCH load above)
@@ -395,7 +400,7 @@ if (revStart >= 0) {
     usedReviewSlugs[rslug] = 1;
     reviewSlugMap[rev.n] = rslug;
 
-    var rTitle = rev.n + " Review \u2014 Hands-On Testing & Verdict | ShortwaveHQ";
+    var rTitle = rev.metaTitle ? rev.metaTitle + " | ShortwaveHQ" : rev.n + " Review \u2014 Hands-On Testing & Verdict | ShortwaveHQ";
     var rDesc = rev.metaDescription ? rev.metaDescription : (rev.d || "").slice(0, 155);
 
     var specsHtml = "";
@@ -599,7 +604,9 @@ for (var sn = 0; sn < stationNames.length; sn++) {
     }
     return t + " | ShortwaveHQ";
   })();
-  var desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + (langs ? " in " + langs : "") + regionStr + ". Check if it\u2019s on the air right now and listen online free.";
+  var topF = freqs.slice().sort(function (a, b) { return a - b; }).slice(0, 4);
+  var desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + " (" + topF.join(", ") + (freqs.length > 4 ? "\u2026" : "") + " kHz)" + (langs ? " in " + langs : "") + regionStr + ". UTC times and live on-air status.";
+  if (STATION_SEO[name]) { title = STATION_SEO[name].title + " | ShortwaveHQ"; if (STATION_SEO[name].desc) desc = STATION_SEO[name].desc.replace("{F}", topF.join(", ")); }
   var tbl = "<table><thead><tr><th>Frequency</th><th>Time (UTC)</th><th>Language</th><th>Target</th><th>Transmitter Site</th><th>Power</th></tr></thead><tbody>";
   for (var ri = 0; ri < rows.length; ri++) {
     var r2 = rows[ri];
@@ -948,6 +955,7 @@ var LO_FAQ = [
   ["What is the best time to listen to shortwave radio?", "Lower bands (49m, 41m, 31m) usually carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better during the day. Which band is strongest depends on the time of day, the season and solar conditions."]
 ];
 var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right now, without owning a receiver? You have two options: a live web-based SDR you tune yourself, or our live database showing exactly which stations are broadcasting on-air at this moment.</p>"
+  + "<p>New to this? Read our step-by-step guide: <a href=\"/how-to-listen-to-shortwave-radio-online/\">how to listen to shortwave radio online</a> (about two minutes, no radio needed).</p>"
   + "<h2>Option 1: Listen Live via WebSDR</h2><p>A WebSDR is a real shortwave receiver connected to the internet that anyone can tune remotely, free, in your browser. No account, no software install. We link to three independent receiver networks below \u2014 if one is slow or temporarily offline, try another.</p><p><a class=\"cta\" href=\"https://websdr.ewi.utwente.nl:8901/\" target=\"_blank\" rel=\"noopener\">Twente WebSDR (NL)</a> <a class=\"cta o\" href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"noopener\">KiwiSDR Network</a> <a class=\"cta o\" href=\"https://www.receiverbook.de/\" target=\"_blank\" rel=\"noopener\">Receiverbook (all SDR types)</a></p><p>New to this? Read <a href=\"/how-to-listen-to-shortwave-radio-online/\">how to listen to shortwave radio online, step by step</a>.</p>"
   + "<h2>Option 2: See What's On Air Right Now</h2><p>ShortwaveHQ tracks the full 2026 EIBI broadcast schedule and shows you, in real time, which stations are transmitting on which frequency at this exact moment \u2014 so you know what to tune to before you start listening.</p><p><a class=\"cta\" href=\"/\">Open Live Band Conditions &amp; On-Air Tracker</a></p>"
   + LO_ONAIR.html
@@ -960,8 +968,8 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to Listen Online</a></div>";
 write("listen-online/index.html", shell({
-  title: "Listen to Shortwave Radio Online Free \u2014 Live, No Radio Needed | ShortwaveHQ",
-  desc: "Listen to shortwave radio online free with live WebSDR receivers you tune in your browser, plus a list of shortwave stations on air right now. No radio required.",
+  title: "Shortwave Radio Online \u2014 Listen Free, Live, No Radio Needed | ShortwaveHQ",
+  desc: "Listen to shortwave radio online free: tune live WebSDR and KiwiSDR receivers in your browser and see which shortwave stations are on air right now. No radio, no signup.",
   canonical: "/listen-online/", kicker: "Listen Live \u00b7 On-Air Now \u00b7 International Broadcasts",
   h1: "Listen to Shortwave <span style=\"color:#c0392b\">Radio Online Free</span>", bodyHtml: loBody,
   breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"]]
@@ -2161,10 +2169,10 @@ var stList = { "@context": "https://schema.org", "@type": "ItemList", "name": "M
 var stIdx = stTop + stType + stPop + stSeg + stAZ + seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ)
   + (HUB_ORDER.length ? "<script type=\"application/ld+json\">" + JSON.stringify(stList).replace(/</g, "\\u003c") + "</script>" : "");
 write("stations/index.html", shell({
-  title: "Shortwave Radio Stations List (2026) — On Air Now | ShortwaveHQ",
-  desc: "Shortwave radio stations list for 2026: " + ST_REAL.length + " stations with frequencies and UTC schedules, plus who is on air now. Browse by language, region and type. Rebuilt daily.",
+  title: "Shortwave Radio Stations List 2026 — " + ST_REAL.length + " Stations & Frequencies | ShortwaveHQ",
+  desc: "Complete list of " + ST_REAL.length + " shortwave radio stations for 2026, A\u2013Z, with every frequency and UTC schedule: BBC, VOA, China Radio International, WRMI and more. Rebuilt daily.",
   canonical: "/stations/", kicker: "Directory · " + ST_REAL.length + " Stations · On Air Now",
-  h1: "Shortwave Radio Stations List <span style=\"color:#c0392b\">On Air Now</span>", bodyHtml: stIdx,
+  h1: "Shortwave Radio Stations List <span style=\"color:#c0392b\">2026</span>", bodyHtml: stIdx,
   breadcrumbs: [["Home", "/"], ["Stations", "/stations/"]]
 }));
 urls.push("/stations/");
