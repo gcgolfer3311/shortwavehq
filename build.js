@@ -1051,6 +1051,10 @@ urls.push("/listen-online/");
 // sandbox here, so the static list and the live tool can never disagree.
 // Wrapped in try/catch: if anything goes wrong the page is skipped and
 // the rest of the build still completes (a failed deploy is never worth it).
+// Stations still listed in the EIBI file but confirmed off the air are kept
+// out of "what you can hear tonight" picks (station pages still list them).
+var KNOWN_SILENT = [/World.?s Last Chance/i];
+var SCH_LIVE = SCH.filter(function (r) { return !(r && KNOWN_SILENT.some(function (re) { return re.test(r.stn || ""); })); });
 var tonightBuilt = false;
 try {
   var vm = require("vm");
@@ -1075,13 +1079,14 @@ try {
   var tnTotal = 0;
   for (var tr = 0; tr < TN.TN_REGIONS.length; tr++) {
     var R = TN.TN_REGIONS[tr];
-    var plan = TN.tnPlan(SCH, { region: R.id, off: hubOff(R), slot: "evening", sfi: prop.sfi, k: prop.k, english: false });
+    var plan = TN.tnPlan(SCH_LIVE, { region: R.id, off: hubOff(R), slot: "evening", sfi: prop.sfi, k: prop.k, english: false });
     var picks = plan.easy.slice(0, 6).concat(plan.dx.slice(0, 3));
     if (!picks.length) continue;
     tnTotal += picks.length;
     tnBody += "<h2>" + esc(R.name) + " \u2014 evening (7\u201310 pm local)</h2>" + tnHead + picks.map(tnRow).join("") + "</table>";
   }
   tnBody += "<h2>How the picks are made</h2><p>A broadcast makes the list when it is on the air during your evening, the band it uses should be open at that hour, and it is either beamed at your region (easy catch) or strong enough to reach you anyway (DX). Band openings are estimated from time of day, solar flux and geomagnetic activity. These are predictions, not guarantees &mdash; your antenna and local noise matter as much as the schedule.</p>"
+    + "<h2>Country guides</h2><div class=\"tags\"><a href=\"/uk/\">Shortwave in the UK</a><a href=\"/australia/\">Shortwave in Australia</a><a href=\"/canada/\">Shortwave in Canada</a><a href=\"/india/\">Shortwave in India</a><a href=\"/ja/\" lang=\"ja\">日本（短波放送）</a></div>"
     + "<div class=\"tags\"><a href=\"/?page=tonight\">Personal Tonight Guide</a><a href=\"/stations/\">All Stations</a><a href=\"/bands/\">Bands</a><a href=\"/listen-online/\">Listen Online</a></div>";
   if (tnTotal < 10) throw new Error("only " + tnTotal + " picks generated, skipping page");
   write("tonight/index.html", shell({
@@ -1098,6 +1103,104 @@ try {
 } catch (tnErr) {
   console.warn("WARNING: /tonight/ page skipped (build continues): " + tnErr.message);
 }
+// ── 7b2. Country listening pages (/uk/, /australia/, /canada/, /india/) ──
+// English pages for the countries that send the most search impressions
+// (Search Console: UK 3.4k, Canada 1.4k, India 1.2k, Australia 0.9k per
+// quarter). Same Tonight engine as /tonight/, plus local-time English
+// schedules and transmitters located in the country. Never fails the build.
+function auDST(d) { var y = d.getUTCFullYear(); var endA = new Date(nthSundayUTC(y, 3, 1).getTime() - 8 * 3600000), startO = new Date(nthSundayUTC(y, 9, 1).getTime() - 8 * 3600000); return d < endA || d >= startO; }
+var COUNTRY_PAGES = [];
+try {
+  if (!tonightBuilt || !TN || !TN.tnPlan) throw new Error("Tonight engine unavailable");
+  var EURO_T = ["Europe", "W. Europe", "N. Europe", "UK", "Worldwide"];
+  var CTRY = [
+    { slug: "uk", name: "the UK", short: "UK", adj: "UK", site: "UK",
+      off: euDST(BUILD_NOW) ? 1 : 0, tz: euDST(BUILD_NOW) ? "BST" : "GMT",
+      tgt: EURO_T.concat(["C. Europe"]), reg: ["Europe"], aimedAt: "Europe",
+      faqTip: "From the UK the 49, 41 and 31 metre bands (about 6, 7 and 9.5 MHz) are busiest in the evening, and 19 and 16 metres (15 and 17 MHz) during the day." },
+    { slug: "australia", name: "Australia", short: "Australia", adj: "Australian", site: "Australia",
+      off: auDST(BUILD_NOW) ? 11 : 10, tz: auDST(BUILD_NOW) ? "AEDT (Sydney/Melbourne)" : "AEST (Sydney/Melbourne)",
+      tgt: ["Pacific", "Australia", "New Zealand", "WOc", "EOc", "SE Asia", "Worldwide"], reg: ["Pacific"], aimedAt: "Australia and the Pacific",
+      faqTip: "In Australia the evening bands are usually 41, 31 and 25 metres (7, 9.5 and 12 MHz); stations aimed at Asia and the Pacific are often audible too." },
+    { slug: "canada", name: "Canada", short: "Canada", adj: "Canadian", site: "Canada",
+      off: usDST(BUILD_NOW) ? -4 : -5, tz: usDST(BUILD_NOW) ? "Eastern (EDT)" : "Eastern (EST)",
+      tgt: ["North America", "E. North America", "C. North America", "USA", "Canada", "Am", "Worldwide"], reg: ["North America"], aimedAt: "North America",
+      faqTip: "In eastern Canada the evening bands are mostly 49, 41 and 31 metres (6, 7 and 9.5 MHz). Out west, subtract three hours from the Eastern times shown here." },
+    { slug: "india", name: "India", short: "India", adj: "Indian", site: "India",
+      off: 5.5, tz: "IST",
+      tgt: ["South Asia", "India", "NIn", "SIn", "As", "Asia", "Middle East", "Worldwide"], reg: ["Asia"], aimedAt: "South Asia",
+      faqTip: "In India the evening bands are usually 41, 31 and 25 metres (7, 9.5 and 12 MHz). Many broadcasts aimed at South Asia and the Middle East are strong across the country." }
+  ];
+  var lclock = function (min, off) { var m = ((Math.round(min + off * 60) % 1440) + 1440) % 1440, h = Math.floor(m / 60), mm2 = m % 60; return (h % 12 === 0 ? 12 : h % 12) + ":" + (mm2 < 10 ? "0" : "") + mm2 + (h < 12 ? " am" : " pm"); };
+  var lwin = function (r, off) { return (+r.s === 0 && +r.e >= 1440) ? "24 hours" : lclock(+r.s, off) + " – " + lclock(+r.e, off); };
+  var sLink = function (n) { return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href=\"/stations/" + stationSlug[n] + "/\">" + esc(n) + "</a>" : esc(n); };
+  var fLink = function (k) { return byFreq[String(k)] ? "<a href=\"/frequency/" + k + "-khz/\">" + k + " kHz</a>" : k + " kHz"; };
+  CTRY.forEach(function (C) {
+    TN.TN_REGIONS.push({ id: "c-" + C.slug, name: C.name, short: C.aimedAt, off: C.off, tgt: C.tgt, reg: C.reg });
+    var head = "<table><tr><th>Frequency</th><th>Station</th><th>Local time (" + esc(C.tz) + ")</th><th>Language</th><th>Why</th></tr>";
+    var row = function (x) { return "<tr><td>" + fLink(x.khz) + "</td><td>" + sLink(x.stn) + "</td><td>" + (x.allDay ? "24 hours" : lclock(x.s, C.off) + " – " + lclock(x.e, C.off)) + "</td><td>" + esc(x.lang) + "</td><td>" + esc(x.why) + "</td></tr>"; };
+    var ev = TN.tnPlan(SCH_LIVE, { region: "c-" + C.slug, off: C.off, slot: "evening", sfi: PROP.sfi, k: PROP.k, english: false });
+    var lt = TN.tnPlan(SCH_LIVE, { region: "c-" + C.slug, off: C.off, slot: "late", sfi: PROP.sfi, k: PROP.k, english: false });
+    var evPicks = ev.easy.slice(0, 10), dxPicks = ev.dx.slice(0, 5), ltPicks = lt.easy.slice(0, 6);
+    if (evPicks.length + ltPicks.length < 5) { console.warn("Country page skipped (too few picks): " + C.slug); return; }
+    // English broadcasts aimed at this country/region, local time
+    var seenE = {}, eng = [];
+    SCH_LIVE.forEach(function (r) {
+      if (!r || r.lang !== "English" || r.type !== "International") return;
+      if (C.tgt.indexOf(r.tgt) < 0 && C.reg.indexOf(r.reg) < 0) return;
+      var k = r.stn + "|" + r.freq + "|" + r.s; if (seenE[k]) return; seenE[k] = 1; eng.push(r);
+    });
+    eng.sort(function (a, b) { return ((a.s + C.off * 60 + 1440) % 1440) - ((b.s + C.off * 60 + 1440) % 1440) || kHz(a.freq) - kHz(b.freq); });
+    var engStations = uniq(eng.map(function (r) { return r.stn; }));
+    // transmitters located in the country
+    var siteRows = SCH.filter(function (r) { return r && r.site === C.site; });
+    var siteSt = {}; siteRows.forEach(function (r) { siteSt[r.stn] = (siteSt[r.stn] || 0) + 1; });
+    var siteNames = Object.keys(siteSt).sort(function (a, b) { return siteSt[b] - siteSt[a]; });
+    var tzNote = C.slug === "india" ? "India Standard Time (UTC+5:30)" : esc(C.tz) + " (UTC" + (C.off >= 0 ? "+" : "") + C.off + ")";
+
+    var b = "<p class=\"lede\">Which shortwave radio stations can you hear in " + C.name + " tonight? This page lists the broadcasts most likely to reach " + C.name + " this evening, every English-language service aimed at " + esc(C.aimedAt) + ", and the shortwave transmitters located in " + C.name + ". All times are shown in <strong>" + tzNote + "</strong>. Rebuilt daily from the EIBI " + SEASON.label + " schedule" + (PROP.live ? " and NOAA space-weather data (" + propTxt(PROP) + ")" : "") + ".</p>";
+    b += "<p><a class=\"cta\" href=\"/?page=tonight\">Open the live Tonight guide</a> <a class=\"cta o\" href=\"/listen-online/\">No radio? Listen online</a></p>";
+    b += "<h2>Shortwave stations you can hear in " + C.name + " this evening (7–10 pm)</h2>" + head + evPicks.map(row).join("") + "</table>";
+    if (ltPicks.length) b += "<h2>Late night in " + C.name + " (10 pm–1 am)</h2>" + head + ltPicks.map(row).join("") + "</table>";
+    if (dxPicks.length) b += "<h2>DX challenges: not aimed at " + C.name + ", but possible</h2>" + head + dxPicks.map(row).join("") + "</table>";
+    if (eng.length) {
+      b += "<h2>English shortwave broadcasts to " + esc(C.aimedAt) + "</h2><p>" + engStations.length + " stations broadcast in English toward " + esc(C.aimedAt) + " this season: " + engStations.slice(0, 8).map(sLink).join(", ") + (engStations.length > 8 ? " and more" : "") + ". Local times (" + esc(C.tz) + "):</p>"
+        + "<table><tr><th>Local time</th><th>Frequency</th><th>Station</th><th>UTC</th></tr>"
+        + eng.slice(0, 40).map(function (r) { return "<tr><td>" + lwin(r, C.off) + "</td><td>" + fLink(kHz(r.freq)) + "</td><td>" + sLink(r.stn) + "</td><td>" + ((+r.s === 0 && +r.e >= 1440) ? "24 hr" : pad(Math.floor(r.s / 60)) + ":" + pad(r.s % 60) + "–" + pad(Math.floor((r.e % 1440) / 60)) + ":" + pad(r.e % 60)) + "</td></tr>"; }).join("")
+        + "</table>" + (eng.length > 40 ? "<p>Showing 40 of " + eng.length + ". Search any station on the <a href=\"/\">live search</a> for the rest.</p>" : "");
+    }
+    if (siteNames.length) {
+      b += "<h2>Shortwave transmitters in " + C.name + "</h2><p>" + siteRows.length + " scheduled broadcasts this season go out from transmitter sites in " + C.name + ", used by " + siteNames.length + " station" + (siteNames.length === 1 ? "" : "s") + ":</p><div class=\"grid\">"
+        + siteNames.slice(0, 18).map(function (n) { var h = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "/?q=" + encodeURIComponent(n); return "<a href=\"" + h + "\"><strong>" + esc(n) + "</strong><span>" + siteSt[n] + " broadcast" + (siteSt[n] === 1 ? "" : "s") + "</span></a>"; }).join("") + "</div>";
+    }
+    var topEv = evPicks.slice(0, 3).map(function (x) { return x.stn + " on " + x.khz + " kHz"; }).join(", ");
+    var faq = [
+      ["What shortwave stations can I hear in " + C.name + "?", "Tonight's best bets in " + C.name + " include " + topEv + ". Stations beamed at " + C.aimedAt + " are the easiest catches; the tables on this page are rebuilt daily from the published schedule."],
+      ["What time is best for shortwave listening in " + C.name + "?", "Evening and night are best for distant stations. " + C.faqTip],
+      ["Are there English shortwave broadcasts to " + C.name + "?", eng.length ? "Yes. " + engStations.length + " stations broadcast in English toward " + C.aimedAt + " this season, including " + engStations.slice(0, 4).join(", ") + "." : "There are few English broadcasts aimed at " + C.aimedAt + " this season; worldwide services and DX catches are listed above."],
+      ["How do I convert shortwave UTC times to " + C.short + " time?", C.slug === "india" ? "Add 5 hours 30 minutes to UTC to get India Standard Time. This page already shows times in IST." : "Shortwave schedules use UTC. " + C.short + " is currently on " + C.tz + ", which is UTC" + (C.off >= 0 ? "+" : "") + C.off + ". This page already shows times in local time."],
+      ["Can I listen without a shortwave radio?", "Yes. Free WebSDR and KiwiSDR receivers let you tune real shortwave receivers in your browser. See the Listen Online page."]
+    ];
+    b += seoFaqHtml(faq) + seoFaqLd(faq);
+    b += "<h2>More</h2><div class=\"tags\"><a href=\"/tonight/\">Tonight worldwide</a><a href=\"/stations/\">All stations</a><a href=\"/bands/\">Shortwave bands</a><a href=\"/best-shortwave-radios-for-beginners/\">Best beginner radios</a><a href=\"/listen-online/\">Listen online</a>"
+      + CTRY.filter(function (o) { return o.slug !== C.slug; }).map(function (o) { return "<a href=\"/" + o.slug + "/\">Shortwave in " + o.name.replace(/^the /, "the ") + "</a>"; }).join("") + "</div>";
+    var titleName = C.slug === "uk" ? "the UK" : C.name;
+    write(C.slug + "/index.html", shell({
+      title: "Shortwave Radio in " + (C.slug === "uk" ? "the UK" : C.name) + ": Stations You Can Hear Tonight (" + BUILD_NOW.getUTCFullYear() + ") | ShortwaveHQ",
+      desc: "Shortwave radio stations you can hear in " + titleName + " tonight, in " + (C.slug === "india" ? "IST" : C.tz.replace(/ \(.*\)/, "")) + " local time: " + topEv + " and more. English broadcasts, frequencies and transmitters. Updated daily.",
+      canonical: "/" + C.slug + "/", kicker: "Listening Guide · " + C.short + " · Updated daily",
+      h1: "Shortwave radio in <span style=\"color:#c0392b\">" + (C.slug === "uk" ? "the UK" : C.name) + "</span>: what you can hear tonight",
+      bodyHtml: b,
+      breadcrumbs: [["Home", "/"], ["Tonight", "/tonight/"], ["Shortwave in " + C.short, "/" + C.slug + "/"]]
+    }));
+    urls.push("/" + C.slug + "/");
+    COUNTRY_PAGES.push(C);
+  });
+  console.log("Generated country listening pages: " + COUNTRY_PAGES.map(function (c) { return c.slug; }).join(", "));
+} catch (cErr) {
+  console.warn("WARNING: country pages skipped (build continues): " + cErr.message);
+}
+
 
 // ── 7d. Band scan pages ────────────────────────────────────────────
 if (SCANS_OK) {
