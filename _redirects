@@ -18,3 +18,6 @@
 # Catch-all for any other dead station/frequency pages
 /stations/*   /stations/  301
 /frequency/*  /frequency/ 301
+
+# Japanese station pages that drop out of the schedule
+/ja/stations/*  /ja/  301

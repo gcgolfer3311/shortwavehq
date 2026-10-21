@@ -210,6 +210,15 @@ for (var s = 0; s < stationNames.length; s++) {
   usedSlugs[sl] = 1;
   stationSlug[stationNames[s]] = sl;
 }
+// Stations with a Japanese-language service get a Japanese page at
+// /ja/stations/<slug>/ (min 2 Japanese broadcasts, so no thin pages).
+var JA_ST = {};
+(function () {
+  var c = {};
+  for (var i = 0; i < SCH.length; i++) { var r = SCH[i]; if (r && r.lang === "Japanese" && r.stn) c[r.stn] = (c[r.stn] || 0) + 1; }
+  if (SCH.some(function (r) { return r && /^Radio Nikkei/.test(r.stn || ""); })) SCH.forEach(function (r) { if (r && /^Radio Nikkei/.test(r.stn || "")) c[r.stn] = Math.max(c[r.stn] || 0, 2); });
+  Object.keys(c).forEach(function (n) { if (c[n] >= 2 && stationSlug[n]) JA_ST[n] = c[n]; });
+})();
 var bandSlug = {};
 for (var b = 0; b < BANDS.length; b++) bandSlug[BANDS[b].name] = slug(BANDS[b].name);
 
@@ -300,13 +309,22 @@ function scanPlayer(v, title, startSec) {
 // ── 4. Page shell ────────────────────────────────────────────────
 var SOC_NAV = "<a class=\"msoc\" href=\"https://www.tiktok.com/@hqshortwaveradio\" target=\"_blank\" rel=\"noopener\" aria-label=\"TikTok\" title=\"TikTok\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"#fff\" d=\"M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z\"/></svg></a><a class=\"msoc\" href=\"https://www.youtube.com/@Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\" aria-label=\"YouTube\" title=\"YouTube\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"#FF0000\" d=\"M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z\"/><path fill=\"#fff\" d=\"M9.6 15.6V8.4L15.8 12z\"/></svg></a><a class=\"msoc\" href=\"https://www.facebook.com/Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\" aria-label=\"Facebook\" title=\"Facebook\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"#1877F2\" d=\"M24 12.07C24 5.4 18.6 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z\"/></svg></a>";
 var SOC_FOOT = " \u00b7 Follow: <a href=\"https://www.tiktok.com/@hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">TikTok</a> \u00b7 <a href=\"https://www.youtube.com/@Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">YouTube</a> \u00b7 <a href=\"https://www.facebook.com/Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">Facebook</a>";
+function hreflangHtml(opts) {
+  // opts.alts: [[lang, path], ...] for pages with translated twins. x-default
+  // points at the English version when there is one.
+  var alts = opts.alts || [[opts.lang || "en", opts.canonical]];
+  var xd = opts.canonical;
+  alts.forEach(function (a) { if (a[0] === "en") xd = a[1]; });
+  return alts.map(function (a) { return "<link rel=\"alternate\" hreflang=\"" + a[0] + "\" href=\"" + SITE + a[1] + "\">"; }).join("\n")
+    + "\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + xd + "\">";
+}
 function shell(opts) {
   // opts: title, desc, canonical, h1, kicker, bodyHtml, breadcrumbs [[name,url],...]
   var bc = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [] };
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"" + (opts.lang || "en") + "\" href=\"" + SITE + opts.canonical + "\">\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + opts.canonical + "\">\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\n.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}\n.msoc svg{width:18px;height:18px}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n" + (opts.lang === "zh" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a> &nbsp; " + SOC_NAV + "</nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>" + SOC_FOOT + "<br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n" + hreflangHtml(opts) + "\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#f5f0e8;color:#0a0b0e;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#c0392b}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#9c8e81;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#fff;border:1px solid #c8c0b0}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#ece7db;border-bottom:1px solid #c8c0b0;color:#6b5f52}\ntd{padding:8px 10px;border-bottom:1px solid #e2dbd0;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #e0c4bf}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #c8c0b0;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#6b5f52;background:#fff}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#fff;border:1px solid #c8c0b0;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#0a0b0e;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#9c8e81;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#9c8e81;margin-bottom:1.1rem}\n.crumbs a{color:#6b5f52;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.6);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\n.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}\n.msoc svg{width:18px;height:18px}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n</style>\n" + (opts.lang === "zh" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a> &nbsp; " + SOC_NAV + "</nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>" + SOC_FOOT + " \u00b7 <a href=\"/ja/\" lang=\"ja\">\u65e5\u672c\u8a9e</a>" + "<br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 function write(rel, content) {
@@ -724,11 +742,13 @@ for (var sn = 0; sn < stationNames.length; sn++) {
     title = name + " Shortwave Frequencies & Schedule (" + SEASON.label + ") \u2014 How to Hear It Tonight | ShortwaveHQ";
     desc = "Current " + name + " shortwave frequencies (" + SEASON.label + "): the best frequency tonight for North America, Europe and more, English broadcast times, reception logs and live on-air status. Updated daily.";
   }
+  if (JA_ST[name]) body = "<p lang=\"ja\" style=\"font-size:.85rem\"><a href=\"/ja/stations/" + sl + "/\">\u65e5\u672c\u8a9e\uff1a\u5468\u6ce2\u6570\u3068\u653e\u9001\u6642\u9593\uff08\u65e5\u672c\u6642\u9593\uff09\u2192</a></p>" + body;
   write("stations/" + sl + "/index.html", shell({
     title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: (hub && hubHtml ? "Station Guide" : "Station Profile") + " \u00b7 EIBI " + SEASON.label + " \u00b7 2026",
     h1: (hub && hubHtml) ? "<span style=\"color:#c0392b\">" + esc(name) + "</span> \u2014 Shortwave Frequencies &amp; How to Hear It" : "Listen to <span style=\"color:#c0392b\">" + esc(name) + "</span> on Shortwave", bodyHtml: body,
     breadcrumbs: [["Home", "/"], ["Stations", "/stations/"], [name, "/stations/" + sl + "/"]],
-    noindex: thinStation
+    noindex: thinStation,
+    alts: (JA_ST[name] && !thinStation) ? [["en", "/stations/" + sl + "/"], ["ja", "/ja/stations/" + sl + "/"]] : null
   }));
   if(!thinStation) urls.push("/stations/" + sl + "/");
 }
@@ -1563,14 +1583,36 @@ var JA_BUILT = false;
     "NHK Radio Japan": "NHKワールド・ラジオ日本", "Radio Nikkei 1": "ラジオNIKKEI第1", "Radio Nikkei 2": "ラジオNIKKEI第2",
     "China Radio International": "中国国際放送(CRI)", "KBS World Radio": "KBSワールドラジオ", "Voice of Korea": "朝鮮の声放送",
     "Radio Taiwan International": "台湾国際放送(RTI)", "Voice of Vietnam": "ベトナムの声放送(VOV)",
-    "Voice of Indonesia": "インドネシア共和国放送(VOI)", "Shiokaze": "しおかぜ", "Furusato no Kaze": "ふるさとの風"
+    "Voice of Indonesia": "インドネシア共和国放送(VOI)", "Shiokaze": "しおかぜ", "Furusato no Kaze": "ふるさとの風",
+    "Voice of Mongolia": "モンゴルの声", "Reach Beyond Australia": "リーチ・ビヨンド・オーストラリア"
+  };
+  // Short factual introductions only. No commentary (Shiokaze / Furusato no Kaze
+  // are broadcasts to abductees in North Korea, so keep to who/what).
+  var JA_INTRO = {
+    "NHK Radio Japan": "NHKワールド・ラジオ日本は、NHK（日本放送協会）が海外向けに行っている国際放送です。",
+    "Radio Nikkei 1": "ラジオNIKKEI第1は、日経ラジオ社が日本国内向けに短波で放送している放送局です。",
+    "Radio Nikkei 2": "ラジオNIKKEI第2は、日経ラジオ社が日本国内向けに短波で放送している放送局です。",
+    "Shiokaze": "しおかぜは、特定失踪者問題調査会が北朝鮮にいる拉致被害者・特定失踪者に向けて送っている短波放送です。",
+    "Furusato no Kaze": "ふるさとの風は、日本政府（拉致問題対策本部）が北朝鮮にいる拉致被害者に向けて送っている短波放送です。",
+    "China Radio International": "中国国際放送（CRI）は、中国の国際放送局です。日本語放送も行っています。",
+    "KBS World Radio": "KBSワールドラジオは、韓国放送公社（KBS）の国際放送です。日本語放送も行っています。",
+    "Voice of Korea": "朝鮮の声放送は、北朝鮮の対外向け国際放送です。日本語放送も行っています。",
+    "Voice of Vietnam": "ベトナムの声放送（VOV）は、ベトナムの国営放送による国際放送です。日本語放送も行っています。",
+    "Voice of Indonesia": "インドネシア共和国放送（VOI）は、インドネシアの国営放送RRIによる国際放送です。日本語放送も行っています。",
+    "Voice of Mongolia": "モンゴルの声は、モンゴルの国際放送です。日本語放送も行っています。",
+    "Radio Taiwan International": "台湾国際放送（RTI）は、台湾の国際放送局です。日本語放送も行っています。",
+    "Reach Beyond Australia": "リーチ・ビヨンドは、キリスト教系の国際放送団体です。オーストラリアの送信所から日本語放送を行っています。"
   };
   var JA_TGT = { "Japan": "日本", "Far East": "極東", "Korea": "朝鮮半島", "Middle East": "中東", "Indonesia": "インドネシア", "SE Asia": "東南アジア", "Pacific": "太平洋", "South Asia": "南アジア", "S. Africa": "南アフリカ", "As": "アジア", "Siberia": "シベリア", "South America": "南米", "W. Africa": "西アフリカ", "Central America": "中央アメリカ", "CAf": "中央アフリカ" };
   function jaN(n) { return JA_NAME[n] ? JA_NAME[n] + "（" + n + "）" : n; }
   function jaNPlain(n) { return JA_NAME[n] || n; }
+  function jaHref(n) {
+    if (JA_ST[n]) return "/ja/stations/" + stationSlug[n] + "/";
+    return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "";
+  }
   function jaLink(n) {
-    var label = esc(jaN(n));
-    return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[n] + "/'>" + label + "</a>" : label;
+    var label = esc(jaN(n)), h = jaHref(n);
+    return h ? "<a href='" + h + "'>" + label + "</a>" : label;
   }
   function tm(m) { m = ((m % 1440) + 1440) % 1440; return pad(Math.floor(m / 60)) + ":" + pad(m % 60); }
   function utcWin(r) { return (r.s === 0 && r.e >= 1440) ? "24時間" : tm(r.s) + "–" + tm(r.e); }
@@ -1641,7 +1683,7 @@ var JA_BUILT = false;
 
   // station grid
   body += "<h2>日本語放送を行っている放送局</h2><div class='grid'>" + stns.map(function (n) {
-    var href = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "/stations/" + stationSlug[n] + "/" : "/?q=" + encodeURIComponent(n);
+    var href = jaHref(n) || "/?q=" + encodeURIComponent(n);
     return "<a href='" + href + "'>" + esc(jaNPlain(n)) + "<span>" + esc(n) + " · " + cnt[n] + "件</span></a>";
   }).join("") + "</div>";
 
@@ -1662,6 +1704,62 @@ var JA_BUILT = false;
   body += "<h2>関連ページ</h2><div class='tags'><a href='/languages/japanese/'>English: Shortwave in Japanese</a>"
     + (stationSlug["NHK Radio Japan"] && byStation["NHK Radio Japan"] && byStation["NHK Radio Japan"].length >= MIN_STATION_ENTRIES ? "<a href='/stations/" + stationSlug["NHK Radio Japan"] + "/'>NHK Radio Japan</a>" : "")
     + "<a href='/languages/'>Languages</a><a href='/stations/'>All Stations</a><a href='/frequency/'>All Frequencies</a><a href='/bands/'>Shortwave Bands</a></div>";
+
+  // ── Japanese station pages (/ja/stations/<slug>/) ──
+  var jaStNames = Object.keys(JA_ST).sort(function (a, b) { return JA_ST[b] - JA_ST[a] || (a < b ? -1 : 1); });
+  var nowJst = pad((hh + 9) % 24) + ":" + pad(mm);
+  function jstStart(r) { return (r.s + 540) % 1440; }
+  function jst2(r) { return (r.s === 0 && r.e >= 1440) ? "24時間" : tm(r.s + 540) + "–" + tm(r.e + 540); }
+  jaStNames.forEach(function (n) {
+    var sl = stationSlug[n], jn = jaNPlain(n), all = byStation[n] || [];
+    var isNikkei = /^Radio Nikkei/.test(n);
+    var jr = all.filter(function (r) { return r.lang === "Japanese" || isNikkei; });
+    var other = all.filter(function (r) { return !(r.lang === "Japanese" || isNikkei); });
+    var dd = function (rows) { var seen = {}, out = []; rows.slice().sort(function (a, b) { return jstStart(a) - jstStart(b) || kHz(a.freq) - kHz(b.freq); }).forEach(function (r) { var k = r.freq + "|" + r.s + "|" + r.e + "|" + r.lang; if (!seen[k]) { seen[k] = 1; out.push(r); } }); return out; };
+    jr = dd(jr); other = dd(other);
+    var jf = uniq(jr.map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+    var onNow = jr.filter(function (r) { return isActiveWindow(r.s, r.e, BUILD_NOW_MIN); });
+    var nxt = null, best = 1e9;
+    jr.forEach(function (r) { var d = ((r.s - BUILD_NOW_MIN) + 1440) % 1440; if (d > 0 && d < best) { best = d; nxt = r; } });
+    var nearJp = isNikkei || jr.some(function (r) { return /Japan|Far East|Korea|Asia|Siberia|^As$|^FE$|^J$/i.test(r.tgt || ""); });
+
+    var b = "<p class='lede'>" + esc(JA_INTRO[n] || (jn + "の日本語短波放送です。")) + " " + SEASON.label + " の放送予定表では、日本語放送を <strong>" + jf.length + " の周波数</strong>（" + jf.join("、") + " kHz）で行っています。放送時間は<strong>日本時間（JST）</strong>で掲載しています。</p>";
+    b += "<h2>現在の放送状況</h2><p>";
+    if (onNow.length) b += "日本時間 " + nowJst + " 時点（このページの更新時刻）では、" + onNow.map(function (r) { return freqLinkHtml(String(kHz(r.freq))); }).join("・") + " で放送予定の時間帯です。";
+    else b += "日本時間 " + nowJst + " 時点（このページの更新時刻）では、日本語放送の時間帯ではありません。" + (nxt ? "次の放送は日本時間 " + tm(nxt.s + 540) + " から " + freqLinkHtml(String(kHz(nxt.freq))) + " です。" : "");
+    b += " 最新の状況は<a href='/?q=" + encodeURIComponent(n) + "'>ライブ検索</a>で確認できます。</p>";
+    b += "<h2>" + esc(jn) + " 周波数と放送時間（日本時間）</h2><table><tr><th>日本時間（JST）</th><th>周波数</th><th>時間（UTC）</th><th>対象地域</th></tr>";
+    jr.forEach(function (r) { b += "<tr><td>" + jst2(r) + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + utcWin(r) + "</td><td>" + esc(jaTgt(r.tgt)) + "</td></tr>"; });
+    b += "</table><p style='font-size:.78rem;color:#6b5f52'>出典：EIBI " + SEASON.label + " 放送予定表（毎日更新）。放送局の都合で予告なく変更されることがあります。</p>";
+    if (other.length) {
+      var ol = uniq(other.map(function (r) { return r.lang; })).slice(0, 6).join("、");
+      b += "<h2>その他の言語の放送</h2><p>" + esc(jn) + "は日本語以外に " + esc(ol) + " などでも放送しています（全 " + other.length + " 件）。英語版ページで<a href='/stations/" + sl + "/'>全スケジュール</a>を確認できます。</p>";
+    }
+    b += "<h2>日本で聞くコツ</h2><p>" + (nearJp ? esc(jn) + "の日本語放送は日本・東アジア方面に向けて送信されているため、一般的な短波ラジオと本体のロッドアンテナでも受信できることがあります。" : "受信状況は時間帯・季節・受信機によって大きく変わります。") + "一般に、夜から早朝は低い周波数（3〜7MHz帯）、昼間は高い周波数（15MHz帯以上）が聞こえやすくなります。屋外や窓際にアンテナを伸ばすと受信しやすくなります。</p>";
+    var faqS = [
+      [jn + "の周波数は？", SEASON.label + " の放送予定表では、" + jn + "の日本語放送は " + jf.join("、") + " kHz で放送されています。"],
+      [jn + "は何時に放送していますか？", "日本時間で " + uniq(jr.map(jst2)).slice(0, 5).join("、") + (uniq(jr.map(jst2)).length > 5 ? " など" : "") + " に放送予定です（UTC + 9 時間 = 日本時間）。"],
+      [jn + "は日本で聞けますか？", nearJp ? "日本・東アジア向けに送信されているため、短波ラジオがあれば日本国内でも受信できることがあります。受信状況は時間帯や季節、太陽活動によって変わります。" : "日本向けの送信ではないため、受信は時間帯や伝搬状況によります。インターネット経由の WebSDR を使えば、送信地域に近い受信機で聞くこともできます。"],
+      ["ラジオがなくても聞けますか？", "WebSDR や KiwiSDR を使えば、ブラウザから世界各地の短波受信機を操作して聞くことができます。当サイトの Listen Online ページから利用できます。"]
+    ];
+    b += seoFaqHtml(faqS) + seoFaqLd(faqS);
+    b += "<p><a class='cta' href='/ja/'>日本語短波放送 周波数一覧へ</a> <a class='cta o' href='/listen-online/'>ラジオなしで聞く</a></p>";
+    b += "<h2>ほかの日本語放送</h2><div class='grid'>" + jaStNames.filter(function (x) { return x !== n; }).map(function (x) { return "<a href='/ja/stations/" + stationSlug[x] + "/'>" + esc(jaNPlain(x)) + "<span>" + esc(x) + "</span></a>"; }).join("") + "</div>";
+    var hasEn = all.length >= MIN_STATION_ENTRIES;
+    if (hasEn) b += "<p style='font-size:.8rem'><a href='/stations/" + sl + "/' lang='en' hreflang='en'>English: " + esc(n) + " shortwave frequencies</a></p>";
+    write("ja/stations/" + sl + "/index.html", shell({
+      lang: "ja",
+      title: jn + " 周波数・放送時間（" + yr + "年）短波 日本語放送 | ShortwaveHQ",
+      desc: jn + "の短波周波数（" + jf.slice(0, 4).join("、") + (jf.length > 4 ? "…" : "") + " kHz）と日本語放送の時間を日本時間（JST）で掲載。現在の放送状況、日本での聞き方。" + SEASON.label + " 対応・毎日更新。",
+      canonical: "/ja/stations/" + sl + "/", kicker: "日本語放送 · 放送局 · EIBI " + SEASON.label,
+      h1: "<span style=\"color:#c0392b\">" + esc(jn) + "</span> 周波数と放送時間",
+      bodyHtml: b,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], [jn, "/ja/stations/" + sl + "/"]],
+      alts: hasEn ? [["ja", "/ja/stations/" + sl + "/"], ["en", "/stations/" + sl + "/"]] : [["ja", "/ja/stations/" + sl + "/"]]
+    }));
+    urls.push("/ja/stations/" + sl + "/");
+  });
+  console.log("Japanese station pages: " + jaStNames.length);
 
   write("ja/index.html", shell({
     lang: "ja",
