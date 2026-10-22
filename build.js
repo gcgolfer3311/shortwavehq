@@ -2240,7 +2240,10 @@ write("embed/on-air/index.html", EMBED_PAGE);
 (function () {
   var ej;
   try { ej = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "enthusiasts.json"), "utf8")); } catch (e) { return; }
-  if (!Array.isArray(ej) || !ej.length || !ej[0].name) return;
+  if (!Array.isArray(ej)) return;
+  // Entries with a future "start" date (YYYY-MM-DD) stay hidden until then.
+  ej = ej.filter(function (x) { return x && (!x.start || new Date(x.start + "T00:00:00Z") <= BUILD_NOW); });
+  if (!ej.length || !ej[0].name) return;
   var e = ej[0], b = "";
   var photo = e.photo && !/^data:/.test(e.photo) ? "<img src=\"" + esc(e.photo) + "\" alt=\"" + esc(e.name) + ", shortwave listener\" width=\"200\" height=\"200\" style=\"display:block;margin:0 auto 1rem;width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid #c0392b\">" : "";
   b += photo;
@@ -2258,6 +2261,7 @@ write("embed/on-air/index.html", EMBED_PAGE);
     if (e.why) b += "<h2>Why shortwave?</h2><p>" + esc(e.why) + "</p>";
     if (e.best_catch) b += "<h2>Legacy</h2><p>" + esc(e.best_catch) + "</p>";
   }
+  if (e.gallery && e.gallery.length) b += "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.6rem;margin:1rem 0\">" + e.gallery.map(function (g) { return "<img src=\"" + esc(g.src) + "\" alt=\"" + esc(g.alt || e.name) + "\" loading=\"lazy\" width=\"1200\" height=\"900\" style=\"width:100%;height:auto;border-radius:6px;display:block\">"; }).join("") + "</div>";
   if (e.ask) b += "<p>" + esc(e.ask) + "</p>";
   b += "<p><a class=\"cta\" href=\"/?page=memories\">Share a radio memory</a><a class=\"cta o\" href=\"/?page=enthusiast\">Open in the live app</a></p>";
   if (ej.length > 1) b += "<h2>Past Enthusiasts of the Month</h2><p>" + ej.slice(1).map(function (x) { return esc(x.name) + " (" + esc(x.month) + ")"; }).join(" · ") + "</p>";
@@ -2267,7 +2271,7 @@ write("embed/on-air/index.html", EMBED_PAGE);
     title: e.name + " — Shortwave Enthusiast of the Month (" + e.month + ") | ShortwaveHQ",
     desc: e.name + " is ShortwaveHQ’s Enthusiast of the Month for " + e.month + ". " + (e.tagline || "A lifelong shortwave listener’s story.").slice(0, 140),
     canonical: "/enthusiast-of-the-month/", kicker: "Community · " + e.month,
-    h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>",
+    h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>" + (e.callsign ? " <small style=\"font-size:.5em;color:#6b5f52\">" + esc(e.callsign) + "</small>" : ""),
     bodyHtml: b,
     breadcrumbs: [["Home", "/"], ["Enthusiast of the Month", "/enthusiast-of-the-month/"]]
   }));

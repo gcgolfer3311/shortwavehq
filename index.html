@@ -5435,6 +5435,10 @@ function _enthLegacy(e){
     +'<div class="enth-cta">Want to be featured? Email <a href="mailto:Hqshortwaveradio@gmail.com">Hqshortwaveradio@gmail.com</a></div>'
     +'</div>';
 }
+// Entries can carry "start":"YYYY-MM-DD" so a future month can be added early
+// and switch on by itself at local midnight on that date.
+function _enthLive(d){if(!Array.isArray(d))return d;var now=new Date();return d.filter(function(x){return !x||!x.start||new Date(x.start+"T00:00:00")<=now;});}
+function _enthGallery(e){if(!e.gallery||!e.gallery.length)return "";return '<div class="enth-gal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.6rem;margin:1rem 0">'+e.gallery.map(function(g){return '<img src="'+_eh(g.src)+'" alt="'+_eh(g.alt||e.name)+'" loading="lazy" style="width:100%;height:auto;border-radius:6px;display:block">';}).join("")+'</div>';}
 function _enthFeature(e){
   var h='<div class="enth-card enth-feature">'
     +'<div class="enth-badge">🏆 Enthusiast of the Month — '+_eh(e.month)+'</div>'
@@ -5448,6 +5452,7 @@ function _enthFeature(e){
   (e.story||[]).forEach(function(sec){
     h+='<div class="enth-sec"><h3>'+_eh(sec.h)+'</h3>'+(sec.p?'<p>'+_eh(sec.p)+'</p>':'')+(sec.list?'<ul>'+sec.list.map(function(li){return '<li>'+_eh(li)+'</li>';}).join("")+'</ul>':'')+'</div>';
   });
+  h+=_enthGallery(e);
   if(e.ask)h+='<div class="enth-ask">'+_eh(e.ask)+'<button type="button" onclick="go(\'memories\',document.getElementById(\'n-memories\'))">Share a radio memory</button></div>';
   h+='<div class="enth-cta">Want to be featured? Email <a href="mailto:Hqshortwaveradio@gmail.com">Hqshortwaveradio@gmail.com</a></div></div>';
   return h;
@@ -5457,7 +5462,7 @@ async function renderEnthusiast(){
   try{
     var res=await fetch("/data/enthusiasts.json",{cache:"no-store"});
     if(!res.ok){el.innerHTML="";return;}
-    var data=await res.json();
+    var data=_enthLive(await res.json());
     if(!data||!data.length){el.innerHTML="";return;}
     var e=data[0];
     if(!e.story){el.innerHTML=_enthLegacy(e);return;}
@@ -5473,7 +5478,7 @@ async function renderEnthusiastPage(){
   try{
     var res=await fetch("/data/enthusiasts.json",{cache:"no-store"});
     if(!res.ok){el.innerHTML="<p style='padding:1rem;font-family:var(--mono);font-size:.75rem;color:var(--m2)'>No featured enthusiast yet — check back soon.</p>";return;}
-    var data=await res.json();
+    var data=_enthLive(await res.json());
     if(!data||!data.length){el.innerHTML="";return;}
     var e=data[0],h=e.story?_enthFeature(e):_enthLegacy(e);
     if(data.length>1){
@@ -6012,7 +6017,7 @@ async function renderRecentStrip(){
   try{
     var res2=await fetch("/data/enthusiasts.json",{cache:"no-store"});
     if(res2.ok){
-      var arr=await res2.json();
+      var arr=_enthLive(await res2.json());
       if(arr&&arr.length){
         var e=arr[0];var d3=parseChangeDate("1 "+e.month);
         if(d3)items.push({date:d3,label:e.month,txt:"Enthusiast of the month: "+e.name,tag:"Community",pg:"enthusiast",nav:"n-enthusiast"});
