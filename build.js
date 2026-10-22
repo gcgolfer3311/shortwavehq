@@ -2244,7 +2244,9 @@ write("embed/on-air/index.html", EMBED_PAGE);
   // Entries with a future "start" date (YYYY-MM-DD) stay hidden until then.
   ej = ej.filter(function (x) { return x && (!x.start || new Date(x.start + "T00:00:00Z") <= BUILD_NOW); });
   if (!ej.length || !ej[0].name) return;
-  var e = ej[0], b = "";
+  var enthSlug = function (x) { return slug(String(x.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "")) || "enthusiast"; };
+  var render = function (e, isCurrent) {
+  var b = "";
   var photo = e.photo && !/^data:/.test(e.photo) ? "<img src=\"" + esc(e.photo) + "\" alt=\"" + esc(e.name) + ", shortwave listener\" width=\"200\" height=\"200\" style=\"display:block;margin:0 auto 1rem;width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid #c0392b\">" : "";
   b += photo;
   if (e.tagline) b += "<p class=\"lede\"><em>" + esc(e.tagline) + "</em></p>";
@@ -2264,19 +2266,35 @@ write("embed/on-air/index.html", EMBED_PAGE);
   if (e.gallery && e.gallery.length) b += "<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.6rem;margin:1rem 0\">" + e.gallery.map(function (g) { return "<img src=\"" + esc(g.src) + "\" alt=\"" + esc(g.alt || e.name) + "\" loading=\"lazy\" width=\"1200\" height=\"900\" style=\"width:100%;height:auto;border-radius:6px;display:block\">"; }).join("") + "</div>";
   if (e.ask) b += "<p>" + esc(e.ask) + "</p>";
   b += "<p><a class=\"cta\" href=\"/?page=memories\">Share a radio memory</a><a class=\"cta o\" href=\"/?page=enthusiast\">Open in the live app</a></p>";
-  if (ej.length > 1) b += "<h2>Past Enthusiasts of the Month</h2><p>" + ej.slice(1).map(function (x) { return esc(x.name) + " (" + esc(x.month) + ")"; }).join(" · ") + "</p>";
+  var past = ej.filter(function (x) { return x !== e; });
+  if (past.length) b += "<h2>" + (isCurrent ? "Past Enthusiasts of the Month" : "More Enthusiasts of the Month") + "</h2><div class=\"tags\">" + past.map(function (x) { return "<a href=\"/enthusiast-of-the-month/" + enthSlug(x) + "/\">" + esc(x.name) + " (" + esc(x.month) + ")</a>"; }).join("") + "</div>";
+  b += "<p style=\"font-size:.85rem\">Share this feature: <a href=\"/enthusiast-of-the-month/" + enthSlug(e) + "/\">" + SITE.replace(/^https?:\/\//, "") + "/enthusiast-of-the-month/" + enthSlug(e) + "/</a></p>";
   b += "<p>Want to be featured? Email <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>.</p>";
   b += "<h2>Browse ShortwaveHQ</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/listen-online/\">Listen Online</a><a href=\"/languages/\">By Language</a><a href=\"/regions/\">By Region</a></div>";
-  write("enthusiast-of-the-month/index.html", shell({
-    title: e.name + " — Shortwave Enthusiast of the Month (" + e.month + ") | ShortwaveHQ",
-    desc: e.name + " is ShortwaveHQ’s Enthusiast of the Month for " + e.month + ". " + (e.tagline || "A lifelong shortwave listener’s story.").slice(0, 140),
-    canonical: "/enthusiast-of-the-month/", kicker: "Community · " + e.month,
-    h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>" + (e.callsign ? " <small style=\"font-size:.5em;color:#6b5f52\">" + esc(e.callsign) + "</small>" : ""),
-    bodyHtml: b,
-    breadcrumbs: [["Home", "/"], ["Enthusiast of the Month", "/enthusiast-of-the-month/"]]
-  }));
+  return b;
+  };
+  var pageOpts = function (e, canonical, crumbs) {
+    return {
+      title: e.name + " \u2014 Shortwave Enthusiast of the Month (" + e.month + ") | ShortwaveHQ",
+      desc: e.name + " is ShortwaveHQ\u2019s Enthusiast of the Month for " + e.month + ". " + (e.tagline || "A lifelong shortwave listener\u2019s story.").slice(0, 140),
+      canonical: canonical, kicker: "Community \u00b7 " + e.month,
+      h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>" + (e.callsign ? " <small style=\"font-size:.5em;color:#6b5f52\">" + esc(e.callsign) + "</small>" : ""),
+      breadcrumbs: crumbs
+    };
+  };
+  // Current feature at /enthusiast-of-the-month/
+  var cur = ej[0], o = pageOpts(cur, "/enthusiast-of-the-month/", [["Home", "/"], ["Enthusiast of the Month", "/enthusiast-of-the-month/"]]);
+  o.bodyHtml = render(cur, true);
+  write("enthusiast-of-the-month/index.html", shell(o));
   urls.push("/enthusiast-of-the-month/");
-  console.log("Generated /enthusiast-of-the-month/ (" + e.name + ", " + e.month + ")");
+  // Permanent, shareable page for every enthusiast: /enthusiast-of-the-month/<name>/
+  ej.forEach(function (x) {
+    var sl = enthSlug(x), po = pageOpts(x, "/enthusiast-of-the-month/" + sl + "/", [["Home", "/"], ["Enthusiast of the Month", "/enthusiast-of-the-month/"], [x.name, "/enthusiast-of-the-month/" + sl + "/"]]);
+    po.bodyHtml = render(x, x === cur);
+    write("enthusiast-of-the-month/" + sl + "/index.html", shell(po));
+    urls.push("/enthusiast-of-the-month/" + sl + "/");
+  });
+  console.log("Generated /enthusiast-of-the-month/ (" + cur.name + ", " + cur.month + ") + " + ej.length + " permanent pages");
 })();
 
 // ── Shortwave Radio Articles ──────────────────────────────────────
