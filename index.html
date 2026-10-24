@@ -5791,7 +5791,7 @@ var REVIEWS=[
    src:"Hands-on review based on personal testing by Michael Smith / KM7FMJ at ShortwaveHQ. Additional pros/cons corroborated against independent first-look coverage and manufacturer/retailer specifications."
   },
 
-  {n:"Radioddity GS-10B Pro",cat:"Ham HT / Full-Band Receiver",status:"Published",url:"/reviews/radioddity-gs-10b-pro/",
+  {n:"Radioddity GS-10B Pro",cat:"Ham HT / Full-Band Receiver",status:"Published",url:"/reviews/radioddity-gs-10b-pro/",youtube:"https://youtu.be/WPAOVSdbc3U",videoTitle:"Full Review",videoDate:"2026-10-24",
    metaDescription:"Dual-band ham HT with surprisingly capable SW/AM/FM/AIR receive. Hands-on tested with stock & ML-30 loop antennas. Pros, cons & full 4/5 verdict inside.",
    date:"August 31, 2026",
    d:"A dual-band ham HT that hides a seriously capable shortwave and full-band receiver under its keypad. The GS-10B Pro covers AM/FM/SW/AIR/WB/VHF/UHF/CB and more — and what pulled me in was exactly that shortwave coverage baked into what is otherwise a proper ham transceiver.",
@@ -6117,7 +6117,12 @@ function renderReviews(){
 
       var nameEl=document.createElement("div");
       nameEl.style.cssText="font-family:var(--disp);font-size:.95rem;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:4px";
-      nameEl.textContent=it.n;
+      var ownPage=!!(it.url&&it.url.indexOf("/reviews/")===0);
+      if(ownPage){
+        var nameA=document.createElement("a");nameA.href=it.url;nameA.textContent=it.n;
+        nameA.style.cssText="color:inherit;text-decoration:none";
+        nameEl.appendChild(nameA);
+      } else nameEl.textContent=it.n;
 
       var badges=document.createElement("div");
       badges.style.cssText="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px";
@@ -6163,15 +6168,26 @@ function renderReviews(){
       if(hasDetail){
         arrowEl=document.createElement("div");
         arrowEl.style.cssText="font-family:var(--mono);font-size:.72rem;color:var(--m2);white-space:nowrap;margin-top:2px";
-        arrowEl.textContent="Read review ▾";
+        arrowEl.textContent=ownPage?"Read full review \u2192":"Read review ▾";
         right.appendChild(arrowEl);
       }
 
       hdr.appendChild(right);
       card.appendChild(hdr);
 
-      // Expandable full review
-      if(hasDetail){
+      // Reviews with their own page: clicking opens that page (shareable URL)
+      if(ownPage){
+        hdr.style.cursor="pointer";
+        (function(u){
+          hdr.addEventListener("click",function(ev){
+            if(ev.target.closest&&ev.target.closest("a"))return;
+            if(ev.metaKey||ev.ctrlKey||ev.shiftKey){window.open(u,"_blank");return;}
+            location.href=u;
+          });
+        })(it.url);
+      }
+      // Expandable full review (only for reviews without their own page)
+      else if(hasDetail){
         var fullWrap=document.createElement("div");
         fullWrap.style.cssText="display:none;border-top:1px solid var(--bdr)";
         try{ fullWrap.appendChild(buildFullReview(it)); }catch(e){}

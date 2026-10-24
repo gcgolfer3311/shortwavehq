@@ -447,10 +447,11 @@ if (revStart >= 0) {
     var imgHtml = rev.thumb ? "<img src=\"/" + esc(rev.thumb) + "\" alt=\"" + esc(rev.n) + "\" style=\"max-width:100%;border-radius:6px;margin-bottom:1rem\">" : "";
     var ytMatch = rev.youtube ? /(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/.exec(rev.youtube) : null;
     var ytId = ytMatch ? ytMatch[1] : null;
-    var videoHtml = ytId ? "<div style=\"position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000;margin-bottom:1.2rem\"><iframe src=\"https://www.youtube.com/embed/" + ytId + "\" title=\"" + esc(rev.n) + " video\" loading=\"lazy\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>" : "";
+    var vBox = "<div style=\"position:relative;padding-top:177.78%;border-radius:8px;overflow:hidden;background:#000\">";
+    var videoHtml = ytId ? "<div style=\"max-width:360px;margin:0 auto 1.2rem\">" + vBox + "<iframe src=\"https://www.youtube.com/embed/" + ytId + "\" title=\"" + esc(rev.n) + " video\" loading=\"lazy\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div>" : "";
     var ytMatch2 = rev.youtube2 ? /(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/.exec(rev.youtube2) : null;
     var ytId2 = ytMatch2 ? ytMatch2[1] : null;
-    var videoHtml2 = ytId2 ? "<div style=\"position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000;margin-bottom:1.2rem\"><iframe src=\"https://www.youtube.com/embed/" + ytId2 + "\" title=\"" + esc(rev.n) + " additional video\" loading=\"lazy\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>" : "";
+    var videoHtml2 = ytId2 ? "<div style=\"max-width:360px;margin:0 auto 1.2rem\">" + vBox + "<iframe src=\"https://www.youtube.com/embed/" + ytId2 + "\" title=\"" + esc(rev.n) + " additional video\" loading=\"lazy\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div>" : "";
 
     var ld = {
       "@context": "https://schema.org", "@type": "Review",
@@ -461,7 +462,7 @@ if (revStart >= 0) {
     };
     if (ratingMatch) ld.reviewRating = { "@type": "Rating", "ratingValue": ratingMatch[1], "bestRating": "5" };
     var isoDate = rev.date ? (function(d){var p=new Date(d);return isNaN(p)?"2026-01-01":p.toISOString().slice(0,10);})(rev.date) : "2026-01-01";
-    var vld = ytId ? { "@context": "https://schema.org", "@type": "VideoObject", "name": rev.n + " \u2014 Unboxing & Hands-On", "description": (rev.d || "").slice(0, 250), "thumbnailUrl": "https://i.ytimg.com/vi/" + ytId + "/hqdefault.jpg", "uploadDate": isoDate, "embedUrl": "https://www.youtube.com/embed/" + ytId, "contentUrl": rev.youtube, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE } } : null;
+    var vld = ytId ? { "@context": "https://schema.org", "@type": "VideoObject", "name": rev.n + " \u2014 " + (rev.videoTitle || "Unboxing & Hands-On"), "description": (rev.d || "").slice(0, 250), "thumbnailUrl": "https://i.ytimg.com/vi/" + ytId + "/hqdefault.jpg", "uploadDate": rev.videoDate || isoDate, "embedUrl": "https://www.youtube.com/embed/" + ytId, "contentUrl": rev.youtube, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE } } : null;
     var vld2 = ytId2 ? { "@context": "https://schema.org", "@type": "VideoObject", "name": rev.n + " \u2014 Additional Footage", "description": (rev.d || "").slice(0, 250), "thumbnailUrl": "https://i.ytimg.com/vi/" + ytId2 + "/hqdefault.jpg", "uploadDate": isoDate, "embedUrl": "https://www.youtube.com/embed/" + ytId2, "contentUrl": rev.youtube2, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE } } : null;
 
     // FAQ schema: AI answer engines (ChatGPT, Perplexity, Google AI Overviews)
@@ -478,10 +479,16 @@ if (revStart >= 0) {
     } : null;
     var faqHtml = faqItems.length ? "<h2>Frequently Asked Questions</h2>" + faqItems.map(function (f) { return "<h3 style=\"font-family:'IBM Plex Mono',monospace;font-size:.85rem;margin:1rem 0 .3rem\">" + esc(f.q) + "</h3><p>" + esc(f.a) + "</p>"; }).join("") : "";
 
+    var rUrl = SITE + "/reviews/" + rslug + "/";
+    var shareHtml = "<div style=\"display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:0 0 1rem;padding:.55rem .8rem;background:#f5f0e8;border:1px solid #c8c0b0;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:.74rem\">"
+      + "<span style=\"color:#6b5f52\">Share this review:</span>"
+      + "<a href=\"" + rUrl + "\" style=\"color:#0a0b0e;word-break:break-all\">" + rUrl.replace(/^https?:\/\//, "") + "</a>"
+      + "<button type=\"button\" onclick=\"var u=this.dataset.u,t=this;if(navigator.share){navigator.share({title:document.title,url:u}).catch(function(){});}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){t.textContent='Link copied \u2713';});}else{prompt('Copy this link:',u);}\" data-u=\"" + rUrl + "\" style=\"margin-left:auto;cursor:pointer;background:#c0392b;color:#fff;border:0;border-radius:4px;padding:6px 12px;font:inherit;font-weight:700\">Share / Copy link</button></div>";
     var rBody = "<script type=\"application/ld+json\">" + JSON.stringify(ld) + "</script>"
       + (vld ? "<script type=\"application/ld+json\">" + JSON.stringify(vld) + "</script>" : "")
       + (vld2 ? "<script type=\"application/ld+json\">" + JSON.stringify(vld2) + "</script>" : "")
       + (faqLd ? "<script type=\"application/ld+json\">" + JSON.stringify(faqLd) + "</script>" : "")
+      + shareHtml
       + (videoHtml || imgHtml)
       + videoHtml2
       + ratingHtml
