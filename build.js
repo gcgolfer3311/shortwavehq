@@ -1453,8 +1453,8 @@ try {
     ];
   } else {
     // ── Countdown mode: next season not in yet ──
-    scTitle = "Shortwave Season Change: " + SEASON.next.label + " Starts " + fmtDay(SEASON.next.start) + " \u2014 What Changes";
-    scDesc = "The " + SEASON.next.label + " shortwave schedule starts " + fmtDay(SEASON.next.start) + ". What changes at the switch, the " + SEASON.label + " baseline, and a live list of every frequency change once the new schedule is out.";
+    scTitle = SEASON.next.label + " Shortwave Season Change: What's New";
+    scDesc = "The " + SEASON.next.label + " shortwave schedule starts " + fmtDay(SEASON.next.start) + ". See what changes, plus a live list of frequency changes as the new schedule arrives.";
     scH1 = SEASON.next.label + " shortwave season: " + (daysLeft > 0 ? daysLeft + " day" + (daysLeft === 1 ? "" : "s") + " to go" : "starting now");
     scKicker = "Season Change Tracker \u00b7 " + SEASON.label + " \u2192 " + SEASON.next.label;
     var engList = {};
