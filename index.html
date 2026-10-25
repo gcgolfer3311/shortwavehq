@@ -6632,6 +6632,24 @@ function resetToEnglish(){
   location.reload();
 }
 function swLangBtn(){var b=document.getElementById("lang-reset");if(b)b.style.display=swTranslated()?"inline-flex":"none";}
+// Put "English (original)" inside Google's own dropdown so it works in every
+// browser (Chrome's "Show original" menu does not exist in Edge or Firefox).
+function swAddEnglishOption(){
+  var sel=document.querySelector(".goog-te-combo");
+  if(!sel)return false;
+  if(sel.querySelector('option[value="__en"]'))return true;
+  var o=document.createElement("option");o.value="__en";o.textContent="English (original)";
+  sel.insertBefore(o,sel.options[1]||null);
+  sel.addEventListener("change",function(e){if(sel.value==="__en"){e.stopImmediatePropagation();resetToEnglish();}},true);
+  return true;
+}
+function swWatchTranslate(){
+  swAddEnglishOption();
+  var host=document.getElementById("google_translate_element");
+  if(host&&window.MutationObserver){try{new MutationObserver(swAddEnglishOption).observe(host,{childList:true,subtree:true});}catch(e){}}
+  var n=0,t=setInterval(function(){if(swAddEnglishOption()||++n>40)clearInterval(t);},500);
+}
+document.addEventListener("DOMContentLoaded",swWatchTranslate);
 document.addEventListener("DOMContentLoaded",swLangBtn);
 try{new MutationObserver(swLangBtn).observe(document.documentElement,{attributes:true,attributeFilter:["class"]});}catch(e){}
 function googleTranslateElementInit(){
