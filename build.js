@@ -418,7 +418,7 @@ if (revStart >= 0) {
     usedReviewSlugs[rslug] = 1;
     reviewSlugMap[rev.n] = rslug;
 
-    var rTitle = rev.metaTitle ? rev.metaTitle + " | ShortwaveHQ" : rev.n + " Review \u2014 Hands-On Testing & Verdict | ShortwaveHQ";
+    var rTitle = rev.metaTitle ? rev.metaTitle + " | ShortwaveHQ" : rev.n + " Review: Hands-On Test | ShortwaveHQ";
     var rDesc = rev.metaDescription ? rev.metaDescription : (rev.d || "").slice(0, 155);
 
     var specsHtml = "";
@@ -1284,7 +1284,7 @@ try {
     + "<h2>More</h2><div class=\"tags\"><a href=\"/best-shortwave-radios-for-beginners/\">Best beginner radios</a><a href=\"/best-antennas-for-apartments/\">Best antennas</a><a href=\"/tonight/\">Tonight</a><a href=\"/season-change/\">Season change</a><a href=\"/listen-online/\">Listen online</a><a href=\"/bands/\">Shortwave bands</a></div></div>";
 
   write("emergency-shortwave/index.html", shell({
-    title: "Emergency Shortwave Radio Guide + Printable Frequency Card | ShortwaveHQ",
+    title: "Emergency Shortwave Radio Guide + Printable Card | ShortwaveHQ",
     desc: "Prepper guide to shortwave radio: how to test your radio with WWV, which English broadcasts reach North America tonight, and a printable one-page frequency card. Free, updated daily.",
     canonical: "/emergency-shortwave/", kicker: "Preparedness Guide \u00b7 Printable \u00b7 Updated " + ecDate,
     h1: "Emergency shortwave radio: what to listen to when everything else is down",
