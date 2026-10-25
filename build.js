@@ -1094,7 +1094,7 @@ try {
     tnBody += "<h2>" + esc(R.name) + " \u2014 evening (7\u201310 pm local)</h2>" + tnHead + picks.map(tnRow).join("") + "</table>";
   }
   tnBody += "<h2>How the picks are made</h2><p>A broadcast makes the list when it is on the air during your evening, the band it uses should be open at that hour, and it is either beamed at your region (easy catch) or strong enough to reach you anyway (DX). Band openings are estimated from time of day, solar flux and geomagnetic activity. These are predictions, not guarantees &mdash; your antenna and local noise matter as much as the schedule.</p>"
-    + "<h2>Country guides</h2><div class=\"tags\"><a href=\"/uk/\">Shortwave in the UK</a><a href=\"/australia/\">Shortwave in Australia</a><a href=\"/canada/\">Shortwave in Canada</a><a href=\"/india/\">Shortwave in India</a><a href=\"/ja/\" lang=\"ja\">日本（短波放送）</a></div>"
+    + "<h2>Country guides</h2><div class=\"tags\"><a href=\"/uk/\">Shortwave in the UK</a><a href=\"/australia/\">Shortwave in Australia</a><a href=\"/canada/\">Shortwave in Canada</a><a href=\"/india/\">Shortwave in India</a><a href=\"/ja/\" lang=\"ja\">日本（短波放送）</a><a href=\"/emergency-shortwave/\">Emergency shortwave card</a></div>"
     + "<div class=\"tags\"><a href=\"/?page=tonight\">Personal Tonight Guide</a><a href=\"/stations/\">All Stations</a><a href=\"/bands/\">Bands</a><a href=\"/listen-online/\">Listen Online</a></div>";
   if (tnTotal < 10) throw new Error("only " + tnTotal + " picks generated, skipping page");
   write("tonight/index.html", shell({
@@ -1207,6 +1207,94 @@ try {
   console.log("Generated country listening pages: " + COUNTRY_PAGES.map(function (c) { return c.slug; }).join(", "));
 } catch (cErr) {
   console.warn("WARNING: country pages skipped (build continues): " + cErr.message);
+}
+
+// ── 7b3. Emergency shortwave guide + printable card (/emergency-shortwave/) ──
+// Tables come from the same Tonight engine as /tonight/ (English-language broadcasts
+// aimed at North America, local time), so the printable card follows each season change.
+// Fixed facts: WWV/WWVH/CHU frequencies (NIST / NRC). Never fails the build.
+try {
+  if (!tonightBuilt || !TN || !TN.tnPlan) throw new Error("Tonight engine unavailable");
+  var ecClock = function (min, off) { var m = ((Math.round(min + off * 60) % 1440) + 1440) % 1440, h = Math.floor(m / 60), mm = m % 60; return (h % 12 === 0 ? 12 : h % 12) + ":" + (mm < 10 ? "0" : "") + mm + (h < 12 ? " am" : " pm"); };
+  var ecSt = function (n) { return (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href=\"/stations/" + stationSlug[n] + "/\">" + esc(n) + "</a>" : esc(n); };
+  var ecHdr = function (tz) { return "<table><tr><th>kHz</th><th>Station</th><th>Local time (" + esc(tz) + ")</th><th>Band</th></tr>"; };
+  // Keep the card to mainstream, English-language international and US broadcasters: no pirates, numbers or state-propaganda-only services aimed elsewhere.
+  var EC_SKIP = [/pirate/i, /korea/i, /duediligence/i, /america250/i, /numbers/i, /unid/i];
+  var SCH_EC = SCH_LIVE.filter(function (r) { return r && r.type === "International" && r.lang === "English" && !EC_SKIP.some(function (re) { return re.test(r.stn || ""); }); });
+  var ecBands = [["120m", 2300, 2500], ["90m", 3200, 3400], ["75m", 3900, 4000], ["60m", 4700, 5100], ["49m", 5800, 6300], ["41m", 7100, 7600], ["31m", 9300, 9999], ["25m", 11500, 12150], ["22m", 13500, 13900], ["19m", 15000, 15900], ["16m", 17400, 17950], ["13m", 21400, 21900]];
+  var ecBand = function (k) { for (var i = 0; i < ecBands.length; i++) if (k >= ecBands[i][1] && k <= ecBands[i][2]) return ecBands[i][0]; return ""; };
+  var ecRegion = function (id) { for (var i = 0; i < TN.TN_REGIONS.length; i++) if (TN.TN_REGIONS[i].id === id) return TN.TN_REGIONS[i]; return null; };
+  var ecTable = function (id, slot, n, tz) {
+    var R = ecRegion(id); if (!R) return "";
+    var off = hubOff(R);
+    var plan = TN.tnPlan(SCH_EC, { region: id, off: off, slot: slot, sfi: PROP.sfi, k: PROP.k, english: true });
+    var picks = plan.easy.filter(function (x) { return x.lang === "English"; }).slice(0, 6);
+    if (!picks.length) return "";
+    return ecHdr(tz) + picks.map(function (x) {
+      return "<tr><td>" + x.khz + "</td><td>" + ecSt(x.stn) + "</td><td>" + (x.allDay ? "24 hours" : ecClock(x.s, off) + " \u2013 " + ecClock(x.e, off)) + "</td><td>" + ecBand(+x.khz) + "</td></tr>";
+    }).join("") + "</table>";
+  };
+  var eastTz = usDST(BUILD_NOW) ? "EDT" : "EST", westTz = usDST(BUILD_NOW) ? "PDT" : "PST";
+  var tEveE = ecTable("na-east", "evening", 6, eastTz), tEveW = ecTable("na-west", "evening", 6, westTz);
+  var tLateE = ecTable("na-east", "late", 6, eastTz), tDawnE = ecTable("na-east", "dawn", 6, eastTz);
+  if (!tEveE && !tEveW) throw new Error("no North America evening picks");
+  var ecDate = BUILD_NOW.toISOString().slice(0, 10);
+
+  var timeSig = "<table><tr><th>Station</th><th>Frequencies (MHz)</th><th>What you hear</th></tr>"
+    + "<tr><td><strong>WWV</strong> \u2014 Fort Collins, Colorado</td><td>2.5 \u00b7 5 \u00b7 10 \u00b7 15 \u00b7 20</td><td>Voice time announcement (UTC), tones, geophysical (space-weather) alerts, Atlantic/Pacific storm information</td></tr>"
+    + "<tr><td><strong>WWVH</strong> \u2014 Kauai, Hawaii</td><td>2.5 \u00b7 5 \u00b7 10 \u00b7 15</td><td>Same services from the Pacific</td></tr>"
+    + "<tr><td><strong>CHU</strong> \u2014 Ottawa, Canada</td><td>3.330 \u00b7 7.850 \u00b7 14.670</td><td>Time signals in English and French</td></tr></table>";
+
+  var css = "<style>.ecard{background:#fff;border:2px solid #0a0b0e;border-radius:6px;padding:.9rem 1rem;margin:0 0 1rem}.ecard h3{font-family:Syne,sans-serif;font-size:1rem;margin:0 0 .5rem}.ecard table{margin:.3rem 0 .6rem}"
+    + ".chk{list-style:none;padding:0;margin:0}.chk li{padding:.3rem 0 .3rem 1.7rem;position:relative;border-bottom:1px dotted #c8c0b0}.chk li:before{content:\"\";position:absolute;left:0;top:.45rem;width:.95rem;height:.95rem;border:2px solid #0a0b0e;border-radius:2px}"
+    + ".pbtn{font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:700;background:#c0392b;color:#fff;border:0;border-radius:4px;padding:11px 18px;margin:.3rem .5rem .3rem 0;cursor:pointer}.pbtn.o{background:transparent;color:#0a0b0e;border:1px solid #c8c0b0}"
+    + ".warn{background:#fff8e6;border:1px solid #e0c97a;border-left:4px solid #d49b00;border-radius:4px;padding:.7rem 1rem;margin:0 0 1rem}.printonly{display:none}"
+    + "@media print{.mast,footer,.crumbs,.kick,.noprint,.tags,.cta,.pbtn{display:none!important}body{background:#fff;font-size:10.5pt;line-height:1.4}.wrap{padding:0;max-width:none}h1{font-size:17pt}h2{font-size:13pt;margin:.9rem 0 .4rem}a{color:#000;text-decoration:none}table{font-size:9pt;display:table!important;margin:.2rem 0 .4rem}th,td{padding:2px 6px}td a{border-bottom:0!important}.ecard{break-inside:avoid;border-color:#000;padding:.5rem .7rem;margin:0 0 .5rem}.ecard h3{font-size:10.5pt;margin:0 0 .25rem}.chk li{padding:.15rem 0 .15rem 1.5rem}.chk li:before{top:.25rem}body.cardonly .extra{display:none!important}.sheet{break-before:page}.printonly{display:block;font-size:9pt;margin-top:.6rem}body.cardonly .guide{display:none!important}body.cardonly .sheet{break-before:auto}}</style>";
+
+  var faq = [
+    ["Do I need a license to listen to shortwave radio?", "No. In the United States you don't need a license to listen to shortwave or any other radio broadcast. A license is only required to transmit, for example on the amateur (ham) bands."],
+    ["Will shortwave work if the power, internet and cell service are down?", "Receiving does not depend on the internet or cell towers. A battery radio can keep receiving as long as stations are on the air, and the big international transmitters run on their own power systems. Nothing is guaranteed in a regional disaster, so also keep local AM/FM and NOAA Weather Radio (VHF, not shortwave) in your kit."],
+    ["Which shortwave stations are best in an emergency?", "Start with WWV/WWVH (time, space-weather alerts and storm information) to confirm your radio and antenna work, then try English-language international broadcasters aimed at North America. The tables on this page are rebuilt daily from the broadcast schedule."],
+    ["What time of day is best for shortwave?", "After dark the lower bands (about 3\u20137 MHz) carry the farthest. Mid-evening through the night 7\u201310 MHz is strong, and during the day the higher bands (about 13\u201321 MHz) work best. A geomagnetic storm can black out all of them."],
+    ["Can I talk to people on shortwave in an emergency?", "Shortwave broadcast bands are receive-only for the public. Two-way HF communication needs an amateur radio license, apart from a few limited services. Many people get a ham license before they need it."],
+    ["What kind of radio and antenna do I need?", "Any radio that covers shortwave in AM mode will work. Fresh batteries and about 20 feet (6 m) or more of wire clipped to the telescopic antenna improve reception a lot. See our beginner radio guide for options."]
+  ];
+
+  var guide = "<div class=\"guide\">"
+    + "<p class=\"lede\">Shortwave radio doesn't depend on the internet, cell towers or the local grid for reception, which is why preppers keep one in the kit. This guide shows what to listen to, when, and how to test your radio <em>before</em> you need it. Everything here is receive-only; no license needed.</p>"
+    + "<p class=\"noprint\"><button class=\"pbtn\" onclick=\"window.print()\">Print this page</button><button class=\"pbtn o\" onclick=\"document.body.classList.add('cardonly');window.print();setTimeout(function(){document.body.classList.remove('cardonly')},800)\">Print the one-page card only</button><a class=\"cta o\" href=\"/tonight/\">Tonight's full listening guide</a></p>"
+    + "<div class=\"warn\"><strong>Be realistic.</strong> International shortwave broadcasters are not emergency services, and no station promises to report on your local emergency. Shortwave is a <em>backup</em> source: news from outside your area, accurate time, and space-weather alerts when other channels are down. Local AM/FM and NOAA Weather Radio come first for local warnings.</div>"
+    + "<h2>Step 1: Test your radio now</h2><ol><li>Put in fresh batteries and set the radio to <strong>AM</strong> mode (shortwave broadcasts and WWV are AM).</li><li>Tune to <strong>10 MHz (10000 kHz)</strong> or <strong>5 MHz (5000 kHz)</strong> and listen for WWV: a steady tick and a voice announcing the time.</li><li>No signal? Try the other WWV frequencies below. Which one works depends on time of day.</li><li>Clip 20 feet (6 m) or more of wire to the telescopic antenna, run it outside or along a window, and compare the difference.</li></ol>"
+    + "<h2>Step 2: Know the time-signal stations</h2><p>These transmit around the clock and are the easiest way to prove your radio works. Frequencies per <a href=\"https://www.nist.gov/nist-time-and-frequency-services\" target=\"_blank\" rel=\"noopener\">NIST</a> (WWV/WWVH) and the National Research Council (CHU).</p>" + timeSig
+    + "<h2>Step 3: Pick the band for the time of day</h2><table><tr><th>When</th><th>Try (MHz)</th><th>Why</th></tr><tr><td>Night</td><td>3 \u2013 7</td><td>Lower bands carry farthest after dark</td></tr><tr><td>Evening / overnight</td><td>7 \u2013 11</td><td>Strong at dusk and into the night</td></tr><tr><td>Daytime</td><td>13 \u2013 21</td><td>Higher bands need sunlight to work</td></tr></table>"
+    + "<p>Conditions change daily with the sun. Our <a href=\"/?page=propagation\">propagation page</a> shows current space weather.</p></div>";
+
+  var sheet = "<div class=\"sheet\"><h2>Printable card: emergency shortwave (" + ecDate + ")</h2>"
+    + "<div class=\"ecard\"><h3>1. Check your radio: time signals (AM mode)</h3>" + timeSig + "</div>"
+    + (tEveE ? "<div class=\"ecard\"><h3>2. English broadcasts to North America: evening 7\u201310 pm, East</h3>" + tEveE + "</div>" : "")
+    + (tEveW ? "<div class=\"ecard\"><h3>3. Same, West coast evening 7\u201310 pm</h3>" + tEveW + "</div>" : "")
+    + (tLateE ? "<div class=\"ecard extra\"><h3>4. Late night 10 pm\u20131 am, East</h3>" + tLateE + "</div>" : "")
+    + (tDawnE ? "<div class=\"ecard extra\"><h3>5. Dawn 5\u20137 am, East</h3>" + tDawnE + "</div>" : "")
+    + "<div class=\"ecard\"><h3>Radio check (every 3 months)</h3><ul class=\"chk\"><li>Fresh batteries in the radio, spares stored separately</li><li>AM mode: found WWV on 5, 10 or 15 MHz</li><li>20+ ft of wire and clip ready</li><li>Local AM/FM and NOAA Weather Radio checked</li><li>This card reprinted after each season change (late March / late October)</li></ul></div>"
+    + "<p class=\"printonly\">Schedule data: EIBI " + SEASON.label + " \u00b7 " + ecDate + " \u00b7 hqshortwaveradio.com/emergency-shortwave/ \u00b7 Verify with official station sources.</p></div>";
+
+  var eb = css + guide + sheet
+    + "<div class=\"guide\"><p class=\"noprint\" style=\"font-size:.82rem\">The card tables use the same schedule engine as <a href=\"/tonight/\">Tonight</a> and update daily. Local times follow your region's current clock (" + eastTz + " / " + westTz + "). Schedules change twice a year; reprint after each season change.</p>"
+    + seoFaqHtml(faq) + seoFaqLd(faq)
+    + "<h2>More</h2><div class=\"tags\"><a href=\"/best-shortwave-radios-for-beginners/\">Best beginner radios</a><a href=\"/best-antennas-for-apartments/\">Best antennas</a><a href=\"/tonight/\">Tonight</a><a href=\"/season-change/\">Season change</a><a href=\"/listen-online/\">Listen online</a><a href=\"/bands/\">Shortwave bands</a></div></div>";
+
+  write("emergency-shortwave/index.html", shell({
+    title: "Emergency Shortwave Radio Guide + Printable Frequency Card | ShortwaveHQ",
+    desc: "Prepper guide to shortwave radio: how to test your radio with WWV, which English broadcasts reach North America tonight, and a printable one-page frequency card. Free, updated daily.",
+    canonical: "/emergency-shortwave/", kicker: "Preparedness Guide \u00b7 Printable \u00b7 Updated " + ecDate,
+    h1: "Emergency shortwave radio: what to listen to when everything else is down",
+    bodyHtml: eb,
+    breadcrumbs: [["Home", "/"], ["Tonight", "/tonight/"], ["Emergency Shortwave", "/emergency-shortwave/"]]
+  }));
+  urls.push("/emergency-shortwave/");
+  console.log("Generated /emergency-shortwave/ (printable card)");
+} catch (eErr) {
+  console.warn("WARNING: /emergency-shortwave/ skipped (build continues): " + eErr.message);
 }
 
 
