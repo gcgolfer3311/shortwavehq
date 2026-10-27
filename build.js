@@ -411,7 +411,47 @@ if (revStart >= 0) {
   var usedReviewSlugs = {};
   for (var rv = 0; rv < REVIEWS.length; rv++) {
     var rev = REVIEWS[rv];
-    if (rev.status !== "Published") continue;
+    if (rev.status !== "Published") {
+      // "Coming Soon" reviews with a /reviews/ URL get a pre-launch page at the SAME
+      // address the full review will use, so links shared now keep working and the URL ages.
+      if (rev.status === "Coming Soon" && rev.url && rev.url.indexOf("/reviews/") === 0) {
+        try {
+          var cslug = rev.url.replace(/^\/reviews\//, "").replace(/\/$/, "");
+          usedReviewSlugs[cslug] = 1; reviewSlugMap[rev.n] = cslug;
+          var cBuy = rev.buyUrl || rev.amazonUrl;
+          var cUrl = SITE + "/reviews/" + cslug + "/";
+          var cSpecs = rev.specs && rev.specs.length ? "<h2>Specifications (from the manufacturer)</h2><div style=\"background:#fff;border:1px solid #c8c0b0;border-radius:4px;margin:.6rem 0 1rem\">" + rev.specs.map(function (sp, ix) { return "<div style=\"padding:8px 12px;font-size:.86rem;overflow-wrap:anywhere" + (ix ? ";border-top:1px solid #e2dbd0" : "") + "\"><strong>" + esc(sp[0]) + ":</strong> " + esc(sp[1]) + "</div>"; }).join("") + "</div>" : "";
+          var cPlan = rev.plan && rev.plan.length ? "<h2>What I'm testing</h2><ul style=\"padding-left:1.3rem;margin-bottom:1rem\">" + rev.plan.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul>" : "";
+          var cBuyHtml = cBuy ? "<div style=\"margin:.9rem 0;padding:1rem 1.1rem;background:linear-gradient(135deg,#fff3e0,#fffaf3);border:2px solid #FF9900;border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap\"><div><div style=\"font-family:'IBM Plex Mono',monospace;font-size:.85rem;font-weight:800\">" + esc(rev.price || "Check current price") + "</div><div style=\"font-size:.74rem;color:#6b5f52\">Pre-order directly from Elecevolve.</div></div><a href=\"" + esc(cBuy) + "\" rel=\"nofollow sponsored noopener\" target=\"_blank\" style=\"text-decoration:none;background:#FF9900;color:#0a0b0e;font-family:'IBM Plex Mono',monospace;font-size:.75rem;font-weight:800;padding:13px 20px;border-radius:6px\">" + esc(rev.buyLabel || "Check price") + " \u2192</a></div>" : "";
+          var cFaq = [
+            ["When will the " + rev.n + " review be published?", "The hands-on review is in progress. It will be published on this page, at this same address, with band scans, logged stations and a full verdict."],
+            ["How much does the " + rev.n + " cost?", (rev.price || "See the manufacturer's page") + ", according to the manufacturer's store."]
+          ];
+          var cBand = (rev.specs || []).filter(function (sp) { return /^(FM|LW|MW|SW|Air band)$/.test(sp[0]); }).map(function (sp) { return sp[0] + " " + sp[1]; });
+          if (cBand.length) cFaq.push(["What bands does the " + rev.n + " receive?", "Per the manufacturer: " + cBand.join("; ") + "."]);
+          cFaq.push(["Does the " + rev.n + " receive SSB?", "SSB is not listed on the manufacturer's spec sheet. I will test it and report the result in the review."]);
+          var cBody = "<div style=\"display:inline-block;background:#c0392b;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:3px;margin-bottom:.8rem\">Hands-on review coming soon</div>"
+            + "<div style=\"display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:0 0 1rem;padding:.55rem .8rem;background:#f5f0e8;border:1px solid #c8c0b0;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:.74rem\"><span style=\"color:#6b5f52\">Share:</span><a href=\"" + cUrl + "\" style=\"color:#0a0b0e;word-break:break-all\">" + cUrl.replace(/^https?:\/\//, "") + "</a><button type=\"button\" onclick=\"var u=this.dataset.u,t=this;if(navigator.share){navigator.share({title:document.title,url:u}).catch(function(){});}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){t.textContent='Link copied \u2713';});}else{prompt('Copy this link:',u);}\" data-u=\"" + cUrl + "\" style=\"margin-left:auto;cursor:pointer;background:#c0392b;color:#fff;border:0;border-radius:4px;padding:6px 12px;font:inherit;font-weight:700\">Share / Copy link</button></div>"
+            + "<p class=\"lede\">" + esc(rev.d || "") + "</p>" + cBuyHtml + cPlan + cSpecs
+            + "<h2>Get the review first</h2><p>Follow along as testing happens: <a href=\"https://www.youtube.com/@Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">YouTube</a>, the <a href=\"https://www.facebook.com/groups/836185586242956\" target=\"_blank\" rel=\"noopener\">HQ Shortwave Radio Listeners group</a> and <a href=\"https://www.reddit.com/r/ShortwaveHQ/\" target=\"_blank\" rel=\"noopener\">r/ShortwaveHQ</a>. Questions you want answered in the review? Ask there and I'll test them.</p>"
+            + seoFaqHtml(cFaq) + seoFaqLd(cFaq)
+            + "<h2>More Reviews</h2><p><a class=\"cta o\" href=\"/?page=reviews\">See all radio reviews \u2192</a></p>"
+            + "<p style=\"font-size:.78rem;color:#9c8e81\">Specifications are from the manufacturer's product page and will be checked in hands-on testing. ShortwaveHQ may earn a commission from purchases made through links on this page.</p>";
+          write("reviews/" + cslug + "/index.html", shell({
+            title: (rev.metaTitle || rev.n + " Review (Coming Soon)") + " | ShortwaveHQ",
+            desc: rev.metaDescription || (rev.d || "").slice(0, 155),
+            canonical: "/reviews/" + cslug + "/",
+            kicker: "Review \u00b7 Coming Soon \u00b7 " + (rev.cat || "Shortwave Gear"),
+            h1: esc(rev.n) + " Review: <span style=\"color:#c0392b\">Coming Soon</span>",
+            bodyHtml: cBody,
+            breadcrumbs: [["Home", "/"], ["Reviews", "/reviews/"], [rev.n, "/reviews/" + cslug + "/"]]
+          }));
+          urls.push("/reviews/" + cslug + "/");
+          console.log("Generated coming-soon review page /reviews/" + cslug + "/");
+        } catch (csErr) { console.warn("WARNING: coming-soon page skipped for " + rev.n + ": " + csErr.message); }
+      }
+      continue;
+    }
     var rbase = slug(rev.n) || "review";
     var rslug = rbase, rn2 = 2;
     while (usedReviewSlugs[rslug]) { rslug = rbase + "-" + rn2; rn2++; }
