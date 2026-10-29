@@ -212,6 +212,7 @@ for (var s = 0; s < stationNames.length; s++) {
 }
 // Stations with a Japanese-language service get a Japanese page at
 // /ja/stations/<slug>/ (min 2 Japanese broadcasts, so no thin pages).
+var JA_REV_SLUGS = ["zhiwhis-zws-a330", "choyong-lc100"]; // Japanese twins at /ja/reviews/<slug>/
 var JA_ST = {};
 (function () {
   var c = {};
@@ -536,6 +537,7 @@ if (revStart >= 0) {
       + (vld2 ? "<script type=\"application/ld+json\">" + JSON.stringify(vld2) + "</script>" : "")
       + (faqLd ? "<script type=\"application/ld+json\">" + JSON.stringify(faqLd) + "</script>" : "")
       + shareHtml
+      + (JA_REV_SLUGS.indexOf(rslug) >= 0 ? "<p lang=\"ja\" style=\"font-size:.85rem;margin:0 0 1rem\"><a href=\"/ja/reviews/" + rslug + "/\">\u65e5\u672c\u8a9e\u7248\u30ec\u30d3\u30e5\u30fc\u306f\u3053\u3061\u3089 \u2192</a></p>" : "")
       + (videoHtml || imgHtml)
       + videoHtml2
       + ratingHtml
@@ -548,6 +550,7 @@ if (revStart >= 0) {
 
     write("reviews/" + rslug + "/index.html", shell({
       title: rTitle, desc: rDesc, canonical: "/reviews/" + rslug + "/",
+      alts: (JA_REV_SLUGS.indexOf(rslug) >= 0) ? [["en", "/reviews/" + rslug + "/"], ["ja", "/ja/reviews/" + rslug + "/"]] : null,
       kicker: "Review \u00b7 " + (rev.cat || "Shortwave Gear") + (rev.date ? " \u00b7 " + rev.date : ""),
       h1: esc(rev.n) + " Review",
       bodyHtml: rBody,
@@ -2007,6 +2010,7 @@ var JA_BUILT = false;
   });
   console.log("Japanese station pages: " + jaStNames.length);
 
+  body += "<h2>\u6642\u9593\u5272\u30fb\u30ec\u30d3\u30e5\u30fc</h2><div class='tags'><a href='/ja/timetable/'>\u65e5\u672c\u8a9e\u77ed\u6ce2\u653e\u9001 \u6642\u9593\u5272\uff08\u65e5\u672c\u6642\u9593\uff09</a><a href='/ja/reviews/'>\u77ed\u6ce2\u30e9\u30b8\u30aa \u30ec\u30d3\u30e5\u30fc</a></div>";
   write("ja/index.html", shell({
     lang: "ja",
     title: "短波放送 周波数一覧（" + yr + "年）日本語放送・NHK・ラジオNIKKEI | ShortwaveHQ",
@@ -2018,6 +2022,199 @@ var JA_BUILT = false;
   }));
   urls.push("/ja/");
   JA_BUILT = true;
+
+  // ── Japanese timetable (/ja/timetable/) ──
+  (function () {
+    var NRx = (typeof nrows !== "undefined" && nrows) ? nrows : [];
+    var seenT = {}, trows = [];
+    JR.concat(NRx).forEach(function (r) {
+      var k = r.stn + "|" + r.freq + "|" + r.s + "|" + r.e; if (seenT[k]) return; seenT[k] = 1; trows.push(r);
+    });
+    trows.sort(function (a, b) { return jstStart(a) - jstStart(b) || kHz(a.freq) - kHz(b.freq); });
+    var groups = [
+      ["早朝（日本時間 4:00〜9:00）", 240, 540, "3〜7MHz帯（49・60・75メートルバンド）から、日の出とともに 9〜11MHz帯へ移っていく時間帯です。"],
+      ["日中（日本時間 9:00〜17:00）", 540, 1020, "15〜21MHz帯（19・16・13メートルバンド）が中心です。"],
+      ["夕方（日本時間 17:00〜21:00）", 1020, 1260, "9〜11MHz帯が聞こえやすくなる時間帯です。"],
+      ["夜〜深夜（日本時間 21:00〜翌4:00）", 1260, 1680, "3〜7MHz帯が中心です。夜間は近くの局も遠くの局もよく入ります。"]
+    ];
+    var tb = "<p class='lede'>" + SEASON.label + " の放送予定表にある日本語の短波放送（海外局＋ラジオNIKKEI）を、<strong>日本時間（JST）の開始時刻順</strong>に並べた時間割です。全 <strong>" + trows.length + " 件</strong>。UTC に 9 時間を足したものが日本時間です。</p>";
+    groups.forEach(function (g) {
+      var rows = trows.filter(function (r) { var st = jstStart(r); var s2 = (st < 240) ? st + 1440 : st; return s2 >= g[1] && s2 < g[2]; });
+      tb += "<h2>" + g[0] + "</h2><p>" + g[3] + "</p>";
+      if (!rows.length) { tb += "<p>この時間帯に開始する日本語放送は、現在の放送予定表にありません。</p>"; return; }
+      tb += "<table><tr><th>日本時間（JST）</th><th>放送局</th><th>周波数</th><th>対象地域</th></tr>";
+      rows.forEach(function (r) {
+        tb += "<tr><td>" + jst2(r) + "</td><td>" + jaLink(r.stn) + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + esc(jaTgt(r.tgt)) + "</td></tr>";
+      });
+      tb += "</table>";
+    });
+    tb += "<p style='font-size:.78rem;color:#6b5f52'>出典：EIBI " + SEASON.label + " 放送予定表（毎日更新）。放送局の都合で予告なく変更されることがあります。24時間放送の項目は「24時間」と表示しています。</p>";
+    var tfaq = [
+      ["日本語の短波放送は何時にありますか？", "放送予定表には日本語放送が " + trows.length + " 件あり、早朝・日中・夕方・夜に分かれています。このページの時間割で、日本時間の開始時刻順に確認できます。"],
+      ["日本時間とUTCの違いは？", "日本時間（JST）は UTC に 9 時間を足した時刻です。たとえば UTC 12:00 は日本時間 21:00、UTC 20:00 は日本時間の翌日 5:00 です。"],
+      ["日本語の短波放送を聞くのに最適な時間帯は？", "時間帯によって聞こえやすい周波数が変わります。昼間は 15〜21MHz 帯、夕方は 9〜11MHz 帯、夜から早朝は 3〜7MHz 帯が中心です。"],
+      ["時間割は毎日更新されますか？", "はい。当サイトは毎日、最新の EIBI 放送予定表から時間割を再生成しています。"]
+    ];
+    tb += seoFaqHtml(tfaq) + seoFaqLd(tfaq);
+    tb += "<p><a class='cta' href='/ja/'>日本語短波放送 周波数一覧へ</a> <a class='cta o' href='/listen-online/'>ラジオなしで聞く</a></p>";
+    write("ja/timetable/index.html", shell({
+      lang: "ja",
+      title: "日本語 短波放送 番組表・時間割（日本時間・" + yr + "年）| ShortwaveHQ",
+      desc: "日本語で聞ける短波放送の時間割を日本時間（JST）で一覧。NHKワールド・ラジオ日本、ラジオNIKKEI、中国国際放送など。早朝・日中・夕方・夜の時間帯別。毎日更新。",
+      canonical: "/ja/timetable/", kicker: "日本語 · 番組表 · EIBI " + SEASON.label,
+      h1: "日本語 短波放送 <span style=\"color:#c0392b\">時間割</span>（日本時間）",
+      bodyHtml: tb,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["時間割", "/ja/timetable/"]]
+    }));
+    urls.push("/ja/timetable/");
+    console.log("Japanese timetable: " + trows.length + " rows");
+  })();
+
+  // ── Japanese review pages (/ja/reviews/<slug>/) ──
+  (function () {
+    function li(a) { return "<ul>" + a.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"; }
+    function ytId(u) { var m = /(?:shorts\/|watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/.exec(u || ""); return m ? m[1] : null; }
+    var JAREV = {
+      "zhiwhis-zws-a330": {
+        name: "ZHIWHIS ZWS-A330", rating: 4, ratingMax: 5, date: "2026-10-27", enUrl: "/reviews/zhiwhis-zws-a330/",
+        title: "ZHIWHIS ZWS-A330 レビュー：ポケットサイズの短波・SSB・エアバンドラジオ",
+        desc: "ZHIWHIS ZWS-A330を実機テスト。短波・SSB・エアバンド・AMのDXを検証。短波で約11,300km先の中国国際放送、AMで約1,300km先の局も受信。長所・短所・評価（5点中4点）。",
+        kicker: "ラジオレビュー · ポケット型マルチバンド受信機",
+        lede: "ZHIWHIS ZWS-A330は、シャツのポケットに入るサイズのマルチバンドラジオです。AM、FM、SSB対応の短波、エアバンド（航空無線）、CB、NOAA気象ラジオ（警報機能つき）、広帯域のVHF/UHFまでカバーします。録音、Bluetooth、アプリ操作、USB-C充電にも対応し、アウトドアや車、非常用の持ち出し袋に入れて持ち歩けます。アリゾナ州で実際に使ってテストしました（レビュー：Michael Smith / KM7FMJ）。",
+        note: "※ NOAA気象ラジオとCBバンドは米国向けの機能で、日本では使えません。短波・AM・FM・エアバンドは日本でも受信できます。",
+        specs: [["受信周波数", "AM 520〜1710kHz ・ 短波 2.3〜30MHz ・ FM 64〜108MHz ・ エアバンド 118〜138MHz ・ CB 25〜28MHz ・ VHF 20〜250MHz ・ UHF〜999MHz ・ NOAA気象 162.400〜162.550MHz"], ["長波", "153〜522kHz（別売のZWS-W3信号リピーターが必要）"], ["受信モード", "AM、FM、NFM、SSB（USB/LSB）"], ["帯域幅", "短波AM：1、1.8、2、2.5、3、4、6kHz ・ SSB：0.5、1、1.2、2.2、3、4kHz"], ["選局", "テンキー入力、チューニングノブ、上下スキャン、ATS自動保存、プリセット、短波メーターバンド選局"], ["スケルチ／ATT", "短波・VHF・UHF・エアバンド・CBで9段階スケルチ ・ ローカル/DXアッテネーター"], ["録音・再生", "microSDカード（最大256GB）に録音（日時と周波数がファイル名に入る）・ MP3/WMA/WAV/APE/FLAC再生"], ["接続", "Bluetoothスピーカー、アプリ操作、USBスピーカー、ヘッドホン端子"], ["アンテナ", "細い伸縮式ロッド ・ 3.5mm外部アンテナ端子 ・ AM用の差し込み式ループアンテナ付属"], ["電源", "BL-5C着脱式リチウム電池 ・ USB-C充電"], ["サイズ", "約 136 × 60 × 35 mm（シャツのポケットサイズ）"]],
+        pros: [
+          "ポケットサイズなのに受信範囲が広い。短波、SSB、エアバンド、CB、NOAA気象、VHF/UHFを、シャツのポケットに入る本体で受信できます。",
+          "アウトドアや持ち歩きに向いています。軽く、片手で操作でき（操作部は前面・上面・右側面）、自立するのでテーブルの上にも置けます。",
+          "防災・持ち出し袋用のラジオとして優秀です。AM/FMのニュース、短波の海外放送、エアバンドやVHF/UHFのワッチを、充電式のこれ1台でまとめて使えます。",
+          "電池のBL-5Cは入手しやすく安価で交換可能。予備を持てば充電を待つ必要がなく、USB-Cなのでモバイルバッテリーやソーラーパネルからも充電できます。",
+          "短波のバンドスキャン（アリゾナ州サンタンバレー）：WRMI 5850kHz（フロリダ、約2,990km）、WWCR 5935kHz（テネシー、約2,270km）、Radio Martí 6030kHz（ノースカロライナ、約3,140km）、そして中国・金華から送信される中国国際放送（CRI）15160kHz（約11,300km）まで受信できました。",
+          "AM（中波）のDXにも驚きました。差し込み式のフェライトアンテナを使うと、深夜にサンフランシスコのKNBR 680（約1,080km）、ソルトレイクシティのKSL 1160（約840km）、オクラホマシティのKOKC 1520（約1,310km）を受信。アンテナを回して信号のピークを探し、帯域幅を3.0kHzから2.0kHzに狭めると、740kHzのような混信しやすい周波数も分離できました。",
+          "SSBに対応し、帯域幅は6段階。アマチュア無線の40m・80mバンドや業務局も、放送だけでなく聞けます。",
+          "エアバンドが非常に優秀です。標準のアンテナでも管制塔とパイロットの交信が非常にクリアで聞き取りやすく、9段階のスケルチで交信のない間は静かなまま。空港のフェンス際、航空ショー、ハイキングで頼もしい1台です。",
+          "小さなスピーカーでも音量が大きく、聞き取りやすい。キャンプ場や風のある屋外でも聞こえます。",
+          "聞いた内容をmicroSDに録音でき、日時と周波数がファイル名に入るため、受信記録や緊急放送の保存に便利です。",
+          "Bluetooth、アプリ操作、USBスピーカーモードで、旅行中は音楽プレーヤーやスマホ・PCのスピーカーにもなります。",
+          "3.5mmの外部アンテナ端子があり、簡単なクリップ式のワイヤーで屋外でも短波の感度を上げられます。"
+        ],
+        cons: [
+          "伸縮式アンテナがとても細く、壊れやすい印象です。バッグのストラップや枝に引っかかると曲がるため、収納時は縮めて丁寧に扱う必要があります。屋外で本格的に使うなら、3.5mm端子に接続するクリップ式ワイヤーアンテナがおすすめです。",
+          "ホルスター／ベルトクリップは今ひとつです。かさばって厚みが増し、電池カバーの上にかぶさるため、電池交換の邪魔になります。ハイキング用には保持力に不安があり、小さなパッド入りポーチのほうが本体とアンテナを守れます。",
+          "短波は十分な性能ですが、Tecsun PL-330のような専用ポータブルは、このラジオで拾えない弱い局を受信できます。",
+          "画面は屋外の光の下で見づらい場合があり、バックライトを消すと全く読めません。",
+          "ボタンが小さくて硬く、チューニングノブもやや硬いため、手袋をしていると操作しにくいです。",
+          "設定の操作と周波数入力でボタンが共用されており、間違って設定を変えてしまいがちです。画面上の設定の文字も小さいです。",
+          "CBバンドは10kHzステップに対応せず、CB帯を手動で選局するのに時間がかかります。",
+          "ライトやスタンドがありません。アウトドア用・防災用のラジオには付いていることが多い機能です。",
+          "長波は、別売のW3リピーターを使った場合のみ受信できます。"
+        ],
+        verdict: [
+          "ZHIWHIS ZWS-A330は、実際に持ち出して使いたくなるラジオです。シャツのポケットやバックパックのサイドポケットに入るサイズでありながら、AM、FM、SSB対応の短波、エアバンド、CB、NOAA気象、広帯域のVHF/UHFをカバーします。サンタンバレーでのバンドスキャンでは、短波でWRMI、WWCR、Radio Martí、中国国際放送を受信。AMでは差し込み式フェライトアンテナのおかげで、深夜にサンフランシスコ、ソルトレイクシティ、オクラホマシティ（最大約1,310km）を受信できる本格的なDXラジオになりました。この小さな本体にこれだけの受信範囲と性能が入っていることが、A330の最大の強みです。",
+          "アウトドアや持ち歩きには、片手操作、大きな音量、microSDへの録音、USB-Cで充電できる交換式のBL-5C電池と、必要なものが揃っています。防災・持ち出し袋用としても有力です。1台でAM/FMのニュース、地域外の短波ニュース、エアバンドやVHF/UHFを聞けます。特にエアバンドは際立っており、クリアで聞き取りやすい受信でした。予備のBL-5Cと短いワイヤーアンテナを追加すれば万全です。",
+          "完璧ではありません。伸縮アンテナは細く丁寧な扱いが必要で、ベルトクリップ／ホルスターは、かさばり、電池カバーの邪魔になる最も弱い部分です。それでも、機能と携帯性のバランスを考えると、5点中4点の価値があります。"
+        ],
+        faq: [
+          ["ZHIWHIS ZWS-A330は日本で使えますか？", "短波、AM（中波）、FM、エアバンドは日本でも受信できます。一方、NOAA気象ラジオとCBバンドは米国向けの機能のため、日本では使えません。"],
+          ["A330で短波放送はどのくらい遠くまで聞こえましたか？", "アリゾナ州で、フロリダのWRMI（約2,990km）、テネシーのWWCR（約2,270km）、そして中国・金華から送信される中国国際放送（約11,300km）を受信しました。受信状況は時間帯や季節で変わります。"],
+          ["A330はSSBに対応していますか？", "はい。USB/LSBに対応し、帯域幅は0.5〜4kHzの6段階です。アマチュア無線や業務局を聞くことができます。"],
+          ["A330のエアバンドの受信はどうですか？", "標準のアンテナでも管制塔とパイロットの交信がクリアに聞き取れ、9段階のスケルチで交信のない間は静かです。空港や航空ショーでの使用に向いています。"]
+        ]
+      },
+      "choyong-lc100": {
+        name: "ChoYong LC100", rating: 7.7, ratingMax: 10, date: "2026-09-30", enUrl: "/reviews/choyong-lc100/",
+        title: "ChoYong LC100 レビュー：短波・SSB・Wi-Fiインターネットラジオ",
+        desc: "ChoYong LC100（約349ドル）を実機テスト。短波・SSB、Wi-Fiインターネットラジオ、ラジオアーカイブ、音声検索を検証。長所・短所と評価（10点中7.7）。",
+        kicker: "ラジオレビュー · スマートインターネットラジオ / 短波 / SSB",
+        lede: "ChoYong LC100は、これまでレビューした中で最も機能が豊富なラジオです。Wi-Fi 6、セルラー／eSIM、AI音声検索に、短波・SSBまで1台で対応するインターネットラジオです。大きなタッチスクリーン、ラジオアーカイブ、そして試したポータブルラジオの中で最高の音質を備えています（レビュー：Michael Smith / KM7FMJ）。",
+        note: "",
+        specs: [["ディスプレイ", "3.5インチ高解像度タッチスクリーン"], ["受信バンド", "FM、AM/MW、短波、SSB"], ["接続", "Wi-Fi 6（2.4GHz + 5GHz、WPA3）、4G/eSIM/SIMスロット、Bluetooth"], ["放送局", "40,000以上のインターネットラジオ局とポッドキャスト、ラジオアーカイブ再生"], ["AI機能", "音声検索、AIアシスタント"], ["電池", "交換可能な18650"], ["カラー", "ブラック、シルバー"]],
+        pros: [
+          "同価格帯のポータブルラジオでトップクラスの画面。大きく鮮明で操作しやすく、小さなモノクロ画面が多いポータブルラジオから大きく進化しています。",
+          "インターネットラジオの完成度が高い。Wi-Fiで40,000以上の局をストリーミングでき、短波専用ラジオにはできない聞き方が可能です。Wi-Fi 6（2.4/5GHz）で屋内外とも快適に再生できます。",
+          "ラジオアーカイブが目玉機能。聞き逃した放送をさかのぼって聞けるのは、このカテゴリーでは他に見たことがありません。",
+          "音声検索がきちんと使えます。「BBC」のような省略した言い方でも、該当する局がすぐ正確に表示されます。",
+          "FM RDSが優秀。局名や曲名の情報が素早く確実に表示されます。",
+          "音質は他のポータブルラジオより明らかに良好。3ドライバー・10Wスピーカーで奥行きと音量があり、特にFMでは、このサイズのラジオにありがちな薄っぺらい音ではありません。",
+          "低音の調整がしっかり効きます。Tecsun PL990XやChoYongの前モデルLC90より低音が明らかに豊かです。",
+          "TEF6686チップとSI4735の組み合わせにより、MW/FM/LWの感度はTecsun PL990Xに引けを取りません。弱いアナログチューナーを付け足しただけのインターネットラジオではありません。",
+          "Bluetoothスピーカーとしても使え、SDカードの音楽再生も簡単。画面上のファイルブラウザで曲を探すのも楽です。",
+          "デザインが洗練されています。大きなロータリーダイヤルと見やすいボタン表示、Icom IC-705のような無線機と比較されるほどの作りです。",
+          "発売後のファームウェア更新が速く、初期のユーザーの声に対応した重要なアップデートがすぐに配信されました。今も改良が続いています。",
+          "多機能でありながら持ち運べます。据え置き専用ではなく、持ち歩けるラジオです。"
+        ],
+        cons: [
+          "MW/AMのDXは得意分野ではありません。普段聞きには十分ですが、専用のDXラジオは最も弱い信号でこれを上回ります。",
+          "短波の選局表示が、設定のオフセット調整をしてもわずかにずれて読めました。ファームウェア更新後に既知の周波数で確認することをおすすめします（ChoYongは修正が早いです）。",
+          "SSBやアマチュア無線を聞くユーザーから、短波の選局中に小さな「ザッザッ」というノイズが出るとの報告があります。AMスケルチの設定で緩和できますが、上げすぎると音量が下がります。今後のアップデートでの改善に期待します。",
+          "アンテナの3.5mmコネクターがやや繊細です。ChoYongは、引っ張らず軽量のパッチケーブルを使うことを推奨しています。",
+          "アンテナは上下にしか動かず、左右には動かせません。そのため、弱い信号のピークを探すには、角度が自由な機種より少し根気が必要です。",
+          "エアバンドは非搭載で、この価格帯でスタンドやキャリングケースも付属しません。プレミアムな印象のラジオとしては小さな欠点です。",
+          "まずオールラウンドなスマートラジオ、次に専用DXラジオと考えるのが適切です。弱い信号の短波・AM DXが主な趣味なら、良い外部アンテナと組み合わせるか、専用のDXラジオも併用してください。"
+        ],
+        verdict: [
+          "ChoYongのFloraさんとチームの皆さん、LC100をレビュー用に送っていただきありがとうございます。これはこれまでテストした中で最も野心的なラジオの1つであり、その野心をほぼ実現しています。",
+          "インターネットラジオ、FM、短波を、ラジオ3台を持ち歩かず1台で楽しみたい人には、LC100は強力な選択肢です。画面、音質、ラジオアーカイブ、音声検索のおかげで、Wi-Fiを付け足しただけのポータブルラジオとは別のカテゴリーの製品だと感じます。特にアーカイブ機能には感心しました。聞き逃した放送をさかのぼれるラジオは他にありません。受信部も予想以上で、MW/FMの感度はTecsun PL990Xと並べて語れるレベルです。",
+          "従来型の短波・AMのDXでは、専用DXラジオに一歩及びません。MWの性能は良いが傑出してはおらず、短波の選局表示にわずかなずれがあり、アンテナの可動域が限られるため弱い信号を探すのに少し手間がかかります。いずれも決定的な欠点ではなく、これだけ多機能なラジオに付きものの妥協点です。ChoYongは発売以来、ファームウェアの修正も素早く行っています。",
+          "結論：これまでテストした中で最高のオールラウンド・スマートラジオですが、最高の専用DXラジオではありません。その必要もなく、別の仕事をうまくこなしています。多様性、利便性、本当に良い音を1台に求める大半のリスナーには、10点中7.7の価値があります。ChoYongがファームウェアを更新するたびに、この評価を見直していきます。"
+        ],
+        faq: [
+          ["ChoYong LC100の価格はいくらですか？", "米国での価格は約349ドルです。購入時の価格は販売ページで確認してください。"],
+          ["LC100でインターネットラジオは聞けますか？", "はい。Wi-Fi 6に対応し、40,000以上のインターネットラジオ局とポッドキャストを聞けるほか、ラジオアーカイブの再生や音声検索にも対応しています。"],
+          ["LC100の短波・AMの性能は？", "MW/FM/LWの感度はTecsun PL990Xと並べて語れるレベルですが、弱い局のAM DXでは専用DXラジオに及びません。普段聞きや多機能さを重視するラジオです。"],
+          ["LC100にエアバンドはありますか？", "いいえ、エアバンドは搭載されていません。受信バンドはFM、AM/MW、短波、SSBです。"]
+        ]
+      }
+    };
+    var built = [];
+    Object.keys(JAREV).forEach(function (slug) {
+      var J = JAREV[slug], rev = null;
+      for (var i = 0; i < REVIEWS.length; i++) { if (REVIEWS[i] && REVIEWS[i].url === J.enUrl) { rev = REVIEWS[i]; break; } }
+      if (!rev || rev.status !== "Published") { console.log("WARNING: JA review skipped (no Published EN review): " + slug); return; }
+      var id = ytId(rev.youtube), buyUrl = rev.buyUrl || rev.amazonUrl, jUrl = "/ja/reviews/" + slug + "/";
+      var ld = { "@context": "https://schema.org", "@type": "Review", "inLanguage": "ja", "name": J.title,
+        "itemReviewed": { "@type": "Product", "name": J.name, "category": rev.cat || undefined },
+        "author": { "@type": "Person", "name": "Michael Smith (KM7FMJ)" }, "datePublished": J.date,
+        "reviewBody": J.verdict[0].slice(0, 400),
+        "reviewRating": { "@type": "Rating", "ratingValue": String(J.rating), "bestRating": String(J.ratingMax) } };
+      var b = "<script type=\"application/ld+json\">" + JSON.stringify(ld) + "</script>";
+      b += "<p style=\"font-size:.8rem;margin-bottom:.8rem\"><a href=\"" + J.enUrl + "\" lang=\"en\" hreflang=\"en\">English: " + esc(J.name) + " full review (video, specs, pros and cons) →</a></p>";
+      if (id) b += "<div style=\"max-width:360px;margin:0 auto 1.2rem\"><div style=\"position:relative;padding-top:177.78%;border-radius:8px;overflow:hidden;background:#000\"><iframe src=\"https://www.youtube.com/embed/" + id + "\" title=\"" + esc(J.name) + " レビュー動画\" loading=\"lazy\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div>";
+      var stars = Math.round(J.rating / J.ratingMax * 5);
+      b += "<div style=\"display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:.4rem 0 .7rem\"><span style=\"color:#FF9900;font-size:1.1rem;letter-spacing:1px\">" + "★".repeat(stars) + "☆".repeat(5 - stars) + "</span><span style=\"font-family:'IBM Plex Mono',monospace;font-size:.75rem;color:#6b5f52\">" + J.rating + "/" + J.ratingMax + "</span><span style=\"font-size:.7rem;color:#2f6b3f;border:1px solid #bfe0c8;background:#eaf7ee;padding:3px 9px;border-radius:20px\">✓ 実機テスト済み（スペック表だけのレビューではありません）</span></div>";
+      b += "<p class=\"lede\">" + esc(J.lede) + "</p>";
+      if (J.note) b += "<p style=\"font-size:.85rem;color:#6b5f52\">" + esc(J.note) + "</p>";
+      if (buyUrl) b += "<p><a class=\"cta\" href=\"" + esc(buyUrl) + "\" rel=\"nofollow sponsored noopener\" target=\"_blank\">米国Amazonで価格を確認（アフィリエイトリンク）</a></p>";
+      b += "<h2>主な仕様</h2><table><tbody>" + J.specs.map(function (sp) { return "<tr><td><strong>" + esc(sp[0]) + "</strong></td><td>" + esc(sp[1]) + "</td></tr>"; }).join("") + "</tbody></table>";
+      b += "<h2>よかった点</h2>" + li(J.pros) + "<h2>気になる点</h2>" + li(J.cons);
+      b += "<h2>総評</h2>" + J.verdict.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+      b += "<p style=\"font-size:.78rem;color:#9c8e81\">Michael Smith / KM7FMJ（ShortwaveHQ）による実機テストのレビューです。本ページは英語版レビューを日本語にしたもので、広告（アフィリエイトリンク）を含みます。</p>";
+      b += seoFaqHtml(J.faq) + seoFaqLd(J.faq);
+      b += "<p><a class=\"cta o\" href=\"/ja/reviews/\">レビュー一覧</a> <a class=\"cta o\" href=\"/ja/\">日本語短波放送 周波数一覧</a></p>";
+      write("ja/reviews/" + slug + "/index.html", shell({
+        lang: "ja", title: J.title + " | ShortwaveHQ", desc: J.desc, canonical: jUrl, kicker: J.kicker,
+        h1: esc(J.name) + " <span style=\"color:#c0392b\">レビュー</span>",
+        bodyHtml: b,
+        breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["レビュー", "/ja/reviews/"], [J.name, jUrl]],
+        alts: [["ja", jUrl], ["en", J.enUrl]]
+      }));
+      urls.push(jUrl); built.push([slug, J]);
+    });
+    if (built.length) {
+      var ib = "<p class=\"lede\">実際に使ってテストした短波ラジオのレビューです。アリゾナ州での受信テストをもとに、長所と短所を正直に書いています。英語版にはこれ以外のレビューもあります。</p><div class=\"grid\">"
+        + built.map(function (x) { return "<a href=\"/ja/reviews/" + x[0] + "/\">" + esc(x[1].name) + "<span>" + x[1].rating + "/" + x[1].ratingMax + "</span></a>"; }).join("") + "</div>"
+        + "<p><a class=\"cta o\" href=\"/?page=reviews\" lang=\"en\">All radio reviews (English) →</a></p>";
+      write("ja/reviews/index.html", shell({
+        lang: "ja", title: "短波ラジオ レビュー一覧（実機テスト）| ShortwaveHQ",
+        desc: "短波ラジオの実機レビュー。ZHIWHIS ZWS-A330、ChoYong LC100の長所・短所を、受信テストの結果とともに日本語で紹介します。",
+        canonical: "/ja/reviews/", kicker: "日本語 · レビュー",
+        h1: "短波ラジオ <span style=\"color:#c0392b\">レビュー</span>",
+        bodyHtml: ib,
+        breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["レビュー", "/ja/reviews/"]]
+      }));
+      urls.push("/ja/reviews/");
+    }
+    console.log("Japanese review pages: " + built.length);
+  })();
   console.log("Japanese page: " + nS + " stations, " + nF + " frequencies, " + uniqRows.length + " rows");
 })();
 
