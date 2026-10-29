@@ -1028,6 +1028,9 @@ var LO_ONAIR = onAirSection(12, "Shortwave Radio Stations On Air Right Now");
 var LO_FAQ = [
   ["Can I listen to shortwave radio online for free?", "Yes. A WebSDR or KiwiSDR is a real shortwave receiver connected to the internet that you tune in your browser, free, with no account or software. Pick a receiver from the links on this page, tune to a frequency from our schedule, and select AM mode for most broadcasts."],
   ["How do I know which shortwave stations are on the air right now?", "Shortwave stations broadcast on published schedules in UTC. ShortwaveHQ lists every station scheduled to be on air at the time of the last daily rebuild (see the table above), and the live tracker on the homepage shows current status as you search."],
+  ["What are the best global radio stations to listen to online?", "For live international radio, try the big global broadcasters: BBC World Service, NHK World Radio Japan, Radio Taiwan International, China Radio International, KBS World Radio, Radio Romania International and Voice of America. Their frequencies and times are on the ShortwaveHQ station pages, and most also stream live on their own websites."],
+  ["How do I listen to live streaming radio stations from other countries?", "Many stations stream live on their websites. To hear the original over-the-air signal, open a WebSDR or KiwiSDR receiver from this page, tune to a station\u2019s frequency at its scheduled time (in UTC), and listen in your browser for free."],
+  ["What is the difference between internet radio and shortwave radio?", "Internet radio is a station\u2019s audio streamed over the web. Shortwave is a real radio signal carried by the ionosphere that can reach listeners across the world with no internet, only a radio. A WebSDR lets you hear shortwave through the internet without owning a radio."],
   ["What time zone do shortwave schedules use?", "UTC (Coordinated Universal Time). Convert the UTC start time to your local time before you tune in, and tune a few minutes early since signals can take a moment to settle."],
   ["What is the best time to listen to shortwave radio?", "Lower bands (49m, 41m, 31m) usually carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better during the day. Which band is strongest depends on the time of day, the season and solar conditions."]
 ];
@@ -1040,13 +1043,16 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + "<p>If you own a physical receiver, a basic portable with SSB (single sideband) capability, like the ones we've reviewed on the <a href=\"/\">homepage</a>, is enough to pull in most international broadcasters clearly. Reception quality depends heavily on time of day, the band you're tuned to, and your antenna \u2014 an external wire antenna dramatically improves weak-signal reception over a stock telescopic whip.</p>"
   + "<p>If you don't own a radio yet, WebSDR (above) lets you listen to real international broadcasts immediately, and our <a href=\"/schedules-by-country/\">schedules by country</a> page organizes stations by where they're broadcasting from, so you can find, say, every station transmitting from Japan or Germany at a glance.</p>"
   + "<h2>Best Times to Listen</h2><p>Shortwave propagation changes with the time of day and the ionosphere. Lower bands (49m, 41m, 31m) tend to carry best after dark and into the early morning; higher bands (25m, 19m, 16m) often perform better midday. Our live tracker adjusts automatically \u2014 it only shows stations that are actually scheduled to be on air right now.</p>"
+  + "<h2>Global Radio Stations: Live Streams and Shortwave</h2><p>Looking for online radio stations from around the world? There are two kinds. <strong>Internet radio</strong> is a station\u2019s audio sent over the web, so it works on any phone or computer. <strong>Shortwave radio</strong> is a real over-the-air signal that bounces off the ionosphere and can cross oceans, which is why a WebSDR can pick up a station thousands of miles away. This page covers both: the live receivers above let you hear live shortwave broadcasts from global radio stations, and most international broadcasters also stream the same programs on their own websites.</p>"
+  + "<p>Major global broadcasters you can find on shortwave and online include " + ["BBC World Service", "NHK Radio Japan", "Radio Taiwan International", "China Radio International", "KBS World Radio", "Radio Romania International", "Voice of America"].map(stnLinkHtml).join(", ") + ". Each station page shows its frequencies and broadcast times so you can tune the live signal or open its stream.</p>"
+  + "<p>New to listening? Start with the <a href=\"/tonight/\">worldwide guide to what is on tonight</a>, or read our guide to <a href=\"/am-radio-dx-guide/\">AM radio stations and AM broadcasting</a> if you want to hear distant AM stations on a real radio.</p>"
   + (function () { var f = topFreqTags(12); return f ? "<h2>Popular Shortwave Frequencies to Tune Right Now</h2><div class=\"tags\">" + f + "</div>" : ""; })()
   + segBrowseHtml(10)
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to Listen Online</a></div>";
 write("listen-online/index.html", shell({
-  title: "Shortwave Radio Online \u2014 Listen Free, Live, No Radio Needed | ShortwaveHQ",
-  desc: "Listen to shortwave radio online free: tune live WebSDR and KiwiSDR receivers in your browser and see which shortwave stations are on air right now. No radio, no signup.",
+  title: "Listen to Global Radio Stations Online: Free, Live | ShortwaveHQ",
+  desc: "Listen to global radio stations online free: tune live shortwave receivers in your browser and see which stations are on air now. No radio or signup needed.",
   canonical: "/listen-online/", kicker: "Listen Live \u00b7 On-Air Now \u00b7 International Broadcasts",
   h1: "Listen to Shortwave <span style=\"color:#c0392b\">Radio Online Free</span>", bodyHtml: loBody,
   breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"]]
@@ -1604,6 +1610,73 @@ write("best-shortwave-radios-for-beginners/index.html", shell({
   breadcrumbs: [["Home", "/"], ["Best Radios for Beginners", "/best-shortwave-radios-for-beginners/"]]
 }));
 urls.push("/best-shortwave-radios-for-beginners/");
+
+// ── AM Radio DX Guide (/am-radio-dx-guide/) ─────────────────────
+var amFaq = [
+  ["What is AM broadcasting?", "AM broadcasting is radio that uses amplitude modulation on the medium wave (MW) band, 530\u20131700 kHz in North America. It is the original broadcast radio band, with stations on channels spaced 10 kHz apart in the Americas (9 kHz in most of the world)."],
+  ["Why do AM radio stations travel farther at night?", "During the day the lowest layer of the ionosphere absorbs AM signals, so you mostly hear stations through ground wave, within roughly 100 miles. After sunset that layer fades, and AM signals can bounce off the higher ionosphere (skywave) and arrive hundreds or even thousands of miles away."],
+  ["What is AM DXing?", "AM DXing is the hobby of tuning for distant AM stations, usually at night. Listeners log the station, the frequency and the distance, and many keep a list of the farthest catches."],
+  ["What radio do I need to hear distant AM stations?", "Any portable with a good AM (MW) tuner works, but a rotatable ferrite or loop antenna and narrow bandwidth filters help a lot. A pocket radio with a plug-in ferrite rod, like the ZHIWHIS ZWS-A330, pulled in stations up to 814 miles away in our test."],
+  ["When is the best time to listen for distant AM stations?", "From shortly after local sunset to just before sunrise, with the best results often after midnight. Winter nights usually give longer-distance AM reception than summer."]
+];
+var amBody = "<p class=\"lede\">AM broadcasting is the original radio band, and at night it turns into a long-distance band. This guide explains AM radio stations, why they travel hundreds of miles after dark, and how to hear them, using real catches from our own test in San Tan Valley, Arizona.</p>"
+  + "<h2>What Is AM Broadcasting?</h2><p>AM (amplitude modulation) broadcasting uses the medium wave band, 530\u20131700 kHz in North America. Stations are spaced 10 kHz apart in the Americas, and 9 kHz in most of the rest of the world. It is the band behind talk radio, sports, news and many classic stations.</p>"
+  + "<h2>Why AM Stations Travel Farther at Night</h2><p>In daytime the lowest layer of the ionosphere absorbs AM signals, so you hear mostly the local ground wave. After sunset that layer fades. AM signals can then bounce off the higher ionosphere and come down hundreds or thousands of miles away. This is called skywave, and it is why a 50,000-watt &ldquo;clear channel&rdquo; station can cover half a continent after dark.</p>"
+  + "<h2>Our AM Catches: A Real Log</h2><p>We tested the <a href=\"/reviews/zhiwhis-zws-a330/\">ZHIWHIS ZWS-A330</a> with its plug-in ferrite rod antenna after midnight from San Tan Valley, Arizona. These are the stations we logged.</p>"
+  + "<table><tr><th>Frequency</th><th>Station</th><th>City</th><th>Distance</th></tr>"
+  + "<tr><td>550 kHz</td><td>KFYI</td><td>Phoenix, Arizona</td><td>31 mi (local)</td></tr>"
+  + "<tr><td>790 kHz</td><td>KNST</td><td>Tucson, Arizona</td><td>72 mi</td></tr>"
+  + "<tr><td>1160 kHz</td><td>KSL</td><td>Salt Lake City, Utah</td><td>525 mi</td></tr>"
+  + "<tr><td>680 kHz</td><td>KNBR</td><td>San Francisco, California</td><td>673 mi</td></tr>"
+  + "<tr><td>1520 kHz</td><td>KOKC</td><td>Oklahoma City, Oklahoma</td><td>814 mi</td></tr></table>"
+  + "<p style=\"font-size:.8rem;color:#6b5f52\">Distances are from San Tan Valley. Station IDs are probable IDs based on frequency and location; distances are approximate.</p>"
+  + "<h2>How to Hear Distant AM Stations</h2><ul>"
+  + "<li><strong>Listen after dark.</strong> From shortly after sunset to before sunrise, and often best after midnight. Winter nights usually reach farther than summer nights.</li>"
+  + "<li><strong>Rotate the antenna.</strong> A ferrite rod or loop antenna is directional. Turn it to peak the station you want, and turn it the other way to null an interfering one.</li>"
+  + "<li><strong>Narrow the bandwidth.</strong> We moved from 3.0 kHz to 2.0 kHz to separate two stations sharing 740 kHz.</li>"
+  + "<li><strong>Stay away from noise.</strong> Phone chargers, LED lights and routers add static on AM. Move the radio away from them, or step outside.</li>"
+  + "<li><strong>Use the right channel steps.</strong> 10 kHz in North America, 9 kHz in most other regions.</li>"
+  + "<li><strong>Log it.</strong> Write down the station, frequency, time and distance. You will improve fast.</li></ul>"
+  + "<h2>Radios That Work Well for AM</h2><p>You do not need an expensive radio, but a rotatable ferrite antenna and narrow filters help a lot. See our reviews of the <a href=\"/reviews/zhiwhis-zws-a330/\">ZHIWHIS ZWS-A330</a> (pocket radio with a plug-in ferrite rod) and the <a href=\"/reviews/choyong-lc100/\">ChoYong LC100</a> (competitive MW sensitivity plus internet radio), and our <a href=\"/best-shortwave-radios-for-beginners/\">best beginner radios</a>.</p>"
+  + "<h2>Listen to AM and Shortwave Without a Radio</h2><p>No radio? Use a WebSDR to tune the AM band and shortwave in your browser. Start on the <a href=\"/listen-online/\">Listen Online</a> page.</p>"
+  + seoFaqHtml(amFaq) + seoFaqLd(amFaq)
+  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/listen-online/\">Listen Online</a><a href=\"/tonight/\">Tonight</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/band-scans/\">Band Scans</a><a href=\"/best-antennas-for-apartments/\">Antennas for Small Spaces</a></div>";
+write("am-radio-dx-guide/index.html", shell({
+  title: "AM Radio DX Guide: How to Hear Distant AM Stations at Night",
+  desc: "What AM broadcasting is, why AM stations travel farther at night, and how to hear them. Real log: San Francisco, Salt Lake City and Oklahoma City from Arizona.",
+  canonical: "/am-radio-dx-guide/", kicker: "Guide \u00b7 AM Broadcasting \u00b7 DX",
+  h1: "AM Radio DX Guide: <span style=\"color:#c0392b\">Hear Distant Stations</span>", bodyHtml: amBody,
+  breadcrumbs: [["Home", "/"], ["AM Radio DX Guide", "/am-radio-dx-guide/"]]
+}));
+urls.push("/am-radio-dx-guide/");
+
+// ── Handheld radios with shortwave (/handheld-radios-with-shortwave/) ──
+var hhFaq = [
+  ["Can a handheld radio receive shortwave?", "Some can. The Radioddity GS-10B Pro is a ham handheld transceiver that also receives AM, FM, shortwave, air band, weather and CB. Pocket receivers like the ZHIWHIS ZWS-A330 and Elecevolve MLite-880 cover shortwave but do not transmit."],
+  ["Do I need a license to use a handheld radio?", "Listening needs no license. Transmitting on ham radio bands with a handheld such as the GS-10B Pro requires an amateur radio license in the United States. A receiver-only radio does not need one."],
+  ["Which handheld radio is best for shortwave?", "For shortwave listening, a dedicated pocket receiver with SSB and a good antenna usually beats a ham handheld. A ham handheld is the better pick if you also want to transmit on VHF/UHF and use shortwave receive as a bonus."],
+  ["Are handheld radios good for emergency kits?", "Yes. Pick one with weather reception, a replaceable or USB-C rechargeable battery, and a speaker you can hear outdoors. See the ZHIWHIS ZWS-A330 review for a go-bag perspective."]
+];
+var hhBody = "<p class=\"lede\">Most handheld radios are built for talking, not for shortwave. A few do both: they work as a two-way handheld or a pocket receiver, and also pick up shortwave, air band and weather. These are the handheld radios we have tested, with the trade-offs.</p>"
+  + "<h2>Radioddity GS-10B Pro: Ham Handheld With Shortwave Receive</h2><p>A dual-band ham handheld transceiver (8 W high power, 1,000 channels, color TFT screen, USB-C charging) that also receives AM, FM, shortwave, air band, weather, VHF and UHF. You need an amateur license to transmit, but anyone can listen. <a href=\"/reviews/radioddity-gs-10b-pro/\">Read the full GS-10B Pro review</a>.</p>"
+  + "<h2>ZHIWHIS ZWS-A330: Pocket Multi-Band Receiver</h2><p>A shirt-pocket radio with AM, FM, shortwave with SSB, air band, CB, NOAA weather with alerts, VHF/UHF, microSD recording and Bluetooth. It receives only. The air band is excellent, and a plug-in ferrite rod pulled in AM stations up to 814 miles away. <a href=\"/reviews/zhiwhis-zws-a330/\">Read the full A330 review</a>.</p>"
+  + "<h2>Elecevolve MLite-880: Portable DSP Receiver</h2><p>A compact DSP receiver with a waterfall display and a numeric keypad. Air band came in clearly on the stock whip, and narrow filtering plus noise reduction made weak signals usable. <a href=\"/reviews/elecevolve-mlite-880/\">Read the MLite-880 review</a>.</p>"
+  + "<h2>Elecevolve RT-880X: Coming Soon</h2><p>A pocket DSP receiver on the NXP TEF6686 chip with a 320\u00d7240 color touchscreen, air band, RDS and LW/MW/SW/FM. Our hands-on review is in progress. <a href=\"/reviews/elecevolve-rt-880x/\">See the RT-880X preview</a>.</p>"
+  + "<h2>Which Should You Choose?</h2><ul>"
+  + "<li><strong>You want to transmit and listen:</strong> a ham handheld such as the GS-10B Pro (needs a license to transmit).</li>"
+  + "<li><strong>You want a go-bag or outdoor receiver:</strong> the ZHIWHIS ZWS-A330.</li>"
+  + "<li><strong>You want DSP filtering and a waterfall:</strong> the Elecevolve MLite-880.</li></ul>"
+  + "<p>New to shortwave? Start with our <a href=\"/best-shortwave-radios-for-beginners/\">best radios for beginners</a>, or try a WebSDR on the <a href=\"/listen-online/\">Listen Online</a> page first.</p>"
+  + seoFaqHtml(hhFaq) + seoFaqLd(hhFaq)
+  + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/?page=reviews\">All Reviews</a><a href=\"/am-radio-dx-guide/\">AM Radio DX Guide</a><a href=\"/listen-online/\">Listen Online</a><a href=\"/best-antennas-for-apartments/\">Antennas</a></div>";
+write("handheld-radios-with-shortwave/index.html", shell({
+  title: "Handheld Radios With Shortwave: Tested Picks (2026) | ShortwaveHQ",
+  desc: "Handheld radios that also receive shortwave, air band and weather: the GS-10B Pro, ZWS-A330, MLite-880 and RT-880X, with honest trade-offs and who each suits.",
+  canonical: "/handheld-radios-with-shortwave/", kicker: "Guide \u00b7 Handheld Radios \u00b7 2026",
+  h1: "Handheld Radios <span style=\"color:#c0392b\">With Shortwave</span>", bodyHtml: hhBody,
+  breadcrumbs: [["Home", "/"], ["Handheld Radios With Shortwave", "/handheld-radios-with-shortwave/"]]
+}));
+urls.push("/handheld-radios-with-shortwave/");
 
 // ── Numbers Stations Explained ───────────────────────────────────
 // The "on the schedule now" list is generated from the live data, so it
