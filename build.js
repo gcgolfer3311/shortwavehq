@@ -2773,7 +2773,7 @@ var ST_BUSY = ST_REAL.filter(function (n) { return !/jammer/i.test(n) && (byStat
   .sort(function (a, b) { return byStation[b].length - byStation[a].length || (a < b ? -1 : 1); }).slice(0, 8);
 var ST_ONAIR = onAirSection(30, "Shortwave Radio Stations On Air Now");
 var stTop = "<p class=\"lede\">This is the complete list of shortwave radio stations in the ShortwaveHQ database: <strong>" + ST_REAL.length + " stations</strong> with their frequencies, UTC broadcast times, languages and target areas for the " + SEASON.label + " season (EIBI schedule, rebuilt daily). Start with the table of stations that are on the air right now, or jump to a language, region or station type.</p>"
-  + "<p class=\"tags\"><a href=\"#on-air\">On air now</a><a href=\"#by-type\">By type</a><a href=\"#popular\">Most popular</a><a href=\"#by-language\">By language</a><a href=\"#by-region\">By region</a><a href=\"#a-z\">A–Z list</a></p>"
+  + "<p class=\"tags\"><a href=\"#on-air\">On air now</a><a href=\"#english\">In English</a><a href=\"#by-type\">By type</a><a href=\"#popular\">Most popular</a><a href=\"#by-language\">By language</a><a href=\"#by-region\">By region</a><a href=\"#a-z\">A–Z list</a></p>"
   + "<div id=\"on-air\">" + ST_ONAIR.html + "</div><p><a class=\"cta\" href=\"/listen-online/\">Listen to shortwave radio online free</a> <a class=\"cta o\" href=\"/how-to-listen-to-shortwave-radio-online/\">How it works</a></p>";
 var stType = "<h2 id=\"by-type\">Shortwave stations by type</h2><p>The list covers " + ST_TYPES.International + " international and domestic broadcasters, " + ST_TYPES.Time + " time-signal stations, " + ST_TYPES.Numbers + " numbers stations and " + ST_TYPES.Pirate + " pirate or free-radio stations. Each one has its own page with every scheduled frequency and time.</p>"
   + "<div class=\"tags\"><a href=\"/numbers-stations-list/\">Numbers stations list</a><a href=\"/numbers-stations-explained/\">Numbers stations explained</a><a href=\"/listen-online/\">On air now</a><a href=\"/tonight/\">Tonight’s guide</a><a href=\"/frequency/\">All frequencies</a><a href=\"/bands/\">Shortwave bands</a></div>";
@@ -2782,6 +2782,18 @@ if (HUB_ORDER.length) {
   stPop = "<h2 id=\"popular\">Most popular shortwave stations</h2><p>Full guides with the best frequency tonight for your region, English times and reception logs.</p><div class=\"grid\">"
     + HUB_ORDER.map(function (n) { return "<a href=\"/stations/" + stationSlug[n] + "/\"><strong>" + esc(n) + "</strong><span>Station guide</span></a>"; }).join("") + "</div>";
 }
+var ST_EN = (function () {
+  var cnt = {};
+  ST_REAL.forEach(function (n) {
+    if (/jammer|pirate|various/i.test(n) || !stationSlug[n] || (byStation[n].length < MIN_STATION_ENTRIES)) return;
+    byStation[n].forEach(function (r) { if (r.lang === "English" && r.type === "International") cnt[n] = (cnt[n] || 0) + 1; });
+  });
+  return Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a] || (a < b ? -1 : 1); }).slice(0, 18).map(function (n) { return [n, cnt[n]]; });
+})();
+var stEn = ST_EN.length ? "<h2 id=\"english\">Shortwave radio stations in English</h2><p>Not sure where to start? These are the international stations with the most English-language broadcasts in the " + SEASON.label + " schedule. Open a station page for its frequencies and UTC times, then tune a portable radio or a free <a href=\"/listen-online/\">WebSDR</a>.</p><div class=\"grid\">"
+  + ST_EN.map(function (x) { return "<a href=\"/stations/" + stationSlug[x[0]] + "/\"><strong>" + esc(x[0]) + "</strong><span>" + x[1] + " English broadcast" + (x[1] === 1 ? "" : "s") + "</span></a>"; }).join("") + "</div>" : "";
+var stWhat = "<h2 id=\"what-are\">What are shortwave radio stations?</h2><p>Shortwave stations transmit on 2.3–26 MHz, a range of frequencies that bounce off the ionosphere and can reach listeners thousands of miles away. Governments, religious broadcasters and independents use them to reach audiences across borders. Each station has its own frequencies and schedule in UTC. The list below shows every one in the " + SEASON.label + " schedule, so you can find what is on the air, when, and on which frequency.</p>"
+  + "<p>New to listening? Try the <a href=\"/tonight/\">worldwide guide to tonight</a>, browse <a href=\"/schedules-by-country/\">stations by country</a>, or read <a href=\"/best-shortwave-radios-for-beginners/\">best shortwave radios for beginners</a>.</p>";
 var stSeg = segBrowseHtml(12).replace("<h2>Browse Shortwave by Language</h2>", "<h2 id=\"by-language\">Shortwave stations by language</h2>").replace("<h2>Browse Shortwave by Target Region</h2>", "<h2 id=\"by-region\">Shortwave stations by target region</h2>");
 var stLetters = {};
 ST_REAL.forEach(function (n) { var L = /^[A-Za-z]/.test(n) ? n.charAt(0).toUpperCase() : "#"; (stLetters[L] = stLetters[L] || []).push(n); });
@@ -2799,15 +2811,17 @@ var ST_FAQ = [
   ["Which shortwave radio stations are on air now?", ST_ONAIR.oa.rows.length ? ("As of " + BUILD_NOW_LABEL + ", " + ST_ONAIR.oa.stations + " shortwave stations are scheduled to be on the air, including " + uniq(ST_ONAIR.oa.rows.map(function (r) { return r.stn; })).slice(0, 4).join(", ") + ". The table at the top of this page lists them with frequency, language and target area.") : "The live tracker on the ShortwaveHQ homepage shows every station scheduled to be on the air at the current time."],
   ["How many shortwave radio stations are there?", "The " + SEASON.label + " schedule used by ShortwaveHQ lists " + ST_REAL.length + " stations: " + ST_TYPES.International + " international and domestic broadcasters, " + ST_TYPES.Time + " time-signal stations, " + ST_TYPES.Numbers + " numbers stations and " + ST_TYPES.Pirate + " pirate or free-radio stations. Counts change each season as broadcasters start and stop services."],
   ["Which shortwave stations have the most broadcasts?", "By number of scheduled broadcasts in the " + SEASON.label + " schedule, the busiest international stations are " + ST_BUSY.slice(0, 5).join(", ") + ". Open any station page for its full list of frequencies and UTC times."],
+  ["What are the best shortwave radio stations to listen to in English?", ST_EN.length ? ("The international stations with the most English broadcasts in the " + SEASON.label + " schedule include " + ST_EN.slice(0, 6).map(function (x) { return x[0]; }).join(", ") + ". Each station page lists its frequencies and UTC times.") : "Open any station page from the A\u2013Z list to see its languages and frequencies."],
+  ["What is a shortwave radio station?", "A shortwave radio station is a broadcaster that transmits on frequencies between about 2.3 and 26 MHz. These signals bounce off the ionosphere, so a station can be heard thousands of miles away. Each station follows a published schedule in UTC."],
   ["How do I find a shortwave station's schedule and frequency?", "Open any station page from the A–Z list. Each page shows that station's frequencies, broadcast times in UTC, languages and target areas from the " + SEASON.label + " schedule."],
   ["Can I listen to these stations without a radio?", "Yes. Use a free WebSDR or KiwiSDR receiver in your browser. See the Listen Online page for links and tuning steps."]
 ];
 var stList = { "@context": "https://schema.org", "@type": "ItemList", "name": "Most popular shortwave radio stations", "itemListElement": HUB_ORDER.slice(0, 30).map(function (n, i) { return { "@type": "ListItem", "position": i + 1, "name": n, "url": SITE + "/stations/" + stationSlug[n] + "/" }; }) };
-var stIdx = stTop + stType + stPop + stSeg + stAZ + seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ)
+var stIdx = stTop + stWhat + stType + stPop + stEn + stSeg + stAZ + seoFaqHtml(ST_FAQ) + seoFaqLd(ST_FAQ)
   + (HUB_ORDER.length ? "<script type=\"application/ld+json\">" + JSON.stringify(stList).replace(/</g, "\\u003c") + "</script>" : "");
 write("stations/index.html", shell({
-  title: "Shortwave Radio Stations List 2026 — " + ST_REAL.length + " Stations & Frequencies | ShortwaveHQ",
-  desc: "Complete list of " + ST_REAL.length + " shortwave radio stations for 2026, A\u2013Z, with every frequency and UTC schedule: BBC, VOA, China Radio International, WRMI and more. Rebuilt daily.",
+  title: "Shortwave Radio Stations List 2026: " + ST_REAL.length + " Stations | ShortwaveHQ",
+  desc: "Complete list of " + ST_REAL.length + " shortwave radio stations for 2026, A\u2013Z, with every frequency and UTC schedule: BBC, VOA, CRI, WRMI and more. Updated daily.",
   canonical: "/stations/", kicker: "Directory · " + ST_REAL.length + " Stations · On Air Now",
   h1: "Shortwave Radio Stations List <span style=\"color:#c0392b\">2026</span>", bodyHtml: stIdx,
   breadcrumbs: [["Home", "/"], ["Stations", "/stations/"]]
