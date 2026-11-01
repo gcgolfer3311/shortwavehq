@@ -134,7 +134,8 @@ var SEASON = (function () {
 // Search-friendly titles for stations people search by a different name than
 // the EIBI listing (e.g. "ashna radio" for "VoA Radio Ashna"). {F} = frequencies.
 var STATION_SEO = {
-  "VoA Radio Ashna": { title: "Radio Ashna (VOA Pashto & Dari) Shortwave Frequencies & Times", desc: "Radio Ashna, VOA's Pashto and Dari service to Afghanistan, on shortwave: {F} kHz. Full 2026 schedule with UTC times and live on-air status." }
+  "BBC": { hubName: "BBC World Service", title: "BBC Shortwave Frequencies & Schedule" },
+  "VoA Radio Ashna": { title: "Radio Ashna (VOA Pashto & Dari) Frequencies & Times", desc: "Radio Ashna, VOA's Pashto and Dari service to Afghanistan, on shortwave: {F} kHz. Full 2026 schedule with UTC times and live on-air status." }
 };
 console.log("Schedule season: " + SEASON.label + " (" + SEASON.valid + "), next: " + SEASON.next.label);
 
@@ -682,6 +683,10 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   })();
   var topF = freqs.slice().sort(function (a, b) { return a - b; }).slice(0, 4);
   var desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + " (" + topF.join(", ") + (freqs.length > 4 ? "\u2026" : "") + " kHz)" + (langs ? " in " + langs : "") + regionStr + ". UTC times and live on-air status.";
+  if (desc.length > 160) desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + " (" + topF.join(", ") + (freqs.length > 4 ? "\u2026" : "") + " kHz)" + (langs ? " in " + langs : "") + ". UTC times and live on-air status.";
+  if (desc.length > 160) desc = name + " shortwave schedule 2026: " + freqs.length + " frequenc" + (freqs.length > 1 ? "ies" : "y") + ", UTC times and live on-air status.";
+  if (title.length > 70) title = name + " Shortwave Schedule | ShortwaveHQ";
+  if (title.length > 70) title = name + " Schedule | ShortwaveHQ";
   if (STATION_SEO[name]) { title = STATION_SEO[name].title + " | ShortwaveHQ"; if (STATION_SEO[name].desc) desc = STATION_SEO[name].desc.replace("{F}", topF.join(", ")); }
   var tbl = "<table><thead><tr><th>Frequency</th><th>Time (UTC)</th><th>Language</th><th>Target</th><th>Transmitter Site</th><th>Power</th></tr></thead><tbody>";
   for (var ri = 0; ri < rows.length; ri++) {
@@ -691,6 +696,28 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   }
   tbl += "</tbody></table>";
   var liveStatus = liveStatusSentence(name, rows, function(r){ return kHz(r.freq) + " kHz"; });
+  // Schedule at a glance: one row per distinct UTC window (what "<station> schedule" searchers want)
+  var glanceHtml = "", glanceFaq = null;
+  (function () {
+    if (thinStation) return;
+    var gw = {}, gord = [];
+    rows.forEach(function (r) {
+      var k = fmtSched(r);
+      if (!gw[k]) { gw[k] = { r: r, f: [], l: [], t: [] }; gord.push(k); }
+      gw[k].f.push(String(kHz(r.freq))); if (r.lang) gw[k].l.push(r.lang); if (r.tgt) gw[k].t.push(r.tgt);
+    });
+    gord.sort(function (x, y) { return gw[x].r.s - gw[y].r.s || (x < y ? -1 : 1); });
+    if (gord.length < 2) return;
+    glanceHtml = "<h2>" + esc(name) + " shortwave schedule at a glance</h2><p>" + esc(name) + " is scheduled in " + gord.length + " different UTC time windows in the " + esc(SEASON.label) + " schedule. Each row lists the frequencies used in that window.</p><table><thead><tr><th>Time (UTC)</th><th>Frequencies (kHz)</th><th>Language</th><th>Target</th></tr></thead><tbody>";
+    gord.slice(0, 14).forEach(function (k) {
+      var g = gw[k], fl = uniq(g.f).sort(function (a2, b2) { return a2 - b2; });
+      glanceHtml += "<tr><td>" + esc(k) + "</td><td>" + fl.slice(0, 6).map(function (x) { return "<a href=\"/frequency/" + x + "-khz/\">" + x + "</a>"; }).join(", ") + (fl.length > 6 ? " +" + (fl.length - 6) + " more" : "") + "</td><td>" + esc(uniq(g.l).slice(0, 3).join(", ") || "\u2014") + "</td><td>" + esc(uniq(g.t).slice(0, 2).join(", ") || "\u2014") + "</td></tr>";
+    });
+    glanceHtml += "</tbody></table>" + (gord.length > 14 ? "<p>" + (gord.length - 14) + " more windows are in the full schedule table below.</p>" : "");
+    var firstK = gord[0], engW = uniq(rows.filter(isEnglishRow).map(fmtSched));
+    glanceFaq = ["What time is " + name + " on shortwave?", name + " is scheduled in " + gord.length + " UTC time windows this season, from " + firstK + (gord.length > 1 ? " through " + gord[gord.length - 1] : "") + "."
+      + (engW.length ? " English broadcasts: " + engW.slice(0, 4).join("; ") + "." : " No English broadcasts are listed this season.") + " All times are UTC; subtract your UTC offset for local time."];
+  })();
   var hub = HUBS[name] || null, hubHtml = "", hubFaqHtml = "", hubLd = "", hubIntro = "";
   if (hub) {
     try {
@@ -773,6 +800,7 @@ for (var sn = 0; sn < stationNames.length; sn++) {
       faqQ.push(["Does " + name + " broadcast in English on shortwave?",
         engRows.length ? "Yes. English broadcasts this season: " + engRows.slice(0, 5).map(function (r) { return kHz(r.freq) + " kHz at " + fmtTime(r.s) + "\u2013" + fmtTime(r.e) + " UTC" + (r.tgt ? " to " + r.tgt : ""); }).join("; ") + (engRows.length > 5 ? "; plus " + (engRows.length - 5) + " more." : ".")
           : "Not this season. " + name + " is scheduled in " + (langs || "other languages") + "."]);
+      if (glanceFaq) faqQ.splice(1, 0, glanceFaq);
       faqQ.push(["Is " + name + " on the air right now?", liveStatus.replace(/<[^>]+>/g, "") + " This is based on the published schedule at the time this page was built; check the live search for up-to-the-minute status."]);
       hubFaqHtml = "<h2>" + esc(name) + " FAQ</h2>" + faqQ.map(function (q) { return "<p><strong>" + esc(q[0]) + "</strong><br>" + esc(q[1]) + "</p>"; }).join("");
       hubLd += "<script type=\"application/ld+json\">" + JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqQ.map(function (q) { return { "@type": "Question", "name": q[0], "acceptedAnswer": { "@type": "Answer", "text": q[1] } }; }) }).replace(/</g, "\\u003c") + "</script>";
@@ -790,15 +818,22 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   var body = hubIntro + "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI " + SEASON.label + " schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
     + "<p class=\"lede\">" + liveStatus + " <a href=\"/?q=" + encodeURIComponent(name) + "\">Check live status \u2192</a></p>"
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + (kHz(rows[0].freq)/1000).toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Listen via Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + (kHz(rows[0].freq)/1000).toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
+    + glanceHtml
     + hubHtml
     + scanMentions(SCANS_BY_STATION[name], esc(name))
     + "<h2>" + esc(name) + " \u2014 Full 2026 Schedule</h2>" + tbl
+    + (hub || !glanceFaq ? "" : seoFaqHtml([glanceFaq]) + seoFaqLd([glanceFaq]))
     + hubFaqHtml + hubLd
     + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/\">Live Search &amp; Band Conditions</a></div>"
     + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 New to " + esc(name) + "? See the exact radios we tested that pull it in clearly \u2192</a></p>";
   if (hub && hubHtml) {
-    title = name + " Shortwave Frequencies & Schedule (" + SEASON.label + ") \u2014 How to Hear It Tonight | ShortwaveHQ";
-    desc = "Current " + name + " shortwave frequencies (" + SEASON.label + "): the best frequency tonight for North America, Europe and more, English broadcast times, reception logs and live on-air status. Updated daily.";
+    var hy = new Date().getUTCFullYear(), hn = (STATION_SEO[name] && STATION_SEO[name].hubName) || name;
+    var ht = hn + " Shortwave Schedule " + hy + ": Frequencies & Times";
+    if (ht.length > 56) ht = hn + " Shortwave Schedule " + hy;
+    if (ht.length > 56) ht = hn + " Shortwave Schedule";
+    title = ht + " | ShortwaveHQ";
+    desc = hn + " shortwave schedule (" + SEASON.label + "): frequencies, UTC times, English broadcasts and the best frequency tonight. Updated daily.";
+    if (desc.length > 160) desc = hn + " shortwave schedule: frequencies, UTC times and English broadcasts. Updated daily.";
   }
   if (JA_ST[name]) body = "<p lang=\"ja\" style=\"font-size:.85rem\"><a href=\"/ja/stations/" + sl + "/\">\u65e5\u672c\u8a9e\uff1a\u5468\u6ce2\u6570\u3068\u653e\u9001\u6642\u9593\uff08\u65e5\u672c\u6642\u9593\uff09\u2192</a></p>" + body;
   write("stations/" + sl + "/index.html", shell({
