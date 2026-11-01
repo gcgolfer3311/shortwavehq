@@ -538,6 +538,7 @@ if (revStart >= 0) {
       + (faqLd ? "<script type=\"application/ld+json\">" + JSON.stringify(faqLd) + "</script>" : "")
       + shareHtml
       + (JA_REV_SLUGS.indexOf(rslug) >= 0 ? "<p lang=\"ja\" style=\"font-size:.85rem;margin:0 0 1rem\"><a href=\"/ja/reviews/" + rslug + "/\">\u65e5\u672c\u8a9e\u7248\u30ec\u30d3\u30e5\u30fc\u306f\u3053\u3061\u3089 \u2192</a></p>" : "")
+      + (JA_REV_SLUGS.indexOf(rslug) >= 0 ? "<p lang=\"es\" style=\"font-size:.85rem;margin:0 0 1rem\"><a href=\"/es/reviews/" + rslug + "/\">Leer esta rese\u00f1a en espa\u00f1ol \u2192</a></p>" : "")
       + (videoHtml || imgHtml)
       + videoHtml2
       + ratingHtml
@@ -550,7 +551,7 @@ if (revStart >= 0) {
 
     write("reviews/" + rslug + "/index.html", shell({
       title: rTitle, desc: rDesc, canonical: "/reviews/" + rslug + "/",
-      alts: (JA_REV_SLUGS.indexOf(rslug) >= 0) ? [["en", "/reviews/" + rslug + "/"], ["ja", "/ja/reviews/" + rslug + "/"]] : null,
+      alts: (JA_REV_SLUGS.indexOf(rslug) >= 0) ? [["en", "/reviews/" + rslug + "/"], ["ja", "/ja/reviews/" + rslug + "/"], ["es", "/es/reviews/" + rslug + "/"]] : null,
       kicker: "Review \u00b7 " + (rev.cat || "Shortwave Gear") + (rev.date ? " \u00b7 " + rev.date : ""),
       h1: esc(rev.n) + " Review",
       bodyHtml: rBody,
@@ -2268,7 +2269,7 @@ var JA_BUILT = false;
         h1: esc(J.name) + " <span style=\"color:#c0392b\">レビュー</span>",
         bodyHtml: b,
         breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["レビュー", "/ja/reviews/"], [J.name, jUrl]],
-        alts: [["ja", jUrl], ["en", J.enUrl]]
+        alts: [["ja", jUrl], ["en", J.enUrl], ["es", "/es/reviews/" + slug + "/"]]
       }));
       urls.push(jUrl); built.push([slug, J]);
     });
@@ -2599,14 +2600,212 @@ var ZH_BUILT = false, ES_BUILT = false;
       ];
     },
     cta: "Escuchar sin radio (Listen Online)", hRel: "Páginas relacionadas",
-    related: "<a href='/languages/spanish/'>English: Shortwave in Spanish</a><a href='/stations/'>Todas las emisoras</a><a href='/frequency/'>Todas las frecuencias</a><a href='/bands/'>Bandas de onda corta</a>",
-    title: function () { return "Radio de onda corta en español: frecuencias y horarios (" + yr + ") | ShortwaveHQ"; },
-    desc: function (nS, nF, stns) { return "Frecuencias de onda corta en español: " + nS + " emisoras y " + nF + " frecuencias con horarios en UTC, como " + stns.slice(0, 3).join(", ") + ". Actualizado a diario."; },
+    related: "<a href='/es/horario/'>Horario de onda corta en español</a><a href='/es/reviews/'>Reseñas de radios</a><a href='/languages/spanish/'>English: Shortwave in Spanish</a><a href='/stations/'>Todas las emisoras</a><a href='/frequency/'>Todas las frecuencias</a><a href='/bands/'>Bandas de onda corta</a>",
+    title: function () { return "Onda corta en español: frecuencias y horarios (" + yr + ") | ShortwaveHQ"; },
+    desc: function (nS, nF, stns) { return "Onda corta en español: " + nS + " emisoras y " + nF + " frecuencias con horarios en UTC, como " + stns.slice(0, 3).join(", ") + ". Se actualiza a diario."; },
     kicker: "Español · EIBI " + SEASON.label,
     h1: "Radio de onda corta <span style=\"color:#c0392b\">en español</span>",
     crumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"]]
   };
   ES_BUILT = localePage(esCfg);
+
+  // ── Spanish timetable + review pages (/es/horario/, /es/reviews/<slug>/) ──
+  (function () {
+    if (!ES_BUILT) return;
+    function p2(n) { return (n < 10 ? "0" : "") + n; }
+    function tmm(m) { m = ((m % 1440) + 1440) % 1440; return p2(Math.floor(m / 60)) + ":" + p2(m % 60); }
+    function win(r, off) { return (r.s === 0 && r.e >= 1440) ? "24 horas" : tmm(r.s + off) + "–" + tmm(r.e + off); }
+    var seen = {}, trows = [];
+    ((SEG.langs && SEG.langs["Spanish"]) || []).forEach(function (r) {
+      if (!r || !r.stn || r.type === "Numbers") return;
+      var k = r.stn + "|" + kHz(r.freq) + "|" + r.s + "|" + r.e; if (seen[k]) return; seen[k] = 1; trows.push(r);
+    });
+    if (trows.length >= 6) {
+      trows.sort(function (a, b) { return a.s - b.s || kHz(a.freq) - kHz(b.freq); });
+      var blocks = [
+        ["Madrugada (00:00–06:00 UTC)", 0, 360, "De noche y de madrugada suelen oírse mejor las bandas de 3–7 MHz (49, 60 y 75 metros)."],
+        ["Mañana (06:00–12:00 UTC)", 360, 720, "Con el amanecer se pasa de los 3–7 MHz a los 9–11 MHz."],
+        ["Tarde (12:00–18:00 UTC)", 720, 1080, "De día funcionan mejor las bandas de 15–21 MHz (19, 16 y 13 metros)."],
+        ["Noche (18:00–24:00 UTC)", 1080, 1440, "Al anochecer vuelven a oírse bien los 9–11 MHz y, más tarde, los 3–7 MHz."]
+      ];
+      var tb = "<p class='lede'>Las <strong>" + trows.length + " emisiones</strong> en español del horario " + SEASON.label + ", ordenadas por hora de inicio en UTC y agrupadas por franja del día. Se muestra también la hora de Ciudad de México (UTC−6), Bogotá (UTC−5) y Buenos Aires (UTC−3), que no cambian de hora en verano.</p>";
+      tb += "<p style='font-size:.85rem;color:#6b5f52'>España peninsular: UTC+1 en invierno y UTC+2 en verano. Canarias: UTC+0 en invierno y UTC+1 en verano.</p>";
+      blocks.forEach(function (g) {
+        var rs = trows.filter(function (r) { return r.s >= g[1] && r.s < g[2]; });
+        tb += "<h2>" + g[0] + "</h2><p>" + g[3] + "</p>";
+        if (!rs.length) { tb += "<p>Ninguna emisión en español empieza en esta franja en el horario actual.</p>"; return; }
+        tb += "<table><tr><th>UTC</th><th>México</th><th>Colombia</th><th>Argentina</th><th>Emisora</th><th>Frecuencia</th><th>Destino</th></tr>";
+        rs.forEach(function (r) {
+          var st = (stationSlug[r.stn] && byStation[r.stn] && byStation[r.stn].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[r.stn] + "/'>" + esc(r.stn) + "</a>" : esc(r.stn);
+          tb += "<tr><td>" + win(r, 0) + "</td><td>" + win(r, -360) + "</td><td>" + win(r, -300) + "</td><td>" + win(r, -180) + "</td><td>" + st + "</td><td>" + freqLinkHtml(String(kHz(r.freq))) + "</td><td>" + esc(ES_TGT[r.tgt] || r.tgt || "—") + "</td></tr>";
+        });
+        tb += "</table>";
+      });
+      tb += "<p style='font-size:.78rem;color:#6b5f52'>Fuente: horario EIBI " + SEASON.label + " (se regenera a diario). Las emisoras pueden cambiar frecuencias y horarios sin previo aviso. Las emisiones de 24 horas se indican como «24 horas».</p>";
+      var tfaq = [
+        ["¿A qué hora hay onda corta en español?", "El horario actual incluye " + trows.length + " emisiones en español repartidas durante todo el día. En esta página están ordenadas por hora de inicio en UTC, con la hora equivalente en México, Colombia y Argentina."],
+        ["¿Cómo paso de UTC a la hora de México, Colombia o Argentina?", "Ciudad de México es UTC−6, Bogotá UTC−5 y Buenos Aires UTC−3. Por ejemplo, 12:00 UTC son las 6:00 en Ciudad de México, las 7:00 en Bogotá y las 9:00 en Buenos Aires."],
+        ["¿Cuál es la mejor hora para escuchar onda corta en español?", "Depende de la banda: de día suelen oírse mejor 15–21 MHz, al anochecer 9–11 MHz y de noche y madrugada 3–7 MHz. La propagación cambia con la estación del año."],
+        ["¿Se actualiza el horario?", "Sí. El sitio regenera cada día esta página a partir del horario EIBI vigente."]
+      ];
+      tb += seoFaqHtml(tfaq) + seoFaqLd(tfaq);
+      tb += "<p><a class='cta' href='/es/'>Frecuencias en español</a> <a class='cta o' href='/listen-online/'>Escuchar sin radio</a></p>";
+      write("es/horario/index.html", shell({
+        lang: "es",
+        title: "Horario de onda corta en español (UTC, México) | ShortwaveHQ",
+        desc: "Horario de las emisiones de onda corta en español por franja del día, en UTC y en hora de México, Colombia y Argentina. Se actualiza a diario.",
+        canonical: "/es/horario/", kicker: "Español · Horario · EIBI " + SEASON.label,
+        h1: "Horario de onda corta <span style=\"color:#c0392b\">en español</span>",
+        bodyHtml: tb,
+        breadcrumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"], ["Horario", "/es/horario/"]]
+      }));
+      urls.push("/es/horario/");
+      console.log("Spanish timetable: " + trows.length + " rows");
+    }
+
+    function li(a) { return "<ul>" + a.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"; }
+    function ytId(u) { var m = /(?:shorts\/|watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/.exec(u || ""); return m ? m[1] : null; }
+    var ESREV = {
+      "zhiwhis-zws-a330": {
+        name: "ZHIWHIS ZWS-A330", rating: 4, ratingMax: 5, date: "2026-10-27", enUrl: "/reviews/zhiwhis-zws-a330/",
+        title: "ZHIWHIS ZWS-A330: reseña de radio de bolsillo",
+        desc: "Reseña del ZHIWHIS ZWS-A330 probado: onda corta, SSB, banda aérea y DX de AM. Captó Radio Internacional de China a 11 300 km. Pros, contras y nota 4/5.",
+        kicker: "Reseña de radio · Receptor multibanda de bolsillo",
+        lede: "La ZHIWHIS ZWS-A330 es una radio multibanda del tamaño de un bolsillo de camisa. Cubre AM, FM, onda corta con SSB, banda aérea, banda ciudadana (CB), radio meteorológica NOAA con alertas y VHF/UHF de banda ancha. Graba, tiene Bluetooth, control por app y carga por USB-C, y cabe en la mochila, el coche o el equipo de emergencia. La probé en Arizona (reseña de Michael Smith, KM7FMJ).",
+        note: "Nota: la radio meteorológica NOAA y la banda CB son funciones pensadas para Estados Unidos y no sirven en España ni en Latinoamérica. La onda corta, AM, FM y banda aérea sí se reciben en cualquier país.",
+        specs: [["Frecuencias", "AM 520–1710 kHz · Onda corta 2,3–30 MHz · FM 64–108 MHz · Banda aérea 118–138 MHz · CB 25–28 MHz · VHF 20–250 MHz · UHF hasta 999 MHz · NOAA 162,400–162,550 MHz"], ["Onda larga", "153–522 kHz (requiere el repetidor de señal ZWS-W3, se vende aparte)"], ["Modos", "AM, FM, NFM, SSB (USB/LSB)"], ["Ancho de banda", "AM en onda corta: 1, 1,8, 2, 2,5, 3, 4 y 6 kHz · SSB: 0,5, 1, 1,2, 2,2, 3 y 4 kHz"], ["Sintonía", "Teclado numérico, rueda de sintonía, búsqueda arriba/abajo, memoria automática ATS, presintonías, selección de bandas de onda corta por metros"], ["Squelch / ATT", "Squelch de 9 niveles en onda corta, VHF, UHF, banda aérea y CB · Atenuador local/DX"], ["Grabación", "Graba en tarjeta microSD (hasta 256 GB) con fecha y frecuencia en el nombre del archivo · Reproduce MP3/WMA/WAV/APE/FLAC"], ["Conexión", "Altavoz Bluetooth, control por app, altavoz USB, salida de auriculares"], ["Antena", "Varilla telescópica fina · Entrada de antena externa de 3,5 mm · Antena de ferrita enchufable para AM incluida"], ["Alimentación", "Batería de litio BL-5C extraíble · Carga por USB-C"], ["Tamaño", "Unos 136 × 60 × 35 mm (tamaño de bolsillo de camisa)"]],
+        pros: [
+          "Mucho alcance en poco tamaño: onda corta, SSB, banda aérea, CB, NOAA y VHF/UHF en un equipo que cabe en el bolsillo de la camisa.",
+          "Ideal para llevar al aire libre: pesa poco, se maneja con una mano (controles delante, arriba y a la derecha) y se sostiene solo sobre una mesa.",
+          "Buena radio para la mochila de emergencia: noticias en AM/FM, emisoras internacionales en onda corta, banda aérea y VHF/UHF en un solo equipo recargable.",
+          "La batería BL-5C es barata, fácil de encontrar y reemplazable. Con una de repuesto no hay que esperar a que cargue, y el USB-C permite cargarla con una batería externa o un panel solar.",
+          "Barrido de onda corta desde San Tan Valley, Arizona: WRMI 5850 kHz (Florida, unos 2990 km), WWCR 5935 kHz (Tennessee, unos 2270 km), Radio Martí 6030 kHz (Carolina del Norte, unos 3140 km) y Radio Internacional de China (CRI) 15160 kHz, emitida desde Jinhua, China, a unos 11 300 km.",
+          "También sorprende en el DX de AM (onda media). Con la antena de ferrita enchufable, de madrugada entró KNBR 680 de San Francisco (unos 1080 km), KSL 1160 de Salt Lake City (unos 840 km) y KOKC 1520 de Oklahoma City (unos 1310 km). Girando la antena para buscar el máximo y reduciendo el ancho de banda de 3,0 a 2,0 kHz se separan frecuencias con interferencias como 740 kHz.",
+          "Admite SSB con seis anchos de banda, así que además de emisoras de radiodifusión se escuchan los 40 y 80 metros de radioaficionados y estaciones de servicio.",
+          "La banda aérea es excelente. Incluso con la antena de serie, las comunicaciones entre torre y pilotos se oyen muy claras, y el squelch de 9 niveles mantiene el silencio entre transmisiones. Muy útil junto a la valla de un aeropuerto, en un festival aéreo o de excursión.",
+          "El altavoz es pequeño pero con buen volumen y se entiende bien, incluso en un camping o con viento.",
+          "Graba lo que escuchas en microSD con fecha y frecuencia en el nombre del archivo, útil para llevar un registro de recepciones o guardar emisiones de emergencia.",
+          "Con Bluetooth, control por app y modo altavoz USB, también sirve como reproductor de música o altavoz del móvil o el ordenador en viajes.",
+          "La entrada de antena externa de 3,5 mm permite mejorar la recepción de onda corta al aire libre con un simple cable con pinza."
+        ],
+        cons: [
+          "La antena telescópica es muy fina y parece frágil. Se dobla si se engancha en la correa de una mochila o en una rama, así que hay que guardarla recogida y tratarla con cuidado. Para uso serio al aire libre conviene un cable de antena con pinza en la entrada de 3,5 mm.",
+          "La funda con clip de cinturón es mediocre: añade volumen, tapa la tapa de la batería y estorba para cambiarla. Para excursiones no da confianza; una bolsita acolchada protege mejor el equipo y la antena.",
+          "La onda corta es suficiente, pero una portátil específica como la Tecsun PL-330 capta emisoras débiles que esta radio no consigue.",
+          "La pantalla cuesta leerla a plena luz y, con la retroiluminación apagada, no se lee.",
+          "Los botones son pequeños y duros y la rueda de sintonía también es algo dura, lo que dificulta el manejo con guantes.",
+          "Algunos botones sirven a la vez para ajustes y para teclear frecuencias, así que es fácil cambiar un ajuste sin querer. El texto de los ajustes en pantalla también es pequeño.",
+          "La banda CB no admite pasos de 10 kHz, por lo que sintonizarla a mano lleva su tiempo.",
+          "No tiene linterna ni soporte, algo habitual en radios de exterior y de emergencia.",
+          "La onda larga solo se recibe con el repetidor W3, que se vende aparte."
+        ],
+        verdict: [
+          "La ZHIWHIS ZWS-A330 es una radio que apetece llevarse. Cabe en el bolsillo de la camisa o en el lateral de una mochila y aun así cubre AM, FM, onda corta con SSB, banda aérea, CB, NOAA y VHF/UHF de banda ancha. En el barrido desde San Tan Valley recibió WRMI, WWCR, Radio Martí y Radio Internacional de China en onda corta; y en AM, gracias a la antena de ferrita enchufable, se convierte en una radio de DX de verdad, con San Francisco, Salt Lake City y Oklahoma City de madrugada (hasta unos 1310 km). Tanto alcance y rendimiento en un equipo tan pequeño es su mayor virtud.",
+          "Para el exterior y para llevar encima tiene lo necesario: manejo con una mano, buen volumen, grabación en microSD y batería BL-5C reemplazable con carga USB-C. También es candidata para la mochila de emergencia: noticias en AM/FM, onda corta de fuera de la zona, banda aérea y VHF/UHF en un solo equipo. La banda aérea destaca por su recepción clara y nítida. Con una BL-5C de repuesto y un cable de antena corto queda completa.",
+          "No es perfecta. La antena telescópica es fina y exige cuidado, y la funda con clip es lo más flojo: abulta y estorba para cambiar la batería. Aun así, por el equilibrio entre funciones y portabilidad, merece un 4 sobre 5."
+        ],
+        faq: [
+          ["¿Sirve la ZHIWHIS ZWS-A330 en España y Latinoamérica?", "La onda corta, AM (onda media), FM y banda aérea se reciben en cualquier país. La radio meteorológica NOAA y la banda CB son funciones para Estados Unidos y no se pueden aprovechar en España ni en Latinoamérica."],
+          ["¿Hasta dónde llegó la A330 en onda corta?", "Desde Arizona recibió WRMI de Florida (unos 2990 km), WWCR de Tennessee (unos 2270 km) y Radio Internacional de China, emitida desde Jinhua (unos 11 300 km). La recepción cambia según la hora y la estación del año."],
+          ["¿La A330 admite SSB?", "Sí. Admite USB/LSB con seis anchos de banda de 0,5 a 4 kHz, por lo que se pueden escuchar radioaficionados y estaciones de servicio."],
+          ["¿Cómo se oye la banda aérea en la A330?", "Incluso con la antena de serie las comunicaciones entre torre y pilotos se oyen claras, y el squelch de 9 niveles mantiene el silencio entre transmisiones. Es muy adecuada para aeropuertos y festivales aéreos."]
+        ]
+      },
+      "choyong-lc100": {
+        name: "ChoYong LC100", rating: 7.7, ratingMax: 10, date: "2026-09-30", enUrl: "/reviews/choyong-lc100/",
+        title: "ChoYong LC100: reseña de radio por internet y onda corta",
+        desc: "Reseña de la ChoYong LC100 (349 dólares) probada: onda corta, SSB, radio por internet Wi-Fi, archivo de radio y búsqueda por voz. Pros, contras, nota 7,7/10.",
+        kicker: "Reseña de radio · Radio inteligente por internet / onda corta / SSB",
+        lede: "La ChoYong LC100 es la radio con más funciones que he reseñado. Es una radio por internet con Wi-Fi 6, conexión móvil/eSIM y búsqueda por voz con IA que, además, trae onda corta y SSB. Tiene una pantalla táctil grande, archivo de radio y el mejor sonido de todas las portátiles que he probado (reseña de Michael Smith, KM7FMJ).",
+        note: "",
+        specs: [["Pantalla", "Pantalla táctil de alta resolución de 3,5 pulgadas"], ["Bandas", "FM, AM/onda media, onda corta, SSB"], ["Conexión", "Wi-Fi 6 (2,4 GHz + 5 GHz, WPA3), 4G/eSIM/ranura SIM, Bluetooth"], ["Emisoras", "Más de 40 000 emisoras de radio por internet y pódcast, reproducción del archivo de radio"], ["IA", "Búsqueda por voz, asistente de IA"], ["Batería", "18650 reemplazable"], ["Colores", "Negro, plateado"]],
+        pros: [
+          "Una de las mejores pantallas en una radio portátil de este precio: grande, nítida y fácil de manejar, un gran salto frente a las pantallas pequeñas y monocromas de muchas portátiles.",
+          "La radio por internet está muy lograda: por Wi-Fi se pueden escuchar más de 40 000 emisoras, algo imposible en una radio solo de onda corta. El Wi-Fi 6 (2,4/5 GHz) funciona bien dentro y fuera de casa.",
+          "El archivo de radio es la función estrella: permite escuchar emisiones que ya pasaron. No lo he visto en ninguna otra radio de esta categoría.",
+          "La búsqueda por voz funciona de verdad: incluso con una abreviatura como «BBC» muestra enseguida la emisora correcta.",
+          "El RDS de FM es excelente: el nombre de la emisora y los datos de la canción aparecen rápido y de forma fiable.",
+          "El sonido es claramente mejor que el de otras portátiles. El altavoz de 10 W con tres transductores da profundidad y volumen, y en FM no suena delgado como suelen sonar las radios de este tamaño.",
+          "El control de graves funciona: hay bastante más grave que en la Tecsun PL990X o en el modelo anterior de ChoYong, la LC90.",
+          "Con el chip TEF6686 y el SI4735, la sensibilidad en onda media, FM y onda larga está a la altura de la Tecsun PL990X. No es una radio por internet con un sintonizador analógico flojo añadido.",
+          "También funciona como altavoz Bluetooth y reproduce música de la tarjeta SD con un explorador de archivos en pantalla cómodo.",
+          "El diseño está muy cuidado: rueda de sintonía grande y botones claros, a un nivel que se compara con equipos como el Icom IC-705.",
+          "Tras el lanzamiento ha recibido actualizaciones de firmware rápidas, con cambios importantes en respuesta a los primeros usuarios, y sigue mejorando.",
+          "Pese a tener tantas funciones, es portátil: no es una radio de sobremesa, se puede llevar a cualquier sitio."
+        ],
+        cons: [
+          "El DX de onda media/AM no es su fuerte. Basta para el uso diario, pero una radio de DX específica la supera con las señales más débiles.",
+          "La indicación de sintonía en onda corta se leía algo desviada incluso ajustando el desfase. Conviene comprobarla con una frecuencia conocida tras actualizar el firmware (ChoYong corrige rápido).",
+          "Usuarios de SSB y radioaficionados reportan un pequeño ruido de «chasquidos» al sintonizar en onda corta. Se puede reducir con el ajuste de squelch de AM, aunque si se sube demasiado baja el volumen. Espero que se mejore en futuras actualizaciones.",
+          "El conector de antena de 3,5 mm es algo delicado. ChoYong recomienda usar un cable de conexión ligero y no tirar de él.",
+          "La antena solo se mueve arriba y abajo, no de lado a lado. Buscar el máximo de una señal débil exige algo más de paciencia que en modelos con orientación libre.",
+          "No tiene banda aérea ni trae soporte o funda de transporte a este precio, un detalle menor en una radio de aspecto premium.",
+          "Conviene verla como una radio inteligente todoterreno primero y una radio de DX después. Si tu afición principal es el DX de señales débiles en onda corta y AM, combínala con una buena antena externa o usa también una radio de DX específica."
+        ],
+        verdict: [
+          "Gracias a Flora y a todo el equipo de ChoYong por enviar la LC100 para esta reseña. Es una de las radios más ambiciosas que he probado y casi siempre cumple lo que promete.",
+          "Para quien quiera radio por internet, FM y onda corta en un solo equipo, sin llevar tres radios, la LC100 es una opción muy sólida. Por la pantalla, el sonido, el archivo de radio y la búsqueda por voz, se siente de otra categoría frente a las portátiles a las que solo se ha añadido Wi-Fi. El archivo me impresionó especialmente: no hay otra radio que permita volver atrás en una emisión. La parte de recepción también supera lo esperado: en onda media y FM su sensibilidad se puede comparar con la Tecsun PL990X.",
+          "Para el DX tradicional de onda corta y AM se queda un paso por detrás de una radio de DX específica. La onda media es buena pero no sobresaliente, la indicación de sintonía en onda corta se desvía un poco y la antena, de recorrido limitado, exige algo más de esfuerzo con señales débiles. Ninguno es un defecto decisivo; son las concesiones típicas de una radio con tantas funciones. ChoYong ha corregido el firmware con rapidez desde el lanzamiento.",
+          "En resumen: la mejor radio inteligente todoterreno que he probado, aunque no la mejor radio de DX específica. No lo necesita: hace bien otro trabajo. Para la mayoría de oyentes que quieren variedad, comodidad y un sonido realmente bueno en un solo equipo, merece un 7,7 sobre 10. Revisaré esta nota con cada actualización de firmware de ChoYong."
+        ],
+        faq: [
+          ["¿Cuánto cuesta la ChoYong LC100?", "En Estados Unidos cuesta unos 349 dólares. Consulta el precio actual en la página de venta."],
+          ["¿Se puede escuchar radio por internet con la LC100?", "Sí. Tiene Wi-Fi 6, reproduce más de 40 000 emisoras de radio por internet y pódcast, y admite el archivo de radio y la búsqueda por voz."],
+          ["¿Cómo es la onda corta y la AM de la LC100?", "La sensibilidad en onda media, FM y onda larga está a la altura de la Tecsun PL990X, pero para el DX de AM con emisoras débiles se queda por detrás de una radio de DX específica. Está pensada para el uso diario y la versatilidad."],
+          ["¿Tiene banda aérea la LC100?", "No. Las bandas son FM, AM/onda media, onda corta y SSB."]
+        ]
+      }
+    };
+    var built = [];
+    Object.keys(ESREV).forEach(function (slug) {
+      var J = ESREV[slug], rev = null;
+      for (var i = 0; i < REVIEWS.length; i++) { if (REVIEWS[i] && REVIEWS[i].url === J.enUrl) { rev = REVIEWS[i]; break; } }
+      if (!rev || rev.status !== "Published") { console.log("WARNING: ES review skipped (no Published EN review): " + slug); return; }
+      var id = ytId(rev.youtube), buyUrl = rev.buyUrl || rev.amazonUrl, eUrl = "/es/reviews/" + slug + "/";
+      var ld = { "@context": "https://schema.org", "@type": "Review", "inLanguage": "es",
+        "name": J.title, "itemReviewed": { "@type": "Product", "name": J.name, "category": rev.cat || undefined },
+        "author": { "@type": "Person", "name": "Michael Smith (KM7FMJ)" }, "datePublished": J.date,
+        "reviewBody": J.verdict[0].slice(0, 400),
+        "reviewRating": { "@type": "Rating", "ratingValue": String(J.rating), "bestRating": String(J.ratingMax) } };
+      var b = "<script type=\"application/ld+json\">" + JSON.stringify(ld) + "</script>";
+      b += "<p style=\"font-size:.8rem;margin-bottom:.8rem\"><a href=\"" + J.enUrl + "\" lang=\"en\" hreflang=\"en\">English: " + esc(J.name) + " full review (video, specs, pros and cons) →</a></p>";
+      if (id) b += "<div style=\"max-width:360px;margin:0 auto 1.2rem\"><div style=\"position:relative;padding-top:177.78%;border-radius:8px;overflow:hidden;background:#000\"><iframe src=\"https://www.youtube.com/embed/" + id + "\" title=\"" + esc(J.name) + " (vídeo de la reseña, en inglés)\" loading=\"lazy\" style=\"position:absolute;inset:0;width:100%;height:100%;border:0\" allowfullscreen></iframe></div><p style=\"font-size:.75rem;color:#6b5f52;text-align:center\">Vídeo en inglés.</p></div>";
+      var stars = Math.round(J.rating / J.ratingMax * 5);
+      b += "<div style=\"display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:.4rem 0 .7rem\"><span style=\"color:#FF9900;font-size:1.1rem;letter-spacing:1px\">" + "★".repeat(stars) + "☆".repeat(5 - stars) + "</span><span style=\"font-family:'IBM Plex Mono',monospace;font-size:.75rem;color:#6b5f52\">" + String(J.rating).replace(".", ",") + " / " + J.ratingMax + "</span></div>";
+      b += "<p class=\"lede\">" + esc(J.lede) + "</p>";
+      if (J.note) b += "<p style=\"font-size:.85rem;color:#6b5f52\">" + esc(J.note) + "</p>";
+      if (buyUrl) b += "<p><a class=\"cta\" href=\"" + esc(buyUrl) + "\" rel=\"nofollow sponsored noopener\" target=\"_blank\">Ver precio en Amazon EE. UU. (enlace de afiliado)</a></p>";
+      b += "<h2>Especificaciones principales</h2><table><tbody>" + J.specs.map(function (sp) { return "<tr><td><strong>" + esc(sp[0]) + "</strong></td><td>" + esc(sp[1]) + "</td></tr>"; }).join("") + "</tbody></table>";
+      b += "<h2>Lo bueno</h2>" + li(J.pros) + "<h2>Lo mejorable</h2>" + li(J.cons);
+      b += "<h2>Veredicto</h2>" + J.verdict.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+      b += "<p style=\"font-size:.78rem;color:#9c8e81\">Reseña basada en pruebas reales de Michael Smith / KM7FMJ (ShortwaveHQ). Esta página es la versión en español de la reseña en inglés e incluye enlaces de afiliado.</p>";
+      b += seoFaqHtml(J.faq) + seoFaqLd(J.faq);
+      b += "<p><a class=\"cta o\" href=\"/es/reviews/\">Todas las reseñas</a> <a class=\"cta o\" href=\"/es/\">Frecuencias en español</a></p>";
+      write("es/reviews/" + slug + "/index.html", shell({
+        lang: "es", title: J.title + " | ShortwaveHQ", desc: J.desc, canonical: eUrl, kicker: J.kicker,
+        h1: esc(J.name) + " <span style=\"color:#c0392b\">reseña</span>",
+        bodyHtml: b,
+        breadcrumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"], ["Reseñas", "/es/reviews/"], [J.name, eUrl]],
+        alts: [["es", eUrl], ["en", J.enUrl], ["ja", "/ja/reviews/" + slug + "/"]]
+      }));
+      urls.push(eUrl); built.push([slug, J]);
+    });
+    if (built.length) {
+      var ib = "<p class=\"lede\">Reseñas de radios de onda corta probadas de verdad en Arizona, con lo bueno y lo malo. La versión en inglés incluye más reseñas.</p><div class=\"grid\">"
+        + built.map(function (x) { return "<a href=\"/es/reviews/" + x[0] + "/\">" + esc(x[1].name) + "<span>" + String(x[1].rating).replace(".", ",") + "/" + x[1].ratingMax + "</span></a>"; }).join("") + "</div>"
+        + "<p><a class=\"cta o\" href=\"/?page=reviews\" lang=\"en\">All radio reviews (English) →</a></p>";
+      write("es/reviews/index.html", shell({
+        lang: "es", title: "Reseñas de radios de onda corta (probadas) | ShortwaveHQ",
+        desc: "Reseñas de radios de onda corta probadas en la práctica: ZHIWHIS ZWS-A330 y ChoYong LC100, con resultados de recepción, pros y contras.",
+        canonical: "/es/reviews/", kicker: "Español · Reseñas",
+        h1: "Reseñas de radios <span style=\"color:#c0392b\">de onda corta</span>",
+        bodyHtml: ib,
+        breadcrumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"], ["Reseñas", "/es/reviews/"]]
+      }));
+      urls.push("/es/reviews/");
+    }
+    console.log("Spanish review pages: " + built.length);
+  })();
 })();
 
 // ── Embeddable "On Air Now" widget ────────────────────────────────
