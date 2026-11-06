@@ -1,0 +1,1346 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Xinjiang shortwave (B-26)
+BEGIN:VEVENT
+UID:pbs-xinjiang-3950-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3950 kHz (Mandarin)
+LOCATION:3950 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3950 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-3950-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3950 kHz (Mandarin)
+LOCATION:3950 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3950 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-3990-1135@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113500Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3990 kHz (Uyghur)
+LOCATION:3990 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3990 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-3990-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T122500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3990 kHz (Uyghur)
+LOCATION:3990 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3990 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-3990-1225@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3990 kHz (Uyghur)
+LOCATION:3990 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3990 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-3990-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 3990 kHz (Uyghur)
+LOCATION:3990 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 3990 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4850-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4850 kHz (Kazakh)
+LOCATION:4850 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4850 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4850-1155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T115500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4850 kHz (Kazakh)
+LOCATION:4850 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4850 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4980-1135@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113500Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4980 kHz (Uyghur)
+LOCATION:4980 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4980 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4980-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T122500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4980 kHz (Uyghur)
+LOCATION:4980 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4980 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4980-1225@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4980 kHz (Uyghur)
+LOCATION:4980 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4980 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-4980-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 4980 kHz (Uyghur)
+LOCATION:4980 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 4980 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5060-1135@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113500Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5060 kHz (Mandarin)
+LOCATION:5060 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5060 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5060-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5060 kHz (Mandarin)
+LOCATION:5060 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5060 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5060-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5060 kHz (Mandarin)
+LOCATION:5060 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5060 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-5960-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 5960 kHz (Mandarin)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 5960 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6015-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T035000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6015 kHz (Kazakh)
+LOCATION:6015 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6015 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6015-1155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T115500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6015 kHz (Kazakh)
+LOCATION:6015 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6015 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6015-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T035000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6015 kHz (Kazakh)
+LOCATION:6015 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6015 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6015-2315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231500Z
+DTEND:20261026T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6015 kHz (Kazakh)
+LOCATION:6015 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6015 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6120-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6120 kHz (Uyghur)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6120 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6120-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6120 kHz (Uyghur)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6120 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6120-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6120 kHz (Uyghur)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6120 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6120-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6120 kHz (Uyghur)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6120 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6120-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6120 kHz (Uyghur)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6120 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6190-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6190 kHz (Mongolian)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6190 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6190-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6190 kHz (Mongolian)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6190 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-6190-2315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231500Z
+DTEND:20261026T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 6190 kHz (Mongolian)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 6190 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7205-1225@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7205 kHz (Uyghur)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7205 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7205-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7205 kHz (Uyghur)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7205 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7205-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7205 kHz (Uyghur)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7205 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7205-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7205 kHz (Uyghur)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7205 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7230-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7230 kHz (Mongolian)
+LOCATION:7230 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7230 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7230-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7230 kHz (Mongolian)
+LOCATION:7230 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7230 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7230-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7230 kHz (Mongolian)
+LOCATION:7230 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7230 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7260-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7260 kHz (Mandarin)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7260 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7275-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7275 kHz (Uyghur)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7275 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7295-0305@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030500Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7295 kHz (Kyrgyz)
+LOCATION:7295 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7295 kHz\, Kyrgyz\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7295-1005@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100500Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7295 kHz (Kyrgyz)
+LOCATION:7295 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7295 kHz\, Kyrgyz\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7310-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7310 kHz (Mandarin)
+LOCATION:7310 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7310 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7310-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7310 kHz (Mandarin)
+LOCATION:7310 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7310 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7310-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7310 kHz (Mandarin)
+LOCATION:7310 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7310 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7310-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7310 kHz (Mandarin)
+LOCATION:7310 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7310 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T035000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-0350@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T035000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T115500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-1155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T115500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-7340-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T035000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 7340 kHz (Kazakh)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 7340 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9470-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T035000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9470 kHz (Kazakh)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9470 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9470-0350@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T035000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9470 kHz (Kazakh)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9470 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9470-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9470 kHz (Kazakh)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9470 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9470-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T115500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9470 kHz (Kazakh)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9470 kHz\, Kazakh\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9510-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9510 kHz (Mongolian)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9510 kHz\, Mongolian\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9560-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9560 kHz (Uyghur)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9560 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9560-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9560 kHz (Uyghur)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9560 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9560-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9560 kHz (Uyghur)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9560 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9600-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9600 kHz (Mandarin)
+LOCATION:9600 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9600 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9600-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9600 kHz (Mandarin)
+LOCATION:9600 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9600 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9600-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9600 kHz (Mandarin)
+LOCATION:9600 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9600 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9600-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9600 kHz (Mandarin)
+LOCATION:9600 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9600 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9705-0305@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030500Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9705 kHz (Kyrgyz)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9705 kHz\, Kyrgyz\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9705-1005@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100500Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9705 kHz (Kyrgyz)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9705 kHz\, Kyrgyz\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9835-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9835 kHz (Mandarin)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9835 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9835-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9835 kHz (Mandarin)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9835 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-9835-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9835 kHz (Mandarin)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9835 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11770-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11770 kHz (Mandarin)
+LOCATION:11770 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11885-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11885 kHz (Uyghur)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11885 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11975-0305@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030500Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11975 kHz (Kyrgyz)
+LOCATION:11975 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11975 kHz\, Kyrgyz\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-11975-1005@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100500Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 11975 kHz (Kyrgyz)
+LOCATION:11975 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 11975 kHz\, Kyrgyz\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-13670-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 13670 kHz (Uyghur)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 13670 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-13670-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 13670 kHz (Uyghur)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 13670 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-13670-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 13670 kHz (Uyghur)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 13670 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-13670-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 13670 kHz (Uyghur)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 13670 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-xinjiang-13670-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T122500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 13670 kHz (Uyghur)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 13670 kHz\, Uyghur\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+END:VEVENT
+END:VCALENDAR

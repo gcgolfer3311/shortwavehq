@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 8 9785 kHz 06:00 UTC
+BEGIN:VEVENT
+UID:china-national-radio-8-9785-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 8 on 9785 kHz (Korean)
+LOCATION:9785 kHz shortwave
+DESCRIPTION:China National Radio 8 on 9785 kHz\, Korean\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/china-national-radio-8/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-8/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China National Radio 8 on 9785 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

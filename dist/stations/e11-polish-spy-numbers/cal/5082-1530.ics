@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:E11 Polish Spy Numbers 5082 kHz 15:30 UTC
+BEGIN:VEVENT
+UID:e11-polish-spy-numbers-5082-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T154000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:E11 Polish Spy Numbers on 5082 kHz (English)
+LOCATION:5082 kHz shortwave
+DESCRIPTION:E11 Polish Spy Numbers on 5082 kHz\, English\, beamed to Worldw
+ ide. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/e11-polish-spy-num
+ bers/
+URL:https://hqshortwaveradio.com/stations/e11-polish-spy-numbers/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:E11 Polish Spy Numbers on 5082 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

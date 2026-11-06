@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR5 Cross-Strait Radio 11620 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11620-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11620 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CNR5 Cross-Strait Radio on 11620 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

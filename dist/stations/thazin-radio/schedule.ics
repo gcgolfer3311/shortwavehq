@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Thazin Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:thazin-radio-7345-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 7345 kHz (KOK)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Thazin Radio on 7345 kHz\, KOK\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-7345-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 7345 kHz (KYH)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Thazin Radio on 7345 kHz\, KYH\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-7345-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 7345 kHz (SHA)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Thazin Radio on 7345 kHz\, SHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-9590-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 9590 kHz (POR)
+LOCATION:9590 kHz shortwave
+DESCRIPTION:Thazin Radio on 9590 kHz\, POR\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-9590-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 9590 kHz (KYH)
+LOCATION:9590 kHz shortwave
+DESCRIPTION:Thazin Radio on 9590 kHz\, KYH\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-9590-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T083000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 9590 kHz (SHA)
+LOCATION:9590 kHz shortwave
+DESCRIPTION:Thazin Radio on 9590 kHz\, SHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:thazin-radio-9590-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 9590 kHz (Various)
+LOCATION:9590 kHz shortwave
+DESCRIPTION:Thazin Radio on 9590 kHz\, Various\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+END:VEVENT
+END:VCALENDAR

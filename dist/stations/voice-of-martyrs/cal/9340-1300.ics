@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Martyrs 9340 kHz 13:00 UTC
+BEGIN:VEVENT
+UID:voice-of-martyrs-9340-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Martyrs on 9340 kHz (Korean)
+LOCATION:9340 kHz shortwave
+DESCRIPTION:Voice of Martyrs on 9340 kHz\, Korean\, beamed to Korea. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-martyrs/
+URL:https://hqshortwaveradio.com/stations/voice-of-martyrs/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Martyrs on 9340 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

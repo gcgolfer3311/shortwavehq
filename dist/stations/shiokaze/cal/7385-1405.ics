@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Shiokaze 7385 kHz 14:05 UTC
+BEGIN:VEVENT
+UID:shiokaze-7385-1405@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140500Z
+DTEND:20261025T143500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 7385 kHz (Japanese)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Shiokaze on 7385 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Shiokaze on 7385 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

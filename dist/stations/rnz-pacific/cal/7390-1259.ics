@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RNZ Pacific 7390 kHz 12:59 UTC
+BEGIN:VEVENT
+UID:rnz-pacific-7390-1259@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T125900Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 7390 kHz (English)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:RNZ Pacific on 7390 kHz\, English\, beamed to Pacific. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RNZ Pacific on 7390 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

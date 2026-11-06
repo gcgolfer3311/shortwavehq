@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 13 15390 kHz 01:00 UTC
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China National Radio 13 on 15390 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

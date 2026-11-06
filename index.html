@@ -1044,6 +1044,7 @@ a,button,input,select,textarea{touch-action:manipulation}
   gtag('js', new Date());
   gtag('config', 'G-XLSS7JGTB7');
 </script>
+<link rel="alternate" type="application/rss+xml" title="ShortwaveHQ news & schedule changes" href="https://hqshortwaveradio.com/feed.xml">
 </head>
 <body>
 <!-- TICKER -->
@@ -1108,6 +1109,10 @@ a,button,input,select,textarea{touch-action:manipulation}
         <button class="ni-drop-item" id="n-worldmap" onclick="go('worldmap',this);closeNiDrops()"><span class="ni-icon">🌍</span>World Map</button>
         <button class="ni-drop-item" id="n-propagation" onclick="go('propagation',this);closeNiDrops()"><span class="ni-icon">☀</span>Propagation</button>
         <button class="ni-drop-item" id="n-timemachine" onclick="go('timemachine',this);closeNiDrops()"><span class="ni-icon">⏱</span>Time Machine</button>
+        <a class="ni-drop-item" href="/my-schedule/" style="text-decoration:none"><span class="ni-icon">⭐</span>My Schedule</a>
+        <a class="ni-drop-item" href="/tools/" style="text-decoration:none"><span class="ni-icon">📐</span>Calculators</a>
+        <a class="ni-drop-item" href="/print/" style="text-decoration:none"><span class="ni-icon">🖨</span>Print Schedules</a>
+        <a class="ni-drop-item" href="/next-season/" style="text-decoration:none"><span class="ni-icon">🗓</span>Next Season</a>
       </div>
     </div>
 
@@ -1128,6 +1133,9 @@ a,button,input,select,textarea{touch-action:manipulation}
       <button class="ni ni-drop-btn" id="ndh-magazine" onclick="toggleNiDrop('drop-magazine',event)"><span class="ni-icon">🎧</span>Magazine<span class="ni-drop-caret">▾</span></button>
       <div class="ni-drop-menu">
         <button class="ni-drop-item" id="n-equipment" onclick="go('equipment',this);closeNiDrops()"><span class="ni-icon">🔧</span>Equipment</button>
+        <a class="ni-drop-item" href="/radios/" style="text-decoration:none"><span class="ni-icon">📻</span>Radio Database</a>
+        <a class="ni-drop-item" href="/compare/" style="text-decoration:none"><span class="ni-icon">⚖</span>Compare Radios</a>
+        <a class="ni-drop-item" href="/glossary/" style="text-decoration:none"><span class="ni-icon">📚</span>Glossary</a>
         <a class="ni-drop-item" href="/articles/" style="text-decoration:none"><span class="ni-icon">📰</span>Articles</a>
         <a class="ni-drop-item" href="/season-change/" style="text-decoration:none"><span class="ni-icon">🗓</span>Season Change</a>
         <!--BANDSCANS--><a class="ni-drop-item" href="/band-scans/" style="text-decoration:none"><span class="ni-icon">🎙</span>Band Scans</a><!--/BANDSCANS-->
@@ -2361,6 +2369,12 @@ Yours sincerely,
       <span class="fl" onclick="go('history',document.getElementById('n-history'))">Station History</span>
       <a class="fl" href="/best-shortwave-radios-for-beginners/">Beginner's Guide</a>
       <a class="fl" href="/listen-online/">Listen Online (WebSDR)</a>
+      <a class="fl" href="/radios/">Radio Database</a>
+      <a class="fl" href="/compare/">Compare Radios</a>
+      <a class="fl" href="/glossary/">Shortwave Glossary</a>
+      <a class="fl" href="/tools/">Antenna &amp; Time Calculators</a>
+      <a class="fl" href="/my-schedule/">My Schedule</a>
+      <a class="fl" href="/print/">Printable Schedules</a>
       <a class="fl" href="https://www.eibispace.de" target="_blank">EIBI Schedule Database</a>
     </div></div>
     <div><div class="fct">Community</div><div class="flinks">
@@ -2442,6 +2456,11 @@ Yours sincerely,
     <button onclick="go('directory',document.getElementById('n-directory'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">📋<span>All Stations</span></button>
     <button onclick="go('qsl',document.getElementById('n-qsl'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">📬<span>QSL Gallery</span></button>
     <button onclick="go('enthusiast',document.getElementById('n-enthusiast'));closeMobMore()" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px">🏆<span>Enthusiast</span></button>
+    <a href="/my-schedule/" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px;text-decoration:none">⭐<span>My Schedule</span></a>
+    <a href="/radios/" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px;text-decoration:none">📻<span>Radios</span></a>
+    <a href="/tools/" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px;text-decoration:none">📐<span>Calculators</span></a>
+    <a href="/glossary/" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px;text-decoration:none">📚<span>Glossary</span></a>
+    <a href="/print/" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem .4rem;color:#fff;font-family:var(--mono);font-size:.72rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:60px;text-decoration:none">🖨<span>Print</span></a>
   </div>
   <button onclick="closeMobMore()" style="width:100%;margin-top:7px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:6px;color:rgba(255,255,255,.76);font-family:var(--mono);font-size:.76rem;padding:9px;cursor:pointer">Close</button>
 </div>

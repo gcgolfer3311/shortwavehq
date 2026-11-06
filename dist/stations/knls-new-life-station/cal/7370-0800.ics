@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KNLS New Life Station 7370 kHz 08:00 UTC
+BEGIN:VEVENT
+UID:knls-new-life-station-7370-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KNLS New Life Station on 7370 kHz (Mandarin)
+LOCATION:7370 kHz shortwave
+DESCRIPTION:KNLS New Life Station on 7370 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/knls-new-life-stati
+ on/
+URL:https://hqshortwaveradio.com/stations/knls-new-life-station/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KNLS New Life Station on 7370 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

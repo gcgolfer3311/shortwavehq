@@ -1,0 +1,368 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Reach Beyond Australia shortwave (B-26)
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (Bengali)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, Bengali\, beamed to SIn. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (English)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, English\, beamed to SIn. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (Tamil)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, Tamil\, beamed to SIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T131500Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (KOR)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, KOR\, beamed to SIn. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T134500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (Hindi)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, Hindi\, beamed to SIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T134500Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (English)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, English\, beamed to SIn. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11825-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11825 kHz (Korean)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11825 kHz\, Korean\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/reach-beyond-austra
+ lia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11945-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11945 kHz (Burmese)
+LOCATION:11945 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11945 kHz\, Burmese\, beamed to Myanm
+ ar. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/reach-beyond-austra
+ lia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11945-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11945 kHz (ROH)
+LOCATION:11945 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11945 kHz\, ROH\, beamed to Myanmar. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11945-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11945 kHz (Burmese)
+LOCATION:11945 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11945 kHz\, Burmese\, beamed to Myanm
+ ar. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/reach-beyond-austra
+ lia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11945-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11945 kHz (NLA)
+LOCATION:11945 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11945 kHz\, NLA\, beamed to Myanmar. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T094500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (JV)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, JV\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia
+ /
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-0945@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T094500Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (MGO)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, MGO\, beamed to Solomon I
+ s.. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/reach-beyond-austra
+ lia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T101500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (BAL)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, BAL\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/reach-beyond-australi
+ a/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-1015@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T101500Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (ML)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, ML\, beamed to MLA. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (English)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, English\, beamed to Indon
+ esia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/reach-beyond-aust
+ ralia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (MAR)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, MAR\, beamed to NIn. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Hindi)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Hindi\, beamed to NIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Hindi)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Hindi\, beamed to NIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T131500Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Hindi)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Hindi\, beamed to NIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T134500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Nepali)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Nepali\, beamed to NIn. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T134500Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Punjabi)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Punjabi\, beamed to NIn. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15460-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15460 kHz (Japanese)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15460 kHz\, Japanese\, beamed to Japa
+ n. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/reach-beyond-austral
+ ia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15460-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15460 kHz (English)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15460 kHz\, English\, beamed to Japan
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/reach-beyond-australi
+ a/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15565-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15565 kHz (DZ)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15565 kHz\, DZ\, beamed to BTN. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-15565-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15565 kHz (DZ)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15565 kHz\, DZ\, beamed to BTN. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:reach-beyond-australia-17650-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 17650 kHz (English)
+LOCATION:17650 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 17650 kHz\, English\, beamed to Japan
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/reach-beyond-australi
+ a/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+END:VEVENT
+END:VCALENDAR

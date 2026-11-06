@@ -1,0 +1,709 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NHK Radio Japan shortwave (B-26)
+BEGIN:VEVENT
+UID:nhk-radio-japan-6165-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T045000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6165 kHz (Russian)
+LOCATION:6165 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6165 kHz\, Russian\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T112000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Korean)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1120@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T112000Z
+DTEND:20261025T114000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1140@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Korean)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T122000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1220@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122000Z
+DTEND:20261025T124000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Korean)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1240@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T132000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Korean)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1320@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T132000Z
+DTEND:20261025T134000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1340@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T134000Z
+DTEND:20261025T135000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Korean)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9490-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T102000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9490 kHz (Mandarin)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9490 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9490-1020@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T102000Z
+DTEND:20261025T104000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9490 kHz (Korean)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9490 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9490-1040@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104000Z
+DTEND:20261025T105000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9490 kHz (Mandarin)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9490 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9510-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9510 kHz (Japanese)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9510 kHz\, Japanese\, beamed to CAf. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9510-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T212000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9510 kHz (French)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9510 kHz\, French\, beamed to CAf. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9560-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9560 kHz (Japanese)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9560 kHz\, Japanese\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9585-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T095000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9585 kHz (Russian)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9585 kHz\, Russian\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9605-1610@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T161000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9605 kHz (Arabic)
+LOCATION:9605 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9605 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9605-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9605 kHz (Farsi)
+LOCATION:9605 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9605 kHz\, Farsi\, beamed to Middle East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9750-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T135000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9750 kHz (Japanese)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9750 kHz\, Japanese\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9750-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T142000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9750 kHz (Mandarin)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9750 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9765-1510@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T151000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9765 kHz (Korean)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9765 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9765-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T155000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9765 kHz (Mandarin)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9765 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9765-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9765 kHz (Urdu)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9765 kHz\, Urdu\, beamed to PAK. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9770-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9770 kHz (Japanese)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9770 kHz\, Japanese\, beamed to Central Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-9870-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9870 kHz (Japanese)
+LOCATION:9870 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9870 kHz\, Japanese\, beamed to South Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11610-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T152000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11610 kHz (Bengali)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11610 kHz\, Bengali\, beamed to South Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11610-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T155000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11610 kHz (Hindi)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11610 kHz\, Hindi\, beamed to South Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11630-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11630 kHz (Japanese)
+LOCATION:11630 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11630 kHz\, Japanese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11640-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11640 kHz (Japanese)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11640 kHz\, Japanese\, beamed to Siberia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11815-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11815 kHz (Japanese)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11815 kHz\, Japanese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11825-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T095000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11825 kHz (Japanese)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11825 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11825-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11825 kHz (Japanese)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11825 kHz\, Japanese\, beamed to Middle East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11830-0510@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T051000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11830 kHz (Korean)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11830 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11830-0610@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T061000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11830 kHz (Mandarin)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11830 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11830-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11830 kHz (Korean)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11830 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11870-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T045000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11870 kHz (Russian)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11870 kHz\, Russian\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11870-0540@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T054000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11870 kHz (Russian)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11870 kHz\, Russian\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11920-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T141100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11920 kHz (English)
+LOCATION:11920 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11920 kHz\, English\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11920-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11920 kHz (Burmese)
+LOCATION:11920 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11920 kHz\, Burmese\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11920-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11920 kHz (Japanese)
+LOCATION:11920 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11920 kHz\, Japanese\, beamed to S. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11955-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11955 kHz (Japanese)
+LOCATION:11955 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11955 kHz\, Japanese\, beamed to Middle East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-11955-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 11955 kHz (Japanese)
+LOCATION:11955 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 11955 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-12040-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 12040 kHz (Japanese)
+LOCATION:12040 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 12040 kHz\, Japanese\, beamed to Pacific. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-13705-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T002000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 13705 kHz (Indonesian)
+LOCATION:13705 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 13705 kHz\, Indonesian\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-13705-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T005000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 13705 kHz (Burmese)
+LOCATION:13705 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 13705 kHz\, Burmese\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-13705-2310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 13705 kHz (Thai)
+LOCATION:13705 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 13705 kHz\, Thai\, beamed to SE Asia. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-13705-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261025T234000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 13705 kHz (Vietnamese)
+LOCATION:13705 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 13705 kHz\, Vietnamese\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-13745-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T052000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 13745 kHz (French)
+LOCATION:13745 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 13745 kHz\, French\, beamed to W. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-15195-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T045000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 15195 kHz (Japanese)
+LOCATION:15195 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 15195 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-15280-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T095000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 15280 kHz (Japanese)
+LOCATION:15280 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 15280 kHz\, Japanese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-17810-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 17810 kHz (Japanese)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 17810 kHz\, Japanese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-17820-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 17820 kHz (Japanese)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 17820 kHz\, Japanese\, beamed to W. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+BEGIN:VEVENT
+UID:nhk-radio-japan-17860-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 17860 kHz (Japanese)
+LOCATION:17860 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 17860 kHz\, Japanese\, beamed to South Ameri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+END:VEVENT
+END:VCALENDAR

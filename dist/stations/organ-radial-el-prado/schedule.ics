@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Organ.Radial El Prado shortwave (B-26)
+BEGIN:VEVENT
+UID:organ-radial-el-prado-6017-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Organ.Radial El Prado on 6017 kHz (Spanish)
+LOCATION:6017 kHz shortwave
+DESCRIPTION:Organ.Radial El Prado on 6017 kHz\, Spanish\, beamed to Colombi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/organ-radial-el-prad
+ o/
+URL:https://hqshortwaveradio.com/stations/organ-radial-el-prado/
+END:VEVENT
+END:VCALENDAR

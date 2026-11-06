@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Vaticana 15565 kHz 16:30 UTC
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (English)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, English\, beamed to S. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Vaticana on 15565 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

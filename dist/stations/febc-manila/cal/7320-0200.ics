@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBC Manila 7320 kHz 02:00 UTC
+BEGIN:VEVENT
+UID:febc-manila-7320-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 7320 kHz (Urdu)
+LOCATION:7320 kHz shortwave
+DESCRIPTION:FEBC Manila on 7320 kHz\, Urdu\, beamed to South Asia. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FEBC Manila on 7320 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

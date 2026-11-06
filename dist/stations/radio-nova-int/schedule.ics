@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Nova Int\, shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-nova-int-9530-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nova Int\, on 9530 kHz (English)
+LOCATION:9530 kHz shortwave
+DESCRIPTION:Radio Nova Int\, on 9530 kHz\, English\, beamed to W. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-nova-int/
+URL:https://hqshortwaveradio.com/stations/radio-nova-int/
+END:VEVENT
+END:VCALENDAR

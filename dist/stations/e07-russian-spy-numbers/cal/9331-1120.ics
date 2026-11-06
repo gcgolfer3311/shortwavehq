@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:E07 Russian Spy Numbers 9331 kHz 11:20 UTC
+BEGIN:VEVENT
+UID:e07-russian-spy-numbers-9331-1120@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T112000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:E07 Russian Spy Numbers on 9331 kHz (English)
+LOCATION:9331 kHz shortwave
+DESCRIPTION:E07 Russian Spy Numbers on 9331 kHz\, English\, beamed to Russi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/e07-russian-spy-numb
+ ers/
+URL:https://hqshortwaveradio.com/stations/e07-russian-spy-numbers/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:E07 Russian Spy Numbers on 9331 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

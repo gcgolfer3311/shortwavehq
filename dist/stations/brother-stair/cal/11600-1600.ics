@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Brother Stair 11600 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:brother-stair-11600-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Brother Stair on 11600 kHz (English)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:Brother Stair on 11600 kHz\, English\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/brother-stair/
+URL:https://hqshortwaveradio.com/stations/brother-stair/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Brother Stair on 11600 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

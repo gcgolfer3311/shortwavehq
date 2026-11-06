@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Liberty shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-liberty-15770-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Liberty on 15770 kHz (Russian)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Liberty on 15770 kHz\, Russian\, beamed to E. North Ameri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-liberty/
+URL:https://hqshortwaveradio.com/stations/radio-liberty/
+END:VEVENT
+END:VCALENDAR

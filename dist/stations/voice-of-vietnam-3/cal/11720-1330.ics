@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Vietnam 3 11720 kHz 13:30 UTC
+BEGIN:VEVENT
+UID:voice-of-vietnam-3-11720-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam 3 on 11720 kHz (Vietnamese)
+LOCATION:11720 kHz shortwave
+DESCRIPTION:Voice of Vietnam 3 on 11720 kHz\, Vietnamese\, beamed to Pacifi
+ c. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam-3/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam-3/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Vietnam 3 on 11720 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

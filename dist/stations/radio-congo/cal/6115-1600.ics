@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Congo 6115 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:radio-congo-6115-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Congo on 6115 kHz (KT)
+LOCATION:6115 kHz shortwave
+DESCRIPTION:Radio Congo on 6115 kHz\, KT\, beamed to CAf. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/radio-congo/
+URL:https://hqshortwaveradio.com/stations/radio-congo/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Congo on 6115 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

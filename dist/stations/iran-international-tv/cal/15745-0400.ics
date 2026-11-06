@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Iran International TV 15745 kHz 04:00 UTC
+BEGIN:VEVENT
+UID:iran-international-tv-15745-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 15745 kHz (Farsi)
+LOCATION:15745 kHz shortwave
+DESCRIPTION:Iran International TV on 15745 kHz\, Farsi\, beamed to Iran. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Iran International TV on 15745 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

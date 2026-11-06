@@ -1,0 +1,189 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Furusato no Kaze shortwave (B-26)
+BEGIN:VEVENT
+UID:furusato-no-kaze-5815-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 5815 kHz (Japanese)
+LOCATION:5815 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 5815 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-6045-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 6045 kHz (Japanese)
+LOCATION:6045 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 6045 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-6110-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 6110 kHz (Japanese)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 6110 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-6110-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 6110 kHz (Japanese)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 6110 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-7290-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 7290 kHz (Japanese)
+LOCATION:7290 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 7290 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-7295-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T135700Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 7295 kHz (Japanese)
+LOCATION:7295 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 7295 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9455-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9455 kHz (Japanese)
+LOCATION:9455 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9455 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9560-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9560 kHz (Japanese)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9560 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9685-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9685 kHz (Japanese)
+LOCATION:9685 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9685 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9705-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T135700Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9705 kHz (Japanese)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9705 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9705-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9705 kHz (Japanese)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9705 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-9720-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9720 kHz (Japanese)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9720 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-12045-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T135700Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 12045 kHz (Japanese)
+LOCATION:12045 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 12045 kHz\, Japanese\, beamed to Korea. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:furusato-no-kaze-15475-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 15475 kHz (Japanese)
+LOCATION:15475 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 15475 kHz\, Japanese\, beamed to Korea. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+END:VEVENT
+END:VCALENDAR

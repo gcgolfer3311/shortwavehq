@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IRIB Voice of I.Radio Iran 15440 kHz 09:20 UTC
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15440-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15440 kHz (Dari)
+LOCATION:15440 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15440 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15440 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Free Radio Service Holland 9300 kHz 08:52 UTC
+BEGIN:VEVENT
+UID:free-radio-service-holland-9300-0852@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T085200Z
+DTEND:20261025T133500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Free Radio Service Holland on 9300 kHz (English)
+LOCATION:9300 kHz shortwave
+DESCRIPTION:Free Radio Service Holland on 9300 kHz\, English\, beamed to Eu
+ rope. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/free-radio-servic
+ e-holland/
+URL:https://hqshortwaveradio.com/stations/free-radio-service-holland/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Free Radio Service Holland on 9300 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,176 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Prague shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-prague-5010-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 5010 kHz (Spanish)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:Radio Prague on 5010 kHz\, Spanish\, beamed to Caribbean. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-5010-0230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 5010 kHz (Spanish)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:Radio Prague on 5010 kHz\, Spanish\, beamed to Caribbean. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-5850-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 5850 kHz (French)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Prague on 5850 kHz\, French\, beamed to W. North America.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-5850-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Prague on 5850 kHz\, English\, beamed to W. North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-9955-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 9955 kHz (Spanish)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:Radio Prague on 9955 kHz\, Spanish\, beamed to LAm. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-9955-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 9955 kHz (English)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:Radio Prague on 9955 kHz\, English\, beamed to LAm. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-9955-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 9955 kHz (French)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:Radio Prague on 9955 kHz\, French\, beamed to LAm. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-11965-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 11965 kHz (Russian)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Radio Prague on 11965 kHz\, Russian\, beamed to E. Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-15770-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 15770 kHz (English)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Prague on 15770 kHz\, English\, beamed to E. North Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-17790-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 17790 kHz (Spanish)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Prague on 17790 kHz\, Spanish\, beamed to LAm. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-17790-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Prague on 17790 kHz\, English\, beamed to LAm. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-17790-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 17790 kHz (French)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Prague on 17790 kHz\, French\, beamed to LAm. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-prague-17790-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Prague on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Prague on 17790 kHz\, English\, beamed to LAm. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-prague/
+URL:https://hqshortwaveradio.com/stations/radio-prague/
+END:VEVENT
+END:VCALENDAR

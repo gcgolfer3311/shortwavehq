@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RNZ Pacific 15720 kHz 19:59 UTC
+BEGIN:VEVENT
+UID:rnz-pacific-15720-1959@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195900Z
+DTEND:20261025T205800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 15720 kHz (English)
+LOCATION:15720 kHz shortwave
+DESCRIPTION:RNZ Pacific on 15720 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RNZ Pacific on 15720 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

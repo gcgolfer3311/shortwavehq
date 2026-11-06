@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China Radio International 17615 kHz 06:00 UTC
+BEGIN:VEVENT
+UID:china-radio-international-17615-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China Radio International on 17615 kHz (German)
+LOCATION:17615 kHz shortwave
+DESCRIPTION:China Radio International on 17615 kHz\, German\, beamed to W. 
+ Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/china-radio-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/china-radio-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China Radio International on 17615 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RBS V.o.Korean Revival 9470 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:rbs-v-o-korean-revival-9470-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T142800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RBS V.o.Korean Revival on 9470 kHz (Korean)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:RBS V.o.Korean Revival on 9470 kHz\, Korean\, beamed to Korea. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/rbs-v-o-korean-revival/
+URL:https://hqshortwaveradio.com/stations/rbs-v-o-korean-revival/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RBS V.o.Korean Revival on 9470 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC 6155 kHz 15:30 UTC
+BEGIN:VEVENT
+UID:bbc-6155-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6155 kHz (Korean)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:BBC on 6155 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BBC on 6155 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

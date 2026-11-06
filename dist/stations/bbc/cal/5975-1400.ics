@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC 5975 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:bbc-5975-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5975 kHz (Dari)
+LOCATION:5975 kHz shortwave
+DESCRIPTION:BBC on 5975 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BBC on 5975 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

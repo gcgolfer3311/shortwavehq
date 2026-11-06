@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Korea 9875 kHz 19:00 UTC
+BEGIN:VEVENT
+UID:voice-of-korea-9875-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (English)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, English\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Korea on 9875 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

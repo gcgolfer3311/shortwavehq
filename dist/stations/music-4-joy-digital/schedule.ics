@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Music 4 Joy DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:music-4-joy-digital-7225-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Music 4 Joy DIGITAL on 7225 kHz (Various)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Music 4 Joy DIGITAL on 7225 kHz\, Various\, beamed to Middle Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/music-4-joy-digital
+ /
+URL:https://hqshortwaveradio.com/stations/music-4-joy-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:music-4-joy-digital-9810-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Music 4 Joy DIGITAL on 9810 kHz (Various)
+LOCATION:9810 kHz shortwave
+DESCRIPTION:Music 4 Joy DIGITAL on 9810 kHz\, Various\, beamed to W. Africa
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/music-4-joy-digital/
+URL:https://hqshortwaveradio.com/stations/music-4-joy-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:music-4-joy-digital-13650-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Music 4 Joy DIGITAL on 13650 kHz (Various)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Music 4 Joy DIGITAL on 13650 kHz\, Various\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/music-4-joy-digital/
+URL:https://hqshortwaveradio.com/stations/music-4-joy-digital/
+END:VEVENT
+END:VCALENDAR

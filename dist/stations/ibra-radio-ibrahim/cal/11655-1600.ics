@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IBRA Radio Ibrahim 11655 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:ibra-radio-ibrahim-11655-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IBRA Radio Ibrahim on 11655 kHz (AFA)
+LOCATION:11655 kHz shortwave
+DESCRIPTION:IBRA Radio Ibrahim on 11655 kHz\, AFA\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/ibra-radio-ibrahim/
+URL:https://hqshortwaveradio.com/stations/ibra-radio-ibrahim/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IBRA Radio Ibrahim on 11655 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

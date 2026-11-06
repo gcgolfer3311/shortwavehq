@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Nikkei 1 shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-nikkei-1-3925-0750@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T075000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 3925 kHz (Japanese)
+LOCATION:3925 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 3925 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-nikkei-1-3925-2225@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T222500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 3925 kHz (Japanese)
+LOCATION:3925 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 3925 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-nikkei-1-6055-0750@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T075000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 6055 kHz (Japanese)
+LOCATION:6055 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 6055 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-nikkei-1-6055-2225@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T222500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 6055 kHz (Japanese)
+LOCATION:6055 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 6055 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-nikkei-1-6055-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T234500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 6055 kHz (Japanese)
+LOCATION:6055 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 6055 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-nikkei-1-6055-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T075000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 1 on 6055 kHz (Japanese)
+LOCATION:6055 kHz shortwave
+DESCRIPTION:Radio Nikkei 1 on 6055 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-1/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-1/
+END:VEVENT
+END:VCALENDAR

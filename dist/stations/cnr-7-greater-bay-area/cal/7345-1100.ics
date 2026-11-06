@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR 7 Greater Bay Area 7345 kHz 11:00 UTC
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-7345-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 7345 kHz (Cantonese)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 7345 kHz\, Cantonese\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-ar
+ ea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CNR 7 Greater Bay Area on 7345 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AIR Akashvani Ext.Service 11900 kHz 18:20 UTC
+BEGIN:VEVENT
+UID:air-akashvani-ext-service-11900-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T183500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (English)
+LOCATION:11900 kHz shortwave
+DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, English\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/air-akashvan
+ i-ext-service/
+URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

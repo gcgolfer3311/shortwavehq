@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Exterior España 15520 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Exterior España on 15520 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

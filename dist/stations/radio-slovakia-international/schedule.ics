@@ -1,0 +1,245 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Slovakia International shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-slovakia-international-5010-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5010 kHz (Spanish)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5010 kHz\, Spanish\, beamed to 
+ Caribbean. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-slovak
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-5800-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5800 kHz (English)
+LOCATION:5800 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5800 kHz\, English\, beamed to 
+ LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-slovakia-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-5850-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5850 kHz (Slovak)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5850 kHz\, Slovak\, beamed to W
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-5850-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5850 kHz\, English\, beamed to 
+ W. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-5850-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5850 kHz\, English\, beamed to 
+ W. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-5850-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 5850 kHz\, English\, beamed to 
+ W. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-6140-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 6140 kHz (German)
+LOCATION:6140 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 6140 kHz\, German\, beamed to E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-6140-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 6140 kHz (English)
+LOCATION:6140 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 6140 kHz\, English\, beamed to 
+ Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-6140-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 6140 kHz (French)
+LOCATION:6140 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 6140 kHz\, French\, beamed to E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-9395-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 9395 kHz (English)
+LOCATION:9395 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 9395 kHz\, English\, beamed to 
+ E. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-9955-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 9955 kHz (Spanish)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 9955 kHz\, Spanish\, beamed to 
+ LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-slovakia-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-11965-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 11965 kHz (Russian)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 11965 kHz\, Russian\, beamed to
+  E. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-slova
+ kia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-15770-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 15770 kHz (Slovak)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 15770 kHz\, Slovak\, beamed to 
+ E. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-15770-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 15770 kHz (English)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 15770 kHz\, English\, beamed to
+  E. North America. Schedule from EIBI B-26 (valid until the A-27 season ch
+ ange). Times can change\; check https://hqshortwaveradio.com/stations/radi
+ o-slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-15770-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 15770 kHz (Spanish)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 15770 kHz\, Spanish\, beamed to
+  E. North America. Schedule from EIBI B-26 (valid until the A-27 season ch
+ ange). Times can change\; check https://hqshortwaveradio.com/stations/radi
+ o-slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-17790-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 17790 kHz (Spanish)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 17790 kHz\, Spanish\, beamed to
+  LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-slovakia-international-17790-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 17790 kHz\, English\, beamed to
+  LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+END:VCALENDAR

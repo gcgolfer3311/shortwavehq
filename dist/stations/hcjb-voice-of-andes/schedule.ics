@@ -1,0 +1,261 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HCJB Voice of Andes shortwave (B-26)
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-3995-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 3995 kHz (German)
+LOCATION:3995 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 3995 kHz\, German\, beamed to C. Europe.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-3995-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 3995 kHz (German)
+LOCATION:3995 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 3995 kHz\, German\, beamed to C. Europe.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-3995-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 3995 kHz (German)
+LOCATION:3995 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 3995 kHz\, German\, beamed to C. Europe.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-5920-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 5920 kHz (German)
+LOCATION:5920 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 5920 kHz\, German\, beamed to C. Europe.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (COF)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, COF\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (WAO)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, WAO\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Quechua)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Quechua\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T023500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Quechua)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Quechua\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0235@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023500Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Spanish)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Spanish\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0923@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092300Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Quechua)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Quechua\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140300Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Spanish)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Spanish\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Spanish)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Spanish\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (CHA)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, CHA\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Quechua)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Quechua\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (SUA)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, SUA\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-9500-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 9500 kHz (Russian)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 9500 kHz\, Russian\, beamed to Caucasus.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-9500-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 9500 kHz (CHE)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 9500 kHz\, CHE\, beamed to Caucasus. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-11700-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 11700 kHz (Russian)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 11700 kHz\, Russian\, beamed to Caucasus
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-11700-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 11700 kHz (CHE)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 11700 kHz\, CHE\, beamed to Caucasus. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+END:VEVENT
+END:VCALENDAR

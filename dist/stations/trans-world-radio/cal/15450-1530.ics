@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trans World Radio 15450 kHz 15:30 UTC
+BEGIN:VEVENT
+UID:trans-world-radio-15450-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15450 kHz (Urdu)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:Trans World Radio on 15450 kHz\, Urdu\, beamed to South Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Trans World Radio on 15450 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

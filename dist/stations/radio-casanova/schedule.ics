@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Casanova shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-casanova-6020-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Casanova on 6020 kHz (Dutch)
+LOCATION:6020 kHz shortwave
+DESCRIPTION:Radio Casanova on 6020 kHz\, Dutch\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/radio-casanova/
+URL:https://hqshortwaveradio.com/stations/radio-casanova/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-casanova-6060-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Casanova on 6060 kHz (Dutch)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Radio Casanova on 6060 kHz\, Dutch\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/radio-casanova/
+URL:https://hqshortwaveradio.com/stations/radio-casanova/
+END:VEVENT
+END:VCALENDAR

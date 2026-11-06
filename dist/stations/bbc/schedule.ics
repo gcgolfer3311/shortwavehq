@@ -1,0 +1,1567 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC shortwave (B-26)
+BEGIN:VEVENT
+UID:bbc-5845-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5845 kHz (Korean)
+LOCATION:5845 kHz shortwave
+DESCRIPTION:BBC on 5845 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-5845-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5845 kHz (Korean)
+LOCATION:5845 kHz shortwave
+DESCRIPTION:BBC on 5845 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-5845-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5845 kHz (Korean)
+LOCATION:5845 kHz shortwave
+DESCRIPTION:BBC on 5845 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-5845-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5845 kHz (Korean)
+LOCATION:5845 kHz shortwave
+DESCRIPTION:BBC on 5845 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-5975-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5975 kHz (Dari)
+LOCATION:5975 kHz shortwave
+DESCRIPTION:BBC on 5975 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-5975-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 5975 kHz (Pashto)
+LOCATION:5975 kHz shortwave
+DESCRIPTION:BBC on 5975 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6000-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6000 kHz (Farsi)
+LOCATION:6000 kHz shortwave
+DESCRIPTION:BBC on 6000 kHz\, Farsi\, beamed to Iran. Schedule from EIBI B-
+ 26 (valid until the A-27 season change). Times can change\; check https://
+ hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6090-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6090 kHz (Dari)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:BBC on 6090 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6090-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6090 kHz (Pashto)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:BBC on 6090 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6115-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6115 kHz (Korean)
+LOCATION:6115 kHz shortwave
+DESCRIPTION:BBC on 6115 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6115-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6115 kHz (Korean)
+LOCATION:6115 kHz shortwave
+DESCRIPTION:BBC on 6115 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6135-0529@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052900Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6135 kHz (Hausa)
+LOCATION:6135 kHz shortwave
+DESCRIPTION:BBC on 6135 kHz\, Hausa\, beamed to W. Africa. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6155-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6155 kHz (Korean)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:BBC on 6155 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6155-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6155 kHz (Korean)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:BBC on 6155 kHz\, Korean\, beamed to Far East. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Dari)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Pashto)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Dari)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Pashto)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-0230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Dari)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-6195-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 6195 kHz (Farsi)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:BBC on 6195 kHz\, Farsi\, beamed to Iran. Schedule from EIBI B-
+ 26 (valid until the A-27 season change). Times can change\; check https://
+ hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7285-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7285 kHz (English)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:BBC on 7285 kHz\, English\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7285-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T062900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7285 kHz (French)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:BBC on 7285 kHz\, French\, beamed to N. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7290-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7290 kHz (Farsi)
+LOCATION:7290 kHz shortwave
+DESCRIPTION:BBC on 7290 kHz\, Farsi\, beamed to Iran. Schedule from EIBI B-
+ 26 (valid until the A-27 season change). Times can change\; check https://
+ hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7305-0529@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052900Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7305 kHz (Hausa)
+LOCATION:7305 kHz shortwave
+DESCRIPTION:BBC on 7305 kHz\, Hausa\, beamed to W. Africa. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7305-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T062900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7305 kHz (French)
+LOCATION:7305 kHz shortwave
+DESCRIPTION:BBC on 7305 kHz\, French\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7425-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7425 kHz (French)
+LOCATION:7425 kHz shortwave
+DESCRIPTION:BBC on 7425 kHz\, French\, beamed to N. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7445-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7445 kHz (Dari)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:BBC on 7445 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7445-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7445 kHz (Pashto)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:BBC on 7445 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7445-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7445 kHz (Dari)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:BBC on 7445 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7445-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7445 kHz (Pashto)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:BBC on 7445 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-7445-0230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 7445 kHz (Dari)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:BBC on 7445 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9410-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9410 kHz (Pashto)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:BBC on 9410 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9410-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9410 kHz (English)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:BBC on 9410 kHz\, English\, beamed to W. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9440-0629@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T062900Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9440 kHz (Hausa)
+LOCATION:9440 kHz shortwave
+DESCRIPTION:BBC on 9440 kHz\, Hausa\, beamed to W. Africa. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9465-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9465 kHz (SO)
+LOCATION:9465 kHz shortwave
+DESCRIPTION:BBC on 9465 kHz\, SO\, beamed to E. Africa. Schedule from EIBI 
+ B-26 (valid until the A-27 season change). Times can change\; check https:
+ //hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9525-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9525 kHz (Dari)
+LOCATION:9525 kHz shortwave
+DESCRIPTION:BBC on 9525 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9525-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9525 kHz (Dari)
+LOCATION:9525 kHz shortwave
+DESCRIPTION:BBC on 9525 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9525-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9525 kHz (Dari)
+LOCATION:9525 kHz shortwave
+DESCRIPTION:BBC on 9525 kHz\, Dari\, beamed to Afghanistan. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9525-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9525 kHz (Pashto)
+LOCATION:9525 kHz shortwave
+DESCRIPTION:BBC on 9525 kHz\, Pashto\, beamed to Afghanistan. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9545-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9545 kHz (Hausa)
+LOCATION:9545 kHz shortwave
+DESCRIPTION:BBC on 9545 kHz\, Hausa\, beamed to W. Africa. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9560-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9560 kHz (Burmese)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:BBC on 9560 kHz\, Burmese\, beamed to SE Asia. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9650-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9650 kHz (Arabic)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:BBC on 9650 kHz\, Arabic\, beamed to Middle East. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-9915-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9915 kHz (English)
+LOCATION:9915 kHz shortwave
+DESCRIPTION:BBC on 9915 kHz\, English\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11645-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11645 kHz (English)
+LOCATION:11645 kHz shortwave
+DESCRIPTION:BBC on 11645 kHz\, English\, beamed to Indonesia. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11660-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11660 kHz (Hausa)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:BBC on 11660 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11830-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11830 kHz (Arabic)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:BBC on 11830 kHz\, Arabic\, beamed to Middle East. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11965-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11965 kHz (Russian)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:BBC on 11965 kHz\, Russian\, beamed to E. Europe. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11965-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11965 kHz (French)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:BBC on 11965 kHz\, French\, beamed to Madagascar. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11995-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11995 kHz (Dari)
+LOCATION:11995 kHz shortwave
+DESCRIPTION:BBC on 11995 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11995-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11995 kHz (Pashto)
+LOCATION:11995 kHz shortwave
+DESCRIPTION:BBC on 11995 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11995-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11995 kHz (Dari)
+LOCATION:11995 kHz shortwave
+DESCRIPTION:BBC on 11995 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-11995-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 11995 kHz (Dari)
+LOCATION:11995 kHz shortwave
+DESCRIPTION:BBC on 11995 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12065-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12065 kHz (SO)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:BBC on 12065 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12065-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12065 kHz (SO)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:BBC on 12065 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Pashto)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (SO)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T062900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (French)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, French\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-0629@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T062900Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Hausa)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T072900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (French)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, French\, beamed to W. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (SO)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (English)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, English\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (English)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, English\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Amharic)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Amharic\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1750@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T175000Z
+DTEND:20261025T181000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Oromo)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Oromo\, beamed to E. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1810@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T181000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (TIG)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, TIG\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T185000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Amharic)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Amharic\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1850@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T185000Z
+DTEND:20261025T191000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (Oromo)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, Oromo\, beamed to E. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-12095-1910@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T191000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (TIG)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, TIG\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-13690-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 13690 kHz (KNK)
+LOCATION:13690 kHz shortwave
+DESCRIPTION:BBC on 13690 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-13690-0529@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052900Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 13690 kHz (KNK)
+LOCATION:13690 kHz shortwave
+DESCRIPTION:BBC on 13690 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-13790-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 13790 kHz (SO)
+LOCATION:13790 kHz shortwave
+DESCRIPTION:BBC on 13790 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-13790-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 13790 kHz (French)
+LOCATION:13790 kHz shortwave
+DESCRIPTION:BBC on 13790 kHz\, French\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15110-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15110 kHz (Burmese)
+LOCATION:15110 kHz shortwave
+DESCRIPTION:BBC on 15110 kHz\, Burmese\, beamed to SE Asia. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Dari)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Pashto)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Dari)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Pashto)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Dari)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15310-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15310 kHz (Pashto)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:BBC on 15310 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15400-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15400 kHz (English)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:BBC on 15400 kHz\, English\, beamed to W. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15420-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15420 kHz (SO)
+LOCATION:15420 kHz shortwave
+DESCRIPTION:BBC on 15420 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15420-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15420 kHz (English)
+LOCATION:15420 kHz shortwave
+DESCRIPTION:BBC on 15420 kHz\, English\, beamed to CAf. Schedule from EIBI 
+ B-26 (valid until the A-27 season change). Times can change\; check https:
+ //hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15420-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15420 kHz (English)
+LOCATION:15420 kHz shortwave
+DESCRIPTION:BBC on 15420 kHz\, English\, beamed to CAf. Schedule from EIBI 
+ B-26 (valid until the A-27 season change). Times can change\; check https:
+ //hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15440-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15440 kHz (Hausa)
+LOCATION:15440 kHz shortwave
+DESCRIPTION:BBC on 15440 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15490-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15490 kHz (English)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:BBC on 15490 kHz\, English\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15490-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T072900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15490 kHz (French)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:BBC on 15490 kHz\, French\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15490-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15490 kHz (French)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:BBC on 15490 kHz\, French\, beamed to W. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (KNK)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (Amharic)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, Amharic\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1750@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T175000Z
+DTEND:20261025T181000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (Oromo)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, Oromo\, beamed to E. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1810@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T181000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (TIG)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, TIG\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T185000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (Amharic)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, Amharic\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1850@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T185000Z
+DTEND:20261025T191000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (Oromo)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, Oromo\, beamed to E. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-15685-1910@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T191000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 15685 kHz (TIG)
+LOCATION:15685 kHz shortwave
+DESCRIPTION:BBC on 15685 kHz\, TIG\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17640-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17640 kHz (French)
+LOCATION:17640 kHz shortwave
+DESCRIPTION:BBC on 17640 kHz\, French\, beamed to W. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17670-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17670 kHz (Hausa)
+LOCATION:17670 kHz shortwave
+DESCRIPTION:BBC on 17670 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17690-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17690 kHz (English)
+LOCATION:17690 kHz shortwave
+DESCRIPTION:BBC on 17690 kHz\, English\, beamed to E. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17690-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17690 kHz (Hausa)
+LOCATION:17690 kHz shortwave
+DESCRIPTION:BBC on 17690 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17700-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17700 kHz (English)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:BBC on 17700 kHz\, English\, beamed to CAf. Schedule from EIBI 
+ B-26 (valid until the A-27 season change). Times can change\; check https:
+ //hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17700-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17700 kHz (KNK)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:BBC on 17700 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17745-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17745 kHz (SO)
+LOCATION:17745 kHz shortwave
+DESCRIPTION:BBC on 17745 kHz\, SO\, beamed to E. Africa. Schedule from EIBI
+  B-26 (valid until the A-27 season change). Times can change\; check https
+ ://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17750-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17750 kHz (KNK)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:BBC on 17750 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17750-0529@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052900Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17750 kHz (KNK)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:BBC on 17750 kHz\, KNK\, beamed to E. Africa. Schedule from EIB
+ I B-26 (valid until the A-27 season change). Times can change\; check http
+ s://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17780-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17780 kHz (English)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:BBC on 17780 kHz\, English\, beamed to W. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17780-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17780 kHz (English)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:BBC on 17780 kHz\, English\, beamed to W. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17780-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17780 kHz (English)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:BBC on 17780 kHz\, English\, beamed to W. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Dari)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Pashto)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Arabic)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Arabic\, beamed to E. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Dari)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Pashto)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Dari)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Dari\, beamed to Afghanistan. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-17810-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 17810 kHz (Pashto)
+LOCATION:17810 kHz shortwave
+DESCRIPTION:BBC on 17810 kHz\, Pashto\, beamed to Afghanistan. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21470-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21470 kHz (Hausa)
+LOCATION:21470 kHz shortwave
+DESCRIPTION:BBC on 21470 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21500-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21500 kHz (French)
+LOCATION:21500 kHz shortwave
+DESCRIPTION:BBC on 21500 kHz\, French\, beamed to N. Africa. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21520-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21520 kHz (French)
+LOCATION:21520 kHz shortwave
+DESCRIPTION:BBC on 21520 kHz\, French\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21565-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21565 kHz (English)
+LOCATION:21565 kHz shortwave
+DESCRIPTION:BBC on 21565 kHz\, English\, beamed to Indonesia. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21630-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21630 kHz (Hausa)
+LOCATION:21630 kHz shortwave
+DESCRIPTION:BBC on 21630 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21630-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21630 kHz (Hausa)
+LOCATION:21630 kHz shortwave
+DESCRIPTION:BBC on 21630 kHz\, Hausa\, beamed to W. Africa. Schedule from E
+ IBI B-26 (valid until the A-27 season change). Times can change\; check ht
+ tps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+BEGIN:VEVENT
+UID:bbc-21630-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 21630 kHz (English)
+LOCATION:21630 kHz shortwave
+DESCRIPTION:BBC on 21630 kHz\, English\, beamed to W. Africa. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+END:VEVENT
+END:VCALENDAR

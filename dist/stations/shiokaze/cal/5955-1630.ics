@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Shiokaze 5955 kHz 16:30 UTC
+BEGIN:VEVENT
+UID:shiokaze-5955-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 5955 kHz (Korean)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Shiokaze on 5955 kHz\, Korean\, beamed to Korea. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Shiokaze on 5955 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

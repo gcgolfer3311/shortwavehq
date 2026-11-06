@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Europa24 shortwave (B-26)
+BEGIN:VEVENT
+UID:europa24-6150-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Europa24 on 6150 kHz (German)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Europa24 on 6150 kHz\, German\, beamed to Europe. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/europa24/
+URL:https://hqshortwaveradio.com/stations/europa24/
+END:VEVENT
+BEGIN:VEVENT
+UID:europa24-6150-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Europa24 on 6150 kHz (German)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Europa24 on 6150 kHz\, German\, beamed to Europe. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/europa24/
+URL:https://hqshortwaveradio.com/stations/europa24/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,203 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Yunnan Minority Service shortwave (B-26)
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T011500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (TL)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, TL\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (TN)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, TN\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T024500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (KC)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, KC\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-0245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T024500Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (Mandarin)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minor
+ ity-service/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (Music)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, Music\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority
+ -service/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (TN)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, TN\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (KC)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, KC\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (LIS)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, LIS\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-s
+ ervice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T131500Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (TL)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, TL\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-se
+ rvice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T144500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (LAH)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, LAH\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-s
+ ervice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (Mandarin)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minor
+ ity-service/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-2245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T224500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (Music)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, Music\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority
+ -service/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T234500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (LAH)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, LAH\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-s
+ ervice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (LIS)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, LIS\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-s
+ ervice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+END:VEVENT
+END:VCALENDAR

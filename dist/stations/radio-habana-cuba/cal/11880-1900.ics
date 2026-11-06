@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Habana Cuba 11880 kHz 19:00 UTC
+BEGIN:VEVENT
+UID:radio-habana-cuba-11880-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Habana Cuba on 11880 kHz (French)
+LOCATION:11880 kHz shortwave
+DESCRIPTION:Radio Habana Cuba on 11880 kHz\, French\, beamed to Central Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-habana-cuba
+ /
+URL:https://hqshortwaveradio.com/stations/radio-habana-cuba/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Habana Cuba on 11880 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

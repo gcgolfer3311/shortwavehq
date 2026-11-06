@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio France International 21615 kHz 12:00 UTC
+BEGIN:VEVENT
+UID:radio-france-international-21615-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21615 kHz (MAN)
+LOCATION:21615 kHz shortwave
+DESCRIPTION:Radio France International on 21615 kHz\, MAN\, beamed to W. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-france-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio France International on 21615 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

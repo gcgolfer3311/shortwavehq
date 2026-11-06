@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Turkey 9660 kHz 17:30 UTC
+BEGIN:VEVENT
+UID:voice-of-turkey-9660-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9660 kHz (English)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9660 kHz\, English\, beamed to NIn. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Turkey on 9660 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

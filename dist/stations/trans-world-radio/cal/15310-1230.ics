@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trans World Radio 15310 kHz 12:30 UTC
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (YUN)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, YUN\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Trans World Radio on 15310 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

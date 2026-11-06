@@ -1,0 +1,1346 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of America shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-america-4930-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 4930 kHz (English)
+LOCATION:4930 kHz shortwave
+DESCRIPTION:Voice of America on 4930 kHz\, English\, beamed to S. Africa. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-4930-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 4930 kHz (English)
+LOCATION:4930 kHz shortwave
+DESCRIPTION:Voice of America on 4930 kHz\, English\, beamed to S. Africa. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-5860-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 5860 kHz (English)
+LOCATION:5860 kHz shortwave
+DESCRIPTION:Voice of America on 5860 kHz\, English\, beamed to N. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-5870-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 5870 kHz (Mandarin)
+LOCATION:5870 kHz shortwave
+DESCRIPTION:Voice of America on 5870 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-5880-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 5880 kHz (Mandarin)
+LOCATION:5880 kHz shortwave
+DESCRIPTION:Voice of America on 5880 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-5940-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 5940 kHz (English)
+LOCATION:5940 kHz shortwave
+DESCRIPTION:Voice of America on 5940 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-6085-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 6085 kHz (English)
+LOCATION:6085 kHz shortwave
+DESCRIPTION:Voice of America on 6085 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-6090-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 6090 kHz (English)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:Voice of America on 6090 kHz\, English\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7360-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7360 kHz (Tibetan)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Voice of America on 7360 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7380-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7380 kHz (English)
+LOCATION:7380 kHz shortwave
+DESCRIPTION:Voice of America on 7380 kHz\, English\, beamed to N. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7390-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7390 kHz (English)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:Voice of America on 7390 kHz\, English\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7480-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7480 kHz (Mandarin)
+LOCATION:7480 kHz shortwave
+DESCRIPTION:Voice of America on 7480 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7495-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7495 kHz (Farsi)
+LOCATION:7495 kHz shortwave
+DESCRIPTION:Voice of America on 7495 kHz\, Farsi\, beamed to Iran. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7500-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7500 kHz (Korean)
+LOCATION:7500 kHz shortwave
+DESCRIPTION:Voice of America on 7500 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-7500-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7500 kHz (Korean)
+LOCATION:7500 kHz shortwave
+DESCRIPTION:Voice of America on 7500 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9350-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9350 kHz (Mandarin)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:Voice of America on 9350 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9350-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9350 kHz (Dari)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:Voice of America on 9350 kHz\, Dari\, beamed to Afghanistan. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9350-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9350 kHz (Pashto)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:Voice of America on 9350 kHz\, Pashto\, beamed to Afghanistan. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9355-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9355 kHz (Mandarin)
+LOCATION:9355 kHz shortwave
+DESCRIPTION:Voice of America on 9355 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9355-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9355 kHz (Mandarin)
+LOCATION:9355 kHz shortwave
+DESCRIPTION:Voice of America on 9355 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9365-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9365 kHz (Mandarin)
+LOCATION:9365 kHz shortwave
+DESCRIPTION:Voice of America on 9365 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9370-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9370 kHz (Tibetan)
+LOCATION:9370 kHz shortwave
+DESCRIPTION:Voice of America on 9370 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9380-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9380 kHz (Mandarin)
+LOCATION:9380 kHz shortwave
+DESCRIPTION:Voice of America on 9380 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9420-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9420 kHz (English)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:Voice of America on 9420 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9420-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9420 kHz (English)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:Voice of America on 9420 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9560-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9560 kHz (Tibetan)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:Voice of America on 9560 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9720-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9720 kHz (Tibetan)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:Voice of America on 9720 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9820-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9820 kHz (Tibetan)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:Voice of America on 9820 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9880-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9880 kHz (Mandarin)
+LOCATION:9880 kHz shortwave
+DESCRIPTION:Voice of America on 9880 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9900-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:Voice of America on 9900 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9900-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:Voice of America on 9900 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9950-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9950 kHz (English)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:Voice of America on 9950 kHz\, English\, beamed to N. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9950-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9950 kHz (Mandarin)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:Voice of America on 9950 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9950-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9950 kHz (Korean)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:Voice of America on 9950 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9950-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9950 kHz (Korean)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:Voice of America on 9950 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-9990-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 9990 kHz (Tibetan)
+LOCATION:9990 kHz shortwave
+DESCRIPTION:Voice of America on 9990 kHz\, Tibetan\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11560-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11560 kHz (Korean)
+LOCATION:11560 kHz shortwave
+DESCRIPTION:Voice of America on 11560 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11570-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11570 kHz (Mandarin)
+LOCATION:11570 kHz shortwave
+DESCRIPTION:Voice of America on 11570 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11570-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11570 kHz (Tibetan)
+LOCATION:11570 kHz shortwave
+DESCRIPTION:Voice of America on 11570 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11575-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11575 kHz (English)
+LOCATION:11575 kHz shortwave
+DESCRIPTION:Voice of America on 11575 kHz\, English\, beamed to Philippines
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11620-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:Voice of America on 11620 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11620-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:Voice of America on 11620 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11650-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11650 kHz (Mandarin)
+LOCATION:11650 kHz shortwave
+DESCRIPTION:Voice of America on 11650 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11660-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11660 kHz (Mandarin)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Voice of America on 11660 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11700-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11700 kHz (Tibetan)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Voice of America on 11700 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11720-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11720 kHz (Dari)
+LOCATION:11720 kHz shortwave
+DESCRIPTION:Voice of America on 11720 kHz\, Dari\, beamed to Afghanistan. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11720-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11720 kHz (Pashto)
+LOCATION:11720 kHz shortwave
+DESCRIPTION:Voice of America on 11720 kHz\, Pashto\, beamed to Afghanistan.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11740-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11740 kHz (English)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:Voice of America on 11740 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11740-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11740 kHz (English)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:Voice of America on 11740 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11830-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11830 kHz (Tibetan)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:Voice of America on 11830 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11830-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11830 kHz (Tibetan)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:Voice of America on 11830 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11850-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11850 kHz (Tibetan)
+LOCATION:11850 kHz shortwave
+DESCRIPTION:Voice of America on 11850 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11875-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11875 kHz (Tibetan)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:Voice of America on 11875 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-11900-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 11900 kHz (Mandarin)
+LOCATION:11900 kHz shortwave
+DESCRIPTION:Voice of America on 11900 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12020-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12020 kHz (Mandarin)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of America on 12020 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12035-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12035 kHz (English)
+LOCATION:12035 kHz shortwave
+DESCRIPTION:Voice of America on 12035 kHz\, English\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12040-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12040 kHz (English)
+LOCATION:12040 kHz shortwave
+DESCRIPTION:Voice of America on 12040 kHz\, English\, beamed to E. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12080-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:Voice of America on 12080 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12105-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12105 kHz (Tibetan)
+LOCATION:12105 kHz shortwave
+DESCRIPTION:Voice of America on 12105 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12120-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12120 kHz (Mandarin)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:Voice of America on 12120 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-12130-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 12130 kHz (Korean)
+LOCATION:12130 kHz shortwave
+DESCRIPTION:Voice of America on 12130 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13575-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13575 kHz (Tibetan)
+LOCATION:13575 kHz shortwave
+DESCRIPTION:Voice of America on 13575 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13600-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13600 kHz (English)
+LOCATION:13600 kHz shortwave
+DESCRIPTION:Voice of America on 13600 kHz\, English\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13690-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13690 kHz (Mandarin)
+LOCATION:13690 kHz shortwave
+DESCRIPTION:Voice of America on 13690 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13710-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13710 kHz (English)
+LOCATION:13710 kHz shortwave
+DESCRIPTION:Voice of America on 13710 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13710-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13710 kHz (English)
+LOCATION:13710 kHz shortwave
+DESCRIPTION:Voice of America on 13710 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13710-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13710 kHz (English)
+LOCATION:13710 kHz shortwave
+DESCRIPTION:Voice of America on 13710 kHz\, English\, beamed to Middle East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13745-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13745 kHz (Tibetan)
+LOCATION:13745 kHz shortwave
+DESCRIPTION:Voice of America on 13745 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13840-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13840 kHz (Tibetan)
+LOCATION:13840 kHz shortwave
+DESCRIPTION:Voice of America on 13840 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-13840-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 13840 kHz (Tibetan)
+LOCATION:13840 kHz shortwave
+DESCRIPTION:Voice of America on 13840 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15125-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15125 kHz (Mandarin)
+LOCATION:15125 kHz shortwave
+DESCRIPTION:Voice of America on 15125 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15170-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15170 kHz (English)
+LOCATION:15170 kHz shortwave
+DESCRIPTION:Voice of America on 15170 kHz\, English\, beamed to Afghanistan
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15205-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15205 kHz (English)
+LOCATION:15205 kHz shortwave
+DESCRIPTION:Voice of America on 15205 kHz\, English\, beamed to Afghanistan
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15210-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15210 kHz (Korean)
+LOCATION:15210 kHz shortwave
+DESCRIPTION:Voice of America on 15210 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15215-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15215 kHz (Tibetan)
+LOCATION:15215 kHz shortwave
+DESCRIPTION:Voice of America on 15215 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15225-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15225 kHz (Mandarin)
+LOCATION:15225 kHz shortwave
+DESCRIPTION:Voice of America on 15225 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15300-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15300 kHz (English)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Voice of America on 15300 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15300-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15300 kHz (English)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Voice of America on 15300 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15425-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15425 kHz (Mandarin)
+LOCATION:15425 kHz shortwave
+DESCRIPTION:Voice of America on 15425 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15455-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15455 kHz (Tibetan)
+LOCATION:15455 kHz shortwave
+DESCRIPTION:Voice of America on 15455 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15610-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15610 kHz (English)
+LOCATION:15610 kHz shortwave
+DESCRIPTION:Voice of America on 15610 kHz\, English\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15660-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15660 kHz (English)
+LOCATION:15660 kHz shortwave
+DESCRIPTION:Voice of America on 15660 kHz\, English\, beamed to Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15690-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15690 kHz (English)
+LOCATION:15690 kHz shortwave
+DESCRIPTION:Voice of America on 15690 kHz\, English\, beamed to N. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-15690-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15690 kHz (Mandarin)
+LOCATION:15690 kHz shortwave
+DESCRIPTION:Voice of America on 15690 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17520-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17520 kHz (Korean)
+LOCATION:17520 kHz shortwave
+DESCRIPTION:Voice of America on 17520 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17520-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17520 kHz (Korean)
+LOCATION:17520 kHz shortwave
+DESCRIPTION:Voice of America on 17520 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17530-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17530 kHz (Korean)
+LOCATION:17530 kHz shortwave
+DESCRIPTION:Voice of America on 17530 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17590-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17590 kHz (Mandarin)
+LOCATION:17590 kHz shortwave
+DESCRIPTION:Voice of America on 17590 kHz\, Mandarin\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17630-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17630 kHz (English)
+LOCATION:17630 kHz shortwave
+DESCRIPTION:Voice of America on 17630 kHz\, English\, beamed to Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17750-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17750 kHz (English)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:Voice of America on 17750 kHz\, English\, beamed to Middle East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17750-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17750 kHz (English)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:Voice of America on 17750 kHz\, English\, beamed to Middle East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17850-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17850 kHz (English)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Voice of America on 17850 kHz\, English\, beamed to South Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17870-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17870 kHz (English)
+LOCATION:17870 kHz shortwave
+DESCRIPTION:Voice of America on 17870 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17880-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17880 kHz (Tibetan)
+LOCATION:17880 kHz shortwave
+DESCRIPTION:Voice of America on 17880 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-17880-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 17880 kHz (English)
+LOCATION:17880 kHz shortwave
+DESCRIPTION:Voice of America on 17880 kHz\, English\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21520-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21520 kHz (Tibetan)
+LOCATION:21520 kHz shortwave
+DESCRIPTION:Voice of America on 21520 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21565-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21565 kHz (English)
+LOCATION:21565 kHz shortwave
+DESCRIPTION:Voice of America on 21565 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21620-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21620 kHz (Tibetan)
+LOCATION:21620 kHz shortwave
+DESCRIPTION:Voice of America on 21620 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21650-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21650 kHz (Tibetan)
+LOCATION:21650 kHz shortwave
+DESCRIPTION:Voice of America on 21650 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21700-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21700 kHz (English)
+LOCATION:21700 kHz shortwave
+DESCRIPTION:Voice of America on 21700 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21700-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21700 kHz (English)
+LOCATION:21700 kHz shortwave
+DESCRIPTION:Voice of America on 21700 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21750-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21750 kHz (Tibetan)
+LOCATION:21750 kHz shortwave
+DESCRIPTION:Voice of America on 21750 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-america-21760-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21760 kHz (Tibetan)
+LOCATION:21760 kHz shortwave
+DESCRIPTION:Voice of America on 21760 kHz\, Tibetan\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+END:VEVENT
+END:VCALENDAR

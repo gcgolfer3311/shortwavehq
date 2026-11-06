@@ -1,0 +1,332 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bible Voice shortwave (B-26)
+BEGIN:VEVENT
+UID:bible-voice-5900-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 5900 kHz (Arabic)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:Bible Voice on 5900 kHz\, Arabic\, beamed to Middle East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-5935-1915@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T191500Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 5935 kHz (English)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Bible Voice on 5935 kHz\, English\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-6150-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 6150 kHz (Spanish)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Bible Voice on 6150 kHz\, Spanish\, beamed to Spain. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-7295-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 7295 kHz (Farsi)
+LOCATION:7295 kHz shortwave
+DESCRIPTION:Bible Voice on 7295 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9340-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9340 kHz (English)
+LOCATION:9340 kHz shortwave
+DESCRIPTION:Bible Voice on 9340 kHz\, English\, beamed to Far East. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9340-1315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T131500Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9340 kHz (Korean)
+LOCATION:9340 kHz shortwave
+DESCRIPTION:Bible Voice on 9340 kHz\, Korean\, beamed to Far East. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9380-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9380 kHz (Russian)
+LOCATION:9380 kHz shortwave
+DESCRIPTION:Bible Voice on 9380 kHz\, Russian\, beamed to E. Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9380-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9380 kHz (UD)
+LOCATION:9380 kHz shortwave
+DESCRIPTION:Bible Voice on 9380 kHz\, UD\, beamed to E. Europe. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9400-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9400 kHz (Farsi)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:Bible Voice on 9400 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9440-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T061500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9440 kHz (Arabic)
+LOCATION:9440 kHz shortwave
+DESCRIPTION:Bible Voice on 9440 kHz\, Arabic\, beamed to N. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9450-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T051500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9450 kHz (Arabic)
+LOCATION:9450 kHz shortwave
+DESCRIPTION:Bible Voice on 9450 kHz\, Arabic\, beamed to Middle East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9490-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T174500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9490 kHz (Arabic)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Bible Voice on 9490 kHz\, Arabic\, beamed to Middle East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9585-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T181500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9585 kHz (English)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Bible Voice on 9585 kHz\, English\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9585-1715@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T171500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9585 kHz (English)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Bible Voice on 9585 kHz\, English\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9620-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9620 kHz (English)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:Bible Voice on 9620 kHz\, English\, beamed to Far East. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-9620-1315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T131500Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9620 kHz (Korean)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:Bible Voice on 9620 kHz\, Korean\, beamed to Far East. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-11600-1545@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T154500Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 11600 kHz (Arabic)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:Bible Voice on 11600 kHz\, Arabic\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-11600-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T161500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 11600 kHz (Arabic)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:Bible Voice on 11600 kHz\, Arabic\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-15210-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 15210 kHz (Indonesian)
+LOCATION:15210 kHz shortwave
+DESCRIPTION:Bible Voice on 15210 kHz\, Indonesian\, beamed to Indonesia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-15310-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 15310 kHz (Oromo)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Bible Voice on 15310 kHz\, Oromo\, beamed to E. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-15310-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 15310 kHz (SO)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Bible Voice on 15310 kHz\, SO\, beamed to E. Africa. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-15310-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 15310 kHz (Amharic)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Bible Voice on 15310 kHz\, Amharic\, beamed to E. Africa. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-15310-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 15310 kHz (KUN)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Bible Voice on 15310 kHz\, KUN\, beamed to E. Africa. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-17550-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 17550 kHz (NU)
+LOCATION:17550 kHz shortwave
+DESCRIPTION:Bible Voice on 17550 kHz\, NU\, beamed to E. Africa. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+BEGIN:VEVENT
+UID:bible-voice-17650-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 17650 kHz (English)
+LOCATION:17650 kHz shortwave
+DESCRIPTION:Bible Voice on 17650 kHz\, English\, beamed to South Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+END:VEVENT
+END:VCALENDAR

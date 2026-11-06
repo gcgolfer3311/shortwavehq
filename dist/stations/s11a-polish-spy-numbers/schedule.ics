@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:S11a Polish Spy Numbers shortwave (B-26)
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-6252-0915@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T091500Z
+DTEND:20261025T092500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 6252 kHz (Russian)
+LOCATION:6252 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 6252 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-6814-0915@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T091500Z
+DTEND:20261025T092500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 6814 kHz (Russian)
+LOCATION:6814 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 6814 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-9339-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T071000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 9339 kHz (Russian)
+LOCATION:9339 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 9339 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-9448-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T141000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 9448 kHz (Russian)
+LOCATION:9448 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 9448 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-9968-0445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T044500Z
+DTEND:20261025T045500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 9968 kHz (Russian)
+LOCATION:9968 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 9968 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-11559-0445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T044500Z
+DTEND:20261025T045500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 11559 kHz (Russian)
+LOCATION:11559 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 11559 kHz\, Russian\, beamed to Worl
+ dwide. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-
+ numbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-21854-0725@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T072500Z
+DTEND:20261025T073500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 21854 kHz (Russian)
+LOCATION:21854 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 21854 kHz\, Russian\, beamed to Worl
+ dwide. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-
+ numbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+END:VEVENT
+END:VCALENDAR

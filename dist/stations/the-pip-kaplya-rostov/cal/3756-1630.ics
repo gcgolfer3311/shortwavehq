@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Pip (Kaplya) Rostov 3756 kHz 16:30 UTC
+BEGIN:VEVENT
+UID:the-pip-kaplya-rostov-3756-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261026T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:The Pip (Kaplya) Rostov on 3756 kHz (Time Signal)
+LOCATION:3756 kHz shortwave
+DESCRIPTION:The Pip (Kaplya) Rostov on 3756 kHz\, Time Signal\, beamed to E
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/the-pip-kaply
+ a-rostov/
+URL:https://hqshortwaveradio.com/stations/the-pip-kaplya-rostov/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:The Pip (Kaplya) Rostov on 3756 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

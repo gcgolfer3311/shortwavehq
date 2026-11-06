@@ -1,0 +1,1695 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR1 Jammer/Firedrake shortwave (B-26)
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-4790-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 4790 kHz (Mandarin)
+LOCATION:4790 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 4790 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-5870-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 5870 kHz (Mandarin)
+LOCATION:5870 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 5870 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-5880-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 5880 kHz (Mandarin)
+LOCATION:5880 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 5880 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-5900-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 5900 kHz (Mandarin)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 5900 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-6150-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 6150 kHz (Mandarin)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 6150 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-6180-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 6180 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7270-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7270 kHz (Mandarin)
+LOCATION:7270 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7270 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7270-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7270 kHz (Mandarin)
+LOCATION:7270 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7270 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7300-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7300 kHz (Mandarin)
+LOCATION:7300 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7300 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7360-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7360 kHz (Mandarin)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7360 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7430-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7430 kHz (Mandarin)
+LOCATION:7430 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7430 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7460-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7460 kHz (Mandarin)
+LOCATION:7460 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7460 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-7480-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 7480 kHz (Mandarin)
+LOCATION:7480 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 7480 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9300-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9300 kHz (Mandarin)
+LOCATION:9300 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9300 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9320-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9320 kHz (Mandarin)
+LOCATION:9320 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9320 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9340-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9340 kHz (Mandarin)
+LOCATION:9340 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9340 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9350-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9350 kHz (Mandarin)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9350 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9355-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9355 kHz (Mandarin)
+LOCATION:9355 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9355 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9355-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9355 kHz (Mandarin)
+LOCATION:9355 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9355 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9365-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9365 kHz (Mandarin)
+LOCATION:9365 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9365 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9370-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9370 kHz (Mandarin)
+LOCATION:9370 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9370 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9380-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9380 kHz (Mandarin)
+LOCATION:9380 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9380 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9490-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9490 kHz (Mandarin)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9490 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9540-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9540 kHz (Mandarin)
+LOCATION:9540 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9540 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9555-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9555 kHz (Mandarin)
+LOCATION:9555 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9555 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9560-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9560 kHz (Mandarin)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9560 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9595-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9595 kHz (Mandarin)
+LOCATION:9595 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9595 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9610-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9610 kHz (Mandarin)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9610 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9635-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9635 kHz (Mandarin)
+LOCATION:9635 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9635 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9660-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9660 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9680-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9680 kHz (Mandarin)
+LOCATION:9680 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9680 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9720-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9720 kHz (Mandarin)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9720 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9735-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9735 kHz (Mandarin)
+LOCATION:9735 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9735 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9765-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T121500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9765 kHz (Mandarin)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9765 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9820-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9820 kHz (Mandarin)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9820 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9850-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9850 kHz (Mandarin)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9850 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9860-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T121500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9860 kHz (Mandarin)
+LOCATION:9860 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9860 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9880-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9880 kHz (Mandarin)
+LOCATION:9880 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9880 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9885-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9885 kHz (Mandarin)
+LOCATION:9885 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9885 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9900-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9900 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9900-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9900 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9900-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9900 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9940-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9940 kHz (Mandarin)
+LOCATION:9940 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9940 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9950-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9950 kHz (Mandarin)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9950 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9970-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9970 kHz (Mandarin)
+LOCATION:9970 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9970 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9990-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9990 kHz (Mandarin)
+LOCATION:9990 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9990 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedra
+ ke/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11570-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11570 kHz (Mandarin)
+LOCATION:11570 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11570 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11570-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11570 kHz (Mandarin)
+LOCATION:11570 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11570 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11580-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11580 kHz (Mandarin)
+LOCATION:11580 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11580 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11600-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11600 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11620-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11620 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11620-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11620 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11650-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11650 kHz (Mandarin)
+LOCATION:11650 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11650 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11660-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11660 kHz (Mandarin)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11660 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11700-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11700 kHz (Mandarin)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11700 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11710-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11710 kHz (Mandarin)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11710 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11715-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11715 kHz (Mandarin)
+LOCATION:11715 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11715 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11730-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11730 kHz (Mandarin)
+LOCATION:11730 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11730 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11775-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11775 kHz (Mandarin)
+LOCATION:11775 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11775 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11815-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11815 kHz (Mandarin)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11815 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11815-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11815 kHz (Mandarin)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11815 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11830-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11830 kHz (Mandarin)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11830 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11830-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11830 kHz (Mandarin)
+LOCATION:11830 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11830 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11850-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11850 kHz (Mandarin)
+LOCATION:11850 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11850 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11865-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T121500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11865 kHz (Mandarin)
+LOCATION:11865 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11865 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11875-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11875 kHz (Mandarin)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11875 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11885-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11885 kHz (Mandarin)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11885 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11900-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11900 kHz (Mandarin)
+LOCATION:11900 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11900 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11975-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11975 kHz (Mandarin)
+LOCATION:11975 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11975 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-11990-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 11990 kHz (Mandarin)
+LOCATION:11990 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 11990 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12020-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12020 kHz (Mandarin)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12020 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12065-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12065 kHz (Mandarin)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12065 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12080-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12080 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12105-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12105 kHz (Mandarin)
+LOCATION:12105 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12105 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12120-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12120 kHz (Mandarin)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12120 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-12150-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 12150 kHz (Mandarin)
+LOCATION:12150 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 12150 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13575-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13575 kHz (Mandarin)
+LOCATION:13575 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13575 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13590-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13590 kHz (Mandarin)
+LOCATION:13590 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13590 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13630-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13630 kHz (Mandarin)
+LOCATION:13630 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13630 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13640-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13640 kHz (Mandarin)
+LOCATION:13640 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13640 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13670-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13670 kHz (Mandarin)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13670 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13680-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13680 kHz (Mandarin)
+LOCATION:13680 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13680 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13690-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13690 kHz (Mandarin)
+LOCATION:13690 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13690 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13730-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13730 kHz (Mandarin)
+LOCATION:13730 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13730 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13745-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13745 kHz (Mandarin)
+LOCATION:13745 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13745 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13790-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13790 kHz (Mandarin)
+LOCATION:13790 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13790 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13805-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13805 kHz (Mandarin)
+LOCATION:13805 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13805 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13825-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13825 kHz (Mandarin)
+LOCATION:13825 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13825 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13840-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13840 kHz (Mandarin)
+LOCATION:13840 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13840 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13840-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13840 kHz (Mandarin)
+LOCATION:13840 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13840 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13840-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13840 kHz (Mandarin)
+LOCATION:13840 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13840 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13870-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13870 kHz (Mandarin)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13870 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-13890-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 13890 kHz (Mandarin)
+LOCATION:13890 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 13890 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15125-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15125 kHz (Mandarin)
+LOCATION:15125 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15125 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15215-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15215 kHz (Mandarin)
+LOCATION:15215 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15215 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15280-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15280 kHz (Mandarin)
+LOCATION:15280 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15280 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15360-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15360 kHz (Mandarin)
+LOCATION:15360 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15360 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15410-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15410 kHz (Mandarin)
+LOCATION:15410 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15410 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15410-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15410 kHz (Mandarin)
+LOCATION:15410 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15410 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15410-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T011500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15410 kHz (Mandarin)
+LOCATION:15410 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15410 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15425-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15425 kHz (Mandarin)
+LOCATION:15425 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15425 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15455-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15455 kHz (Mandarin)
+LOCATION:15455 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15455 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15580-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15580 kHz (Mandarin)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15580 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15690-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15690 kHz (Mandarin)
+LOCATION:15690 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15690 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15740-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15740 kHz (Mandarin)
+LOCATION:15740 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15740 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15775-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15775 kHz (Mandarin)
+LOCATION:15775 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15775 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-15800-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 15800 kHz (Mandarin)
+LOCATION:15800 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 15800 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-17780-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 17780 kHz (Mandarin)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 17780 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-17880-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 17880 kHz (Mandarin)
+LOCATION:17880 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 17880 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-18950-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 18950 kHz (Mandarin)
+LOCATION:18950 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 18950 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-18970-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 18970 kHz (Mandarin)
+LOCATION:18970 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 18970 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21520-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21520 kHz (Mandarin)
+LOCATION:21520 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21520 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21530-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21530 kHz (Mandarin)
+LOCATION:21530 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21530 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21550-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261026T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21550 kHz (Mandarin)
+LOCATION:21550 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21550 kHz\, Mandarin\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake
+ /
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21620-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21620 kHz (Mandarin)
+LOCATION:21620 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21620 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21630-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21630 kHz (Mandarin)
+LOCATION:21630 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21630 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21645-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21645 kHz (Mandarin)
+LOCATION:21645 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21645 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21650-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21650 kHz (Mandarin)
+LOCATION:21650 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21650 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21750-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21750 kHz (Mandarin)
+LOCATION:21750 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21750 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21760-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21760 kHz (Mandarin)
+LOCATION:21760 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21760 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-21780-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 21780 kHz (Mandarin)
+LOCATION:21780 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 21780 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedr
+ ake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+END:VEVENT
+END:VCALENDAR

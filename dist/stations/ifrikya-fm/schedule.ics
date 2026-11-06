@@ -1,0 +1,111 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ifrikya FM shortwave (B-26)
+BEGIN:VEVENT
+UID:ifrikya-fm-6020-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 6020 kHz (Arabic)
+LOCATION:6020 kHz shortwave
+DESCRIPTION:Ifrikya FM on 6020 kHz\, Arabic\, beamed to CAf. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-6040-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 6040 kHz (Arabic)
+LOCATION:6040 kHz shortwave
+DESCRIPTION:Ifrikya FM on 6040 kHz\, Arabic\, beamed to W. Africa. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-9500-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 9500 kHz (Arabic)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Ifrikya FM on 9500 kHz\, Arabic\, beamed to CAf. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-9700-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 9700 kHz (Arabic)
+LOCATION:9700 kHz shortwave
+DESCRIPTION:Ifrikya FM on 9700 kHz\, Arabic\, beamed to W. Africa. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-13640-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 13640 kHz (Arabic)
+LOCATION:13640 kHz shortwave
+DESCRIPTION:Ifrikya FM on 13640 kHz\, Arabic\, beamed to CAf. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-13855-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 13855 kHz (Arabic)
+LOCATION:13855 kHz shortwave
+DESCRIPTION:Ifrikya FM on 13855 kHz\, Arabic\, beamed to W. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-15140-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 15140 kHz (Arabic)
+LOCATION:15140 kHz shortwave
+DESCRIPTION:Ifrikya FM on 15140 kHz\, Arabic\, beamed to W. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:ifrikya-fm-17600-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Ifrikya FM on 17600 kHz (Arabic)
+LOCATION:17600 kHz shortwave
+DESCRIPTION:Ifrikya FM on 17600 kHz\, Arabic\, beamed to CAf. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/ifrikya-fm/
+URL:https://hqshortwaveradio.com/stations/ifrikya-fm/
+END:VEVENT
+END:VCALENDAR

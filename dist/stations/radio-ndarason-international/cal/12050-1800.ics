@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Ndarason International 12050 kHz 18:00 UTC
+BEGIN:VEVENT
+UID:radio-ndarason-international-12050-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Ndarason International on 12050 kHz (KNU)
+LOCATION:12050 kHz shortwave
+DESCRIPTION:Radio Ndarason International on 12050 kHz\, KNU\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-ndarason-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-ndarason-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Ndarason International on 12050 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

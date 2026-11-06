@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HCJB Voice of Andes 6050 kHz 02:35 UTC
+BEGIN:VEVENT
+UID:hcjb-voice-of-andes-6050-0235@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023500Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:HCJB Voice of Andes on 6050 kHz (Spanish)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz\, Spanish\, beamed to South Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/hcjb-voice-of-and
+ es/
+URL:https://hqshortwaveradio.com/stations/hcjb-voice-of-andes/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:HCJB Voice of Andes on 6050 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

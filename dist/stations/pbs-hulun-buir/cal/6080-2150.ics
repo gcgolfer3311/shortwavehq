@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Hulun Buir 6080 kHz 21:50 UTC
+BEGIN:VEVENT
+UID:pbs-hulun-buir-6080-2150@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215000Z
+DTEND:20261026T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Hulun Buir on 6080 kHz (Mongolian)
+LOCATION:6080 kHz shortwave
+DESCRIPTION:PBS Hulun Buir on 6080 kHz\, Mongolian\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/pbs-hulun-buir/
+URL:https://hqshortwaveradio.com/stations/pbs-hulun-buir/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Hulun Buir on 6080 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

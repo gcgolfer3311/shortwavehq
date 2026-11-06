@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBC Manila 9795 kHz 23:00 UTC
+BEGIN:VEVENT
+UID:febc-manila-9795-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9795 kHz (MON)
+LOCATION:9795 kHz shortwave
+DESCRIPTION:FEBC Manila on 9795 kHz\, MON\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FEBC Manila on 9795 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

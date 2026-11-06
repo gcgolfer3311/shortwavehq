@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Hunan 4990 kHz 03:00 UTC
+BEGIN:VEVENT
+UID:pbs-hunan-4990-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Hunan on 4990 kHz (Mandarin)
+LOCATION:4990 kHz shortwave
+DESCRIPTION:PBS Hunan on 4990 kHz\, Mandarin\, beamed to Far East. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/pbs-hunan/
+URL:https://hqshortwaveradio.com/stations/pbs-hunan/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Hunan on 4990 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

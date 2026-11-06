@@ -1,0 +1,805 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio France International shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-france-international-6120-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 6120 kHz (Hausa)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:Radio France International on 6120 kHz\, Hausa\, beamed to W. E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-7245-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 7245 kHz (Hausa)
+LOCATION:7245 kHz shortwave
+DESCRIPTION:Radio France International on 7245 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-7360-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 7360 kHz (French)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio France International on 7360 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-7390-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 7390 kHz (French)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:Radio France International on 7390 kHz\, French\, beamed to CAf
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/radio-france-internat
+ ional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-7390-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 7390 kHz (French)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:Radio France International on 7390 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9650-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9650 kHz (Vietnamese)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:Radio France International on 9650 kHz\, Vietnamese\, beamed to
+  SE Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-france-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9740-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9740 kHz (Swahili)
+LOCATION:9740 kHz shortwave
+DESCRIPTION:Radio France International on 9740 kHz\, Swahili\, beamed to E.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9750-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9750 kHz (French)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:Radio France International on 9750 kHz\, French\, beamed to CAf
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/radio-france-internat
+ ional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9760-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9760 kHz (Hausa)
+LOCATION:9760 kHz shortwave
+DESCRIPTION:Radio France International on 9760 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to E. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9790-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9790 kHz (French)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio France International on 9790 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-9805-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 9805 kHz (Hausa)
+LOCATION:9805 kHz shortwave
+DESCRIPTION:Radio France International on 9805 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to E.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11700-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11700 kHz (French)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio France International on 11700 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11760-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11760 kHz (Swahili)
+LOCATION:11760 kHz shortwave
+DESCRIPTION:Radio France International on 11760 kHz\, Swahili\, beamed to E
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-france-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11760-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11760 kHz (Hausa)
+LOCATION:11760 kHz shortwave
+DESCRIPTION:Radio France International on 11760 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11875-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11875 kHz (MAN)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:Radio France International on 11875 kHz\, MAN\, beamed to W. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-france-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-11995-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11995 kHz (French)
+LOCATION:11995 kHz shortwave
+DESCRIPTION:Radio France International on 11995 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-13710-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 13710 kHz (Fula)
+LOCATION:13710 kHz shortwave
+DESCRIPTION:Radio France International on 13710 kHz\, Fula\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-13740-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 13740 kHz (French)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Radio France International on 13740 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-13740-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 13740 kHz (Hausa)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Radio France International on 13740 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-13740-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 13740 kHz (French)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Radio France International on 13740 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-13740-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 13740 kHz (French)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Radio France International on 13740 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15300-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio France International on 15300 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15300-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio France International on 15300 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15300-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio France International on 15300 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15300-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio France International on 15300 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15300-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio France International on 15300 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15455-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T083000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15455 kHz (MAN)
+LOCATION:15455 kHz shortwave
+DESCRIPTION:Radio France International on 15455 kHz\, MAN\, beamed to W. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-france-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15470-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15470 kHz (MAN)
+LOCATION:15470 kHz shortwave
+DESCRIPTION:Radio France International on 15470 kHz\, MAN\, beamed to W. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-france-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-15470-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 15470 kHz (Fula)
+LOCATION:15470 kHz shortwave
+DESCRIPTION:Radio France International on 15470 kHz\, Fula\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17620-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17620 kHz (French)
+LOCATION:17620 kHz shortwave
+DESCRIPTION:Radio France International on 17620 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17620-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17620 kHz (French)
+LOCATION:17620 kHz shortwave
+DESCRIPTION:Radio France International on 17620 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17660-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17660 kHz (Fula)
+LOCATION:17660 kHz shortwave
+DESCRIPTION:Radio France International on 17660 kHz\, Fula\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17660-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17660 kHz (French)
+LOCATION:17660 kHz shortwave
+DESCRIPTION:Radio France International on 17660 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17850-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17850 kHz (French)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Radio France International on 17850 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17850-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17850 kHz (French)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Radio France International on 17850 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17850-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17850 kHz (French)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Radio France International on 17850 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17850-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17850 kHz (French)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Radio France International on 17850 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17850-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17850 kHz (French)
+LOCATION:17850 kHz shortwave
+DESCRIPTION:Radio France International on 17850 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-17860-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17860 kHz (Hausa)
+LOCATION:17860 kHz shortwave
+DESCRIPTION:Radio France International on 17860 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-france-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21580-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21580 kHz (French)
+LOCATION:21580 kHz shortwave
+DESCRIPTION:Radio France International on 21580 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21580-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21580 kHz (French)
+LOCATION:21580 kHz shortwave
+DESCRIPTION:Radio France International on 21580 kHz\, French\, beamed to W.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-france-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21580-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21580 kHz (French)
+LOCATION:21580 kHz shortwave
+DESCRIPTION:Radio France International on 21580 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21580-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21580 kHz (Fula)
+LOCATION:21580 kHz shortwave
+DESCRIPTION:Radio France International on 21580 kHz\, Fula\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21615-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21615 kHz (MAN)
+LOCATION:21615 kHz shortwave
+DESCRIPTION:Radio France International on 21615 kHz\, MAN\, beamed to W. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-france-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21680-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21680 kHz (French)
+LOCATION:21680 kHz shortwave
+DESCRIPTION:Radio France International on 21680 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21680-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21680 kHz (French)
+LOCATION:21680 kHz shortwave
+DESCRIPTION:Radio France International on 21680 kHz\, French\, beamed to CA
+ f. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-international-21680-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 21680 kHz (Swahili)
+LOCATION:21680 kHz shortwave
+DESCRIPTION:Radio France International on 21680 kHz\, Swahili\, beamed to E
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-france-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+END:VEVENT
+END:VCALENDAR

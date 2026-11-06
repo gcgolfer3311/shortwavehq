@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Adventist World Radio 15530 kHz 11:30 UTC
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (SHA)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, SHA\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Adventist World Radio on 15530 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

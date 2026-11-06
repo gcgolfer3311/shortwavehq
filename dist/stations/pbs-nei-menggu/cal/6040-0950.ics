@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Nei Menggu 6040 kHz 09:50 UTC
+BEGIN:VEVENT
+UID:pbs-nei-menggu-6040-0950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T095000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Nei Menggu on 6040 kHz (Mongolian)
+LOCATION:6040 kHz shortwave
+DESCRIPTION:PBS Nei Menggu on 6040 kHz\, Mongolian\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/pbs-nei-menggu/
+URL:https://hqshortwaveradio.com/stations/pbs-nei-menggu/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Nei Menggu on 6040 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

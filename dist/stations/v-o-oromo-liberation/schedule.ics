@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:V.o.Oromo Liberation shortwave (B-26)
+BEGIN:VEVENT
+UID:v-o-oromo-liberation-9610-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:V.o.Oromo Liberation on 9610 kHz (Oromo)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:V.o.Oromo Liberation on 9610 kHz\, Oromo\, beamed to E. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/v-o-oromo-liberation/
+URL:https://hqshortwaveradio.com/stations/v-o-oromo-liberation/
+END:VEVENT
+BEGIN:VEVENT
+UID:v-o-oromo-liberation-15420-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:V.o.Oromo Liberation on 15420 kHz (Oromo)
+LOCATION:15420 kHz shortwave
+DESCRIPTION:V.o.Oromo Liberation on 15420 kHz\, Oromo\, beamed to E. Africa
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/v-o-oromo-liberation/
+URL:https://hqshortwaveradio.com/stations/v-o-oromo-liberation/
+END:VEVENT
+END:VCALENDAR

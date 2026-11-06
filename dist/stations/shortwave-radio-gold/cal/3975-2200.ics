@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Shortwave Radio Gold 3975 kHz 22:00 UTC
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

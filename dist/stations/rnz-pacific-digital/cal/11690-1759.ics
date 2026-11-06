@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RNZ Pacific DIGITAL 11690 kHz 17:59 UTC
+BEGIN:VEVENT
+UID:rnz-pacific-digital-11690-1759@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T175900Z
+DTEND:20261025T195800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific DIGITAL on 11690 kHz (English)
+LOCATION:11690 kHz shortwave
+DESCRIPTION:RNZ Pacific DIGITAL on 11690 kHz\, English\, beamed to Pacific.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/rnz-pacific-digital/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RNZ Pacific DIGITAL on 11690 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

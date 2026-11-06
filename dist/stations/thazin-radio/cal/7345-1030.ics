@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Thazin Radio 7345 kHz 10:30 UTC
+BEGIN:VEVENT
+UID:thazin-radio-7345-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Thazin Radio on 7345 kHz (KOK)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Thazin Radio on 7345 kHz\, KOK\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/thazin-radio/
+URL:https://hqshortwaveradio.com/stations/thazin-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Thazin Radio on 7345 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio France International 11760 kHz 05:30 UTC
+BEGIN:VEVENT
+UID:radio-france-international-11760-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 11760 kHz (Swahili)
+LOCATION:11760 kHz shortwave
+DESCRIPTION:Radio France International on 11760 kHz\, Swahili\, beamed to E
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-france-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio France International on 11760 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

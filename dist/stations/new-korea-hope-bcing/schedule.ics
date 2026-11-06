@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:New Korea Hope Bcing shortwave (B-26)
+BEGIN:VEVENT
+UID:new-korea-hope-bcing-5900-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:New Korea Hope Bcing on 5900 kHz (Korean)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:New Korea Hope Bcing on 5900 kHz\, Korean\, beamed to Korea. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/new-korea-hope-bcing/
+URL:https://hqshortwaveradio.com/stations/new-korea-hope-bcing/
+END:VEVENT
+BEGIN:VEVENT
+UID:new-korea-hope-bcing-9445-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:New Korea Hope Bcing on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:New Korea Hope Bcing on 9445 kHz\, Korean\, beamed to Korea. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/new-korea-hope-bcing/
+URL:https://hqshortwaveradio.com/stations/new-korea-hope-bcing/
+END:VEVENT
+END:VCALENDAR

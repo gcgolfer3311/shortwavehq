@@ -1,0 +1,91 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Yunnan Radio International shortwave (B-26)
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-0946@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T094600Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Music)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Music\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/yunnan-radio-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Vietnamese)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Vietnamese\, beamed to
+  China. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Mandarin)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Mandarin)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Vietnamese)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Vietnamese\, beamed to
+  China. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Mandarin)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+END:VEVENT
+END:VCALENDAR

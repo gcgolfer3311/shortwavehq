@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Nikkei 2 6115 kHz 00:00 UTC
+BEGIN:VEVENT
+UID:radio-nikkei-2-6115-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Nikkei 2 on 6115 kHz (Japanese)
+LOCATION:6115 kHz shortwave
+DESCRIPTION:Radio Nikkei 2 on 6115 kHz\, Japanese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-nikkei-2/
+URL:https://hqshortwaveradio.com/stations/radio-nikkei-2/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Nikkei 2 on 6115 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RCW Compañía Worldwide shortwave (B-26)
+BEGIN:VEVENT
+UID:rcw-compa-a-worldwide-6925-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RCW Compañía Worldwide on 6925 kHz (Spanish)
+LOCATION:6925 kHz shortwave
+DESCRIPTION:RCW Compañía Worldwide on 6925 kHz\, Spanish\, beamed to CHL.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/rcw-compa-a-worldwide/
+URL:https://hqshortwaveradio.com/stations/rcw-compa-a-worldwide/
+END:VEVENT
+END:VCALENDAR

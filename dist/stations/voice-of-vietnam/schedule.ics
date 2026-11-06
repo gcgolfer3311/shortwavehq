@@ -1,0 +1,761 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Vietnam shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, Mandarin\, beamed to China. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, Mandarin\, beamed to China. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (Vietnamese)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, Vietnamese\, beamed to Middle Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, English\, beamed to Middle East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (French)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, French\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, English\, beamed to Middle East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (French)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, French\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7220-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7220 kHz\, Mandarin\, beamed to China. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7221-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7221 kHz (Mandarin)
+LOCATION:7221 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7221 kHz\, Mandarin\, beamed to China. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7285-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7285 kHz (Lao)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7285 kHz\, Lao\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7285-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7285 kHz (French)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7285 kHz\, French\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7285-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7285 kHz (Khmer)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7285 kHz\, Khmer\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7285-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7285 kHz (French)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7285 kHz\, French\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-7285-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 7285 kHz (Thai)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 7285 kHz\, Thai\, beamed to SE Asia. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (English)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, English\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (Russian)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, Russian\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (Vietnamese)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, Vietnamese\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (Spanish)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, Spanish\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (German)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, German\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (English)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, English\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (French)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, French\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (German)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, German\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (French)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, French\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (Spanish)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, Spanish\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9835-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9835 kHz (English)
+LOCATION:9835 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9835 kHz\, English\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Indonesian)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Indonesian\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Japanese)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Japanese)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Indonesian)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Indonesian\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Japanese)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Japanese\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Indonesian)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Indonesian\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (Indonesian)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, Indonesian\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-9840-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 9840 kHz (English)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 9840 kHz\, English\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (English)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, English\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (Russian)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, Russian\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (Vietnamese)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, Vietnamese\, beamed to Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (Spanish)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, Spanish\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (German)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, German\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (English)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, English\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (French)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, French\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (German)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, German\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (French)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, French\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (Spanish)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, Spanish\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-11885-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 11885 kHz (English)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 11885 kHz\, English\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Indonesian)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Indonesian\, beamed to Indonesi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Japanese)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Japanese\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (English)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Japanese)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Japanese\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Indonesian)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Indonesian\, beamed to Indonesi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (English)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Japanese)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Japanese\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Indonesian)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Indonesian\, beamed to Indonesi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-vietnam-12020-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam on 12020 kHz (Indonesian)
+LOCATION:12020 kHz shortwave
+DESCRIPTION:Voice of Vietnam on 12020 kHz\, Indonesian\, beamed to Indonesi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Myanma Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:myanma-radio-5915-0230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5915 kHz (Burmese)
+LOCATION:5915 kHz shortwave
+DESCRIPTION:Myanma Radio on 5915 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-5915-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5915 kHz (Burmese)
+LOCATION:5915 kHz shortwave
+DESCRIPTION:Myanma Radio on 5915 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-5915-2315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231500Z
+DTEND:20261026T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5915 kHz (Burmese)
+LOCATION:5915 kHz shortwave
+DESCRIPTION:Myanma Radio on 5915 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-5985-1115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T111500Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5985 kHz (Burmese)
+LOCATION:5985 kHz shortwave
+DESCRIPTION:Myanma Radio on 5985 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-5985-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5985 kHz (Music)
+LOCATION:5985 kHz shortwave
+DESCRIPTION:Myanma Radio on 5985 kHz\, Music\, beamed to SE Asia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-5985-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5985 kHz (Burmese)
+LOCATION:5985 kHz shortwave
+DESCRIPTION:Myanma Radio on 5985 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:myanma-radio-9730-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 9730 kHz (Burmese)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Myanma Radio on 9730 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC DIGITAL 17575 kHz 14:58 UTC
+BEGIN:VEVENT
+UID:bbc-digital-17575-1458@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T145800Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC DIGITAL on 17575 kHz (English)
+LOCATION:17575 kHz shortwave
+DESCRIPTION:BBC DIGITAL on 17575 kHz\, English\, beamed to South Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/bbc-digital/
+URL:https://hqshortwaveradio.com/stations/bbc-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BBC DIGITAL on 17575 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

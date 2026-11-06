@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AD149 AM (Pirate) 6935 kHz 22:00 UTC
+BEGIN:VEVENT
+UID:ad149-am-pirate-6935-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:AD149 AM (Pirate) on 6935 kHz (Spanish)
+LOCATION:6935 kHz shortwave
+DESCRIPTION:AD149 AM (Pirate) on 6935 kHz\, Spanish\, beamed to South Ameri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/ad149-am-pirate/
+URL:https://hqshortwaveradio.com/stations/ad149-am-pirate/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:AD149 AM (Pirate) on 6935 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Gloria shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-gloria-6140-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Gloria on 6140 kHz (German)
+LOCATION:6140 kHz shortwave
+DESCRIPTION:Radio Gloria on 6140 kHz\, German\, beamed to Europe. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-gloria/
+URL:https://hqshortwaveradio.com/stations/radio-gloria/
+END:VEVENT
+END:VCALENDAR

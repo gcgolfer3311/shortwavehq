@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio France DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-france-digital-9565-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France DIGITAL on 9565 kHz (French)
+LOCATION:9565 kHz shortwave
+DESCRIPTION:Radio France DIGITAL on 9565 kHz\, French\, beamed to W. Africa
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/radio-france-digital/
+URL:https://hqshortwaveradio.com/stations/radio-france-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-france-digital-13740-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France DIGITAL on 13740 kHz (French)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Radio France DIGITAL on 13740 kHz\, French\, beamed to E. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-france-digital
+ /
+URL:https://hqshortwaveradio.com/stations/radio-france-digital/
+END:VEVENT
+END:VCALENDAR

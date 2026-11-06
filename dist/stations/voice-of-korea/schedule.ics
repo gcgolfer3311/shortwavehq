@@ -1,0 +1,1918 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Korea shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-korea-6070-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6070 kHz (Japanese)
+LOCATION:6070 kHz shortwave
+DESCRIPTION:Voice of Korea on 6070 kHz\, Japanese\, beamed to Japan. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (English)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, English\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (French)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, French\, beamed to LAm. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (Korean)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, Korean\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (Russian)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, Russian\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (German)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (Russian)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, Russian\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (German)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6170-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6170 kHz (German)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea on 6170 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6185-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6185 kHz (English)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Voice of Korea on 6185 kHz\, English\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6185-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6185 kHz (French)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Voice of Korea on 6185 kHz\, French\, beamed to SE Asia. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-6185-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 6185 kHz (Mandarin)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Voice of Korea on 6185 kHz\, Mandarin\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7210-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7210 kHz (French)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:Voice of Korea on 7210 kHz\, French\, beamed to S. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7210-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7210 kHz (English)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:Voice of Korea on 7210 kHz\, English\, beamed to S. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Korean)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Korean)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Korean)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7220-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7220 kHz (Korean)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea on 7220 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7235-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7235 kHz (Mandarin)
+LOCATION:7235 kHz shortwave
+DESCRIPTION:Voice of Korea on 7235 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-7235-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 7235 kHz (Mandarin)
+LOCATION:7235 kHz shortwave
+DESCRIPTION:Voice of Korea on 7235 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (Korean)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, Korean\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (Russian)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, Russian\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (German)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (Russian)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, Russian\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (German)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (German)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (English)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, English\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (French)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, French\, beamed to LAm. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (English)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, English\, beamed to North America.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (French)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, French\, beamed to North America. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (English)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, English\, beamed to North America.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9435-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9435 kHz (French)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea on 9435 kHz\, French\, beamed to North America. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (English)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Mandarin)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (English)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Mandarin)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Mandarin)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Mandarin)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9445-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9445 kHz (Mandarin)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea on 9445 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9650-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9650 kHz (Japanese)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:Voice of Korea on 9650 kHz\, Japanese\, beamed to Japan. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9650-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9650 kHz (Japanese)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:Voice of Korea on 9650 kHz\, Japanese\, beamed to Japan. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9650-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9650 kHz (Japanese)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:Voice of Korea on 9650 kHz\, Japanese\, beamed to Japan. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9730-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9730 kHz (Korean)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Voice of Korea on 9730 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9730-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9730 kHz (English)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Voice of Korea on 9730 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9730-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9730 kHz (Mandarin)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Voice of Korea on 9730 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9730-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9730 kHz (English)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Voice of Korea on 9730 kHz\, English\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9850-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9850 kHz (English)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:Voice of Korea on 9850 kHz\, English\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9850-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9850 kHz (French)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:Voice of Korea on 9850 kHz\, French\, beamed to SE Asia. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9850-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9850 kHz (Mandarin)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:Voice of Korea on 9850 kHz\, Mandarin\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (Russian)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, Russian\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (Korean)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, Korean\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (French)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, French\, beamed to Middle East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (English)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, English\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (Mandarin)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9875-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9875 kHz (Mandarin)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea on 9875 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9890-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9890 kHz (Arabic)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:Voice of Korea on 9890 kHz\, Arabic\, beamed to Middle East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9890-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9890 kHz (English)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:Voice of Korea on 9890 kHz\, English\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-9890-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9890 kHz (Arabic)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:Voice of Korea on 9890 kHz\, Arabic\, beamed to Middle East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11635-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11635 kHz (French)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea on 11635 kHz\, French\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11635-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11635 kHz (English)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea on 11635 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11635-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11635 kHz (Mandarin)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea on 11635 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11635-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11635 kHz (Mandarin)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea on 11635 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11645-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11645 kHz (Arabic)
+LOCATION:11645 kHz shortwave
+DESCRIPTION:Voice of Korea on 11645 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11645-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11645 kHz (English)
+LOCATION:11645 kHz shortwave
+DESCRIPTION:Voice of Korea on 11645 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11645-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11645 kHz (Arabic)
+LOCATION:11645 kHz shortwave
+DESCRIPTION:Voice of Korea on 11645 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (English)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, English\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (French)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, French\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (English)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, English\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (French)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, French\, beamed to North America.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (English)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, English\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11710-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11710 kHz (French)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea on 11710 kHz\, French\, beamed to North America.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (Spanish)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (English)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, English\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (Spanish)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (French)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, French\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (Russian)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, Russian\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (Korean)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, Korean\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (English)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (French)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, French\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11735-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11735 kHz (Mandarin)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea on 11735 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11865-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11865 kHz (Japanese)
+LOCATION:11865 kHz shortwave
+DESCRIPTION:Voice of Korea on 11865 kHz\, Japanese\, beamed to Japan. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11865-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11865 kHz (Japanese)
+LOCATION:11865 kHz shortwave
+DESCRIPTION:Voice of Korea on 11865 kHz\, Japanese\, beamed to Japan. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11865-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11865 kHz (Japanese)
+LOCATION:11865 kHz shortwave
+DESCRIPTION:Voice of Korea on 11865 kHz\, Japanese\, beamed to Japan. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11910-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11910 kHz (French)
+LOCATION:11910 kHz shortwave
+DESCRIPTION:Voice of Korea on 11910 kHz\, French\, beamed to S. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-11910-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 11910 kHz (English)
+LOCATION:11910 kHz shortwave
+DESCRIPTION:Voice of Korea on 11910 kHz\, English\, beamed to S. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (English)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (French)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (English)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (French)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (Russian)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, Russian\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (English)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (Spanish)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (French)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (English)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-12015-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 12015 kHz (Spanish)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea on 12015 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (Mandarin)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (French)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, French\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (English)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (Mandarin)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (English)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (French)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, French\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13650-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13650 kHz (Mandarin)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea on 13650 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Spanish)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, English\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Spanish)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (French)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, French\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Russian)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Russian\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Korean)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Korean\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (French)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (French)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Spanish)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (French)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-13760-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 13760 kHz (Spanish)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea on 13760 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15105-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15105 kHz (Mandarin)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Voice of Korea on 15105 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15105-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15105 kHz (French)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Voice of Korea on 15105 kHz\, French\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15105-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15105 kHz (English)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Voice of Korea on 15105 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15105-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15105 kHz (Mandarin)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Voice of Korea on 15105 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (Spanish)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (English)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, English\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (Spanish)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, Spanish\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (French)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, French\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (English)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, English\, beamed to LAm. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15180-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15180 kHz (French)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea on 15180 kHz\, French\, beamed to LAm. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (Russian)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, Russian\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (Korean)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, Korean\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (English)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (French)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (English)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (French)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (English)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (Spanish)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (French)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (English)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-15245-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 15245 kHz (Spanish)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea on 15245 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+END:VEVENT
+END:VCALENDAR

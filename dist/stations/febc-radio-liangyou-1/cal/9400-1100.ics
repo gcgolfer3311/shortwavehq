@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBC Radio Liangyou 1 9400 kHz 11:00 UTC
+BEGIN:VEVENT
+UID:febc-radio-liangyou-1-9400-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Radio Liangyou 1 on 9400 kHz (Mandarin)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:FEBC Radio Liangyou 1 on 9400 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/febc-radio-liangyou
+ -1/
+URL:https://hqshortwaveradio.com/stations/febc-radio-liangyou-1/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:FEBC Radio Liangyou 1 on 9400 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

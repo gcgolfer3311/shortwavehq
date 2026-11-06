@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MWV New Life Station 13760 kHz 02:00 UTC
+BEGIN:VEVENT
+UID:mwv-new-life-station-13760-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV New Life Station on 13760 kHz (English)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:MWV New Life Station on 13760 kHz\, English\, beamed to India. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/mwv-new-life-station/
+URL:https://hqshortwaveradio.com/stations/mwv-new-life-station/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:MWV New Life Station on 13760 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

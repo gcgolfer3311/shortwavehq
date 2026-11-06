@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania International 7325 kHz 03:00 UTC
+BEGIN:VEVENT
+UID:radio-romania-international-7325-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7325 kHz (Spanish)
+LOCATION:7325 kHz shortwave
+DESCRIPTION:Radio Romania International on 7325 kHz\, Spanish\, beamed to C
+ entral America. Schedule from EIBI B-26 (valid until the A-27 season chang
+ e). Times can change\; check https://hqshortwaveradio.com/stations/radio-r
+ omania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Romania International on 7325 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

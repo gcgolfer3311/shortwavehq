@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Delta International 3985 kHz 15:00 UTC
+BEGIN:VEVENT
+UID:radio-delta-international-3985-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Delta International on 3985 kHz (Dutch)
+LOCATION:3985 kHz shortwave
+DESCRIPTION:Radio Delta International on 3985 kHz\, Dutch\, beamed to Europ
+ e. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-delta-internat
+ ional/
+URL:https://hqshortwaveradio.com/stations/radio-delta-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Delta International on 3985 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

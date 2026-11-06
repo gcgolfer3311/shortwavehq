@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Welle 370 6095 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:welle-370-6095-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Welle 370 on 6095 kHz (German)
+LOCATION:6095 kHz shortwave
+DESCRIPTION:Welle 370 on 6095 kHz\, German\, beamed to Europe. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/welle-370/
+URL:https://hqshortwaveradio.com/stations/welle-370/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Welle 370 on 6095 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

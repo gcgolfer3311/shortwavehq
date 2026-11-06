@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC 12095 kHz 06:00 UTC
+BEGIN:VEVENT
+UID:bbc-12095-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T062900Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 12095 kHz (French)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:BBC on 12095 kHz\, French\, beamed to CAf. Schedule from EIBI B
+ -26 (valid until the A-27 season change). Times can change\; check https:/
+ /hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BBC on 12095 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania International 15260 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:radio-romania-international-15260-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15260 kHz (Romanian)
+LOCATION:15260 kHz shortwave
+DESCRIPTION:Radio Romania International on 15260 kHz\, Romanian\, beamed to
+  S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Romania International on 15260 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR1 Jammer/Firedrake 9595 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:cnr1-jammer-firedrake-9595-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 Jammer/Firedrake on 9595 kHz (Mandarin)
+LOCATION:9595 kHz shortwave
+DESCRIPTION:CNR1 Jammer/Firedrake on 9595 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+URL:https://hqshortwaveradio.com/stations/cnr1-jammer-firedrake/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CNR1 Jammer/Firedrake on 9595 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

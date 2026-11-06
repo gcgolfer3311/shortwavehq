@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IRRS Milano shortwave (B-26)
+BEGIN:VEVENT
+UID:irrs-milano-7275-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Milano on 7275 kHz (English)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:IRRS Milano on 7275 kHz\, English\, beamed to Europe. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/irrs-milano/
+URL:https://hqshortwaveradio.com/stations/irrs-milano/
+END:VEVENT
+BEGIN:VEVENT
+UID:irrs-milano-7290-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Milano on 7290 kHz (English)
+LOCATION:7290 kHz shortwave
+DESCRIPTION:IRRS Milano on 7290 kHz\, English\, beamed to Europe. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/irrs-milano/
+URL:https://hqshortwaveradio.com/stations/irrs-milano/
+END:VEVENT
+BEGIN:VEVENT
+UID:irrs-milano-9510-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Milano on 9510 kHz (English)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:IRRS Milano on 9510 kHz\, English\, beamed to Europe. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/irrs-milano/
+URL:https://hqshortwaveradio.com/stations/irrs-milano/
+END:VEVENT
+BEGIN:VEVENT
+UID:irrs-milano-15425-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Milano on 15425 kHz (English)
+LOCATION:15425 kHz shortwave
+DESCRIPTION:IRRS Milano on 15425 kHz\, English\, beamed to South Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/irrs-milano/
+URL:https://hqshortwaveradio.com/stations/irrs-milano/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Unification Media Group shortwave (B-26)
+BEGIN:VEVENT
+UID:unification-media-group-5900-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Unification Media Group on 5900 kHz (Korean)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:Unification Media Group on 5900 kHz\, Korean\, beamed to Korea.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/unification-media-grou
+ p/
+URL:https://hqshortwaveradio.com/stations/unification-media-group/
+END:VEVENT
+BEGIN:VEVENT
+UID:unification-media-group-7235-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T125800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Unification Media Group on 7235 kHz (Korean)
+LOCATION:7235 kHz shortwave
+DESCRIPTION:Unification Media Group on 7235 kHz\, Korean\, beamed to Korea.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/unification-media-grou
+ p/
+URL:https://hqshortwaveradio.com/stations/unification-media-group/
+END:VEVENT
+BEGIN:VEVENT
+UID:unification-media-group-7340-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Unification Media Group on 7340 kHz (Korean)
+LOCATION:7340 kHz shortwave
+DESCRIPTION:Unification Media Group on 7340 kHz\, Korean\, beamed to Korea.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/unification-media-grou
+ p/
+URL:https://hqshortwaveradio.com/stations/unification-media-group/
+END:VEVENT
+END:VCALENDAR

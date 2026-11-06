@@ -1,0 +1,332 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR1 DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:cnr1-digital-6030-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 6030 kHz (Mandarin)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 6030 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-6030-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 6030 kHz (Mandarin)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 6030 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-6030-2025@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T202500Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 6030 kHz (Mandarin)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 6030 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-9655-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 9655 kHz (Mandarin)
+LOCATION:9655 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 9655 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-9655-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 9655 kHz (Mandarin)
+LOCATION:9655 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 9655 kHz\, Mandarin\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-11695-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 11695 kHz (Mandarin)
+LOCATION:11695 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 11695 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-13790-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 13790 kHz (Mandarin)
+LOCATION:13790 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 13790 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-13810-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 13810 kHz (Mandarin)
+LOCATION:13810 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 13810 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-13825-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 13825 kHz (Mandarin)
+LOCATION:13825 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 13825 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-13835-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 13835 kHz (Mandarin)
+LOCATION:13835 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 13835 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-15180-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 15180 kHz (Mandarin)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 15180 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-15290-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 15290 kHz (Mandarin)
+LOCATION:15290 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 15290 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-15760-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 15760 kHz (Mandarin)
+LOCATION:15760 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 15760 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17605-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17605 kHz (Mandarin)
+LOCATION:17605 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17605 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17650-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17650 kHz (Mandarin)
+LOCATION:17650 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17650 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17660-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17660 kHz (Mandarin)
+LOCATION:17660 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17660 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17700-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17700 kHz (Mandarin)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17700 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17700-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17700 kHz (Mandarin)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17700 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17710-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17710 kHz (Mandarin)
+LOCATION:17710 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17710 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17720-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17720 kHz (Mandarin)
+LOCATION:17720 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17720 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17720-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17720 kHz (Mandarin)
+LOCATION:17720 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17720 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17770-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17770 kHz (Mandarin)
+LOCATION:17770 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17770 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17830-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17830 kHz (Mandarin)
+LOCATION:17830 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17830 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-17870-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 17870 kHz (Mandarin)
+LOCATION:17870 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 17870 kHz\, Mandarin\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr1-digital-21590-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 21590 kHz (Mandarin)
+LOCATION:21590 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 21590 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+END:VEVENT
+END:VCALENDAR

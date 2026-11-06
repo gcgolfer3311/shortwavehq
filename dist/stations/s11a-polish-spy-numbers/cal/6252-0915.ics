@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:S11a Polish Spy Numbers 6252 kHz 09:15 UTC
+BEGIN:VEVENT
+UID:s11a-polish-spy-numbers-6252-0915@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T091500Z
+DTEND:20261025T092500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:S11a Polish Spy Numbers on 6252 kHz (Russian)
+LOCATION:6252 kHz shortwave
+DESCRIPTION:S11a Polish Spy Numbers on 6252 kHz\, Russian\, beamed to World
+ wide. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/s11a-polish-spy-n
+ umbers/
+URL:https://hqshortwaveradio.com/stations/s11a-polish-spy-numbers/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:S11a Polish Spy Numbers on 6252 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

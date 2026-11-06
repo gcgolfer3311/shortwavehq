@@ -1,0 +1,287 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR5 Cross-Strait Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-5925-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T170500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 5925 kHz (Mandarin)
+LOCATION:5925 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 5925 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-5925-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 5925 kHz (Mandarin)
+LOCATION:5925 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 5925 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-5925-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 5925 kHz (Mandarin)
+LOCATION:5925 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 5925 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-7385-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 7385 kHz (Mandarin)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 7385 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-7385-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T170500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 7385 kHz (Mandarin)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 7385 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-7385-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 7385 kHz (Mandarin)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 7385 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-7385-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 7385 kHz (Mandarin)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 7385 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9410-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T170500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9410 kHz (Mandarin)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9410 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9665-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T170500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9665 kHz (Mandarin)
+LOCATION:9665 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9665 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9665-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9665 kHz (Mandarin)
+LOCATION:9665 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9665 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9665-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9665 kHz (Mandarin)
+LOCATION:9665 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9665 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9685-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9685 kHz (Mandarin)
+LOCATION:9685 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9685 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9685-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9685 kHz (Mandarin)
+LOCATION:9685 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9685 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-9685-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 9685 kHz (Mandarin)
+LOCATION:9685 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 9685 kHz\, Mandarin\, beamed to Taiw
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11620-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11620 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11620-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11620 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11620-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11620 kHz (Mandarin)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11620 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11935-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11935 kHz (Mandarin)
+LOCATION:11935 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11935 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11935-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11935 kHz (Mandarin)
+LOCATION:11935 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11935 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr5-cross-strait-radio-11935-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR5 Cross-Strait Radio on 11935 kHz (Mandarin)
+LOCATION:11935 kHz shortwave
+DESCRIPTION:CNR5 Cross-Strait Radio on 11935 kHz\, Mandarin\, beamed to Tai
+ wan. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/cnr5-cross-strait-
+ radio/
+URL:https://hqshortwaveradio.com/stations/cnr5-cross-strait-radio/
+END:VEVENT
+END:VCALENDAR

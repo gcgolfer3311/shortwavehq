@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Reach Beyond Australia 11965 kHz 09:30 UTC
+BEGIN:VEVENT
+UID:reach-beyond-australia-11965-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T094500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11965 kHz (JV)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11965 kHz\, JV\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia
+ /
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reach Beyond Australia on 11965 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

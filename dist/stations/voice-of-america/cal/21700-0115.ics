@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of America 21700 kHz 01:15 UTC
+BEGIN:VEVENT
+UID:voice-of-america-21700-0115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T011500Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 21700 kHz (English)
+LOCATION:21700 kHz shortwave
+DESCRIPTION:Voice of America on 21700 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of America on 21700 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

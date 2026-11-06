@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KCBS DIGITAL 6140 kHz 19:50 UTC
+BEGIN:VEVENT
+UID:kcbs-digital-6140-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS DIGITAL on 6140 kHz (Korean)
+LOCATION:6140 kHz shortwave
+DESCRIPTION:KCBS DIGITAL on 6140 kHz\, Korean\, beamed to Korea. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/kcbs-digital/
+URL:https://hqshortwaveradio.com/stations/kcbs-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KCBS DIGITAL on 6140 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Northern Star 5895 kHz 05:59 UTC
+BEGIN:VEVENT
+UID:radio-northern-star-5895-0559@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055900Z
+DTEND:20261025T230500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Northern Star on 5895 kHz (Norwegian)
+LOCATION:5895 kHz shortwave
+DESCRIPTION:Radio Northern Star on 5895 kHz\, Norwegian\, beamed to N. Euro
+ pe. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-northern-star
+ /
+URL:https://hqshortwaveradio.com/stations/radio-northern-star/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Northern Star on 5895 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

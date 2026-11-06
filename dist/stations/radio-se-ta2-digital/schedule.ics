@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio SE-TA2 DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-se-ta2-digital-6195-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio SE-TA2 DIGITAL on 6195 kHz (German)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:Radio SE-TA2 DIGITAL on 6195 kHz\, German\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-se-ta2-digital/
+URL:https://hqshortwaveradio.com/stations/radio-se-ta2-digital/
+END:VEVENT
+END:VCALENDAR

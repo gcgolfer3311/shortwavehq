@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AIR Akashvani Ext.Service 15185 kHz 04:30 UTC
+BEGIN:VEVENT
+UID:air-akashvani-ext-service-15185-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:AIR Akashvani Ext.Service on 15185 kHz (Pashto)
+LOCATION:15185 kHz shortwave
+DESCRIPTION:AIR Akashvani Ext.Service on 15185 kHz\, Pashto\, beamed to Afg
+ hanistan. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/air-akashvani
+ -ext-service/
+URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:AIR Akashvani Ext.Service on 15185 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

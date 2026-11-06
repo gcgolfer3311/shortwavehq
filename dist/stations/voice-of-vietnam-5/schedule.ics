@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Vietnam 5 shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-vietnam-5-11720-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam 5 on 11720 kHz (Vietnamese)
+LOCATION:11720 kHz shortwave
+DESCRIPTION:Voice of Vietnam 5 on 11720 kHz\, Vietnamese\, beamed to SE Asi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam-5/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam-5/
+END:VEVENT
+END:VCALENDAR

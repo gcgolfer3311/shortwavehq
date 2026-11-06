@@ -1,0 +1,189 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sichuan Ethnic Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (YI)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, YI\, beamed to China. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (KHA)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (AMD)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, AMD\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T151500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (KHA)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (Mandarin)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, Mandarin\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (AMD)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, AMD\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-6060-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 6060 kHz (KHA)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 6060 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (YI)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, YI\, beamed to China. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (KHA)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (AMD)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, AMD\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T151500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (KHA)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (Mandarin)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, Mandarin\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (AMD)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, AMD\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:sichuan-ethnic-radio-7225-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sichuan Ethnic Radio on 7225 kHz (KHA)
+LOCATION:7225 kHz shortwave
+DESCRIPTION:Sichuan Ethnic Radio on 7225 kHz\, KHA\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+URL:https://hqshortwaveradio.com/stations/sichuan-ethnic-radio/
+END:VEVENT
+END:VCALENDAR

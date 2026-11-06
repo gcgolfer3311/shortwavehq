@@ -1,0 +1,189 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Marti shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-marti-6030-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 6030 kHz (Spanish)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:Radio Marti on 6030 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-6060-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 6060 kHz (Spanish)
+LOCATION:6060 kHz shortwave
+DESCRIPTION:Radio Marti on 6060 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-7355-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 7355 kHz (Spanish)
+LOCATION:7355 kHz shortwave
+DESCRIPTION:Radio Marti on 7355 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-7435-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 7435 kHz (Spanish)
+LOCATION:7435 kHz shortwave
+DESCRIPTION:Radio Marti on 7435 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-7435-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 7435 kHz (Spanish)
+LOCATION:7435 kHz shortwave
+DESCRIPTION:Radio Marti on 7435 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-7435-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 7435 kHz (Spanish)
+LOCATION:7435 kHz shortwave
+DESCRIPTION:Radio Marti on 7435 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-9410-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 9410 kHz (Spanish)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:Radio Marti on 9410 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-9565-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 9565 kHz (Spanish)
+LOCATION:9565 kHz shortwave
+DESCRIPTION:Radio Marti on 9565 kHz\, Spanish\, beamed to Cuba. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-11860-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 11860 kHz (Spanish)
+LOCATION:11860 kHz shortwave
+DESCRIPTION:Radio Marti on 11860 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-11930-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 11930 kHz (Spanish)
+LOCATION:11930 kHz shortwave
+DESCRIPTION:Radio Marti on 11930 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-13570-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 13570 kHz (Spanish)
+LOCATION:13570 kHz shortwave
+DESCRIPTION:Radio Marti on 13570 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-15160-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 15160 kHz (Spanish)
+LOCATION:15160 kHz shortwave
+DESCRIPTION:Radio Marti on 15160 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-15380-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 15380 kHz (Spanish)
+LOCATION:15380 kHz shortwave
+DESCRIPTION:Radio Marti on 15380 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-marti-17825-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Marti on 17825 kHz (Spanish)
+LOCATION:17825 kHz shortwave
+DESCRIPTION:Radio Marti on 17825 kHz\, Spanish\, beamed to Cuba. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-marti/
+URL:https://hqshortwaveradio.com/stations/radio-marti/
+END:VEVENT
+END:VCALENDAR

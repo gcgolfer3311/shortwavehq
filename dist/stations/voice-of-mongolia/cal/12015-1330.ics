@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Mongolia 12015 kHz 13:30 UTC
+BEGIN:VEVENT
+UID:voice-of-mongolia-12015-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Mongolia on 12015 kHz (Mongolian)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Mongolia on 12015 kHz\, Mongolian\, beamed to As. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-mongolia/
+URL:https://hqshortwaveradio.com/stations/voice-of-mongolia/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Mongolia on 12015 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

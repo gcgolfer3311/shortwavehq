@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of America 15210 kHz 23:00 UTC
+BEGIN:VEVENT
+UID:voice-of-america-15210-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 15210 kHz (Korean)
+LOCATION:15210 kHz shortwave
+DESCRIPTION:Voice of America on 15210 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of America on 15210 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

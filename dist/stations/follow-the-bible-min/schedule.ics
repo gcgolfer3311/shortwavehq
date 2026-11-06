@@ -1,0 +1,147 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Follow the Bible Min. shortwave (B-26)
+BEGIN:VEVENT
+UID:follow-the-bible-min-7315-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 7315 kHz (Arabic)
+LOCATION:7315 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 7315 kHz\, Arabic\, beamed to N. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/follow-the-bible-min
+ /
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-7380-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 7380 kHz (Arabic)
+LOCATION:7380 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 7380 kHz\, Arabic\, beamed to N. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/follow-the-bible-min
+ /
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-9410-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 9410 kHz (Arabic)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 9410 kHz\, Arabic\, beamed to Middle E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/follow-the-bible-m
+ in/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-9585-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 9585 kHz (Arabic)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 9585 kHz\, Arabic\, beamed to Middle E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/follow-the-bible-m
+ in/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-9585-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 9585 kHz (English)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 9585 kHz\, English\, beamed to S. Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/follow-the-bible-mi
+ n/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-9760-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 9760 kHz (French)
+LOCATION:9760 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 9760 kHz\, French\, beamed to W. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/follow-the-bible-min
+ /
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-9765-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 9765 kHz (French)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 9765 kHz\, French\, beamed to W. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/follow-the-bible-min
+ /
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-11660-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 11660 kHz (English)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 11660 kHz\, English\, beamed to W. Afr
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/follow-the-bible-m
+ in/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-12010-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 12010 kHz (English)
+LOCATION:12010 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 12010 kHz\, English\, beamed to S. Afr
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/follow-the-bible-m
+ in/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+BEGIN:VEVENT
+UID:follow-the-bible-min-21660-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Follow the Bible Min. on 21660 kHz (Swahili)
+LOCATION:21660 kHz shortwave
+DESCRIPTION:Follow the Bible Min. on 21660 kHz\, Swahili\, beamed to E. Afr
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/follow-the-bible-m
+ in/
+URL:https://hqshortwaveradio.com/stations/follow-the-bible-min/
+END:VEVENT
+END:VCALENDAR

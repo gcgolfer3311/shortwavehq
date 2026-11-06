@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Xizang RTV 6200 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:xizang-rtv-6200-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Xizang RTV on 6200 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Myanma Radio 5915 kHz 06:30 UTC
+BEGIN:VEVENT
+UID:myanma-radio-5915-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Myanma Radio on 5915 kHz (Burmese)
+LOCATION:5915 kHz shortwave
+DESCRIPTION:Myanma Radio on 5915 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/myanma-radio/
+URL:https://hqshortwaveradio.com/stations/myanma-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Myanma Radio on 5915 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

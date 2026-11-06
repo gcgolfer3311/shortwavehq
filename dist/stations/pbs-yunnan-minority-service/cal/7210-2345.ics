@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Yunnan Minority Service 7210 kHz 23:45 UTC
+BEGIN:VEVENT
+UID:pbs-yunnan-minority-service-7210-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Yunnan Minority Service on 7210 kHz (LIS)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz\, LIS\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/pbs-yunnan-minority-s
+ ervice/
+URL:https://hqshortwaveradio.com/stations/pbs-yunnan-minority-service/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Yunnan Minority Service on 7210 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

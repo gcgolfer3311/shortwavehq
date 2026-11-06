@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Baron Channel Marker 4940 kHz 04:30 UTC
+BEGIN:VEVENT
+UID:baron-channel-marker-4940-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Baron Channel Marker on 4940 kHz (Various)
+LOCATION:4940 kHz shortwave
+DESCRIPTION:Baron Channel Marker on 4940 kHz\, Various\, beamed to E. Europ
+ e. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/baron-channel-marker
+ /
+URL:https://hqshortwaveradio.com/stations/baron-channel-marker/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Baron Channel Marker on 4940 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

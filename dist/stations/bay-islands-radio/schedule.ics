@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bay Islands Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:bay-islands-radio-5045-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bay Islands Radio on 5045 kHz (English)
+LOCATION:5045 kHz shortwave
+DESCRIPTION:Bay Islands Radio on 5045 kHz\, English\, beamed to Australia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/bay-islands-radio/
+URL:https://hqshortwaveradio.com/stations/bay-islands-radio/
+END:VEVENT
+END:VCALENDAR

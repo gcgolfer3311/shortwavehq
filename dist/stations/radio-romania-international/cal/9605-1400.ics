@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania International 9605 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:radio-romania-international-9605-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9605 kHz (Russian)
+LOCATION:9605 kHz shortwave
+DESCRIPTION:Radio Romania International on 9605 kHz\, Russian\, beamed to C
+ entral Asia. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/radio-roma
+ nia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Romania International on 9605 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

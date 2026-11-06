@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 6 9420 kHz 00:00 UTC
+BEGIN:VEVENT
+UID:china-national-radio-6-9420-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 6 on 9420 kHz (Amoy)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:China National Radio 6 on 9420 kHz\, Amoy\, beamed to Taiwan. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/china-national-radio-6/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-6/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China National Radio 6 on 9420 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

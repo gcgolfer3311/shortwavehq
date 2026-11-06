@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania International 17750 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:radio-romania-international-17750-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17750 kHz (Romanian)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:Radio Romania International on 17750 kHz\, Romanian\, beamed to
+  EGY. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Romania International on 17750 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

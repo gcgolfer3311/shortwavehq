@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBA Radio Sama shortwave (B-26)
+BEGIN:VEVENT
+UID:feba-radio-sama-15510-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBA Radio Sama on 15510 kHz (TGR)
+LOCATION:15510 kHz shortwave
+DESCRIPTION:FEBA Radio Sama on 15510 kHz\, TGR\, beamed to E. Africa. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/feba-radio-sama/
+URL:https://hqshortwaveradio.com/stations/feba-radio-sama/
+END:VEVENT
+BEGIN:VEVENT
+UID:feba-radio-sama-15510-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBA Radio Sama on 15510 kHz (FUR)
+LOCATION:15510 kHz shortwave
+DESCRIPTION:FEBA Radio Sama on 15510 kHz\, FUR\, beamed to E. Africa. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/feba-radio-sama/
+URL:https://hqshortwaveradio.com/stations/feba-radio-sama/
+END:VEVENT
+BEGIN:VEVENT
+UID:feba-radio-sama-15510-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBA Radio Sama on 15510 kHz (Arabic)
+LOCATION:15510 kHz shortwave
+DESCRIPTION:FEBA Radio Sama on 15510 kHz\, Arabic\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/feba-radio-sama/
+URL:https://hqshortwaveradio.com/stations/feba-radio-sama/
+END:VEVENT
+END:VCALENDAR

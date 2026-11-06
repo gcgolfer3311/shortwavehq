@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Indonesia 4755 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (English)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Indonesia on 4755 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

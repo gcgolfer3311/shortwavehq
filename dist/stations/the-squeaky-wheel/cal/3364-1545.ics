@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Squeaky Wheel 3364 kHz 15:45 UTC
+BEGIN:VEVENT
+UID:the-squeaky-wheel-3364-1545@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T154500Z
+DTEND:20261026T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:The Squeaky Wheel on 3364 kHz (Various)
+LOCATION:3364 kHz shortwave
+DESCRIPTION:The Squeaky Wheel on 3364 kHz\, Various\, beamed to Russia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/the-squeaky-wheel/
+URL:https://hqshortwaveradio.com/stations/the-squeaky-wheel/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:The Squeaky Wheel on 3364 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

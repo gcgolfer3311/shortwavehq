@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Solomon Islands Broadcasting shortwave (B-26)
+BEGIN:VEVENT
+UID:solomon-islands-broadcasting-5020-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T120300Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Solomon Islands Broadcasting on 5020 kHz (English)
+LOCATION:5020 kHz shortwave
+DESCRIPTION:Solomon Islands Broadcasting on 5020 kHz\, English\, beamed to 
+ Solomon Is.. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/solomon-is
+ lands-broadcasting/
+URL:https://hqshortwaveradio.com/stations/solomon-islands-broadcasting/
+END:VEVENT
+BEGIN:VEVENT
+UID:solomon-islands-broadcasting-5020-1203@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120300Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Solomon Islands Broadcasting on 5020 kHz (Music)
+LOCATION:5020 kHz shortwave
+DESCRIPTION:Solomon Islands Broadcasting on 5020 kHz\, Music\, beamed to So
+ lomon Is.. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/solomon-isla
+ nds-broadcasting/
+URL:https://hqshortwaveradio.com/stations/solomon-islands-broadcasting/
+END:VEVENT
+BEGIN:VEVENT
+UID:solomon-islands-broadcasting-5020-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Solomon Islands Broadcasting on 5020 kHz (English)
+LOCATION:5020 kHz shortwave
+DESCRIPTION:Solomon Islands Broadcasting on 5020 kHz\, English\, beamed to 
+ Solomon Is.. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/solomon-is
+ lands-broadcasting/
+URL:https://hqshortwaveradio.com/stations/solomon-islands-broadcasting/
+END:VEVENT
+END:VCALENDAR

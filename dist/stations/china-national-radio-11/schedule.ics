@@ -1,0 +1,483 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 11 shortwave (B-26)
+BEGIN:VEVENT
+UID:china-national-radio-11-6010-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6010 kHz (Tibetan)
+LOCATION:6010 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6010 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6010-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6010 kHz (Tibetan)
+LOCATION:6010 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6010 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6010-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6010 kHz (Mandarin)
+LOCATION:6010 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6010 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6010-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6010 kHz (Tibetan)
+LOCATION:6010 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6010 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Mandarin)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-6075-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 6075 kHz (Tibetan)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:China National Radio 11 on 6075 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7350-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7350 kHz (Tibetan)
+LOCATION:7350 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7350 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7350-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7350 kHz (Tibetan)
+LOCATION:7350 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7350 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7350-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7350 kHz (Tibetan)
+LOCATION:7350 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7350 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7350-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7350 kHz (Mandarin)
+LOCATION:7350 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7350 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7350-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7350 kHz (Tibetan)
+LOCATION:7350 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7350 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7360-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7360 kHz (Mandarin)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7360 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-7360-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 7360 kHz (Tibetan)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:China National Radio 11 on 7360 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-9480-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 9480 kHz (Tibetan)
+LOCATION:9480 kHz shortwave
+DESCRIPTION:China National Radio 11 on 9480 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-9480-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 9480 kHz (Tibetan)
+LOCATION:9480 kHz shortwave
+DESCRIPTION:China National Radio 11 on 9480 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-9480-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 9480 kHz (Tibetan)
+LOCATION:9480 kHz shortwave
+DESCRIPTION:China National Radio 11 on 9480 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-9480-2155@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T215500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 9480 kHz (Mandarin)
+LOCATION:9480 kHz shortwave
+DESCRIPTION:China National Radio 11 on 9480 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-9480-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 9480 kHz (Tibetan)
+LOCATION:9480 kHz shortwave
+DESCRIPTION:China National Radio 11 on 9480 kHz\, Tibetan\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Tibetan)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Tibetan)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Mandarin)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Tibetan)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Tibetan)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-11685-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 11685 kHz (Tibetan)
+LOCATION:11685 kHz shortwave
+DESCRIPTION:China National Radio 11 on 11685 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-15570-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 15570 kHz (Tibetan)
+LOCATION:15570 kHz shortwave
+DESCRIPTION:China National Radio 11 on 15570 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-15570-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 15570 kHz (Tibetan)
+LOCATION:15570 kHz shortwave
+DESCRIPTION:China National Radio 11 on 15570 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-15570-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 15570 kHz (Mandarin)
+LOCATION:15570 kHz shortwave
+DESCRIPTION:China National Radio 11 on 15570 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-15570-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 15570 kHz (Tibetan)
+LOCATION:15570 kHz shortwave
+DESCRIPTION:China National Radio 11 on 15570 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11-15570-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 11 on 15570 kHz (Tibetan)
+LOCATION:15570 kHz shortwave
+DESCRIPTION:China National Radio 11 on 15570 kHz\, Tibetan\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -11/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-11/
+END:VEVENT
+END:VCALENDAR

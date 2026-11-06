@@ -1,0 +1,826 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trans World Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:trans-world-radio-6100-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 6100 kHz (YAO)
+LOCATION:6100 kHz shortwave
+DESCRIPTION:Trans World Radio on 6100 kHz\, YAO\, beamed to MOZ. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-6175-1420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142000Z
+DTEND:20261025T143500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 6175 kHz (SGA)
+LOCATION:6175 kHz shortwave
+DESCRIPTION:Trans World Radio on 6175 kHz\, SGA\, beamed to MOZ. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-6175-1435@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143500Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 6175 kHz (Portuguese)
+LOCATION:6175 kHz shortwave
+DESCRIPTION:Trans World Radio on 6175 kHz\, Portuguese\, beamed to MOZ. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-7410-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T183500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 7410 kHz (UM)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Trans World Radio on 7410 kHz\, UM\, beamed to AGL. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-7410-1835@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183500Z
+DTEND:20261025T190100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 7410 kHz (Portuguese)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Trans World Radio on 7410 kHz\, Portuguese\, beamed to AGL. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-7410-1850@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T185000Z
+DTEND:20261025T190500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 7410 kHz (KWA)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Trans World Radio on 7410 kHz\, KWA\, beamed to AGL. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-7410-1905@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190500Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 7410 kHz (Portuguese)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Trans World Radio on 7410 kHz\, Portuguese\, beamed to AGL. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-7480-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 7480 kHz (Kazakh)
+LOCATION:7480 kHz shortwave
+DESCRIPTION:Trans World Radio on 7480 kHz\, Kazakh\, beamed to Central Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9320-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9320 kHz (Korean)
+LOCATION:9320 kHz shortwave
+DESCRIPTION:Trans World Radio on 9320 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9500-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T164500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9500 kHz (KAM)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Trans World Radio on 9500 kHz\, KAM\, beamed to Ethiopia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9500-1645@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T164500Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9500 kHz (Oromo)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Trans World Radio on 9500 kHz\, Oromo\, beamed to Ethiopia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9500-1715@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T171500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9500 kHz (Oromo)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Trans World Radio on 9500 kHz\, Oromo\, beamed to Ethiopia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9585-1420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142000Z
+DTEND:20261025T143500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9585 kHz (MKU)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Trans World Radio on 9585 kHz\, MKU\, beamed to MOZ. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9585-1428@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142800Z
+DTEND:20261025T144300Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9585 kHz (LO)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Trans World Radio on 9585 kHz\, LO\, beamed to MOZ. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9585-1455@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T145500Z
+DTEND:20261025T152500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9585 kHz (MSY)
+LOCATION:9585 kHz shortwave
+DESCRIPTION:Trans World Radio on 9585 kHz\, MSY\, beamed to Madagascar. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9655-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T034500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9655 kHz (Amharic)
+LOCATION:9655 kHz shortwave
+DESCRIPTION:Trans World Radio on 9655 kHz\, Amharic\, beamed to Ethiopia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9910-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9910 kHz (English)
+LOCATION:9910 kHz shortwave
+DESCRIPTION:Trans World Radio on 9910 kHz\, English\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9910-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9910 kHz (Mandarin)
+LOCATION:9910 kHz shortwave
+DESCRIPTION:Trans World Radio on 9910 kHz\, Mandarin\, beamed to China. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9910-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9910 kHz (YUN)
+LOCATION:9910 kHz shortwave
+DESCRIPTION:Trans World Radio on 9910 kHz\, YUN\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9910-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9910 kHz (HUI)
+LOCATION:9910 kHz shortwave
+DESCRIPTION:Trans World Radio on 9910 kHz\, HUI\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9950-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9950 kHz (Kazakh)
+LOCATION:9950 kHz shortwave
+DESCRIPTION:Trans World Radio on 9950 kHz\, Kazakh\, beamed to Central Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9975-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9975 kHz (Burmese)
+LOCATION:9975 kHz shortwave
+DESCRIPTION:Trans World Radio on 9975 kHz\, Burmese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-9975-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T144500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9975 kHz (K-S)
+LOCATION:9975 kHz shortwave
+DESCRIPTION:Trans World Radio on 9975 kHz\, K-S\, beamed to SE Asia. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11550-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11550 kHz (Vietnamese)
+LOCATION:11550 kHz shortwave
+DESCRIPTION:Trans World Radio on 11550 kHz\, Vietnamese\, beamed to SE Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11560-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11560 kHz (Korean)
+LOCATION:11560 kHz shortwave
+DESCRIPTION:Trans World Radio on 11560 kHz\, Korean\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11660-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T164500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11660 kHz (KAM)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Trans World Radio on 11660 kHz\, KAM\, beamed to Ethiopia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11660-1645@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T164500Z
+DTEND:20261025T171500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11660 kHz (TIG)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Trans World Radio on 11660 kHz\, TIG\, beamed to Ethiopia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11660-1715@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T171500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11660 kHz (Oromo)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Trans World Radio on 11660 kHz\, Oromo\, beamed to Ethiopia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11825-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T104500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11825 kHz (Mongolian)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Trans World Radio on 11825 kHz\, Mongolian\, beamed to MNG. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11825-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11825 kHz (Mongolian)
+LOCATION:11825 kHz shortwave
+DESCRIPTION:Trans World Radio on 11825 kHz\, Mongolian\, beamed to China. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11875-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11875 kHz (SO)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:Trans World Radio on 11875 kHz\, SO\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11875-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11875 kHz (SO)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:Trans World Radio on 11875 kHz\, SO\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11875-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T154500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11875 kHz (SO)
+LOCATION:11875 kHz shortwave
+DESCRIPTION:Trans World Radio on 11875 kHz\, SO\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11925-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11925 kHz (English)
+LOCATION:11925 kHz shortwave
+DESCRIPTION:Trans World Radio on 11925 kHz\, English\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11925-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11925 kHz (Mandarin)
+LOCATION:11925 kHz shortwave
+DESCRIPTION:Trans World Radio on 11925 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11925-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11925 kHz (Mandarin)
+LOCATION:11925 kHz shortwave
+DESCRIPTION:Trans World Radio on 11925 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-11925-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 11925 kHz (Mandarin)
+LOCATION:11925 kHz shortwave
+DESCRIPTION:Trans World Radio on 11925 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-12000-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 12000 kHz (Mandarin)
+LOCATION:12000 kHz shortwave
+DESCRIPTION:Trans World Radio on 12000 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-12120-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 12120 kHz (English)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:Trans World Radio on 12120 kHz\, English\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13580-1557@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T155700Z
+DTEND:20261025T161200Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13580 kHz (KNK)
+LOCATION:13580 kHz shortwave
+DESCRIPTION:Trans World Radio on 13580 kHz\, KNK\, beamed to E. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13595-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13595 kHz (Korean)
+LOCATION:13595 kHz shortwave
+DESCRIPTION:Trans World Radio on 13595 kHz\, Korean\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13700-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113200Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13700 kHz (English)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:Trans World Radio on 13700 kHz\, English\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13800-1745@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T174500Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13800 kHz (TUR)
+LOCATION:13800 kHz shortwave
+DESCRIPTION:Trans World Radio on 13800 kHz\, TUR\, beamed to E. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13800-1802@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180200Z
+DTEND:20261025T181700Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13800 kHz (JU)
+LOCATION:13800 kHz shortwave
+DESCRIPTION:Trans World Radio on 13800 kHz\, JU\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13800-1905@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190500Z
+DTEND:20261025T193500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13800 kHz (LIN)
+LOCATION:13800 kHz shortwave
+DESCRIPTION:Trans World Radio on 13800 kHz\, LIN\, beamed to COD. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-13800-1935@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193500Z
+DTEND:20261025T195000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 13800 kHz (French)
+LOCATION:13800 kHz shortwave
+DESCRIPTION:Trans World Radio on 13800 kHz\, French\, beamed to COD. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15105-1440@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144000Z
+DTEND:20261025T145700Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15105 kHz (AFA)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Trans World Radio on 15105 kHz\, AFA\, beamed to E. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15105-1532@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153200Z
+DTEND:20261025T162100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15105 kHz (TIG)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Trans World Radio on 15105 kHz\, TIG\, beamed to E. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15105-1547@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T154700Z
+DTEND:20261025T162100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15105 kHz (KUN)
+LOCATION:15105 kHz shortwave
+DESCRIPTION:Trans World Radio on 15105 kHz\, KUN\, beamed to E. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15120-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T104500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15120 kHz (Mongolian)
+LOCATION:15120 kHz shortwave
+DESCRIPTION:Trans World Radio on 15120 kHz\, Mongolian\, beamed to MNG. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15120-1045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T104500Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15120 kHz (Mongolian)
+LOCATION:15120 kHz shortwave
+DESCRIPTION:Trans World Radio on 15120 kHz\, Mongolian\, beamed to MNG. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (English)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, English\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (Mandarin)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, Mandarin\, beamed to China. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (YUN)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, YUN\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (HUI)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, HUI\, beamed to China. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15310-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15310 kHz (Mandarin)
+LOCATION:15310 kHz shortwave
+DESCRIPTION:Trans World Radio on 15310 kHz\, Mandarin\, beamed to China. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15440-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15440 kHz (Urdu)
+LOCATION:15440 kHz shortwave
+DESCRIPTION:Trans World Radio on 15440 kHz\, Urdu\, beamed to South Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-15450-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 15450 kHz (Urdu)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:Trans World Radio on 15450 kHz\, Urdu\, beamed to South Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-17700-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T141500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 17700 kHz (BON)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Trans World Radio on 17700 kHz\, BON\, beamed to South Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-17700-1415@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T141500Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 17700 kHz (AW)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Trans World Radio on 17700 kHz\, AW\, beamed to South Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-17700-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T144500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 17700 kHz (Bengali)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Trans World Radio on 17700 kHz\, Bengali\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-17700-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T144600Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 17700 kHz (English)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Trans World Radio on 17700 kHz\, English\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-17700-1446@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144600Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 17700 kHz (Hindi)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Trans World Radio on 17700 kHz\, Hindi\, beamed to South Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+END:VCALENDAR

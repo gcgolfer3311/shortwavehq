@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Jinling shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-jinling-6200-1242@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124200Z
+DTEND:20261025T150500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Jinling on 6200 kHz (Chinese)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Voice of Jinling on 6200 kHz\, Chinese\, beamed to Taiwan. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-jinling/
+URL:https://hqshortwaveradio.com/stations/voice-of-jinling/
+END:VEVENT
+END:VCALENDAR

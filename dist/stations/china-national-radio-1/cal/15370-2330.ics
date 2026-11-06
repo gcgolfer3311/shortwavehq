@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 1 15370 kHz 23:30 UTC
+BEGIN:VEVENT
+UID:china-national-radio-1-15370-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 1 on 15370 kHz (Mandarin)
+LOCATION:15370 kHz shortwave
+DESCRIPTION:China National Radio 1 on 15370 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -1/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-1/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China National Radio 1 on 15370 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

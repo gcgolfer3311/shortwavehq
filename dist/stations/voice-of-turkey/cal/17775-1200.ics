@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Turkey 17775 kHz 12:00 UTC
+BEGIN:VEVENT
+UID:voice-of-turkey-17775-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17775 kHz (Mandarin)
+LOCATION:17775 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17775 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Turkey on 17775 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

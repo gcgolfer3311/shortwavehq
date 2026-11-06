@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SM Radio Dessau shortwave (B-26)
+BEGIN:VEVENT
+UID:sm-radio-dessau-6070-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 6070 kHz (German)
+LOCATION:6070 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 6070 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-radio-dessau-6070-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 6070 kHz (German)
+LOCATION:6070 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 6070 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-radio-dessau-6095-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 6095 kHz (German)
+LOCATION:6095 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 6095 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-radio-dessau-6095-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 6095 kHz (German)
+LOCATION:6095 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 6095 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-radio-dessau-9670-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 9670 kHz (German)
+LOCATION:9670 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 9670 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-radio-dessau-11570-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SM Radio Dessau on 11570 kHz (German)
+LOCATION:11570 kHz shortwave
+DESCRIPTION:SM Radio Dessau on 11570 kHz\, German\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/sm-radio-dessau/
+URL:https://hqshortwaveradio.com/stations/sm-radio-dessau/
+END:VEVENT
+END:VCALENDAR

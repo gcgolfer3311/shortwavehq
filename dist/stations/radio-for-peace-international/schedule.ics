@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio for Peace International shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-for-peace-international-9770-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio for Peace International on 9770 kHz (Farsi)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:Radio for Peace International on 9770 kHz\, Farsi\, beamed to I
+ ran. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-for-peace-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-for-peace-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-for-peace-international-15500-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio for Peace International on 15500 kHz (Farsi)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio for Peace International on 15500 kHz\, Farsi\, beamed to 
+ Iran. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-for-peace-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-for-peace-international/
+END:VEVENT
+END:VCALENDAR

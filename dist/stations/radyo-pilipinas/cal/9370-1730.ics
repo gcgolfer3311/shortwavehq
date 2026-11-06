@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radyo Pilipinas 9370 kHz 17:30 UTC
+BEGIN:VEVENT
+UID:radyo-pilipinas-9370-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radyo Pilipinas on 9370 kHz (Tagalog)
+LOCATION:9370 kHz shortwave
+DESCRIPTION:Radyo Pilipinas on 9370 kHz\, Tagalog\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radyo-pilipinas/
+URL:https://hqshortwaveradio.com/stations/radyo-pilipinas/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radyo Pilipinas on 9370 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

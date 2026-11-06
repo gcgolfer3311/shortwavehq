@@ -1,0 +1,540 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KBS World Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:kbs-world-radio-2-3955-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 3955 kHz (German)
+LOCATION:3955 kHz shortwave
+DESCRIPTION:KBS World Radio on 3955 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-3955-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 3955 kHz (French)
+LOCATION:3955 kHz shortwave
+DESCRIPTION:KBS World Radio on 3955 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6040-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6040 kHz (Russian)
+LOCATION:6040 kHz shortwave
+DESCRIPTION:KBS World Radio on 6040 kHz\, Russian\, beamed to E. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6090-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6090 kHz (Arabic)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:KBS World Radio on 6090 kHz\, Arabic\, beamed to N. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6095-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6095 kHz (Mandarin)
+LOCATION:6095 kHz shortwave
+DESCRIPTION:KBS World Radio on 6095 kHz\, Mandarin\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6095-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6095 kHz (Mandarin)
+LOCATION:6095 kHz shortwave
+DESCRIPTION:KBS World Radio on 6095 kHz\, Mandarin\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6155-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6155 kHz (Japanese)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:KBS World Radio on 6155 kHz\, Japanese\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6155-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6155 kHz (Japanese)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:KBS World Radio on 6155 kHz\, Japanese\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-7215-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 7215 kHz (Mandarin)
+LOCATION:7215 kHz shortwave
+DESCRIPTION:KBS World Radio on 7215 kHz\, Mandarin\, beamed to China. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-7275-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 7275 kHz (Korean)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:KBS World Radio on 7275 kHz\, Korean\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9515-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9515 kHz (English)
+LOCATION:9515 kHz shortwave
+DESCRIPTION:KBS World Radio on 9515 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9515-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9515 kHz (Korean)
+LOCATION:9515 kHz shortwave
+DESCRIPTION:KBS World Radio on 9515 kHz\, Korean\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9570-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9570 kHz (Korean)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:KBS World Radio on 9570 kHz\, Korean\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9570-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9570 kHz (Korean)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:KBS World Radio on 9570 kHz\, Korean\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9570-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9570 kHz (Indonesian)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:KBS World Radio on 9570 kHz\, Indonesian\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9570-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9570 kHz (English)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:KBS World Radio on 9570 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9570-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9570 kHz (Indonesian)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:KBS World Radio on 9570 kHz\, Indonesian\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9580-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9580 kHz (English)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:KBS World Radio on 9580 kHz\, English\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9580-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9580 kHz (English)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:KBS World Radio on 9580 kHz\, English\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9630-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9630 kHz (English)
+LOCATION:9630 kHz shortwave
+DESCRIPTION:KBS World Radio on 9630 kHz\, English\, beamed to South Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9640-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9640 kHz (Vietnamese)
+LOCATION:9640 kHz shortwave
+DESCRIPTION:KBS World Radio on 9640 kHz\, Vietnamese\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9640-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9640 kHz (English)
+LOCATION:9640 kHz shortwave
+DESCRIPTION:KBS World Radio on 9640 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9645-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9645 kHz (Russian)
+LOCATION:9645 kHz shortwave
+DESCRIPTION:KBS World Radio on 9645 kHz\, Russian\, beamed to Siberia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9655-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9655 kHz (French)
+LOCATION:9655 kHz shortwave
+DESCRIPTION:KBS World Radio on 9655 kHz\, French\, beamed to W. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9740-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9740 kHz (Korean)
+LOCATION:9740 kHz shortwave
+DESCRIPTION:KBS World Radio on 9740 kHz\, Korean\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9740-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9740 kHz (Spanish)
+LOCATION:9740 kHz shortwave
+DESCRIPTION:KBS World Radio on 9740 kHz\, Spanish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9770-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9770 kHz (English)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:KBS World Radio on 9770 kHz\, English\, beamed to SE Asia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9770-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9770 kHz (Vietnamese)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:KBS World Radio on 9770 kHz\, Vietnamese\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9770-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9770 kHz (Mandarin)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:KBS World Radio on 9770 kHz\, Mandarin\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-9870-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 9870 kHz (Korean)
+LOCATION:9870 kHz shortwave
+DESCRIPTION:KBS World Radio on 9870 kHz\, Korean\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11795-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11795 kHz (English)
+LOCATION:11795 kHz shortwave
+DESCRIPTION:KBS World Radio on 11795 kHz\, English\, beamed to South Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11795-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11795 kHz (Spanish)
+LOCATION:11795 kHz shortwave
+DESCRIPTION:KBS World Radio on 11795 kHz\, Spanish\, beamed to South Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11795-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11795 kHz (Korean)
+LOCATION:11795 kHz shortwave
+DESCRIPTION:KBS World Radio on 11795 kHz\, Korean\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11810-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11810 kHz (Japanese)
+LOCATION:11810 kHz shortwave
+DESCRIPTION:KBS World Radio on 11810 kHz\, Japanese\, beamed to Japan. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11810-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11810 kHz (Japanese)
+LOCATION:11810 kHz shortwave
+DESCRIPTION:KBS World Radio on 11810 kHz\, Japanese\, beamed to Japan. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11810-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11810 kHz (Korean)
+LOCATION:11810 kHz shortwave
+DESCRIPTION:KBS World Radio on 11810 kHz\, Korean\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-11810-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11810 kHz (English)
+LOCATION:11810 kHz shortwave
+DESCRIPTION:KBS World Radio on 11810 kHz\, English\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-15160-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 15160 kHz (Korean)
+LOCATION:15160 kHz shortwave
+DESCRIPTION:KBS World Radio on 15160 kHz\, Korean\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-15575-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 15575 kHz (Spanish)
+LOCATION:15575 kHz shortwave
+DESCRIPTION:KBS World Radio on 15575 kHz\, Spanish\, beamed to North Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-15575-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 15575 kHz (English)
+LOCATION:15575 kHz shortwave
+DESCRIPTION:KBS World Radio on 15575 kHz\, English\, beamed to North Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:kbs-world-radio-2-15575-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 15575 kHz (Korean)
+LOCATION:15575 kHz shortwave
+DESCRIPTION:KBS World Radio on 15575 kHz\, Korean\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NHK Radio Japan 6190 kHz 12:40 UTC
+BEGIN:VEVENT
+UID:nhk-radio-japan-6190-1240@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 6190 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NHK Radio Japan on 6190 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

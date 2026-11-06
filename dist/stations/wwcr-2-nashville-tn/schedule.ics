@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WWCR 2 Nashville\, TN shortwave (B-26)
+BEGIN:VEVENT
+UID:wwcr-2-nashville-tn-5935-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WWCR 2 Nashville\, TN on 5935 kHz (English)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:WWCR 2 Nashville\, TN on 5935 kHz\, English\, beamed to North A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/wwcr-2-nashvill
+ e-tn/
+URL:https://hqshortwaveradio.com/stations/wwcr-2-nashville-tn/
+END:VEVENT
+BEGIN:VEVENT
+UID:wwcr-2-nashville-tn-5935-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WWCR 2 Nashville\, TN on 5935 kHz (English)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:WWCR 2 Nashville\, TN on 5935 kHz\, English\, beamed to North A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/wwcr-2-nashvill
+ e-tn/
+URL:https://hqshortwaveradio.com/stations/wwcr-2-nashville-tn/
+END:VEVENT
+BEGIN:VEVENT
+UID:wwcr-2-nashville-tn-7490-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WWCR 2 Nashville\, TN on 7490 kHz (English)
+LOCATION:7490 kHz shortwave
+DESCRIPTION:WWCR 2 Nashville\, TN on 7490 kHz\, English\, beamed to North A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/wwcr-2-nashvill
+ e-tn/
+URL:https://hqshortwaveradio.com/stations/wwcr-2-nashville-tn/
+END:VEVENT
+BEGIN:VEVENT
+UID:wwcr-2-nashville-tn-9350-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WWCR 2 Nashville\, TN on 9350 kHz (English)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:WWCR 2 Nashville\, TN on 9350 kHz\, English\, beamed to North A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/wwcr-2-nashvill
+ e-tn/
+URL:https://hqshortwaveradio.com/stations/wwcr-2-nashville-tn/
+END:VEVENT
+BEGIN:VEVENT
+UID:wwcr-2-nashville-tn-9350-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WWCR 2 Nashville\, TN on 9350 kHz (English)
+LOCATION:9350 kHz shortwave
+DESCRIPTION:WWCR 2 Nashville\, TN on 9350 kHz\, English\, beamed to North A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/wwcr-2-nashvill
+ e-tn/
+URL:https://hqshortwaveradio.com/stations/wwcr-2-nashville-tn/
+END:VEVENT
+END:VCALENDAR

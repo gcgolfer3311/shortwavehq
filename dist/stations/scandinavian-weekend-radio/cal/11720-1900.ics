@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Scandinavian Weekend Radio 11720 kHz 19:00 UTC
+BEGIN:VEVENT
+UID:scandinavian-weekend-radio-11720-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Scandinavian Weekend Radio on 11720 kHz (Finnish)
+LOCATION:11720 kHz shortwave
+DESCRIPTION:Scandinavian Weekend Radio on 11720 kHz\, Finnish\, beamed to E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/scandinavian-wee
+ kend-radio/
+URL:https://hqshortwaveradio.com/stations/scandinavian-weekend-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scandinavian Weekend Radio on 11720 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

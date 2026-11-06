@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ELWA Radio 6050 kHz 05:55 UTC
+BEGIN:VEVENT
+UID:elwa-radio-6050-0555@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055500Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:ELWA Radio on 6050 kHz (English)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:ELWA Radio on 6050 kHz\, English\, beamed to W. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/elwa-radio/
+URL:https://hqshortwaveradio.com/stations/elwa-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:ELWA Radio on 6050 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

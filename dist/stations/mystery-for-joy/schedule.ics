@@ -1,0 +1,111 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mystery for Joy shortwave (B-26)
+BEGIN:VEVENT
+UID:mystery-for-joy-3955-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 3955 kHz (French)
+LOCATION:3955 kHz shortwave
+DESCRIPTION:Mystery for Joy on 3955 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-5850-0230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T023000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:Mystery for Joy on 5850 kHz\, English\, beamed to W. North Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-5875-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 5875 kHz (English)
+LOCATION:5875 kHz shortwave
+DESCRIPTION:Mystery for Joy on 5875 kHz\, English\, beamed to E. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-5950-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 5950 kHz (English)
+LOCATION:5950 kHz shortwave
+DESCRIPTION:Mystery for Joy on 5950 kHz\, English\, beamed to E. North Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-7425-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 7425 kHz (English)
+LOCATION:7425 kHz shortwave
+DESCRIPTION:Mystery for Joy on 7425 kHz\, English\, beamed to W. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-9670-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 9670 kHz (English)
+LOCATION:9670 kHz shortwave
+DESCRIPTION:Mystery for Joy on 9670 kHz\, English\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-9670-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 9670 kHz (French)
+LOCATION:9670 kHz shortwave
+DESCRIPTION:Mystery for Joy on 9670 kHz\, French\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+BEGIN:VEVENT
+UID:mystery-for-joy-15770-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Mystery for Joy on 15770 kHz (English)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Mystery for Joy on 15770 kHz\, English\, beamed to E. North Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/mystery-for-joy/
+URL:https://hqshortwaveradio.com/stations/mystery-for-joy/
+END:VEVENT
+END:VCALENDAR

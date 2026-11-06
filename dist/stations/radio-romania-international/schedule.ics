@@ -1,0 +1,1505 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania International shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Italian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Italian\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Aromanian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Aromanian\, beamed to
+  SE Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Ukrainian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Ukrainian\, beamed to
+  Ukraine. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Serbian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Serbian\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Italian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Italian\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Aromanian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Aromanian\, beamed to
+  SE Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Ukrainian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Ukrainian\, beamed to
+  Ukraine. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Serbian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Serbian\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5955-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5955 kHz (Aromanian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania International on 5955 kHz\, Aromanian\, beamed to
+  SE Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5960-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5960 kHz (Ukrainian)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:Radio Romania International on 5960 kHz\, Ukrainian\, beamed to
+  Ukraine. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-5960-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 5960 kHz (Serbian)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:Radio Romania International on 5960 kHz\, Serbian\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6010-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6010 kHz (Romanian)
+LOCATION:6010 kHz shortwave
+DESCRIPTION:Radio Romania International on 6010 kHz\, Romanian\, beamed to 
+ Middle East. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/radio-roma
+ nia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6030-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6030 kHz (French)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:Radio Romania International on 6030 kHz\, French\, beamed to S.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6030-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6030 kHz (English)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:Radio Romania International on 6030 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6030-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6030 kHz (English)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:Radio Romania International on 6030 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6090-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6090 kHz (Romanian)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:Radio Romania International on 6090 kHz\, Romanian\, beamed to 
+ S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6145-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6145 kHz (Romanian)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Radio Romania International on 6145 kHz\, Romanian\, beamed to 
+ S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6160-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6160 kHz (Romanian)
+LOCATION:6160 kHz shortwave
+DESCRIPTION:Radio Romania International on 6160 kHz\, Romanian\, beamed to 
+ S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-6180-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 6180 kHz (German)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Romania International on 6180 kHz\, German\, beamed to W.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7205-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7205 kHz (Romanian)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:Radio Romania International on 7205 kHz\, Romanian\, beamed to 
+ S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7205-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7205 kHz (Romanian)
+LOCATION:7205 kHz shortwave
+DESCRIPTION:Radio Romania International on 7205 kHz\, Romanian\, beamed to 
+ S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, English\, beamed to E
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (French)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, French\, beamed to E.
+  North America. Schedule from EIBI B-26 (valid until the A-27 season chang
+ e). Times can change\; check https://hqshortwaveradio.com/stations/radio-r
+ omania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, English\, beamed to W
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (French)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, French\, beamed to S.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (French)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, French\, beamed to S.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (Spanish)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, Spanish\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7220-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7220 kHz (English)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Radio Romania International on 7220 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7250-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7250 kHz (Romanian)
+LOCATION:7250 kHz shortwave
+DESCRIPTION:Radio Romania International on 7250 kHz\, Romanian\, beamed to 
+ E. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7250-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7250 kHz (English)
+LOCATION:7250 kHz shortwave
+DESCRIPTION:Radio Romania International on 7250 kHz\, English\, beamed to E
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7300-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7300 kHz (Romanian)
+LOCATION:7300 kHz shortwave
+DESCRIPTION:Radio Romania International on 7300 kHz\, Romanian\, beamed to 
+ E. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7310-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7310 kHz (English)
+LOCATION:7310 kHz shortwave
+DESCRIPTION:Radio Romania International on 7310 kHz\, English\, beamed to E
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7320-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7320 kHz (German)
+LOCATION:7320 kHz shortwave
+DESCRIPTION:Radio Romania International on 7320 kHz\, German\, beamed to W.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7325-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7325 kHz (English)
+LOCATION:7325 kHz shortwave
+DESCRIPTION:Radio Romania International on 7325 kHz\, English\, beamed to E
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7325-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7325 kHz (Spanish)
+LOCATION:7325 kHz shortwave
+DESCRIPTION:Radio Romania International on 7325 kHz\, Spanish\, beamed to C
+ entral America. Schedule from EIBI B-26 (valid until the A-27 season chang
+ e). Times can change\; check https://hqshortwaveradio.com/stations/radio-r
+ omania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7330-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7330 kHz (Russian)
+LOCATION:7330 kHz shortwave
+DESCRIPTION:Radio Romania International on 7330 kHz\, Russian\, beamed to E
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7375-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7375 kHz (French)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:Radio Romania International on 7375 kHz\, French\, beamed to S.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7375-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7375 kHz (English)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:Radio Romania International on 7375 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7380-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7380 kHz (Spanish)
+LOCATION:7380 kHz shortwave
+DESCRIPTION:Radio Romania International on 7380 kHz\, Spanish\, beamed to C
+ entral America. Schedule from EIBI B-26 (valid until the A-27 season chang
+ e). Times can change\; check https://hqshortwaveradio.com/stations/radio-r
+ omania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7410-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7410 kHz (French)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Radio Romania International on 7410 kHz\, French\, beamed to E.
+  North America. Schedule from EIBI B-26 (valid until the A-27 season chang
+ e). Times can change\; check https://hqshortwaveradio.com/stations/radio-r
+ omania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7410-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7410 kHz (English)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Radio Romania International on 7410 kHz\, English\, beamed to W
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7420-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7420 kHz (Romanian)
+LOCATION:7420 kHz shortwave
+DESCRIPTION:Radio Romania International on 7420 kHz\, Romanian\, beamed to 
+ E. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -romania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7440-0530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T053000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7440 kHz (Russian)
+LOCATION:7440 kHz shortwave
+DESCRIPTION:Radio Romania International on 7440 kHz\, Russian\, beamed to E
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-7440-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 7440 kHz (Russian)
+LOCATION:7440 kHz shortwave
+DESCRIPTION:Radio Romania International on 7440 kHz\, Russian\, beamed to E
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9440-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9440 kHz (German)
+LOCATION:9440 kHz shortwave
+DESCRIPTION:Radio Romania International on 9440 kHz\, German\, beamed to W.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9460-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9460 kHz (Spanish)
+LOCATION:9460 kHz shortwave
+DESCRIPTION:Radio Romania International on 9460 kHz\, Spanish\, beamed to S
+ outh America. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9460-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9460 kHz (German)
+LOCATION:9460 kHz shortwave
+DESCRIPTION:Radio Romania International on 9460 kHz\, German\, beamed to W.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9460-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9460 kHz (Russian)
+LOCATION:9460 kHz shortwave
+DESCRIPTION:Radio Romania International on 9460 kHz\, Russian\, beamed to E
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9500-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9500 kHz (Spanish)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Radio Romania International on 9500 kHz\, Spanish\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9510-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9510 kHz (Spanish)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:Radio Romania International on 9510 kHz\, Spanish\, beamed to V
+ EN. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-romania-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9520-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9520 kHz (French)
+LOCATION:9520 kHz shortwave
+DESCRIPTION:Radio Romania International on 9520 kHz\, French\, beamed to S.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-romania-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9570-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9570 kHz (Romanian)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:Radio Romania International on 9570 kHz\, Romanian\, beamed to 
+ Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-romania-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9580-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9580 kHz (Mandarin)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Radio Romania International on 9580 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9605-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9605 kHz (Russian)
+LOCATION:9605 kHz shortwave
+DESCRIPTION:Radio Romania International on 9605 kHz\, Russian\, beamed to C
+ entral Asia. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/radio-roma
+ nia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9620-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9620 kHz (Spanish)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:Radio Romania International on 9620 kHz\, Spanish\, beamed to S
+ outh America. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9620-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9620 kHz (English)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:Radio Romania International on 9620 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9620-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9620 kHz (English)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:Radio Romania International on 9620 kHz\, English\, beamed to J
+ apan. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9730-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9730 kHz (Spanish)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Radio Romania International on 9730 kHz\, Spanish\, beamed to V
+ EN. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-romania-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9760-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9760 kHz (Arabic)
+LOCATION:9760 kHz shortwave
+DESCRIPTION:Radio Romania International on 9760 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9770-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9770 kHz (English)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:Radio Romania International on 9770 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9780-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9780 kHz (Arabic)
+LOCATION:9780 kHz shortwave
+DESCRIPTION:Radio Romania International on 9780 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9810-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9810 kHz (Romanian)
+LOCATION:9810 kHz shortwave
+DESCRIPTION:Radio Romania International on 9810 kHz\, Romanian\, beamed to 
+ Middle East. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/radio-roma
+ nia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-9870-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 9870 kHz (English)
+LOCATION:9870 kHz shortwave
+DESCRIPTION:Radio Romania International on 9870 kHz\, English\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11620-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11620 kHz (German)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:Radio Romania International on 11620 kHz\, German\, beamed to W
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11620-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11620 kHz (Russian)
+LOCATION:11620 kHz shortwave
+DESCRIPTION:Radio Romania International on 11620 kHz\, Russian\, beamed to 
+ Central Asia. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11640-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11640 kHz (Spanish)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:Radio Romania International on 11640 kHz\, Spanish\, beamed to 
+ South America. Schedule from EIBI B-26 (valid until the A-27 season change
+ ). Times can change\; check https://hqshortwaveradio.com/stations/radio-ro
+ mania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11660-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11660 kHz (Spanish)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Radio Romania International on 11660 kHz\, Spanish\, beamed to 
+ South America. Schedule from EIBI B-26 (valid until the A-27 season change
+ ). Times can change\; check https://hqshortwaveradio.com/stations/radio-ro
+ mania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11930-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11930 kHz (Spanish)
+LOCATION:11930 kHz shortwave
+DESCRIPTION:Radio Romania International on 11930 kHz\, Spanish\, beamed to 
+ South America. Schedule from EIBI B-26 (valid until the A-27 season change
+ ). Times can change\; check https://hqshortwaveradio.com/stations/radio-ro
+ mania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-11950-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 11950 kHz (Romanian)
+LOCATION:11950 kHz shortwave
+DESCRIPTION:Radio Romania International on 11950 kHz\, Romanian\, beamed to
+  S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-13600-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 13600 kHz (Arabic)
+LOCATION:13600 kHz shortwave
+DESCRIPTION:Radio Romania International on 13600 kHz\, Arabic\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-13750-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 13750 kHz (French)
+LOCATION:13750 kHz shortwave
+DESCRIPTION:Radio Romania International on 13750 kHz\, French\, beamed to W
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15120-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15120 kHz (Arabic)
+LOCATION:15120 kHz shortwave
+DESCRIPTION:Radio Romania International on 15120 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15120-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15120 kHz (Arabic)
+LOCATION:15120 kHz shortwave
+DESCRIPTION:Radio Romania International on 15120 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15170-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15170 kHz (Arabic)
+LOCATION:15170 kHz shortwave
+DESCRIPTION:Radio Romania International on 15170 kHz\, Arabic\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15200-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15200 kHz (French)
+LOCATION:15200 kHz shortwave
+DESCRIPTION:Radio Romania International on 15200 kHz\, French\, beamed to W
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15200-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15200 kHz (Arabic)
+LOCATION:15200 kHz shortwave
+DESCRIPTION:Radio Romania International on 15200 kHz\, Arabic\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15200-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15200 kHz (French)
+LOCATION:15200 kHz shortwave
+DESCRIPTION:Radio Romania International on 15200 kHz\, French\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15200-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15200 kHz (Arabic)
+LOCATION:15200 kHz shortwave
+DESCRIPTION:Radio Romania International on 15200 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15210-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15210 kHz (English)
+LOCATION:15210 kHz shortwave
+DESCRIPTION:Radio Romania International on 15210 kHz\, English\, beamed to 
+ South Asia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15260-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15260 kHz (Romanian)
+LOCATION:15260 kHz shortwave
+DESCRIPTION:Radio Romania International on 15260 kHz\, Romanian\, beamed to
+  S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15300-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15300 kHz (French)
+LOCATION:15300 kHz shortwave
+DESCRIPTION:Radio Romania International on 15300 kHz\, French\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15320-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15320 kHz (Arabic)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:Radio Romania International on 15320 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15370-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15370 kHz (Romanian)
+LOCATION:15370 kHz shortwave
+DESCRIPTION:Radio Romania International on 15370 kHz\, Romanian\, beamed to
+  S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15430-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15430 kHz (Arabic)
+LOCATION:15430 kHz shortwave
+DESCRIPTION:Radio Romania International on 15430 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15460-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15460 kHz (English)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Radio Romania International on 15460 kHz\, English\, beamed to 
+ W. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15460-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15460 kHz (Arabic)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Radio Romania International on 15460 kHz\, Arabic\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15520-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15520 kHz (Mandarin)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Romania International on 15520 kHz\, Mandarin\, beamed to
+  Far East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-15620-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T053000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 15620 kHz (Mandarin)
+LOCATION:15620 kHz shortwave
+DESCRIPTION:Radio Romania International on 15620 kHz\, Mandarin\, beamed to
+  Far East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17560-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17560 kHz (Arabic)
+LOCATION:17560 kHz shortwave
+DESCRIPTION:Radio Romania International on 17560 kHz\, Arabic\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17560-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17560 kHz (Romanian)
+LOCATION:17560 kHz shortwave
+DESCRIPTION:Radio Romania International on 17560 kHz\, Romanian\, beamed to
+  Middle East. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17640-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17640 kHz (Romanian)
+LOCATION:17640 kHz shortwave
+DESCRIPTION:Radio Romania International on 17640 kHz\, Romanian\, beamed to
+  Middle East. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17640-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17640 kHz (Romanian)
+LOCATION:17640 kHz shortwave
+DESCRIPTION:Radio Romania International on 17640 kHz\, Romanian\, beamed to
+  N. Africa. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17640-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17640 kHz (French)
+LOCATION:17640 kHz shortwave
+DESCRIPTION:Radio Romania International on 17640 kHz\, French\, beamed to N
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17700-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17700 kHz (Romanian)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Radio Romania International on 17700 kHz\, Romanian\, beamed to
+  Middle East. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17700-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17700 kHz (English)
+LOCATION:17700 kHz shortwave
+DESCRIPTION:Radio Romania International on 17700 kHz\, English\, beamed to 
+ W. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17750-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17750 kHz (Romanian)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:Radio Romania International on 17750 kHz\, Romanian\, beamed to
+  Iran. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-romania-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17750-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17750 kHz (Romanian)
+LOCATION:17750 kHz shortwave
+DESCRIPTION:Radio Romania International on 17750 kHz\, Romanian\, beamed to
+  EGY. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17780-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17780 kHz (English)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:Radio Romania International on 17780 kHz\, English\, beamed to 
+ South Asia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17790-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17790 kHz (Romanian)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Romania International on 17790 kHz\, Romanian\, beamed to
+  Middle East. Schedule from EIBI B-26 (valid until the A-27 season change)
+ . Times can change\; check https://hqshortwaveradio.com/stations/radio-rom
+ ania-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17790-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Romania International on 17790 kHz\, English\, beamed to 
+ W. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17800-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17800 kHz (Romanian)
+LOCATION:17800 kHz shortwave
+DESCRIPTION:Radio Romania International on 17800 kHz\, Romanian\, beamed to
+  S. Europe. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17800-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17800 kHz (French)
+LOCATION:17800 kHz shortwave
+DESCRIPTION:Radio Romania International on 17800 kHz\, French\, beamed to S
+ . Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-romania
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17800-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17800 kHz (English)
+LOCATION:17800 kHz shortwave
+DESCRIPTION:Radio Romania International on 17800 kHz\, English\, beamed to 
+ E. Africa. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17830-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17830 kHz (Romanian)
+LOCATION:17830 kHz shortwave
+DESCRIPTION:Radio Romania International on 17830 kHz\, Romanian\, beamed to
+  Iran. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-romania-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-17830-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 17830 kHz (Romanian)
+LOCATION:17830 kHz shortwave
+DESCRIPTION:Radio Romania International on 17830 kHz\, Romanian\, beamed to
+  EGY. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-21470-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 21470 kHz (Romanian)
+LOCATION:21470 kHz shortwave
+DESCRIPTION:Radio Romania International on 21470 kHz\, Romanian\, beamed to
+  N. Africa. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-roman
+ ia-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-international-21470-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania International on 21470 kHz (English)
+LOCATION:21470 kHz shortwave
+DESCRIPTION:Radio Romania International on 21470 kHz\, English\, beamed to 
+ E. Africa. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-romani
+ a-international/
+URL:https://hqshortwaveradio.com/stations/radio-romania-international/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,469 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 13 shortwave (B-26)
+BEGIN:VEVENT
+UID:china-national-radio-13-9420-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9420 kHz (Uyghur)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9420 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9420-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9420 kHz (Uyghur)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9420 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9420-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9420 kHz (Mandarin)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9420 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9420-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9420 kHz (Uyghur)
+LOCATION:9420 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9420 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Mandarin)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Mandarin\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/china-national-radio
+ -13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-9890-2355@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T235500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 9890 kHz (Uyghur)
+LOCATION:9890 kHz shortwave
+DESCRIPTION:China National Radio 13 on 9890 kHz\, Uyghur\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-1
+ 3/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Mandarin)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-13700-2355@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T235500Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 13700 kHz (Uyghur)
+LOCATION:13700 kHz shortwave
+DESCRIPTION:China National Radio 13 on 13700 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Mandarin)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-15390-2355@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T235500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 15390 kHz (Uyghur)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:China National Radio 13 on 15390 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17680-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17680 kHz (Uyghur)
+LOCATION:17680 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17680 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Uyghur)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Mandarin)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Uyghur)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Uyghur)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Uyghur)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Mandarin)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Mandarin\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/china-national-radi
+ o-13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13-17820-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 13 on 17820 kHz (Uyghur)
+LOCATION:17820 kHz shortwave
+DESCRIPTION:China National Radio 13 on 17820 kHz\, Uyghur\, beamed to China
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/china-national-radio-
+ 13/
+URL:https://hqshortwaveradio.com/stations/china-national-radio-13/
+END:VEVENT
+END:VCALENDAR

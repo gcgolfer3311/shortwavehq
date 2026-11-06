@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China Radio International 7445 kHz 21:30 UTC
+BEGIN:VEVENT
+UID:china-radio-international-7445-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China Radio International on 7445 kHz (HU)
+LOCATION:7445 kHz shortwave
+DESCRIPTION:China Radio International on 7445 kHz\, HU\, beamed to Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/china-radio-internation
+ al/
+URL:https://hqshortwaveradio.com/stations/china-radio-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China Radio International on 7445 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

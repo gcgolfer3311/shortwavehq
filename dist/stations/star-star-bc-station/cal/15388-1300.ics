@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Star-Star Bc.Station 15388 kHz 13:00 UTC
+BEGIN:VEVENT
+UID:star-star-bc-station-15388-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Star-Star Bc.Station on 15388 kHz (Mandarin)
+LOCATION:15388 kHz shortwave
+DESCRIPTION:Star-Star Bc.Station on 15388 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/star-star-bc-station/
+URL:https://hqshortwaveradio.com/stations/star-star-bc-station/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Star-Star Bc.Station on 15388 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

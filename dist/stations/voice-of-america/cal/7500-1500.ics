@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of America 7500 kHz 15:00 UTC
+BEGIN:VEVENT
+UID:voice-of-america-7500-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7500 kHz (Korean)
+LOCATION:7500 kHz shortwave
+DESCRIPTION:Voice of America on 7500 kHz\, Korean\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of America on 7500 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

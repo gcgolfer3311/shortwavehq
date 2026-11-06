@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Educación 6185 kHz 22:00 UTC
+BEGIN:VEVENT
+UID:radio-educaci-n-6185-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T120100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Educación on 6185 kHz (Spanish)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Radio Educación on 6185 kHz\, Spanish\, beamed to Central Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-educaci-n/
+URL:https://hqshortwaveradio.com/stations/radio-educaci-n/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Educación on 6185 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

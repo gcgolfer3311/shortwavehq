@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DWD Pinneberg shortwave (B-26)
+BEGIN:VEVENT
+UID:dwd-pinneberg-6180-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:DWD Pinneberg on 6180 kHz (German)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:DWD Pinneberg on 6180 kHz\, German\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/dwd-pinneberg/
+URL:https://hqshortwaveradio.com/stations/dwd-pinneberg/
+END:VEVENT
+BEGIN:VEVENT
+UID:dwd-pinneberg-6180-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:DWD Pinneberg on 6180 kHz (German)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:DWD Pinneberg on 6180 kHz\, German\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/dwd-pinneberg/
+URL:https://hqshortwaveradio.com/stations/dwd-pinneberg/
+END:VEVENT
+BEGIN:VEVENT
+UID:dwd-pinneberg-6180-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:DWD Pinneberg on 6180 kHz (German)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:DWD Pinneberg on 6180 kHz\, German\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/dwd-pinneberg/
+URL:https://hqshortwaveradio.com/stations/dwd-pinneberg/
+END:VEVENT
+BEGIN:VEVENT
+UID:dwd-pinneberg-6180-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:DWD Pinneberg on 6180 kHz (German)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:DWD Pinneberg on 6180 kHz\, German\, beamed to Europe. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/dwd-pinneberg/
+URL:https://hqshortwaveradio.com/stations/dwd-pinneberg/
+END:VEVENT
+END:VCALENDAR

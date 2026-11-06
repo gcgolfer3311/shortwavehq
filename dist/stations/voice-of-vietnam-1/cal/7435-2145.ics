@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Vietnam 1 7435 kHz 21:45 UTC
+BEGIN:VEVENT
+UID:voice-of-vietnam-1-7435-2145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T214500Z
+DTEND:20261026T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Vietnam 1 on 7435 kHz (Vietnamese)
+LOCATION:7435 kHz shortwave
+DESCRIPTION:Voice of Vietnam 1 on 7435 kHz\, Vietnamese\, beamed to Pacific
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-vietnam-1/
+URL:https://hqshortwaveradio.com/stations/voice-of-vietnam-1/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Vietnam 1 on 7435 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

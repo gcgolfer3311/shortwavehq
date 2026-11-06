@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Cultura Amauta\, Huanta shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-cultura-amauta-huanta-4955-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Cultura Amauta\, Huanta on 4955 kHz (Spanish)
+LOCATION:4955 kHz shortwave
+DESCRIPTION:Radio Cultura Amauta\, Huanta on 4955 kHz\, Spanish\, beamed to
+  Peru. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-cultura-am
+ auta-huanta/
+URL:https://hqshortwaveradio.com/stations/radio-cultura-amauta-huanta/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-cultura-amauta-huanta-4955-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T011500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Cultura Amauta\, Huanta on 4955 kHz (Spanish)
+LOCATION:4955 kHz shortwave
+DESCRIPTION:Radio Cultura Amauta\, Huanta on 4955 kHz\, Spanish\, beamed to
+  Peru. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-cultura-am
+ auta-huanta/
+URL:https://hqshortwaveradio.com/stations/radio-cultura-amauta-huanta/
+END:VEVENT
+END:VCALENDAR

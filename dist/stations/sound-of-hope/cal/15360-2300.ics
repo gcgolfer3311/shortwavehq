@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sound of Hope 15360 kHz 23:00 UTC
+BEGIN:VEVENT
+UID:sound-of-hope-15360-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 15360 kHz (Mandarin)
+LOCATION:15360 kHz shortwave
+DESCRIPTION:Sound of Hope on 15360 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sound of Hope on 15360 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

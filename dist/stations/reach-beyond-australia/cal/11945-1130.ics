@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Reach Beyond Australia 11945 kHz 11:30 UTC
+BEGIN:VEVENT
+UID:reach-beyond-australia-11945-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 11945 kHz (ROH)
+LOCATION:11945 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 11945 kHz\, ROH\, beamed to Myanmar. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reach Beyond Australia on 11945 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

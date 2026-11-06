@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MWV Palavra Alegre shortwave (B-26)
+BEGIN:VEVENT
+UID:mwv-palavra-alegre-9765-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV Palavra Alegre on 9765 kHz (Portuguese)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:MWV Palavra Alegre on 9765 kHz\, Portuguese\, beamed to South A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/mwv-palavra-ale
+ gre/
+URL:https://hqshortwaveradio.com/stations/mwv-palavra-alegre/
+END:VEVENT
+END:VCALENDAR

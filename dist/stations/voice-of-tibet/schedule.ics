@@ -1,0 +1,124 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Tibet shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-tibet-9864-1335@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133500Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9864 kHz (Tibetan)
+LOCATION:9864 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9864 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9864-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T230500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9864 kHz (Tibetan)
+LOCATION:9864 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9864 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9864-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261025T233500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9864 kHz (Tibetan)
+LOCATION:9864 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9864 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9874-1306@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130600Z
+DTEND:20261025T131200Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9874 kHz (Tibetan)
+LOCATION:9874 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9874 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9884-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T130600Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9884 kHz (Tibetan)
+LOCATION:9884 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9884 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9884-2335@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233500Z
+DTEND:20261025T234000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9884 kHz (Tibetan)
+LOCATION:9884 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9884 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9893-2306@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230600Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9893 kHz (Tibetan)
+LOCATION:9893 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9893 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9893-2340@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9893 kHz (Tibetan)
+LOCATION:9893 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9893 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-tibet-9898-1309@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130900Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9898 kHz (Tibetan)
+LOCATION:9898 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9898 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+END:VEVENT
+END:VCALENDAR

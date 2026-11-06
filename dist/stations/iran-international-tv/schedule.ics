@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Iran International TV shortwave (B-26)
+BEGIN:VEVENT
+UID:iran-international-tv-5890-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 5890 kHz (Farsi)
+LOCATION:5890 kHz shortwave
+DESCRIPTION:Iran International TV on 5890 kHz\, Farsi\, beamed to Iran. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+BEGIN:VEVENT
+UID:iran-international-tv-5900-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 5900 kHz (Farsi)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:Iran International TV on 5900 kHz\, Farsi\, beamed to Iran. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+BEGIN:VEVENT
+UID:iran-international-tv-9425-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 9425 kHz (Farsi)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Iran International TV on 9425 kHz\, Farsi\, beamed to Iran. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+BEGIN:VEVENT
+UID:iran-international-tv-15730-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 15730 kHz (Farsi)
+LOCATION:15730 kHz shortwave
+DESCRIPTION:Iran International TV on 15730 kHz\, Farsi\, beamed to Iran. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+BEGIN:VEVENT
+UID:iran-international-tv-15745-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 15745 kHz (Farsi)
+LOCATION:15745 kHz shortwave
+DESCRIPTION:Iran International TV on 15745 kHz\, Farsi\, beamed to Iran. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+BEGIN:VEVENT
+UID:iran-international-tv-17900-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Iran International TV on 17900 kHz (Farsi)
+LOCATION:17900 kHz shortwave
+DESCRIPTION:Iran International TV on 17900 kHz\, Farsi\, beamed to Iran. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/iran-international-tv/
+URL:https://hqshortwaveradio.com/stations/iran-international-tv/
+END:VEVENT
+END:VCALENDAR

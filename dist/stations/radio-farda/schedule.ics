@@ -1,0 +1,254 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Farda shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-farda-5830-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261026T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 5830 kHz (Farsi)
+LOCATION:5830 kHz shortwave
+DESCRIPTION:Radio Farda on 5830 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-5860-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 5860 kHz (Farsi)
+LOCATION:5860 kHz shortwave
+DESCRIPTION:Radio Farda on 5860 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-5925-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 5925 kHz (Farsi)
+LOCATION:5925 kHz shortwave
+DESCRIPTION:Radio Farda on 5925 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-6065-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 6065 kHz (Farsi)
+LOCATION:6065 kHz shortwave
+DESCRIPTION:Radio Farda on 6065 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-6170-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 6170 kHz (Farsi)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Radio Farda on 6170 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-6195-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 6195 kHz (Farsi)
+LOCATION:6195 kHz shortwave
+DESCRIPTION:Radio Farda on 6195 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-7480-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 7480 kHz (Farsi)
+LOCATION:7480 kHz shortwave
+DESCRIPTION:Radio Farda on 7480 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9320-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9320 kHz (Farsi)
+LOCATION:9320 kHz shortwave
+DESCRIPTION:Radio Farda on 9320 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9345-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9345 kHz (Farsi)
+LOCATION:9345 kHz shortwave
+DESCRIPTION:Radio Farda on 9345 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9360-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9360 kHz (Farsi)
+LOCATION:9360 kHz shortwave
+DESCRIPTION:Radio Farda on 9360 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9510-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9510 kHz (Farsi)
+LOCATION:9510 kHz shortwave
+DESCRIPTION:Radio Farda on 9510 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9805-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9805 kHz (Farsi)
+LOCATION:9805 kHz shortwave
+DESCRIPTION:Radio Farda on 9805 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-9990-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 9990 kHz (Farsi)
+LOCATION:9990 kHz shortwave
+DESCRIPTION:Radio Farda on 9990 kHz\, Farsi\, beamed to Iran. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-11560-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 11560 kHz (Farsi)
+LOCATION:11560 kHz shortwave
+DESCRIPTION:Radio Farda on 11560 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-11575-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 11575 kHz (Farsi)
+LOCATION:11575 kHz shortwave
+DESCRIPTION:Radio Farda on 11575 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-12005-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 12005 kHz (Farsi)
+LOCATION:12005 kHz shortwave
+DESCRIPTION:Radio Farda on 12005 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-12110-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 12110 kHz (Farsi)
+LOCATION:12110 kHz shortwave
+DESCRIPTION:Radio Farda on 12110 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-17875-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 17875 kHz (Farsi)
+LOCATION:17875 kHz shortwave
+DESCRIPTION:Radio Farda on 17875 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-farda-21600-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Farda on 21600 kHz (Farsi)
+LOCATION:21600 kHz shortwave
+DESCRIPTION:Radio Farda on 21600 kHz\, Farsi\, beamed to Iran. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-farda/
+URL:https://hqshortwaveradio.com/stations/radio-farda/
+END:VEVENT
+END:VCALENDAR

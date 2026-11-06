@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BBC 9545 kHz 19:30 UTC
+BEGIN:VEVENT
+UID:bbc-9545-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BBC on 9545 kHz (Hausa)
+LOCATION:9545 kHz shortwave
+DESCRIPTION:BBC on 9545 kHz\, Hausa\, beamed to W. Africa. Schedule from EI
+ BI B-26 (valid until the A-27 season change). Times can change\; check htt
+ ps://hqshortwaveradio.com/stations/bbc/
+URL:https://hqshortwaveradio.com/stations/bbc/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BBC on 9545 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR 2 China Business Radio 11970 kHz 01:00 UTC
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11970-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11970 kHz (Mandarin)
+LOCATION:11970 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11970 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CNR 2 China Business Radio on 11970 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

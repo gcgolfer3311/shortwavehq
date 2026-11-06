@@ -1,0 +1,772 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Adventist World Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:adventist-world-radio-6065-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 6065 kHz (MSY)
+LOCATION:6065 kHz shortwave
+DESCRIPTION:Adventist World Radio on 6065 kHz\, MSY\, beamed to E. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-6065-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 6065 kHz (MSY)
+LOCATION:6065 kHz shortwave
+DESCRIPTION:Adventist World Radio on 6065 kHz\, MSY\, beamed to E. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-7375-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 7375 kHz (Korean)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:Adventist World Radio on 7375 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9610-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9610 kHz (Amoy)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9610 kHz\, Amoy\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9610-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9610 kHz (Cantonese)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9610 kHz\, Cantonese\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9720-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9720 kHz (Mandarin)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9720 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9760-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9760 kHz (Korean)
+LOCATION:9760 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9760 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9760-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9760 kHz (Korean)
+LOCATION:9760 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9760 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9800-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9800 kHz (Korean)
+LOCATION:9800 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9800 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-9885-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 9885 kHz (Korean)
+LOCATION:9885 kHz shortwave
+DESCRIPTION:Adventist World Radio on 9885 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11670-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11670 kHz (Urdu)
+LOCATION:11670 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11670 kHz\, Urdu\, beamed to Afghanist
+ an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11705-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11705 kHz (Mandarin)
+LOCATION:11705 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11705 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11705-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11705 kHz (Mandarin)
+LOCATION:11705 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11705 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11790-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11790 kHz (Hausa)
+LOCATION:11790 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11790 kHz\, Hausa\, beamed to CAf. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11790-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11790 kHz (IG)
+LOCATION:11790 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11790 kHz\, IG\, beamed to W. Africa. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11790-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11790 kHz (Yoruba)
+LOCATION:11790 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11790 kHz\, Yoruba\, beamed to W. Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11790-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11790 kHz (NIG)
+LOCATION:11790 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11790 kHz\, NIG\, beamed to W. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11805-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11805 kHz (Arabic)
+LOCATION:11805 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11805 kHz\, Arabic\, beamed to Middle 
+ East. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/adventist-world-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-11850-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11850 kHz (Mandarin)
+LOCATION:11850 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11850 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15215-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15215 kHz (KAN)
+LOCATION:15215 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15215 kHz\, KAN\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15215-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15215 kHz (Hindi)
+LOCATION:15215 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15215 kHz\, Hindi\, beamed to South As
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15255-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15255 kHz (Bengali)
+LOCATION:15255 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15255 kHz\, Bengali\, beamed to South 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/adventist-world-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15265-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15265 kHz (KBO)
+LOCATION:15265 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15265 kHz\, KBO\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15270-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15270 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15270-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15270 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15360-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15360 kHz (Pashto)
+LOCATION:15360 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15360 kHz\, Pashto\, beamed to South A
+ sia. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15400-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15400 kHz (KA)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15400 kHz\, KA\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15400-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15400 kHz (KA)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15400 kHz\, KA\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15430-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15430 kHz (Mandarin)
+LOCATION:15430 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15430 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15430-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15430 kHz (Mandarin)
+LOCATION:15430 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15430 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15430-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15430 kHz (MON)
+LOCATION:15430 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15430 kHz\, MON\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15460-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15460 kHz (Oromo)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15460 kHz\, Oromo\, beamed to E. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/adventist-world-radi
+ o/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15460-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15460 kHz (TIG)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15460 kHz\, TIG\, beamed to E. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15460-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15460 kHz (Amharic)
+LOCATION:15460 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15460 kHz\, Amharic\, beamed to E. Afr
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15500-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15500 kHz (Indonesian)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15500 kHz\, Indonesian\, beamed to Ind
+ onesia. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/adventist-world
+ -radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15500-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15500 kHz (JV)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15500 kHz\, JV\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15505-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15505 kHz (C-A)
+LOCATION:15505 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15505 kHz\, C-A\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (SHA)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, SHA\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (RAK)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, RAK\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (K-M)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, K-M\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (KC)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, KC\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (Burmese)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, Burmese\, beamed to SE Asi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/adventist-world-radi
+ o/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15530-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15530 kHz (Tamil)
+LOCATION:15530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15530 kHz\, Tamil\, beamed to South As
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15550-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15550 kHz (Amoy)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15550 kHz\, Amoy\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15550-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15550 kHz (Cantonese)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15550 kHz\, Cantonese\, beamed to Far 
+ East. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/adventist-world-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15600-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15600 kHz (Uyghur)
+LOCATION:15600 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15600 kHz\, Uyghur\, beamed to Far Eas
+ t. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/adventist-world-radi
+ o/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15600-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15600 kHz (Mandarin)
+LOCATION:15600 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15600 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15680-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15680 kHz (NJ)
+LOCATION:15680 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15680 kHz\, NJ\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15680-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15680 kHz (KAN)
+LOCATION:15680 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15680 kHz\, KAN\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15680-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15680 kHz (Telugu)
+LOCATION:15680 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15680 kHz\, Telugu\, beamed to South A
+ sia. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-15710-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 15710 kHz (Mandarin)
+LOCATION:15710 kHz shortwave
+DESCRIPTION:Adventist World Radio on 15710 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-17530-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 17530 kHz (Mandarin)
+LOCATION:17530 kHz shortwave
+DESCRIPTION:Adventist World Radio on 17530 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-17620-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 17620 kHz (Mandarin)
+LOCATION:17620 kHz shortwave
+DESCRIPTION:Adventist World Radio on 17620 kHz\, Mandarin\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/adventist-world-ra
+ dio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-17650-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 17650 kHz (Burmese)
+LOCATION:17650 kHz shortwave
+DESCRIPTION:Adventist World Radio on 17650 kHz\, Burmese\, beamed to SE Asi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/adventist-world-radi
+ o/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-17735-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 17735 kHz (ASS)
+LOCATION:17735 kHz shortwave
+DESCRIPTION:Adventist World Radio on 17735 kHz\, ASS\, beamed to South Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/adventist-world-radio
+ /
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:adventist-world-radio-17755-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 17755 kHz (LIS)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Adventist World Radio on 17755 kHz\, LIS\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/adventist-world-radio/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+END:VEVENT
+END:VCALENDAR

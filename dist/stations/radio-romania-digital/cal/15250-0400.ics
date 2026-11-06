@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania DIGITAL 15250 kHz 04:00 UTC
+BEGIN:VEVENT
+UID:radio-romania-digital-15250-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 15250 kHz (English)
+LOCATION:15250 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 15250 kHz\, English\, beamed to South 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-dig
+ ital/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Romania DIGITAL on 15250 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

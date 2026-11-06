@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IBRA Radio 11630 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:ibra-radio-11630-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IBRA Radio on 11630 kHz (Tig)
+LOCATION:11630 kHz shortwave
+DESCRIPTION:IBRA Radio on 11630 kHz\, Tig\, beamed to E. Africa. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/ibra-radio/
+URL:https://hqshortwaveradio.com/stations/ibra-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IBRA Radio on 11630 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

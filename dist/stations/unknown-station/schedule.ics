@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Unknown Station shortwave (B-26)
+BEGIN:VEVENT
+UID:unknown-station-17860-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Unknown Station on 17860 kHz (Various)
+LOCATION:17860 kHz shortwave
+DESCRIPTION:Unknown Station on 17860 kHz\, Various\, beamed to Iran. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/unknown-station/
+URL:https://hqshortwaveradio.com/stations/unknown-station/
+END:VEVENT
+END:VCALENDAR

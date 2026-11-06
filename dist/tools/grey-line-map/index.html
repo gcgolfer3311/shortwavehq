@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live Grey Line Map: Day/Night Terminator Now | ShortwaveHQ</title>
+<meta name="description" content="Live grey line map showing where it is sunrise and sunset right now, plus your local sunrise and sunset times for DX listening.">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="canonical" href="https://hqshortwaveradio.com/tools/grey-line-map/">
+<link rel="alternate" hreflang="en" href="https://hqshortwaveradio.com/tools/grey-line-map/">
+<link rel="alternate" hreflang="x-default" href="https://hqshortwaveradio.com/tools/grey-line-map/">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Live Grey Line Map: Day/Night Terminator Now | ShortwaveHQ">
+<meta property="og:description" content="Live grey line map showing where it is sunrise and sunset right now, plus your local sunrise and sunset times for DX listening.">
+<meta property="og:url" content="https://hqshortwaveradio.com/tools/grey-line-map/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShortwaveHQ">
+<meta property="og:image" content="https://hqshortwaveradio.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hqshortwaveradio.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://hqshortwaveradio.com/tools/"},{"@type":"ListItem","position":3,"name":"Grey line map","item":"https://hqshortwaveradio.com/tools/grey-line-map/"}]}</script>
+<link rel="alternate" type="application/rss+xml" title="ShortwaveHQ news & schedule changes" href="https://hqshortwaveradio.com/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111418;color:#ece6dc;font-family:"Libre Baskerville",Georgia,serif;font-size:1.02rem;line-height:1.65}
+a{color:#ff8f80}
+.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}
+.bname em{color:#e74c3c;font-style:normal}
+.mlink{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}
+.kick{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#92a2b6;margin-bottom:.4rem}
+h1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}
+h2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}
+p{margin-bottom:.9rem}
+.lede{font-size:1.05rem}
+.cta{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}
+.cta.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#181c22;border:1px solid #3a4252}
+th{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#1e232a;border-bottom:1px solid #3a4252;color:#b4c0d0}
+td{padding:8px 10px;border-bottom:1px solid #2c3340;vertical-align:top}
+td a{text-decoration:none;border-bottom:1px solid #5a3a36}
+.tags a{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;border:1px solid #3a4252;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#b4c0d0;background:#181c22}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}
+.grid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#ece6dc;font-size:.82rem}
+.grid a span{display:block;font-family:"IBM Plex Mono",monospace;font-size:.58rem;color:#92a2b6;margin-top:2px}
+.crumbs{font-family:"IBM Plex Mono",monospace;font-size:.6rem;color:#92a2b6;margin-bottom:1.1rem}
+.crumbs a{color:#b4c0d0;text-decoration:none}
+footer{background:#0a0b0e;color:rgba(255,255,255,.78);padding:1.6rem 1.2rem;font-family:"IBM Plex Mono",monospace;font-size:.62rem;line-height:1.9}
+footer a{color:rgba(255,255,255,.85)}
+html{-webkit-text-size-adjust:100%;color-scheme:dark}
+img,iframe,video{max-width:100%}
+.mlink{display:inline-block;padding:.5rem .3rem}
+.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}
+.msoc svg{width:18px;height:18px}
+p,li,h1,h2{overflow-wrap:break-word}
+@media(max-width:640px){
+table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.mast{padding:.6rem .9rem}
+.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}
+.mlink{font-size:.72rem;padding:.7rem .55rem}
+.wrap{padding:1.2rem .9rem 3rem}
+h1{font-size:1.5rem}
+.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}
+.tags a{padding:10px 14px;margin:0 6px 8px 0}
+.grid{grid-template-columns:1fr 1fr}
+.grid a{padding:.85rem .8rem}
+td,th{padding:9px 10px;white-space:nowrap}
+td:first-child,th:first-child{white-space:normal;min-width:130px}
+.crumbs{line-height:1.9}
+}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+
+/* dark-theme overrides for inline-styled boxes */
+[style*='background:#fff;'],[style$='background:#fff'],[style*='background: #fff;']{background:#181c22!important}
+[style*='background:#fff8e6']{background:#3a2f12!important;border-color:#8a6a1f!important}
+[style*='background:#fdecea']{background:#3a1f1c!important}
+[style*='background:#eaf7ee']{background:#12301f!important}
+[style*='background:#f5f0e8'],[style*='background:#ece7db']{background:#181c22!important}
+[style*='#c8c0b0']{border-color:#3a4252!important}
+[style*='color:#6b5f52']{color:#b4c0d0!important}[style*='color:#9c8e81']{color:#92a2b6!important}
+[style*='color:#c0392b']{color:#ff8f80!important}[style*='color:#2f6b3f']{color:#66d98f!important}
+[style*='color:#0a0b0e']:not([style*='#FF9900']){color:#ece6dc!important}[style*='color:#4a4238'],[style*='color:#5a4f44']{color:#b4c0d0!important}blockquote{background:#3a1f1c!important;color:#ece6dc}pre{background:#181c22;color:#ece6dc}
+@media print{body{background:#fff;color:#000}}
+</style>
+<style>.spec td{white-space:normal!important}.spec td:first-child{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:#b4c0d0;width:34%}.yes{color:#5fd38a;font-weight:600}.no{color:#ff8f80}.nl{color:#92a2b6;font-style:italic}.card{background:#181c22;border:1px solid #3a4252;border-radius:6px;padding:1rem;margin:.8rem 0}.tool label{display:block;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:#b4c0d0;margin:.6rem 0 .25rem}.tool input,.tool select{width:100%;max-width:360px;background:#0f1216;color:#ece6dc;border:1px solid #3a4252;border-radius:4px;padding:10px;font:1rem 'IBM Plex Mono',monospace}.out{font-family:'IBM Plex Mono',monospace;font-size:1rem;background:#0f1216;border:1px solid #3a4252;border-left:4px solid #c0392b;border-radius:4px;padding:.8rem 1rem;margin:.8rem 0;overflow-wrap:anywhere}.out b{color:#fff;font-size:1.15rem}.small{font-size:.8rem;color:#b4c0d0}.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:.8rem 0}.rgrid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:6px;padding:.85rem;text-decoration:none;color:#ece6dc}.rgrid a b{display:block;font-family:Syne,sans-serif;font-size:1rem;color:#fff}.rgrid a span{display:block;font-family:'IBM Plex Mono',monospace;font-size:.62rem;color:#92a2b6;margin-top:3px}.rgrid a em{display:block;font-style:normal;font-size:.8rem;margin-top:.4rem;color:#d8d0c4}.rgrid a .chips span,.chips span{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.62rem;border:1px solid #3a4252;border-radius:12px;padding:2px 8px;margin:4px 4px 0 0;color:#b4c0d0}.btn{display:inline-block;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:600;background:#c0392b;color:#fff;border:0;border-radius:4px;padding:10px 16px;margin:.3rem .4rem .3rem 0;text-decoration:none}.btn.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}.az{columns:2 240px;column-gap:24px}.az p{break-inside:avoid;margin-bottom:.7rem}@media(max-width:600px){.tool input,.tool select{max-width:100%}}</style></head>
+<body>
+<header class="mast"><a class="bname" href="/">Shortwave<em>HQ</em></a><nav><a class="mlink" href="/">Live Search</a> &nbsp; <a class="mlink" href="/tonight/">Tonight</a> &nbsp; <a class="mlink" href="/season-change/">Season Change</a> &nbsp; <a class="mlink" href="/band-scans/">Band Scans</a> &nbsp; <a class="mlink" href="/listen-online/">Listen Online</a> &nbsp; <a class="mlink" href="/articles/">Articles</a> &nbsp; <a class="mlink" href="/stations/">Stations</a> &nbsp; <a class="mlink" href="/frequency/">Frequencies</a> &nbsp; <a class="mlink" href="/bands/">Bands</a> &nbsp; <a class="mlink" href="/radios/">Radios</a> &nbsp; <a class="mlink" href="/tools/">Tools</a> &nbsp; <a class="mlink" href="/my-schedule/">My Schedule</a> &nbsp; <a class="msoc" href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a class="msoc" href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="M9.6 15.6V8.4L15.8 12z"/></svg></a><a class="msoc" href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.07C24 5.4 18.6 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z"/></svg></a></nav></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Grey line map</div>
+<div class="kick">Free Shortwave Tool</div>
+<h1>Live Grey Line Map</h1>
+<p class="lede">The grey line is where it is sunrise or sunset right now. Paths along it often bring unusual long-distance reception. The map updates every minute; your sunrise and sunset times are calculated from your location if you share it, or from your time zone otherwise.</p><div class="card"><canvas id="cv" style="width:100%;display:block;border-radius:4px" aria-label="World map with day, night and grey line"></canvas><div class="out" id="o"></div><button class="btn o" id="loc" type="button">Use my location for sunrise/sunset</button></div><script>(function(){var LAND=[
+ {r:"North America",p:[[-166,66],[-156,71],[-128,70],[-100,72],[-83,73],[-78,63],[-64,60],[-55,52],[-60,46],[-70,43],[-74,40],[-81,31],[-80,25],[-83,29],[-89,30],[-94,29],[-97,26],[-97,21],[-94,18],[-90,16],[-87,13],[-83,10],[-80,8],[-83,9],[-86,12],[-92,15],[-96,16],[-101,19],[-105,21],[-110,23],[-115,29],[-123,33],[-124,40],[-124,48],[-130,54],[-140,59],[-152,58],[-166,66]]},
+ {r:"North America",p:[[-45,60],[-30,60],[-20,70],[-25,78],[-40,82],[-55,80],[-58,72],[-50,64],[-45,60]]},
+ {r:"South America",p:[[-77,8],[-72,11],[-62,10],[-52,5],[-50,0],[-44,-2],[-35,-6],[-38,-13],[-42,-23],[-48,-28],[-54,-34],[-58,-39],[-66,-45],[-68,-51],[-70,-54],[-73,-52],[-73,-44],[-72,-37],[-71,-30],[-70,-18],[-76,-14],[-81,-6],[-80,-2],[-79,2],[-77,8]]},
+ {r:"Africa",p:[[-16,21],[-17,15],[-8,4],[3,6],[9,4],[9,-1],[13,-6],[12,-16],[15,-23],[19,-34],[26,-34],[33,-27],[38,-18],[41,-11],[43,-2],[51,12],[44,11],[43,15],[38,18],[34,28],[33,31],[25,32],[15,32],[10,37],[0,36],[-6,36],[-10,30],[-16,21]]},
+ {r:"Africa",p:[[44,-16],[47,-15],[50,-18],[49,-23],[45,-25],[44,-20],[44,-16]]},
+ {r:"Europe",p:[[-10,37],[-9,43],[-2,44],[-5,48],[-1,49],[2,51],[8,54],[8,58],[5,62],[12,66],[25,71],[30,66],[40,66],[48,60],[55,58],[50,50],[40,46],[30,45],[28,41],[23,40],[19,42],[13,45],[13,38],[8,44],[3,43],[-2,37],[-10,37]]},
+ {r:"Europe",p:[[-5,50],[-3,53],[-3,58],[-5,57],[-6,55],[-6,52],[-5,50]]},
+ {r:"Asia",p:[[48,60],[60,68],[75,73],[100,78],[115,73],[135,72],[160,70],[170,66],[178,68],[160,60],[155,52],[142,48],[135,44],[130,42],[127,38],[122,31],[121,25],[110,21],[108,15],[105,10],[103,1],[98,8],[92,21],[88,22],[80,8],[77,8],[73,20],[67,25],[57,25],[48,30],[43,40],[50,45],[55,50],[48,60]]},
+ {r:"Asia",p:[[130,31],[135,34],[140,37],[142,40],[140,43],[138,37],[135,34],[132,33],[130,31]]},
+ {r:"Asia",p:[[95,5],[100,0],[105,-6],[114,-8],[120,-9],[118,-3],[110,-2],[100,3],[95,5]]},
+ {r:"Pacific",p:[[113,-22],[114,-34],[122,-34],[130,-32],[137,-35],[141,-38],[147,-43],[150,-37],[153,-28],[146,-19],[142,-11],[135,-12],[130,-15],[122,-18],[113,-22]]},
+ {r:"Pacific",p:[[166,-46],[168,-44],[172,-41],[174,-38],[176,-39],[174,-42],[171,-45],[166,-46]]},
+ {r:"Middle East",p:[[35,30],[39,32],[44,37],[48,30],[48,28],[51,24],[56,24],[59,22],[57,19],[52,15],[45,12],[43,13],[43,17],[41,20],[39,21],[35,28],[35,30]]}
+];var cv=document.getElementById('cv'),o=document.getElementById('o'),LOC=null;function sun(n){var st=Date.UTC(n.getUTCFullYear(),0,0),doy=Math.floor((n.getTime()-st)/86400000),dec=-23.44*Math.cos(2*Math.PI/365*(doy+10)),B=2*Math.PI/365*(doy-81),eot=9.87*Math.sin(2*B)-7.53*Math.cos(B)-1.5*Math.sin(B),h=n.getUTCHours()+n.getUTCMinutes()/60+n.getUTCSeconds()/3600,sl=-15*((h+eot/60)-12);while(sl>180)sl-=360;while(sl<-180)sl+=360;return{dec:dec,slon:sl,eot:eot};}function tl(lon,s){var ha=(lon-s.slon)*Math.PI/180,td=Math.tan(s.dec*Math.PI/180);if(Math.abs(td)<1e-4)td=td<0?-1e-4:1e-4;return Math.atan(-Math.cos(ha)/td)*180/Math.PI;}function draw(){var W=cv.offsetWidth||700,H=Math.round(W/2);cv.width=W*2;cv.height=H*2;cv.style.height=H+'px';var c=cv.getContext('2d');c.setTransform(2,0,0,2,0,0);c.fillStyle='#16395a';c.fillRect(0,0,W,H);c.fillStyle='#3d6b8f';c.strokeStyle='#4f80a6';c.lineWidth=.6;LAND.forEach(function(g){var p=g.p;c.beginPath();p.forEach(function(q,i){var x=(q[0]+180)/360*W,y=(90-q[1])/180*H;if(i)c.lineTo(x,y);else c.moveTo(x,y);});c.closePath();c.fill();c.stroke();});var s=sun(new Date()),xy=function(lo,la){return[(lo+180)/360*W,(90-la)/180*H];};c.beginPath();for(var x=0;x<=W;x+=2){var lo=x/W*360-180,p=xy(lo,tl(lo,s));if(x)c.lineTo(p[0],p[1]);else c.moveTo(p[0],p[1]);}if(s.dec>=0){c.lineTo(W,H);c.lineTo(0,H);}else{c.lineTo(W,0);c.lineTo(0,0);}c.closePath();c.fillStyle='rgba(2,6,16,.68)';c.fill();c.beginPath();for(var x2=0;x2<=W;x2+=2){var lo2=x2/W*360-180,p2=xy(lo2,tl(lo2,s));if(x2)c.lineTo(p2[0],p2[1]);else c.moveTo(p2[0],p2[1]);}c.strokeStyle='rgba(224,92,74,.28)';c.lineWidth=10;c.stroke();c.strokeStyle='rgba(255,140,100,.9)';c.lineWidth=1.5;c.stroke();var sp=xy(s.slon,s.dec);c.fillStyle='#ffd766';c.beginPath();c.arc(sp[0],sp[1],4,0,7);c.fill();if(LOC){var lp=xy(LOC[1],LOC[0]);c.fillStyle='#5fd38a';c.beginPath();c.arc(lp[0],lp[1],4,0,7);c.fill();}info(s);}function info(s){var d=new Date(),t=('0'+d.getUTCHours()).slice(-2)+':'+('0'+d.getUTCMinutes()).slice(-2)+' UTC';var la,lo,src;if(LOC){la=LOC[0];lo=LOC[1];src='your location';}else{lo=-d.getTimezoneOffset()/4;la=35;src='your time zone (approximate; share location for exact times)';}var cosH=-Math.tan(la*Math.PI/180)*Math.tan(s.dec*Math.PI/180);var h='Map time: <b>'+t+'</b>. Yellow dot = Sun overhead; orange line = grey line.';if(cosH>=-1&&cosH<=1){var H0=Math.acos(cosH)*180/Math.PI,noon=720-4*lo-s.eot,rise=noon-4*H0-3,set=noon+4*H0+3;function f(m){m=((Math.round(m)%1440)+1440)%1440;var u=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate(),0,m));return ('0'+u.getUTCHours()).slice(-2)+('0'+u.getUTCMinutes()).slice(-2)+' UTC ('+u.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})+' local)';}h+='<br>Sunrise: <b>'+f(rise)+'</b><br>Sunset: <b>'+f(set)+'</b><br><span class="small">Based on '+src+'.</span>';}else h+='<br>No sunrise or sunset at this latitude today.';o.innerHTML=h;}document.getElementById('loc').onclick=function(){if(!navigator.geolocation){o.innerHTML+='<br>Location is not available in this browser.';return;}navigator.geolocation.getCurrentPosition(function(p){LOC=[p.coords.latitude,p.coords.longitude];draw();},function(){o.innerHTML+='<br>Location permission was not given.';});};draw();setInterval(draw,60000);window.addEventListener('resize',draw);})();</script><h2>How to use the grey line</h2><p>Around your local sunrise and sunset, the absorbing D layer of the <a href="/glossary/ionosphere/">ionosphere</a> is weak on the dark side, while the higher layers are still charged. Signals travelling along the terminator lose less energy, so distant stations can pop up for 30–60 minutes. Try the lower bands (90 m to 41 m) near your sunrise and sunset, aiming for stations that are also near their own sunrise or sunset. More in the <a href="/glossary/grey-line/">grey line glossary entry</a>.</p><h2>More free tools</h2><div class="tags"><a href="/tools/dipole-calculator/">Dipole Antenna Calculator</a><a href="/tools/longwire-antenna-calculator/">Longwire Antenna Length Calculator</a><a href="/tools/frequency-wavelength-converter/">Frequency to Wavelength Converter</a><a href="/tools/utc-time-converter/">UTC Time Converter for Shortwave Schedules</a></div><h2>Frequently asked questions</h2><h3 style="font-family:Syne,sans-serif;font-size:1rem;margin:1rem 0 .3rem">What is grey line propagation?</h3><p>Enhanced long-distance reception along the sunrise/sunset line, where the absorbing D layer is weak but the reflecting layers are still ionised.</p><h3 style="font-family:Syne,sans-serif;font-size:1rem;margin:1rem 0 .3rem">When should I listen on the grey line?</h3><p>From about 30 minutes before to 30 minutes after your local sunrise or sunset.</p><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is grey line propagation?","acceptedAnswer":{"@type":"Answer","text":"Enhanced long-distance reception along the sunrise/sunset line, where the absorbing D layer is weak but the reflecting layers are still ionised."}},{"@type":"Question","name":"When should I listen on the grey line?","acceptedAnswer":{"@type":"Answer","text":"From about 30 minutes before to 30 minutes after your local sunrise or sunset."}}]}</script>
+</main>
+<footer><div style="max-width:960px;margin:0 auto">© 2026 ShortwaveHQ · <a href="/">hqshortwaveradio.com</a> · Live shortwave schedules, frequencies &amp; band conditions · EIBI B-26 data · Contact: <a href="mailto:Hqshortwaveradio@gmail.com">Hqshortwaveradio@gmail.com</a> · Follow: <a href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.facebook.com/groups/836185586242956" target="_blank" rel="noopener">Join the Listeners Group</a> · <a href="https://www.reddit.com/r/ShortwaveHQ/" target="_blank" rel="noopener">r/ShortwaveHQ</a> · <a href="https://x.com/hqshortwave" target="_blank" rel="noopener">X</a> · <a href="/ja/" lang="ja">日本語</a><br><a href="/radios/">Radio database</a> · <a href="/compare/">Compare radios</a> · <a href="/glossary/">Glossary</a> · <a href="/tools/">Tools</a> · <a href="/my-schedule/">My Schedule</a> · <a href="/print/">Printable schedules</a> · <a href="/next-season/">Next season</a> · <a href="/feed.xml">RSS</a><br>Independent hobbyist project — schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>
+</body>
+</html>

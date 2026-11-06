@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Adventist World Radio 11790 kHz 20:00 UTC
+BEGIN:VEVENT
+UID:adventist-world-radio-11790-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Adventist World Radio on 11790 kHz (Yoruba)
+LOCATION:11790 kHz shortwave
+DESCRIPTION:Adventist World Radio on 11790 kHz\, Yoruba\, beamed to W. Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/adventist-world-rad
+ io/
+URL:https://hqshortwaveradio.com/stations/adventist-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Adventist World Radio on 11790 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

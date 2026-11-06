@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NHK Radio Japan 9770 kHz 05:00 UTC
+BEGIN:VEVENT
+UID:nhk-radio-japan-9770-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9770 kHz (Japanese)
+LOCATION:9770 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9770 kHz\, Japanese\, beamed to Central Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NHK Radio Japan on 9770 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

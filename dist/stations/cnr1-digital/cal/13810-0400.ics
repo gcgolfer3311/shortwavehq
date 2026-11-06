@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR1 DIGITAL 13810 kHz 04:00 UTC
+BEGIN:VEVENT
+UID:cnr1-digital-13810-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR1 DIGITAL on 13810 kHz (Mandarin)
+LOCATION:13810 kHz shortwave
+DESCRIPTION:CNR1 DIGITAL on 13810 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/cnr1-digital/
+URL:https://hqshortwaveradio.com/stations/cnr1-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CNR1 DIGITAL on 13810 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,124 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RTM Sabah V FM shortwave (B-26)
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (Mandarin)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, Mandarin\, beamed to MLA. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (English)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, English\, beamed to MLA. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (BAJ)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, BAJ\, beamed to MLA. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (LB)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, LB\, beamed to MLA. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (DU)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, DU\, beamed to MLA. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (English)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, English\, beamed to MLA. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (LB)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, LB\, beamed to MLA. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (BAJ)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, BAJ\, beamed to MLA. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtm-sabah-v-fm-11885-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RTM Sabah V FM on 11885 kHz (KAD)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:RTM Sabah V FM on 11885 kHz\, KAD\, beamed to MLA. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+URL:https://hqshortwaveradio.com/stations/rtm-sabah-v-fm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Korea 9425 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:voice-of-korea-9425-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea on 9425 kHz (German)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea on 9425 kHz\, German\, beamed to Europe. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-korea/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Korea on 9425 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

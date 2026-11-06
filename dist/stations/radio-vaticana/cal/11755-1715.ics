@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Vaticana 11755 kHz 17:15 UTC
+BEGIN:VEVENT
+UID:radio-vaticana-11755-1715@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T171500Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11755 kHz (English)
+LOCATION:11755 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11755 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Vaticana on 11755 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

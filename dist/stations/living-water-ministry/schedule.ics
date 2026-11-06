@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Living Water Ministry shortwave (B-26)
+BEGIN:VEVENT
+UID:living-water-ministry-9900-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Living Water Ministry on 9900 kHz (Korean)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:Living Water Ministry on 9900 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/living-water-ministry
+ /
+URL:https://hqshortwaveradio.com/stations/living-water-ministry/
+END:VEVENT
+BEGIN:VEVENT
+UID:living-water-ministry-9900-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Living Water Ministry on 9900 kHz (Korean)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:Living Water Ministry on 9900 kHz\, Korean\, beamed to Far East
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/living-water-ministry
+ /
+URL:https://hqshortwaveradio.com/stations/living-water-ministry/
+END:VEVENT
+END:VCALENDAR

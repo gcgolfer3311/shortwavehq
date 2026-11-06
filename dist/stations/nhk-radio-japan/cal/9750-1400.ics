@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NHK Radio Japan 9750 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:nhk-radio-japan-9750-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T142000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9750 kHz (Mandarin)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9750 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NHK Radio Japan on 9750 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bible Voice 6150 kHz 18:30 UTC
+BEGIN:VEVENT
+UID:bible-voice-6150-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 6150 kHz (Spanish)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Bible Voice on 6150 kHz\, Spanish\, beamed to Spain. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Bible Voice on 6150 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China Radio International 15350 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:china-radio-international-15350-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China Radio International on 15350 kHz (English)
+LOCATION:15350 kHz shortwave
+DESCRIPTION:China Radio International on 15350 kHz\, English\, beamed to So
+ uth Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/china-radio-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/china-radio-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China Radio International on 15350 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

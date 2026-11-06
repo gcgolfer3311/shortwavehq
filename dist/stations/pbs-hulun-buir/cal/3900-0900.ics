@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Hulun Buir 3900 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:pbs-hulun-buir-3900-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T144000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Hulun Buir on 3900 kHz (Mandarin)
+LOCATION:3900 kHz shortwave
+DESCRIPTION:PBS Hulun Buir on 3900 kHz\, Mandarin\, beamed to China. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/pbs-hulun-buir/
+URL:https://hqshortwaveradio.com/stations/pbs-hulun-buir/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Hulun Buir on 3900 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:BPM Xian shortwave (B-26)
+BEGIN:VEVENT
+UID:bpm-xian-2500-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BPM Xian on 2500 kHz (Time Signal)
+LOCATION:2500 kHz shortwave
+DESCRIPTION:BPM Xian on 2500 kHz\, Time Signal\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/bpm-xian/
+URL:https://hqshortwaveradio.com/stations/bpm-xian/
+END:VEVENT
+BEGIN:VEVENT
+UID:bpm-xian-15000-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:BPM Xian on 15000 kHz (Time Signal)
+LOCATION:15000 kHz shortwave
+DESCRIPTION:BPM Xian on 15000 kHz\, Time Signal\, beamed to China. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/bpm-xian/
+URL:https://hqshortwaveradio.com/stations/bpm-xian/
+END:VEVENT
+END:VCALENDAR

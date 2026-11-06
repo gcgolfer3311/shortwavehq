@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Estación 4940 shortwave (B-26)
+BEGIN:VEVENT
+UID:estaci-n-4940-4940-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Estación 4940 on 4940 kHz (Spanish)
+LOCATION:4940 kHz shortwave
+DESCRIPTION:Estación 4940 on 4940 kHz\, Spanish\, beamed to VEN. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/estaci-n-4940/
+URL:https://hqshortwaveradio.com/stations/estaci-n-4940/
+END:VEVENT
+END:VCALENDAR

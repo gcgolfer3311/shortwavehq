@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Reach Beyond Australia 15400 kHz 13:00 UTC
+BEGIN:VEVENT
+UID:reach-beyond-australia-15400-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Reach Beyond Australia on 15400 kHz (Hindi)
+LOCATION:15400 kHz shortwave
+DESCRIPTION:Reach Beyond Australia on 15400 kHz\, Hindi\, beamed to NIn. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/reach-beyond-australia/
+URL:https://hqshortwaveradio.com/stations/reach-beyond-australia/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reach Beyond Australia on 15400 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

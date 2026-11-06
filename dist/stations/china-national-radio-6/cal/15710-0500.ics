@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio 6 15710 kHz 05:00 UTC
+BEGIN:VEVENT
+UID:china-national-radio-6-15710-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio 6 on 15710 kHz (Hakka)
+LOCATION:15710 kHz shortwave
+DESCRIPTION:China National Radio 6 on 15710 kHz\, Hakka\, beamed to Taiwan.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio-6
+ /
+URL:https://hqshortwaveradio.com/stations/china-national-radio-6/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China National Radio 6 on 15710 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

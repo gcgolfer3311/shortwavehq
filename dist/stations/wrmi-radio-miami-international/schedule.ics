@@ -1,0 +1,203 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WRMI Radio Miami International shortwave (B-26)
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5010-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5010 kHz (English)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5010 kHz\, English\, beamed t
+ o Caribbean. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/wrmi-radio
+ -miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5010-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5010 kHz (English)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5010 kHz\, English\, beamed t
+ o Caribbean. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/wrmi-radio
+ -miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5050-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5050 kHz (English)
+LOCATION:5050 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5050 kHz\, English\, beamed t
+ o Central America. Schedule from EIBI B-26 (valid until the A-27 season ch
+ ange). Times can change\; check https://hqshortwaveradio.com/stations/wrmi
+ -radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5800-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5800 kHz (English)
+LOCATION:5800 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5800 kHz\, English\, beamed t
+ o LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/wrmi-radio-miami
+ -international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5850-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5850 kHz\, English\, beamed t
+ o W. North America. Schedule from EIBI B-26 (valid until the A-27 season c
+ hange). Times can change\; check https://hqshortwaveradio.com/stations/wrm
+ i-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5850-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5850 kHz (Mandarin)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5850 kHz\, Mandarin\, beamed 
+ to W. North America. Schedule from EIBI B-26 (valid until the A-27 season 
+ change). Times can change\; check https://hqshortwaveradio.com/stations/wr
+ mi-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5850-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5850 kHz (English)
+LOCATION:5850 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5850 kHz\, English\, beamed t
+ o W. North America. Schedule from EIBI B-26 (valid until the A-27 season c
+ hange). Times can change\; check https://hqshortwaveradio.com/stations/wrm
+ i-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5950-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5950 kHz (English)
+LOCATION:5950 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5950 kHz\, English\, beamed t
+ o E. North America. Schedule from EIBI B-26 (valid until the A-27 season c
+ hange). Times can change\; check https://hqshortwaveradio.com/stations/wrm
+ i-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-5950-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 5950 kHz (English)
+LOCATION:5950 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 5950 kHz\, English\, beamed t
+ o E. North America. Schedule from EIBI B-26 (valid until the A-27 season c
+ hange). Times can change\; check https://hqshortwaveradio.com/stations/wrm
+ i-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-9395-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 9395 kHz (Mandarin)
+LOCATION:9395 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 9395 kHz\, Mandarin\, beamed 
+ to E. North America. Schedule from EIBI B-26 (valid until the A-27 season 
+ change). Times can change\; check https://hqshortwaveradio.com/stations/wr
+ mi-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-9455-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 9455 kHz (English)
+LOCATION:9455 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 9455 kHz\, English\, beamed t
+ o Central America. Schedule from EIBI B-26 (valid until the A-27 season ch
+ ange). Times can change\; check https://hqshortwaveradio.com/stations/wrmi
+ -radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-9955-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 9955 kHz (English)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 9955 kHz\, English\, beamed t
+ o LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/wrmi-radio-miami
+ -international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-9955-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 9955 kHz (English)
+LOCATION:9955 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 9955 kHz\, English\, beamed t
+ o LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/wrmi-radio-miami
+ -international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:wrmi-radio-miami-international-17790-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 17790 kHz\, English\, beamed 
+ to E. North America. Schedule from EIBI B-26 (valid until the A-27 season 
+ change). Times can change\; check https://hqshortwaveradio.com/stations/wr
+ mi-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+END:VCALENDAR

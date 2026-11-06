@@ -1,0 +1,875 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IRIB Voice of I.Radio Iran shortwave (B-26)
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-5905-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T172000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 5905 kHz (AR)
+LOCATION:5905 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 5905 kHz\, AR\, beamed to Caucasu
+ s. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-radi
+ o-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-5905-1720@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T172000Z
+DTEND:20261025T182000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 5905 kHz (Tajik)
+LOCATION:5905 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 5905 kHz\, Tajik\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-5905-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 5905 kHz (Albanian)
+LOCATION:5905 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 5905 kHz\, Albanian\, beamed to E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-5970-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T172000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 5970 kHz (AR)
+LOCATION:5970 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 5970 kHz\, AR\, beamed to Caucasu
+ s. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-radi
+ o-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-5970-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 5970 kHz (Albanian)
+LOCATION:5970 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 5970 kHz\, Albanian\, beamed to E
+ urope. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-6000-1720@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T172000Z
+DTEND:20261025T182000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 6000 kHz (Tajik)
+LOCATION:6000 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 6000 kHz\, Tajik\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-7280-0050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T005000Z
+DTEND:20261025T022000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 7280 kHz (Tajik)
+LOCATION:7280 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 7280 kHz\, Tajik\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9570-1320@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T132000Z
+DTEND:20261025T142000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9570 kHz (KU)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9570 kHz\, KU\, beamed to Middle 
+ East. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-r
+ adio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9640-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9640 kHz (Arabic)
+LOCATION:9640 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9640 kHz\, Arabic\, beamed to Mid
+ dle East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9650-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9650 kHz (Bengali)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9650 kHz\, Bengali\, beamed to So
+ uth Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9675-1020@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T102000Z
+DTEND:20261025T115000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9675 kHz (Hausa)
+LOCATION:9675 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9675 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9740-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9740 kHz (Hausa)
+LOCATION:9740 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9740 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9750-1650@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T165000Z
+DTEND:20261025T182000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9750 kHz (Turkish)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9750 kHz\, Turkish\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9750-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9750 kHz (Hausa)
+LOCATION:9750 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9750 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9790-1220@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122000Z
+DTEND:20261025T132000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9790 kHz (Pashto)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9790 kHz\, Pashto\, beamed to Cen
+ tral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9855-1920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T192000Z
+DTEND:20261025T202000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9855 kHz (English)
+LOCATION:9855 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9855 kHz\, English\, beamed to S.
+  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-
+ i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-9870-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 9870 kHz (Hausa)
+LOCATION:9870 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 9870 kHz\, Hausa\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11640-1420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142000Z
+DTEND:20261025T152000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11640 kHz (Hindi)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11640 kHz\, Hindi\, beamed to Sou
+ th Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-
+ i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11640-1520@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T152000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11640 kHz (English)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11640 kHz\, English\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11710-1220@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122000Z
+DTEND:20261025T132000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11710 kHz (Pashto)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11710 kHz\, Pashto\, beamed to Ce
+ ntral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/irib-voice-
+ of-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11710-1320@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T132000Z
+DTEND:20261025T142000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11710 kHz (KU)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11710 kHz\, KU\, beamed to Middle
+  East. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11710-1420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142000Z
+DTEND:20261025T152000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11710 kHz (Bengali)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11710 kHz\, Bengali\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11710-1520@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T152000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11710 kHz (English)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11710 kHz\, English\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11710-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11710 kHz (Bengali)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11710 kHz\, Bengali\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11740-1920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T192000Z
+DTEND:20261025T202000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11740 kHz (English)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11740 kHz\, English\, beamed to S
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11750-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11750 kHz (Bengali)
+LOCATION:11750 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11750 kHz\, Bengali\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11780-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T082000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11780 kHz (Dari)
+LOCATION:11780 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11780 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11780-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11780 kHz (Dari)
+LOCATION:11780 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11780 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11850-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11850 kHz (Bengali)
+LOCATION:11850 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11850 kHz\, Bengali\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11880-1220@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T122000Z
+DTEND:20261025T132000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11880 kHz (Pashto)
+LOCATION:11880 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11880 kHz\, Pashto\, beamed to Ce
+ ntral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/irib-voice-
+ of-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11880-1920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T192000Z
+DTEND:20261025T202000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11880 kHz (English)
+LOCATION:11880 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11880 kHz\, English\, beamed to S
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-11985-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T082000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 11985 kHz (Dari)
+LOCATION:11985 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 11985 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-12055-1420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T142000Z
+DTEND:20261025T152000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 12055 kHz (Bengali)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 12055 kHz\, Bengali\, beamed to S
+ outh Asia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15120-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15120 kHz (Hausa)
+LOCATION:15120 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15120 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15130-0450@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T045000Z
+DTEND:20261025T055000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15130 kHz (Swahili)
+LOCATION:15130 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15130 kHz\, Swahili\, beamed to E
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15135-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T083000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15135 kHz (Arabic)
+LOCATION:15135 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15135 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15135-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15135 kHz (Arabic)
+LOCATION:15135 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15135 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15135-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15135 kHz (Arabic)
+LOCATION:15135 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15135 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15135-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15135 kHz (Arabic)
+LOCATION:15135 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15135 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15230-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T082000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15230 kHz (Dari)
+LOCATION:15230 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15230 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15230-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15230 kHz (Dari)
+LOCATION:15230 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15230 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15240-0420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T042000Z
+DTEND:20261025T055000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15240 kHz (Turkish)
+LOCATION:15240 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15240 kHz\, Turkish\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/irib-voice-
+ of-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15240-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15240 kHz (Arabic)
+LOCATION:15240 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15240 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15240-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15240 kHz (Arabic)
+LOCATION:15240 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15240 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15240-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15240 kHz (Arabic)
+LOCATION:15240 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15240 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15250-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T082000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15250 kHz (Dari)
+LOCATION:15250 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15250 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-0450@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T045000Z
+DTEND:20261025T055000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (Swahili)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, Swahili\, beamed to E
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (Hausa)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T102000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (Arabic)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-1020@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T102000Z
+DTEND:20261025T115000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (Hausa)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-1150@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T115000Z
+DTEND:20261025T122000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (HB)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, HB\, beamed to Middle
+  East. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15320-1920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T192000Z
+DTEND:20261025T202000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15320 kHz (English)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15320 kHz\, English\, beamed to S
+ . Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15340-0420@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T042000Z
+DTEND:20261025T055000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15340 kHz (Turkish)
+LOCATION:15340 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15340 kHz\, Turkish\, beamed to M
+ iddle East. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/irib-voice-
+ of-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15340-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T065000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15340 kHz (Hausa)
+LOCATION:15340 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15340 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15360-1820@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T182000Z
+DTEND:20261025T192000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15360 kHz (Hausa)
+LOCATION:15360 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15360 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15380-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15380 kHz (Arabic)
+LOCATION:15380 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15380 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15410-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T083000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15410 kHz (Arabic)
+LOCATION:15410 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15410 kHz\, Arabic\, beamed to Mi
+ ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/irib-voice-o
+ f-i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15430-1150@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T115000Z
+DTEND:20261025T122000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15430 kHz (HB)
+LOCATION:15430 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15430 kHz\, HB\, beamed to Middle
+  East. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i-
+ radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15440-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15440 kHz (Dari)
+LOCATION:15440 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15440 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15470-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15470 kHz (Dari)
+LOCATION:15470 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15470 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15550-1020@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T102000Z
+DTEND:20261025T115000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15550 kHz (Hausa)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15550 kHz\, Hausa\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/irib-voice-of-i
+ -radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+BEGIN:VEVENT
+UID:irib-voice-of-i-radio-iran-15620-0920@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T092000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRIB Voice of I.Radio Iran on 15620 kHz (Dari)
+LOCATION:15620 kHz shortwave
+DESCRIPTION:IRIB Voice of I.Radio Iran on 15620 kHz\, Dari\, beamed to Cent
+ ral Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/irib-voice-of
+ -i-radio-iran/
+URL:https://hqshortwaveradio.com/stations/irib-voice-of-i-radio-iran/
+END:VEVENT
+END:VCALENDAR

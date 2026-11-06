@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Vanuatu shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-vanuatu-5040-0657@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T065700Z
+DTEND:20261025T105800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vanuatu on 5040 kHz (BSL)
+LOCATION:5040 kHz shortwave
+DESCRIPTION:Radio Vanuatu on 5040 kHz\, BSL\, beamed to Vanuatu. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-vanuatu/
+URL:https://hqshortwaveradio.com/stations/radio-vanuatu/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vanuatu-5040-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vanuatu on 5040 kHz (BSL)
+LOCATION:5040 kHz shortwave
+DESCRIPTION:Radio Vanuatu on 5040 kHz\, BSL\, beamed to Vanuatu. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-vanuatu/
+URL:https://hqshortwaveradio.com/stations/radio-vanuatu/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vanuatu-7260-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261026T065800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vanuatu on 7260 kHz (BSL)
+LOCATION:7260 kHz shortwave
+DESCRIPTION:Radio Vanuatu on 7260 kHz\, BSL\, beamed to Vanuatu. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-vanuatu/
+URL:https://hqshortwaveradio.com/stations/radio-vanuatu/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vanuatu-9960-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261026T015800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vanuatu on 9960 kHz (BSL)
+LOCATION:9960 kHz shortwave
+DESCRIPTION:Radio Vanuatu on 9960 kHz\, BSL\, beamed to Vanuatu. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-vanuatu/
+URL:https://hqshortwaveradio.com/stations/radio-vanuatu/
+END:VEVENT
+END:VCALENDAR

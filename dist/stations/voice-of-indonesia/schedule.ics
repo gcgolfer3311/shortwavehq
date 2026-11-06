@@ -1,0 +1,540 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Indonesia shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (English)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Mandarin)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Japanese)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Japanese\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (English)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Indonesian)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Indonesian\, beamed to Indones
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Mandarin)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Arabic)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Arabic\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Spanish)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Spanish\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (German)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, German\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Dutch)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Dutch\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (French)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, French\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (English)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (Japanese)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, Japanese\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-3325-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 3325 kHz (English)
+LOCATION:3325 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 3325 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (English)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Mandarin)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Japanese)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Japanese\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (English)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Indonesian)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Indonesian\, beamed to Indones
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Mandarin)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Arabic)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Arabic\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Spanish)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Spanish\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (German)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, German\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Dutch)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Dutch\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (French)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, French\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (English)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-4755-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 4755 kHz (Japanese)
+LOCATION:4755 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 4755 kHz\, Japanese\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (English)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (English)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (English)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (English)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Mandarin)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Japanese)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Japanese\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (English)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, English\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Indonesian)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Indonesian\, beamed to Indones
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Mandarin)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Mandarin\, beamed to Indonesia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Arabic)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Arabic\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Spanish\, beamed to Indonesia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (German)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, German\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (Dutch)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, Dutch\, beamed to Indonesia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-indonesia-9690-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Indonesia on 9690 kHz (French)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Voice of Indonesia on 9690 kHz\, French\, beamed to Indonesia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-indonesia/
+URL:https://hqshortwaveradio.com/stations/voice-of-indonesia/
+END:VEVENT
+END:VCALENDAR

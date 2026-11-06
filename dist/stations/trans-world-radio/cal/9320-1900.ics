@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trans World Radio 9320 kHz 19:00 UTC
+BEGIN:VEVENT
+UID:trans-world-radio-9320-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 9320 kHz (Korean)
+LOCATION:9320 kHz shortwave
+DESCRIPTION:Trans World Radio on 9320 kHz\, Korean\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Trans World Radio on 9320 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

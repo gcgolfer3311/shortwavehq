@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Slovakia International 17790 kHz 00:30 UTC
+BEGIN:VEVENT
+UID:radio-slovakia-international-17790-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 17790 kHz (Spanish)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 17790 kHz\, Spanish\, beamed to
+  LAm. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-slovakia-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Slovakia International on 17790 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Taiwan International 6180 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Taiwan International on 6180 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

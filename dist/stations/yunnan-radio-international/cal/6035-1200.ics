@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Yunnan Radio International 6035 kHz 12:00 UTC
+BEGIN:VEVENT
+UID:yunnan-radio-international-6035-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Yunnan Radio International on 6035 kHz (Mandarin)
+LOCATION:6035 kHz shortwave
+DESCRIPTION:Yunnan Radio International on 6035 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/yunnan-radio-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/yunnan-radio-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Yunnan Radio International on 6035 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

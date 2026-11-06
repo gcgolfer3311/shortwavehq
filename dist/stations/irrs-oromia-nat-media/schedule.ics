@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IRRS Oromia Nat.Media shortwave (B-26)
+BEGIN:VEVENT
+UID:irrs-oromia-nat-media-15425-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Oromia Nat.Media on 15425 kHz (Oromo)
+LOCATION:15425 kHz shortwave
+DESCRIPTION:IRRS Oromia Nat.Media on 15425 kHz\, Oromo\, beamed to E. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/irrs-oromia-nat-medi
+ a/
+URL:https://hqshortwaveradio.com/stations/irrs-oromia-nat-media/
+END:VEVENT
+BEGIN:VEVENT
+UID:irrs-oromia-nat-media-15445-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRRS Oromia Nat.Media on 15445 kHz (Oromo)
+LOCATION:15445 kHz shortwave
+DESCRIPTION:IRRS Oromia Nat.Media on 15445 kHz\, Oromo\, beamed to E. Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/irrs-oromia-nat-medi
+ a/
+URL:https://hqshortwaveradio.com/stations/irrs-oromia-nat-media/
+END:VEVENT
+END:VCALENDAR

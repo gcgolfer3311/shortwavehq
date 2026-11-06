@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Xinjiang 9560 kHz 03:00 UTC
+BEGIN:VEVENT
+UID:pbs-xinjiang-9560-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Xinjiang on 9560 kHz (Uyghur)
+LOCATION:9560 kHz shortwave
+DESCRIPTION:PBS Xinjiang on 9560 kHz\, Uyghur\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-xinjiang/
+URL:https://hqshortwaveradio.com/stations/pbs-xinjiang/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PBS Xinjiang on 9560 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KBS World Radio 6155 kHz 09:00 UTC
+BEGIN:VEVENT
+UID:kbs-world-radio-2-6155-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 6155 kHz (Japanese)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:KBS World Radio on 6155 kHz\, Japanese\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio-2/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KBS World Radio on 6155 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

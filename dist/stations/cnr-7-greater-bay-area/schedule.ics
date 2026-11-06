@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR 7 Greater Bay Area shortwave (B-26)
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-7345-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 7345 kHz (Cantonese)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 7345 kHz\, Cantonese\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-ar
+ ea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-7345-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 7345 kHz (Cantonese)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 7345 kHz\, Cantonese\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-ar
+ ea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-9745-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 9745 kHz (Cantonese)
+LOCATION:9745 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 9745 kHz\, Cantonese\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-ar
+ ea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-9745-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 9745 kHz (Cantonese)
+LOCATION:9745 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 9745 kHz\, Cantonese\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-ar
+ ea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-13770-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 13770 kHz (Cantonese)
+LOCATION:13770 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 13770 kHz\, Cantonese\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-a
+ rea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-13770-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 13770 kHz (Cantonese)
+LOCATION:13770 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 13770 kHz\, Cantonese\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-a
+ rea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-15550-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 15550 kHz (Cantonese)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 15550 kHz\, Cantonese\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-a
+ rea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-7-greater-bay-area-15550-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 7 Greater Bay Area on 15550 kHz (Cantonese)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:CNR 7 Greater Bay Area on 15550 kHz\, Cantonese\, beamed to Chi
+ na. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/cnr-7-greater-bay-a
+ rea/
+URL:https://hqshortwaveradio.com/stations/cnr-7-greater-bay-area/
+END:VEVENT
+END:VCALENDAR

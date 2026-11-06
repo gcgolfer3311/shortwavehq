@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Mali shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-mali-5995-0550@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Mali on 5995 kHz (BM)
+LOCATION:5995 kHz shortwave
+DESCRIPTION:Radio Mali on 5995 kHz\, BM\, beamed to W. Africa. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-mali/
+URL:https://hqshortwaveradio.com/stations/radio-mali/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-mali-5995-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T064500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Mali on 5995 kHz (French)
+LOCATION:5995 kHz shortwave
+DESCRIPTION:Radio Mali on 5995 kHz\, French\, beamed to W. Africa. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/radio-mali/
+URL:https://hqshortwaveradio.com/stations/radio-mali/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-mali-5995-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261026T000100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Mali on 5995 kHz (BM)
+LOCATION:5995 kHz shortwave
+DESCRIPTION:Radio Mali on 5995 kHz\, BM\, beamed to W. Africa. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-mali/
+URL:https://hqshortwaveradio.com/stations/radio-mali/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-mali-5995-1850@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T185000Z
+DTEND:20261025T190500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Mali on 5995 kHz (English)
+LOCATION:5995 kHz shortwave
+DESCRIPTION:Radio Mali on 5995 kHz\, English\, beamed to W. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/radio-mali/
+URL:https://hqshortwaveradio.com/stations/radio-mali/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-mali-9635-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Mali on 9635 kHz (BM)
+LOCATION:9635 kHz shortwave
+DESCRIPTION:Radio Mali on 9635 kHz\, BM\, beamed to W. Africa. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/radio-mali/
+URL:https://hqshortwaveradio.com/stations/radio-mali/
+END:VEVENT
+END:VCALENDAR

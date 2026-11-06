@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Noise Jammer shortwave (B-26)
+BEGIN:VEVENT
+UID:noise-jammer-6015-0350@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T035000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Noise Jammer on 6015 kHz (Various)
+LOCATION:6015 kHz shortwave
+DESCRIPTION:Noise Jammer on 6015 kHz\, Various\, beamed to Korea. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/noise-jammer/
+URL:https://hqshortwaveradio.com/stations/noise-jammer/
+END:VEVENT
+BEGIN:VEVENT
+UID:noise-jammer-9610-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Noise Jammer on 9610 kHz (Various)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:Noise Jammer on 9610 kHz\, Various\, beamed to E. Africa. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/noise-jammer/
+URL:https://hqshortwaveradio.com/stations/noise-jammer/
+END:VEVENT
+BEGIN:VEVENT
+UID:noise-jammer-15425-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T164500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Noise Jammer on 15425 kHz (Various)
+LOCATION:15425 kHz shortwave
+DESCRIPTION:Noise Jammer on 15425 kHz\, Various\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/noise-jammer/
+URL:https://hqshortwaveradio.com/stations/noise-jammer/
+END:VEVENT
+BEGIN:VEVENT
+UID:noise-jammer-15445-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T164500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Noise Jammer on 15445 kHz (Various)
+LOCATION:15445 kHz shortwave
+DESCRIPTION:Noise Jammer on 15445 kHz\, Various\, beamed to E. Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/noise-jammer/
+URL:https://hqshortwaveradio.com/stations/noise-jammer/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KCBS Pyongyang shortwave (B-26)
+BEGIN:VEVENT
+UID:kcbs-pyongyang-3250-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS Pyongyang on 3250 kHz (Korean)
+LOCATION:3250 kHz shortwave
+DESCRIPTION:KCBS Pyongyang on 3250 kHz\, Korean\, beamed to Korea. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+URL:https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+END:VEVENT
+BEGIN:VEVENT
+UID:kcbs-pyongyang-3920-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS Pyongyang on 3920 kHz (Korean)
+LOCATION:3920 kHz shortwave
+DESCRIPTION:KCBS Pyongyang on 3920 kHz\, Korean\, beamed to Korea. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+URL:https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+END:VEVENT
+BEGIN:VEVENT
+UID:kcbs-pyongyang-3959-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS Pyongyang on 3959 kHz (Korean)
+LOCATION:3959 kHz shortwave
+DESCRIPTION:KCBS Pyongyang on 3959 kHz\, Korean\, beamed to Korea. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+URL:https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+END:VEVENT
+BEGIN:VEVENT
+UID:kcbs-pyongyang-6100-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS Pyongyang on 6100 kHz (Korean)
+LOCATION:6100 kHz shortwave
+DESCRIPTION:KCBS Pyongyang on 6100 kHz\, Korean\, beamed to Korea. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+URL:https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+END:VEVENT
+BEGIN:VEVENT
+UID:kcbs-pyongyang-11680-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261026T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KCBS Pyongyang on 11680 kHz (Korean)
+LOCATION:11680 kHz shortwave
+DESCRIPTION:KCBS Pyongyang on 11680 kHz\, Korean\, beamed to Korea. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+URL:https://hqshortwaveradio.com/stations/kcbs-pyongyang/
+END:VEVENT
+END:VCALENDAR

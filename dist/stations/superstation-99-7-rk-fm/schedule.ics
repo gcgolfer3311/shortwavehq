@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SuperStation 99.7 RK FM shortwave (B-26)
+BEGIN:VEVENT
+UID:superstation-99-7-rk-fm-7250-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SuperStation 99.7 RK FM on 7250 kHz (English)
+LOCATION:7250 kHz shortwave
+DESCRIPTION:SuperStation 99.7 RK FM on 7250 kHz\, English\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/superstation-99
+ -7-rk-fm/
+URL:https://hqshortwaveradio.com/stations/superstation-99-7-rk-fm/
+END:VEVENT
+END:VCALENDAR

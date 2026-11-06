@@ -1,0 +1,628 @@
+{
+ "_note": "Spec database for /radios/ and /compare/. Every value comes from the source URL(s) listed for that radio. null = not listed by the source (shown as 'Not listed', never guessed).",
+ "radios": [
+  {
+   "slug": "tecsun-pl-330",
+   "name": "Tecsun PL-330",
+   "brand": "Tecsun",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "153–513 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": null,
+   "ssb": true,
+   "sync": true,
+   "dsp": "DSP receiver",
+   "memories": "850 (LW 100, MW 150, SW 300, FM 100, SSB 100, Sync 100)",
+   "bandwidth": "Up to 9 selectable settings (depends on mode)",
+   "power": "BL-5C 1000 mAh Li-ion, USB-C charging",
+   "antenna": "External antenna input (3.5 mm)",
+   "size": "139 × 85 × 26 mm",
+   "weight": "210 g",
+   "extras": [
+    "ETM+ scan fills 24 memories by hour of day",
+    "SSB in 10 Hz steps",
+    "Sync lock range ±1 kHz"
+   ],
+   "summary": "A shirt-pocket receiver that covers the whole shortwave range with SSB and synchronous AM, on a small removable BL-5C battery.",
+   "buy": "https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20",
+   "src": [
+    "https://www.tecsunradios.com.au/store/?p=15792"
+   ],
+   "bestFor": "you want full SSB and sync AM in a shirt-pocket size"
+  },
+  {
+   "slug": "tecsun-pl-990x",
+   "name": "Tecsun PL-990x",
+   "brand": "Tecsun",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "100–519 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": null,
+   "ssb": true,
+   "sync": true,
+   "dsp": "Triple conversion (55.845 MHz / 10.7 MHz / 45 kHz) with DSP demodulation",
+   "memories": "3150 (25 pages)",
+   "bandwidth": null,
+   "power": "One 18650 Li-ion cell, USB 5 V charging",
+   "antenna": "External antenna input (all bands)",
+   "size": "198 × 120 × 38 mm",
+   "weight": "620 g",
+   "extras": [
+    "SSB in 10 Hz steps, USB/LSB selectable",
+    "Sync range ±1 kHz"
+   ],
+   "summary": "Tecsun's flagship portable: multiple-conversion design with DSP demodulation, SSB, synchronous AM and 3,150 memories.",
+   "buy": "https://www.amazon.com/dp/B08KL77Q4H?tag=shortwave1877-20",
+   "src": [
+    "https://www.tecsunradios.com.au/store/?p=14159"
+   ],
+   "bestFor": "you want Tecsun's top portable with the most memories"
+  },
+  {
+   "slug": "tecsun-pl-880",
+   "name": "Tecsun PL-880",
+   "brand": "Tecsun",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "100–519 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": null,
+   "ssb": true,
+   "sync": null,
+   "dsp": "DSP on the HF bands (all modes)",
+   "memories": null,
+   "bandwidth": "9 selectable IF bandwidths",
+   "power": "Li-ion battery, USB-C charging (29.5 h FM in distributor test)",
+   "antenna": "External antenna socket (SW)",
+   "size": null,
+   "weight": null,
+   "extras": [
+    "Independent USB/LSB selection",
+    "450 mW class AB audio amplifier"
+   ],
+   "summary": "A long-running full-size portable with SSB, nine IF bandwidths and an external antenna socket.",
+   "buy": "https://www.amazon.com/dp/B00GJ51NVA?tag=shortwave1877-20",
+   "src": [
+    "https://www.tecsunradios.com.au/store/product/tecsun-pl880-radio/"
+   ],
+   "bestFor": "you want a full-size portable with nine IF bandwidth choices"
+  },
+  {
+   "slug": "tecsun-pl-310et",
+   "name": "Tecsun PL-310ET",
+   "brand": "Tecsun",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "2300–21950 kHz",
+   "lw": "153–513 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz (selectable ranges)",
+   "other": null,
+   "ssb": false,
+   "sync": null,
+   "dsp": "Silicon Labs Si4734 DSP chip",
+   "memories": "550",
+   "bandwidth": null,
+   "power": "3 × AA or USB 5 V",
+   "antenna": null,
+   "size": "141 × 87 × 30 mm",
+   "weight": "190 g",
+   "extras": [
+    "ETM scan"
+   ],
+   "summary": "A simple DSP pocket radio for broadcast listening. Shortwave stops at 21.95 MHz and there is no SSB.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=Tecsun+PL-310ET",
+   "src": [
+    "https://radiomuseum.org/r/tecsun_fmswmwlw_dsp_receiver_pl_310et.html"
+   ],
+   "bestFor": "you only need AM broadcasts and want simple AA power"
+  },
+  {
+   "slug": "tecsun-pl-368",
+   "name": "Tecsun PL-368",
+   "brand": "Tecsun",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "153–513 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": null,
+   "ssb": true,
+   "sync": true,
+   "dsp": "DSP demodulation",
+   "memories": "850 (LW 100, MW 150, SW 300, FM 100, SSB 100, Sync 100)",
+   "bandwidth": "Selectable for LW/MW, SW and SSB",
+   "power": "Built-in BL-5C battery, USB 5 V",
+   "antenna": "External antenna socket (MW and SW)",
+   "size": "162 × 53 × 26 mm",
+   "weight": "130 g",
+   "extras": [
+    "SSB in 10 Hz steps",
+    "Sync lock range 1 kHz"
+   ],
+   "summary": "A slim handheld-style receiver with SSB, synchronous AM and an external antenna socket that works on MW as well as SW.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=Tecsun+PL-368",
+   "src": [
+    "https://www.tecsunradios.com.au/store/product/tecsun-pl-368-hand-held-hf-ssb-receiver/"
+   ],
+   "bestFor": "you want SSB, sync and a MW/SW antenna socket in a slim handheld"
+  },
+  {
+   "slug": "tecsun-h-501x",
+   "name": "Tecsun H-501x",
+   "brand": "Tecsun",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "100–519 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz (selectable ranges)",
+   "other": null,
+   "ssb": true,
+   "sync": true,
+   "dsp": "Multiple conversion with DSP demodulation",
+   "memories": "3150 (25 pages)",
+   "bandwidth": null,
+   "power": "Two 18650 Li-ion cells, USB 5 V 1 A",
+   "antenna": null,
+   "size": "277 × 167 × 44 mm",
+   "weight": null,
+   "extras": [
+    "Stereo speakers, 2 × 3 W",
+    "SSB with BFO control",
+    "Sync range ±1 kHz"
+   ],
+   "summary": "A large stereo portable built for room listening: two 3 W speakers, SSB, synchronous AM and two 18650 cells.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=Tecsun+H-501x",
+   "src": [
+    "https://www.tecsunradios.com.au/store/product/tecsun-h-501/"
+   ],
+   "bestFor": "you want stereo speakers for room listening"
+  },
+  {
+   "slug": "xhdata-d-808",
+   "name": "XHDATA D-808",
+   "brand": "XHDATA",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "153–513 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": "Air band 118–137 MHz",
+   "ssb": true,
+   "sync": null,
+   "dsp": "DSP",
+   "memories": "500",
+   "bandwidth": null,
+   "power": "One 18650 Li-ion cell, USB-C 5 V",
+   "antenna": "External antenna jack",
+   "size": "157 × 51 × 86 mm (as listed)",
+   "weight": "508 g",
+   "extras": [
+    "RDS on FM",
+    "USB/LSB"
+   ],
+   "summary": "A budget all-rounder that adds the aircraft band to full shortwave coverage with SSB and RDS.",
+   "buy": "https://www.amazon.com/dp/B0DCFZYMHY?tag=shortwave1877-20",
+   "src": [
+    "https://manuals.plus/asin/B0DCFZYMHY"
+   ],
+   "bestFor": "you want SSB plus the aircraft band and RDS on a budget"
+  },
+  {
+   "slug": "sangean-ats-909x2",
+   "name": "Sangean ATS-909X2",
+   "brand": "Sangean",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": "153–519 kHz",
+   "mw": "520–1710 kHz",
+   "fm": "87.5–108 MHz",
+   "other": "Air band 118–137 MHz",
+   "ssb": true,
+   "sync": null,
+   "dsp": null,
+   "memories": "1674",
+   "bandwidth": "Up to 5 bandwidths plus wide/narrow switch",
+   "power": "4 × AA (9 V adapter included)",
+   "antenna": "AM/SW external antenna jack (3.5 mm)",
+   "size": "208 × 135 × 42 mm",
+   "weight": "728 g",
+   "extras": [
+    "FM RDS (PS, PTY, RT, CT)",
+    "ANT-60 wind-up antenna included"
+   ],
+   "summary": "Sangean's top portable: 1,674 memories, SSB, air band, RDS and an included wind-up wire antenna.",
+   "buy": "https://www.amazon.com/dp/B08MSXX6LH?tag=shortwave1877-20",
+   "src": [
+    "https://www.universal-radio.com/catalog/portable/0909.html",
+    "https://www.prc68.com/I/SangeanATS-909X2.shtml"
+   ],
+   "bestFor": "you want air band, RDS and AA power in a large portable"
+  },
+  {
+   "slug": "c-crane-skywave-ssb-2",
+   "name": "C.Crane CC Skywave SSB 2",
+   "brand": "C.Crane",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "1711–29999 kHz",
+   "lw": null,
+   "mw": "520–1710 kHz",
+   "fm": "87.5–108 MHz (76–108 in 9 kHz mode)",
+   "other": "Air band 118–137 MHz · NOAA weather 162.400–162.550 MHz with alert",
+   "ssb": true,
+   "sync": null,
+   "dsp": null,
+   "memories": "400",
+   "bandwidth": null,
+   "power": "2 × AA (about 60–70 h)",
+   "antenna": "Shortwave antenna jack",
+   "size": "4.8 × 3 × 1 in",
+   "weight": "6 oz without batteries",
+   "extras": [
+    "SSB in 10 Hz steps",
+    "NOAA weather alert"
+   ],
+   "summary": "A travel-size receiver that runs on two AA cells and adds air band and NOAA weather alerts to SSB shortwave.",
+   "buy": "https://www.amazon.com/dp/B0CBW768RF?tag=shortwave1877-20",
+   "src": [
+    "https://ccrane.com/cc-skywave-ssb-2-with-am-fm-sw-wx-and-aviation-bands"
+   ],
+   "bestFor": "you want air band and NOAA weather alerts on two AA cells"
+  },
+  {
+   "slug": "sony-icf-sw7600gr",
+   "name": "Sony ICF-SW7600GR",
+   "brand": "Sony",
+   "type": "Portable",
+   "status": "Discontinued (2001–2018)",
+   "sw": "150 kHz–30 MHz continuous (LW/MW/SW)",
+   "lw": "Included in 150 kHz–30 MHz",
+   "mw": "Included in 150 kHz–30 MHz",
+   "fm": "76–108 MHz",
+   "other": null,
+   "ssb": true,
+   "sync": true,
+   "dsp": null,
+   "memories": "100 (10 pages)",
+   "bandwidth": null,
+   "power": "4 × AA or 6 V DC",
+   "antenna": null,
+   "size": "190 × 119 × 35 mm",
+   "weight": "608 g with batteries",
+   "extras": [
+    "AM-Sync mode",
+    "CW mode"
+   ],
+   "summary": "A classic from Sony's last generation of world-band portables, known for its synchronous AM mode. Now only sold used.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=Sony+ICF-SW7600GR",
+   "src": [
+    "https://rigpix.com/sony/sony_icfsw7600gr.htm"
+   ],
+   "bestFor": "you are happy to buy used for a proven sync-AM design"
+  },
+  {
+   "slug": "kaito-ka500",
+   "name": "Kaito KA500",
+   "brand": "Kaito",
+   "type": "Emergency",
+   "status": "Current",
+   "sw": "3.2–22 MHz (SW1 3.2–9, SW2 9–22 MHz)",
+   "lw": null,
+   "mw": "520–1717 kHz",
+   "fm": "88–108 MHz",
+   "other": "NOAA weather, 7 channels",
+   "ssb": false,
+   "sync": null,
+   "dsp": "Analog tuning",
+   "memories": null,
+   "bandwidth": null,
+   "power": "Hand crank, solar panel, 3 × AA, built-in NiMH pack, USB",
+   "antenna": null,
+   "size": null,
+   "weight": null,
+   "extras": [
+    "Five power sources",
+    "Weather band"
+   ],
+   "summary": "An emergency radio first: crank, solar and battery power with weather band and two analog shortwave ranges.",
+   "buy": "https://www.amazon.com/dp/B001F0MNRM?tag=shortwave1877-20",
+   "src": [
+    "https://swling.com/db/2011/01/kaito-ka500/"
+   ],
+   "bestFor": "you want crank and solar power for emergencies"
+  },
+  {
+   "slug": "zhiwhis-zws-a330",
+   "name": "ZHIWHIS ZWS-A330",
+   "brand": "ZHIWHIS",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "2.3–30 MHz",
+   "lw": "153–522 kHz (with optional ZWS-W3 repeater)",
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz",
+   "other": "Air 118–138 MHz · CB 25–28 MHz · VHF 20–250 MHz · UHF to 999 MHz · NOAA weather",
+   "ssb": true,
+   "sync": null,
+   "dsp": null,
+   "memories": null,
+   "bandwidth": "SW AM 1–6 kHz (7 steps) · SSB 0.5–4 kHz (6 steps)",
+   "power": "BL-5C Li-ion, USB-C charging",
+   "antenna": "External antenna jack (3.5 mm)",
+   "size": "About 136 × 60 × 35 mm",
+   "weight": null,
+   "extras": [
+    "microSD recording",
+    "Bluetooth speaker and app control",
+    "9-level squelch"
+   ],
+   "summary": "A pocket receiver that covers far more than shortwave (VHF/UHF, CB, air) and records to microSD. Reviewed by ShortwaveHQ.",
+   "review": "/reviews/zhiwhis-zws-a330/",
+   "buy": "https://www.amazon.com/dp/B0H8ZPQZTP?tag=shortwave1877-20",
+   "src": [
+    "/reviews/zhiwhis-zws-a330/"
+   ],
+   "bestFor": "you want VHF/UHF, CB and microSD recording as well as shortwave"
+  },
+  {
+   "slug": "xhdata-d-219",
+   "name": "XHDATA D-219",
+   "brand": "XHDATA",
+   "type": "Pocket",
+   "status": "Current",
+   "sw": "4.75–22.0 MHz (9 sub-bands)",
+   "lw": null,
+   "mw": "520–1710 kHz",
+   "fm": "64–108 MHz (FM1/FM2)",
+   "other": null,
+   "ssb": false,
+   "sync": null,
+   "dsp": "Analog dial over a Si4825-A10 DSP chip",
+   "memories": null,
+   "bandwidth": null,
+   "power": "2 × AA or 5 V DC",
+   "antenna": null,
+   "size": null,
+   "weight": "About 150 g without batteries",
+   "extras": [
+    "Needle dial, no display"
+   ],
+   "summary": "A very low-cost analog-dial pocket radio for casual shortwave listening. Reviewed by ShortwaveHQ.",
+   "review": "/reviews/xhdata-d-219/",
+   "buy": "https://www.amazon.com/dp/B0BPRPYSYF?tag=shortwave1877-20",
+   "src": [
+    "/reviews/xhdata-d-219/"
+   ],
+   "bestFor": "you want the lowest cost and the simplest analog controls"
+  },
+  {
+   "slug": "elecevolve-rt-880x",
+   "name": "Elecevolve RT-880X",
+   "brand": "Elecevolve",
+   "type": "Portable",
+   "status": "Current",
+   "sw": "1.7–27 MHz",
+   "lw": "144–513 kHz",
+   "mw": "520–1720 kHz",
+   "fm": "65–108 MHz plus OIRT",
+   "other": "Air band 118–137 MHz",
+   "ssb": null,
+   "sync": null,
+   "dsp": "NXP TEF6686 DSP tuner",
+   "memories": "198",
+   "bandwidth": "Adjustable",
+   "power": null,
+   "antenna": "SMA external antenna input",
+   "size": null,
+   "weight": null,
+   "extras": [
+    "320 × 240 color touchscreen",
+    "RDS",
+    "DX scanning and logging"
+   ],
+   "summary": "A TEF6686-based DSP receiver with a color touchscreen, aimed at FM and MW DXers as much as shortwave listeners. Reviewed by ShortwaveHQ.",
+   "review": "/reviews/elecevolve-rt-880x/",
+   "buy": "https://www.elecevolve.com/products/rt-880x?DIST=QUJP",
+   "src": [
+    "/reviews/elecevolve-rt-880x/"
+   ],
+   "bestFor": "you want a TEF6686 touchscreen receiver for FM and MW DX"
+  },
+  {
+   "slug": "rtl-sdr-blog-v4",
+   "name": "RTL-SDR Blog V4",
+   "brand": "RTL-SDR Blog",
+   "type": "SDR",
+   "status": "Current",
+   "sw": "Covered (500 kHz–1.766 GHz, HF via built-in upconverter)",
+   "lw": null,
+   "mw": "Covered from 500 kHz",
+   "fm": "Covered",
+   "other": "VHF/UHF to 1.766 GHz",
+   "ssb": "software",
+   "sync": "software",
+   "dsp": "R828D tuner, RTL2832U 8-bit ADC",
+   "memories": "Software",
+   "bandwidth": "2.56 MHz stable",
+   "power": "USB bus power",
+   "antenna": "1 × SMA",
+   "size": null,
+   "weight": null,
+   "extras": [
+    "1 PPM TCXO",
+    "Software-switchable 4.5 V bias tee"
+   ],
+   "summary": "The cheapest way into software-defined radio. HF works through a built-in upconverter; 8-bit ADC limits dynamic range on crowded bands.",
+   "buy": "https://www.amazon.com/dp/B0CD745394?tag=shortwave1877-20",
+   "src": [
+    "https://www.rtl-sdr.com/wp-content/uploads/2024/12/RTLSDR_V4_Datasheet_V_1_0.pdf"
+   ],
+   "bestFor": "you want the cheapest way to try SDR and also cover VHF/UHF"
+  },
+  {
+   "slug": "sdrplay-rspdx-r2",
+   "name": "SDRplay RSPdx-R2",
+   "brand": "SDRplay",
+   "type": "SDR",
+   "status": "Current",
+   "sw": "Covered (1 kHz–2 GHz)",
+   "lw": "Covered",
+   "mw": "Covered",
+   "fm": "Covered",
+   "other": "To 2 GHz",
+   "ssb": "software",
+   "sync": "software",
+   "dsp": "14-bit ADC",
+   "memories": "Software",
+   "bandwidth": null,
+   "power": "USB bus power",
+   "antenna": "2 × SMA (1 kHz–2 GHz) + 1 × BNC (1 kHz–200 MHz)",
+   "size": "98 × 94 × 35 mm",
+   "weight": "315 g",
+   "extras": [
+    "HDR mode below 2 MHz (LW, MW, NDB bands)",
+    "Free SDRconnect software"
+   ],
+   "summary": "A three-antenna-port SDR with a high-dynamic-range mode for LW and MW. A step up from dongle SDRs for serious HF listening.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=SDRplay+RSPdx-R2",
+   "src": [
+    "https://www.sdrplay.com/RSPdxR2",
+    "https://pdf.directindustry.com/pdf/sdrplay/rspdx-r2-multi-antenna-port-14-bit-sdr/238489-1109784.html"
+   ],
+   "bestFor": "you want a 14-bit SDR with three antenna inputs and HDR mode for LW/MW"
+  },
+  {
+   "slug": "airspy-hf-plus-discovery",
+   "name": "Airspy HF+ Discovery",
+   "brand": "Airspy",
+   "type": "SDR",
+   "status": "Current",
+   "sw": "Covered (HF to 31 MHz)",
+   "lw": "Covered",
+   "mw": "Covered",
+   "fm": "Covered (60–260 MHz VHF range)",
+   "other": "60–260 MHz",
+   "ssb": "software",
+   "sync": "software",
+   "dsp": "Direct-sampling HF receiver",
+   "memories": "Software",
+   "bandwidth": null,
+   "power": "USB 5 V",
+   "antenna": "1 × SMA, 50 Ω",
+   "size": "45 × 10 × 60 mm",
+   "weight": null,
+   "extras": [
+    "Launched 2019 at $169"
+   ],
+   "summary": "A tiny HF-focused SDR that samples the shortwave range directly instead of using an upconverter.",
+   "buy": "https://www.amazon.com/s?tag=shortwave1877-20&k=Airspy+HF%2B+Discovery",
+   "src": [
+    "https://rigpix.com/miscrx/airspy_hfplusdiscovery.htm"
+   ],
+   "bestFor": "you want a compact direct-sampling receiver focused on HF"
+  }
+ ],
+ "compare": [
+  [
+   "tecsun-pl-330",
+   "xhdata-d-808"
+  ],
+  [
+   "tecsun-pl-330",
+   "tecsun-pl-368"
+  ],
+  [
+   "tecsun-pl-330",
+   "c-crane-skywave-ssb-2"
+  ],
+  [
+   "tecsun-pl-330",
+   "zhiwhis-zws-a330"
+  ],
+  [
+   "tecsun-pl-330",
+   "tecsun-pl-310et"
+  ],
+  [
+   "tecsun-pl-990x",
+   "sangean-ats-909x2"
+  ],
+  [
+   "tecsun-pl-990x",
+   "tecsun-pl-880"
+  ],
+  [
+   "tecsun-pl-990x",
+   "tecsun-h-501x"
+  ],
+  [
+   "tecsun-pl-880",
+   "sangean-ats-909x2"
+  ],
+  [
+   "xhdata-d-808",
+   "tecsun-pl-880"
+  ],
+  [
+   "xhdata-d-808",
+   "sangean-ats-909x2"
+  ],
+  [
+   "tecsun-pl-368",
+   "c-crane-skywave-ssb-2"
+  ],
+  [
+   "sony-icf-sw7600gr",
+   "tecsun-pl-880"
+  ],
+  [
+   "sony-icf-sw7600gr",
+   "sangean-ats-909x2"
+  ],
+  [
+   "elecevolve-rt-880x",
+   "xhdata-d-808"
+  ],
+  [
+   "elecevolve-rt-880x",
+   "tecsun-pl-330"
+  ],
+  [
+   "xhdata-d-219",
+   "tecsun-pl-310et"
+  ],
+  [
+   "kaito-ka500",
+   "c-crane-skywave-ssb-2"
+  ],
+  [
+   "rtl-sdr-blog-v4",
+   "sdrplay-rspdx-r2"
+  ],
+  [
+   "rtl-sdr-blog-v4",
+   "airspy-hf-plus-discovery"
+  ],
+  [
+   "sdrplay-rspdx-r2",
+   "airspy-hf-plus-discovery"
+  ],
+  [
+   "tecsun-h-501x",
+   "sangean-ats-909x2"
+  ]
+ ]
+}

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Unification Media Group 5900 kHz 20:00 UTC
+BEGIN:VEVENT
+UID:unification-media-group-5900-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Unification Media Group on 5900 kHz (Korean)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:Unification Media Group on 5900 kHz\, Korean\, beamed to Korea.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/unification-media-grou
+ p/
+URL:https://hqshortwaveradio.com/stations/unification-media-group/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Unification Media Group on 5900 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

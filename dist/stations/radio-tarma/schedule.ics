@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Tarma shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-tarma-4775-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T022000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Tarma on 4775 kHz (Spanish)
+LOCATION:4775 kHz shortwave
+DESCRIPTION:Radio Tarma on 4775 kHz\, Spanish\, beamed to Peru. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-tarma/
+URL:https://hqshortwaveradio.com/stations/radio-tarma/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-tarma-4775-0950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T095000Z
+DTEND:20261025T105000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Tarma on 4775 kHz (Spanish)
+LOCATION:4775 kHz shortwave
+DESCRIPTION:Radio Tarma on 4775 kHz\, Spanish\, beamed to Peru. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-tarma/
+URL:https://hqshortwaveradio.com/stations/radio-tarma/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-tarma-4775-1050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T105000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Tarma on 4775 kHz (Spanish)
+LOCATION:4775 kHz shortwave
+DESCRIPTION:Radio Tarma on 4775 kHz\, Spanish\, beamed to Peru. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-tarma/
+URL:https://hqshortwaveradio.com/stations/radio-tarma/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-tarma-4775-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Tarma on 4775 kHz (Spanish)
+LOCATION:4775 kHz shortwave
+DESCRIPTION:Radio Tarma on 4775 kHz\, Spanish\, beamed to Peru. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-tarma/
+URL:https://hqshortwaveradio.com/stations/radio-tarma/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-tarma-4775-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Tarma on 4775 kHz (Spanish)
+LOCATION:4775 kHz shortwave
+DESCRIPTION:Radio Tarma on 4775 kHz\, Spanish\, beamed to Peru. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/radio-tarma/
+URL:https://hqshortwaveradio.com/stations/radio-tarma/
+END:VEVENT
+END:VCALENDAR

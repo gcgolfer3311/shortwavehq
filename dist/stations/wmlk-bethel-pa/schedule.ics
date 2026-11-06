@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WMLK Bethel\, PA shortwave (B-26)
+BEGIN:VEVENT
+UID:wmlk-bethel-pa-15150-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WMLK Bethel\, PA on 15150 kHz (English)
+LOCATION:15150 kHz shortwave
+DESCRIPTION:WMLK Bethel\, PA on 15150 kHz\, English\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/wmlk-bethel-pa/
+URL:https://hqshortwaveradio.com/stations/wmlk-bethel-pa/
+END:VEVENT
+BEGIN:VEVENT
+UID:wmlk-bethel-pa-17525-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WMLK Bethel\, PA on 17525 kHz (English)
+LOCATION:17525 kHz shortwave
+DESCRIPTION:WMLK Bethel\, PA on 17525 kHz\, English\, beamed to Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/wmlk-bethel-pa/
+URL:https://hqshortwaveradio.com/stations/wmlk-bethel-pa/
+END:VEVENT
+END:VCALENDAR

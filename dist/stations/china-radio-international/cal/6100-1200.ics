@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China Radio International 6100 kHz 12:00 UTC
+BEGIN:VEVENT
+UID:china-radio-international-6100-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China Radio International on 6100 kHz (Russian)
+LOCATION:6100 kHz shortwave
+DESCRIPTION:China Radio International on 6100 kHz\, Russian\, beamed to Sib
+ eria. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/china-radio-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/china-radio-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:China Radio International on 6100 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

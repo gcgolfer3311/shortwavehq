@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio France International 17660 kHz 08:30 UTC
+BEGIN:VEVENT
+UID:radio-france-international-17660-0830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T083000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio France International on 17660 kHz (Fula)
+LOCATION:17660 kHz shortwave
+DESCRIPTION:Radio France International on 17660 kHz\, Fula\, beamed to W. A
+ frica. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-france-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-france-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio France International on 17660 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,124 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RNZ Pacific shortwave (B-26)
+BEGIN:VEVENT
+UID:rnz-pacific-7390-1259@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T125900Z
+DTEND:20261025T165000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 7390 kHz (English)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:RNZ Pacific on 7390 kHz\, English\, beamed to Pacific. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-9700-1059@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T105900Z
+DTEND:20261025T125800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 9700 kHz (English)
+LOCATION:9700 kHz shortwave
+DESCRIPTION:RNZ Pacific on 9700 kHz\, English\, beamed to WOc. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-9700-1651@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T165100Z
+DTEND:20261025T175800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 9700 kHz (English)
+LOCATION:9700 kHz shortwave
+DESCRIPTION:RNZ Pacific on 9700 kHz\, English\, beamed to Pacific. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-11725-0659@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T065900Z
+DTEND:20261025T105800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 11725 kHz (English)
+LOCATION:11725 kHz shortwave
+DESCRIPTION:RNZ Pacific on 11725 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-11725-1759@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T175900Z
+DTEND:20261025T185800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 11725 kHz (English)
+LOCATION:11725 kHz shortwave
+DESCRIPTION:RNZ Pacific on 11725 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-13690-1859@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T185900Z
+DTEND:20261025T195800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 13690 kHz (English)
+LOCATION:13690 kHz shortwave
+DESCRIPTION:RNZ Pacific on 13690 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-15720-0559@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T055900Z
+DTEND:20261025T065800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 15720 kHz (English)
+LOCATION:15720 kHz shortwave
+DESCRIPTION:RNZ Pacific on 15720 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-15720-1959@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195900Z
+DTEND:20261025T205800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 15720 kHz (English)
+LOCATION:15720 kHz shortwave
+DESCRIPTION:RNZ Pacific on 15720 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+BEGIN:VEVENT
+UID:rnz-pacific-17675-2059@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205900Z
+DTEND:20261026T055800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific on 17675 kHz (English)
+LOCATION:17675 kHz shortwave
+DESCRIPTION:RNZ Pacific on 17675 kHz\, English\, beamed to Pacific. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/rnz-pacific/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific/
+END:VEVENT
+END:VCALENDAR

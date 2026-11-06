@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of America 7390 kHz 06:30 UTC
+BEGIN:VEVENT
+UID:voice-of-america-7390-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of America on 7390 kHz (English)
+LOCATION:7390 kHz shortwave
+DESCRIPTION:Voice of America on 7390 kHz\, English\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-america/
+URL:https://hqshortwaveradio.com/stations/voice-of-america/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of America on 7390 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

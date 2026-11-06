@@ -1,0 +1,150 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Shortwave Radio Gold shortwave (B-26)
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-3975-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 3975 kHz (German)
+LOCATION:3975 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 3975 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-6160-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 6160 kHz (German)
+LOCATION:6160 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 6160 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-6160-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 6160 kHz (German)
+LOCATION:6160 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 6160 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-6160-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 6160 kHz (German)
+LOCATION:6160 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 6160 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+BEGIN:VEVENT
+UID:shortwave-radio-gold-6160-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shortwave Radio Gold on 6160 kHz (German)
+LOCATION:6160 kHz shortwave
+DESCRIPTION:Shortwave Radio Gold on 6160 kHz\, German\, beamed to W. Europe
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+URL:https://hqshortwaveradio.com/stations/shortwave-radio-gold/
+END:VEVENT
+END:VCALENDAR

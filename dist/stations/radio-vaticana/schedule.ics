@@ -1,0 +1,1125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Vaticana shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-vaticana-6155-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 6155 kHz (Mandarin)
+LOCATION:6155 kHz shortwave
+DESCRIPTION:Radio Vaticana on 6155 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7250-0810@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T081000Z
+DTEND:20261025T092000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7250 kHz (Romanian)
+LOCATION:7250 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7250 kHz\, Romanian\, beamed to E. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7300-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7300 kHz (Mandarin)
+LOCATION:7300 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7300 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7300-2315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231500Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7300 kHz (Vietnamese)
+LOCATION:7300 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7300 kHz\, Vietnamese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7305-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7305 kHz (Portuguese)
+LOCATION:7305 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7305 kHz\, Portuguese\, beamed to South Ameri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7305-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7305 kHz (Spanish)
+LOCATION:7305 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7305 kHz\, Spanish\, beamed to Caribbean. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7360-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T052000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7360 kHz (Russian)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7360 kHz\, Russian\, beamed to E. Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7360-0520@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052000Z
+DTEND:20261025T054000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7360 kHz (Ukrainian)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7360 kHz\, Ukrainian\, beamed to E. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7360-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7360 kHz (AR)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7360 kHz\, AR\, beamed to Caucasus. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7360-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T164000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7360 kHz (Russian)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7360 kHz\, Russian\, beamed to E. Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7360-1740@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T174000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7360 kHz (Ukrainian)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7360 kHz\, Ukrainian\, beamed to Ukraine. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-7410-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 7410 kHz (Mandarin)
+LOCATION:7410 kHz shortwave
+DESCRIPTION:Radio Vaticana on 7410 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9580-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9580 kHz (Mandarin)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9580 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9580-2315@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T231500Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9580 kHz (Vietnamese)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9580 kHz\, Vietnamese\, beamed to SE Asia. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9705-1940@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T194000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9705 kHz (Ros)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9705 kHz\, Ros\, beamed to CAf. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9705-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9705 kHz (English)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9705 kHz\, English\, beamed to CAf. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9705-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9705 kHz (French)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9705 kHz\, French\, beamed to CAf. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-0440@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T044000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Ukrainian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Ukrainian\, beamed to E. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T052000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Russian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Russian\, beamed to E. Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-0520@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T052000Z
+DTEND:20261025T054000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Ukrainian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Ukrainian\, beamed to E. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-0705@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070500Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Ukrainian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Ukrainian\, beamed to E. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-0810@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T081000Z
+DTEND:20261025T092000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Romanian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Romanian\, beamed to E. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (AR)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, AR\, beamed to Caucasus. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T164000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Russian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Russian\, beamed to Central Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-1640@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T164000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Ukrainian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Ukrainian\, beamed to E. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T172000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Belarusian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Belarusian\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-9710-1740@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T174000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 9710 kHz (Ukrainian)
+LOCATION:9710 kHz shortwave
+DESCRIPTION:Radio Vaticana on 9710 kHz\, Ukrainian\, beamed to Ukraine. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11755-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11755 kHz (Arabic)
+LOCATION:11755 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11755 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11755-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T171500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11755 kHz (French)
+LOCATION:11755 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11755 kHz\, French\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11755-1715@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T171500Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11755 kHz (English)
+LOCATION:11755 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11755 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11755-1940@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T194000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11755 kHz (Ros)
+LOCATION:11755 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11755 kHz\, Ros\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-0440@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T044000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (Ukrainian)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, Ukrainian\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T052000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (Russian)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, Russian\, beamed to E. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-0705@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070500Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (Ukrainian)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, Ukrainian\, beamed to Ukraine. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (AR)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, AR\, beamed to Caucasus. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-1620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T162000Z
+DTEND:20261025T164000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (Russian)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, Russian\, beamed to Central Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11815-1640@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T164000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11815 kHz (Ukrainian)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11815 kHz\, Ukrainian\, beamed to E. Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11870-1940@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T194000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11870 kHz (Ros)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11870 kHz\, Ros\, beamed to W. Africa. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11870-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11870 kHz (English)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11870 kHz\, English\, beamed to W. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11870-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11870 kHz (French)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11870 kHz\, French\, beamed to W. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-11870-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 11870 kHz (Portuguese)
+LOCATION:11870 kHz shortwave
+DESCRIPTION:Radio Vaticana on 11870 kHz\, Portuguese\, beamed to W. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13825-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13825 kHz (Russian)
+LOCATION:13825 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13825 kHz\, Russian\, beamed to Siberia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (Amharic)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, Amharic\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T161500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (Swahili)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, Swahili\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1615@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T161500Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (SO)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, SO\, beamed to E. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (English)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, English\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (French)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, French\, beamed to CAf. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (TIG)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, TIG\, beamed to E. Africa. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-13830-1840@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T184000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 13830 kHz (Ros)
+LOCATION:13830 kHz shortwave
+DESCRIPTION:Radio Vaticana on 13830 kHz\, Ros\, beamed to Africa. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15490-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15490 kHz (Russian)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15490 kHz\, Russian\, beamed to Siberia. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15490-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15490 kHz (Hindi)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15490 kHz\, Hindi\, beamed to South Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15490-1450@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T145000Z
+DTEND:20261025T151000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15490 kHz (Tamil)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15490 kHz\, Tamil\, beamed to South Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15490-1510@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T151000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15490 kHz (Malayalam)
+LOCATION:15490 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15490 kHz\, Malayalam\, beamed to South Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (Portuguese)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, Portuguese\, beamed to S. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (Amharic)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, Amharic\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T161500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (Swahili)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, Swahili\, beamed to E. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1615@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T161500Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (SO)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, SO\, beamed to E. Africa. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (English)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, English\, beamed to S. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (French)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, French\, beamed to CAf. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (TIG)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, TIG\, beamed to E. Africa. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15565-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15565 kHz (Portuguese)
+LOCATION:15565 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15565 kHz\, Portuguese\, beamed to S. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15580-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15580 kHz (Arabic)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15580 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-0620@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T062000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (L)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, L\, beamed to Middle East. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T071000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (Italian)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, Italian\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-0710@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T071000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (Arabic)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-0730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T073000Z
+DTEND:20261025T074500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (English)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T105000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (LTO)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, LTO\, beamed to E. Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (English)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (Arabic)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T161500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (French)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, French\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1615@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T161500Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (English)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (Arabic)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-15595-1840@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T184000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 15595 kHz (Ros)
+LOCATION:15595 kHz shortwave
+DESCRIPTION:Radio Vaticana on 15595 kHz\, Ros\, beamed to Middle East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17510-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17510 kHz (Portuguese)
+LOCATION:17510 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17510 kHz\, Portuguese\, beamed to S. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17525-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17525 kHz (French)
+LOCATION:17525 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17525 kHz\, French\, beamed to W. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17540-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17540 kHz (French)
+LOCATION:17540 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17540 kHz\, French\, beamed to CAf. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T105000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (LTO)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, LTO\, beamed to Caucasus. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (Mandarin)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (English)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (Hindi)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, Hindi\, beamed to South Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1450@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T145000Z
+DTEND:20261025T151000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (Tamil)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, Tamil\, beamed to South Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1510@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T151000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (Malayalam)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, Malayalam\, beamed to South Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-17790-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 17790 kHz (Arabic)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Vaticana on 17790 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-21730-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T131500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 21730 kHz (Spanish)
+LOCATION:21730 kHz shortwave
+DESCRIPTION:Radio Vaticana on 21730 kHz\, Spanish\, beamed to Caribbean. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-21745-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 21745 kHz (Mandarin)
+LOCATION:21745 kHz shortwave
+DESCRIPTION:Radio Vaticana on 21745 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-vaticana-21760-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Vaticana on 21760 kHz (Mandarin)
+LOCATION:21760 kHz shortwave
+DESCRIPTION:Radio Vaticana on 21760 kHz\, Mandarin\, beamed to Far East. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/radio-vaticana/
+URL:https://hqshortwaveradio.com/stations/radio-vaticana/
+END:VEVENT
+END:VCALENDAR

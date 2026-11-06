@@ -1,0 +1,163 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PBS Qinghai shortwave (B-26)
+BEGIN:VEVENT
+UID:pbs-qinghai-5990-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T085500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 5990 kHz (Tibetan)
+LOCATION:5990 kHz shortwave
+DESCRIPTION:PBS Qinghai on 5990 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-5990-0855@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T085500Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 5990 kHz (Tibetan)
+LOCATION:5990 kHz shortwave
+DESCRIPTION:PBS Qinghai on 5990 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-5990-2250@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T225000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 5990 kHz (Tibetan)
+LOCATION:5990 kHz shortwave
+DESCRIPTION:PBS Qinghai on 5990 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-6145-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:PBS Qinghai on 6145 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-6145-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:PBS Qinghai on 6145 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-6145-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:PBS Qinghai on 6145 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9780-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9780 kHz (Mandarin)
+LOCATION:9780 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9780 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9780-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9780 kHz (Mandarin)
+LOCATION:9780 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9780 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9780-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9780 kHz (Mandarin)
+LOCATION:9780 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9780 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9850-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T085500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9850 kHz (Tibetan)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9850 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9850-0855@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T085500Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9850 kHz (Tibetan)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9850 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+BEGIN:VEVENT
+UID:pbs-qinghai-9850-2250@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T225000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:PBS Qinghai on 9850 kHz (Tibetan)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:PBS Qinghai on 9850 kHz\, Tibetan\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/pbs-qinghai/
+URL:https://hqshortwaveradio.com/stations/pbs-qinghai/
+END:VEVENT
+END:VCALENDAR

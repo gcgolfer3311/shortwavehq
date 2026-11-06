@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:North Korea Reform Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:north-korea-reform-radio-11560-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:North Korea Reform Radio on 11560 kHz (Korean)
+LOCATION:11560 kHz shortwave
+DESCRIPTION:North Korea Reform Radio on 11560 kHz\, Korean\, beamed to Kore
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/north-korea-reform-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/north-korea-reform-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:north-korea-reform-radio-11560-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:North Korea Reform Radio on 11560 kHz (Korean)
+LOCATION:11560 kHz shortwave
+DESCRIPTION:North Korea Reform Radio on 11560 kHz\, Korean\, beamed to Kore
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/north-korea-reform-r
+ adio/
+URL:https://hqshortwaveradio.com/stations/north-korea-reform-radio/
+END:VEVENT
+END:VCALENDAR

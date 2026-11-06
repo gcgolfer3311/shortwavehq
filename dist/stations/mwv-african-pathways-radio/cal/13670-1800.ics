@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MWV African Pathways Radio 13670 kHz 18:00 UTC
+BEGIN:VEVENT
+UID:mwv-african-pathways-radio-13670-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV African Pathways Radio on 13670 kHz (English)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:MWV African Pathways Radio on 13670 kHz\, English\, beamed to C
+ Af. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/mwv-african-pathway
+ s-radio/
+URL:https://hqshortwaveradio.com/stations/mwv-african-pathways-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:MWV African Pathways Radio on 13670 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

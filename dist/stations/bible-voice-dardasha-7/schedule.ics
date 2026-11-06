@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bible Voice Dardasha-7 shortwave (B-26)
+BEGIN:VEVENT
+UID:bible-voice-dardasha-7-9400-1945@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T194500Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice Dardasha-7 on 9400 kHz (Arabic)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:Bible Voice Dardasha-7 on 9400 kHz\, Arabic\, beamed to N. Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/bible-voice-dardash
+ a-7/
+URL:https://hqshortwaveradio.com/stations/bible-voice-dardasha-7/
+END:VEVENT
+END:VCALENDAR

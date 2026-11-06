@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SuperClan Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:superclan-radio-5955-0749@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T074900Z
+DTEND:20261025T110600Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:SuperClan Radio on 5955 kHz (Dutch)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:SuperClan Radio on 5955 kHz\, Dutch\, beamed to Netherlands. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/superclan-radio/
+URL:https://hqshortwaveradio.com/stations/superclan-radio/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Mighty KBC 7425 kHz 20:00 UTC
+BEGIN:VEVENT
+UID:the-mighty-kbc-7425-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:The Mighty KBC on 7425 kHz (English)
+LOCATION:7425 kHz shortwave
+DESCRIPTION:The Mighty KBC on 7425 kHz\, English\, beamed to W. Europe. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/the-mighty-kbc/
+URL:https://hqshortwaveradio.com/stations/the-mighty-kbc/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:The Mighty KBC on 7425 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

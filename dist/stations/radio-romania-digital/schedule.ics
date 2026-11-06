@@ -1,0 +1,119 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Romania DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-romania-digital-5955-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 5955 kHz (Italian)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 5955 kHz\, Italian\, beamed to S. Euro
+ pe. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-romania-digit
+ al/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-6110-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 6110 kHz (German)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 6110 kHz\, German\, beamed to W. Europ
+ e. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-romania-digita
+ l/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-9470-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 9470 kHz (Mandarin)
+LOCATION:9470 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 9470 kHz\, Mandarin\, beamed to Far Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-romania-digit
+ al/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-9500-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 9500 kHz (Spanish)
+LOCATION:9500 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 9500 kHz\, Spanish\, beamed to South A
+ merica. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-romania-d
+ igital/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-9570-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 9570 kHz (English)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 9570 kHz\, English\, beamed to W. Euro
+ pe. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-romania-digit
+ al/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-9720-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 9720 kHz (French)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 9720 kHz\, French\, beamed to S. Europ
+ e. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-romania-digita
+ l/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-15250-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 15250 kHz (English)
+LOCATION:15250 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 15250 kHz\, English\, beamed to South 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-dig
+ ital/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-romania-digital-21470-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Romania DIGITAL on 21470 kHz (English)
+LOCATION:21470 kHz shortwave
+DESCRIPTION:Radio Romania DIGITAL on 21470 kHz\, English\, beamed to South 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-romania-dig
+ ital/
+URL:https://hqshortwaveradio.com/stations/radio-romania-digital/
+END:VEVENT
+END:VCALENDAR

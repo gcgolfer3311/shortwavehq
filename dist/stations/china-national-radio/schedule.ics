@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:China National Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:china-national-radio-7275-0150@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T015000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 7275 kHz (Mandarin)
+LOCATION:7275 kHz shortwave
+DESCRIPTION:China National Radio on 7275 kHz\, Mandarin\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-9440-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 9440 kHz (Mandarin)
+LOCATION:9440 kHz shortwave
+DESCRIPTION:China National Radio on 9440 kHz\, Mandarin\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-9450-2025@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T202500Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 9450 kHz (Mandarin)
+LOCATION:9450 kHz shortwave
+DESCRIPTION:China National Radio on 9450 kHz\, Mandarin\, beamed to China. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11605-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 11605 kHz (Mandarin)
+LOCATION:11605 kHz shortwave
+DESCRIPTION:China National Radio on 11605 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-11610-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:China National Radio on 11610 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-13680-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 13680 kHz (Mandarin)
+LOCATION:13680 kHz shortwave
+DESCRIPTION:China National Radio on 13680 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:china-national-radio-15180-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261026T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:China National Radio on 15180 kHz (Mandarin)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:China National Radio on 15180 kHz\, Mandarin\, beamed to China.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/china-national-radio/
+URL:https://hqshortwaveradio.com/stations/china-national-radio/
+END:VEVENT
+END:VCALENDAR

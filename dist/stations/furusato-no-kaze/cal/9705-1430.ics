@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Furusato no Kaze 9705 kHz 14:30 UTC
+BEGIN:VEVENT
+UID:furusato-no-kaze-9705-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Furusato no Kaze on 9705 kHz (Japanese)
+LOCATION:9705 kHz shortwave
+DESCRIPTION:Furusato no Kaze on 9705 kHz\, Japanese\, beamed to Korea. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/furusato-no-kaze/
+URL:https://hqshortwaveradio.com/stations/furusato-no-kaze/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Furusato no Kaze on 9705 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

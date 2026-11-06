@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fu Hsing Bc.Sta. 9410 kHz 06:00 UTC
+BEGIN:VEVENT
+UID:fu-hsing-bc-sta-9410-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Fu Hsing Bc.Sta. on 9410 kHz (Mandarin)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:Fu Hsing Bc.Sta. on 9410 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/fu-hsing-bc-sta/
+URL:https://hqshortwaveradio.com/stations/fu-hsing-bc-sta/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fu Hsing Bc.Sta. on 9410 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Delta International 6190 kHz 17:00 UTC
+BEGIN:VEVENT
+UID:radio-delta-international-6190-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Delta International on 6190 kHz (Dutch)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:Radio Delta International on 6190 kHz\, Dutch\, beamed to Europ
+ e. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-delta-internat
+ ional/
+URL:https://hqshortwaveradio.com/stations/radio-delta-international/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Delta International on 6190 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

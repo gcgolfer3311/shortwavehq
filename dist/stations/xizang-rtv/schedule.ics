@@ -1,0 +1,1164 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Xizang RTV shortwave (B-26)
+BEGIN:VEVENT
+UID:xizang-rtv-4820-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4820-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4820-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4820-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4820-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4820-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4820 kHz (Mandarin)
+LOCATION:4820 kHz shortwave
+DESCRIPTION:Xizang RTV on 4820 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (Tibetan)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (English)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (Tibetan)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (Tibetan)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (English)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (Tibetan)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4905-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4905 kHz (Tibetan)
+LOCATION:4905 kHz shortwave
+DESCRIPTION:Xizang RTV on 4905 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (Tibetan)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (English)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (Tibetan)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (Tibetan)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (English)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (Tibetan)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-4920-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 4920 kHz (Tibetan)
+LOCATION:4920 kHz shortwave
+DESCRIPTION:Xizang RTV on 4920 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-5935-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 5935 kHz (Mandarin)
+LOCATION:5935 kHz shortwave
+DESCRIPTION:Xizang RTV on 5935 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (Tibetan)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (English)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (Tibetan)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (Tibetan)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (English)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (Tibetan)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6025-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6025 kHz (Tibetan)
+LOCATION:6025 kHz shortwave
+DESCRIPTION:Xizang RTV on 6025 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6050-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6050 kHz (Mandarin)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Xizang RTV on 6050 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6110-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6110 kHz (Tibetan)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Xizang RTV on 6110 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6110-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6110 kHz (Tibetan)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Xizang RTV on 6110 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6110-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6110 kHz (English)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Xizang RTV on 6110 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6110-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6110 kHz (Tibetan)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Xizang RTV on 6110 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6110-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6110 kHz (Tibetan)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Xizang RTV on 6110 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (Tibetan)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (English)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (Tibetan)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (Tibetan)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (English)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (Tibetan)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6130-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6130 kHz (Tibetan)
+LOCATION:6130 kHz shortwave
+DESCRIPTION:Xizang RTV on 6130 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (English)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (English)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-6200-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 6200 kHz (Tibetan)
+LOCATION:6200 kHz shortwave
+DESCRIPTION:Xizang RTV on 6200 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7240-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7240 kHz (Mandarin)
+LOCATION:7240 kHz shortwave
+DESCRIPTION:Xizang RTV on 7240 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7240-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7240 kHz (Mandarin)
+LOCATION:7240 kHz shortwave
+DESCRIPTION:Xizang RTV on 7240 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7240-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7240 kHz (Mandarin)
+LOCATION:7240 kHz shortwave
+DESCRIPTION:Xizang RTV on 7240 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7240-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7240 kHz (Mandarin)
+LOCATION:7240 kHz shortwave
+DESCRIPTION:Xizang RTV on 7240 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7255-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7255 kHz (Tibetan)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:Xizang RTV on 7255 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7255-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7255 kHz (English)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:Xizang RTV on 7255 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7255-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7255 kHz (Tibetan)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:Xizang RTV on 7255 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7255-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7255 kHz (Tibetan)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:Xizang RTV on 7255 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7385-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7385 kHz (Tibetan)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Xizang RTV on 7385 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7385-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7385 kHz (Tibetan)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Xizang RTV on 7385 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7385-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7385 kHz (English)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Xizang RTV on 7385 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7385-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7385 kHz (Tibetan)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Xizang RTV on 7385 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7385-2050@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205000Z
+DTEND:20261026T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7385 kHz (Tibetan)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Xizang RTV on 7385 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7450-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7450 kHz (Mandarin)
+LOCATION:7450 kHz shortwave
+DESCRIPTION:Xizang RTV on 7450 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7450-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7450 kHz (Mandarin)
+LOCATION:7450 kHz shortwave
+DESCRIPTION:Xizang RTV on 7450 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7450-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7450 kHz (Mandarin)
+LOCATION:7450 kHz shortwave
+DESCRIPTION:Xizang RTV on 7450 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-7450-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261026T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 7450 kHz (Mandarin)
+LOCATION:7450 kHz shortwave
+DESCRIPTION:Xizang RTV on 7450 kHz\, Mandarin\, beamed to China. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9490-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9490 kHz (Tibetan)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Xizang RTV on 9490 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9490-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9490 kHz (English)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Xizang RTV on 9490 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9490-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9490 kHz (Tibetan)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Xizang RTV on 9490 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9580-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9580 kHz (Tibetan)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Xizang RTV on 9580 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9580-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9580 kHz (English)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Xizang RTV on 9580 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9580-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9580 kHz (Tibetan)
+LOCATION:9580 kHz shortwave
+DESCRIPTION:Xizang RTV on 9580 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9730-0330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T033000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9730 kHz (Tibetan)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Xizang RTV on 9730 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9730-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9730 kHz (English)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Xizang RTV on 9730 kHz\, English\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9730-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9730 kHz (Tibetan)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Xizang RTV on 9730 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-9730-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 9730 kHz (Tibetan)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Xizang RTV on 9730 kHz\, Tibetan\, beamed to China. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-11860-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 11860 kHz (Mandarin)
+LOCATION:11860 kHz shortwave
+DESCRIPTION:Xizang RTV on 11860 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-11860-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 11860 kHz (Mandarin)
+LOCATION:11860 kHz shortwave
+DESCRIPTION:Xizang RTV on 11860 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-11950-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 11950 kHz (Mandarin)
+LOCATION:11950 kHz shortwave
+DESCRIPTION:Xizang RTV on 11950 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+BEGIN:VEVENT
+UID:xizang-rtv-11950-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Xizang RTV on 11950 kHz (Mandarin)
+LOCATION:11950 kHz shortwave
+DESCRIPTION:Xizang RTV on 11950 kHz\, Mandarin\, beamed to China. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/xizang-rtv/
+URL:https://hqshortwaveradio.com/stations/xizang-rtv/
+END:VEVENT
+END:VCALENDAR

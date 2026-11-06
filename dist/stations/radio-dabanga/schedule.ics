@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Dabanga shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-dabanga-7315-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Dabanga on 7315 kHz (SUD)
+LOCATION:7315 kHz shortwave
+DESCRIPTION:Radio Dabanga on 7315 kHz\, SUD\, beamed to SDN. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/radio-dabanga/
+URL:https://hqshortwaveradio.com/stations/radio-dabanga/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-dabanga-11640-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Dabanga on 11640 kHz (SUD)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:Radio Dabanga on 11640 kHz\, SUD\, beamed to SDN. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-dabanga/
+URL:https://hqshortwaveradio.com/stations/radio-dabanga/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-dabanga-11640-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Dabanga on 11640 kHz (SUD)
+LOCATION:11640 kHz shortwave
+DESCRIPTION:Radio Dabanga on 11640 kHz\, SUD\, beamed to SDN. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-dabanga/
+URL:https://hqshortwaveradio.com/stations/radio-dabanga/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-dabanga-11700-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Dabanga on 11700 kHz (TIG)
+LOCATION:11700 kHz shortwave
+DESCRIPTION:Radio Dabanga on 11700 kHz\, TIG\, beamed to SDN. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-dabanga/
+URL:https://hqshortwaveradio.com/stations/radio-dabanga/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-dabanga-15550-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Dabanga on 15550 kHz (SUD)
+LOCATION:15550 kHz shortwave
+DESCRIPTION:Radio Dabanga on 15550 kHz\, SUD\, beamed to SDN. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/radio-dabanga/
+URL:https://hqshortwaveradio.com/stations/radio-dabanga/
+END:VEVENT
+END:VCALENDAR

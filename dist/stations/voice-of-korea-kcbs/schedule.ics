@@ -1,0 +1,439 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Korea KCBS shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-6170-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 6170 kHz (Korean)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 6170 kHz\, Korean\, beamed to LAm. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-6170-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 6170 kHz (Korean)
+LOCATION:6170 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 6170 kHz\, Korean\, beamed to Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-6185-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 6185 kHz (Korean)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 6185 kHz\, Korean\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-6185-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 6185 kHz (Korean)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 6185 kHz\, Korean\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-7210-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 7210 kHz (Korean)
+LOCATION:7210 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 7210 kHz\, Korean\, beamed to S. Africa.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-7220-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T095000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 7220 kHz (Korean)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 7220 kHz\, Korean\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-7235-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 7235 kHz (Korean)
+LOCATION:7235 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 7235 kHz\, Korean\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9425-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9425 kHz (Korean)
+LOCATION:9425 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9425 kHz\, Korean\, beamed to Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9435-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9435 kHz (Korean)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9435 kHz\, Korean\, beamed to LAm. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9435-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9435 kHz (Korean)
+LOCATION:9435 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9435 kHz\, Korean\, beamed to North Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcb
+ s/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9445-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T095000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9445 kHz\, Korean\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9445-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9445 kHz (Korean)
+LOCATION:9445 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9445 kHz\, Korean\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9850-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9850 kHz (Korean)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9850 kHz\, Korean\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9850-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9850 kHz (Korean)
+LOCATION:9850 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9850 kHz\, Korean\, beamed to SE Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9875-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9875 kHz (Korean)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9875 kHz\, Korean\, beamed to Middle Eas
+ t. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-9875-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 9875 kHz (Korean)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 9875 kHz\, Korean\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11635-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11635 kHz (Korean)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11635 kHz\, Korean\, beamed to Middle Ea
+ st. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs
+ /
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11635-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11635 kHz (Korean)
+LOCATION:11635 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11635 kHz\, Korean\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11710-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11710 kHz (Korean)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11710 kHz\, Korean\, beamed to LAm. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11710-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11710 kHz (Korean)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11710 kHz\, Korean\, beamed to North Ame
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/voice-of-korea-kc
+ bs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11735-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11735 kHz (Korean)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11735 kHz\, Korean\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11735-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11735 kHz (Korean)
+LOCATION:11735 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11735 kHz\, Korean\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-11910-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 11910 kHz (Korean)
+LOCATION:11910 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 11910 kHz\, Korean\, beamed to S. Africa
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-12015-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 12015 kHz (Korean)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 12015 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-12015-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 12015 kHz (Korean)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 12015 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-12015-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 12015 kHz (Korean)
+LOCATION:12015 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 12015 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-13650-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 13650 kHz (Korean)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 13650 kHz\, Korean\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-13650-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T145000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 13650 kHz (Korean)
+LOCATION:13650 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 13650 kHz\, Korean\, beamed to SE Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-13760-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 13760 kHz (Korean)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 13760 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-13760-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 13760 kHz (Korean)
+LOCATION:13760 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 13760 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-15180-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T125000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 15180 kHz (Korean)
+LOCATION:15180 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 15180 kHz\, Korean\, beamed to LAm. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-15245-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T175000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 15245 kHz (Korean)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 15245 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-korea-kcbs-15245-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T235000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Korea KCBS on 15245 kHz (Korean)
+LOCATION:15245 kHz shortwave
+DESCRIPTION:Voice of Korea KCBS on 15245 kHz\, Korean\, beamed to Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+URL:https://hqshortwaveradio.com/stations/voice-of-korea-kcbs/
+END:VEVENT
+END:VCALENDAR

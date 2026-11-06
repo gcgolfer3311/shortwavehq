@@ -1,0 +1,579 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Turkey shortwave (B-26)
+BEGIN:VEVENT
+UID:voice-of-turkey-5945-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 5945 kHz (German)
+LOCATION:5945 kHz shortwave
+DESCRIPTION:Voice of Turkey on 5945 kHz\, German\, beamed to Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-5960-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 5960 kHz (English)
+LOCATION:5960 kHz shortwave
+DESCRIPTION:Voice of Turkey on 5960 kHz\, English\, beamed to E. North Amer
+ ica. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-5980-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 5980 kHz (Turkish)
+LOCATION:5980 kHz shortwave
+DESCRIPTION:Voice of Turkey on 5980 kHz\, Turkish\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-6000-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 6000 kHz (Turkish)
+LOCATION:6000 kHz shortwave
+DESCRIPTION:Voice of Turkey on 6000 kHz\, Turkish\, beamed to Central Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-6050-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 6050 kHz (English)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Voice of Turkey on 6050 kHz\, English\, beamed to W. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-6120-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 6120 kHz (Turkish)
+LOCATION:6120 kHz shortwave
+DESCRIPTION:Voice of Turkey on 6120 kHz\, Turkish\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-6125-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 6125 kHz (English)
+LOCATION:6125 kHz shortwave
+DESCRIPTION:Voice of Turkey on 6125 kHz\, English\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7240-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T040000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7240 kHz (Uyghur)
+LOCATION:7240 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7240 kHz\, Uyghur\, beamed to Central Asia. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7245-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7245 kHz (Bulgarian)
+LOCATION:7245 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7245 kHz\, Bulgarian\, beamed to SE Europe. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7255-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7255 kHz (Arabic)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7255 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7265-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7265 kHz (Spanish)
+LOCATION:7265 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7265 kHz\, Spanish\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7280-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7280 kHz (Spanish)
+LOCATION:7280 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7280 kHz\, Spanish\, beamed to South America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-7285-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 7285 kHz (English)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:Voice of Turkey on 7285 kHz\, English\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9410-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9410 kHz (Russian)
+LOCATION:9410 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9410 kHz\, Russian\, beamed to Russia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9490-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9490 kHz (Farsi)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9490 kHz\, Farsi\, beamed to Iran. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9495-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9495 kHz (Spanish)
+LOCATION:9495 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9495 kHz\, Spanish\, beamed to S. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9595-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9595 kHz (AFG)
+LOCATION:9595 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9595 kHz\, AFG\, beamed to Afghanistan. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9610-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9610 kHz (English)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9610 kHz\, English\, beamed to South Asia. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9625-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9625 kHz (French)
+LOCATION:9625 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9625 kHz\, French\, beamed to W. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9650-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9650 kHz (Turkish)
+LOCATION:9650 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9650 kHz\, Turkish\, beamed to C. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9660-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T183000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9660 kHz (English)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9660 kHz\, English\, beamed to NIn. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9840-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9840 kHz (GE)
+LOCATION:9840 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9840 kHz\, GE\, beamed to Caucasus. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-9865-1830@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T183000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 9865 kHz (French)
+LOCATION:9865 kHz shortwave
+DESCRIPTION:Voice of Turkey on 9865 kHz\, French\, beamed to Africa. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-11660-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 11660 kHz (Turkish)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:Voice of Turkey on 11660 kHz\, Turkish\, beamed to Middle East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-11710-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 11710 kHz (AZ)
+LOCATION:11710 kHz shortwave
+DESCRIPTION:Voice of Turkey on 11710 kHz\, AZ\, beamed to Caucasus. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-11815-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 11815 kHz (Turkish)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Voice of Turkey on 11815 kHz\, Turkish\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-11955-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 11955 kHz (Arabic)
+LOCATION:11955 kHz shortwave
+DESCRIPTION:Voice of Turkey on 11955 kHz\, Arabic\, beamed to Middle East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-11970-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 11970 kHz (Italian)
+LOCATION:11970 kHz shortwave
+DESCRIPTION:Voice of Turkey on 11970 kHz\, Italian\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-13635-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 13635 kHz (English)
+LOCATION:13635 kHz shortwave
+DESCRIPTION:Voice of Turkey on 13635 kHz\, English\, beamed to W. Europe. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-13640-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 13640 kHz (Kazakh)
+LOCATION:13640 kHz shortwave
+DESCRIPTION:Voice of Turkey on 13640 kHz\, Kazakh\, beamed to Central Asia.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-13655-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 13655 kHz (UZ)
+LOCATION:13655 kHz shortwave
+DESCRIPTION:Voice of Turkey on 13655 kHz\, UZ\, beamed to Central Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-13740-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 13740 kHz (Farsi)
+LOCATION:13740 kHz shortwave
+DESCRIPTION:Voice of Turkey on 13740 kHz\, Farsi\, beamed to Iran. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15235-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T063000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15235 kHz (Hausa)
+LOCATION:15235 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15235 kHz\, Hausa\, beamed to Africa. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15235-0630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T063000Z
+DTEND:20261025T070000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15235 kHz (Swahili)
+LOCATION:15235 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15235 kHz\, Swahili\, beamed to Africa. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15270-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15270 kHz (German)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15270 kHz\, German\, beamed to Europe. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15350-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15350 kHz (Turkish)
+LOCATION:15350 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15350 kHz\, Turkish\, beamed to Europe. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15360-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15360 kHz (TT)
+LOCATION:15360 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15360 kHz\, TT\, beamed to E. Europe. Schedu
+ le from EIBI B-26 (valid until the A-27 season change). Times can change\;
+  check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-15390-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 15390 kHz (Urdu)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Voice of Turkey on 15390 kHz\, Urdu\, beamed to PAK. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17530-0500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T050000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17530 kHz (ML)
+LOCATION:17530 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17530 kHz\, ML\, beamed to SE Asia. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17650-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17650 kHz (Arabic)
+LOCATION:17650 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17650 kHz\, Arabic\, beamed to N. Africa. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17715-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17715 kHz (French)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17715 kHz\, French\, beamed to W. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17770-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17770 kHz (Turkmen)
+LOCATION:17770 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17770 kHz\, Turkmen\, beamed to Central Asia
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17775-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17775 kHz (Mandarin)
+LOCATION:17775 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17775 kHz\, Mandarin\, beamed to Far East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+BEGIN:VEVENT
+UID:voice-of-turkey-17780-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 17780 kHz (Swahili)
+LOCATION:17780 kHz shortwave
+DESCRIPTION:Voice of Turkey on 17780 kHz\, Swahili\, beamed to E. Africa. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+END:VEVENT
+END:VCALENDAR

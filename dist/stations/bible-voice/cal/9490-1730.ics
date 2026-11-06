@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bible Voice 9490 kHz 17:30 UTC
+BEGIN:VEVENT
+UID:bible-voice-9490-1730@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T173000Z
+DTEND:20261025T174500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Bible Voice on 9490 kHz (Arabic)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Bible Voice on 9490 kHz\, Arabic\, beamed to Middle East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/bible-voice/
+URL:https://hqshortwaveradio.com/stations/bible-voice/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Bible Voice on 9490 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,176 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Shiokaze shortwave (B-26)
+BEGIN:VEVENT
+UID:shiokaze-5955-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 5955 kHz (Japanese)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Shiokaze on 5955 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-5955-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 5955 kHz (Korean)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:Shiokaze on 5955 kHz\, Korean\, beamed to Korea. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6045-1405@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140500Z
+DTEND:20261025T143500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6045 kHz (Japanese)
+LOCATION:6045 kHz shortwave
+DESCRIPTION:Shiokaze on 6045 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6135-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6135 kHz (Japanese)
+LOCATION:6135 kHz shortwave
+DESCRIPTION:Shiokaze on 6135 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6145-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6145 kHz (Japanese)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Shiokaze on 6145 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6145-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6145 kHz (Korean)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Shiokaze on 6145 kHz\, Korean\, beamed to Korea. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6165-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6165 kHz (Japanese)
+LOCATION:6165 kHz shortwave
+DESCRIPTION:Shiokaze on 6165 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6165-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6165 kHz (Korean)
+LOCATION:6165 kHz shortwave
+DESCRIPTION:Shiokaze on 6165 kHz\, Korean\, beamed to Korea. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-6185-1950@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T195000Z
+DTEND:20261025T205000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 6185 kHz (Japanese)
+LOCATION:6185 kHz shortwave
+DESCRIPTION:Shiokaze on 6185 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-7345-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 7345 kHz (Japanese)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Shiokaze on 7345 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-7345-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 7345 kHz (Korean)
+LOCATION:7345 kHz shortwave
+DESCRIPTION:Shiokaze on 7345 kHz\, Korean\, beamed to Korea. Schedule from 
+ EIBI B-26 (valid until the A-27 season change). Times can change\; check h
+ ttps://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-7375-1705@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170500Z
+DTEND:20261025T180500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 7375 kHz (Japanese)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:Shiokaze on 7375 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+BEGIN:VEVENT
+UID:shiokaze-7385-1405@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140500Z
+DTEND:20261025T143500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Shiokaze on 7385 kHz (Japanese)
+LOCATION:7385 kHz shortwave
+DESCRIPTION:Shiokaze on 7385 kHz\, Japanese\, beamed to Korea. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/shiokaze/
+URL:https://hqshortwaveradio.com/stations/shiokaze/
+END:VEVENT
+END:VCALENDAR

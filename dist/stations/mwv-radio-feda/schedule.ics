@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MWV Radio Feda shortwave (B-26)
+BEGIN:VEVENT
+UID:mwv-radio-feda-11610-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV Radio Feda on 11610 kHz (Arabic)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:MWV Radio Feda on 11610 kHz\, Arabic\, beamed to N. Africa. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/mwv-radio-feda/
+URL:https://hqshortwaveradio.com/stations/mwv-radio-feda/
+END:VEVENT
+BEGIN:VEVENT
+UID:mwv-radio-feda-13670-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV Radio Feda on 13670 kHz (Arabic)
+LOCATION:13670 kHz shortwave
+DESCRIPTION:MWV Radio Feda on 13670 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/mwv-radio-feda/
+URL:https://hqshortwaveradio.com/stations/mwv-radio-feda/
+END:VEVENT
+BEGIN:VEVENT
+UID:mwv-radio-feda-13710-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:MWV Radio Feda on 13710 kHz (Arabic)
+LOCATION:13710 kHz shortwave
+DESCRIPTION:MWV Radio Feda on 13710 kHz\, Arabic\, beamed to Middle East. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/mwv-radio-feda/
+URL:https://hqshortwaveradio.com/stations/mwv-radio-feda/
+END:VEVENT
+END:VCALENDAR

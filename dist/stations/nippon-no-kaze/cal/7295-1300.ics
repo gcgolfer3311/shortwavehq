@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Nippon no Kaze 7295 kHz 13:00 UTC
+BEGIN:VEVENT
+UID:nippon-no-kaze-7295-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Nippon no Kaze on 7295 kHz (Korean)
+LOCATION:7295 kHz shortwave
+DESCRIPTION:Nippon no Kaze on 7295 kHz\, Korean\, beamed to Korea. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/nippon-no-kaze/
+URL:https://hqshortwaveradio.com/stations/nippon-no-kaze/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nippon no Kaze on 7295 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NZART Official Broadc. shortwave (B-26)
+BEGIN:VEVENT
+UID:nzart-official-broadc-3900-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T073000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NZART Official Broadc. on 3900 kHz (English)
+LOCATION:3900 kHz shortwave
+DESCRIPTION:NZART Official Broadc. on 3900 kHz\, English\, beamed to New Ze
+ aland. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/nzart-official-b
+ roadc/
+URL:https://hqshortwaveradio.com/stations/nzart-official-broadc/
+END:VEVENT
+BEGIN:VEVENT
+UID:nzart-official-broadc-3900-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T083000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NZART Official Broadc. on 3900 kHz (English)
+LOCATION:3900 kHz shortwave
+DESCRIPTION:NZART Official Broadc. on 3900 kHz\, English\, beamed to New Ze
+ aland. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/nzart-official-b
+ roadc/
+URL:https://hqshortwaveradio.com/stations/nzart-official-broadc/
+END:VEVENT
+END:VCALENDAR

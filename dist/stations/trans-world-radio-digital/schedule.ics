@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Trans World Radio DIGITAL shortwave (B-26)
+BEGIN:VEVENT
+UID:trans-world-radio-digital-9975-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio DIGITAL on 9975 kHz (English)
+LOCATION:9975 kHz shortwave
+DESCRIPTION:Trans World Radio DIGITAL on 9975 kHz\, English\, beamed to Sou
+ th Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/trans-world-ra
+ dio-digital/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-digital-9975-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T150500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio DIGITAL on 9975 kHz (English)
+LOCATION:9975 kHz shortwave
+DESCRIPTION:Trans World Radio DIGITAL on 9975 kHz\, English\, beamed to SE 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/trans-world-radio
+ -digital/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-digital-12105-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio DIGITAL on 12105 kHz (Mandarin)
+LOCATION:12105 kHz shortwave
+DESCRIPTION:Trans World Radio DIGITAL on 12105 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/trans-world-ra
+ dio-digital/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio-digital/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-digital-12105-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio DIGITAL on 12105 kHz (Japanese)
+LOCATION:12105 kHz shortwave
+DESCRIPTION:Trans World Radio DIGITAL on 12105 kHz\, Japanese\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/trans-world-ra
+ dio-digital/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio-digital/
+END:VEVENT
+END:VCALENDAR

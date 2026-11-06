@@ -1,0 +1,1113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Taiwan International shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-taiwan-international-5010-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 5010 kHz (Spanish)
+LOCATION:5010 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 5010 kHz\, Spanish\, beamed to Ca
+ ribbean. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-5800-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 5800 kHz (Spanish)
+LOCATION:5800 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 5800 kHz\, Spanish\, beamed to LA
+ m. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-taiwan-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-5900-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 5900 kHz (German)
+LOCATION:5900 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 5900 kHz\, German\, beamed to Eur
+ ope. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6005-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T193000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6005 kHz (French)
+LOCATION:6005 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6005 kHz\, French\, beamed to Eur
+ ope. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6075-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6075 kHz (Mandarin)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6075 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6075-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6075 kHz (Mandarin)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6075 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6075-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6075 kHz (Mandarin)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6075 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6075-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6075 kHz (Mandarin)
+LOCATION:6075 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6075 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Hakka)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Hakka\, beamed to Far 
+ East. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Mandarin)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Mandarin)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Cantonese)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Cantonese\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Hakka)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Hakka\, beamed to Far 
+ East. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Mandarin)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6105-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6105 kHz (Mandarin)
+LOCATION:6105 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6105 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6145-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6145 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6145-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6145 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6145-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6145 kHz (Mandarin)
+LOCATION:6145 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6145 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6150-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6150 kHz (Mandarin)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6150 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6150-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6150 kHz (Amoy)
+LOCATION:6150 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6150 kHz\, Amoy\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-6180-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 6180 kHz (Mandarin)
+LOCATION:6180 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 6180 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-7300-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 7300 kHz (Mandarin)
+LOCATION:7300 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 7300 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-7430-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 7430 kHz (Mandarin)
+LOCATION:7430 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 7430 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9400-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9400 kHz (Amoy)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9400 kHz\, Amoy\, beamed to Far E
+ ast. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inter
+ national/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9405-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9405 kHz (English)
+LOCATION:9405 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9405 kHz\, English\, beamed to So
+ uth Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9490-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9490 kHz (Mandarin)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9490 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9490-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9490 kHz (Russian)
+LOCATION:9490 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9490 kHz\, Russian\, beamed to Si
+ beria. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9525-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9525 kHz (Thai)
+LOCATION:9525 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9525 kHz\, Thai\, beamed to SE As
+ ia. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-taiwan-intern
+ ational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9540-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T153000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9540 kHz (Cantonese)
+LOCATION:9540 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9540 kHz\, Cantonese\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9540-1530@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T153000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9540 kHz (Hakka)
+LOCATION:9540 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9540 kHz\, Hakka\, beamed to Chin
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-taiwan-interna
+ tional/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9555-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9555 kHz (Mandarin)
+LOCATION:9555 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9555 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9555-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9555 kHz (Mandarin)
+LOCATION:9555 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9555 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9555-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9555 kHz (Mandarin)
+LOCATION:9555 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9555 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9595-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9595 kHz (Mandarin)
+LOCATION:9595 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9595 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9595-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9595 kHz (Mandarin)
+LOCATION:9595 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9595 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9610-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9610 kHz (Mandarin)
+LOCATION:9610 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9610 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9660-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9660 kHz (Mandarin)
+LOCATION:9660 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9660 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9680-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9680 kHz (Mandarin)
+LOCATION:9680 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9680 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9680-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9680 kHz (Mandarin)
+LOCATION:9680 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9680 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9680-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9680 kHz (Mandarin)
+LOCATION:9680 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9680 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9680-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9680 kHz (French)
+LOCATION:9680 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9680 kHz\, French\, beamed to W. 
+ Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9695-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9695 kHz (Vietnamese)
+LOCATION:9695 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9695 kHz\, Vietnamese\, beamed to
+  SE Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9715-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9715 kHz (Korean)
+LOCATION:9715 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9715 kHz\, Korean\, beamed to Far
+  East. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9735-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9735 kHz (Cantonese)
+LOCATION:9735 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9735 kHz\, Cantonese\, beamed to 
+ Indonesia. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan
+ -international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9735-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9735 kHz (Hakka)
+LOCATION:9735 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9735 kHz\, Hakka\, beamed to Indo
+ nesia. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9740-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9740 kHz (Japanese)
+LOCATION:9740 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9740 kHz\, Japanese\, beamed to J
+ apan. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9790-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T173000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9790 kHz (Russian)
+LOCATION:9790 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9790 kHz\, Russian\, beamed to E.
+  Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9885-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9885 kHz (Mandarin)
+LOCATION:9885 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9885 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9885-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9885 kHz (Mandarin)
+LOCATION:9885 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9885 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9885-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9885 kHz (Mandarin)
+LOCATION:9885 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9885 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-9900-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 9900 kHz (Mandarin)
+LOCATION:9900 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 9900 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-i
+ nternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11605-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11605 kHz (Mandarin)
+LOCATION:11605 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11605 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11610-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11610 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11730-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11730 kHz (Mandarin)
+LOCATION:11730 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11730 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11815-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11815 kHz (Mandarin)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11815 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11815-0700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T070000Z
+DTEND:20261025T081000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11815 kHz (Mandarin)
+LOCATION:11815 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11815 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11885-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11885 kHz (Mandarin)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11885 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11885-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11885 kHz (Mandarin)
+LOCATION:11885 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11885 kHz\, Mandarin\, beamed to 
+ Far East. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-11915-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 11915 kHz (Indonesian)
+LOCATION:11915 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 11915 kHz\, Indonesian\, beamed t
+ o Indonesia. Schedule from EIBI B-26 (valid until the A-27 season change).
+  Times can change\; check https://hqshortwaveradio.com/stations/radio-taiw
+ an-international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-12065-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 12065 kHz (Amoy)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 12065 kHz\, Amoy\, beamed to Indo
+ nesia. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-int
+ ernational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-12065-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 12065 kHz (Cantonese)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 12065 kHz\, Cantonese\, beamed to
+  Indonesia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/radio-taiwa
+ n-international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-12065-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 12065 kHz (Hakka)
+LOCATION:12065 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 12065 kHz\, Hakka\, beamed to Ind
+ onesia. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-in
+ ternational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-13825-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 13825 kHz (Cantonese)
+LOCATION:13825 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 13825 kHz\, Cantonese\, beamed to
+  SE Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-13825-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 13825 kHz (Hakka)
+LOCATION:13825 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 13825 kHz\, Hakka\, beamed to SE 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-15320-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 15320 kHz (Cantonese)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 15320 kHz\, Cantonese\, beamed to
+  SE Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-
+ international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-15320-0430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T043000Z
+DTEND:20261025T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 15320 kHz (Hakka)
+LOCATION:15320 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 15320 kHz\, Hakka\, beamed to SE 
+ Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-taiwan-inte
+ rnational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-15770-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 15770 kHz (Spanish)
+LOCATION:15770 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 15770 kHz\, Spanish\, beamed to E
+ . North America. Schedule from EIBI B-26 (valid until the A-27 season chan
+ ge). Times can change\; check https://hqshortwaveradio.com/stations/radio-
+ taiwan-international/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-17790-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 17790 kHz (Spanish)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 17790 kHz\, Spanish\, beamed to L
+ Am. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-taiwan-intern
+ ational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-taiwan-international-17790-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Taiwan International on 17790 kHz (Spanish)
+LOCATION:17790 kHz shortwave
+DESCRIPTION:Radio Taiwan International on 17790 kHz\, Spanish\, beamed to L
+ Am. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-taiwan-intern
+ ational/
+URL:https://hqshortwaveradio.com/stations/radio-taiwan-international/
+END:VEVENT
+END:VCALENDAR

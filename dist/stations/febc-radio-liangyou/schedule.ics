@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBC Radio Liangyou shortwave (B-26)
+BEGIN:VEVENT
+UID:febc-radio-liangyou-9400-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Radio Liangyou on 9400 kHz (HUI)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:FEBC Radio Liangyou on 9400 kHz\, HUI\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+URL:https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-radio-liangyou-9400-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Radio Liangyou on 9400 kHz (Cantonese)
+LOCATION:9400 kHz shortwave
+DESCRIPTION:FEBC Radio Liangyou on 9400 kHz\, Cantonese\, beamed to Far Eas
+ t. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+URL:https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-radio-liangyou-9940-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Radio Liangyou on 9940 kHz (Uyghur)
+LOCATION:9940 kHz shortwave
+DESCRIPTION:FEBC Radio Liangyou on 9940 kHz\, Uyghur\, beamed to Far East. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+URL:https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-radio-liangyou-12120-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Radio Liangyou on 12120 kHz (LIS)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:FEBC Radio Liangyou on 12120 kHz\, LIS\, beamed to SE Asia. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+URL:https://hqshortwaveradio.com/stations/febc-radio-liangyou/
+END:VEVENT
+END:VCALENDAR

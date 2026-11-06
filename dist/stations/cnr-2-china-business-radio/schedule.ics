@@ -1,0 +1,1547 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CNR 2 China Business Radio shortwave (B-26)
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-3985-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 3985 kHz (Mandarin)
+LOCATION:3985 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 3985 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-3985-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 3985 kHz (Mandarin)
+LOCATION:3985 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 3985 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-5995-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 5995 kHz (Mandarin)
+LOCATION:5995 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 5995 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6000-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6000 kHz (Mandarin)
+LOCATION:6000 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6000 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6030-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6030 kHz (Mandarin)
+LOCATION:6030 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6030 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6040-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6040 kHz (Mandarin)
+LOCATION:6040 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6040 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6065-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6065 kHz (Mandarin)
+LOCATION:6065 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6065 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6065-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6065 kHz (Mandarin)
+LOCATION:6065 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6065 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6090-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6090 kHz (Mandarin)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6090 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6090-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6090 kHz (Mandarin)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6090 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6090-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6090 kHz (Mandarin)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6090 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6090-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6090 kHz (Mandarin)
+LOCATION:6090 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6090 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-6190-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 6190 kHz (Mandarin)
+LOCATION:6190 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 6190 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7220-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7220 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7220-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7220 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7220-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7220 kHz (Mandarin)
+LOCATION:7220 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7220 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7245-0800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T080000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7245 kHz (Mandarin)
+LOCATION:7245 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7245 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7245-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7245 kHz (Mandarin)
+LOCATION:7245 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7245 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7245-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7245 kHz (Mandarin)
+LOCATION:7245 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7245 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7255-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7255 kHz (Mandarin)
+LOCATION:7255 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7255 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7265-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7265 kHz (Mandarin)
+LOCATION:7265 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7265 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7265-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7265 kHz (Mandarin)
+LOCATION:7265 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7265 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7315-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7315 kHz (Mandarin)
+LOCATION:7315 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7315 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7315-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7315 kHz (Mandarin)
+LOCATION:7315 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7315 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7315-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7315 kHz (Mandarin)
+LOCATION:7315 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7315 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7335-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7335 kHz (Mandarin)
+LOCATION:7335 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7335 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7335-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7335 kHz (Mandarin)
+LOCATION:7335 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7335 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7335-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7335 kHz (Mandarin)
+LOCATION:7335 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7335 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7360-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7360 kHz (Mandarin)
+LOCATION:7360 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7360 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7370-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7370 kHz (Mandarin)
+LOCATION:7370 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7370 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7370-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7370 kHz (Mandarin)
+LOCATION:7370 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7370 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7370-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7370 kHz (Mandarin)
+LOCATION:7370 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7370 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7375-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7375 kHz (Mandarin)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7375 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7375-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7375 kHz (Mandarin)
+LOCATION:7375 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7375 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7425-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7425 kHz (Mandarin)
+LOCATION:7425 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7425 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-7425-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 7425 kHz (Mandarin)
+LOCATION:7425 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 7425 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9515-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9515 kHz (Mandarin)
+LOCATION:9515 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9515 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9515-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9515 kHz (Mandarin)
+LOCATION:9515 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9515 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9570-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9570 kHz (Mandarin)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9570 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9570-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9570 kHz (Mandarin)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9570 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9570-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9570 kHz (Mandarin)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9570 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9570-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9570 kHz (Mandarin)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9570 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9570-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9570 kHz (Mandarin)
+LOCATION:9570 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9570 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T080000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9620-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9620 kHz (Mandarin)
+LOCATION:9620 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9620 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9720-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9720 kHz (Mandarin)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9720 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9720-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9720 kHz (Mandarin)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9720 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9720-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9720 kHz (Mandarin)
+LOCATION:9720 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9720 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9755-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9755 kHz (Mandarin)
+LOCATION:9755 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9755 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9755-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9755 kHz (Mandarin)
+LOCATION:9755 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9755 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9775-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9775 kHz (Mandarin)
+LOCATION:9775 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9775 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9775-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9775 kHz (Mandarin)
+LOCATION:9775 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9775 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9775-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9775 kHz (Mandarin)
+LOCATION:9775 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9775 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9810-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9810 kHz (Mandarin)
+LOCATION:9810 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9810 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9810-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9810 kHz (Mandarin)
+LOCATION:9810 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9810 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9810-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9810 kHz (Mandarin)
+LOCATION:9810 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9810 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9820-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9820 kHz (Mandarin)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9820 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9820-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9820 kHz (Mandarin)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9820 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9820-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9820 kHz (Mandarin)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9820 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-9820-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 9820 kHz (Mandarin)
+LOCATION:9820 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 9820 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busin
+ ess-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11600-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11600 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11600-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11600 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11600-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11600 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11610-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11610 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11610-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11610 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11610-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11610 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11610-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11610 kHz (Mandarin)
+LOCATION:11610 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11610 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11660-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11660 kHz (Mandarin)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11660 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11660-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11660 kHz (Mandarin)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11660 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11660-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11660 kHz (Mandarin)
+LOCATION:11660 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11660 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11670-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11670 kHz (Mandarin)
+LOCATION:11670 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11670 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11670-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11670 kHz (Mandarin)
+LOCATION:11670 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11670 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11670-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11670 kHz (Mandarin)
+LOCATION:11670 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11670 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11670-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11670 kHz (Mandarin)
+LOCATION:11670 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11670 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11695-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11695 kHz (Mandarin)
+LOCATION:11695 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11695 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11740-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11740 kHz (Mandarin)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11740 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11740-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T160500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11740 kHz (Mandarin)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11740 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11740-2055@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T205500Z
+DTEND:20261026T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11740 kHz (Mandarin)
+LOCATION:11740 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11740 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11750-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11750 kHz (Mandarin)
+LOCATION:11750 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11750 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11785-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11785 kHz (Mandarin)
+LOCATION:11785 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11785 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11800-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11800 kHz (Mandarin)
+LOCATION:11800 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11800 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11800-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11800 kHz (Mandarin)
+LOCATION:11800 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11800 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11800-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11800 kHz (Mandarin)
+LOCATION:11800 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11800 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11800-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11800 kHz (Mandarin)
+LOCATION:11800 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11800 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11915-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11915 kHz (Mandarin)
+LOCATION:11915 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11915 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11915-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11915 kHz (Mandarin)
+LOCATION:11915 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11915 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11915-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11915 kHz (Mandarin)
+LOCATION:11915 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11915 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11915-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11915 kHz (Mandarin)
+LOCATION:11915 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11915 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11970-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11970 kHz (Mandarin)
+LOCATION:11970 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11970 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-11970-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 11970 kHz (Mandarin)
+LOCATION:11970 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 11970 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-12080-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 12080 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-12080-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 12080 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-12080-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 12080 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-12080-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 12080 kHz (Mandarin)
+LOCATION:12080 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 12080 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15270-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15270 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15270-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15270 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15270-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15270 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15270-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15270 kHz (Mandarin)
+LOCATION:15270 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15270 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15500-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15500 kHz (Mandarin)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15500 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15500-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15500 kHz (Mandarin)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15500 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15500-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15500 kHz (Mandarin)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15500 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15540-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15540 kHz (Mandarin)
+LOCATION:15540 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15540 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15540-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15540 kHz (Mandarin)
+LOCATION:15540 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15540 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-15540-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 15540 kHz (Mandarin)
+LOCATION:15540 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 15540 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-17625-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T060000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 17625 kHz (Mandarin)
+LOCATION:17625 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 17625 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:cnr-2-china-business-radio-17625-0600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T060000Z
+DTEND:20261025T090000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:CNR 2 China Business Radio on 17625 kHz (Mandarin)
+LOCATION:17625 kHz shortwave
+DESCRIPTION:CNR 2 China Business Radio on 17625 kHz\, Mandarin\, beamed to 
+ China. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/cnr-2-china-busi
+ ness-radio/
+URL:https://hqshortwaveradio.com/stations/cnr-2-china-business-radio/
+END:VEVENT
+END:VCALENDAR

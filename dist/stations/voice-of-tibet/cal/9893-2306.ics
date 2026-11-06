@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Tibet 9893 kHz 23:06 UTC
+BEGIN:VEVENT
+UID:voice-of-tibet-9893-2306@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230600Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Tibet on 9893 kHz (Tibetan)
+LOCATION:9893 kHz shortwave
+DESCRIPTION:Voice of Tibet on 9893 kHz\, Tibetan\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/voice-of-tibet/
+URL:https://hqshortwaveradio.com/stations/voice-of-tibet/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Tibet on 9893 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

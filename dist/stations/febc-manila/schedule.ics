@@ -1,0 +1,761 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FEBC Manila shortwave (B-26)
+BEGIN:VEVENT
+UID:febc-manila-7320-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T023000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 7320 kHz (Urdu)
+LOCATION:7320 kHz shortwave
+DESCRIPTION:FEBC Manila on 7320 kHz\, Urdu\, beamed to South Asia. Schedule
+  from EIBI B-26 (valid until the A-27 season change). Times can change\; c
+ heck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9540-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9540 kHz (Hindi)
+LOCATION:9540 kHz shortwave
+DESCRIPTION:FEBC Manila on 9540 kHz\, Hindi\, beamed to South Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9795-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9795 kHz (Vietnamese)
+LOCATION:9795 kHz shortwave
+DESCRIPTION:FEBC Manila on 9795 kHz\, Vietnamese\, beamed to SE Asia. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9795-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9795 kHz (MON)
+LOCATION:9795 kHz shortwave
+DESCRIPTION:FEBC Manila on 9795 kHz\, MON\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9795-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9795 kHz (Lao)
+LOCATION:9795 kHz shortwave
+DESCRIPTION:FEBC Manila on 9795 kHz\, Lao\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9875-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9875 kHz (MIE)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:FEBC Manila on 9875 kHz\, MIE\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9875-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9875 kHz (RAK)
+LOCATION:9875 kHz shortwave
+DESCRIPTION:FEBC Manila on 9875 kHz\, RAK\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9920-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9920 kHz (JR)
+LOCATION:9920 kHz shortwave
+DESCRIPTION:FEBC Manila on 9920 kHz\, JR\, beamed to SE Asia. Schedule from
+  EIBI B-26 (valid until the A-27 season change). Times can change\; check 
+ https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9920-1230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T123000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9920 kHz (BHN)
+LOCATION:9920 kHz shortwave
+DESCRIPTION:FEBC Manila on 9920 kHz\, BHN\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-9920-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 9920 kHz (KOH)
+LOCATION:9920 kHz shortwave
+DESCRIPTION:FEBC Manila on 9920 kHz\, KOH\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-11600-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:FEBC Manila on 11600 kHz\, Mandarin\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-11600-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 11600 kHz (Mandarin)
+LOCATION:11600 kHz shortwave
+DESCRIPTION:FEBC Manila on 11600 kHz\, Mandarin\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-11750-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 11750 kHz (LAH)
+LOCATION:11750 kHz shortwave
+DESCRIPTION:FEBC Manila on 11750 kHz\, LAH\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-11750-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T144500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 11750 kHz (RUM)
+LOCATION:11750 kHz shortwave
+DESCRIPTION:FEBC Manila on 11750 kHz\, RUM\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-11750-1445@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T144500Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 11750 kHz (SHT)
+LOCATION:11750 kHz shortwave
+DESCRIPTION:FEBC Manila on 11750 kHz\, SHT\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12055-0015@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T001500Z
+DTEND:20261025T004500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12055 kHz (LAH)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:FEBC Manila on 12055 kHz\, LAH\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12055-0045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T004500Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12055 kHz (WA)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:FEBC Manila on 12055 kHz\, WA\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12055-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12055 kHz (SHA)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:FEBC Manila on 12055 kHz\, SHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12055-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261025T234500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12055 kHz (PAL)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:FEBC Manila on 12055 kHz\, PAL\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12055-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T001500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12055 kHz (TL)
+LOCATION:12055 kHz shortwave
+DESCRIPTION:FEBC Manila on 12055 kHz\, TL\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (HMW)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, HMW\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (TL)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, TL\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (HMB)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, HMB\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T113000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (Lao)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, Lao\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T123000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (MIE)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, MIE\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (BT)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, BT\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T133000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (HMQ)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, HMQ\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (KHM)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, KHM\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (HMW)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, HMW\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12095-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12095 kHz (HMB)
+LOCATION:12095 kHz shortwave
+DESCRIPTION:FEBC Manila on 12095 kHz\, HMB\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12120-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T121500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12120 kHz (RWG)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:FEBC Manila on 12120 kHz\, RWG\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12120-1215@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T121500Z
+DTEND:20261025T124500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12120 kHz (AK)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:FEBC Manila on 12120 kHz\, AK\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12120-1245@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T124500Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12120 kHz (C-D)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:FEBC Manila on 12120 kHz\, C-D\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-12120-1330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T133000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 12120 kHz (Burmese)
+LOCATION:12120 kHz shortwave
+DESCRIPTION:FEBC Manila on 12120 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-13870-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 13870 kHz (Burmese)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:FEBC Manila on 13870 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-13870-0130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T013000Z
+DTEND:20261025T014500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 13870 kHz (SHT)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:FEBC Manila on 13870 kHz\, SHT\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-13870-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 13870 kHz (SHA)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:FEBC Manila on 13870 kHz\, SHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-13870-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 13870 kHz (RAK)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:FEBC Manila on 13870 kHz\, RAK\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-13870-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 13870 kHz (Khmer)
+LOCATION:13870 kHz shortwave
+DESCRIPTION:FEBC Manila on 13870 kHz\, Khmer\, beamed to SE Asia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15330-1115@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T111500Z
+DTEND:20261025T114500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15330 kHz (MON)
+LOCATION:15330 kHz shortwave
+DESCRIPTION:FEBC Manila on 15330 kHz\, MON\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15330-1145@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T114500Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15330 kHz (K-P)
+LOCATION:15330 kHz shortwave
+DESCRIPTION:FEBC Manila on 15330 kHz\, K-P\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15420-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15420 kHz (MKB)
+LOCATION:15420 kHz shortwave
+DESCRIPTION:FEBC Manila on 15420 kHz\, MKB\, beamed to Indonesia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15435-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T004500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15435 kHz (SHA)
+LOCATION:15435 kHz shortwave
+DESCRIPTION:FEBC Manila on 15435 kHz\, SHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15435-0045@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T004500Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15435 kHz (TN)
+LOCATION:15435 kHz shortwave
+DESCRIPTION:FEBC Manila on 15435 kHz\, TN\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15435-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15435 kHz (KA)
+LOCATION:15435 kHz shortwave
+DESCRIPTION:FEBC Manila on 15435 kHz\, KA\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15450-0030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T003000Z
+DTEND:20261025T004500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15450 kHz (RUM)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:FEBC Manila on 15450 kHz\, RUM\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15450-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15450 kHz (KHA)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:FEBC Manila on 15450 kHz\, KHA\, beamed to SE Asia. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15450-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15450 kHz (Mongolian)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:FEBC Manila on 15450 kHz\, Mongolian\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15450-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15450 kHz (KA)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:FEBC Manila on 15450 kHz\, KA\, beamed to SE Asia. Schedule fro
+ m EIBI B-26 (valid until the A-27 season change). Times can change\; check
+  https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15450-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T003000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15450 kHz (Burmese)
+LOCATION:15450 kHz shortwave
+DESCRIPTION:FEBC Manila on 15450 kHz\, Burmese\, beamed to SE Asia. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15515-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15515 kHz (Mandarin)
+LOCATION:15515 kHz shortwave
+DESCRIPTION:FEBC Manila on 15515 kHz\, Mandarin\, beamed to Far East. Sched
+ ule from EIBI B-26 (valid until the A-27 season change). Times can change\
+ ; check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15540-1430@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T143000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15540 kHz (Uyghur)
+LOCATION:15540 kHz shortwave
+DESCRIPTION:FEBC Manila on 15540 kHz\, Uyghur\, beamed to Far East. Schedul
+ e from EIBI B-26 (valid until the A-27 season change). Times can change\; 
+ check https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15560-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T013000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15560 kHz (JV)
+LOCATION:15560 kHz shortwave
+DESCRIPTION:FEBC Manila on 15560 kHz\, JV\, beamed to Indonesia. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15580-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15580 kHz (MKS)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:FEBC Manila on 15580 kHz\, MKS\, beamed to Indonesia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15580-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15580 kHz (BUG)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:FEBC Manila on 15580 kHz\, BUG\, beamed to Indonesia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15580-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T103000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15580 kHz (SUN)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:FEBC Manila on 15580 kHz\, SUN\, beamed to Indonesia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15580-1030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T103000Z
+DTEND:20261025T105800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15580 kHz (SAS)
+LOCATION:15580 kHz shortwave
+DESCRIPTION:FEBC Manila on 15580 kHz\, SAS\, beamed to Indonesia. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+BEGIN:VEVENT
+UID:febc-manila-15620-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T143000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:FEBC Manila on 15620 kHz (JV)
+LOCATION:15620 kHz shortwave
+DESCRIPTION:FEBC Manila on 15620 kHz\, JV\, beamed to Indonesia. Schedule f
+ rom EIBI B-26 (valid until the A-27 season change). Times can change\; che
+ ck https://hqshortwaveradio.com/stations/febc-manila/
+URL:https://hqshortwaveradio.com/stations/febc-manila/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sound of Hope 9730 kHz 14:00 UTC
+BEGIN:VEVENT
+UID:sound-of-hope-9730-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 9730 kHz (Mandarin)
+LOCATION:9730 kHz shortwave
+DESCRIPTION:Sound of Hope on 9730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Sound of Hope on 9730 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

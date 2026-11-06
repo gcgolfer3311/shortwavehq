@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AM Soft Rock 5955 kHz 07:49 UTC
+BEGIN:VEVENT
+UID:am-soft-rock-5955-0749@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T074900Z
+DTEND:20261025T110600Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:AM Soft Rock on 5955 kHz (English)
+LOCATION:5955 kHz shortwave
+DESCRIPTION:AM Soft Rock on 5955 kHz\, English\, beamed to Netherlands. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/am-soft-rock/
+URL:https://hqshortwaveradio.com/stations/am-soft-rock/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:AM Soft Rock on 5955 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

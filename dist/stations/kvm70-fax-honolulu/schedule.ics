@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KVM70 Fax Honolulu shortwave (B-26)
+BEGIN:VEVENT
+UID:kvm70-fax-honolulu-9982-0519@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T051900Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KVM70 Fax Honolulu on 9982 kHz (Various)
+LOCATION:9982 kHz shortwave
+DESCRIPTION:KVM70 Fax Honolulu on 9982 kHz\, Various\, beamed to Pacific. S
+ chedule from EIBI B-26 (valid until the A-27 season change). Times can cha
+ nge\; check https://hqshortwaveradio.com/stations/kvm70-fax-honolulu/
+URL:https://hqshortwaveradio.com/stations/kvm70-fax-honolulu/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voice of Turkey 6050 kHz 19:30 UTC
+BEGIN:VEVENT
+UID:voice-of-turkey-6050-1930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Voice of Turkey on 6050 kHz (English)
+LOCATION:6050 kHz shortwave
+DESCRIPTION:Voice of Turkey on 6050 kHz\, English\, beamed to W. Europe. Sc
+ hedule from EIBI B-26 (valid until the A-27 season change). Times can chan
+ ge\; check https://hqshortwaveradio.com/stations/voice-of-turkey/
+URL:https://hqshortwaveradio.com/stations/voice-of-turkey/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Voice of Turkey on 6050 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

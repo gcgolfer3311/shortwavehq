@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Longwire / Random Wire Antenna Length Calculator | ShortwaveHQ</title>
+<meta name="description" content="Find random-wire antenna lengths that avoid half-wave resonance on the shortwave broadcast bands. For 9:1 unun longwires.">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="canonical" href="https://hqshortwaveradio.com/tools/longwire-antenna-calculator/">
+<link rel="alternate" hreflang="en" href="https://hqshortwaveradio.com/tools/longwire-antenna-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://hqshortwaveradio.com/tools/longwire-antenna-calculator/">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Longwire / Random Wire Antenna Length Calculator | ShortwaveHQ">
+<meta property="og:description" content="Find random-wire antenna lengths that avoid half-wave resonance on the shortwave broadcast bands. For 9:1 unun longwires.">
+<meta property="og:url" content="https://hqshortwaveradio.com/tools/longwire-antenna-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShortwaveHQ">
+<meta property="og:image" content="https://hqshortwaveradio.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://hqshortwaveradio.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://hqshortwaveradio.com/tools/"},{"@type":"ListItem","position":3,"name":"Longwire calculator","item":"https://hqshortwaveradio.com/tools/longwire-antenna-calculator/"}]}</script>
+<link rel="alternate" type="application/rss+xml" title="ShortwaveHQ news & schedule changes" href="https://hqshortwaveradio.com/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111418;color:#ece6dc;font-family:"Libre Baskerville",Georgia,serif;font-size:1.02rem;line-height:1.65}
+a{color:#ff8f80}
+.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}
+.bname em{color:#e74c3c;font-style:normal}
+.mlink{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}
+.kick{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#92a2b6;margin-bottom:.4rem}
+h1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}
+h2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}
+p{margin-bottom:.9rem}
+.lede{font-size:1.05rem}
+.cta{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}
+.cta.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#181c22;border:1px solid #3a4252}
+th{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#1e232a;border-bottom:1px solid #3a4252;color:#b4c0d0}
+td{padding:8px 10px;border-bottom:1px solid #2c3340;vertical-align:top}
+td a{text-decoration:none;border-bottom:1px solid #5a3a36}
+.tags a{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;border:1px solid #3a4252;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#b4c0d0;background:#181c22}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}
+.grid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#ece6dc;font-size:.82rem}
+.grid a span{display:block;font-family:"IBM Plex Mono",monospace;font-size:.58rem;color:#92a2b6;margin-top:2px}
+.crumbs{font-family:"IBM Plex Mono",monospace;font-size:.6rem;color:#92a2b6;margin-bottom:1.1rem}
+.crumbs a{color:#b4c0d0;text-decoration:none}
+footer{background:#0a0b0e;color:rgba(255,255,255,.78);padding:1.6rem 1.2rem;font-family:"IBM Plex Mono",monospace;font-size:.62rem;line-height:1.9}
+footer a{color:rgba(255,255,255,.85)}
+html{-webkit-text-size-adjust:100%;color-scheme:dark}
+img,iframe,video{max-width:100%}
+.mlink{display:inline-block;padding:.5rem .3rem}
+.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}
+.msoc svg{width:18px;height:18px}
+p,li,h1,h2{overflow-wrap:break-word}
+@media(max-width:640px){
+table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.mast{padding:.6rem .9rem}
+.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}
+.mlink{font-size:.72rem;padding:.7rem .55rem}
+.wrap{padding:1.2rem .9rem 3rem}
+h1{font-size:1.5rem}
+.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}
+.tags a{padding:10px 14px;margin:0 6px 8px 0}
+.grid{grid-template-columns:1fr 1fr}
+.grid a{padding:.85rem .8rem}
+td,th{padding:9px 10px;white-space:nowrap}
+td:first-child,th:first-child{white-space:normal;min-width:130px}
+.crumbs{line-height:1.9}
+}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+
+/* dark-theme overrides for inline-styled boxes */
+[style*='background:#fff;'],[style$='background:#fff'],[style*='background: #fff;']{background:#181c22!important}
+[style*='background:#fff8e6']{background:#3a2f12!important;border-color:#8a6a1f!important}
+[style*='background:#fdecea']{background:#3a1f1c!important}
+[style*='background:#eaf7ee']{background:#12301f!important}
+[style*='background:#f5f0e8'],[style*='background:#ece7db']{background:#181c22!important}
+[style*='#c8c0b0']{border-color:#3a4252!important}
+[style*='color:#6b5f52']{color:#b4c0d0!important}[style*='color:#9c8e81']{color:#92a2b6!important}
+[style*='color:#c0392b']{color:#ff8f80!important}[style*='color:#2f6b3f']{color:#66d98f!important}
+[style*='color:#0a0b0e']:not([style*='#FF9900']){color:#ece6dc!important}[style*='color:#4a4238'],[style*='color:#5a4f44']{color:#b4c0d0!important}blockquote{background:#3a1f1c!important;color:#ece6dc}pre{background:#181c22;color:#ece6dc}
+@media print{body{background:#fff;color:#000}}
+</style>
+<style>.spec td{white-space:normal!important}.spec td:first-child{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:#b4c0d0;width:34%}.yes{color:#5fd38a;font-weight:600}.no{color:#ff8f80}.nl{color:#92a2b6;font-style:italic}.card{background:#181c22;border:1px solid #3a4252;border-radius:6px;padding:1rem;margin:.8rem 0}.tool label{display:block;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:#b4c0d0;margin:.6rem 0 .25rem}.tool input,.tool select{width:100%;max-width:360px;background:#0f1216;color:#ece6dc;border:1px solid #3a4252;border-radius:4px;padding:10px;font:1rem 'IBM Plex Mono',monospace}.out{font-family:'IBM Plex Mono',monospace;font-size:1rem;background:#0f1216;border:1px solid #3a4252;border-left:4px solid #c0392b;border-radius:4px;padding:.8rem 1rem;margin:.8rem 0;overflow-wrap:anywhere}.out b{color:#fff;font-size:1.15rem}.small{font-size:.8rem;color:#b4c0d0}.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:.8rem 0}.rgrid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:6px;padding:.85rem;text-decoration:none;color:#ece6dc}.rgrid a b{display:block;font-family:Syne,sans-serif;font-size:1rem;color:#fff}.rgrid a span{display:block;font-family:'IBM Plex Mono',monospace;font-size:.62rem;color:#92a2b6;margin-top:3px}.rgrid a em{display:block;font-style:normal;font-size:.8rem;margin-top:.4rem;color:#d8d0c4}.rgrid a .chips span,.chips span{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.62rem;border:1px solid #3a4252;border-radius:12px;padding:2px 8px;margin:4px 4px 0 0;color:#b4c0d0}.btn{display:inline-block;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:600;background:#c0392b;color:#fff;border:0;border-radius:4px;padding:10px 16px;margin:.3rem .4rem .3rem 0;text-decoration:none}.btn.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}.az{columns:2 240px;column-gap:24px}.az p{break-inside:avoid;margin-bottom:.7rem}@media(max-width:600px){.tool input,.tool select{max-width:100%}}</style></head>
+<body>
+<header class="mast"><a class="bname" href="/">Shortwave<em>HQ</em></a><nav><a class="mlink" href="/">Live Search</a> &nbsp; <a class="mlink" href="/tonight/">Tonight</a> &nbsp; <a class="mlink" href="/season-change/">Season Change</a> &nbsp; <a class="mlink" href="/band-scans/">Band Scans</a> &nbsp; <a class="mlink" href="/listen-online/">Listen Online</a> &nbsp; <a class="mlink" href="/articles/">Articles</a> &nbsp; <a class="mlink" href="/stations/">Stations</a> &nbsp; <a class="mlink" href="/frequency/">Frequencies</a> &nbsp; <a class="mlink" href="/bands/">Bands</a> &nbsp; <a class="mlink" href="/radios/">Radios</a> &nbsp; <a class="mlink" href="/tools/">Tools</a> &nbsp; <a class="mlink" href="/my-schedule/">My Schedule</a> &nbsp; <a class="msoc" href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a class="msoc" href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="M9.6 15.6V8.4L15.8 12z"/></svg></a><a class="msoc" href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.07C24 5.4 18.6 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z"/></svg></a></nav></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Longwire calculator</div>
+<div class="kick">Free Shortwave Tool</div>
+<h1>Longwire Antenna Length Calculator</h1>
+<p class="lede">A random wire fed through a 9:1 unun works best when its length is not close to a multiple of a half wavelength on the bands you use; at those lengths the impedance is very high. This calculator checks lengths against the broadcast bands you choose.</p><div class="card tool"><label>Bands to check</label><div id="bl" class="small" style="columns:2 140px"></div><label for="mn">Minimum length</label><input id="mn" type="number" value="25" min="10" max="300"><label for="mx">Maximum length</label><input id="mx" type="number" value="130" min="15" max="400"><label for="u">Units</label><select id="u"><option value="ft">Feet</option><option value="m">Metres</option></select><div class="out" id="o"></div></div><script>(function(){var BANDS=[["120 m",2.3,2.495],["90 m",3.2,3.4],["75 m",3.9,4],["60 m",4.75,5.06],["49 m",5.9,6.2],["41 m",7.2,7.45],["31 m",9.4,9.9],["25 m",11.6,12.1],["22 m",13.57,13.87],["19 m",15.1,15.8],["16 m",17.48,17.9],["15 m",18.9,19.02],["13 m",21.45,21.85],["11 m",25.67,26.1]];var bl=document.getElementById('bl'),mn=document.getElementById('mn'),mx=document.getElementById('mx'),u=document.getElementById('u'),o=document.getElementById('o');var DEF=['49 m','41 m','31 m','25 m','19 m','16 m','13 m'];BANDS.forEach(function(x,i){var l=document.createElement('label');l.style.cssText='display:block;text-transform:none;letter-spacing:0;font-size:.8rem;margin:.2rem 0';var c=document.createElement('input');c.type='checkbox';c.value=i;c.checked=DEF.indexOf(x[0])>=0;c.style.cssText='width:auto;margin-right:6px';c.onchange=run;l.appendChild(c);l.appendChild(document.createTextNode(x[0]));bl.appendChild(l);});function run(){var ft=u.value==='ft',lo=parseFloat(mn.value),hi=parseFloat(mx.value);if(!(lo>0&&hi>lo)){o.innerHTML='Enter a minimum below the maximum.';return;}var sel=[].slice.call(bl.querySelectorAll('input:checked')).map(function(c){return BANDS[c.value];});if(!sel.length){o.innerHTML='Tick at least one band.';return;}var K=ft?468:142.6,bad=[];sel.forEach(function(x){for(var n=1;n<40;n++){var a=n*K/x[2]*0.97,b=n*K/x[1]*1.03;if(a>hi)break;bad.push([a,b,x[0],n]);}});var good=[],run0=null;for(var L=lo;L<=hi+1e-9;L+=0.5){var hit=bad.some(function(z){return L>=z[0]&&L<=z[1];});if(!hit){if(run0===null)run0=L;}else if(run0!==null){good.push([run0,L-0.5]);run0=null;}}if(run0!==null)good.push([run0,hi]);var un=ft?' ft':' m';var h=good.length?'Good lengths (no half-wave resonance on the selected bands):<br>'+good.filter(function(g){return g[1]-g[0]>=1;}).map(function(g){return '<b>'+g[0].toFixed(1)+'\u2013'+g[1].toFixed(1)+un+'</b>';}).join('<br>'):'No clear lengths in this range. Try a wider range or fewer bands.';h+='<br><span class="small">Avoid: '+bad.filter(function(z){return z[1]>=lo&&z[0]<=hi;}).sort(function(a,b){return a[0]-b[0];}).slice(0,12).map(function(z){return z[0].toFixed(1)+'\u2013'+z[1].toFixed(1)+un+' ('+z[2]+(z[3]>1?' \u00d7'+z[3]:'')+')';}).join(', ')+'</span>';o.innerHTML=h;}mn.oninput=run;mx.oninput=run;u.onchange=function(){if(u.value==='m'){mn.value=8;mx.value=40;}else{mn.value=25;mx.value=130;}run();};run();})();</script><h2>Why some lengths are worse</h2><p>A wire that is a whole number of half wavelengths long presents a very high impedance at its end. A 9:1 unun matches it poorly there, so signals on that band drop. The calculator marks each band's half-wave multiples (with a 3% margin) and lists the lengths left over.</p><p>For receiving, these effects are modest; any wire beats a whip. If you can only fit one length, pick from the good ranges for the bands you listen to most, and keep the coax run from the unun to the radio so the noisy indoor section isn't part of the antenna. More in our <a href="/glossary/longwire-antenna/">longwire guide</a> and <a href="/best-antennas-for-apartments/">apartment antenna options</a>.</p><h2>More free tools</h2><div class="tags"><a href="/tools/dipole-calculator/">Dipole Antenna Calculator</a><a href="/tools/frequency-wavelength-converter/">Frequency to Wavelength Converter</a><a href="/tools/utc-time-converter/">UTC Time Converter for Shortwave Schedules</a><a href="/tools/grey-line-map/">Live Grey Line Map</a></div><h2>Frequently asked questions</h2><h3 style="font-family:Syne,sans-serif;font-size:1rem;margin:1rem 0 .3rem">What is a good random wire length for shortwave listening?</h3><p>Lengths that avoid half-wave resonance on the bands you use. For 49–13 m, the calculator shows the clear ranges; 9 m (about 29–30 ft) and similar short lengths are common starting points for portables.</p><h3 style="font-family:Syne,sans-serif;font-size:1rem;margin:1rem 0 .3rem">Do I need an unun for a longwire?</h3><p>Not for a short wire clipped straight to a portable. For longer outdoor wires fed with coax, a 9:1 unun improves matching and keeps indoor noise out.</p><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good random wire length for shortwave listening?","acceptedAnswer":{"@type":"Answer","text":"Lengths that avoid half-wave resonance on the bands you use. For 49–13 m, the calculator shows the clear ranges; 9 m (about 29–30 ft) and similar short lengths are common starting points for portables."}},{"@type":"Question","name":"Do I need an unun for a longwire?","acceptedAnswer":{"@type":"Answer","text":"Not for a short wire clipped straight to a portable. For longer outdoor wires fed with coax, a 9:1 unun improves matching and keeps indoor noise out."}}]}</script>
+</main>
+<footer><div style="max-width:960px;margin:0 auto">© 2026 ShortwaveHQ · <a href="/">hqshortwaveradio.com</a> · Live shortwave schedules, frequencies &amp; band conditions · EIBI B-26 data · Contact: <a href="mailto:Hqshortwaveradio@gmail.com">Hqshortwaveradio@gmail.com</a> · Follow: <a href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.facebook.com/groups/836185586242956" target="_blank" rel="noopener">Join the Listeners Group</a> · <a href="https://www.reddit.com/r/ShortwaveHQ/" target="_blank" rel="noopener">r/ShortwaveHQ</a> · <a href="https://x.com/hqshortwave" target="_blank" rel="noopener">X</a> · <a href="/ja/" lang="ja">日本語</a><br><a href="/radios/">Radio database</a> · <a href="/compare/">Compare radios</a> · <a href="/glossary/">Glossary</a> · <a href="/tools/">Tools</a> · <a href="/my-schedule/">My Schedule</a> · <a href="/print/">Printable schedules</a> · <a href="/next-season/">Next season</a> · <a href="/feed.xml">RSS</a><br>Independent hobbyist project — schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>
+</body>
+</html>

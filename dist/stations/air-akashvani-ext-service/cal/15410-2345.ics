@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AIR Akashvani Ext.Service 15410 kHz 23:45 UTC
+BEGIN:VEVENT
+UID:air-akashvani-ext-service-15410-2345@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T234500Z
+DTEND:20261026T011500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Mandarin)
+LOCATION:15410 kHz shortwave
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to F
+ ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/air-akashvani-
+ ext-service/
+URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VoA Radio Ashna 12140 kHz 16:30 UTC
+BEGIN:VEVENT
+UID:voa-radio-ashna-12140-1630@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T163000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:VoA Radio Ashna on 12140 kHz (Pashto)
+LOCATION:12140 kHz shortwave
+DESCRIPTION:VoA Radio Ashna on 12140 kHz\, Pashto\, beamed to Afghanistan. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/voa-radio-ashna/
+URL:https://hqshortwaveradio.com/stations/voa-radio-ashna/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:VoA Radio Ashna on 12140 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

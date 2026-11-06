@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fana Broadcasting Corp. 6110 kHz 03:10 UTC
+BEGIN:VEVENT
+UID:fana-broadcasting-corp-6110-0310@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T031000Z
+DTEND:20261025T210100Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Fana Broadcasting Corp. on 6110 kHz (Amharic)
+LOCATION:6110 kHz shortwave
+DESCRIPTION:Fana Broadcasting Corp. on 6110 kHz\, Amharic\, beamed to E. Af
+ rica. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/fana-broadcasting
+ -corp/
+URL:https://hqshortwaveradio.com/stations/fana-broadcasting-corp/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Fana Broadcasting Corp. on 6110 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

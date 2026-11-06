@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:IRTS Radio News Service 7123 kHz 11:00 UTC
+BEGIN:VEVENT
+UID:irts-radio-news-service-7123-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T113000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:IRTS Radio News Service on 7123 kHz (English)
+LOCATION:7123 kHz shortwave
+DESCRIPTION:IRTS Radio News Service on 7123 kHz\, English\, beamed to IRL. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/irts-radio-news-service
+ /
+URL:https://hqshortwaveradio.com/stations/irts-radio-news-service/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:IRTS Radio News Service on 7123 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

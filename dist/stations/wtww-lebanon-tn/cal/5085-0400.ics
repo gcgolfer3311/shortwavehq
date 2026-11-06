@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WTWW Lebanon\, TN 5085 kHz 04:00 UTC
+BEGIN:VEVENT
+UID:wtww-lebanon-tn-5085-0400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T040000Z
+DTEND:20261025T043000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WTWW Lebanon\, TN on 5085 kHz (English)
+LOCATION:5085 kHz shortwave
+DESCRIPTION:WTWW Lebanon\, TN on 5085 kHz\, English\, beamed to North Ameri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/wtww-lebanon-tn/
+URL:https://hqshortwaveradio.com/stations/wtww-lebanon-tn/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:WTWW Lebanon\, TN on 5085 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

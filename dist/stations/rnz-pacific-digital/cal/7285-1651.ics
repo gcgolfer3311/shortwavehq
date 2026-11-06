@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:RNZ Pacific DIGITAL 7285 kHz 16:51 UTC
+BEGIN:VEVENT
+UID:rnz-pacific-digital-7285-1651@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T165100Z
+DTEND:20261025T175800Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:RNZ Pacific DIGITAL on 7285 kHz (English)
+LOCATION:7285 kHz shortwave
+DESCRIPTION:RNZ Pacific DIGITAL on 7285 kHz\, English\, beamed to Pacific. 
+ Schedule from EIBI B-26 (valid until the A-27 season change). Times can ch
+ ange\; check https://hqshortwaveradio.com/stations/rnz-pacific-digital/
+URL:https://hqshortwaveradio.com/stations/rnz-pacific-digital/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:RNZ Pacific DIGITAL on 7285 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

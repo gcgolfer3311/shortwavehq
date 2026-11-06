@@ -1,0 +1,889 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Exterior España shortwave (B-26)
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Mandarin)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Mandarin\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Russian)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Russian\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-9690-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 9690 kHz (Spanish)
+LOCATION:9690 kHz shortwave
+DESCRIPTION:Radio Exterior España on 9690 kHz\, Spanish\, beamed to North 
+ America. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-11965-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T163000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 11965 kHz (Russian)
+LOCATION:11965 kHz shortwave
+DESCRIPTION:Radio Exterior España on 11965 kHz\, Russian\, beamed to E. Eu
+ rope. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/radio-exterior-es
+ pa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Mandarin)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Mandarin\, beamed to Midd
+ le East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Russian)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Russian\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-12030-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 12030 kHz (Spanish)
+LOCATION:12030 kHz shortwave
+DESCRIPTION:Radio Exterior España on 12030 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Mandarin)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Mandarin\, beamed to Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa
+ -a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Russian)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Russian\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15390-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15390 kHz (Spanish)
+LOCATION:15390 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15390 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Mandarin)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Mandarin\, beamed to Nort
+ h America. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-exteri
+ or-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Russian)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Russian\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15500-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15500 kHz (Spanish)
+LOCATION:15500 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15500 kHz\, Spanish\, beamed to North
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T180000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Mandarin)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Mandarin\, beamed to Midd
+ le East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
+ es can change\; check https://hqshortwaveradio.com/stations/radio-exterior
+ -espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Russian)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Russian\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-15520-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 15520 kHz (Spanish)
+LOCATION:15520 kHz shortwave
+DESCRIPTION:Radio Exterior España on 15520 kHz\, Spanish\, beamed to Middl
+ e East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-exterior-
+ espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-1800@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T203000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2030@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T203000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Mandarin)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Mandarin\, beamed to Sout
+ h America. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-exteri
+ or-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Mandarin)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Mandarin\, beamed to Sout
+ h America. Schedule from EIBI B-26 (valid until the A-27 season change). T
+ imes can change\; check https://hqshortwaveradio.com/stations/radio-exteri
+ or-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2230@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T223000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Russian)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Russian\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17715-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17715 kHz (Spanish)
+LOCATION:17715 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17715 kHz\, Spanish\, beamed to South
+  America. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
+ mes can change\; check https://hqshortwaveradio.com/stations/radio-exterio
+ r-espa-a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T190000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-1900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T190000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Mandarin)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Mandarin\, beamed to Afri
+ ca. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa
+ -a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261025T233000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Russian)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Russian\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+BEGIN:VEVENT
+UID:radio-exterior-espa-a-17755-2330@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T233000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Exterior España on 17755 kHz (Spanish)
+LOCATION:17755 kHz shortwave
+DESCRIPTION:Radio Exterior España on 17755 kHz\, Spanish\, beamed to Afric
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/radio-exterior-espa-
+ a/
+URL:https://hqshortwaveradio.com/stations/radio-exterior-espa-a/
+END:VEVENT
+END:VCALENDAR

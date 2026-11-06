@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:NHK Radio Japan 9765 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:nhk-radio-japan-9765-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T162000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:NHK Radio Japan on 9765 kHz (Urdu)
+LOCATION:9765 kHz shortwave
+DESCRIPTION:NHK Radio Japan on 9765 kHz\, Urdu\, beamed to PAK. Schedule fr
+ om EIBI B-26 (valid until the A-27 season change). Times can change\; chec
+ k https://hqshortwaveradio.com/stations/nhk-radio-japan/
+URL:https://hqshortwaveradio.com/stations/nhk-radio-japan/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:NHK Radio Japan on 9765 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
