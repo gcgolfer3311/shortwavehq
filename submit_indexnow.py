@@ -28,7 +28,11 @@ KEY = "c11bb943c5604e4386ab2c0a61d580b5"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 SITEMAP_PATH = "dist/sitemap.xml"
 ENDPOINT = "https://api.indexnow.org/indexnow"
-MAX_URLS = 100
+MAX_URLS = int(os.environ.get("INDEXNOW_MAX", "100"))
+# Git ref holding the previous build. Nightly: HEAD (dist/ not yet committed).
+# Push workflow: the commit before the push, so manually pushed pages are sent too.
+BASE_REF = os.environ.get("INDEXNOW_BASE", "").strip() or "HEAD"
+DRY_RUN = os.environ.get("INDEXNOW_DRY") == "1"
 ALWAYS = ["/"]
 
 
@@ -55,7 +59,7 @@ def signature(html):
 def previous_html(rel_path):
     """Content of the file at HEAD (the previous build), or None if absent."""
     try:
-        out = subprocess.run(["git", "show", f"HEAD:{rel_path}"], capture_output=True, timeout=20)
+        out = subprocess.run(["git", "show", f"{BASE_REF}:{rel_path}"], capture_output=True, timeout=20)
     except Exception:
         return None
     if out.returncode != 0:
@@ -65,7 +69,7 @@ def previous_html(rel_path):
 
 def git_available():
     try:
-        r = subprocess.run(["git", "rev-parse", "--verify", "HEAD"], capture_output=True, timeout=20)
+        r = subprocess.run(["git", "rev-parse", "--verify", BASE_REF + "^{commit}"], capture_output=True, timeout=20)
         return r.returncode == 0
     except Exception:
         return False
@@ -107,13 +111,19 @@ def main():
         for p in ALWAYS + new_urls + changed_urls:
             if p in paths and p not in picked:
                 picked.append(p)
-        print(f"IndexNow: {len(new_urls)} new, {len(changed_urls)} changed of {len(paths)} URLs")
+        print(f"IndexNow: comparing against {BASE_REF}: {len(new_urls)} new, {len(changed_urls)} changed of {len(paths)} URLs")
         if len(picked) > MAX_URLS:
             print(f"IndexNow: capping {len(picked)} URLs at {MAX_URLS} for this run")
         chosen = [prefix + p for p in picked[:MAX_URLS]]
 
     if not chosen:
         print("IndexNow: nothing to submit")
+        return
+
+    if DRY_RUN:
+        print(f"IndexNow DRY RUN: would submit {len(chosen)} URLs")
+        for u in chosen:
+            print("  " + u)
         return
 
     payload = {"host": HOST, "key": KEY, "keyLocation": KEY_LOCATION, "urlList": chosen}
