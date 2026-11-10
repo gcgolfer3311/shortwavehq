@@ -5,20 +5,6 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:AIR Akashvani Ext.Service shortwave (B-26)
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-9795-0900@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T090000Z
-DTEND:20261025T103000Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 9795 kHz (Nepali)
-LOCATION:9795 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9795 kHz\, Nepali\, beamed to NPL.
-  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
- hange\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-serv
- ice/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-9870-0100@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T010000Z
@@ -26,10 +12,10 @@ DTEND:20261025T013000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (Sindhi)
 LOCATION:9870 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Sindhi\, beamed to PAK.
-  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
- hange\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-serv
- ice/
+DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Sindhi\, beamed to Paki
+ stan. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext
+ -service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -38,11 +24,12 @@ DTSTAMP:20261025T000000Z
 DTSTART:20261025T030000Z
 DTEND:20261025T043000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (BC)
+SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (Baluchi)
 LOCATION:9870 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, BC\, beamed to PAK. Sch
- edule from EIBI B-26 (valid until the A-27 season change). Times can chang
- e\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Baluchi\, beamed to Pak
+ istan. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
+ t-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -65,11 +52,12 @@ DTSTAMP:20261025T000000Z
 DTSTART:20261025T123000Z
 DTEND:20261025T133000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (BC)
+SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (Baluchi)
 LOCATION:9870 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, BC\, beamed to PAK. Sch
- edule from EIBI B-26 (valid until the A-27 season change). Times can chang
- e\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Baluchi\, beamed to Pak
+ istan. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
+ t-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -87,20 +75,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Dari\, beamed to Afghan
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-9870-1400@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T140000Z
-DTEND:20261025T141500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (English)
-LOCATION:9870 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, English\, beamed to Afg
- hanistan. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
- mes can change\; check https://hqshortwaveradio.com/stations/air-akashvani
- -ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-11710-0100@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T010000Z
@@ -109,23 +83,9 @@ RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11710 kHz (Tibetan)
 LOCATION:11710 kHz shortwave
 DESCRIPTION:AIR Akashvani Ext.Service on 11710 kHz\, Tibetan\, beamed to Ti
- b. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
-  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
- rvice/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-11710-0200@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T020000Z
-DTEND:20261025T021500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11710 kHz (English)
-LOCATION:11710 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11710 kHz\, English\, beamed to Ti
- b. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
-  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
- rvice/
+ bet. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-
+ service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -143,20 +103,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 11750 kHz\, Pashto\, beamed to Afg
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-11750-1340@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T134000Z
-DTEND:20261025T135500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11750 kHz (English)
-LOCATION:11750 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11750 kHz\, English\, beamed to Af
- ghanistan. Schedule from EIBI B-26 (valid until the A-27 season change). T
- imes can change\; check https://hqshortwaveradio.com/stations/air-akashvan
- i-ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-11865-0900@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T090000Z
@@ -164,10 +110,10 @@ DTEND:20261025T103000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11865 kHz (Nepali)
 LOCATION:11865 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, Nepali\, beamed to NPL
- . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
- change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-ser
- vice/
+DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, Nepali\, beamed to Nep
+ al. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
+ ervice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -179,23 +125,9 @@ RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11865 kHz (Tibetan)
 LOCATION:11865 kHz shortwave
 DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, Tibetan\, beamed to Ti
- b. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
-  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
- rvice/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-11865-1155@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T115500Z
-DTEND:20261025T121000Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11865 kHz (English)
-LOCATION:11865 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, English\, beamed to Ti
- b. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
-  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
- rvice/
+ bet. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-
+ service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -213,20 +145,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, Farsi\, beamed to Iran
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-11900-1635@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T163500Z
-DTEND:20261025T165000Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (English)
-LOCATION:11900 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, English\, beamed to Ir
- an. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
- n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
- ervice/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-11900-1730@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T173000Z
@@ -241,20 +159,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, Arabic\, beamed to Mid
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-11900-1820@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T182000Z
-DTEND:20261025T183500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (English)
-LOCATION:11900 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, English\, beamed to Mi
- ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
- imes can change\; check https://hqshortwaveradio.com/stations/air-akashvan
- i-ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-11900-1930@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T193000Z
@@ -262,24 +166,10 @@ DTEND:20261025T203000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (French)
 LOCATION:11900 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, French\, beamed to Eur
- ope. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
- an change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-
- service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-11900-2000@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T200000Z
-DTEND:20261025T201500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (English)
-LOCATION:11900 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, English\, beamed to Eu
- rope. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
- can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext
- -service/
+DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, French\, beamed to W. 
+ Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/air-akashvani-e
+ xt-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -305,23 +195,9 @@ RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15260 kHz (Indonesian)
 LOCATION:15260 kHz shortwave
 DESCRIPTION:AIR Akashvani Ext.Service on 15260 kHz\, Indonesian\, beamed to
-  SE Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Ti
- mes can change\; check https://hqshortwaveradio.com/stations/air-akashvani
- -ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-15260-0155@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T015500Z
-DTEND:20261025T021000Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15260 kHz (English)
-LOCATION:15260 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15260 kHz\, English\, beamed to SE
-  Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times
-  can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
- t-service/
+  Indonesia. Schedule from EIBI B-26 (valid until the A-27 season change). 
+ Times can change\; check https://hqshortwaveradio.com/stations/air-akashva
+ ni-ext-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -353,34 +229,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 15280 kHz\, Arabic\, beamed to Mid
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-15280-0610@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T061000Z
-DTEND:20261025T062500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15280 kHz (English)
-LOCATION:15280 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15280 kHz\, English\, beamed to Mi
- ddle East. Schedule from EIBI B-26 (valid until the A-27 season change). T
- imes can change\; check https://hqshortwaveradio.com/stations/air-akashvan
- i-ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-15410-0045@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T004500Z
-DTEND:20261025T010000Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (English)
-LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to Fa
- r East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
- s can change\; check https://hqshortwaveradio.com/stations/air-akashvani-e
- xt-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-15410-0145@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T014500Z
@@ -388,10 +236,10 @@ DTEND:20261025T023000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Nepali)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to NPL
- . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
- change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-ser
- vice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to Nep
+ al. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
+ ervice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -402,10 +250,10 @@ DTEND:20261025T024500Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Hindi)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Hindi\, beamed to NPL.
-  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
- hange\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-serv
- ice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Hindi\, beamed to Nepa
+ l. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
+ rvice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -416,10 +264,10 @@ DTEND:20261025T030000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (English)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to NP
- L. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
-  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
- rvice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to Ne
+ pal. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
+ an change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-
+ service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -430,10 +278,10 @@ DTEND:20261025T031500Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Nepali)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to NPL
- . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
- change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-ser
- vice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to Nep
+ al. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
+ ervice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -444,22 +292,8 @@ DTEND:20261025T041500Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Burmese)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Burmese\, beamed to SE
-  Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times
-  can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
- t-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-15410-0330@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T033000Z
-DTEND:20261025T034500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (English)
-LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to SE
-  Asia. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Burmese\, beamed to My
+ anmar. Schedule from EIBI B-26 (valid until the A-27 season change). Times
   can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
  t-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
@@ -472,10 +306,10 @@ DTEND:20261025T103000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Nepali)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to NPL
- . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
- change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-ser
- vice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Nepali\, beamed to Nep
+ al. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
+ ervice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -486,24 +320,10 @@ DTEND:20261025T120000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Mandarin)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to F
- ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
- es can change\; check https://hqshortwaveradio.com/stations/air-akashvani-
- ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
-UID:air-akashvani-ext-service-15410-1130@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T113000Z
-DTEND:20261025T114500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (English)
-LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to Fa
- r East. Schedule from EIBI B-26 (valid until the A-27 season change). Time
- s can change\; check https://hqshortwaveradio.com/stations/air-akashvani-e
- xt-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext
+ -service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
@@ -521,20 +341,6 @@ DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Swahili\, beamed to E.
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 BEGIN:VEVENT
-UID:air-akashvani-ext-service-15410-1240@hqshortwaveradio.com
-DTSTAMP:20261025T000000Z
-DTSTART:20261025T124000Z
-DTEND:20261025T125500Z
-RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (English)
-LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, English\, beamed to E.
-  Africa. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
- es can change\; check https://hqshortwaveradio.com/stations/air-akashvani-
- ext-service/
-URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
-END:VEVENT
-BEGIN:VEVENT
 UID:air-akashvani-ext-service-15410-2345@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T234500Z
@@ -542,10 +348,10 @@ DTEND:20261026T011500Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Mandarin)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to F
- ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
- es can change\; check https://hqshortwaveradio.com/stations/air-akashvani-
- ext-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext
+ -service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 END:VEVENT
 END:VCALENDAR

@@ -12,10 +12,10 @@ DTEND:20261025T103000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11865 kHz (Nepali)
 LOCATION:11865 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, Nepali\, beamed to NPL
- . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
- change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-ser
- vice/
+DESCRIPTION:AIR Akashvani Ext.Service on 11865 kHz\, Nepali\, beamed to Nep
+ al. Schedule from EIBI B-26 (valid until the A-27 season change). Times ca
+ n change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-s
+ ervice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 BEGIN:VALARM
 ACTION:DISPLAY

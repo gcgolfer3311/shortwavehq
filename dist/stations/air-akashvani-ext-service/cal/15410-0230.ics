@@ -12,10 +12,10 @@ DTEND:20261025T024500Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Hindi)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Hindi\, beamed to NPL.
-  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
- hange\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-serv
- ice/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Hindi\, beamed to Nepa
+ l. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-se
+ rvice/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 BEGIN:VALARM
 ACTION:DISPLAY

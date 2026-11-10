@@ -131,6 +131,30 @@ var SEASON = (function () {
   o.valid = "Valid " + fmtDay(o.start).replace(/, \d{4}$/, "") + " \u2013 " + fmtDay(o.end);
   return o;
 })();
+
+// ── 1c. Schedule corrections on top of EIBI (data/schedule_overrides.json) ──
+// Each override replaces all EIBI rows for one station, only while its season
+// matches the current season; after the season change EIBI takes over again.
+var OVR_NOTES = {}, SCH_OVERRIDDEN = false;
+(function () {
+  var op = path.join(__dirname, "data", "schedule_overrides.json"), od;
+  try { od = JSON.parse(fs.readFileSync(op, "utf8")); } catch (e) { return; }
+  (od.overrides || []).forEach(function (o) {
+    if (String(o.season).toLowerCase() !== SEASON.code) { console.log("Override for " + o.station + " skipped (season " + o.season + ", current " + SEASON.code + ")"); return; }
+    var before = SCH.length;
+    SCH = SCH.filter(function (r) { return r.stn !== o.station; });
+    var removed = before - SCH.length;
+    (o.rows || []).forEach(function (row) {
+      var t = row[0].split("-"), st = +t[0].slice(0, 2) * 60 + +t[0].slice(2), en = +t[1].slice(0, 2) * 60 + +t[1].slice(2);
+      var site = (o.sites || {})[row[3]] || [row[3], 0];
+      SCH.push({ freq: (row[2] / 1000).toFixed(3), stn: o.station, lang: row[1], s: st, e: en, tgt: row[4], type: "International", reg: "Worldwide", kw: site[1], site: site[0] });
+    });
+    SCH_OVERRIDDEN = true;
+    OVR_NOTES[o.station] = "<div class=\"card\" style=\"background:#181c22;border:1px solid #3a4252;border-left:4px solid #2ecc71;border-radius:6px;padding:.8rem 1rem;margin:.8rem 0;font-size:.88rem\"><strong>Schedule source:</strong> " + esc(o.source) + ", <a href=\"" + esc(o.sourceUrl) + "\" target=\"_blank\" rel=\"noopener\">" + esc(o.sourceUrl.replace(/^https?:\/\//, "")) + "</a> (" + esc(o.sourceDate) + "). This replaces the EIBI listing for " + SEASON.label + "." + (o.note ? " " + esc(o.note) : "") + "</div>";
+    console.log("Override applied: " + o.station + " (" + removed + " EIBI rows replaced by " + (o.rows || []).length + " from " + o.source + ")");
+  });
+})();
+
 // Search-friendly titles for stations people search by a different name than
 // the EIBI listing (e.g. "ashna radio" for "VoA Radio Ashna"). {F} = frequencies.
 var STATION_SEO = {
@@ -358,6 +382,11 @@ for (var rf = 0; rf < rootFiles.length; rf++) {
   else fs.copyFileSync(src, path.join(OUT, f));
 }
 console.log("Copied site root files into dist/");
+if (SCH_OVERRIDDEN) {
+  // keep the live pages (SPA, My Schedule, print) in step with the static pages
+  var dsj = schedData && !Array.isArray(schedData) ? Object.assign({}, schedData, { sch: SCH, count: SCH.length }) : { sch: SCH };
+  fs.writeFileSync(path.join(OUT, "data", "schedule.json"), JSON.stringify(dsj));
+}
 
 // ── 5b. Stamp dist/index.html with a content fingerprint ──────────
 // Hash is computed from the SOURCE index.html (before this stamp is
@@ -831,6 +860,7 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   var body = hubIntro + "<p class=\"lede\">All active shortwave transmissions for <strong>" + esc(name) + "</strong> in the 2026 EIBI " + SEASON.label + " schedule season" + (sites ? ", transmitting from " + esc(sites) : "") + ". Times are UTC. Frequencies link to full frequency pages showing everything else on that channel.</p>"
     + "<p class=\"lede\">" + liveStatus + " <a href=\"/?q=" + encodeURIComponent(name) + "\">Check live status \u2192</a></p>"
     + FXS.toolbar
+    + (OVR_NOTES[name] || "")
     + "<p><a class=\"cta o\" href=\"https://websdr.ewi.utwente.nl:8901/?tune=" + (kHz(rows[0].freq)/1000).toFixed(3) + "am\" target=\"_blank\" rel=\"nofollow noopener\">Listen via Twente WebSDR</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/?f=" + (kHz(rows[0].freq)/1000).toFixed(3) + "AM\" target=\"_blank\" rel=\"nofollow noopener\">or KiwiSDR</a></p>"
     + glanceHtml
     + hubHtml

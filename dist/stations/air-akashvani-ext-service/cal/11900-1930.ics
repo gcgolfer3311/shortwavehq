@@ -12,10 +12,10 @@ DTEND:20261025T203000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 11900 kHz (French)
 LOCATION:11900 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, French\, beamed to Eur
- ope. Schedule from EIBI B-26 (valid until the A-27 season change). Times c
- an change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-
- service/
+DESCRIPTION:AIR Akashvani Ext.Service on 11900 kHz\, French\, beamed to W. 
+ Europe. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/air-akashvani-e
+ xt-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 BEGIN:VALARM
 ACTION:DISPLAY

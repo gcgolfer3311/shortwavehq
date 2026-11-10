@@ -1,0 +1,200 @@
+{
+ "_note": "Corrections applied on top of EIBI at build time. Each entry only applies while its season matches the current season, then EIBI takes over again.",
+ "overrides": [
+  {
+   "station": "AIR Akashvani Ext.Service",
+   "season": "b26",
+   "source": "Jose Jacob, VU2JOS (DX India)",
+   "sourceUrl": "https://qsl.net/vu2jos/es/time.htm",
+   "sourceDate": "2026-10-25",
+   "sites": {
+    "B": [
+     "Bengaluru, India",
+     250
+    ],
+    "D": [
+     "New Delhi, India",
+     100
+    ]
+   },
+   "note": "Akashvani also broadcasts its External Services on mediumwave: 594 kHz (Chinsurah, 1000 kW) in Bangla, English and Hindi to Bangladesh, and 1071 kHz (Rajkot, 1000 kW) in Urdu, Sindhi, Saraiki and Punjabi to Pakistan. A 15-minute English programme, Spotlight, airs within several language services. Reception reports: spectrum-manager@prasarbharati.gov.in.",
+   "rows": [
+    [
+     "0100-0130",
+     "Sindhi",
+     9870,
+     "B",
+     "Pakistan"
+    ],
+    [
+     "0100-0230",
+     "Tibetan",
+     11710,
+     "D",
+     "Tibet"
+    ],
+    [
+     "0130-0230",
+     "Indonesian",
+     15260,
+     "B",
+     "Indonesia"
+    ],
+    [
+     "0145-0230",
+     "Nepali",
+     15410,
+     "B",
+     "Nepal"
+    ],
+    [
+     "0230-0245",
+     "Hindi",
+     15410,
+     "B",
+     "Nepal"
+    ],
+    [
+     "0245-0300",
+     "English",
+     15410,
+     "B",
+     "Nepal"
+    ],
+    [
+     "0300-0315",
+     "Nepali",
+     15410,
+     "B",
+     "Nepal"
+    ],
+    [
+     "0300-0430",
+     "Baluchi",
+     9870,
+     "D",
+     "Pakistan"
+    ],
+    [
+     "0315-0415",
+     "Burmese",
+     15410,
+     "B",
+     "Myanmar"
+    ],
+    [
+     "0400-0530",
+     "Farsi",
+     15280,
+     "B",
+     "Iran"
+    ],
+    [
+     "0430-0600",
+     "Dari",
+     9870,
+     "D",
+     "Afghanistan"
+    ],
+    [
+     "0430-0600",
+     "Pashto",
+     15185,
+     "B",
+     "Afghanistan"
+    ],
+    [
+     "0530-0630",
+     "Arabic",
+     15280,
+     "B",
+     "Middle East"
+    ],
+    [
+     "0900-1030",
+     "Nepali",
+     11865,
+     "D",
+     "Nepal"
+    ],
+    [
+     "0900-1030",
+     "Nepali",
+     15410,
+     "B",
+     "Nepal"
+    ],
+    [
+     "1030-1200",
+     "Mandarin",
+     15410,
+     "B",
+     "China"
+    ],
+    [
+     "1045-1215",
+     "Tibetan",
+     11865,
+     "D",
+     "Tibet"
+    ],
+    [
+     "1215-1315",
+     "Swahili",
+     15410,
+     "B",
+     "E. Africa"
+    ],
+    [
+     "1230-1330",
+     "Baluchi",
+     9870,
+     "D",
+     "Pakistan"
+    ],
+    [
+     "1230-1400",
+     "Pashto",
+     11750,
+     "B",
+     "Afghanistan"
+    ],
+    [
+     "1330-1500",
+     "Dari",
+     9870,
+     "D",
+     "Afghanistan"
+    ],
+    [
+     "1600-1730",
+     "Farsi",
+     11900,
+     "B",
+     "Iran"
+    ],
+    [
+     "1730-1930",
+     "Arabic",
+     11900,
+     "B",
+     "Middle East"
+    ],
+    [
+     "1930-2030",
+     "French",
+     11900,
+     "B",
+     "W. Europe"
+    ],
+    [
+     "2345-0115",
+     "Mandarin",
+     15410,
+     "B",
+     "China"
+    ]
+   ]
+  }
+ ]
+}

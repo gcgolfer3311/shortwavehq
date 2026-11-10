@@ -10,11 +10,12 @@ DTSTAMP:20261025T000000Z
 DTSTART:20261025T123000Z
 DTEND:20261025T133000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
-SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (BC)
+SUMMARY:AIR Akashvani Ext.Service on 9870 kHz (Baluchi)
 LOCATION:9870 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, BC\, beamed to PAK. Sch
- edule from EIBI B-26 (valid until the A-27 season change). Times can chang
- e\; check https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 9870 kHz\, Baluchi\, beamed to Pak
+ istan. Schedule from EIBI B-26 (valid until the A-27 season change). Times
+  can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ex
+ t-service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 BEGIN:VALARM
 ACTION:DISPLAY

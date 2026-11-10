@@ -12,10 +12,10 @@ DTEND:20261025T120000Z
 RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:AIR Akashvani Ext.Service on 15410 kHz (Mandarin)
 LOCATION:15410 kHz shortwave
-DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to F
- ar East. Schedule from EIBI B-26 (valid until the A-27 season change). Tim
- es can change\; check https://hqshortwaveradio.com/stations/air-akashvani-
- ext-service/
+DESCRIPTION:AIR Akashvani Ext.Service on 15410 kHz\, Mandarin\, beamed to C
+ hina. Schedule from EIBI B-26 (valid until the A-27 season change). Times 
+ can change\; check https://hqshortwaveradio.com/stations/air-akashvani-ext
+ -service/
 URL:https://hqshortwaveradio.com/stations/air-akashvani-ext-service/
 BEGIN:VALARM
 ACTION:DISPLAY
