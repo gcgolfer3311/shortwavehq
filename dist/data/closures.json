@@ -1,0 +1,17 @@
+{
+ "_note": "Shortwave closures tracker (/shortwave-closures/). Add new entries at the top. Every entry needs a source URL. status: closed | silent | reduced.",
+ "entries": [
+  {"date": "2026-10-31", "station": "WEWN (EWTN Global Catholic Network)", "country": "United States", "status": "closed",
+   "what": "Ended shortwave broadcasting after 34 years. EWTN cited falling shortwave listenership, high running costs and an ageing transmitter plant in Alabama. Programming continues online, by satellite and on AM/FM affiliates.",
+   "sources": [["EWTN News", "https://www.ewtnnews.com/world/us/ewtn-to-end-shortwave-radio-operations-after-34-years"], ["Radio World", "https://www.radioworld.com/news-and-business/headlines/ewtn-to-shutter-wewn-shortwave-service"]],
+   "link": "/articles/this-week-in-shortwave-2026-11-10/"},
+  {"date": "2026-06-22", "station": "CHU (National Research Council of Canada)", "country": "Canada", "status": "closed",
+   "what": "Canada's official time-signal station went silent on 3330, 7850 and 14670 kHz. The NRC said the infrastructure had reached the end of its useful life and replacing it would be costly; time is still available by telephone, NTP and web clock.",
+   "sources": [["Radio World", "https://www.radioworld.com/news-and-business/headlines/canadas-chu-shortwave-time-station-to-be-silenced"], ["Amateur Radio Newsline", "https://www.arnewsline.org/news-text/2026/5/28/canada-takes-time-keeping-shortwave-station-off-the-air"]],
+   "link": "/glossary/time-signal-station/"},
+  {"date": "2026-01-01", "dateLabel": "January 2026", "station": "WBCQ 500 kW Superstation (World's Last Chance Church)", "country": "United States", "status": "silent",
+   "what": "The 500 kW transmitter in Monticello, Maine fell silent on 9330 kHz when World's Last Chance Church ended its contract in January. In November the facility was offered for sale or lease; WBCQ's other transmitters remain on the air.",
+   "sources": [["Bangor Daily News", "https://www.bangordailynews.com/?p=3744879"]],
+   "link": "/articles/wbcq-500-kw-superstation-for-lease-9330-khz/"}
+ ]
+}

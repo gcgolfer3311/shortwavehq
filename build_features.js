@@ -520,6 +520,58 @@ module.exports = function (C) {
     page("/next-season/", { title: SEASON.next.label + " Shortwave Season: Start Date & Preview | ShortwaveHQ", desc: "The " + SEASON.next.label + " shortwave season starts " + nsStart.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }) + ". " + (preview ? "Preview of planned broadcasts from HFCC coordination data." : "What changes, how to prepare, and a preview when HFCC data is published."), canonical: "/next-season/", kicker: "Season " + SEASON.next.label, h1: "Next Shortwave Season: <span style=\"color:#c0392b\">" + SEASON.next.label + "</span>", bodyHtml: nsBody, breadcrumbs: [["Home", "/"], ["Next Season", "/next-season/"]] });
     counts.preview = preview ? "on (" + hfSeason + ")" : "waiting (HFCC file is " + (hfSeason || "missing") + ", need " + SEASON.next.code + ")";
 
+
+    // ═══ ABOUT (E-E-A-T) ═══
+    var ORG_ID = SITE + "/#org", ME_ID = SITE + "/about/#michael";
+    var SOCIALS = ["https://www.youtube.com/@Hqshortwaveradio", "https://www.tiktok.com/@hqshortwaveradio", "https://www.facebook.com/Hqshortwaveradio", "https://www.reddit.com/r/ShortwaveHQ/", "https://x.com/hqshortwave"];
+    var stCount = D.stationNames.filter(function (n) { return !D.isPlaceholder(n); }).length;
+    var aboutBody = "<p class=\"lede\">ShortwaveHQ is a free shortwave radio resource run by <strong>Michael Smith, KM7FMJ</strong>, a licensed amateur radio operator in Arizona, USA. No sign-up, no paywall: just current schedules, tools and honest reviews for listeners.</p>"
+      + "<h2>Where the schedule comes from</h2><p>Station and frequency data comes from <a href=\"/glossary/eibi/\">EIBI</a>, the free worldwide shortwave database compiled by Eike Bierwirth. ShortwaveHQ downloads it and rebuilds every station, frequency and band page <strong>every day</strong> (" + stCount + " stations in the current " + SEASON.label + " season). When EIBI is out of date and a listener or broadcaster sends a better schedule, that correction is shown on the station page with credit and a link to its source.</p>"
+      + "<p>Band conditions come from NOAA's Space Weather Prediction Center. The <a href=\"/next-season/\">next-season preview</a> uses <a href=\"/glossary/hfcc/\">HFCC</a> coordination data. Changes between daily updates are logged on the <a href=\"/season-change/\">schedule change tracker</a>.</p>"
+      + "<h2>How radios are reviewed</h2><p><a href=\"/reviews/\">Reviews</a> are written from hands-on use of the radio, usually with band scans and video on the <a href=\"https://www.youtube.com/@Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">ShortwaveHQ YouTube channel</a>. Some radios were provided by their manufacturers at no cost. Specs in the <a href=\"/radios/\">radio database</a> come from manufacturer and retailer spec sheets, linked on every page; where a source doesn't state a spec, the page says “Not listed” instead of guessing.</p>"
+      + "<h2>How ShortwaveHQ is funded</h2><p>Some links to radios are Amazon affiliate links: ShortwaveHQ earns a small commission from qualifying purchases at no extra cost to you. That income helps pay for hosting.</p>"
+      + "<h2>Corrections</h2><p>Hear a station on a different frequency, or spot a mistake? Email <a href=\"mailto:hqshortwaveradio@gmail.com?subject=Correction\">hqshortwaveradio@gmail.com</a>. Corrections are checked and usually appear in the next daily update.</p>"
+      + "<h2>Join the community</h2><div class=\"tags\"><a href=\"https://www.facebook.com/groups/836185586242956\" target=\"_blank\" rel=\"noopener\">HQ Shortwave Radio Listeners (Facebook)</a><a href=\"https://www.youtube.com/@Hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">YouTube</a><a href=\"https://www.tiktok.com/@hqshortwaveradio\" target=\"_blank\" rel=\"noopener\">TikTok</a><a href=\"https://www.reddit.com/r/ShortwaveHQ/\" target=\"_blank\" rel=\"noopener\">r/ShortwaveHQ</a><a href=\"/feed.xml\">RSS feed</a></div>"
+      + ld({ "@context": "https://schema.org", "@type": "AboutPage", "url": SITE + "/about/", "name": "About ShortwaveHQ", "mainEntity": { "@id": ORG_ID },
+          "about": [{ "@type": "Organization", "@id": ORG_ID, "name": "ShortwaveHQ", "url": SITE + "/", "logo": SITE + "/icons/icon-512.png", "email": "hqshortwaveradio@gmail.com", "sameAs": SOCIALS, "founder": { "@id": ME_ID } },
+            { "@type": "Person", "@id": ME_ID, "name": "Michael Smith", "alternateName": "KM7FMJ", "url": SITE + "/about/", "jobTitle": "Editor, ShortwaveHQ", "worksFor": { "@id": ORG_ID }, "knowsAbout": ["Shortwave radio", "Amateur radio", "Radio receivers", "HF propagation"] }] });
+    page("/about/", { title: "About ShortwaveHQ: Who Runs It & Where the Data Comes From", desc: "ShortwaveHQ is run by Michael Smith, KM7FMJ: how the daily schedule is built from EIBI, how radios are reviewed, how corrections work and how it's funded.", canonical: "/about/", kicker: "About", h1: "About <span style=\"color:#c0392b\">ShortwaveHQ</span>", bodyHtml: aboutBody, breadcrumbs: [["Home", "/"], ["About", "/about/"]] });
+
+    // ═══ CLOSURES TRACKER ═══
+    var CL = { entries: [] };
+    try { CL = JSON.parse(fs.readFileSync(path.join(C.ROOT, "data", "closures.json"), "utf8")); } catch (e) {}
+    var CE = (CL.entries || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    var stLabel = { closed: "Closed on shortwave", silent: "Silent", reduced: "Reduced service" };
+    function dLabel(e) { return e.dateLabel || new Date(e.date + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }); }
+    var clCards = CE.map(function (e) {
+      return "<div class=\"card\"><p style=\"margin:0 0 .3rem;font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:#ff8f80;text-transform:uppercase;letter-spacing:.06em\">" + esc(dLabel(e)) + " · " + esc(stLabel[e.status] || e.status) + " · " + esc(e.country) + "</p>"
+        + "<h3 style=\"font-family:Syne,sans-serif;font-size:1.05rem;margin:.1rem 0 .4rem\">" + esc(e.station) + "</h3><p style=\"margin:.2rem 0\">" + esc(e.what) + "</p>"
+        + "<p class=\"small\" style=\"margin:.4rem 0 0\">Sources: " + e.sources.map(function (s) { return "<a href=\"" + esc(s[1]) + "\" target=\"_blank\" rel=\"noopener\">" + esc(s[0]) + "</a>"; }).join(", ") + (e.link ? " · <a href=\"" + e.link + "\">More on ShortwaveHQ</a>" : "") + "</p></div>";
+    }).join("");
+    var rem = [];
+    try {
+      var scj = JSON.parse(fs.readFileSync(path.join(C.ROOT, "data", "schedule-changes.json"), "utf8"));
+      (scj.entries || []).forEach(function (en) { (en.changes || []).forEach(function (x) { if (x.type === "removed") rem.push({ d: String(en.date).slice(0, 10), stn: x.stn || String(x.detail || "").replace(/ no longer appears in the schedule$/, "") }); }); });
+    } catch (e) {}
+    rem = rem.filter(function (r) { return r.stn && !/DIGITAL$/.test(r.stn); });
+    var remByDate = {}; rem.forEach(function (r) { (remByDate[r.d] = remByDate[r.d] || []).push(r.stn); });
+    var remHtml = Object.keys(remByDate).sort().reverse().slice(0, 6).map(function (d) { return "<p><strong>" + esc(d) + ":</strong> " + remByDate[d].map(esc).join(", ") + "</p>"; }).join("");
+    var clYear = new Date().getUTCFullYear();
+    var closedNames = CE.filter(function (e) { return e.date.slice(0, 4) === String(clYear) && e.status === "closed"; }).map(function (e) { return e.station.replace(/ \(.*\)$/, ""); });
+    var clFaq = [
+      ["Which shortwave stations closed in " + clYear + "?", closedNames.length ? "Confirmed closures this year include " + closedNames.join(", ") + ". See the tracker for dates, reasons and sources." : "No confirmed closures are recorded for this year yet."],
+      ["Is shortwave radio dying?", "Some big broadcasters have cut shortwave to save money, but the current " + SEASON.label + " schedule still lists " + stCount + " stations, and private and religious broadcasters, time stations and hobby stations keep starting up. Shortwave is shrinking at the top and staying busy in the niche."],
+      ["How do you know a station has really closed?", "A station is listed as closed only when the broadcaster or a reliable news source says so, with the source linked. Stations that simply drop out of the EIBI database are listed separately, because that can also mean a temporary gap or a missing update."]
+    ];
+    var clBody = "<p class=\"lede\">Which shortwave stations have closed, gone silent or cut back, with dates, reasons and sources. Confirmed closures first; stations that only dropped out of the schedule database are listed separately.</p>"
+      + "<h2>Confirmed closures and silent stations</h2>" + (clCards || "<p>None recorded yet.</p>")
+      + "<h2>No longer listed in EIBI</h2><p>These stations dropped out of the daily EIBI schedule that ShortwaveHQ tracks. That doesn't always mean they're off the air: it can be a seasonal break or a missing update. If you're still hearing one, <a href=\"mailto:hqshortwaveradio@gmail.com?subject=Still%20on%20the%20air\">tell us</a>.</p>" + (remHtml || "<p>No removals logged recently.</p>")
+      + "<p>Full daily log: <a href=\"/season-change/\">schedule change tracker</a>. Weekly news: <a href=\"/articles/\">This Week in Shortwave</a>.</p>"
+      + faqHtml(clFaq) + faqLd(clFaq)
+      + ld({ "@context": "https://schema.org", "@type": "ItemList", "name": "Shortwave station closures", "itemListElement": CE.map(function (e, i) { return { "@type": "ListItem", "position": i + 1, "name": e.station + " — " + (stLabel[e.status] || e.status) + " (" + dLabel(e) + ")" }; }) });
+    page("/shortwave-closures/", { title: "Shortwave Stations That Closed in " + clYear + ": Tracker | ShortwaveHQ", desc: "Which shortwave stations closed or went silent in " + clYear + ": WEWN, CHU and more, with dates, reasons and sources, plus stations that dropped out of EIBI.", canonical: "/shortwave-closures/", kicker: "Tracker · Updated Weekly", h1: "Shortwave Closures <span style=\"color:#c0392b\">Tracker</span>", bodyHtml: clBody, breadcrumbs: [["Home", "/"], ["Shortwave Closures", "/shortwave-closures/"]] });
+    counts.closures = CE.length;
+
     // ═══ RSS FEED ═══
     var items = [];
     (D.ARTICLES || []).forEach(function (a) { items.push({ t: a.title, l: SITE + "/articles/" + a.slug + "/", d: new Date((a.updated || a.date) + "T12:00:00Z"), desc: a.summary, g: SITE + "/articles/" + a.slug + "/" }); });
