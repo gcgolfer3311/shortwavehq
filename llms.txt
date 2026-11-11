@@ -12,6 +12,7 @@ Run by Michael Smith (KM7FMJ), based in Arizona, USA. All content is based on pe
 - [Band Guide](https://hqshortwaveradio.com/bands/): shortwave band breakdown (49m, 41m, 31m, 25m, 19m, etc.)
 - [Season Change Countdown](https://hqshortwaveradio.com/season-change/): tracks the EIBI A/B seasonal schedule switch
 - [Band Scans](https://hqshortwaveradio.com/band-scans/): real recorded listening sessions with timestamped tracklists
+- [Shortwave Schedule](https://hqshortwaveradio.com/shortwave-schedule/): the current season's broadcast schedule hour by hour (UTC), English broadcasts with station, frequency and target
 - [Radio Database](https://hqshortwaveradio.com/radios/): specs for shortwave receivers and SDRs (coverage, SSB, synchronous AM, power, size), each sourced; unlisted specs are marked "Not listed", never guessed
 - [Radio Comparisons](https://hqshortwaveradio.com/compare/): side-by-side spec comparisons of popular radios
 - [Shortwave Glossary](https://hqshortwaveradio.com/glossary/): plain-English definitions of shortwave terms (SINPO, SSB, MUF, grey line, etc.)

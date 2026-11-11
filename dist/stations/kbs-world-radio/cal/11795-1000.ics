@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KBS World Radio 11795 kHz 10:00 UTC
+BEGIN:VEVENT
+UID:kbs-world-radio-11795-1000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T100000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:KBS World Radio on 11795 kHz (English)
+LOCATION:11795 kHz shortwave
+DESCRIPTION:KBS World Radio on 11795 kHz\, English\, beamed to South Americ
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/kbs-world-radio/
+URL:https://hqshortwaveradio.com/stations/kbs-world-radio/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:KBS World Radio on 11795 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

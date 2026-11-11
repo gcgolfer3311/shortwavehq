@@ -15,6 +15,10 @@
 /frequency/7520-khz/  /frequency/  301
 /frequency/8764-khz/  /frequency/  301
 
+# KBS World Radio briefly moved to -2 when EIBI listed a "#KBS" duplicate (merged Nov 2026)
+/stations/kbs-world-radio-2/     /stations/kbs-world-radio/     301
+/ja/stations/kbs-world-radio-2/  /ja/stations/kbs-world-radio/  301
+
 # Catch-all for any other dead station/frequency pages
 /stations/*   /stations/  301
 /frequency/*  /frequency/ 301
