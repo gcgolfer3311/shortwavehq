@@ -361,7 +361,8 @@ function shell(opts) {
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
   }
-  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n" + hreflangHtml(opts) + "\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"ShortwaveHQ news & schedule changes\" href=\"" + SITE + "/feed.xml\">\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"" + SITE + "/#org\",\"name\":\"ShortwaveHQ\",\"url\":\"" + SITE + "/\",\"logo\":\"" + SITE + "/icons/icon-512.png\",\"email\":\"hqshortwaveradio@gmail.com\",\"founder\":{\"@type\":\"Person\",\"@id\":\"" + SITE + "/about/#michael\",\"name\":\"Michael Smith\",\"alternateName\":\"KM7FMJ\",\"url\":\"" + SITE + "/about/\"},\"sameAs\":[\"https://www.youtube.com/@Hqshortwaveradio\",\"https://www.tiktok.com/@hqshortwaveradio\",\"https://www.facebook.com/Hqshortwaveradio\",\"https://www.reddit.com/r/ShortwaveHQ/\",\"https://x.com/hqshortwave\"]}</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#111418;color:#ece6dc;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#ff8f80}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#92a2b6;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#181c22;border:1px solid #3a4252}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#1e232a;border-bottom:1px solid #3a4252;color:#b4c0d0}\ntd{padding:8px 10px;border-bottom:1px solid #2c3340;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #5a3a36}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #3a4252;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#b4c0d0;background:#181c22}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#ece6dc;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#92a2b6;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#92a2b6;margin-bottom:1.1rem}\n.crumbs a{color:#b4c0d0;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.78);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%;color-scheme:dark}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\n.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}\n.msoc svg{width:18px;height:18px}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n\n/* dark-theme overrides for inline-styled boxes */\n[style*='background:#fff;'],[style$='background:#fff'],[style*='background: #fff;']{background:#181c22!important}\n[style*='background:#fff8e6']{background:#3a2f12!important;border-color:#8a6a1f!important}\n[style*='background:#fdecea']{background:#3a1f1c!important}\n[style*='background:#eaf7ee']{background:#12301f!important}\n[style*='background:#f5f0e8'],[style*='background:#ece7db']{background:#181c22!important}\n[style*='#c8c0b0']{border-color:#3a4252!important}\n[style*='color:#6b5f52']{color:#b4c0d0!important}[style*='color:#9c8e81']{color:#92a2b6!important}\n[style*='color:#c0392b']{color:#ff8f80!important}[style*='color:#2f6b3f']{color:#66d98f!important}\n[style*='color:#0a0b0e']:not([style*='#FF9900']){color:#ece6dc!important}[style*='color:#4a4238'],[style*='color:#5a4f44']{color:#b4c0d0!important}blockquote{background:#3a1f1c!important;color:#ece6dc}pre{background:#181c22;color:#ece6dc}\n@media print{body{background:#fff;color:#000}}\n</style>\n" + (opts.lang === "zh" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.head || "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a> &nbsp; <a class=\"mlink\" href=\"/radios/\">Radios</a> &nbsp; <a class=\"mlink\" href=\"/tools/\">Tools</a> &nbsp; <a class=\"mlink\" href=\"/my-schedule/\">My Schedule</a> &nbsp; " + SOC_NAV + "</nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>" + SOC_FOOT + " \u00b7 <a href=\"/ja/\" lang=\"ja\">\u65e5\u672c\u8a9e</a>" + "<br><a href=\"/shortwave-schedule/\">Shortwave schedule</a> \u00b7 <a href=\"/shortwave-closures/\">Closures tracker</a> \u00b7 <a href=\"/about/\">About</a> \u00b7 <a href=\"/radios/\">Radio database</a> \u00b7 <a href=\"/compare/\">Compare radios</a> \u00b7 <a href=\"/glossary/\">Glossary</a> \u00b7 <a href=\"/tools/\">Tools</a> \u00b7 <a href=\"/my-schedule/\">My Schedule</a> \u00b7 <a href=\"/print/\">Printable schedules</a> \u00b7 <a href=\"/next-season/\">Next season</a> \u00b7 <a href=\"/feed.xml\">RSS</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
+  var RTL = opts.lang === "fa" || opts.lang === "ar";
+  return "<!DOCTYPE html>\n<html lang=\"" + (opts.lang || "en") + "\"" + (RTL ? " dir=\"rtl\"" : "") + ">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>" + esc(opts.title) + "</title>\n<meta name=\"description\" content=\"" + esc(opts.desc) + "\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/icons/icon-192.png\">\n<link rel=\"canonical\" href=\"" + SITE + opts.canonical + "\">\n" + hreflangHtml(opts) + "\n<meta name=\"robots\" content=\"" + (opts.noindex ? "noindex,follow" : "index,follow") + "\">\n<meta property=\"og:title\" content=\"" + esc(opts.title) + "\">\n<meta property=\"og:description\" content=\"" + esc(opts.desc) + "\">\n<meta property=\"og:url\" content=\"" + SITE + opts.canonical + "\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:site_name\" content=\"ShortwaveHQ\">\n<meta property=\"og:image\" content=\"" + SITE + "/og-image.png\">\n<script type=\"application/ld+json\">" + JSON.stringify(bc) + "</script>\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"ShortwaveHQ news & schedule changes\" href=\"" + SITE + "/feed.xml\">\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"" + SITE + "/#org\",\"name\":\"ShortwaveHQ\",\"url\":\"" + SITE + "/\",\"logo\":\"" + SITE + "/icons/icon-512.png\",\"email\":\"hqshortwaveradio@gmail.com\",\"founder\":{\"@type\":\"Person\",\"@id\":\"" + SITE + "/about/#michael\",\"name\":\"Michael Smith\",\"alternateName\":\"KM7FMJ\",\"url\":\"" + SITE + "/about/\"},\"sameAs\":[\"https://www.youtube.com/@Hqshortwaveradio\",\"https://www.tiktok.com/@hqshortwaveradio\",\"https://www.facebook.com/Hqshortwaveradio\",\"https://www.reddit.com/r/ShortwaveHQ/\",\"https://x.com/hqshortwave\"]}</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap\" rel=\"stylesheet\">\n<style>\n*{box-sizing:border-box;margin:0;padding:0}\nbody{background:#111418;color:#ece6dc;font-family:\"Libre Baskerville\",Georgia,serif;font-size:1.02rem;line-height:1.65}\na{color:#ff8f80}\n.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}\n.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}\n.bname em{color:#e74c3c;font-style:normal}\n.mlink{font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}\n.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}\n.kick{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#92a2b6;margin-bottom:.4rem}\nh1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}\nh2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}\np{margin-bottom:.9rem}\n.lede{font-size:1.05rem}\n.cta{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}\n.cta.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}\ntable{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#181c22;border:1px solid #3a4252}\nth{font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#1e232a;border-bottom:1px solid #3a4252;color:#b4c0d0}\ntd{padding:8px 10px;border-bottom:1px solid #2c3340;vertical-align:top}\ntd a{text-decoration:none;border-bottom:1px solid #5a3a36}\n.tags a{display:inline-block;font-family:\"IBM Plex Mono\",monospace;font-size:.66rem;border:1px solid #3a4252;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#b4c0d0;background:#181c22}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}\n.grid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#ece6dc;font-size:.82rem}\n.grid a span{display:block;font-family:\"IBM Plex Mono\",monospace;font-size:.58rem;color:#92a2b6;margin-top:2px}\n.crumbs{font-family:\"IBM Plex Mono\",monospace;font-size:.6rem;color:#92a2b6;margin-bottom:1.1rem}\n.crumbs a{color:#b4c0d0;text-decoration:none}\nfooter{background:#0a0b0e;color:rgba(255,255,255,.78);padding:1.6rem 1.2rem;font-family:\"IBM Plex Mono\",monospace;font-size:.62rem;line-height:1.9}\nfooter a{color:rgba(255,255,255,.85)}\nhtml{-webkit-text-size-adjust:100%;color-scheme:dark}\nimg,iframe,video{max-width:100%}\n.mlink{display:inline-block;padding:.5rem .3rem}\n.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}\n.msoc svg{width:18px;height:18px}\np,li,h1,h2{overflow-wrap:break-word}\n@media(max-width:640px){\ntable{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.mast{padding:.6rem .9rem}\n.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}\n.mlink{font-size:.72rem;padding:.7rem .55rem}\n.wrap{padding:1.2rem .9rem 3rem}\nh1{font-size:1.5rem}\n.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}\n.tags a{padding:10px 14px;margin:0 6px 8px 0}\n.grid{grid-template-columns:1fr 1fr}\n.grid a{padding:.85rem .8rem}\ntd,th{padding:9px 10px;white-space:nowrap}\ntd:first-child,th:first-child{white-space:normal;min-width:130px}\n.crumbs{line-height:1.9}\n}\n@media(max-width:380px){.grid{grid-template-columns:1fr}}\n\n/* dark-theme overrides for inline-styled boxes */\n[style*='background:#fff;'],[style$='background:#fff'],[style*='background: #fff;']{background:#181c22!important}\n[style*='background:#fff8e6']{background:#3a2f12!important;border-color:#8a6a1f!important}\n[style*='background:#fdecea']{background:#3a1f1c!important}\n[style*='background:#eaf7ee']{background:#12301f!important}\n[style*='background:#f5f0e8'],[style*='background:#ece7db']{background:#181c22!important}\n[style*='#c8c0b0']{border-color:#3a4252!important}\n[style*='color:#6b5f52']{color:#b4c0d0!important}[style*='color:#9c8e81']{color:#92a2b6!important}\n[style*='color:#c0392b']{color:#ff8f80!important}[style*='color:#2f6b3f']{color:#66d98f!important}\n[style*='color:#0a0b0e']:not([style*='#FF9900']){color:#ece6dc!important}[style*='color:#4a4238'],[style*='color:#5a4f44']{color:#b4c0d0!important}blockquote{background:#3a1f1c!important;color:#ece6dc}pre{background:#181c22;color:#ece6dc}\n@media print{body{background:#fff;color:#000}}\n</style>\n" + (opts.lang === "zh" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC','Noto Sans CJK SC',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (opts.lang === "ja" ? "<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>\n" : "") + (RTL ? "<link href=\"https://fonts.googleapis.com/css2?family=" + (opts.lang === "fa" ? "Vazirmatn:wght@400;700;800" : "Noto+Naskh+Arabic:wght@400;700") + "&display=swap\" rel=\"stylesheet\">\n<style>body,h1,h2,h3,th,td,.lede,.tags a,.grid a,li,p{font-family:" + (opts.lang === "fa" ? "Vazirmatn,Tahoma" : "'Noto Naskh Arabic',Tahoma") + ",'Segoe UI',sans-serif}h1,h2{letter-spacing:0}th{text-align:right}td,th{white-space:normal!important}.tags a{margin:0 0 8px 6px}.cta{margin:.3rem 0 .3rem .5rem}ul,ol{padding-right:1.2rem;padding-left:0}.mast,footer{direction:ltr;text-align:left}.mast nav{direction:ltr}</style>\n" : "") + (opts.head || "") + "</head>\n<body>\n<header class=\"mast\"><a class=\"bname\" href=\"/\">Shortwave<em>HQ</em></a><nav><a class=\"mlink\" href=\"/\">Live Search</a> &nbsp; <a class=\"mlink\" href=\"/tonight/\">Tonight</a> &nbsp; <a class=\"mlink\" href=\"/season-change/\">Season Change</a> &nbsp; " + (SCANS_OK ? "<a class=\"mlink\" href=\"/band-scans/\">Band Scans</a> &nbsp; " : "") + "<a class=\"mlink\" href=\"/listen-online/\">Listen Online</a> &nbsp; <a class=\"mlink\" href=\"/articles/\">Articles</a> &nbsp; <a class=\"mlink\" href=\"/stations/\">Stations</a> &nbsp; <a class=\"mlink\" href=\"/frequency/\">Frequencies</a> &nbsp; <a class=\"mlink\" href=\"/bands/\">Bands</a> &nbsp; <a class=\"mlink\" href=\"/radios/\">Radios</a> &nbsp; <a class=\"mlink\" href=\"/tools/\">Tools</a> &nbsp; <a class=\"mlink\" href=\"/my-schedule/\">My Schedule</a> &nbsp; " + SOC_NAV + "</nav></header>\n<main class=\"wrap\">\n<div class=\"crumbs\">" + opts.breadcrumbs.map(function (c, ix) { return ix === opts.breadcrumbs.length - 1 ? esc(c[0]) : "<a href=\"" + c[1] + "\">" + esc(c[0]) + "</a>"; }).join(" \u203a ") + "</div>\n<div class=\"kick\">" + esc(opts.kicker) + "</div>\n<h1>" + opts.h1 + "</h1>\n" + opts.bodyHtml + "\n</main>\n<footer><div style=\"max-width:960px;margin:0 auto\">\u00a9 2026 ShortwaveHQ \u00b7 <a href=\"/\">hqshortwaveradio.com</a> \u00b7 Live shortwave schedules, frequencies &amp; band conditions \u00b7 EIBI " + SEASON.label + " data \u00b7 Contact: <a href=\"mailto:Hqshortwaveradio@gmail.com\">Hqshortwaveradio@gmail.com</a>" + SOC_FOOT + " \u00b7 <a href=\"/ja/\" lang=\"ja\">\u65e5\u672c\u8a9e</a>" + " \u00b7 <a href=\"/es/\" lang=\"es\">Espa\u00f1ol</a> \u00b7 <a href=\"/fa/\" lang=\"fa\" dir=\"rtl\">\u0641\u0627\u0631\u0633\u06cc</a> \u00b7 <a href=\"/ar/\" lang=\"ar\" dir=\"rtl\">\u0627\u0644\u0639\u0631\u0628\u064a\u0629</a>" + "<br><a href=\"/shortwave-schedule/\">Shortwave schedule</a> \u00b7 <a href=\"/shortwave-closures/\">Closures tracker</a> \u00b7 <a href=\"/about/\">About</a> \u00b7 <a href=\"/radios/\">Radio database</a> \u00b7 <a href=\"/compare/\">Compare radios</a> \u00b7 <a href=\"/glossary/\">Glossary</a> \u00b7 <a href=\"/tools/\">Tools</a> \u00b7 <a href=\"/my-schedule/\">My Schedule</a> \u00b7 <a href=\"/print/\">Printable schedules</a> \u00b7 <a href=\"/next-season/\">Next season</a> \u00b7 <a href=\"/feed.xml\">RSS</a><br>Independent hobbyist project \u2014 schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>\n</body>\n</html>";
 }
 
 // Page signatures for accurate sitemap <lastmod>: title, description, h1 and
@@ -2489,10 +2490,11 @@ var ZH_BUILT = false, ES_BUILT = false;
     if (rows.length < 6) return false;
     function tm(m) { m = ((m % 1440) + 1440) % 1440; return pad(Math.floor(m / 60)) + ":" + pad(m % 60); }
     function is24(r) { return r.s === 0 && r.e >= 1440; }
-    function utcWin(r) { return is24(r) ? C.t24 : tm(r.s) + "–" + tm(r.e); }
+    function LT(x) { return C.rtl ? "<span dir='ltr'>" + x + "</span>" : x; }
+    function utcWin(r) { return is24(r) ? C.t24 : LT(tm(r.s) + "–" + tm(r.e)); }
     function locWin(r) {
       if (is24(r)) return C.t24;
-      return tm(r.s + C.off) + "–" + tm(r.e + C.off) + ((r.s + C.off) >= 1440 ? C.nextDay : "");
+      return LT(tm(r.s + C.off) + "–" + tm(r.e + C.off)) + ((r.s + C.off) >= 1440 ? C.nextDay : "");
     }
     function nm(n) { return C.names[n] ? C.names[n] + (C.nameKeepEn ? "（" + n + "）" : "") : n; }
     function nmPlain(n) { return C.names[n] || n; }
@@ -2538,7 +2540,7 @@ var ZH_BUILT = false, ES_BUILT = false;
       aord.slice(0, 15).forEach(function (n) {
         var fr = uniq(ag[n].map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
         var en = uniq(ag[n].map(function (r) { return is24(r) ? C.t24 : tm(r.e); })).sort();
-        body += "<tr><td>" + link(n) + "</td><td>" + fr.slice(0, 6).map(function (k) { return freqLinkHtml(k); }).join(", ") + (fr.length > 6 ? " " + C.moreN(fr.length - 6) : "") + "</td><td>" + en.slice(0, 3).join(", ") + (en.length > 3 ? " " + C.moreN(en.length - 3) : "") + "</td></tr>";
+        body += "<tr><td>" + link(n) + "</td><td>" + (C.rtl ? "<span dir='ltr'>" : "") + fr.slice(0, 6).map(function (k) { return freqLinkHtml(k); }).join(", ") + (C.rtl ? "</span>" : "") + (fr.length > 6 ? " " + C.moreN(fr.length - 6) : "") + "</td><td>" + en.slice(0, 3).join(", ") + (en.length > 3 ? " " + C.moreN(en.length - 3) : "") + "</td></tr>";
       });
       body += "</table>";
     } else {
@@ -2551,7 +2553,7 @@ var ZH_BUILT = false, ES_BUILT = false;
       var g = groups[n];
       var fl = Object.keys(g.f).sort(function (a, b) { return g.f[b] - g.f[a] || a - b; });
       var shown = fl.slice(0, 8).sort(function (a, b) { return a - b; }).map(function (k) { return freqLinkHtml(k); });
-      var fcell = shown.join(", ") + (fl.length > 8 ? " " + C.moreN(fl.length - 8) : "");
+      var fcell = LT(shown.join(", ")) + (fl.length > 8 ? " " + C.moreN(fl.length - 8) : "");
       var wl = Object.keys(g.w).sort(function (a, b) { return g.w[b] - g.w[a] || (a < b ? -1 : 1); });
       var wShow = wl.slice(0, 3).map(function (k) { return g.wr[k]; }).sort(function (a, b) { return a.s - b.s; });
       var wMore = wl.length > 3 ? " " + C.moreN(wl.length - 3) : "";
@@ -2706,6 +2708,215 @@ var ZH_BUILT = false, ES_BUILT = false;
     crumbs: [["Inicio", "/"], ["Onda corta en español", "/es/"]]
   };
   ES_BUILT = localePage(esCfg);
+
+  // ── Persian (Farsi + Dari) and Arabic: hub pages, hour-by-hour timetables, Persian internet-shutdown guide ──
+  var FA_NAMES = {
+    "BBC": "بی‌بی‌سی", "Radio Farda": "رادیو فردا", "VoA Radio Ashna": "رادیو آشنا (صدای آمریکا)", "Voice of America": "صدای آمریکا",
+    "IRIB Voice of I.Radio Iran": "صدای جمهوری اسلامی ایران", "Iran International TV": "ایران اینترنشنال", "China Radio International": "رادیو بین‌المللی چین",
+    "AIR Akashvani Ext.Service": "آکاشوانی (رادیو سراسری هند)", "Voice of Turkey": "صدای ترکیه", "IBRA Radio": "رادیو ایبرا"
+  };
+  var FA_TGT = { "Iran": "ایران", "Middle East": "خاورمیانه", "Afghanistan": "افغانستان", "Central Asia": "آسیای میانه" };
+  var FA_M = ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
+  function faName(n) { return FA_NAMES[n] || n; }
+  var faCfg = {
+    lang: "fa", dir: "fa", path: "/fa/", keys: ["Farsi", "Dari"], exclude: /jammer/i, names: FA_NAMES, nameKeepEn: false, tgt: FA_TGT, rtl: true,
+    pref: ["BBC", "Radio Farda", "Iran International TV", "VoA Radio Ashna", "Voice of America", "IRIB Voice of I.Radio Iran"],
+    off: 210, t24: "۲۴ ساعته", nextDay: " (روز بعد)",
+    nowFmt: function (d, h, m) { var t = (h * 60 + m + 210) % 1440; return d.getUTCDate() + " " + FA_M[d.getUTCMonth()] + " " + d.getUTCFullYear() + "، ساعت <span dir='ltr'>" + pad(h) + ":" + pad(m) + " UTC</span> (به وقت تهران <span dir='ltr'>" + pad(Math.floor(t / 60)) + ":" + pad(t % 60) + "</span>)"; },
+    lede: function (nS, nF) { return "در جدول پخش فصل " + SEASON.label + "، <strong>" + nS + " ایستگاه</strong> روی <strong>" + nF + " فرکانس</strong> برنامه‌های فارسی و دری در موج کوتاه پخش می‌کنند. این صفحه فرکانس‌ها، ساعت‌های پخش (به وقت UTC و تهران) و ایستگاه‌هایی را که همین حالا روی آنتن هستند نشان می‌دهد. داده‌ها از جدول عمومی EIBI گرفته شده و هر روز به‌روز می‌شوند. رادیو موج کوتاه به اینترنت نیاز ندارد و هنگام قطع اینترنت هم کار می‌کند."; },
+    hOnAir: "برنامه‌های فارسی که همین حالا پخش می‌شوند",
+    onAirIntro: function (now, n, nst) { return "در " + now + "، طبق جدول " + nst + " ایستگاه (" + n + " فرکانس) در حال پخش برنامه به زبان فارسی یا دری هستند. این صفحه روزانه به‌روز می‌شود؛ برای وضعیت لحظه‌ای از <a href='/'>جست‌وجوی زنده</a> استفاده کنید."; },
+    onAirNone: function (now) { return "در " + now + "، طبق جدول هیچ برنامهٔ فارسی در حال پخش نیست. زمان پخش بعدی را در جدول زیر ببینید."; },
+    thOnAir: ["ایستگاه", "فرکانس (کیلوهرتز)", "پایان پخش (UTC)"],
+    hMain: "فرکانس‌های موج کوتاه فارسی و دری",
+    mainIntro: "فرکانس‌ها و ساعت‌های پخش هر ایستگاه، به وقت هماهنگ جهانی (UTC) و به وقت تهران (UTC+3:30). وقت کابل UTC+4:30 است. جدول ساعت‌به‌ساعت را در <a href='/fa/timetable/'>جدول پخش فارسی</a> ببینید.",
+    thMain: ["ایستگاه", "فرکانس‌ها (کیلوهرتز)", "ساعت (UTC)", "به وقت تهران", "منطقهٔ هدف"],
+    moreN: function (n) { return "و " + n + " مورد دیگر"; },
+    moreStations: function (n) { return n + " ایستگاه دیگر در فهرست پایین آمده است."; },
+    hTags: "پرکاربردترین فرکانس‌ها", hGrid: "ایستگاه‌های دارای برنامهٔ فارسی و دری", countLabel: function (n) { return n + " نوبت پخش"; },
+    hHow: "چطور موج کوتاه فارسی گوش کنیم",
+    howHtml: "<p>هر رادیویی که باند موج کوتاه (SW) دارد برای شروع کافی است. بهترین باند به ساعت روز بستگی دارد: در روز معمولاً باندهای ۱۵ تا ۲۱ مگاهرتز (۱۹، ۱۶ و ۱۳ متر) بهتر شنیده می‌شوند، نزدیک غروب ۹ تا ۱۲ مگاهرتز، و شب‌ها ۵٫۹ تا ۷٫۶ مگاهرتز (باندهای ۴۹ و ۴۱ متر). کیفیت دریافت به فعالیت خورشید، محل شما و آنتن بستگی دارد، پس جدول فقط راهنماست.</p>"
+      + "<p>آنتن رادیو را کامل باز کنید و کنار پنجره بنشینید. چند متر سیم که به آنتن وصل شود دریافت را بسیار بهتر می‌کند. اگر فرکانسی پارازیت داشت، فرکانس دیگر همان ایستگاه را امتحان کنید. راهنمای کامل: <a href='/fa/internet-shutdown/'>گوش دادن به موج کوتاه هنگام قطع اینترنت</a>.</p>",
+    extra: null,
+    faq: function (c) {
+      return [
+        ["کدام فرکانس‌های موج کوتاه برنامهٔ فارسی پخش می‌کنند؟", "در جدول فصل " + SEASON.label + "، " + c.nS + " ایستگاه برنامه‌های فارسی و دری پخش می‌کنند. پرکاربردترین فرکانس‌ها " + c.freqs.slice(0, 5).join("، ") + " کیلوهرتز هستند. بهترین فرکانس به ساعت روز و فصل بستگی دارد."],
+        ["کدام ایستگاه‌ها به زبان فارسی در موج کوتاه پخش می‌کنند؟", "بیشترین ساعت پخش فارسی و دری را " + c.stns.slice(0, 6).map(faName).join("، ") + " دارند."],
+        ["آیا رادیو موج کوتاه بدون اینترنت کار می‌کند؟", "بله. امواج موج کوتاه از لایهٔ یونسفر بازتاب می‌شوند و از هزاران کیلومتر دورتر به رادیوی شما می‌رسند. به اینترنت، سیم‌کارت یا ماهواره نیازی نیست؛ فقط یک رادیوی دارای باند موج کوتاه و باتری لازم است."],
+        ["ساعت UTC را چطور به وقت تهران تبدیل کنم؟", "به ساعت UTC سه ساعت و نیم اضافه کنید؛ مثلاً 16:00 UTC برابر با 19:30 به وقت تهران است. برای وقت کابل چهار ساعت و نیم اضافه کنید."]
+      ];
+    },
+    cta: "گوش دادن آنلاین (Listen Online)", hRel: "صفحه‌های مرتبط",
+    related: "<a href='/fa/timetable/'>جدول پخش ساعت‌به‌ساعت</a><a href='/fa/internet-shutdown/'>موج کوتاه هنگام قطع اینترنت</a><a href='/print/?lang=Farsi' rel='nofollow'>چاپ جدول فرکانس‌ها</a><a href='/languages/farsi/' lang='en'>English: Shortwave in Farsi</a><a href='/languages/dari/' lang='en'>English: Shortwave in Dari</a><a href='/radios/' lang='en'>Radio database (English)</a>",
+    title: function () { return "رادیو موج کوتاه فارسی: فرکانس‌ها و ساعت پخش (" + yr + ") | ShortwaveHQ"; },
+    desc: function (nS, nF) { return "فرکانس‌های موج کوتاه فارسی و دری: " + nS + " ایستگاه و " + nF + " فرکانس با ساعت پخش به وقت تهران، از جمله بی‌بی‌سی و رادیو فردا. بدون نیاز به اینترنت. به‌روزرسانی روزانه."; },
+    kicker: "فارسی · EIBI " + SEASON.label,
+    h1: "رادیو موج کوتاه <span style=\"color:#c0392b\">فارسی</span>",
+    crumbs: [["خانه", "/"], ["موج کوتاه فارسی", "/fa/"]]
+  };
+  var FA_BUILT = localePage(faCfg);
+
+  var AR_NAMES = {
+    "Radio Romania International": "إذاعة رومانيا الدولية", "IRIB Voice of I.Radio Iran": "إذاعة صوت الجمهورية الإسلامية في إيران", "Ifrikya FM": "إفريقيا إف إم",
+    "China Radio International": "إذاعة الصين الدولية", "Radio Vaticana": "إذاعة الفاتيكان", "Voice of Korea": "صوت كوريا", "Voice of Indonesia": "صوت إندونيسيا",
+    "Voice of Turkey": "صوت تركيا", "BBC": "بي بي سي", "MWV Radio Feda": "راديو فدى", "IBRA Radio Sama": "راديو سما (إبرا)",
+    "AIR Akashvani Ext.Service": "آكاشفاني (إذاعة عموم الهند)", "KBS World Radio": "إذاعة كي بي إس العالمية"
+  };
+  var AR_TGT = { "Middle East": "الشرق الأوسط", "N. Africa": "شمال أفريقيا", "E. Africa": "شرق أفريقيا", "W. Africa": "غرب أفريقيا", "CAf": "وسط أفريقيا", "Indonesia": "إندونيسيا", "South America": "أمريكا الجنوبية" };
+  var AR_M = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+  function arName(n) { return AR_NAMES[n] || n; }
+  var arCfg = {
+    lang: "ar", dir: "ar", path: "/ar/", keys: ["Arabic"], exclude: /jammer/i, names: AR_NAMES, nameKeepEn: false, tgt: AR_TGT, rtl: true,
+    pref: ["BBC", "Radio Romania International", "Voice of Turkey", "China Radio International", "Radio Vaticana", "IRIB Voice of I.Radio Iran"],
+    off: 180, t24: "على مدار الساعة", nextDay: " (اليوم التالي)",
+    nowFmt: function (d, h, m) { var t = (h * 60 + m + 180) % 1440; return d.getUTCDate() + " " + AR_M[d.getUTCMonth()] + " " + d.getUTCFullYear() + "، الساعة <span dir='ltr'>" + pad(h) + ":" + pad(m) + " UTC</span> (بتوقيت مكة المكرمة <span dir='ltr'>" + pad(Math.floor(t / 60)) + ":" + pad(t % 60) + "</span>)"; },
+    lede: function (nS, nF) { return "في جدول البث لموسم " + SEASON.label + "، تبث <strong>" + nS + " محطة</strong> برامج باللغة العربية على الموجات القصيرة عبر <strong>" + nF + " تردداً</strong>. تجمع هذه الصفحة الترددات ومواعيد البث (بالتوقيت العالمي UTC وبتوقيت مكة المكرمة) والمحطات التي تبث الآن. البيانات مأخوذة من جدول EIBI العام وتُحدَّث يومياً. لا يحتاج راديو الموجات القصيرة إلى الإنترنت."; },
+    hOnAir: "محطات عربية تبث الآن",
+    onAirIntro: function (now, n, nst) { return "في " + now + "، تبث " + nst + " محطة (" + n + " تردداً) برامج عربية ضمن مواعيدها المجدولة. تُحدَّث هذه الصفحة يومياً؛ للحالة المباشرة استخدم <a href='/'>البحث المباشر</a>."; },
+    onAirNone: function (now) { return "في " + now + "، لا يوجد بث عربي ضمن المواعيد المجدولة. راجع الجدول أدناه لمعرفة موعد البث التالي."; },
+    thOnAir: ["المحطة", "التردد (كيلوهرتز)", "ينتهي (UTC)"],
+    hMain: "ترددات الموجات القصيرة باللغة العربية",
+    mainIntro: "الترددات ومواعيد البث لكل محطة، بالتوقيت العالمي المنسق (UTC) وبتوقيت مكة المكرمة (UTC+3). توقيت القاهرة UTC+2 في الشتاء. اطلع على <a href='/ar/timetable/'>جدول البث العربي ساعة بساعة</a>.",
+    thMain: ["المحطة", "الترددات (كيلوهرتز)", "الموعد (UTC)", "بتوقيت مكة", "المنطقة المستهدفة"],
+    moreN: function (n) { return "و" + n + " أخرى"; },
+    moreStations: function (n) { return "توجد " + n + " محطة أخرى في القائمة أدناه."; },
+    hTags: "الترددات الأكثر استخداماً", hGrid: "محطات تبث بالعربية", countLabel: function (n) { return n + " فترة بث"; },
+    hHow: "كيف تستمع إلى الموجات القصيرة بالعربية",
+    howHtml: "<p>يكفي أي راديو فيه نطاق الموجات القصيرة (SW). يتغير أفضل نطاق حسب الوقت: في النهار تُسمع عادةً نطاقات 15 إلى 21 ميغاهرتز (19 و16 و13 متراً) بشكل أفضل، وقرب المساء 9 إلى 12 ميغاهرتز، وفي الليل 5.9 إلى 7.6 ميغاهرتز (نطاقا 49 و41 متراً). يعتمد الاستقبال على النشاط الشمسي وموقعك والهوائي، فالجدول دليل تقريبي.</p>"
+      + "<p>افتح الهوائي بالكامل واجلس قرب النافذة، وإضافة بضعة أمتار من السلك إلى الهوائي تحسّن الاستقبال كثيراً. إذا لم يكن لديك راديو، يمكنك الاستماع عبر المتصفح من خلال أجهزة استقبال WebSDR وKiwiSDR المتصلة بالإنترنت.</p>",
+    extra: null,
+    faq: function (c) {
+      return [
+        ["ما ترددات الموجات القصيرة التي تبث باللغة العربية؟", "في جدول موسم " + SEASON.label + " تبث " + c.nS + " محطة برامج عربية. أكثر الترددات استخداماً: " + c.freqs.slice(0, 5).join("، ") + " كيلوهرتز. يتغير أفضل تردد حسب الوقت والموسم."],
+        ["ما المحطات التي تبث بالعربية على الموجات القصيرة؟", "أكثر المحطات بثاً بالعربية في الجدول: " + c.stns.slice(0, 6).map(arName).join("، ") + "."],
+        ["كيف أحوّل التوقيت العالمي UTC إلى توقيتي المحلي؟", "أضف 3 ساعات للحصول على توقيت مكة المكرمة وبغداد والكويت، وساعتين لتوقيت القاهرة في الشتاء، و4 ساعات لتوقيت دبي. مثلاً 17:00 UTC هي 20:00 بتوقيت مكة."],
+        ["هل يعمل راديو الموجات القصيرة دون إنترنت؟", "نعم. تنعكس الموجات القصيرة عن طبقة الأيونوسفير وتصل من آلاف الكيلومترات دون الحاجة إلى إنترنت أو شبكة جوال أو قمر صناعي."]
+      ];
+    },
+    cta: "الاستماع عبر الإنترنت (Listen Online)", hRel: "صفحات ذات صلة",
+    related: "<a href='/ar/timetable/'>جدول البث ساعة بساعة</a><a href='/print/?lang=Arabic' rel='nofollow'>طباعة جدول الترددات</a><a href='/languages/arabic/' lang='en'>English: Shortwave in Arabic</a><a href='/radios/' lang='en'>Radio database (English)</a><a href='/stations/' lang='en'>All stations (English)</a>",
+    title: function () { return "راديو الموجات القصيرة بالعربية: ترددات ومواعيد (" + yr + ") | ShortwaveHQ"; },
+    desc: function (nS, nF) { return "ترددات الموجات القصيرة بالعربية: " + nS + " محطة و" + nF + " تردداً مع مواعيد البث بتوقيت مكة المكرمة، منها بي بي سي وإذاعة رومانيا الدولية. تحديث يومي."; },
+    kicker: "العربية · EIBI " + SEASON.label,
+    h1: "راديو الموجات القصيرة <span style=\"color:#c0392b\">بالعربية</span>",
+    crumbs: [["الرئيسية", "/"], ["الموجات القصيرة بالعربية", "/ar/"]]
+  };
+  var AR_BUILT = localePage(arCfg);
+
+  // Hour-by-hour timetables in local time (RTL-safe: times and frequencies are LTR-isolated)
+  function rtlTimetable(T) {
+    function p2(n) { return (n < 10 ? "0" : "") + n; }
+    function tmm(m) { m = ((m % 1440) + 1440) % 1440; return p2(Math.floor(m / 60)) + ":" + p2(m % 60); }
+    function win(r, off) { return (r.s === 0 && r.e >= 1440) ? T.t24 : "<span dir='ltr'>" + tmm(r.s + off) + "–" + tmm(r.e + off) + "</span>"; }
+    var seen = {}, rows = [];
+    T.keys.forEach(function (L) { ((SEG.langs && SEG.langs[L]) || []).forEach(function (r) {
+      if (!r || !r.stn || r.type === "Numbers" || /jammer/i.test(r.stn)) return;
+      var k = r.stn + "|" + kHz(r.freq) + "|" + r.s + "|" + r.e; if (seen[k]) return; seen[k] = 1; rows.push(r);
+    }); });
+    if (rows.length < 6) return false;
+    rows.sort(function (a, b) { return ((a.s + T.offs[0][1]) % 1440) - ((b.s + T.offs[0][1]) % 1440) || kHz(a.freq) - kHz(b.freq); });
+    var tb = "<p class='lede'>" + T.lede(rows.length) + "</p>";
+    T.blocks.forEach(function (g) {
+      var rs = rows.filter(function (r) { var l = ((r.s + T.offs[0][1]) % 1440 + 1440) % 1440; return l >= g[1] && l < g[2]; });
+      tb += "<h2>" + g[0] + "</h2><p>" + g[3] + "</p>";
+      if (!rs.length) { tb += "<p>" + T.none + "</p>"; return; }
+      tb += "<table><tr>" + T.offs.map(function (o) { return "<th>" + o[0] + "</th>"; }).join("") + "<th>UTC</th><th>" + T.thStn + "</th><th>" + T.thFreq + "</th><th>" + T.thLang + "</th><th>" + T.thTgt + "</th></tr>";
+      rs.forEach(function (r) {
+        var st = (stationSlug[r.stn] && byStation[r.stn] && byStation[r.stn].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[r.stn] + "/'>" + esc(T.name(r.stn)) + "</a>" : esc(T.name(r.stn));
+        tb += "<tr>" + T.offs.map(function (o) { return "<td>" + win(r, o[1]) + "</td>"; }).join("") + "<td>" + win(r, 0) + "</td><td>" + st + "</td><td><span dir='ltr'>" + freqLinkHtml(String(kHz(r.freq))) + "</span></td><td>" + esc(T.langName[r.lang] || r.lang) + "</td><td>" + esc(T.tgt[r.tgt] || r.tgt || "—") + "</td></tr>";
+      });
+      tb += "</table>";
+    });
+    tb += "<p style='font-size:.78rem;color:#b4c0d0'>" + T.source + "</p>" + seoFaqHtml(T.faq(rows.length)) + seoFaqLd(T.faq(rows.length)) + T.after;
+    write(T.dir + "/timetable/index.html", shell({ lang: T.lang, title: T.title, desc: T.desc, canonical: "/" + T.dir + "/timetable/", kicker: T.kicker, h1: T.h1, bodyHtml: tb, breadcrumbs: T.crumbs }));
+    urls.push("/" + T.dir + "/timetable/");
+    console.log("RTL timetable /" + T.dir + "/timetable/: " + rows.length + " rows");
+    return rows;
+  }
+  var FA_ROWS = FA_BUILT && rtlTimetable({
+    lang: "fa", dir: "fa", keys: ["Farsi", "Dari"], t24: "۲۴ ساعته", name: faName, tgt: FA_TGT, langName: { "Farsi": "فارسی", "Dari": "دری" },
+    offs: [["تهران", 210], ["کابل", 270]],
+    thStn: "ایستگاه", thFreq: "کیلوهرتز", thLang: "زبان", thTgt: "منطقهٔ هدف",
+    blocks: [["بامداد (۰۰:۰۰ تا ۰۶:۰۰ به وقت تهران)", 0, 360, "پیش از طلوع آفتاب باندهای ۵ تا ۷ مگاهرتز (۴۹ و ۴۱ متر) بهتر شنیده می‌شوند."],
+      ["صبح (۰۶:۰۰ تا ۱۲:۰۰ به وقت تهران)", 360, 720, "با بالا آمدن خورشید باندهای بالاتر، ۱۱ تا ۱۷ مگاهرتز، بهتر کار می‌کنند."],
+      ["بعدازظهر (۱۲:۰۰ تا ۱۸:۰۰ به وقت تهران)", 720, 1080, "در روز باندهای ۱۵ تا ۲۱ مگاهرتز (۱۹، ۱۶ و ۱۳ متر) را امتحان کنید."],
+      ["شب (۱۸:۰۰ تا ۲۴:۰۰ به وقت تهران)", 1080, 1440, "پرمخاطب‌ترین ساعت‌ها. شب‌ها باندهای ۵٫۹ تا ۷٫۶ مگاهرتز بهترین دریافت را دارند."]],
+    none: "در این بازهٔ زمانی هیچ برنامهٔ فارسی یا دری شروع نمی‌شود.",
+    lede: function (n) { return "همهٔ <strong>" + n + " نوبت پخش</strong> فارسی و دری در جدول " + SEASON.label + "، به ترتیب ساعت شروع به وقت تهران و گروه‌بندی‌شده بر اساس بخش‌های روز. ساعت کابل و UTC هم آمده است. این صفحه هر روز به‌روز می‌شود."; },
+    source: "منبع: جدول EIBI فصل " + SEASON.label + " (به‌روزرسانی روزانه). ایستگاه‌ها ممکن است بدون اطلاع قبلی فرکانس یا ساعت پخش را تغییر دهند. ساعت‌ها به وقت تهران (UTC+3:30) و کابل (UTC+4:30) هستند.",
+    faq: function (n) { return [
+      ["رادیو فارسی در موج کوتاه چه ساعتی پخش می‌شود؟", "جدول فعلی " + n + " نوبت پخش فارسی و دری در سراسر شبانه‌روز دارد. شب‌ها به وقت تهران بیشترین برنامه‌ها روی آنتن هستند. در این صفحه همهٔ برنامه‌ها به ترتیب ساعت شروع به وقت تهران آمده‌اند."],
+      ["چرا ساعت‌ها به UTC هم نوشته شده؟", "ایستگاه‌های بین‌المللی جدول خود را به وقت جهانی (UTC) اعلام می‌کنند. وقت تهران سه ساعت و نیم و وقت کابل چهار ساعت و نیم جلوتر از UTC است."],
+      ["آیا این جدول به‌روز است؟", "بله. این صفحه هر روز از جدول فعلی EIBI دوباره ساخته می‌شود."]]; },
+    after: "<p><a class='cta' href='/fa/'>فرکانس‌های فارسی</a> <a class='cta o' href='/fa/internet-shutdown/'>موج کوتاه هنگام قطع اینترنت</a> <a class='cta o' href='/print/?lang=Farsi' rel='nofollow'>چاپ جدول</a></p>",
+    title: "جدول پخش رادیو موج کوتاه فارسی (به وقت تهران) | ShortwaveHQ",
+    desc: "جدول ساعت‌به‌ساعت برنامه‌های موج کوتاه فارسی و دری به وقت تهران و کابل: ایستگاه، فرکانس و منطقهٔ هدف. به‌روزرسانی روزانه از جدول EIBI.",
+    kicker: "فارسی · جدول پخش · EIBI " + SEASON.label, h1: "جدول پخش موج کوتاه <span style=\"color:#c0392b\">فارسی</span>",
+    crumbs: [["خانه", "/"], ["موج کوتاه فارسی", "/fa/"], ["جدول پخش", "/fa/timetable/"]]
+  });
+  var AR_ROWS = AR_BUILT && rtlTimetable({
+    lang: "ar", dir: "ar", keys: ["Arabic"], t24: "على مدار الساعة", name: arName, tgt: AR_TGT, langName: { "Arabic": "العربية" },
+    offs: [["مكة المكرمة", 180], ["القاهرة", SEASON.code.charAt(0) === "b" ? 120 : 180]],
+    thStn: "المحطة", thFreq: "كيلوهرتز", thLang: "اللغة", thTgt: "المنطقة المستهدفة",
+    blocks: [["الفجر (00:00 إلى 06:00 بتوقيت مكة)", 0, 360, "قبل الشروق تُسمع نطاقات 5 إلى 7 ميغاهرتز (49 و41 متراً) بشكل أفضل."],
+      ["الصباح (06:00 إلى 12:00 بتوقيت مكة)", 360, 720, "مع شروق الشمس تتحسن النطاقات الأعلى من 11 إلى 17 ميغاهرتز."],
+      ["بعد الظهر (12:00 إلى 18:00 بتوقيت مكة)", 720, 1080, "في النهار جرّب نطاقات 15 إلى 21 ميغاهرتز (19 و16 و13 متراً)."],
+      ["المساء (18:00 إلى 24:00 بتوقيت مكة)", 1080, 1440, "أكثر الأوقات استماعاً. في الليل تعطي نطاقات 5.9 إلى 7.6 ميغاهرتز أفضل استقبال."]],
+    none: "لا يبدأ أي بث عربي في هذه الفترة.",
+    lede: function (n) { return "جميع فترات البث العربي البالغة <strong>" + n + "</strong> في جدول " + SEASON.label + "، مرتبة حسب موعد البدء بتوقيت مكة المكرمة ومقسمة حسب أوقات اليوم، مع توقيت القاهرة والتوقيت العالمي UTC. تُحدَّث الصفحة يومياً."; },
+    source: "المصدر: جدول EIBI لموسم " + SEASON.label + " (تحديث يومي). قد تغيّر المحطات تردداتها أو مواعيدها دون إشعار مسبق. توقيت مكة المكرمة UTC+3، وتوقيت القاهرة " + (SEASON.code.charAt(0) === "b" ? "UTC+2 (التوقيت الشتوي)" : "UTC+3 (التوقيت الصيفي)") + ".",
+    faq: function (n) { return [
+      ["متى تبث الإذاعات العربية على الموجات القصيرة؟", "يضم الجدول الحالي " + n + " فترة بث عربي موزعة على مدار اليوم، وأكثرها في المساء بتوقيت مكة المكرمة. تجدها في هذه الصفحة مرتبة حسب موعد البدء."],
+      ["لماذا تُكتب المواعيد بالتوقيت العالمي UTC؟", "تعلن المحطات الدولية جداولها بالتوقيت العالمي المنسق. توقيت مكة المكرمة يسبقه بثلاث ساعات، وتوقيت القاهرة بساعتين في الشتاء."],
+      ["هل الجدول محدَّث؟", "نعم، يُعاد إنشاء هذه الصفحة يومياً من جدول EIBI الحالي."]]; },
+    after: "<p><a class='cta' href='/ar/'>الترددات العربية</a> <a class='cta o' href='/print/?lang=Arabic' rel='nofollow'>طباعة الجدول</a> <a class='cta o' href='/listen-online/'>الاستماع عبر الإنترنت</a></p>",
+    title: "جدول بث الموجات القصيرة بالعربية (بتوقيت مكة) | ShortwaveHQ",
+    desc: "جدول البث العربي على الموجات القصيرة ساعة بساعة بتوقيت مكة المكرمة والقاهرة: المحطة والتردد والمنطقة المستهدفة. تحديث يومي من جدول EIBI.",
+    kicker: "العربية · جدول البث · EIBI " + SEASON.label, h1: "جدول بث الموجات القصيرة <span style=\"color:#c0392b\">بالعربية</span>",
+    crumbs: [["الرئيسية", "/"], ["الموجات القصيرة بالعربية", "/ar/"], ["جدول البث", "/ar/timetable/"]]
+  });
+
+  // Persian guide: listening to shortwave during internet shutdowns
+  if (FA_ROWS && FA_ROWS.length) {
+    (function () {
+      function p2(n) { return (n < 10 ? "0" : "") + n; }
+      function tmm(m) { m = ((m % 1440) + 1440) % 1440; return p2(Math.floor(m / 60)) + ":" + p2(m % 60); }
+      var ir = FA_ROWS.filter(function (r) { return r.lang === "Farsi"; });
+      var g = {}, ord = [];
+      ir.forEach(function (r) { if (!g[r.stn]) { g[r.stn] = { f: {}, w: [] }; ord.push(r.stn); } g[r.stn].f[kHz(r.freq)] = 1; g[r.stn].w.push(r); });
+      var pref = ["BBC", "Radio Farda", "Iran International TV", "Voice of America", "IRIB Voice of I.Radio Iran"];
+      ord.sort(function (a, b) { var pa = pref.indexOf(a), pb = pref.indexOf(b); pa = pa < 0 ? 99 : pa; pb = pb < 0 ? 99 : pb; return pa - pb || g[b].w.length - g[a].w.length; });
+      var tbl = "<table><tr><th>ایستگاه</th><th>فرکانس‌ها (کیلوهرتز)</th><th>ساعت پخش به وقت تهران</th></tr>" + ord.map(function (n) {
+        var fr = Object.keys(g[n].f).map(Number).sort(function (a, b) { return a - b; });
+        var ws = uniq(g[n].w.slice().sort(function (a, b) { return ((a.s + 210) % 1440) - ((b.s + 210) % 1440); }).map(function (r) { return (r.s === 0 && r.e >= 1440) ? "۲۴ ساعته" : "<span dir='ltr'>" + tmm(r.s + 210) + "–" + tmm(r.e + 210) + "</span>"; }));
+        var st = (stationSlug[n] && byStation[n] && byStation[n].length >= MIN_STATION_ENTRIES) ? "<a href='/stations/" + stationSlug[n] + "/'>" + esc(faName(n)) + "</a>" : esc(faName(n));
+        return "<tr><td>" + st + "</td><td><span dir='ltr'>" + fr.slice(0, 10).map(function (k) { return freqLinkHtml(String(k)); }).join(", ") + "</span></td><td>" + ws.slice(0, 6).join("، ") + (ws.length > 6 ? " …" : "") + "</td></tr>";
+      }).join("") + "</table>";
+      var gf = [
+        ["آیا هنگام قطع اینترنت می‌توان رادیو فارسی گوش داد؟", "بله. رادیو موج کوتاه سیگنال را مستقیماً از فرستنده‌هایی در کشورهای دیگر دریافت می‌کند و به اینترنت، سیم‌کارت یا ماهواره نیازی ندارد. چند ایستگاه هر روز برنامهٔ فارسی پخش می‌کنند؛ فهرست و ساعت‌ها در همین صفحه آمده است."],
+        ["چه رادیویی برای موج کوتاه لازم است؟", "هر رادیویی که باند SW یا موج کوتاه داشته باشد. رادیوهای دیجیتال پیدا کردن فرکانس را آسان‌تر می‌کنند و رادیوهای دینامی و خورشیدی هنگام قطع برق هم کار می‌کنند."],
+        ["اگر صدای برنامه با پارازیت همراه بود چه کنم؟", "فرکانس دیگر همان ایستگاه را امتحان کنید، کنار پنجره یا در فضای باز گوش دهید و چند متر سیم به آنتن وصل کنید. دریافت در ساعت‌های مختلف شب هم متفاوت است."],
+        ["بهترین ساعت برای گوش دادن چه زمانی است؟", "شب‌ها به وقت تهران بیشترین برنامهٔ فارسی پخش می‌شود و باندهای ۴۹ و ۴۱ متر (حدود ۶ و ۷ مگاهرتز) بهترین دریافت را دارند. در روز باندهای ۱۹ و ۱۶ متر را امتحان کنید."]
+      ];
+      var body = "<p class='lede'>وقتی اینترنت قطع می‌شود، رادیو موج کوتاه هنوز کار می‌کند. امواج موج کوتاه از لایهٔ یونسفر بازتاب می‌شوند و از فرستنده‌هایی در هزاران کیلومتر دورتر به رادیوی شما می‌رسند؛ بدون اینترنت، بدون سیم‌کارت و بدون ماهواره. این راهنما می‌گوید کدام ایستگاه‌ها به فارسی پخش می‌کنند، چه ساعتی، و چطور بهتر دریافت کنید.</p>"
+        + "<h2>کدام ایستگاه‌ها به فارسی پخش می‌کنند</h2><p>برنامه‌های فارسی با منطقهٔ هدف ایران در جدول فعلی (" + SEASON.label + ")، به وقت تهران. هر روز به‌روز می‌شود.</p>" + tbl
+        + "<p>جدول کامل ساعت‌به‌ساعت، همراه با برنامه‌های دری برای افغانستان: <a href='/fa/timetable/'>جدول پخش فارسی</a>.</p>"
+        + "<h2>از همین حالا آماده شوید</h2><ul><li>فرکانس‌ها را <strong>پیش از قطع اینترنت</strong> یادداشت یا چاپ کنید: <a href='/print/?lang=Farsi' rel='nofollow'>چاپ جدول فرکانس‌های فارسی</a>.</li><li>یک رادیوی دارای باند موج کوتاه (SW) تهیه کنید و یک بار آن را امتحان کنید.</li><li>باتری اضافه نگه دارید. رادیوهای دینامی و خورشیدی هنگام قطع برق هم کار می‌کنند.</li></ul>"
+        + "<h2>چه رادیویی لازم است</h2><p>هر رادیویی که باند SW داشته باشد کافی است. رادیوهای دیجیتال با نمایشگر فرکانس، پیدا کردن ایستگاه را بسیار ساده‌تر می‌کنند. مشخصات چند رادیوی رایج را در <a href='/radios/' lang='en'>پایگاه دادهٔ رادیوها</a> (به انگلیسی) ببینید؛ برای نمونه <a href='/radios/tecsun-pl-330/' lang='en'>Tecsun PL-330</a>، <a href='/radios/xhdata-d-808/' lang='en'>XHDATA D-808</a> و رادیوی اضطراری دینامی <a href='/radios/kaito-ka500/' lang='en'>Kaito KA500</a>.</p>"
+        + "<h2>نکته‌هایی برای دریافت بهتر</h2><ul><li>آنتن رادیو را کامل باز کنید و کنار پنجره یا در بالکن گوش دهید.</li><li>چند متر سیم معمولی را به سر آنتن وصل کنید و از پنجره بیرون ببرید؛ دریافت بسیار بهتر می‌شود.</li><li>شب‌ها باندهای ۴۹ و ۴۱ متر (۵٫۹ تا ۷٫۶ مگاهرتز) و روزها باندهای ۱۹ و ۱۶ متر (۱۵ تا ۱۸ مگاهرتز) را امتحان کنید.</li><li>اگر یک فرکانس پارازیت یا نویز داشت، فرکانس دیگر همان ایستگاه را امتحان کنید.</li><li>رادیو را از شارژر، تلویزیون و لامپ‌های LED دور نگه دارید؛ این وسایل نویز تولید می‌کنند.</li></ul>"
+        + seoFaqHtml(gf) + seoFaqLd(gf)
+        + "<p><a class='cta' href='/fa/'>همهٔ فرکانس‌های فارسی</a> <a class='cta o' href='/fa/timetable/'>جدول پخش</a></p>"
+        + "<p style='font-size:.78rem;color:#b4c0d0'>منبع: جدول EIBI فصل " + SEASON.label + " (به‌روزرسانی روزانه). ایستگاه‌ها ممکن است بدون اطلاع قبلی فرکانس یا ساعت پخش را تغییر دهند.</p>";
+      write("fa/internet-shutdown/index.html", shell({ lang: "fa",
+        title: "موج کوتاه هنگام قطع اینترنت: فرکانس‌های فارسی | ShortwaveHQ",
+        desc: "هنگام قطع اینترنت با رادیو موج کوتاه برنامه‌های فارسی را بشنوید: ایستگاه‌ها، فرکانس‌ها و ساعت پخش به وقت تهران، و نکته‌هایی برای دریافت بهتر.",
+        canonical: "/fa/internet-shutdown/", kicker: "فارسی · راهنما · EIBI " + SEASON.label,
+        h1: "گوش دادن به رادیو موج کوتاه <span style=\"color:#c0392b\">هنگام قطع اینترنت</span>", bodyHtml: body,
+        breadcrumbs: [["خانه", "/"], ["موج کوتاه فارسی", "/fa/"], ["هنگام قطع اینترنت", "/fa/internet-shutdown/"]] }));
+      urls.push("/fa/internet-shutdown/");
+      console.log("Persian internet-shutdown guide: " + ord.length + " stations");
+    })();
+  }
 
   // ── Spanish timetable + review pages (/es/horario/, /es/reviews/<slug>/) ──
   (function () {
