@@ -892,6 +892,8 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   if (hub && hubHtml) {
     var hy = new Date().getUTCFullYear(), hn = (STATION_SEO[name] && STATION_SEO[name].hubName) || name;
     var ht = hn + " Shortwave Schedule " + hy + ": Frequencies & Times";
+    if (ht.length > 56) ht = hn + " Shortwave Frequencies & Schedule " + hy;
+    if (ht.length > 56) ht = hn + " Frequencies & Schedule " + hy;
     if (ht.length > 56) ht = hn + " Shortwave Schedule " + hy;
     if (ht.length > 56) ht = hn + " Shortwave Schedule";
     title = ht + " | ShortwaveHQ";
@@ -1150,8 +1152,8 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to Listen Online</a></div>";
 write("listen-online/index.html", shell({
-  title: "Listen to Global Radio Stations Online: Free, Live | ShortwaveHQ",
-  desc: "Listen to global radio stations online free: tune live shortwave receivers in your browser and see which stations are on air now. No radio or signup needed.",
+  title: "Shortwave Radio Online: Listen Free, Live Now | ShortwaveHQ",
+  desc: "Listen to shortwave radio online free: tune live receivers in your browser and see which stations are on air right now. No radio, no app, no signup needed.",
   canonical: "/listen-online/", kicker: "Listen Live \u00b7 On-Air Now \u00b7 International Broadcasts",
   h1: "Listen to Shortwave <span style=\"color:#c0392b\">Radio Online Free</span>", bodyHtml: loBody,
   breadcrumbs: [["Home", "/"], ["Listen Online", "/listen-online/"]]
@@ -3437,8 +3439,8 @@ for (var bi3 = 0; bi3 < BANDS.length; bi3++) {
 }
 bdIdx += "</div>";
 write("bands/index.html", shell({
-  title: "Shortwave Bands Explained \u2014 49m, 31m, 25m, 19m & More (2026) | ShortwaveHQ",
-  desc: "Guide to the shortwave meter bands \u2014 49m, 41m, 31m, 25m, 19m, 16m and more \u2014 with every active 2026 frequency and station on each band, plus best listening times.",
+  title: "Shortwave Bands Chart 2026: Frequencies & Best Times | ShortwaveHQ",
+  desc: "Shortwave bands chart: 49m, 41m, 31m, 25m, 19m, 16m and more, with the frequency range, best time of day and every station active on each band in 2026.",
   canonical: "/bands/", kicker: "Band Guides",
   h1: "Shortwave <span style=\"color:#c0392b\">Meter Bands</span>", bodyHtml: bdIdx,
   breadcrumbs: [["Home", "/"], ["Bands", "/bands/"]]
