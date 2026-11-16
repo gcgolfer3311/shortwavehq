@@ -355,8 +355,16 @@ function hreflangHtml(opts) {
   return alts.map(function (a) { return "<link rel=\"alternate\" hreflang=\"" + a[0] + "\" href=\"" + SITE + a[1] + "\">"; }).join("\n")
     + "\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"" + SITE + xd + "\">";
 }
+// Google cuts titles at ~70 characters. If a title is too long, drop the
+// " | ShortwaveHQ" brand suffix first (Google shows the site name anyway).
+function fitTitle(t) {
+  t = String(t || "");
+  if (t.length > 70 && / \| ShortwaveHQ$/.test(t)) t = t.replace(/ \| ShortwaveHQ$/, "");
+  return t;
+}
 function shell(opts) {
   // opts: title, desc, canonical, h1, kicker, bodyHtml, breadcrumbs [[name,url],...]
+  opts.title = fitTitle(opts.title);
   var bc = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [] };
   for (var i = 0; i < opts.breadcrumbs.length; i++) {
     bc.itemListElement.push({ "@type": "ListItem", "position": i + 1, "name": opts.breadcrumbs[i][0], "item": SITE + opts.breadcrumbs[i][1] });
@@ -1255,7 +1263,7 @@ try {
     + "<div class=\"tags\"><a href=\"/?page=tonight\">Personal Tonight Guide</a><a href=\"/stations/\">All Stations</a><a href=\"/bands/\">Bands</a><a href=\"/listen-online/\">Listen Online</a></div>";
   if (tnTotal < 10) throw new Error("only " + tnTotal + " picks generated, skipping page");
   write("tonight/index.html", shell({
-    title: "What Can I Hear on Shortwave Tonight? Daily Listening Guide \u2014 ShortwaveHQ",
+    title: "What Can I Hear on Shortwave Tonight? Daily Listening Guide",
     desc: "Today's shortwave listening guide: the stations you can realistically hear this evening in North America, Europe, Asia, Africa, Latin America and the Pacific. Updated daily from EIBI + NOAA data.",
     canonical: "/tonight/", kicker: "Daily Listening Guide \u00b7 Updated " + tnDate,
     h1: "What can I hear on shortwave tonight?",
@@ -1486,7 +1494,7 @@ if (SCANS_OK) {
         pb += "<script type=\"application/ld+json\">" + JSON.stringify(vo).replace(/</g, "\\u003c") + "</script>";
       }
       write("band-scans/" + sc.slug + "/index.html", shell({
-        title: sc.title + " \u2014 Shortwave Band Scan " + sc.date + " | ShortwaveHQ",
+        title: ((sc.title + " \u2014 Shortwave Band Scan " + sc.date).length <= 70 ? sc.title + " \u2014 Shortwave Band Scan " + sc.date : sc.title.length <= 70 ? sc.title : sc.title.slice(0, 67).replace(/[\s,:\u2014-]+\S*$/, "") + "\u2026") + " | ShortwaveHQ",
         desc: "Shortwave band scan recorded " + sc.date + (sc.location ? " from " + sc.location : "") + ": " + stationsTxt.slice(0, 6).join(", ") + (stationsTxt.length > 6 ? " and more" : "") + ". Full tracklist with frequencies and signal reports.",
         canonical: "/band-scans/" + sc.slug + "/", kicker: "Band Scan \u00b7 " + sc.date, h1: esc(sc.title), bodyHtml: pb,
         breadcrumbs: [["Home", "/"], ["Band Scans", "/band-scans/"], [sc.title, "/band-scans/" + sc.slug + "/"]]
@@ -3197,7 +3205,7 @@ write("embed/on-air/index.html", EMBED_PAGE);
   };
   var pageOpts = function (e, canonical, crumbs) {
     return {
-      title: e.name + " \u2014 Shortwave Enthusiast of the Month (" + e.month + ") | ShortwaveHQ",
+      title: ((e.name + " \u2014 Shortwave Enthusiast of the Month (" + e.month + ")").length <= 70 ? e.name + " \u2014 Shortwave Enthusiast of the Month (" + e.month + ")" : e.name + " \u2014 Enthusiast of the Month (" + e.month + ")") + " | ShortwaveHQ",
       desc: e.name + " is ShortwaveHQ\u2019s Enthusiast of the Month for " + e.month + ". " + (e.tagline || "A lifelong shortwave listener\u2019s story.").slice(0, 140),
       canonical: canonical, kicker: "Community \u00b7 " + e.month,
       h1: "Enthusiast of the Month: <span style=\"color:#c0392b\">" + esc(e.name) + "</span>" + (e.callsign ? " <small style=\"font-size:.5em;color:#6b5f52\">" + esc(e.callsign) + "</small>" : ""),
@@ -3225,6 +3233,7 @@ var ARTICLES = [
   {
     slug: "wbcq-500-kw-superstation-for-lease-9330-khz",
     title: "WBCQ's 500 kW Superstation: Owner Seeks a Lease, or a Buyer, After 9330 kHz Went Silent",
+    seoTitle: "WBCQ 500 kW Superstation for Lease or Sale After 9330 kHz Went Silent",
     date: "2026-10-12",
     updated: "2026-10-21",
     author: "Michael Smith",
@@ -3252,7 +3261,7 @@ for (var ai = 0; ai < ARTICLES.length; ai++) {
   var aLd = "<script type=\"application/ld+json\">" + JSON.stringify({ "@context": "https://schema.org", "@type": "NewsArticle", "headline": art.title, "description": art.summary, "datePublished": art.date, "dateModified": art.updated || art.date, "image": [SITE + "/og-image.png"], "mainEntityOfPage": SITE + "/articles/" + art.slug + "/", "author": art.author ? (art.author === "Michael Smith" ? { "@type": "Person", "@id": SITE + "/about/#michael", "name": "Michael Smith (KM7FMJ)", "url": SITE + "/about/" } : { "@type": "Person", "name": art.author }) : { "@type": "Organization", "name": "ShortwaveHQ" }, "publisher": { "@type": "Organization", "name": "ShortwaveHQ", "url": SITE, "logo": { "@type": "ImageObject", "url": SITE + "/og-image.png" } } }).replace(/</g, "\\u003c") + "</script>";
   var aBody = aBy + art.bodyHtml + aLd + "<p style=\"background:#fff;border:1px solid #c8c0b0;border-left:4px solid #FF4500;border-radius:4px;padding:.7rem 1rem\"><strong>Discuss this story</strong> on <a href=\"https://www.reddit.com/r/ShortwaveHQ/\" target=\"_blank\" rel=\"noopener\">r/ShortwaveHQ</a> or in the <a href=\"https://www.facebook.com/groups/836185586242956\" target=\"_blank\" rel=\"noopener\">Listeners group</a>.</p><h2>More Articles</h2><div class=\"tags\"><a href=\"/articles/\">All Articles</a><a href=\"/listen-online/\">Listen Online</a><a href=\"/schedules-by-country/\">Schedules by Country</a></div>";
   write("articles/" + art.slug + "/index.html", shell({
-    title: art.title + " | ShortwaveHQ",
+    title: (art.seoTitle || art.title) + " | ShortwaveHQ",
     desc: art.summary,
     canonical: "/articles/" + art.slug + "/", kicker: "Shortwave Radio Articles \u00b7 " + art.date,
     h1: art.title, bodyHtml: aBody,
