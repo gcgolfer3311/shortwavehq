@@ -452,6 +452,9 @@ textarea.inp{resize:vertical;line-height:1.6}
 .se-btn:hover{background:var(--red2)}.se-btn:active{transform:scale(.97)}.se-btn:disabled{opacity:.38;cursor:not-allowed}
 .se-btn svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.2;flex-shrink:0}
 .se-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;margin-bottom:.7rem;transition:opacity .18s}
+.se-gear{font-family:var(--mono);font-size:.74rem;line-height:1.6;margin:10px 0 2px;padding:8px 10px;border-radius:5px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:rgba(255,255,255,.85)}
+.se-gear a{color:#fbbf24;font-weight:700}
+.se-gear-d{opacity:.6;font-size:.66rem}
 .se-tools{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .hide-btn{font-family:var(--mono);font-size:.72rem;padding:4px 10px;border-radius:20px;cursor:pointer;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:rgba(255,255,255,.85)}
 .hide-btn.on{border-color:#fbbf24;color:#fbbf24;background:rgba(251,191,36,.1)}
@@ -3982,6 +3985,26 @@ function sePanel(){
 // Pure schedule math (no AI) using s/e (UTC minutes), site, tgt, kw.
 function seFmtDur(mins){ if(mins<1)return "under a minute"; if(mins<60)return mins+" min"; var h=Math.floor(mins/60),m=mins%60; return h+"h"+(m?" "+m+"m":""); }
 function seFmtUTC(min){ if(min>=1440)return "24h continuous"; var hh=Math.floor(min/60)%24,mm=min%60; return pad(hh)+":"+pad(mm)+" UTC"; }
+// ── Radio picks under search results (affiliate; same 3 verified picks as the static pages) ──
+var SE_GEAR=[
+  {n:"Tecsun PL-330",u:"https://www.amazon.com/dp/B0921HN6QM?tag=shortwave1877-20",lo:1711,hi:29999},
+  {n:"XHDATA D-808",u:"https://www.amazon.com/dp/B0DCFZYMHY?tag=shortwave1877-20",lo:1711,hi:29999},
+  {n:"ZHIWHIS ZWS-A330",u:"https://www.amazon.com/dp/B0H8ZPQZTP?tag=shortwave1877-20",lo:2300,hi:30000}
+];
+function seGearLine(khz){
+  var picks=SE_GEAR.filter(function(g){return !khz||(khz>=g.lo&&khz<=g.hi);});
+  if(!picks.length)return null;
+  var d=document.createElement("div");d.className="se-gear";
+  d.appendChild(document.createTextNode("\uD83D\uDCFB "+(khz?"Radios that can tune "+khz+" kHz: ":"Radios that can tune these: ")));
+  picks.forEach(function(g,i){
+    if(i)d.appendChild(document.createTextNode(" \u00b7 "));
+    var a=document.createElement("a");a.href=g.u;a.target="_blank";a.rel="nofollow sponsored noopener";a.textContent=g.n;
+    a.addEventListener("click",function(){try{if(typeof gtag==="function")gtag("event","affiliate_click",{item:g.n,place:"search"});}catch(e){}});
+    d.appendChild(a);
+  });
+  var s=document.createElement("span");s.className="se-gear-d";s.textContent=" (affiliate links)";d.appendChild(s);
+  return d;
+}
 function seStatusCard(matches){
   var d=new Date(); var nm=d.getUTCHours()*60+d.getUTCMinutes();
   var nowStr=pad(d.getUTCHours())+":"+pad(d.getUTCMinutes())+" UTC";
@@ -4190,6 +4213,7 @@ function seTextSearch(q,withAI){
       more.textContent="Showing 20 of "+matches.length+" results. Add more detail to narrow it down.";
       p.matchBox.appendChild(more);
     }
+    var gl=seGearLine(0);if(gl)p.matchBox.appendChild(gl);
   }
   if(p.aiTxt)p.aiTxt.textContent="";if(p.links)p.links.innerHTML="";if(p.spin)p.spin.style.display="none";
 }
@@ -4280,7 +4304,8 @@ function seShowMatches(fMHz,withAI){
   if(!matches.length){var none=document.createElement("div");none.className="sr-none";none.textContent="No exact match in database for "+fMHz.toFixed(3)+" MHz.";p.matchBox.appendChild(none);p.matchBox.appendChild(seReportLink(fMHz.toFixed(3)+" MHz"));}
   else{if(fqHid)p.matchBox.appendChild(hideNote(fqHid));p.matchBox.appendChild(seStatusCard(matches));for(var j=0;j<matches.length;j++)p.matchBox.appendChild(seRow(matches[j]));
     var anyOn=false;for(var k=0;k<matches.length;k++){if(isOn(matches[k])){anyOn=true;break;}}
-    if(!anyOn)p.matchBox.appendChild(seReportLink(fMHz.toFixed(3)+" MHz"));}
+    if(!anyOn)p.matchBox.appendChild(seReportLink(fMHz.toFixed(3)+" MHz"));
+    var gl2=seGearLine(Math.round(fMHz*1000));if(gl2)p.matchBox.appendChild(gl2);}
   if(p.aiTxt)p.aiTxt.textContent="";if(p.links)p.links.innerHTML="";if(p.spin)p.spin.style.display="none";
 }
 
