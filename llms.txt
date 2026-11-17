@@ -19,6 +19,9 @@ Run by Michael Smith (KM7FMJ), based in Arizona, USA. All content is based on pe
 - [Tools](https://hqshortwaveradio.com/tools/): dipole and longwire calculators, UTC converter, frequency/wavelength converter, live grey line map
 - [Next Season](https://hqshortwaveradio.com/next-season/): next A/B season start date and an HFCC-based preview when coordination data is published
 - [Shortwave Closures Tracker](https://hqshortwaveradio.com/shortwave-closures/): sourced list of shortwave stations that closed or went silent, plus stations dropped from EIBI
+- [Japanese hub](https://hqshortwaveradio.com/ja/): Japanese-language shortwave frequency list with JST times, foreign Japanese-language broadcasts, Radio NIKKEI official frequencies
+- [Japanese radio comparison](https://hqshortwaveradio.com/ja/radios/): shortwave radio specs in Japanese (SSB, synchronous AM, coverage)
+- [Reception reports and QSL cards (Japanese)](https://hqshortwaveradio.com/ja/verification-cards/): how to write a reception report (受信報告書) with SINPO and an example
 - [About](https://hqshortwaveradio.com/about/): who runs ShortwaveHQ (Michael Smith, KM7FMJ), data sources, review and corrections policy
 - [RSS feed](https://hqshortwaveradio.com/feed.xml): articles and daily schedule changes
 

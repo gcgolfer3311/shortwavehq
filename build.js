@@ -2093,6 +2093,20 @@ var JA_BUILT = false;
   });
   body += "</table>";
 
+  // 海外からの日本語放送 一覧 (foreign broadcasters only, JST, compact)
+  var DOMESTIC = { "Radio Nikkei 1": 1, "Radio Nikkei 2": 1, "NHK Radio Japan": 1, "Shiokaze": 1, "Furusato no Kaze": 1 };
+  var foreign = stns.filter(function (n) { return !DOMESTIC[n]; });
+  if (foreign.length) {
+    body += "<h2 id='kaigai'>海外からの日本語放送 一覧</h2><p>海外の放送局が日本向けに行っている日本語の短波放送です。放送時間は日本時間（JST）です。</p><table><tr><th>放送局</th><th>日本時間（JST）</th><th>周波数</th></tr>";
+    foreign.forEach(function (n) {
+      var rs = JR.filter(function (r) { return r.stn === n; });
+      var times = uniq(rs.slice().sort(function (a, b) { return ((a.s + 540) % 1440) - ((b.s + 540) % 1440); }).map(function (r) { return (r.s === 0 && r.e >= 1440) ? "24時間" : tm(r.s + 540) + "–" + tm(r.e + 540); }));
+      var fq = uniq(rs.map(function (r) { return String(kHz(r.freq)); })).sort(function (a, b) { return a - b; });
+      body += "<tr><td>" + jaLink(n) + "</td><td>" + times.slice(0, 6).join("、") + (times.length > 6 ? " ほか" : "") + "</td><td>" + fq.slice(0, 6).join("、") + (fq.length > 6 ? " ほか" : "") + " kHz</td></tr>";
+    });
+    body += "</table><p style='font-size:.78rem;color:#6b5f52'>出典：EIBI " + SEASON.label + " 放送予定表（毎日更新）。日によって放送がない場合や、予告なく変更される場合があります。</p>";
+  }
+
   // Radio Nikkei (domestic, transmitted from Japan)
   var NR = SCH.filter(function (r) { return r && /^Radio Nikkei/.test(r.stn || ""); });
   var nikkeiFreqs = [];
@@ -2137,6 +2151,16 @@ var JA_BUILT = false;
     + "<a href='/languages/'>Languages</a><a href='/stations/'>All Stations</a><a href='/frequency/'>All Frequencies</a><a href='/bands/'>Shortwave Bands</a></div>";
 
   // ── Japanese station pages (/ja/stations/<slug>/) ──
+  // Radio NIKKEI's own published shortwave frequencies (JST). EIBI lists only
+  // part of this, so the official table is shown as well, with its source.
+  var NIKKEI_SRC = "<p style='font-size:.78rem;color:#6b5f52'>出典：<a href='https://www.radionikkei.jp/help/howto.html' rel='noopener' target='_blank'>ラジオNIKKEI公式「ラジオNIKKEIの聴き方」</a>（2026年11月確認）。大規模災害時などは、これ以外の周波数・時間で緊急放送を行うことがあります。</p>";
+  var NIKKEI_OFFICIAL = {
+    "Radio Nikkei 1": "<h2>ラジオNIKKEI第1 公式の短波周波数</h2><table><tr><th>周波数</th><th>時間（日本時間）</th></tr><tr><td>" + freqLinkHtml("6055") + "</td><td>終日</td></tr><tr><td>" + freqLinkHtml("3925") + "</td><td>朝と夕方以降（補強）</td></tr><tr><td>9595 kHz</td><td>予備周波数</td></tr></table>" + NIKKEI_SRC
+      + "<p>短波ラジオがなくても、スマートフォンやパソコンの <strong>radiko</strong> でラジオNIKKEIを聞けます（ラジオNIKKEIは全国放送のため、エリア内として無料で聞けます。通信料は別）。</p>",
+    "Radio Nikkei 2": "<h2>ラジオNIKKEI第2 公式の短波周波数</h2><table><tr><th>周波数</th><th>時間（日本時間）</th></tr><tr><td>" + freqLinkHtml("6115") + "</td><td>8:00〜19:00</td></tr><tr><td>3945 kHz</td><td>19:00〜23:00</td></tr><tr><td>9760 kHz</td><td>予備周波数</td></tr></table>" + NIKKEI_SRC
+      + "<p>短波ラジオがなくても、スマートフォンやパソコンの <strong>radiko</strong> でラジオNIKKEIを聞けます（ラジオNIKKEIは全国放送のため、エリア内として無料で聞けます。通信料は別）。</p>"
+  };
+  var JA_TITLE_NAME = { "Radio Nikkei 1": "ラジオNIKKEI第1（ラジオ日経）", "Radio Nikkei 2": "ラジオNIKKEI第2（ラジオ日経）" };
   var jaStNames = Object.keys(JA_ST).sort(function (a, b) { return JA_ST[b] - JA_ST[a] || (a < b ? -1 : 1); });
   var nowJst = pad((hh + 9) % 24) + ":" + pad(mm);
   function jstStart(r) { return (r.s + 540) % 1440; }
@@ -2155,6 +2179,13 @@ var JA_BUILT = false;
     var nearJp = isNikkei || jr.some(function (r) { return /Japan|Far East|Korea|Asia|Siberia|^As$|^FE$|^J$/i.test(r.tgt || ""); });
 
     var b = "<p class='lede'>" + esc(JA_INTRO[n] || (jn + "の日本語短波放送です。")) + " " + SEASON.label + " の放送予定表では、日本語放送を <strong>" + jf.length + " の周波数</strong>（" + jf.join("、") + " kHz）で行っています。放送時間は<strong>日本時間（JST）</strong>で掲載しています。</p>";
+    // 早見表: the answer to "what frequency, what time" before anything else
+    var jstList = uniq(jr.map(jst2));
+    if (!NIKKEI_OFFICIAL[n]) b += "<div class='card' style='margin:0 0 1rem'><p style='margin:0 0 .3rem'><strong>" + esc(jn) + " 早見表</strong></p>"
+      + "<p style='margin:0'>周波数：<strong>" + jf.join("、") + " kHz</strong></p>"
+      + "<p style='margin:0'>" + (isNikkei ? "放送時間" : "日本語放送の時間") + "（日本時間）：<strong>" + jstList.slice(0, 6).join("、") + (jstList.length > 6 ? " ほか" : "") + "</strong></p>"
+      + "<p style='margin:.3rem 0 0;font-size:.8rem'>出典：EIBI " + SEASON.label + " 放送予定表（毎日更新）</p></div>";
+    if (NIKKEI_OFFICIAL[n]) b += NIKKEI_OFFICIAL[n];
     b += "<h2>現在の放送状況</h2><p>";
     if (onNow.length) b += "日本時間 " + nowJst + " 時点（このページの更新時刻）では、" + onNow.map(function (r) { return freqLinkHtml(String(kHz(r.freq))); }).join("・") + " で放送予定の時間帯です。";
     else b += "日本時間 " + nowJst + " 時点（このページの更新時刻）では、日本語放送の時間帯ではありません。" + (nxt ? "次の放送は日本時間 " + tm(nxt.s + 540) + " から " + freqLinkHtml(String(kHz(nxt.freq))) + " です。" : "");
@@ -2168,19 +2199,21 @@ var JA_BUILT = false;
     }
     b += "<h2>日本で聞くコツ</h2><p>" + (nearJp ? esc(jn) + "の日本語放送は日本・東アジア方面に向けて送信されているため、一般的な短波ラジオと本体のロッドアンテナでも受信できることがあります。" : "受信状況は時間帯・季節・受信機によって大きく変わります。") + "一般に、夜から早朝は低い周波数（3〜7MHz帯）、昼間は高い周波数（15MHz帯以上）が聞こえやすくなります。屋外や窓際にアンテナを伸ばすと受信しやすくなります。</p>";
     var faqS = [
-      [jn + "の周波数は？", SEASON.label + " の放送予定表では、" + jn + "の日本語放送は " + jf.join("、") + " kHz で放送されています。"],
+      [jn + "の周波数は？", n === "Radio Nikkei 1" ? "ラジオNIKKEI第1の公式周波数は 6055 kHz（終日）で、朝と夕方以降は 3925 kHz でも放送しています。予備周波数は 9595 kHz です。" : n === "Radio Nikkei 2" ? "ラジオNIKKEI第2の公式周波数は 6115 kHz（8:00〜19:00）と 3945 kHz（19:00〜23:00）です。予備周波数は 9760 kHz です。" : SEASON.label + " の放送予定表では、" + jn + "の日本語放送は " + jf.join("、") + " kHz で放送されています。"],
       [jn + "は何時に放送していますか？", "日本時間で " + uniq(jr.map(jst2)).slice(0, 5).join("、") + (uniq(jr.map(jst2)).length > 5 ? " など" : "") + " に放送予定です（UTC + 9 時間 = 日本時間）。"],
       [jn + "は日本で聞けますか？", nearJp ? "日本・東アジア向けに送信されているため、短波ラジオがあれば日本国内でも受信できることがあります。受信状況は時間帯や季節、太陽活動によって変わります。" : "日本向けの送信ではないため、受信は時間帯や伝搬状況によります。インターネット経由の WebSDR を使えば、送信地域に近い受信機で聞くこともできます。"],
-      ["ラジオがなくても聞けますか？", "WebSDR や KiwiSDR を使えば、ブラウザから世界各地の短波受信機を操作して聞くことができます。当サイトの Listen Online ページから利用できます。"]
+      isNikkei ? ["ラジオ日経は短波ラジオがなくても聞けますか？", "はい。ラジオNIKKEIは radiko でも配信されており、スマートフォンやパソコンで聞けます。短波で聞く場合の公式周波数は、第1が 6055 kHz（朝と夕方以降は 3925 kHz も）、第2が 6115 kHz（19時以降は 3945 kHz）です。"]
+        : ["ラジオがなくても聞けますか？", "WebSDR や KiwiSDR を使えば、ブラウザから世界各地の短波受信機を操作して聞くことができます。当サイトの Listen Online ページから利用できます。"]
     ];
     b += seoFaqHtml(faqS) + seoFaqLd(faqS);
     b += "<p><a class='cta' href='/ja/'>日本語短波放送 周波数一覧へ</a> <a class='cta o' href='/listen-online/'>ラジオなしで聞く</a></p>";
+    b += "<p style='font-size:.85rem'>" + esc(jn) + "を聞いたら、<a href='/ja/verification-cards/'>受信報告書を送ってベリカードをもらいましょう（書き方と例文）</a>。</p>";
     b += "<h2>ほかの日本語放送</h2><div class='grid'>" + jaStNames.filter(function (x) { return x !== n; }).map(function (x) { return "<a href='/ja/stations/" + stationSlug[x] + "/'>" + esc(jaNPlain(x)) + "<span>" + esc(x) + "</span></a>"; }).join("") + "</div>";
     var hasEn = all.length >= MIN_STATION_ENTRIES;
     if (hasEn) b += "<p style='font-size:.8rem'><a href='/stations/" + sl + "/' lang='en' hreflang='en'>English: " + esc(n) + " shortwave frequencies</a></p>";
     write("ja/stations/" + sl + "/index.html", shell({
       lang: "ja",
-      title: jn + " 周波数・放送時間（" + yr + "年）短波 日本語放送 | ShortwaveHQ",
+      title: (JA_TITLE_NAME[n] || jn) + " 周波数・放送時間（" + yr + "年）" + (isNikkei ? "短波" : "短波 日本語放送") + " | ShortwaveHQ",
       desc: jn + "の短波周波数（" + jf.slice(0, 4).join("、") + (jf.length > 4 ? "…" : "") + " kHz）と日本語放送の時間を日本時間（JST）で掲載。現在の放送状況、日本での聞き方。" + SEASON.label + " 対応・毎日更新。",
       canonical: "/ja/stations/" + sl + "/", kicker: "日本語放送 · 放送局 · EIBI " + SEASON.label,
       h1: "<span style=\"color:#c0392b\">" + esc(jn) + "</span> 周波数と放送時間",
@@ -2192,7 +2225,85 @@ var JA_BUILT = false;
   });
   console.log("Japanese station pages: " + jaStNames.length);
 
-  body += "<h2>\u6642\u9593\u5272\u30fb\u30ec\u30d3\u30e5\u30fc</h2><div class='tags'><a href='/ja/timetable/'>\u65e5\u672c\u8a9e\u77ed\u6ce2\u653e\u9001 \u6642\u9593\u5272\uff08\u65e5\u672c\u6642\u9593\uff09</a><a href='/ja/reviews/'>\u77ed\u6ce2\u30e9\u30b8\u30aa \u30ec\u30d3\u30e5\u30fc</a></div>";
+  body += "<h2>\u6642\u9593\u5272\u30fb\u30ec\u30d3\u30e5\u30fc</h2><div class='tags'><a href='/ja/timetable/'>\u65e5\u672c\u8a9e\u77ed\u6ce2\u653e\u9001 \u6642\u9593\u5272\uff08\u65e5\u672c\u6642\u9593\uff09</a><a href='/ja/reviews/'>\u77ed\u6ce2\u30e9\u30b8\u30aa \u30ec\u30d3\u30e5\u30fc</a><a href='/ja/radios/'>短波ラジオ スペック比較</a><a href='/ja/verification-cards/'>受信報告書の書き方・ベリカード</a><a href='/ja/#kaigai'>海外からの日本語放送 一覧</a></div>";
+  // ── /ja/verification-cards/ 受信報告書とベリカード ──
+  (function () {
+    var sinpo = [["S", "信号の強さ（Signal）", "5＝非常に強い ／ 1＝ほとんど聞き取れない"], ["I", "混信（Interference）", "5＝混信なし ／ 1＝非常に強い混信"], ["N", "雑音（Noise）", "5＝雑音なし ／ 1＝非常に強い雑音"], ["P", "フェージング（Propagation）", "5＝フェージングなし ／ 1＝非常に激しい"], ["O", "総合評価（Overall）", "5＝非常に良い ／ 1＝聞き取れない"]];
+    var vb = "<p class='lede'>ベリカード（ベリ）は、放送局が受信報告書の内容を確認して送ってくれる受信確認証です。BCL（短波放送の受信）の楽しみのひとつで、海外の日本語放送を聞いたら受信報告書を送ってみましょう。このページでは受信報告書の書き方と、SINPO コードの付け方を説明します。</p>"
+      + "<h2>受信報告書に書くこと</h2><ul style='margin:0 0 1rem 1.2rem'>"
+      + "<li><strong>受信日時</strong>：UTC（協定世界時）で書くのが基本です。日本時間（JST）は UTC + 9 時間なので、日本時間 21:00 は UTC 12:00 です。併記すると親切です。</li>"
+      + "<li><strong>周波数</strong>：kHz で書きます（例：9750 kHz）。</li>"
+      + "<li><strong>受信状態</strong>：SINPO コード（下の表）で 5 段階評価します。</li>"
+      + "<li><strong>番組の内容</strong>：何時何分にどんな話題・曲が流れたかを具体的に書きます。放送局が本当に受信したかを確認する一番の決め手です。</li>"
+      + "<li><strong>受信設備</strong>：ラジオの機種名とアンテナ（例：本体ロッドアンテナ、10m のワイヤーアンテナ）。</li>"
+      + "<li><strong>受信場所</strong>：都道府県・市区町村まで。</li>"
+      + "<li><strong>番組の感想</strong>：よかった番組やリクエストを書くと、放送局にとって励みになります。</li></ul>"
+      + "<h2>SINPO コードの付け方</h2><table><tr><th>記号</th><th>意味</th><th>評価</th></tr>" + sinpo.map(function (x) { return "<tr><td><strong>" + x[0] + "</strong></td><td>" + x[1] + "</td><td>" + x[2] + "</td></tr>"; }).join("") + "</table>"
+      + "<p>たとえば「SINPO 44444」は、少し弱いものの混信・雑音・フェージングが少なく、全体として良好に聞こえた、という意味です。迷ったら正直に低めに付けて構いません。</p>"
+      + "<h2>受信報告書の例</h2><div class='card'><p style='margin:0;white-space:pre-line;font-size:.9rem'>受信報告書\n"
+      + "放送局：○○放送 日本語放送\n受信日時：2026年11月16日 12:00–12:30 UTC（日本時間 21:00–21:30）\n周波数：9750 kHz\nSINPO：4 4 4 4 4\n"
+      + "番組内容：12:00 ニュース（○○について）、12:10 音楽番組（○○の曲）、12:25 リスナーからのお便り紹介\n受信機：○○（機種名）／アンテナ：10m ワイヤーアンテナ\n受信地：○○県○○市\n感想：○○のコーナーが楽しかったです。</p></div>"
+      + "<h2>送り方</h2><p>現在は、各放送局の公式サイトの受信報告フォームや電子メールで受け付けている局が多く、郵送のみの局もあります。受付方法、送付先、ベリカードの発行状況は局によって異なり、変わることもあるため、送る前に必ず各局の公式サイトで最新情報を確認してください。日本語放送を行っている局の多くは、日本語で書いた受信報告書を受け付けています。</p>"
+      + "<h2>日本語放送の局と周波数</h2><div class='grid'>" + jaStNames.map(function (x) { return "<a href='/ja/stations/" + stationSlug[x] + "/'>" + esc(jaNPlain(x)) + "<span>" + esc(x) + "</span></a>"; }).join("") + "</div>";
+    var vfaq = [
+      ["ベリカードとは何ですか？", "放送局が、リスナーから届いた受信報告書の内容を確認して発行する受信確認証です。カードの絵柄は局や年によって異なり、集めることも BCL の楽しみのひとつです。"],
+      ["受信報告書の時間は日本時間で書いてもいいですか？", "国際放送では UTC（協定世界時）で書くのが基本です。日本時間を併記すると間違いを防げます。日本時間から 9 時間を引くと UTC になります。"],
+      ["SINPO はどう付ければいいですか？", "信号の強さ・混信・雑音・フェージング・総合評価の 5 項目を、それぞれ 5（最良）〜1（最悪）で評価します。迷ったら正直に低めに付けて構いません。"],
+      ["受信報告書はどこに送ればいいですか？", "各放送局の公式サイトで受付方法を確認してください。フォームや電子メールで受け付ける局が多く、郵送のみの局もあります。送付先は変わることがあります。"]
+    ];
+    vb += seoFaqHtml(vfaq) + seoFaqLd(vfaq);
+    vb += "<p><a class='cta' href='/ja/'>日本語短波放送 周波数一覧</a> <a class='cta o' href='/ja/timetable/'>時間割（日本時間）</a></p>";
+    write("ja/verification-cards/index.html", shell({
+      lang: "ja",
+      title: "受信報告書の書き方とベリカード（" + yr + "年）SINPO・例文つき | ShortwaveHQ",
+      desc: "短波放送の受信報告書の書き方。受信日時（UTC）、周波数、SINPOコード、番組内容の書き方と例文、ベリカードをもらうための送り方を解説します。",
+      canonical: "/ja/verification-cards/", kicker: "日本語 · BCL ガイド",
+      h1: "受信報告書の書き方と<span style=\"color:#c0392b\">ベリカード</span>",
+      bodyHtml: vb,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["受信報告書とベリカード", "/ja/verification-cards/"]]
+    }));
+    urls.push("/ja/verification-cards/");
+  })();
+
+  // ── /ja/radios/ 短波ラジオ スペック比較 ──
+  (function () {
+    var RD; try { RD = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "radios.json"), "utf8")); } catch (e) { return; }
+    var RS = (RD && RD.radios) || []; if (!RS.length) return;
+    var TYPE = { Pocket: "ポケット・携帯型", Portable: "据え置き・ポータブル型", Emergency: "防災ラジオ", SDR: "SDR（ソフトウェア無線）" };
+    var TSHORT = { Pocket: "携帯", Portable: "据置", Emergency: "防災", SDR: "SDR" };
+    function yn(v) { return v === true ? "あり" : v === "software" ? "あり（ソフトウェア）" : v === false ? "なし" : "記載なし"; }
+    function sw(r) { return esc(String(r.sw || "記載なし").split(" (")[0]); }
+    var rb = "<p class='lede'>短波ラジオと SDR " + RS.length + " 機種のスペックを日本語で比較できる一覧です。短波の受信範囲、SSB（アマチュア無線などの受信）、同期検波（フェージング対策）、電源、重さをまとめています。数値はメーカー・販売店の仕様表にもとづき、記載のない項目は推測せず「記載なし」としています。</p>"
+      + "<h2>スペック比較表</h2><div style='overflow-x:auto'><table><tr><th>機種</th><th>タイプ</th><th>短波</th><th>SSB</th><th>同期検波</th><th>重さ</th></tr>"
+      + RS.map(function (r) { return "<tr><td><a href='/radios/" + r.slug + "/' lang='en'>" + esc(r.name) + "</a></td><td>" + esc(TSHORT[r.type] || r.type) + "</td><td>" + sw(r) + "</td><td>" + yn(r.ssb) + "</td><td>" + yn(r.sync) + "</td><td>" + esc(r.weight || "記載なし") + "</td></tr>"; }).join("")
+      + "</table></div>"
+      + ["Pocket", "Portable", "Emergency", "SDR"].map(function (ty) {
+        var l = RS.filter(function (r) { return r.type === ty; }); if (!l.length) return "";
+        return "<h2>" + TYPE[ty] + "</h2><ul style='margin:0 0 1rem 1.2rem'>" + l.map(function (r) {
+          return "<li><strong><a href='/radios/" + r.slug + "/' lang='en'>" + esc(r.name) + "</a></strong>：短波 " + sw(r) + "、SSB " + yn(r.ssb) + "、同期検波 " + yn(r.sync) + (/Discontinued/i.test(r.status || "") ? "（生産終了）" : "") + (r.review ? "。<a href='" + (JA_REV_SLUGS.some(function (s) { return r.review.indexOf(s) >= 0; }) ? r.review.replace("/reviews/", "/ja/reviews/") : r.review) + "'>レビューあり</a>" : "") + "</li>";
+        }).join("") + "</ul>";
+      }).join("")
+      + "<h2>選び方のポイント</h2><p><strong>SSB</strong> があると、アマチュア無線や航空・船舶の音声通信も聞けます。<strong>同期検波</strong>は、短波放送でよくある音のゆがみ（選択性フェージング）を減らします。どの機種でも、本体のロッドアンテナより<strong>外部アンテナ</strong>（窓の外に張った数メートルの電線など）をつないだほうが、はるかによく聞こえます。</p>"
+      + "<p>各機種の詳しいスペックと出典は、機種名のリンク先（英語）で確認できます。2 機種を並べて比べるときは<a href='/radios/#compare' lang='en'>比較ツール（英語）</a>を使ってください。</p>"
+      + "<p style='font-size:.78rem;color:#6b5f52'>リンク先の Amazon はアソシエイトリンクです（米国 Amazon）。</p>";
+    var rfaq = [
+      ["初心者におすすめの短波ラジオは？", "まずは SSB と同期検波を備えた小型機が扱いやすく、" + RS.filter(function (r) { return r.type === "Pocket" && r.ssb === true && r.sync === true; }).map(function (r) { return r.name; }).slice(0, 3).join("、") + " などがあります。予算と使い方に合わせて比較表で選んでください。"],
+      ["SSB とは何ですか？", "単側波帯（Single Sideband）という変調方式です。アマチュア無線や航空・船舶の通信で使われ、SSB 対応のラジオで受信できます。"],
+      ["同期検波は必要ですか？", "必須ではありませんが、遠くの放送でフェージングによる音のゆがみが起きるときに聞きやすくなります。"]
+    ];
+    rb += seoFaqHtml(rfaq) + seoFaqLd(rfaq);
+    rb += "<p><a class='cta' href='/ja/'>日本語短波放送 周波数一覧</a> <a class='cta o' href='/ja/reviews/'>レビュー一覧</a></p>";
+    write("ja/radios/index.html", shell({
+      lang: "ja",
+      title: "短波ラジオ スペック比較（" + yr + "年）SSB・同期検波・" + RS.length + "機種 | ShortwaveHQ",
+      desc: "短波ラジオと SDR " + RS.length + " 機種のスペックを日本語で比較。短波の受信範囲、SSB、同期検波、重さを一覧表で。Tecsun、XHDATA、Sangean、SDRplay など。",
+      canonical: "/ja/radios/", kicker: "日本語 · 短波ラジオ",
+      h1: "短波ラジオ <span style=\"color:#c0392b\">スペック比較</span>",
+      bodyHtml: rb,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["短波ラジオ スペック比較", "/ja/radios/"]]
+    }));
+    urls.push("/ja/radios/");
+  })();
   var JA_PRINT = "<p class=\"noprint\" style=\"margin:.4rem 0 1rem\"><button type=\"button\" onclick=\"window.print()\" class=\"cta o\" style=\"cursor:pointer;font:inherit;font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:600\">\uD83D\uDDA8 印刷・PDFで保存</button> <span style=\"font-size:.8rem\">一覧を印刷したり、PDFとして保存したりできます（印刷画面で「PDFに保存」を選択）。</span></p><style>@media print{.mast,.crumbs,.noprint,footer,.cta{display:none!important}body{background:#fff!important;color:#000!important}table,th,td{color:#000!important;background:#fff!important;border-color:#999!important}a{color:#000!important;text-decoration:none}}</style>";
   write("ja/index.html", shell({
     lang: "ja",
