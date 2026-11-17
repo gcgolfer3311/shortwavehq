@@ -8,6 +8,16 @@
 
 var fs = require("fs");
 var path = require("path");
+// ── Gear box: one small, honest "radio to hear this" box with affiliate
+// links, built only from data/radios.json (verified Amazon /dp/ links).
+var GEAR = (function () {
+  try { var d = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "radios.json"), "utf8")); var m = {}; d.radios.forEach(function (r) { m[r.slug] = r; }); return m; } catch (e) { return {}; }
+})();
+var GEAR_PICKS = [
+  ["tecsun-pl-330", "Best all-round pick: full shortwave, SSB and sync AM, shirt-pocket size"],
+  ["xhdata-d-808", "Best value: SSB plus the aircraft band"],
+  ["zhiwhis-zws-a330", "Our tested pick: shortwave, SSB, VHF/UHF and recording"]
+];
 
 var SITE = "https://hqshortwaveradio.com";
 
@@ -909,6 +919,7 @@ for (var sn = 0; sn < stationNames.length; sn++) {
     if (desc.length > 160) desc = hn + " shortwave schedule: frequencies, UTC times and English broadcasts. Updated daily.";
   }
   if (JA_ST[name]) body = "<p lang=\"ja\" style=\"font-size:.85rem\"><a href=\"/ja/stations/" + sl + "/\">\u65e5\u672c\u8a9e\uff1a\u5468\u6ce2\u6570\u3068\u653e\u9001\u6642\u9593\uff08\u65e5\u672c\u6642\u9593\uff09\u2192</a></p>" + body;
+  body += gearBox("Radios that can hear " + name, "Any of these portable shortwave radios can tune " + esc(name) + "'s frequencies. A few metres of wire as an outdoor antenna makes a bigger difference than the radio.");
   write("stations/" + sl + "/index.html", shell({
     title: title, desc: desc, canonical: "/stations/" + sl + "/", kicker: (hub && hubHtml ? "Station Guide" : "Station Profile") + " \u00b7 EIBI " + SEASON.label + " \u00b7 2026",
     h1: (hub && hubHtml) ? "<span style=\"color:#c0392b\">" + esc(name) + "</span> \u2014 Shortwave Frequencies &amp; How to Hear It" : "Listen to <span style=\"color:#c0392b\">" + esc(name) + "</span> on Shortwave", bodyHtml: body,
@@ -1002,7 +1013,7 @@ for (var fk = 0; fk < freqKeys.length; fk++) {
     + "<h2>2026 Schedule for " + khz + " kHz</h2>" + tbl2
     + "<h2>Nearby Frequencies</h2>" + nav
     + "<div class=\"tags\"><a href=\"/listen-online/\">Listen to shortwave radio online free</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to listen online</a><a href=\"/stations/\">Shortwave stations on air now</a></div>"
-    + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 Hearing " + khz + " kHz needs the right radio \u2014 see the ones we've actually tested \u2192</a></p>";
+    + gearBox("Radios that can tune " + khz + " kHz", "Every radio here covers " + khz + " kHz. A few metres of wire as an outdoor antenna makes a bigger difference than the radio.", +khz);
   write("frequency/" + khz + "-khz/index.html", shell({
     title: title2, desc: desc2, canonical: "/frequency/" + khz + "-khz/", kicker: "Live Shortwave Schedule \u00b7 " + (bd2 ? bd2.name + " \u00b7 " : "") + mhz.toFixed(3) + " MHz",
     noindex: thinFreq,
@@ -1037,7 +1048,7 @@ for (var bb = 0; bb < BANDS.length; bb++) {
     + "<p><a class=\"cta\" href=\"/\">\u25cf Check live band conditions \u2192</a></p>"
     + "<h2>Active Frequencies on the " + esc(band.name) + "</h2>" + g
     + "<h2>Other Bands</h2><div class=\"tags\">" + BANDS.filter(function (x) { return x.name !== band.name; }).map(function (x) { return "<a href=\"/bands/" + bandSlug[x.name] + "/\">" + esc(x.name) + "</a>"; }).join("") + "</div>"
-    + "<p><a class=\"cta o\" href=\"/?page=equipment\">\uD83D\uDED2 Best radios for the " + esc(band.name) + " \u2192</a></p>";
+    + gearBox("Radios for the " + band.name, "Each of these covers the whole " + esc(band.name.toLowerCase()) + ". A few metres of wire as an outdoor antenna makes a bigger difference than the radio.", Math.round(band.lo * 1000));
   write("bands/" + bsl + "/index.html", shell({
     title: title3, desc: desc3, canonical: "/bands/" + bsl + "/", kicker: "Band Guide \u00b7 " + band.lo + "\u2013" + band.hi + " MHz",
     h1: esc(band.name) + " <span style=\"color:#c0392b\">Guide</span>", bodyHtml: body3,
@@ -1128,6 +1139,23 @@ function segBrowseHtml(nLang) {
 function stnLinkHtml(name) {
   return (stationSlug[name] && byStation[name] && byStation[name].length >= MIN_STATION_ENTRIES) ? "<a href=\"/stations/" + stationSlug[name] + "/\">" + esc(name) + "</a>" : esc(name);
 }
+// Does a radio's listed shortwave range include this frequency? (unknown -> false)
+function gearCovers(r, khz) {
+  var m = String(r.sw || "").match(/([\d.]+)\s*[\u2013-]\s*([\d.]+)\s*(kHz|MHz)/i); if (!m) return false;
+  var k = /MHz/i.test(m[3]) ? 1000 : 1; return khz >= parseFloat(m[1]) * k && khz <= parseFloat(m[2]) * k;
+}
+function gearBuy(slug) {
+  var r = GEAR[slug]; if (!r || !/amazon\.com\/dp\//.test(r.buy || "")) return "";
+  return "<p><a class=\"cta\" href=\"" + esc(r.buy) + "\" target=\"_blank\" rel=\"nofollow sponsored noopener\">\uD83D\uDED2 Check " + esc(r.name) + " price on Amazon</a> <a class=\"cta o\" href=\"/radios/" + r.slug + "/\">" + esc(r.name) + " specs</a></p>";
+}
+function gearBox(headline, intro, khz) {
+  var items = GEAR_PICKS.filter(function (p) { var r = GEAR[p[0]]; return r && /amazon\.com\/dp\//.test(r.buy || "") && (!khz || gearCovers(r, khz)); });
+  if (!items.length) return "";
+  return "<div class=\"card\" style=\"margin:1.4rem 0\"><p style=\"margin:0 0 .35rem\"><strong>\uD83D\uDCFB " + esc(headline) + "</strong></p>"
+    + "<p style=\"margin:0 0 .5rem;font-size:.92rem\">" + intro + "</p><ul style=\"margin:0 0 .5rem 1.1rem;font-size:.92rem\">"
+    + items.map(function (p) { var r = GEAR[p[0]]; return "<li><a href=\"" + esc(r.buy) + "\" target=\"_blank\" rel=\"nofollow sponsored noopener\"><strong>" + esc(r.name) + "</strong></a> \u2014 " + esc(p[1]) + " \u00b7 <a href=\"" + (r.review || "/radios/" + r.slug + "/") + "\">" + (r.review ? "our review" : "specs") + "</a></li>"; }).join("")
+    + "</ul><p style=\"margin:0;font-size:.75rem;opacity:.75\">Amazon links are affiliate links: ShortwaveHQ earns from qualifying purchases at no extra cost to you. <a href=\"/radios/\">Compare all radios</a></p></div>";
+}
 function freqLinkHtml(kk) {
   return (byFreq[kk] && byFreq[kk].length >= MIN_FREQ_ENTRIES) ? "<a href=\"/frequency/" + kk + "-khz/\">" + kk + " kHz</a>" : kk + " kHz";
 }
@@ -1157,6 +1185,7 @@ var loBody = "<p class=\"lede\">Want to listen to shortwave radio online right n
   + "<p>New to listening? Start with the <a href=\"/tonight/\">worldwide guide to what is on tonight</a>, or read our guide to <a href=\"/am-radio-dx-guide/\">AM radio stations and AM broadcasting</a> if you want to hear distant AM stations on a real radio.</p>"
   + (function () { var f = topFreqTags(12); return f ? "<h2>Popular Shortwave Frequencies to Tune Right Now</h2><div class=\"tags\">" + f + "</div>" : ""; })()
   + segBrowseHtml(10)
+  + gearBox("No radio yet? Hear it on your own", "Online receivers are a great start. When you want to tune by yourself, any time and anywhere, these portable radios cover the same stations.")
   + seoFaqHtml(LO_FAQ) + seoFaqLd(LO_FAQ)
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/stations/\">All Stations</a><a href=\"/frequency/\">All Frequencies</a><a href=\"/bands/\">Shortwave Bands</a><a href=\"/schedules-by-country/\">Schedules by Country</a><a href=\"/best-shortwave-radios-for-beginners/\">Best Beginner Radios</a><a href=\"/how-to-listen-to-shortwave-radio-online/\">How to Listen Online</a></div>";
 write("listen-online/index.html", shell({
@@ -1259,6 +1288,7 @@ try {
     tnBody += "<h2>" + esc(R.name) + " \u2014 evening (7\u201310 pm local)</h2>" + tnHead + picks.map(tnRow).join("") + "</table>";
   }
   tnBody += "<h2>How the picks are made</h2><p>A broadcast makes the list when it is on the air during your evening, the band it uses should be open at that hour, and it is either beamed at your region (easy catch) or strong enough to reach you anyway (DX). Band openings are estimated from time of day, solar flux and geomagnetic activity. These are predictions, not guarantees &mdash; your antenna and local noise matter as much as the schedule.</p>"
+    + gearBox("Want to hear more of tonight's stations?", "A portable shortwave radio with a few metres of wire as an antenna will pull in most of the picks above.")
     + "<h2>Country guides</h2><div class=\"tags\"><a href=\"/uk/\">Shortwave in the UK</a><a href=\"/australia/\">Shortwave in Australia</a><a href=\"/canada/\">Shortwave in Canada</a><a href=\"/india/\">Shortwave in India</a><a href=\"/ja/\" lang=\"ja\">日本（短波放送）</a><a href=\"/emergency-shortwave/\">Emergency shortwave card</a></div>"
     + "<div class=\"tags\"><a href=\"/?page=tonight\">Personal Tonight Guide</a><a href=\"/stations/\">All Stations</a><a href=\"/bands/\">Bands</a><a href=\"/listen-online/\">Listen Online</a></div>";
   if (tnTotal < 10) throw new Error("only " + tnTotal + " picks generated, skipping page");
@@ -1705,11 +1735,15 @@ urls.push("/site-tour/");
 // ── Best Shortwave Radios for Beginners ─────────────────────────
 var brBody = "<p class=\"lede\">If you're buying your first shortwave radio, the honest advice is simpler than most buying guides make it sound: get something with SSB (single sideband) capability, don't overspend before you know if you'll stick with the hobby, and don't judge a radio by FM performance alone \u2014 shortwave reception is a different skill.</p>"
   + "<h2>Our Top Beginner Pick: Tecsun PL-330</h2><p>At $79\u2013$99, the PL-330 is the radio most 2026 buying guides agree on for a first purchase. It's compact enough to travel with, has real SSB tuning (not a stripped-down version), and its PLL tuning means you can dial in an exact frequency instead of hunting with an analog knob. If you only buy one radio to start, this is the one.</p>"
+  + gearBuy("tecsun-pl-330")
   + "<h2>Best Value: XHDATA D-808</h2><p>At $59\u2013$79, the D-808 punches well above its price \u2014 full band coverage including SSB and AIR band, with sensitivity that regularly outperforms radios two or three times its cost. If budget is the deciding factor, start here.</p>"
+  + gearBuy("xhdata-d-808")
   + "<h2>Best for Emergency Prep: Kaito KA500</h2><p>At $39\u2013$59, the KA500 isn't the best pure DXing radio on this list, but it's the most versatile: solar, hand-crank, battery, and USB power, plus NOAA weather alerts. If you want a radio that pulls double duty for emergencies, this is it.</p>"
+  + gearBuy("kaito-ka500")
   + "<h2>What to Avoid as a Beginner</h2><p>Skip radios with no SSB mode \u2014 you'll be locked out of a huge portion of what makes shortwave interesting (utility stations, ham traffic, numbers stations). Also be cautious of ultra-cheap unbranded radios on marketplace sites with no model name; quality control on those varies wildly.</p>"
   + "<h2>Not Sure Which One Fits You?</h2><p>Answer two quick questions in the Radio Finder tool on our <a href=\"/\">Equipment page</a> and get a specific recommendation based on your budget and how you plan to use it.</p>"
   + "<h2>Read Full Reviews</h2><p>We've published hands-on reviews of several budget and mid-range radios, including real-world reception notes and verdicts, in the Reviews section of our <a href=\"/\">homepage</a>.</p>"
+  + "<p style=\"font-size:.78rem;opacity:.75\">Amazon links are affiliate links: ShortwaveHQ earns from qualifying purchases at no extra cost to you.</p>"
   + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/listen-online/\">Listen Online</a><a href=\"/best-antennas-for-apartments/\">Antennas for Small Spaces</a><a href=\"/stations/\">All Stations</a></div>";
 write("best-shortwave-radios-for-beginners/index.html", shell({
   title: "Best Shortwave Radios for Beginners (2026) | ShortwaveHQ",
