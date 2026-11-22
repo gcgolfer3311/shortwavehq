@@ -20,6 +20,10 @@ Run by Michael Smith (KM7FMJ), based in Arizona, USA. All content is based on pe
 - [Next Season](https://hqshortwaveradio.com/next-season/): next A/B season start date and an HFCC-based preview when coordination data is published
 - [Shortwave Closures Tracker](https://hqshortwaveradio.com/shortwave-closures/): sourced list of shortwave stations that closed or went silent, plus stations dropped from EIBI
 - [German hub](https://hqshortwaveradio.com/de/): German-language shortwave broadcasts with UTC and MEZ times
+- [Korean hub](https://hqshortwaveradio.com/ko/): Korean-language shortwave broadcasts with UTC and KST times
+- [Portuguese hub](https://hqshortwaveradio.com/pt/): Portuguese-language shortwave (including Brazilian tropical-band stations) with UTC and Brasília times
+- [French hub](https://hqshortwaveradio.com/fr/): French-language shortwave broadcasts with UTC and Paris times
+- [Russian hub](https://hqshortwaveradio.com/ru/): Russian-language shortwave broadcasts with UTC and Moscow times
 - [Japanese hub](https://hqshortwaveradio.com/ja/): Japanese-language shortwave frequency list with JST times, foreign Japanese-language broadcasts, Radio NIKKEI official frequencies
 - [Japanese radio comparison](https://hqshortwaveradio.com/ja/radios/): shortwave radio specs in Japanese (SSB, synchronous AM, coverage)
 - [Reception reports and QSL cards (Japanese)](https://hqshortwaveradio.com/ja/verification-cards/): how to write a reception report (受信報告書) with SINPO and an example
