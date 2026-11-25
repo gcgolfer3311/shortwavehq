@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BCL入門（2026年）短波放送の聞き方・始め方 | ShortwaveHQ</title>
+<meta name="description" content="BCL（短波放送の受信）の始め方。必要なラジオとアンテナ、UTC と日本時間の換算、時間帯ごとのバンド、まず聞きたい日本語放送、ベリカードまでを解説します。">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="canonical" href="https://hqshortwaveradio.com/ja/bcl/">
+<link rel="alternate" hreflang="ja" href="https://hqshortwaveradio.com/ja/bcl/">
+<link rel="alternate" hreflang="x-default" href="https://hqshortwaveradio.com/ja/bcl/">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="BCL入門（2026年）短波放送の聞き方・始め方 | ShortwaveHQ">
+<meta property="og:description" content="BCL（短波放送の受信）の始め方。必要なラジオとアンテナ、UTC と日本時間の換算、時間帯ごとのバンド、まず聞きたい日本語放送、ベリカードまでを解説します。">
+<meta property="og:url" content="https://hqshortwaveradio.com/ja/bcl/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShortwaveHQ">
+<meta property="og:image" content="https://hqshortwaveradio.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://hqshortwaveradio.com/"},{"@type":"ListItem","position":2,"name":"短波放送 周波数一覧","item":"https://hqshortwaveradio.com/ja/"},{"@type":"ListItem","position":3,"name":"BCL入門","item":"https://hqshortwaveradio.com/ja/bcl/"}]}</script>
+<link rel="alternate" type="application/rss+xml" title="ShortwaveHQ news & schedule changes" href="https://hqshortwaveradio.com/feed.xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://hqshortwaveradio.com/#org","name":"ShortwaveHQ","url":"https://hqshortwaveradio.com/","logo":"https://hqshortwaveradio.com/icons/icon-512.png","email":"hqshortwaveradio@gmail.com","founder":{"@type":"Person","@id":"https://hqshortwaveradio.com/about/#michael","name":"Michael Smith","alternateName":"KM7FMJ","url":"https://hqshortwaveradio.com/about/"},"sameAs":["https://www.youtube.com/@Hqshortwaveradio","https://www.tiktok.com/@hqshortwaveradio","https://www.facebook.com/Hqshortwaveradio","https://www.reddit.com/r/ShortwaveHQ/","https://x.com/hqshortwave"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800;900&family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111418;color:#ece6dc;font-family:"Libre Baskerville",Georgia,serif;font-size:1.02rem;line-height:1.65}
+a{color:#ff8f80}
+.mast{background:#0a0b0e;border-bottom:3px solid #c0392b;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.bname{font-family:Syne,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.04em;text-decoration:none}
+.bname em{color:#e74c3c;font-style:normal}
+.mlink{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:1.6rem 1.2rem 3.5rem}
+.kick{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#92a2b6;margin-bottom:.4rem}
+h1{font-family:Syne,sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:.9rem}
+h2{font-family:Syne,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;margin:1.8rem 0 .7rem}
+p{margin-bottom:.9rem}
+.lede{font-size:1.05rem}
+.cta{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;letter-spacing:.05em;background:#c0392b;color:#fff;text-decoration:none;padding:11px 18px;border-radius:4px;margin:.3rem .5rem .3rem 0}
+.cta.o{background:transparent;color:#ece6dc;border:1px solid #3a4252}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin:.6rem 0 1rem;background:#181c22;border:1px solid #3a4252}
+th{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 10px;background:#1e232a;border-bottom:1px solid #3a4252;color:#b4c0d0}
+td{padding:8px 10px;border-bottom:1px solid #2c3340;vertical-align:top}
+td a{text-decoration:none;border-bottom:1px solid #5a3a36}
+.tags a{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;border:1px solid #3a4252;border-radius:20px;padding:4px 12px;margin:0 6px 8px 0;text-decoration:none;color:#b4c0d0;background:#181c22}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:.6rem 0 1rem}
+.grid a{display:block;background:#181c22;border:1px solid #3a4252;border-radius:4px;padding:.7rem .8rem;text-decoration:none;color:#ece6dc;font-size:.82rem}
+.grid a span{display:block;font-family:"IBM Plex Mono",monospace;font-size:.58rem;color:#92a2b6;margin-top:2px}
+.crumbs{font-family:"IBM Plex Mono",monospace;font-size:.6rem;color:#92a2b6;margin-bottom:1.1rem}
+.crumbs a{color:#b4c0d0;text-decoration:none}
+footer{background:#0a0b0e;color:rgba(255,255,255,.78);padding:1.6rem 1.2rem;font-family:"IBM Plex Mono",monospace;font-size:.62rem;line-height:1.9}
+footer a{color:rgba(255,255,255,.85)}
+html{-webkit-text-size-adjust:100%;color-scheme:dark}
+img,iframe,video{max-width:100%}
+.mlink{display:inline-block;padding:.5rem .3rem}
+.msoc{display:inline-flex;align-items:center;vertical-align:middle;padding:.5rem .35rem}
+.msoc svg{width:18px;height:18px}
+p,li,h1,h2{overflow-wrap:break-word}
+@media(max-width:640px){
+table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.mast{padding:.6rem .9rem}
+.mast nav{display:flex;flex-wrap:wrap;width:100%;gap:0 .15rem;margin-top:.2rem}
+.mlink{font-size:.72rem;padding:.7rem .55rem}
+.wrap{padding:1.2rem .9rem 3rem}
+h1{font-size:1.5rem}
+.cta{display:block;text-align:center;padding:14px 16px;margin:.5rem 0}
+.tags a{padding:10px 14px;margin:0 6px 8px 0}
+.grid{grid-template-columns:1fr 1fr}
+.grid a{padding:.85rem .8rem}
+td,th{padding:9px 10px;white-space:nowrap}
+td:first-child,th:first-child{white-space:normal;min-width:130px}
+.crumbs{line-height:1.9}
+}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+
+/* dark-theme overrides for inline-styled boxes */
+[style*='background:#fff;'],[style$='background:#fff'],[style*='background: #fff;']{background:#181c22!important}
+[style*='background:#fff8e6']{background:#3a2f12!important;border-color:#8a6a1f!important}
+[style*='background:#fdecea']{background:#3a1f1c!important}
+[style*='background:#eaf7ee']{background:#12301f!important}
+[style*='background:#f5f0e8'],[style*='background:#ece7db']{background:#181c22!important}
+[style*='#c8c0b0']{border-color:#3a4252!important}
+[style*='color:#6b5f52']{color:#b4c0d0!important}[style*='color:#9c8e81']{color:#92a2b6!important}
+[style*='color:#c0392b']{color:#ff8f80!important}[style*='color:#2f6b3f']{color:#66d98f!important}
+[style*='color:#0a0b0e']:not([style*='#FF9900']){color:#ece6dc!important}[style*='color:#4a4238'],[style*='color:#5a4f44']{color:#b4c0d0!important}blockquote{background:#3a1f1c!important;color:#ece6dc}pre{background:#181c22;color:#ece6dc}
+@media print{body{background:#fff;color:#000}}
+</style>
+<style>body,h1,h2,h3,th,td,.kick,.lede,.tags a,.grid a{font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,'Noto Sans JP',sans-serif}h1,h2{letter-spacing:0}td,th{white-space:normal!important}</style>
+</head>
+<body>
+<header class="mast"><a class="bname" href="/">Shortwave<em>HQ</em></a><nav><a class="mlink" href="/">Live Search</a> &nbsp; <a class="mlink" href="/tonight/">Tonight</a> &nbsp; <a class="mlink" href="/season-change/">Season Change</a> &nbsp; <a class="mlink" href="/band-scans/">Band Scans</a> &nbsp; <a class="mlink" href="/listen-online/">Listen Online</a> &nbsp; <a class="mlink" href="/articles/">Articles</a> &nbsp; <a class="mlink" href="/stations/">Stations</a> &nbsp; <a class="mlink" href="/frequency/">Frequencies</a> &nbsp; <a class="mlink" href="/bands/">Bands</a> &nbsp; <a class="mlink" href="/radios/">Radios</a> &nbsp; <a class="mlink" href="/tools/">Tools</a> &nbsp; <a class="mlink" href="/my-schedule/">My Schedule</a> &nbsp; <a class="msoc" href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a class="msoc" href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="M9.6 15.6V8.4L15.8 12z"/></svg></a><a class="msoc" href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.07C24 5.4 18.6 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07Z"/></svg></a></nav></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">ホーム</a> › <a href="/ja/">短波放送 周波数一覧</a> › BCL入門</div>
+<div class="kick">日本語 · BCL ガイド</div>
+<h1><span style="color:#c0392b">BCL</span>入門：短波放送の聞き方</h1>
+<p class='lede'>BCL（Broadcasting Listening / Broadcast Listener）は、海外の短波放送などを受信して楽しむ趣味です。1970年代の日本では「BCLブーム」が起こり、ソニーの「スカイセンサー」やナショナルの「クーガ」といったラジオが人気を集めました。現在も短波ラジオ1台あれば、日本にいながら世界の放送を聞くことができます。このページでは、これから BCL を始める人に必要なことをまとめています。</p><h2>BCL に必要なもの</h2><ul style='margin:0 0 1rem 1.2rem'><li><strong>短波ラジオ</strong>：短波（SW）の受信範囲が広く、周波数を数字で直接入力できるデジタル選局の機種が便利です。→ <a href='/ja/best-radios/'>短波ラジオ おすすめ</a></li><li><strong>アンテナ</strong>：本体のロッドアンテナでも聞けますが、窓の外に数メートルの電線を張って外部アンテナ端子につなぐと、受信状態が大きく良くなります。</li><li><strong>放送予定表</strong>：どの局が、いつ、どの周波数で放送しているかの一覧です。→ <a href='/ja/'>日本語短波放送 周波数一覧</a>・<a href='/ja/timetable/'>時間割（日本時間）</a></li><li><strong>記録用のノート</strong>：受信日時・周波数・内容を書いておくと、<a href='/ja/verification-cards/'>受信報告書</a>を書くときに役立ちます。</li></ul><h2>時刻は UTC で書かれている</h2><p>国際放送の予定表は UTC（協定世界時）で書かれるのが普通です。<strong>日本時間（JST）＝ UTC ＋ 9時間</strong>です。たとえば「12:00–13:00 UTC」は日本時間の 21:00–22:00、「22:00 UTC」は翌日の日本時間 7:00 です。このサイトの日本語ページは、UTC と日本時間を並べて表示しています。</p><h2>時間帯とバンドの目安</h2><table><tr><th>時間帯（日本時間）</th><th>聞きやすいバンド</th></tr><tr><td>日中</td><td>19m（15 MHz 台）・16m（17 MHz 台）・13m（21 MHz 台）など高い周波数</td></tr><tr><td>夕方</td><td>25m（11–12 MHz 台）・31m（9 MHz 台）</td></tr><tr><td>夜〜早朝</td><td>41m（7 MHz 台）・49m（6 MHz 台）・90m／60m（3–5 MHz 台）など低い周波数</td></tr></table><p>短波は電離層で反射して遠くまで届くため、時間帯・季節・太陽活動によって聞こえ方が変わります。冬は夜が長く、低いバンドが長時間使えます。聞こえない日があっても、時間や周波数を変えて試してみてください。</p><h2>まず聞いてみたい日本語放送</h2><p>最初は日本語の放送から始めると、内容が分かり、受信報告書も書きやすくなります。</p><div class='grid'><a href='/ja/stations/nhk-radio-japan/'>NHKワールド・ラジオ日本<span>NHK Radio Japan</span></a><a href='/ja/stations/china-radio-international/'>中国国際放送(CRI)<span>China Radio International</span></a><a href='/ja/stations/furusato-no-kaze/'>ふるさとの風<span>Furusato no Kaze</span></a><a href='/ja/stations/shiokaze/'>しおかぜ<span>Shiokaze</span></a><a href='/ja/stations/voice-of-korea/'>朝鮮の声放送<span>Voice of Korea</span></a><a href='/ja/stations/radio-nikkei-1/'>ラジオNIKKEI第1<span>Radio Nikkei 1</span></a><a href='/ja/stations/voice-of-vietnam/'>ベトナムの声放送(VOV)<span>Voice of Vietnam</span></a><a href='/ja/stations/voice-of-indonesia/'>インドネシア共和国放送(VOI)<span>Voice of Indonesia</span></a><a href='/ja/stations/kbs-world-radio/'>KBSワールドラジオ<span>KBS World Radio</span></a><a href='/ja/stations/radio-nikkei-2/'>ラジオNIKKEI第2<span>Radio Nikkei 2</span></a><a href='/ja/stations/voice-of-mongolia/'>モンゴルの声<span>Voice of Mongolia</span></a><a href='/ja/stations/hope-radio-3/'>Hope Radio 3<span>Hope Radio 3</span></a><a href='/ja/stations/radio-taiwan-international/'>台湾国際放送(RTI)<span>Radio Taiwan International</span></a><a href='/ja/stations/reach-beyond-australia/'>リーチ・ビヨンド・オーストラリア<span>Reach Beyond Australia</span></a></div><h2>慣れてきたら</h2><ul style='margin:0 0 1rem 1.2rem'><li><strong>ベリカードを集める</strong>：受信報告書を送ると、放送局から受信確認証（ベリカード）が届くことがあります。→ <a href='/ja/verification-cards/'>受信報告書の書き方</a></li><li><strong>英語や外国語の放送</strong>：言葉が分からなくても、どこの国の放送かを当てるのは BCL の大きな楽しみです。→ <a href='/' lang='en'>放送中の局を検索（英語）</a></li><li><strong>乱数放送</strong>：数字を読み上げるだけの正体不明の放送です。→ <a href='/ja/numbers-stations/'>乱数放送とは</a></li><li><strong>SSB の受信</strong>：SSB 対応のラジオなら、アマチュア無線の交信も聞けます。</li><li><strong>ネットで海外の受信機を使う</strong>：WebSDR や KiwiSDR を使うと、海外に置かれた受信機の音をブラウザで聞けます。→ <a href='/listen-online/' lang='en'>Listen Online（英語）</a></li></ul><h2>BCL とは何ですか？</h2><p>海外の短波放送などを受信して楽しむ趣味です。Broadcasting Listening（放送を聞くこと）の略で、聞く人を BCL と呼ぶこともあります。</p><h2>短波ラジオを聞くのに免許は必要ですか？</h2><p>ラジオ放送を受信するだけなら免許はいりません。ただし、放送以外の特定の相手に向けた無線通信の内容を他人に漏らしたり利用したりすることは、電波法で禁止されています。</p><h2>日本から海外の放送は聞けますか？</h2><p>聞けます。短波は電離層で反射して数千キロ先まで届くため、日本でもアジアや世界各地の放送を受信できます。日本語放送を行っている海外の局もあります。</p><h2>時刻の UTC とは何ですか？</h2><p>協定世界時のことで、国際放送の予定表はこの時刻で書かれます。日本時間は UTC に 9 時間を足した時刻です。</p><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"BCL とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"海外の短波放送などを受信して楽しむ趣味です。Broadcasting Listening（放送を聞くこと）の略で、聞く人を BCL と呼ぶこともあります。"}},{"@type":"Question","name":"短波ラジオを聞くのに免許は必要ですか？","acceptedAnswer":{"@type":"Answer","text":"ラジオ放送を受信するだけなら免許はいりません。ただし、放送以外の特定の相手に向けた無線通信の内容を他人に漏らしたり利用したりすることは、電波法で禁止されています。"}},{"@type":"Question","name":"日本から海外の放送は聞けますか？","acceptedAnswer":{"@type":"Answer","text":"聞けます。短波は電離層で反射して数千キロ先まで届くため、日本でもアジアや世界各地の放送を受信できます。日本語放送を行っている海外の局もあります。"}},{"@type":"Question","name":"時刻の UTC とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"協定世界時のことで、国際放送の予定表はこの時刻で書かれます。日本時間は UTC に 9 時間を足した時刻です。"}}]}</script><h2>日本語ガイド</h2><div class='tags'><a href='/ja/bcl/'>BCL入門</a><a href='/ja/best-radios/'>短波ラジオ おすすめ</a><a href='/ja/numbers-stations/'>乱数放送</a><a href='/ja/'>日本語短波放送 周波数一覧</a><a href='/ja/timetable/'>時間割（日本時間）</a><a href='/ja/radios/'>スペック比較</a><a href='/ja/verification-cards/'>受信報告書・ベリカード</a></div>
+</main>
+<footer><div style="max-width:960px;margin:0 auto">© 2026 ShortwaveHQ · <a href="/">hqshortwaveradio.com</a> · Live shortwave schedules, frequencies &amp; band conditions · EIBI B-26 data · Contact: <a href="mailto:Hqshortwaveradio@gmail.com">Hqshortwaveradio@gmail.com</a> · Follow: <a href="https://www.tiktok.com/@hqshortwaveradio" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/@Hqshortwaveradio" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.facebook.com/Hqshortwaveradio" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.facebook.com/groups/836185586242956" target="_blank" rel="noopener">Join the Listeners Group</a> · <a href="https://www.reddit.com/r/ShortwaveHQ/" target="_blank" rel="noopener">r/ShortwaveHQ</a> · <a href="https://x.com/hqshortwave" target="_blank" rel="noopener">X</a> · <a href="/ja/" lang="ja">日本語</a> · <a href="/es/" lang="es">Español</a> · <a href="/de/" lang="de">Deutsch</a> · <a href="/fr/" lang="fr">Français</a> · <a href="/pt/" lang="pt">Português</a> · <a href="/ko/" lang="ko">한국어</a> · <a href="/ru/" lang="ru">Русский</a> · <a href="/fa/" lang="fa" dir="rtl">فارسی</a> · <a href="/ar/" lang="ar" dir="rtl">العربية</a><br><a href="/shortwave-schedule/">Shortwave schedule</a> · <a href="/shortwave-closures/">Closures tracker</a> · <a href="/about/">About</a> · <a href="/radios/">Radio database</a> · <a href="/compare/">Compare radios</a> · <a href="/glossary/">Glossary</a> · <a href="/tools/">Tools</a> · <a href="/my-schedule/">My Schedule</a> · <a href="/print/">Printable schedules</a> · <a href="/next-season/">Next season</a> · <a href="/feed.xml">RSS</a><br>Independent hobbyist project — schedules provided as-is; verify against official station sources. As an Amazon Associate, ShortwaveHQ earns from qualifying purchases at no extra cost to you.</div></footer>
+</body>
+</html>

@@ -26,6 +26,9 @@ Run by Michael Smith (KM7FMJ), based in Arizona, USA. All content is based on pe
 - [Russian hub](https://hqshortwaveradio.com/ru/): Russian-language shortwave broadcasts with UTC and Moscow times
 - [Japanese hub](https://hqshortwaveradio.com/ja/): Japanese-language shortwave frequency list with JST times, foreign Japanese-language broadcasts, Radio NIKKEI official frequencies
 - [Japanese radio comparison](https://hqshortwaveradio.com/ja/radios/): shortwave radio specs in Japanese (SSB, synchronous AM, coverage)
+- [BCL beginner guide (Japanese)](https://hqshortwaveradio.com/ja/bcl/): how to start shortwave listening (BCL入門), UTC to JST, bands by time of day
+- [Best shortwave radios (Japanese)](https://hqshortwaveradio.com/ja/best-radios/): shortwave radio picks by use, with Japan FM band (76–95 MHz) compatibility
+- [Numbers stations (Japanese)](https://hqshortwaveradio.com/ja/numbers-stations/): numbers stations (乱数放送), North Korea's V15 history, current frequencies in UTC and JST
 - [Reception reports and QSL cards (Japanese)](https://hqshortwaveradio.com/ja/verification-cards/): how to write a reception report (受信報告書) with SINPO and an example
 - [About](https://hqshortwaveradio.com/about/): who runs ShortwaveHQ (Michael Smith, KM7FMJ), data sources, review and corrections policy
 - [RSS feed](https://hqshortwaveradio.com/feed.xml): articles and daily schedule changes

@@ -19,6 +19,10 @@ var GEAR_PICKS = [
   ["zhiwhis-zws-a330", "Our tested pick: shortwave, SSB, VHF/UHF and recording"]
 ];
 
+// Amazon.co.jp Associates tracking ID (ends in -22). Empty = plain
+// amazon.co.jp search links with no tag and no JP disclosure line.
+var JP_TAG = "";
+
 var SITE = "https://hqshortwaveradio.com";
 
 // ── Live on-air status helpers (computed once per build) ──────────────
@@ -2266,7 +2270,7 @@ var JA_BUILT = false;
   });
   console.log("Japanese station pages: " + jaStNames.length);
 
-  body += "<h2>\u6642\u9593\u5272\u30fb\u30ec\u30d3\u30e5\u30fc</h2><div class='tags'><a href='/ja/timetable/'>\u65e5\u672c\u8a9e\u77ed\u6ce2\u653e\u9001 \u6642\u9593\u5272\uff08\u65e5\u672c\u6642\u9593\uff09</a><a href='/ja/reviews/'>\u77ed\u6ce2\u30e9\u30b8\u30aa \u30ec\u30d3\u30e5\u30fc</a><a href='/ja/radios/'>短波ラジオ スペック比較</a><a href='/ja/verification-cards/'>受信報告書の書き方・ベリカード</a><a href='/ja/#kaigai'>海外からの日本語放送 一覧</a></div>";
+  body += "<h2>\u6642\u9593\u5272\u30fb\u30ec\u30d3\u30e5\u30fc</h2><div class='tags'><a href='/ja/timetable/'>\u65e5\u672c\u8a9e\u77ed\u6ce2\u653e\u9001 \u6642\u9593\u5272\uff08\u65e5\u672c\u6642\u9593\uff09</a><a href='/ja/reviews/'>\u77ed\u6ce2\u30e9\u30b8\u30aa \u30ec\u30d3\u30e5\u30fc</a><a href='/ja/radios/'>短波ラジオ スペック比較</a><a href='/ja/verification-cards/'>受信報告書の書き方・ベリカード</a><a href='/ja/bcl/'>BCL入門</a><a href='/ja/best-radios/'>短波ラジオ おすすめ</a><a href='/ja/numbers-stations/'>乱数放送</a><a href='/ja/#kaigai'>海外からの日本語放送 一覧</a></div>";
   // ── /ja/verification-cards/ 受信報告書とベリカード ──
   (function () {
     var sinpo = [["S", "信号の強さ（Signal）", "5＝非常に強い ／ 1＝ほとんど聞き取れない"], ["I", "混信（Interference）", "5＝混信なし ／ 1＝非常に強い混信"], ["N", "雑音（Noise）", "5＝雑音なし ／ 1＝非常に強い雑音"], ["P", "フェージング（Propagation）", "5＝フェージングなし ／ 1＝非常に激しい"], ["O", "総合評価（Overall）", "5＝非常に良い ／ 1＝聞き取れない"]];
@@ -2313,7 +2317,7 @@ var JA_BUILT = false;
     var TYPE = { Pocket: "ポケット・携帯型", Portable: "据え置き・ポータブル型", Emergency: "防災ラジオ", SDR: "SDR（ソフトウェア無線）" };
     var TSHORT = { Pocket: "携帯", Portable: "据置", Emergency: "防災", SDR: "SDR" };
     function yn(v) { return v === true ? "あり" : v === "software" ? "あり（ソフトウェア）" : v === false ? "なし" : "記載なし"; }
-    function sw(r) { return esc(String(r.sw || "記載なし").split(" (")[0]); }
+    function sw(r) { var t = String(r.sw || "記載なし"); var m = t.match(/^Covered \((.*)\)$/); return esc(m ? "対応（" + m[1].replace("HF via built-in upconverter", "短波はアップコンバーター内蔵").replace("HF to", "短波〜") + "）" : t.split(" (")[0]); }
     var rb = "<p class='lede'>短波ラジオと SDR " + RS.length + " 機種のスペックを日本語で比較できる一覧です。短波の受信範囲、SSB（アマチュア無線などの受信）、同期検波（フェージング対策）、電源、重さをまとめています。数値はメーカー・販売店の仕様表にもとづき、記載のない項目は推測せず「記載なし」としています。</p>"
       + "<h2>スペック比較表</h2><div style='overflow-x:auto'><table><tr><th>機種</th><th>タイプ</th><th>短波</th><th>SSB</th><th>同期検波</th><th>重さ</th></tr>"
       + RS.map(function (r) { return "<tr><td><a href='/radios/" + r.slug + "/' lang='en'>" + esc(r.name) + "</a></td><td>" + esc(TSHORT[r.type] || r.type) + "</td><td>" + sw(r) + "</td><td>" + yn(r.ssb) + "</td><td>" + yn(r.sync) + "</td><td>" + esc(r.weight || "記載なし") + "</td></tr>"; }).join("")
@@ -2344,6 +2348,157 @@ var JA_BUILT = false;
       breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["短波ラジオ スペック比較", "/ja/radios/"]]
     }));
     urls.push("/ja/radios/");
+  })();
+
+  // ── Shared bits for the BCL / おすすめ / 乱数放送 pages ──
+  var JA_RD = {}; try { JSON.parse(fs.readFileSync(path.join(__dirname, "data", "radios.json"), "utf8")).radios.forEach(function (r) { JA_RD[r.slug] = r; }); } catch (e) {}
+  function jpAmz(name) { return "https://www.amazon.co.jp/s?k=" + encodeURIComponent(name) + (JP_TAG ? "&tag=" + encodeURIComponent(JP_TAG) : ""); }
+  var JP_DISC = JP_TAG ? "<p style='font-size:.78rem;color:#6b5f52'>Amazonのアソシエイトとして、ShortwaveHQは適格販売により収入を得ています。</p>" : "";
+  function jaFmOk(r) { var t = String(r.fm || ""); if (/(^|[^\d.])76\s*[–-]/.test(t)) return true; var m = t.match(/(\d+(?:\.\d+)?)\s*[–-]/); return m ? parseFloat(m[1]) <= 76 : null; }
+  var JA_MORE = "<h2>日本語ガイド</h2><div class='tags'><a href='/ja/bcl/'>BCL入門</a><a href='/ja/best-radios/'>短波ラジオ おすすめ</a><a href='/ja/numbers-stations/'>乱数放送</a><a href='/ja/'>日本語短波放送 周波数一覧</a><a href='/ja/timetable/'>時間割（日本時間）</a><a href='/ja/radios/'>スペック比較</a><a href='/ja/verification-cards/'>受信報告書・ベリカード</a></div>";
+
+  // ── /ja/bcl/ BCL入門 ──
+  (function () {
+    var b = "<p class='lede'>BCL（Broadcasting Listening / Broadcast Listener）は、海外の短波放送などを受信して楽しむ趣味です。1970年代の日本では「BCLブーム」が起こり、ソニーの「スカイセンサー」やナショナルの「クーガ」といったラジオが人気を集めました。現在も短波ラジオ1台あれば、日本にいながら世界の放送を聞くことができます。このページでは、これから BCL を始める人に必要なことをまとめています。</p>"
+      + "<h2>BCL に必要なもの</h2><ul style='margin:0 0 1rem 1.2rem'>"
+      + "<li><strong>短波ラジオ</strong>：短波（SW）の受信範囲が広く、周波数を数字で直接入力できるデジタル選局の機種が便利です。→ <a href='/ja/best-radios/'>短波ラジオ おすすめ</a></li>"
+      + "<li><strong>アンテナ</strong>：本体のロッドアンテナでも聞けますが、窓の外に数メートルの電線を張って外部アンテナ端子につなぐと、受信状態が大きく良くなります。</li>"
+      + "<li><strong>放送予定表</strong>：どの局が、いつ、どの周波数で放送しているかの一覧です。→ <a href='/ja/'>日本語短波放送 周波数一覧</a>・<a href='/ja/timetable/'>時間割（日本時間）</a></li>"
+      + "<li><strong>記録用のノート</strong>：受信日時・周波数・内容を書いておくと、<a href='/ja/verification-cards/'>受信報告書</a>を書くときに役立ちます。</li></ul>"
+      + "<h2>時刻は UTC で書かれている</h2><p>国際放送の予定表は UTC（協定世界時）で書かれるのが普通です。<strong>日本時間（JST）＝ UTC ＋ 9時間</strong>です。たとえば「12:00–13:00 UTC」は日本時間の 21:00–22:00、「22:00 UTC」は翌日の日本時間 7:00 です。このサイトの日本語ページは、UTC と日本時間を並べて表示しています。</p>"
+      + "<h2>時間帯とバンドの目安</h2><table><tr><th>時間帯（日本時間）</th><th>聞きやすいバンド</th></tr>"
+      + "<tr><td>日中</td><td>19m（15 MHz 台）・16m（17 MHz 台）・13m（21 MHz 台）など高い周波数</td></tr>"
+      + "<tr><td>夕方</td><td>25m（11–12 MHz 台）・31m（9 MHz 台）</td></tr>"
+      + "<tr><td>夜〜早朝</td><td>41m（7 MHz 台）・49m（6 MHz 台）・90m／60m（3–5 MHz 台）など低い周波数</td></tr></table>"
+      + "<p>短波は電離層で反射して遠くまで届くため、時間帯・季節・太陽活動によって聞こえ方が変わります。冬は夜が長く、低いバンドが長時間使えます。聞こえない日があっても、時間や周波数を変えて試してみてください。</p>"
+      + "<h2>まず聞いてみたい日本語放送</h2><p>最初は日本語の放送から始めると、内容が分かり、受信報告書も書きやすくなります。</p><div class='grid'>" + jaStNames.map(function (x) { return "<a href='/ja/stations/" + stationSlug[x] + "/'>" + esc(jaNPlain(x)) + "<span>" + esc(x) + "</span></a>"; }).join("") + "</div>"
+      + "<h2>慣れてきたら</h2><ul style='margin:0 0 1rem 1.2rem'>"
+      + "<li><strong>ベリカードを集める</strong>：受信報告書を送ると、放送局から受信確認証（ベリカード）が届くことがあります。→ <a href='/ja/verification-cards/'>受信報告書の書き方</a></li>"
+      + "<li><strong>英語や外国語の放送</strong>：言葉が分からなくても、どこの国の放送かを当てるのは BCL の大きな楽しみです。→ <a href='/' lang='en'>放送中の局を検索（英語）</a></li>"
+      + "<li><strong>乱数放送</strong>：数字を読み上げるだけの正体不明の放送です。→ <a href='/ja/numbers-stations/'>乱数放送とは</a></li>"
+      + "<li><strong>SSB の受信</strong>：SSB 対応のラジオなら、アマチュア無線の交信も聞けます。</li>"
+      + "<li><strong>ネットで海外の受信機を使う</strong>：WebSDR や KiwiSDR を使うと、海外に置かれた受信機の音をブラウザで聞けます。→ <a href='/listen-online/' lang='en'>Listen Online（英語）</a></li></ul>";
+    var f = [
+      ["BCL とは何ですか？", "海外の短波放送などを受信して楽しむ趣味です。Broadcasting Listening（放送を聞くこと）の略で、聞く人を BCL と呼ぶこともあります。"],
+      ["短波ラジオを聞くのに免許は必要ですか？", "ラジオ放送を受信するだけなら免許はいりません。ただし、放送以外の特定の相手に向けた無線通信の内容を他人に漏らしたり利用したりすることは、電波法で禁止されています。"],
+      ["日本から海外の放送は聞けますか？", "聞けます。短波は電離層で反射して数千キロ先まで届くため、日本でもアジアや世界各地の放送を受信できます。日本語放送を行っている海外の局もあります。"],
+      ["時刻の UTC とは何ですか？", "協定世界時のことで、国際放送の予定表はこの時刻で書かれます。日本時間は UTC に 9 時間を足した時刻です。"]
+    ];
+    b += seoFaqHtml(f) + seoFaqLd(f) + JA_MORE;
+    write("ja/bcl/index.html", shell({
+      lang: "ja",
+      title: "BCL入門（" + yr + "年）短波放送の聞き方・始め方 | ShortwaveHQ",
+      desc: "BCL（短波放送の受信）の始め方。必要なラジオとアンテナ、UTC と日本時間の換算、時間帯ごとのバンド、まず聞きたい日本語放送、ベリカードまでを解説します。",
+      canonical: "/ja/bcl/", kicker: "日本語 · BCL ガイド",
+      h1: "<span style=\"color:#c0392b\">BCL</span>入門：短波放送の聞き方",
+      bodyHtml: b,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["BCL入門", "/ja/bcl/"]]
+    }));
+    urls.push("/ja/bcl/");
+  })();
+
+  // ── /ja/best-radios/ 短波ラジオ おすすめ ──
+  (function () {
+    var PICKS = [
+      ["tecsun-pl-330", "初心者・持ち歩きに", "手のひらサイズで短波の全域を受信でき、SSB と同期検波にも対応します。迷ったらまずこの 1 台です。"],
+      ["tecsun-pl-990x", "据え置きで本格的に", "SSB・同期検波を備えた据え置き型の本格派です。自宅でじっくり聞きたい人に向いています。"],
+      ["xhdata-d-808", "SSB と航空無線も聞きたい人に", "SSB に加えて航空無線のバンドも受信できます。いろいろな電波を聞いてみたい人に向いています。"],
+      ["xhdata-d-219", "とにかく手軽に", "単3電池で動く小型機です。SSB はありませんが、短波放送を気軽に聞くには十分です。", "/reviews/xhdata-d-219/"],
+      ["zhiwhis-zws-a330", "ShortwaveHQ でテスト済み", "短波・SSB に加えて VHF/UHF も受信でき、録音もできます。", "/ja/reviews/zhiwhis-zws-a330/"],
+      ["rtl-sdr-blog-v4", "パソコンで聞く SDR", "パソコンにつなぐ受信機です。広い範囲の電波を画面で見ながら探せます。"]
+    ].filter(function (p) { return JA_RD[p[0]]; });
+    if (PICKS.length < 4) return;
+    function yn(v) { return v === true ? "あり" : v === "software" ? "あり（ソフト）" : v === false ? "なし" : "記載なし"; }
+    function fmJa(r) { var ok = jaFmOk(r); return ok === true ? "○（日本の FM 可）" : ok === false ? "×（" + esc(String(r.fm).split(" (")[0]) + "）" : "記載なし"; }
+    var b = "<p class='lede'>BCL（短波放送の受信）を始めたい人向けに、おすすめの短波ラジオを目的別に選びました。スペックはメーカー・販売店の仕様表にもとづいています。日本で使うときに見落としがちな <strong>FM の受信範囲</strong>も確認しています。</p>"
+      + "<h2>目的別のおすすめ</h2>"
+      + PICKS.map(function (p) {
+        var r = JA_RD[p[0]];
+        return "<div style='margin:0 0 .9rem;background:#181c22;border:1px solid #3a4252;border-radius:6px;padding:.9rem 1rem'><div class='kick' style='margin:0 0 .2rem'>" + esc(p[1]) + "</div><h3 style='font-family:Syne,sans-serif;font-size:1.05rem;margin:0 0 .4rem'><a href='/radios/" + r.slug + "/' lang='en'>" + esc(r.name) + "</a></h3>"
+          + "<p style='margin:0 0 .4rem'>" + p[2] + "</p>"
+          + "<p style='margin:0 0 .5rem;font-size:.85rem'>短波：" + (/^Covered/.test(String(r.sw)) ? "対応（パソコンで受信）" : esc(String(r.sw || "記載なし").split(" (")[0])) + "　SSB：" + yn(r.ssb) + "　同期検波：" + yn(r.sync) + (r.type === "SDR" ? "" : "　FM：" + fmJa(r)) + "</p>"
+          + "<p style='margin:0'><a class='cta' href='" + jpAmz(r.name) + "' target='_blank' rel='nofollow sponsored noopener'>Amazon.co.jp で探す</a>" + (p[3] ? " <a class='cta o' href='" + p[3] + "'>レビューを読む</a>" : "") + "</p></div>";
+      }).join("");
+    var noFm = Object.keys(JA_RD).map(function (k) { return JA_RD[k]; }).filter(function (r) { return r.type !== "SDR" && jaFmOk(r) === false; });
+    b += "<h2>日本で選ぶときの注意：FM の受信範囲</h2><p>日本の FM 放送は <strong>76–95 MHz</strong>（ワイド FM を含む）を使っています。海外向けのラジオには FM が 87.5 MHz や 88 MHz からしか受信できない機種があり、その場合は日本の FM 局のほとんどが聞けません。購入前に仕様表の FM 範囲を確認してください。</p>"
+      + (noFm.length ? "<p>当サイトのデータベースで FM が 76 MHz より上から始まる機種：" + noFm.map(function (r) { return "<a href='/radios/" + r.slug + "/' lang='en'>" + esc(r.name) + "</a>（" + esc(String(r.fm).split(" (")[0]) + "）"; }).join("、") + "。短波を聞く目的なら問題ありませんが、FM も日本で使いたい場合は注意してください。</p>" : "")
+      + "<h2>選び方のポイント</h2><ul style='margin:0 0 1rem 1.2rem'>"
+      + "<li><strong>デジタル選局</strong>：周波数を数字で入力できると、予定表を見ながらすぐに合わせられます。</li>"
+      + "<li><strong>SSB</strong>：アマチュア無線や船舶・航空の音声通信を聞くのに必要です。</li>"
+      + "<li><strong>同期検波</strong>：遠くの放送で起きる音のゆがみ（フェージング）を減らします。</li>"
+      + "<li><strong>外部アンテナ端子</strong>：電線をつなげると受信状態が大きく良くなります。</li>"
+      + "<li><strong>AM（中波）の 9 kHz ステップ</strong>：日本の AM 局は 9 kHz 間隔です。海外向けの機種は 10 kHz 間隔の設定になっていることがあるので、設定で切り替えられるか確認してください。</li></ul>"
+      + "<p>ソニーの <a href='/radios/sony-icf-sw7600gr/' lang='en'>ICF-SW7600GR</a> は日本の BCL に長く愛された機種ですが、2018年に生産を終了しています。中古で探す場合は、動作確認済みのものを選びましょう。</p>"
+      + "<p>全 " + Object.keys(JA_RD).length + " 機種のスペックは<a href='/ja/radios/'>短波ラジオ スペック比較</a>で一覧できます。</p>"
+      + JP_DISC;
+    var f = [
+      ["初心者におすすめの短波ラジオは？", "短波の全域を受信でき、SSB と同期検波を備えた " + JA_RD[PICKS[0][0]].name + " のような小型機が扱いやすくおすすめです。"],
+      ["海外製のラジオは日本の FM が聞けますか？", "機種によります。FM が 87.5 MHz や 88 MHz からの機種では、76–95 MHz を使う日本の FM 局のほとんどが聞けません。仕様表の FM 範囲を確認してください。"],
+      ["SSB は必要ですか？", "短波放送を聞くだけなら必須ではありません。アマチュア無線や航空・船舶の通信も聞きたい場合は SSB 対応の機種を選んでください。"]
+    ];
+    b += seoFaqHtml(f) + seoFaqLd(f) + JA_MORE;
+    write("ja/best-radios/index.html", shell({
+      lang: "ja",
+      title: "短波ラジオ おすすめ（" + yr + "年）BCL初心者向け・目的別 | ShortwaveHQ",
+      desc: "BCL 初心者におすすめの短波ラジオを目的別に紹介。SSB・同期検波の有無と、日本で見落としがちな FM 受信範囲（76–95 MHz）もチェックしています。",
+      canonical: "/ja/best-radios/", kicker: "日本語 · 短波ラジオ",
+      h1: "短波ラジオ <span style=\"color:#c0392b\">おすすめ</span>",
+      bodyHtml: b,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["短波ラジオ おすすめ", "/ja/best-radios/"]]
+    }));
+    urls.push("/ja/best-radios/");
+  })();
+
+  // ── /ja/numbers-stations/ 乱数放送 ──
+  (function () {
+    var rows = SCH.filter(function (r) { return r && r.type === "Numbers" && r.stn && r.freq && !isPlaceholder(r.stn); });
+    if (rows.length < 5) return;
+    var LANGJ = { English: "英語", Russian: "ロシア語", Spanish: "スペイン語", Various: "信号", "Morse/CW": "モールス" };
+    function nmJa(n) {
+      var m = n.match(/^([A-Z]\d+[a-z]?) (Russian|Polish) Spy Numbers$/);
+      if (m) return m[1] + "（" + (m[2] === "Russian" ? "ロシア系" : "ポーランド系") + "）";
+      if (/Channel Marker/.test(n)) return n + "（チャンネルマーカー）";
+      return n;
+    }
+    var by = {};
+    rows.forEach(function (r) { (by[r.stn] = by[r.stn] || []).push(r); });
+    var names = Object.keys(by).sort(function (a, b) { return by[b].length - by[a].length || (a < b ? -1 : 1); });
+    var tbl = "<div style='overflow-x:auto'><table><tr><th>局（通称）</th><th>周波数</th><th>UTC</th><th>日本時間</th><th>言語</th></tr>"
+      + names.map(function (n) {
+        var rs = by[n].slice().sort(function (a, b) { return a.s - b.s || kHz(a.freq) - kHz(b.freq); }).slice(0, 4);
+        return rs.map(function (r, i) {
+          return "<tr><td>" + (i === 0 ? "<strong>" + esc(nmJa(n)) + "</strong>" + (by[n].length > 4 ? "<br><span style='font-size:.75rem'>ほか " + (by[n].length - 4) + " 件</span>" : "") : "") + "</td><td>" + kHz(r.freq) + " kHz</td><td>" + utcWin(r) + "</td><td>" + jstWin(r) + "</td><td>" + esc(LANGJ[r.lang] || r.lang || "—") + "</td></tr>";
+        }).join("");
+      }).join("") + "</table></div>";
+    var b = "<p class='lede'>乱数放送（ナンバーズ・ステーション）は、数字や文字の列を読み上げるだけの、送り主が名乗らない短波放送です。各国の情報機関が、海外にいる工作員へ暗号の指令を送るために使っていると考えられています。暗号は使い捨ての乱数表で作られているとされ、受信しても内容を解読することはできません。</p>"
+      + "<h2>北朝鮮の乱数放送</h2><p>日本で乱数放送といえば、北朝鮮の平壌放送が流していた放送がよく知られています。北朝鮮は数十年にわたってこの種の放送を続けていましたが、2000年の南北首脳会談のころに中止しました。</p>"
+      + "<p>2016年6月、平壌放送で約16年ぶりに乱数放送が再開され、大きく報道されました。女性のアナウンサーが、番号で呼ばれる「探査隊員」に向けた「復習課題」として、ページ番号と問題番号の組み合わせを読み上げる形式で、短波では 3320 kHz、6400 kHz などが使われました。毎週の放送は2019年6月まで続き、その後は不定期になり、<strong>2020年3月を最後に確認されていません</strong>。</p>"
+      + "<p>韓国側にも同じような放送（通称 V24）があり、2015年6月にいったん止まったあと、2016年2月に再開したことが確認されています。</p>"
+      + "<h2>今も聞ける乱数放送（" + esc(SEASON.label) + "）</h2><p>EIBI の放送予定表に載っている乱数放送・謎の局です。乱数放送は予定を公表しないため、これは世界の愛好家の受信記録にもとづく情報で、時間や周波数は予告なく変わります。送信所はロシアやポーランドとされており、日本で受信できるかは時間帯や電波の状態によります。</p>"
+      + tbl
+      + "<p>英語版の<a href='/numbers-stations-list/' lang='en'>周波数一覧（全件）</a>と<a href='/numbers-stations-explained/' lang='en'>乱数放送の解説</a>もあります。</p>"
+      + "<h2>受信のコツ</h2><ul style='margin:0 0 1rem 1.2rem'>"
+      + "<li>放送時間が短く、10 分ほどで終わるものが多いので、開始時刻の少し前から周波数を合わせて待ちます。</li>"
+      + "<li>AM では聞こえず、SSB（USB）で送られるものもあります。<a href='/ja/best-radios/'>SSB 対応のラジオ</a>があると受信できる局が増えます。</li>"
+      + "<li>日本で受信しにくい場合は、ヨーロッパやロシアに近い場所の受信機をネットで使う方法もあります。→ <a href='/listen-online/' lang='en'>Listen Online（英語）</a></li></ul>"
+      + "<p style='font-size:.78rem;color:#6b5f52'>出典：<a href='https://priyom.org/number-stations/other/v15' target='_blank' rel='noopener'>Priyom（V15）</a>、<a href='https://38north.org/2016/08/mwilliams08092016' target='_blank' rel='noopener'>38 North（2016年8月）</a>、EIBI。</p>";
+    var f = [
+      ["乱数放送とは何ですか？", "数字や文字の列を読み上げるだけの、送り主が名乗らない短波放送です。各国の情報機関が工作員に暗号の指令を送るために使っていると考えられています。"],
+      ["北朝鮮の乱数放送は今も聞けますか？", "平壌放送の乱数放送は2016年6月に再開されましたが、2020年3月を最後に確認されていません。"],
+      ["乱数放送は解読できますか？", "使い捨ての乱数表で暗号化されているとされ、受信しても内容を解読することはできません。"],
+      ["乱数放送を聞くのは違法ですか？", "ラジオで受信するだけなら免許はいりません。ただし、放送以外の特定の相手に向けた無線通信の内容を他人に漏らしたり利用したりすることは、電波法で禁止されています。"]
+    ];
+    b += seoFaqHtml(f) + seoFaqLd(f) + JA_MORE;
+    write("ja/numbers-stations/index.html", shell({
+      lang: "ja",
+      title: "乱数放送とは？北朝鮮の乱数放送と今聞ける周波数（" + yr + "年） | ShortwaveHQ",
+      desc: "乱数放送（ナンバーズ・ステーション）とは何か。北朝鮮・平壌放送の乱数放送の歴史と、今も聞ける乱数放送の周波数と時間（UTC・日本時間）を一覧で紹介します。",
+      canonical: "/ja/numbers-stations/", kicker: "日本語 · 短波のなぞ",
+      h1: "<span style=\"color:#c0392b\">乱数放送</span>とは",
+      bodyHtml: b,
+      breadcrumbs: [["ホーム", "/"], ["短波放送 周波数一覧", "/ja/"], ["乱数放送", "/ja/numbers-stations/"]]
+    }));
+    urls.push("/ja/numbers-stations/");
   })();
   var JA_PRINT = "<p class=\"noprint\" style=\"margin:.4rem 0 1rem\"><button type=\"button\" onclick=\"window.print()\" class=\"cta o\" style=\"cursor:pointer;font:inherit;font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-weight:600\">\uD83D\uDDA8 印刷・PDFで保存</button> <span style=\"font-size:.8rem\">一覧を印刷したり、PDFとして保存したりできます（印刷画面で「PDFに保存」を選択）。</span></p><style>@media print{.mast,.crumbs,.noprint,footer,.cta{display:none!important}body{background:#fff!important;color:#000!important}table,th,td{color:#000!important;background:#fff!important;border-color:#999!important}a{color:#000!important;text-decoration:none}}</style>";
   write("ja/index.html", shell({
