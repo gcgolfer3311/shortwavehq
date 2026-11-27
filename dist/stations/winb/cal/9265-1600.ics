@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WINB 9265 kHz 16:00 UTC
+BEGIN:VEVENT
+UID:winb-9265-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (Spanish)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, Spanish\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:WINB on 9265 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

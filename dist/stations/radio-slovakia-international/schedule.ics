@@ -131,6 +131,20 @@ DESCRIPTION:Radio Slovakia International on 6140 kHz\, French\, beamed to E
 URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
 END:VEVENT
 BEGIN:VEVENT
+UID:radio-slovakia-international-7780-0300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T030000Z
+DTEND:20261025T033000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Slovakia International on 7780 kHz (Spanish)
+LOCATION:7780 kHz shortwave
+DESCRIPTION:Radio Slovakia International on 7780 kHz\, Spanish\, beamed to 
+ W. North America. Schedule from EIBI B-26 (valid until the A-27 season cha
+ nge). Times can change\; check https://hqshortwaveradio.com/stations/radio
+ -slovakia-international/
+URL:https://hqshortwaveradio.com/stations/radio-slovakia-international/
+END:VEVENT
+BEGIN:VEVENT
 UID:radio-slovakia-international-9395-1130@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T113000Z

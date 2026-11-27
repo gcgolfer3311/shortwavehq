@@ -1,0 +1,72 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WINB shortwave (B-26)
+BEGIN:VEVENT
+UID:winb-9265-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (English)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, English\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+END:VEVENT
+BEGIN:VEVENT
+UID:winb-9265-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (Spanish)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, Spanish\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+END:VEVENT
+BEGIN:VEVENT
+UID:winb-9265-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261026T050000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (English)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, English\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+END:VEVENT
+BEGIN:VEVENT
+UID:winb-9265-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (Spanish)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, Spanish\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+END:VEVENT
+BEGIN:VEVENT
+UID:winb-9265-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T223000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WINB on 9265 kHz (Spanish)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:WINB on 9265 kHz\, Spanish\, beamed to North America. Schedule 
+ from EIBI B-26 (valid until the A-27 season change). Times can change\; ch
+ eck https://hqshortwaveradio.com/stations/winb/
+URL:https://hqshortwaveradio.com/stations/winb/
+END:VEVENT
+END:VCALENDAR

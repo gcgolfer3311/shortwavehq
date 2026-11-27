@@ -131,6 +131,20 @@ DESCRIPTION:WRMI Radio Miami International on 5950 kHz\, English\, beamed t
 URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
 END:VEVENT
 BEGIN:VEVENT
+UID:wrmi-radio-miami-international-7780-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T110000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WRMI Radio Miami International on 7780 kHz (English)
+LOCATION:7780 kHz shortwave
+DESCRIPTION:WRMI Radio Miami International on 7780 kHz\, English\, beamed t
+ o W. North America. Schedule from EIBI B-26 (valid until the A-27 season c
+ hange). Times can change\; check https://hqshortwaveradio.com/stations/wrm
+ i-radio-miami-international/
+URL:https://hqshortwaveradio.com/stations/wrmi-radio-miami-international/
+END:VEVENT
+BEGIN:VEVENT
 UID:wrmi-radio-miami-international-9395-1100@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T110000Z

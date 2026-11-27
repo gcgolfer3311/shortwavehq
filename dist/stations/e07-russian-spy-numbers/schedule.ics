@@ -5,6 +5,20 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:E07 Russian Spy Numbers shortwave (B-26)
 BEGIN:VEVENT
+UID:e07-russian-spy-numbers-9265-1100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T110000Z
+DTEND:20261025T111000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:E07 Russian Spy Numbers on 9265 kHz (English)
+LOCATION:9265 kHz shortwave
+DESCRIPTION:E07 Russian Spy Numbers on 9265 kHz\, English\, beamed to Russi
+ a. Schedule from EIBI B-26 (valid until the A-27 season change). Times can
+  change\; check https://hqshortwaveradio.com/stations/e07-russian-spy-numb
+ ers/
+URL:https://hqshortwaveradio.com/stations/e07-russian-spy-numbers/
+END:VEVENT
+BEGIN:VEVENT
 UID:e07-russian-spy-numbers-9331-1120@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T112000Z

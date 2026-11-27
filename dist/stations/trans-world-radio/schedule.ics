@@ -512,6 +512,45 @@ DESCRIPTION:Trans World Radio on 12120 kHz\, English\, beamed to Far East.
 URL:https://hqshortwaveradio.com/stations/trans-world-radio/
 END:VEVENT
 BEGIN:VEVENT
+UID:trans-world-radio-12160-0900@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T090000Z
+DTEND:20261025T093000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Trans World Radio on 12160 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-12160-0930@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T093000Z
+DTEND:20261025T094500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Trans World Radio on 12160 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
+UID:trans-world-radio-12160-0945@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T094500Z
+DTEND:20261025T100000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Trans World Radio on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Trans World Radio on 12160 kHz\, Mandarin\, beamed to Far East.
+  Schedule from EIBI B-26 (valid until the A-27 season change). Times can c
+ hange\; check https://hqshortwaveradio.com/stations/trans-world-radio/
+URL:https://hqshortwaveradio.com/stations/trans-world-radio/
+END:VEVENT
+BEGIN:VEVENT
 UID:trans-world-radio-13580-1557@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T155700Z

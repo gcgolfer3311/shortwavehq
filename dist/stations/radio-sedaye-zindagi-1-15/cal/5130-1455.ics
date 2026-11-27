@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ShortwaveHQ//Shortwave Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Radio Sedaye Zindagi (1-15) 5130 kHz 14:55 UTC
+BEGIN:VEVENT
+UID:radio-sedaye-zindagi-1-15-5130-1455@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T145500Z
+DTEND:20261025T175500Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Radio Sedaye Zindagi (1-15) on 5130 kHz (AFG)
+LOCATION:5130 kHz shortwave
+DESCRIPTION:Radio Sedaye Zindagi (1-15) on 5130 kHz\, AFG\, beamed to Afgha
+ nistan. Schedule from EIBI B-26 (valid until the A-27 season change). Time
+ s can change\; check https://hqshortwaveradio.com/stations/radio-sedaye-zi
+ ndagi-1-15/
+URL:https://hqshortwaveradio.com/stations/radio-sedaye-zindagi-1-15/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Radio Sedaye Zindagi (1-15) on 5130 kHz in 10 minutes
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

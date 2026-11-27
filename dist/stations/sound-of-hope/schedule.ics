@@ -1799,6 +1799,188 @@ DESCRIPTION:Sound of Hope on 7460 kHz\, Mandarin\, beamed to Far East. Sche
 URL:https://hqshortwaveradio.com/stations/sound-of-hope/
 END:VEVENT
 BEGIN:VEVENT
+UID:sound-of-hope-7730-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Cantonese)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Cantonese\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1600@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T160000Z
+DTEND:20261025T170000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-1700@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T170000Z
+DTEND:20261025T200000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-2000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T210000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-7730-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 7730 kHz (Mandarin)
+LOCATION:7730 kHz shortwave
+DESCRIPTION:Sound of Hope on 7730 kHz\, Mandarin\, beamed to Far East. Sche
+ dule from EIBI B-26 (valid until the A-27 season change). Times can change
+ \; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
 UID:sound-of-hope-9300-0000@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T000000Z
@@ -4446,6 +4628,149 @@ RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
 SUMMARY:Sound of Hope on 11990 kHz (Mandarin)
 LOCATION:11990 kHz shortwave
 DESCRIPTION:Sound of Hope on 11990 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-0100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T010000Z
+DTEND:20261025T020000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T120000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-1200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T120000Z
+DTEND:20261025T130000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-1300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T130000Z
+DTEND:20261025T140000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-1400@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T150000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-1500@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T150000Z
+DTEND:20261025T160000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-2100@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T210000Z
+DTEND:20261025T213000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-2130@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T213000Z
+DTEND:20261025T220000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-2200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T220000Z
+DTEND:20261025T230000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
+ edule from EIBI B-26 (valid until the A-27 season change). Times can chang
+ e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
+URL:https://hqshortwaveradio.com/stations/sound-of-hope/
+END:VEVENT
+BEGIN:VEVENT
+UID:sound-of-hope-12160-2300@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T230000Z
+DTEND:20261026T000000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:Sound of Hope on 12160 kHz (Mandarin)
+LOCATION:12160 kHz shortwave
+DESCRIPTION:Sound of Hope on 12160 kHz\, Mandarin\, beamed to Far East. Sch
  edule from EIBI B-26 (valid until the A-27 season change). Times can chang
  e\; check https://hqshortwaveradio.com/stations/sound-of-hope/
 URL:https://hqshortwaveradio.com/stations/sound-of-hope/

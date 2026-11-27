@@ -18,6 +18,32 @@ DESCRIPTION:WBCQ The Planet on 3265 kHz\, English\, beamed to North America
 URL:https://hqshortwaveradio.com/stations/wbcq-the-planet/
 END:VEVENT
 BEGIN:VEVENT
+UID:wbcq-the-planet-5130-0000@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WBCQ The Planet on 5130 kHz (English)
+LOCATION:5130 kHz shortwave
+DESCRIPTION:WBCQ The Planet on 5130 kHz\, English\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/wbcq-the-planet/
+URL:https://hqshortwaveradio.com/stations/wbcq-the-planet/
+END:VEVENT
+BEGIN:VEVENT
+UID:wbcq-the-planet-5130-0200@hqshortwaveradio.com
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T020000Z
+DTEND:20261025T030000Z
+RRULE:FREQ=DAILY;UNTIL=20270327T235959Z
+SUMMARY:WBCQ The Planet on 5130 kHz (English)
+LOCATION:5130 kHz shortwave
+DESCRIPTION:WBCQ The Planet on 5130 kHz\, English\, beamed to North America
+ . Schedule from EIBI B-26 (valid until the A-27 season change). Times can 
+ change\; check https://hqshortwaveradio.com/stations/wbcq-the-planet/
+URL:https://hqshortwaveradio.com/stations/wbcq-the-planet/
+END:VEVENT
+BEGIN:VEVENT
 UID:wbcq-the-planet-6160-0000@hqshortwaveradio.com
 DTSTAMP:20261025T000000Z
 DTSTART:20261025T000000Z
