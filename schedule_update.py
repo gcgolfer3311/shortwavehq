@@ -124,7 +124,21 @@ BROADCAST_BANDS = [
     (25.600, 26.100), # 11m
 ]
 
+# Real broadcasters that transmit just outside the band segments above.
+# Listeners reported two of these missing (WINB 9265, WWCR 12160). Rows
+# are only added if EIBI actually lists something on the frequency, so an
+# entry here can never invent a broadcast.
+OUT_OF_BAND_BROADCAST_KHZ = {
+    5130,   # WBCQ Monticello, ME
+    7730,   # WRMI Okeechobee, FL
+    7780,   # WRMI Okeechobee, FL
+    9265,   # WINB Red Lion, PA
+    12160,  # WWCR Nashville, TN
+}
+
 def in_broadcast_band(mhz):
+    if int(round(mhz * 1000)) in OUT_OF_BAND_BROADCAST_KHZ:
+        return True
     return any(lo <= mhz <= hi for lo, hi in BROADCAST_BANDS)
 
 # ── HFCC cross-validation ───────────────────────────────────────────────
