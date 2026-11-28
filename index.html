@@ -3015,7 +3015,7 @@ function isOn(s,m){
   return t>=s2||t<e2;
 }
 function fmtR(s){return pad(Math.floor(s.s/60))+":"+pad(s.s%60)+" - "+pad(Math.floor(s.e/60))+":"+pad(s.e%60);}
-function bFor(f){var v=parseFloat(f);if(v<6)return "49M";if(v<7.5)return "41M";if(v<10.5)return "31M";if(v<12.5)return "25M";if(v<14.5)return "22M";if(v<16.5)return "19M";if(v<18.5)return "16M";if(v<22)return "13M";if(v<27)return "11M";return "SW";}
+function bFor(f){var v=parseFloat(f);if(v<2.7)return "120M";if(v<3.6)return "90M";if(v<4.5)return "75M";if(v<5.6)return "60M";if(v<6.6)return "49M";if(v<8)return "41M";if(v<10.5)return "31M";if(v<12.5)return "25M";if(v<14.5)return "22M";if(v<16.5)return "19M";if(v<18.5)return "16M";if(v<22)return "13M";if(v<27)return "11M";return "SW";}
 function tChip(t){var map={"International":"tc-i","Time":"tc-t","Utility":"tc-u","Pirate":"tc-p","Numbers":"tc-n"};var cl=map[t]||"tc-u";var sp=document.createElement("span");sp.className="tc "+cl;sp.textContent=t;return sp;}
 function condL(p){return p>=72?"Excellent":p>=52?"Good":p>=32?"Fair":"Poor";}
 function condCl(p){return p>=52?"gok":p>=32?"gfa":"gpo";}

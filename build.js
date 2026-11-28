@@ -184,6 +184,21 @@ var OVR_NOTES = {}, SCH_OVERRIDDEN = false;
   });
 })();
 
+// ── 1d. Military markers EIBI gets wrong ──
+// "The Alarm" (4770 kHz) is listed as inactive by Priyom but EIBI still shows it
+// on air 24/7. UVB-76 (4625 kHz) sits below the 60 m band filter in
+// schedule_update.py, so it never reaches SCH. Add it unless EIBI already has 4625.
+(function () {
+  var before = SCH.length;
+  SCH = SCH.filter(function (r) { return !(r && r.stn === "Alarm Channel Marker"); });
+  if (SCH.length !== before) { SCH_OVERRIDDEN = true; console.log("Removed inactive marker: Alarm Channel Marker (4770 kHz)"); }
+  if (!SCH.some(function (r) { return r && r.freq === "4.625"; })) {
+    SCH.push({ freq: "4.625", stn: "UVB-76", lang: "Russian", s: 0, e: 1440, tgt: "Russia", type: "Numbers", reg: "Worldwide", kw: 0, site: "Naro-Fominsk, Russia" });
+    SCH_OVERRIDDEN = true;
+    console.log("Added UVB-76 on 4625 kHz (not in EIBI import)");
+  }
+})();
+
 // Search-friendly titles for stations people search by a different name than
 // the EIBI listing (e.g. "ashna radio" for "VoA Radio Ashna"). {F} = frequencies.
 var STATION_SEO = {
@@ -948,6 +963,62 @@ for (var sn = 0; sn < stationNames.length; sn++) {
   if(!thinStation) urls.push("/stations/" + sl + "/");
 }
 console.log("Generated " + stationNames.length + " station pages");
+
+// ── UVB-76 "The Buzzer" guide: replaces the thin auto page at /stations/uvb-76/ ──
+// Facts from Priyom (priyom.org) and the Wikipedia article's cited timeline.
+(function () {
+  if (!byStation["UVB-76"] || stationSlug["UVB-76"] !== "uvb-76") return;
+  var tw = "http://websdr.ewi.utwente.nl:8901/?tune=4625usb", ut = "http://websdr1.sdrutah.org:8901/?tune=4625usb";
+  var b = "<p class=\"lede\"><strong>UVB-76</strong>, better known as <strong>The Buzzer</strong>, is a Russian military radio channel on <strong>4625 kHz</strong> that sends a short, rough buzzing tone around the clock. Every so often the buzzing stops and a live voice reads out a coded message in Russian. It has been on the air for decades, and nobody outside the Russian military knows exactly what the messages mean.</p>"
+    + "<div style=\"background:#181c22;border:1px solid #3a4252;border-left:4px solid #c0392b;border-radius:6px;padding:.9rem 1.1rem;margin:0 0 1.2rem\"><strong>Listen now:</strong> 4625 kHz, <strong>USB</strong> mode, 24 hours a day."
+    + "<p style=\"margin:.6rem 0 0\"><a class=\"cta\" href=\"" + tw + "\" target=\"_blank\" rel=\"nofollow noopener\">Listen on Twente WebSDR (Netherlands)</a><a class=\"cta o\" href=\"" + ut + "\" target=\"_blank\" rel=\"nofollow noopener\">Northern Utah WebSDR (USA)</a><a class=\"cta o\" href=\"https://kiwisdr.com/public/\" target=\"_blank\" rel=\"nofollow noopener\">KiwiSDR map</a></p>"
+    + "<p style=\"margin:.4rem 0 0;font-size:.82rem;color:#b4c0d0\">Twente is the best bet: it is in Europe, much closer to the transmitter. On a KiwiSDR, pick a receiver in Europe and enter 4625 kHz USB.</p></div>"
+    + "<h2>At a glance</h2><table class=\"wrapt\">"
+    + "<tr><td>Frequency</td><td>4625 kHz (64.8 m), sometimes listed as 4625.5 kHz</td></tr>"
+    + "<tr><td>Mode</td><td>USB (upper sideband). It has also been heard in full AM.</td></tr>"
+    + "<tr><td>Schedule</td><td>24 hours a day. Most voice messages come on weekday daytime, Moscow time (UTC+3).</td></tr>"
+    + "<tr><td>Current callsign</td><td>НЖТИ (NZhTI), since 30 December 2020</td></tr>"
+    + "<tr><td>Transmitter</td><td>Russia. Since August 2015 it appears to transmit only from the 69th Communication Hub at Naro-Fominsk, near Moscow.</td></tr>"
+    + "<tr><td>Operator</td><td>Russian military command network</td></tr></table>"
+    + "<h2>What you'll hear</h2><p>The buzz itself lasts about 1.2 seconds, followed by a pause of 1 to 1.3 seconds, repeating roughly 21 to 34 times a minute. Before November 2010 each buzz was shorter, about 0.8 seconds.</p>"
+    + "<p>Voice messages are read live by male and female operators, in Russian. The most common format, which listeners call <em>Monolith</em>, gives the callsign, five-digit groups and a code word. Priyom describes these as urgent commands passed to a duty officer to decode. Some messages carry no real meaning and appear to be there to confuse listeners.</p>"
+    + "<h2>Why it's called UVB-76</h2><p>The name everyone uses is a mistake. The first known voice ID, on 24 December 1997, was <strong>УЗБ-76 (UZB-76)</strong>, and non-Russian listeners misread it as UVB-76. The name stuck. The station has used several callsigns since:</p><table><tr><th>Callsign</th><th>In use</th></tr>"
+    + "<tr><td>УЗБ-76 (UZB-76)</td><td>24 Dec 1997 – 7 Sep 2010</td></tr>"
+    + "<tr><td>МДЖБ (MDZhB)</td><td>7 Sep 2010 – 28 Dec 2015</td></tr>"
+    + "<tr><td>ЖУОЗ (ZhUOZ)</td><td>28 Dec 2015 – 1 Mar 2019</td></tr>"
+    + "<tr><td>АНВФ (ANVF)</td><td>1 Mar 2019 – 30 Dec 2020</td></tr>"
+    + "<tr><td>НЖТИ (NZhTI)</td><td>30 Dec 2020 – today</td></tr></table>"
+    + "<h2>History</h2><ul style=\"margin:0 0 1rem 1.2rem;line-height:1.75\">"
+    + "<li><strong>1982:</strong> the earliest surviving recording of the tone on 4625 kHz.</li>"
+    + "<li><strong>Until September 2010:</strong> transmitted from near Povarovo, northwest of Moscow.</li>"
+    + "<li><strong>September 2010:</strong> moved to the Kerro site near Saint Petersburg. Around the move, parts of the buzz were replaced by excerpts from Tchaikovsky's <em>Swan Lake</em>.</li>"
+    + "<li><strong>August 2015:</strong> stopped transmitting from Kerro, and has since appeared to come only from Naro-Fominsk.</li>"
+    + "<li><strong>January 2022:</strong> images hidden in the audio and pieces of music turned up on the frequency, which were attributed to pirates.</li>"
+    + "<li><strong>May 2024:</strong> operators countered a pirate trying to jam the channel.</li>"
+    + "<li><strong>December 2025:</strong> hijackers played music on the frequency, once for more than three hours.</li></ul>"
+    + "<h2>Is it a “doomsday” station?</h2><p>A popular theory says the buzz is a dead-man's switch: if it ever stops, Russia launches its nuclear weapons. Priyom, the group that tracks these stations most closely, rejects that idea. The evidence points to an ordinary military command network that sends orders by voice, with the buzz as a channel marker that keeps the frequency occupied.</p>"
+    + "<h2>Can I hear it in North America?</h2><p>It is hard. The network serves western Russia, and 4625 kHz carries furthest at night, so a direct catch in North America takes a good antenna, a winter night and luck. Most listeners use a WebSDR or KiwiSDR in Europe instead. Use the buttons at the top of this page.</p>"
+    + "<p>To try with your own radio, you need one that receives <strong>SSB</strong>, set to USB on 4625 kHz. See <a href=\"/handheld-radios-with-shortwave/\">radios with SSB</a> and the <a href=\"/radios/\">radio database</a>.</p>"
+    + "<h2>More mystery stations</h2><p>UVB-76 is one of several Russian military markers. Spy numbers stations like E06 and E07 are still on the air too. See the <a href=\"/numbers-stations-list/\">numbers stations list</a> for frequencies and times, and <a href=\"/numbers-stations-explained/\">numbers stations explained</a> for the background.</p>"
+    + "<p style=\"font-size:.78rem;color:#b4c0d0\">Sources: <a href=\"https://priyom.org/military-stations/russia/the-buzzer\" target=\"_blank\" rel=\"noopener\">Priyom: The Buzzer</a>, <a href=\"https://priyom.org/military-stations/russia/the-buzzer/other-information/faq\" target=\"_blank\" rel=\"noopener\">Priyom: Buzzer FAQ</a>, <a href=\"https://priyom.org/blog/buzzer-is-not-transmitted-from-kerro-anymore,-new-military-marker-on-4525-usb\" target=\"_blank\" rel=\"noopener\">Priyom (August 2015)</a>, <a href=\"https://en.wikipedia.org/wiki/UVB-76\" target=\"_blank\" rel=\"noopener\">Wikipedia: UVB-76</a>.</p>";
+  var f = [
+    ["What frequency is UVB-76 on?", "4625 kHz, in USB (upper sideband) mode. It transmits 24 hours a day."],
+    ["How can I listen to UVB-76 online?", "Tune a WebSDR or KiwiSDR in Europe to 4625 kHz USB. The University of Twente WebSDR in the Netherlands is a good choice because it is close to the transmitter."],
+    ["What is UVB-76 used for?", "It is a Russian military command network. The buzz keeps the channel occupied, and live voice messages in Russian pass coded orders."],
+    ["Why is it called UVB-76?", "The first known voice ID in 1997 was UZB-76, which non-Russian listeners misread as UVB-76. Its current callsign, since 30 December 2020, is NZhTI."],
+    ["Is UVB-76 a doomsday or dead-hand signal?", "No evidence supports that. Priyom, which tracks the station closely, describes it as an ordinary military command network, not a dead-man's switch."]
+  ];
+  b += seoFaqHtml(f) + seoFaqLd(f)
+    + "<h2>Browse More</h2><div class=\"tags\"><a href=\"/numbers-stations-list/\">Numbers Stations List</a><a href=\"/numbers-stations-explained/\">Numbers Stations Explained</a><a href=\"/listen-online/\">Listen Online</a><a href=\"/frequency/4625-khz/\">4625 kHz</a><a href=\"/\">Live Search</a></div>";
+  write("stations/uvb-76/index.html", shell({
+    title: "UVB-76 (The Buzzer) 4625 kHz: How to Listen & History | ShortwaveHQ",
+    desc: "UVB-76, The Buzzer, on 4625 kHz: listen live online, what the buzz and voice messages are, its callsign history, and why it's not a doomsday signal.",
+    canonical: "/stations/uvb-76/", kicker: "Station Guide · Russian Military Marker",
+    h1: "<span style=\"color:#c0392b\">UVB-76</span>: The Buzzer on 4625 kHz", bodyHtml: b, head: "<style>.wrapt td{white-space:normal!important}</style>\n",
+    breadcrumbs: [["Home", "/"], ["Stations", "/stations/"], ["UVB-76", "/stations/uvb-76/"]]
+  }));
+  if (urls.indexOf("/stations/uvb-76/") < 0) urls.push("/stations/uvb-76/");
+})();
 try {
   var slugOut = {};
   for (var so = 0; so < stationNames.length; so++) { if (!isPlaceholder(stationNames[so])) slugOut[stationNames[so]] = stationSlug[stationNames[so]]; }
